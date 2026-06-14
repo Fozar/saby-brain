@@ -1,0 +1,261 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/_index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          },
+          {
+            "id": "abfea4d8de25f8d0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db8d83ac47ae599f",
+    "type": "split",
+    "children": [
+      {
+        "id": "554fd2b4fa6f8741",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5565f1231fe95c42",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "832ab43d08cf9e30",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "стандарты разра",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "097e8347bb8aa054",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300.5
+  },
+  "right": {
+    "id": "7092b65be1e76349",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f4de9402eae371b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a32b7215b7814fbb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки"
+            }
+          },
+          {
+            "id": "7936f8ba26007091",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "ed8ccb323a603d61",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b140a331162907cf",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "111a21e12ab1a293",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "20a272e103b5d792",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-memos:Thino": false,
+      "obsidian-memos:Thino Super": false,
+      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false,
+      "homepage:Open homepage": false,
+      "obsidian-git:Open Git source control": false,
+      "new-3d-graph:Open 3d graph": false
+    }
+  },
+  "active": "abfea4d8de25f8d0",
+  "lastOpenFiles": [
+    "wiki/concepts/Wasaby-PDF-Transformer.md",
+    "wiki/concepts/Wasaby-PDF-Transformer.md.tmp.38028.158ed6628394",
+    "wiki/concepts/Wasaby-Multimedia-Loader.md",
+    "wiki/concepts/Wasaby-Multimedia-Loader.md.tmp.38028.949e7125bdbd",
+    "wiki/hot.md",
+    "wiki/hot.md.tmp.38028.9d9b70249cf8",
+    "wiki/log.md.tmp.38028.432384f0818a",
+    "wiki/index.md.tmp.38028.0af8aecd5106",
+    "wiki/index.md.tmp.38028.8ed57d4fa161",
+    "wiki/concepts/Wasaby-Informers.md",
+    "wiki/concepts/Wasaby-Informers.md.tmp.38028.e2c940e98aa8",
+    "wiki/concepts/Wasaby-HTML-Converter.md",
+    "wiki/concepts/Wasaby-HTML-Converter.md.tmp.38028.ccf9fe198b8a",
+    "wiki/hot.md.tmp.38028.aea614a9d6ef",
+    "wiki/log.md.tmp.38028.d501c8c7e130",
+    "wiki/concepts/Wasaby-Report-Prefetch.md",
+    "wiki/concepts/Wasaby-Scheduler.md",
+    "wiki/concepts/Wasaby-Request-Broker.md",
+    "wiki/concepts/Wasaby-MQ.md",
+    "wiki/concepts/Wasaby-History-Service.md",
+    "wiki/concepts/Wasaby-Python-Debug.md",
+    "wiki/concepts/Wasaby-ClickHouse.md",
+    "wiki/concepts/Wasaby-Perforator.md",
+    "wiki/concepts/Wasaby-Memray.md",
+    "wiki/concepts/Wasaby-File-Transfer.md",
+    "wiki/concepts/Wasaby-Third-Party-Libraries.md",
+    "wiki/concepts/Wasaby-FTS.md",
+    "wiki/concepts/Wasaby-Distributed-Locks.md",
+    "wiki/concepts/Wasaby-Parameters-Service.md",
+    "wiki/concepts/Wasaby-i18n.md",
+    "wiki/concepts/Wasaby-Service-Node-Architecture.md",
+    "wiki/concepts/Wasaby-Task-Queue.md",
+    "wiki/concepts/Wasaby-Long-Running-Operations.md",
+    "wiki/concepts/Wasaby-SQL-DBA.md",
+    "wiki/concepts/Wasaby-Unit-Testing.md",
+    "wiki/concepts/Wasaby-BL-Calls.md",
+    "13d90799073d45f02fa067907dbc0342_MD5.avif",
+    "52c4aef86af0a71fe2d54ae2f996a298_MD5.avif",
+    "e20a67b67cc5784a31e5812261b5034c_MD5.avif",
+    "b6620e45b36d076d4bb424a724e821e6_MD5.avif",
+    "a5d92e4f7f1132e79f5a56b8fad12e32_MD5.avif",
+    "2d808f74977b755163446d518de76de7_MD5.avif",
+    "wiki/attachments/pycharm-content-roots-price-formation.png",
+    "d0b1a1d090a19d801608dc5637e37b4d_MD5.avif",
+    "10671913693748aff0ddd78f4ab4b13b_MD5.avif",
+    "02532d42f47621addcf630e122acaf72_MD5.avif",
+    "wiki/Wiki Map.canvas"
+  ]
+}

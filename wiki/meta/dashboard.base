@@ -1,0 +1,43 @@
+{
+  "filters": [],
+  "order": [
+    {
+      "property": "updated",
+      "direction": "desc"
+    }
+  ],
+  "views": [
+    {
+      "id": "recent",
+      "name": "Recent Activity",
+      "type": "table",
+      "filter": { "conditions": [] },
+      "columns": [
+        { "id": "file", "width": 300 },
+        { "id": "type", "width": 100 },
+        { "id": "status", "width": 100 },
+        { "id": "updated", "width": 120 }
+      ],
+      "limit": 20
+    },
+    {
+      "id": "seeds",
+      "name": "Seeds (Need Work)",
+      "type": "table",
+      "filter": {
+        "conditions": [
+          { "property": "status", "operator": "equals", "value": "seed" }
+        ]
+      },
+      "columns": [
+        { "id": "file", "width": 300 },
+        { "id": "status", "width": 100 },
+        { "id": "updated", "width": 120 }
+      ]
+    }
+  ],
+  "source": {
+    "type": "folder",
+    "folder": "wiki"
+  }
+}

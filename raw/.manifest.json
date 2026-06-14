@@ -1,0 +1,932 @@
+{
+  "version": 1,
+  "created": "2026-04-23",
+  "description": "Ingest delta tracker and address map for the claude-obsidian vault. Do not hand-edit; wiki-ingest maintains this.",
+  "sources": {
+    "raw/Описание продукта.md": {
+      "hash": "c34c0374ccda26842b4cbd63965d49e8",
+      "ingested_at": "2026-05-18",
+      "pages_created": [
+        "wiki/concepts/SabyGet-Product-Overview.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md"
+      ]
+    },
+    "raw/Описание продукта 1.md": {
+      "hash": "98918ae64cf9755a96bc1cb9ef941cc9",
+      "ingested_at": "2026-05-18",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/SabyGet-Product-Overview.md"
+      ]
+    },
+    "raw/Описание подсистемы.md": {
+      "hash": "6d2ce998ba37c87fe91d18901dc40e16",
+      "ingested_at": "2026-05-18",
+      "pages_created": [
+        "wiki/concepts/SabyGet-Landing-Page.md"
+      ],
+      "pages_updated": []
+    },
+    "raw/Описание подсистемы 1.md": {
+      "hash": "38feff589dbe05317320757b2bce620a",
+      "ingested_at": "2026-05-18",
+      "pages_created": [
+        "wiki/concepts/SabyGet-Loyalty-Subsystems.md"
+      ],
+      "pages_updated": []
+    },
+    "raw/Описание подсистемы 2.md": {
+      "hash": "9d9201a731943340e0d537216a4b6303",
+      "ingested_at": "2026-05-18",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/SabyGet-Loyalty-Subsystems.md"
+      ]
+    },
+    "raw/Описание подсистемы 3.md": {
+      "hash": "784b07959a2f94a8ca08ee8b68db1c8c",
+      "ingested_at": "2026-05-18",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/SabyGet-Loyalty-Subsystems.md"
+      ]
+    },
+    "raw/Архитектура данных.md": {
+      "hash": "63077ddfa2eb28926c9661fb16c7960c",
+      "ingested_at": "2026-05-18",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/SabyGet-Landing-Page.md"
+      ]
+    },
+    "raw/Архитектура данных 1.md": {
+      "hash": "a35ac8a8b7a98f440097d150f91876b7",
+      "ingested_at": "2026-05-18",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/SabyGet-Landing-Page.md"
+      ]
+    },
+    "raw/Архитектура данных 2.md": {
+      "hash": "434545e1bdc8619a41970e52b883bc10",
+      "ingested_at": "2026-05-18",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/SabyGet-Landing-Page.md"
+      ]
+    },
+    "raw/Архитектура данных 3.md": {
+      "hash": "a345aa2b2a0918ec5b30206ebad7d5fb",
+      "ingested_at": "2026-05-18",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/SabyGet-Landing-Page.md"
+      ]
+    },
+    ".raw/API Запросы доступа.md": {
+      "hash": "507c93a4e458261da4c3c6bff871ced0",
+      "ingested_at": "2026-05-19",
+      "pages_created": [
+        "wiki/concepts/SBIS-Access-Request-API.md",
+        "wiki/sources/sbis-access-request-2026-05-19.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Access-Control.md",
+        "wiki/index.md"
+      ]
+    },
+    ".raw/Поддержка запроса прав доступа.md": {
+      "hash": "923ae3446a46b66ccd54b279352cc91c",
+      "ingested_at": "2026-05-21",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/SBIS-Access-Request-API.md"
+      ]
+    },
+    ".raw/Пройти аутентификацию с помощью API  Электронный документооборот Saby (СБИС) Помощь.md": {
+      "hash": "8879d7126b76840eb38ea431d0e03841",
+      "ingested_at": "2026-05-21",
+      "pages_created": [
+        "wiki/concepts/Saby-External-API-Auth.md",
+        "wiki/sources/saby-api-docs-2026-05-21.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md"
+      ]
+    },
+    ".raw/СБИС.Аутентифицировать.md": {
+      "hash": "29e26604606e2249e62aa9e0fc4a55a2",
+      "ingested_at": "2026-05-21",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Saby-External-API-Auth.md"
+      ]
+    },
+    ".raw/СБИС.Выход.md": {
+      "hash": "20fc4f3ff261390542bea254c4759281",
+      "ingested_at": "2026-05-21",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Saby-External-API-Auth.md"
+      ]
+    },
+    ".raw/СБИС.ИнформацияОТекущемПользователе.md": {
+      "hash": "b7090412c01414298b365a3f53f71d66",
+      "ingested_at": "2026-05-21",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Saby-External-API-Auth.md"
+      ]
+    },
+    ".raw/СБИС.СписокЗадач.md": {
+      "hash": "5816982116de2e3d627d2f6181b060ab",
+      "ingested_at": "2026-05-21",
+      "pages_created": [
+        "wiki/concepts/Saby-External-API-Tasks.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Справочник кодов ошибок API Saby  Электронный документооборот Saby (СБИС) Помощь.md": {
+      "hash": "65ae3530e8cb5f4c4580b380796764a5",
+      "ingested_at": "2026-05-21",
+      "pages_created": [
+        "wiki/concepts/Saby-API-Error-Codes.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Объект «Документ» в API.md": {
+      "hash": "9004e3a153d6cb528b7dbd4314241dbd",
+      "ingested_at": "2026-05-21",
+      "pages_created": [
+        "wiki/concepts/Saby-API-Document-Object.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Объект «Навигация» в API.md": {
+      "hash": "428576282a21c61b453d8280bf60e3f0",
+      "ingested_at": "2026-05-25",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Saby-API-Navigation-Object.md"
+      ]
+    },
+    ".raw/Структура данных API-интерфейса.md": {
+      "hash": "50305927afc325ad959cab2651c9406c",
+      "ingested_at": "2026-05-21",
+      "pages_created": [
+        "wiki/concepts/Saby-API-Protocol.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Типы данных в API Saby.md": {
+      "hash": "a4d4de492b971891c290508a1377eab2",
+      "ingested_at": "2026-05-21",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Saby-API-Protocol.md"
+      ]
+    },
+    ".raw/Формат протокола JSON-RPC в API.md": {
+      "hash": "2ad137c868dcf6d171da9d14b3339a47",
+      "ingested_at": "2026-05-21",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Saby-API-Protocol.md"
+      ]
+    },
+    ".raw/Форматы строк API.md": {
+      "hash": "4277bdb29adaf067387b91cd258d573d",
+      "ingested_at": "2026-05-21",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Saby-API-Protocol.md"
+      ]
+    },
+    ".raw/Формат протокола JSON-RPC.md": {
+      "hash": "851a94b17b8d653ff9033b3a81967132",
+      "ingested_at": "2026-05-25",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/SBIS-Record-Format.md",
+        "wiki/sources/sbis-jsonrpc-protocol-format.md"
+      ]
+    },
+    ".raw/Эффективная работа с удаленными запросами. Shared future.md": {
+      "hash": "b3acdec9961b8c5aefc7baef2e9ec053",
+      "ingested_at": "2026-05-25",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-SharedFuture.md"
+      ]
+    },
+    ".raw/Звонок 25.05.2026 16-06.md": {
+      "hash": "af071974b36434688918962ae6feedf1",
+      "ingested_at": "2026-05-25",
+      "pages_created": [
+        "wiki/meta/SabyBank-Application-Card-Conversation-2026-05-25.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/SabyBank-RKO-Referral.md",
+        "wiki/index.md"
+      ]
+    },
+    ".raw/Летучка 22.05.26.md": {
+      "hash": "d87b56f7b4a6ced8250c031c5c2f17fd",
+      "ingested_at": "2026-05-25",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/questions/GetIndividualBatch-AttachPersonId-Timeout-Fix.md"
+      ]
+    },
+    "external:C:/Users/aa.timoshenko/PycharmProjects/sbis-mcp/docs/sbis-api.md": {
+      "hash": "464139dc42e8db0f9d224afd29dfe91f",
+      "ingested_at": "2026-05-21",
+      "pages_created": [
+        "wiki/concepts/SBIS-Record-Format.md",
+        "wiki/concepts/SBIS-Internal-API-Methods.md",
+        "wiki/sources/sbis-api-sbis-mcp-2026-05-21.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
+    "pasted/sveshnikov-stub-creation-2026-05-28": {
+      "hash": "inline-pasted",
+      "ingested_at": "2026-05-28",
+      "pages_created": [
+        "wiki/sources/sveshnikov-stub-creation-thoughts-2026-05-28.md",
+        "wiki/concepts/ReferralStub-TargetAction-Pattern.md",
+        "wiki/entities/Свешников-Андрей.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/SabyBank-RKO-Referral.md",
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
+    "pasted/loyalty-vis-org-2026-05-26": {
+      "hash": "inline-pasted",
+      "ingested_at": "2026-05-26",
+      "pages_created": [
+        "wiki/entities/Мусохранов-Андрей-Владиславович.md",
+        "wiki/entities/Федько-Юрий-Сергеевич.md",
+        "wiki/entities/Алябушев-Александр-Александрович.md",
+        "wiki/entities/Омельяненко-Егор-Анатольевич.md",
+        "wiki/entities/Курников-Михаил-Сергеевич.md",
+        "wiki/entities/Дюднева-Светлана-Андреевна.md",
+        "wiki/entities/Чумакин-Андрей-Андреевич.md",
+        "wiki/concepts/Loyalty-System-Teams.md",
+        "wiki/concepts/Transport-VIS-Platform.md",
+        "wiki/sources/loyalty-vis-org-2026-05-26.md"
+      ],
+      "pages_updated": [
+        "wiki/entities/Тимошенко А.А..md",
+        "wiki/entities/Tensor-Company.md",
+        "wiki/index.md"
+      ]
+    },
+    "sbis-plan-june-2026": {
+      "hash": "sbis-api-580667071",
+      "ingested_at": "2026-06-09",
+      "pages_created": [
+        "wiki/sources/sbis-plan-june-2026.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    ".raw/Синхронный и асинхронный вызов метода БЛ в облаке.md": {
+      "hash": "4ee87fefca40376dc8d13b536465ed17",
+      "ingested_at": "2026-06-11",
+      "pages_created": [
+        "wiki/concepts/Wasaby-BL-AsyncInvoke.md",
+        "wiki/sources/wasaby-bl-async-invoke-2026-06-11.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Async-Calls-Bus.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Как разрабатывать в RetailPresto-offline 2025.md": {
+      "hash": "135d0bac4cb4873644e2dd26b17e5092",
+      "ingested_at": "2026-06-11",
+      "pages_created": [
+        "wiki/concepts/RetailPresto-Offline-Debug-Setup.md",
+        "wiki/sources/retail-presto-offline-dev-2025.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Loyalty-In-Products.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Просмотр диалога по инструкции с подменой модулей.md": {
+      "hash": "c7ca36281b1fb9fcd2b7b183019afd82",
+      "ingested_at": "2026-06-11",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/RetailPresto-Offline-Debug-Setup.md",
+        "wiki/sources/retail-presto-offline-dev-2025.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Архив/Настройка рабочего места в CentOS/Для разработчика C++.sabydoc": {
+      "hash": "240659b65ef4351aaccfde614e19d1b7",
+      "ingested_at": "2026-06-14",
+      "skip_reason": "archived-obsolete-centos-setup",
+      "pages_created": [],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Архив/Настройка рабочего места в CentOS/Настройка рабочего места в CentOS.sabydoc": {
+      "hash": "1d9c12356bf52cd7bbf834e76e95e685",
+      "ingested_at": "2026-06-14",
+      "skip_reason": "archived-obsolete-centos-setup",
+      "pages_created": [],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Архив/Настройка рабочего места в CentOS/FAQ.sabydoc": {
+      "hash": "4f563d3617311ebee02dee7219e5f7be",
+      "ingested_at": "2026-06-14",
+      "skip_reason": "archived-obsolete-centos-setup",
+      "pages_created": [],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Архив/Настройка рабочего места в CentOS/Необязательное к установке ПО/Для backend-разработчиков.sabydoc": {
+      "hash": "8ab812207b35162d572c6c6e2a2fa6af",
+      "ingested_at": "2026-06-14",
+      "skip_reason": "archived-obsolete-centos-setup",
+      "pages_created": [],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Архив/Настройка рабочего места в CentOS/Необязательное к установке ПО/Необязательное к установке ПО.sabydoc": {
+      "hash": "6f74de8fb486ecc305fa3d5cc44a98c9",
+      "ingested_at": "2026-06-14",
+      "skip_reason": "archived-obsolete-centos-setup",
+      "pages_created": [],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Анализ и проектирование систем.sabydoc": {
+      "hash": "1ec15468ab8962c9d89173ea36a6005a",
+      "ingested_at": "2026-06-14",
+      "note": "cover-page-only: links to external Habr article about enterprise anti-patterns",
+      "pages_created": [],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Стандарты разработки/Стандарты разработки.sabydoc": {
+      "hash": "7f761176873b74e4a6d3bbf85b5ce289",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Dev-Standards.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Стандарты разработки/Стандарт разработки SQL.sabydoc": {
+      "hash": "045bc56bbcf41f741ac6294a7d7ced80",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-SQL-Standard.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Стандарты разработки/Стандарт разработки на Python/Стандарт разработки на Python.sabydoc": {
+      "hash": "b9bf83ce5537de1f6d8ab88854d216f0",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Python-Standard.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Стандарты разработки/Стандарт разработки на Python/Принцип code review Python кода.sabydoc": {
+      "hash": "f20624e32261cde6a04fd5873ad3f44a",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Python-Standard.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Стандарты разработки/Стандарт разработки на C++/Стандарт разработки на C++.sabydoc": {
+      "hash": "9e4bfad7e5c16e9c9896b1f4b29c1c49",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Cpp-String-Standard.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Стандарты разработки/Стандарт разработки на C++/Работа со строками.sabydoc": {
+      "hash": "a26cae2170e0643f2f322e5f15c6b5e5",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Cpp-String-Standard.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Стандарты разработки/Стандарт разработки на C++/Использование StringView_String_StackString.sabydoc": {
+      "hash": "a2a599fcde42376a1b5d71b36d127047",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Cpp-String-Standard.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Сервисный фреймворк/Сервис контракт/Сервис контракт.pdf": {
+      "hash": "d59c69d68e142ff0d3f5824fb384c68a",
+      "ingested_at": "2026-06-14",
+      "note": "index-page-only: cover of the Сервис контракт section",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Service-Framework.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Сервисный фреймворк/Сервер приложения/Сервер приложения.pdf": {
+      "hash": "92e656a8575d09b725d16b60cb1857fa",
+      "ingested_at": "2026-06-14",
+      "note": "index-page-only: cover of the Сервер приложения section",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Service-Framework.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Сервисный фреймворк/Взаимодействие между сервисами/Взаимодействие между сервисами.pdf": {
+      "hash": "feef8d18ab05654088cf1e60f3366643",
+      "ingested_at": "2026-06-14",
+      "note": "index-page-only: cover of the inter-service communication section",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Service-Framework.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Сервисный фреймворк/Сервис контракт/Справочник объектов/Методы бизнес-логики/Методы бизнес-логики.pdf": {
+      "hash": "35cee662c97bd4ebdaf9bf3dd0612918",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-BL-Objects.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Сервисный фреймворк/Взаимодействие между сервисами/Синхронный и асинхронный вызов метода БЛ в облаке/Синхронный и асинхронный вызов метода БЛ в облаке.pdf": {
+      "hash": "5301e2e93afd85aac13b35e2072e8582",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-BL-Calls.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Сервисный фреймворк/Взаимодействие между сервисами/Синхронный и асинхронный вызов метода БЛ в облаке/Внутриоблачные межсервисные вызовы.pdf": {
+      "hash": "22390853ec85aa9cfb323e1ad19b6107",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-BL-Calls.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Отладка/Юнит-тестирование C++ и Python/Юнит-тестирование C++ и Python.sabydoc": {
+      "hash": "9d6e4a23fd07f52d09bdc8ab6de3064d",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Unit-Testing.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Отладка/Юнит-тестирование C++ и Python/Примеры тестов на Python (pytest).sabydoc": {
+      "hash": "68d8b4819167eb2d18d3290bb055c6c1",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Unit-Testing.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Отладка/Юнит-тестирование C++ и Python/Моки внешних ресурсов.sabydoc": {
+      "hash": "cff949055f6ff88f19ebcc7bea58b018",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Unit-Testing.md"
+      ]
+    },
+    ".raw/wasaby.Backend/SQL, PostgreSQL, DBA/DBA.sabydoc": {
+      "hash": "5e4d1b9eab998d8834887906c49f9f41",
+      "ingested_at": "2026-06-14",
+      "note": "habr-article-digest: DBA tips and tricks",
+      "pages_created": [
+        "wiki/concepts/Wasaby-SQL-DBA.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/SQL, PostgreSQL, DBA/PostgreSQL Antipatterns и оптимизация SQL.sabydoc": {
+      "hash": "44c5704daeed187c75289016e879363e",
+      "ingested_at": "2026-06-14",
+      "note": "habr-article-digest: PostgreSQL antipatterns",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-SQL-DBA.md"
+      ]
+    },
+    ".raw/wasaby.Backend/SQL, PostgreSQL, DBA/SQL HowTo.sabydoc": {
+      "hash": "a63d99de1da58559da31c87dc21829e9",
+      "ingested_at": "2026-06-14",
+      "note": "habr-article-digest: SQL recipes",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-SQL-DBA.md"
+      ]
+    },
+    ".raw/wasaby.Backend/SQL, PostgreSQL, DBA/Анализ запросов в PostgreSQL.sabydoc": {
+      "hash": "86718870160cfd84d81490cc676dba54",
+      "ingested_at": "2026-06-14",
+      "note": "habr-article-digest: explain.tensor.ru query analysis",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-SQL-DBA.md"
+      ]
+    },
+    ".raw/wasaby.Backend/SQL, PostgreSQL, DBA/Решения для PostgreSQL_SQL.sabydoc": {
+      "hash": "4c6af00c7ba4039f3eed264fb2263acd",
+      "ingested_at": "2026-06-14",
+      "note": "habr-article-digest: PostgreSQL/SQL solutions",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-SQL-DBA.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Длительные операции/Длительные операции.sabydoc": {
+      "hash": "404a572e63be7c38324c881ea58b2700",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Long-Running-Operations.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Middleware/Длительные операции/Работа с длительными операциями на бизнес-логике.sabydoc": {
+      "hash": "6ca0961874cf9ab16981ec6ddf350032",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Long-Running-Operations.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис очереди задач (plugin-task-queue)/Пользовательская документация/API Сервис очереди задач.sabydoc": {
+      "hash": "74420d0f18774b9e4612c95e996eb197",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Task-Queue.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Конфигурация нового сервиса/Архитектура типового узла web-сервиса.pdf": {
+      "hash": "cab4db032307b6987a7c3027ccfb9977",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Service-Node-Architecture.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Конфигурация нового сервиса/Конфигурация нового сервиса.pdf": {
+      "hash": "4ba1319ebab58aefafb0ac8a4cdd5f2f",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Service-Node-Architecture.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Конфигурация нового сервиса/Автоматический перезапуск рабочих процессов сервера.pdf": {
+      "hash": "d86ce7d048c65e00e0b3d424e0359a96",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Service-Node-Architecture.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Интернационализация/Интернационализация.sabydoc": {
+      "hash": "7ef9289c27ff73c3b4ab6af4153647e8",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-i18n.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Интернационализация/Локализация Python.sabydoc": {
+      "hash": "57b335a7b3ee58fa8c9266470556dd48",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-i18n.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Интернационализация/Локализация C++.sabydoc": {
+      "hash": "1a41e0821da089ad9a68362fad2e8ff9",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-i18n.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Интернационализация/Словарь переводов.sabydoc": {
+      "hash": "14209f1264ae7ce00168865dd6fcaf09",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-i18n.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Интернационализация/Языки. Страна. Локаль.sabydoc": {
+      "hash": "49dbf613d011b710d50dae9ac2ecfad3",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-i18n.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Инструменты разработки/Использование сторонних библиотек/Подключение сторонних библиотек Python.sabydoc": {
+      "hash": "a7cecc437641d02b537baa70723d95cf",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Third-Party-Libraries.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Инструменты разработки/Использование сторонних библиотек/Подключение сторонних библиотек С++.sabydoc": {
+      "hash": "2b5f87916c23f6ecaf74153554923108",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Third-Party-Libraries.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис параметров/Сервис параметров.sabydoc": {
+      "hash": "0a8d5fd5e5fef7e8a4492756e74c784a",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Parameters-Service.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис параметров/Как встраивать (API parameters).sabydoc": {
+      "hash": "1030d655dbe61f0430599842730f8b01",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Parameters-Service.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис распределённых блокировок (distributed-locks)/Сервис распределённых блокировок (distributed-locks).sabydoc": {
+      "hash": "5194ac471014df046219399b411f2171",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Distributed-Locks.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Middleware/Работа с СУБД ClickHouse в проектах СБИС/Работа с СУБД ClickHouse в проектах СБИС.pdf": {
+      "hash": "7da011f98490b286c045fe8576292983",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-ClickHouse.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Middleware/Поиск/Полнотекстовый поиск/Полнотекстовый поиск.pdf": {
+      "hash": "88e18f5e99108c813c9dfdc355a3acb7",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-FTS.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Middleware/Поиск/Полнотекстовый поиск/Python API полнотекстового поиска.pdf": {
+      "hash": "3ee0dbf76c58e802f5d2d5c5912e3f11",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-FTS.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Системы хранения данных/Сервис временных файлов (file-transfer).pdf": {
+      "hash": "52ee4a9ef3636513c1d4f0e4269a115e",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-File-Transfer.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Отладка/Профилирование/Memray/Memray.sabydoc": {
+      "hash": "c2b09ca38ebe78ababa23187192b4b78",
+      "ingested_at": "2026-06-14",
+      "pages_created": ["wiki/concepts/Wasaby-Memray.md"],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Отладка/Профилирование/Memray/Инструкция для разработчиков.sabydoc": {
+      "hash": "cc9d475adbbb6389f5ee33cf1c957559",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": ["wiki/concepts/Wasaby-Memray.md"]
+    },
+    ".raw/wasaby.Backend/Отладка/Профилирование/Memray/Подготовка к работе.sabydoc": {
+      "hash": "d213a170b8607bef3e326e3d7601e03c",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": ["wiki/concepts/Wasaby-Memray.md"]
+    },
+    ".raw/wasaby.Backend/Отладка/Профилирование/Perforator/Perforator.sabydoc": {
+      "hash": "8dfa76621c7789b4b422fe2159a988d4",
+      "ingested_at": "2026-06-14",
+      "pages_created": ["wiki/concepts/Wasaby-Perforator.md"],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Отладка/Профилирование/Perforator/Инструкция для разработчиков.sabydoc": {
+      "hash": "b52a508ed10026928b9cc0d49608569c",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": ["wiki/concepts/Wasaby-Perforator.md"]
+    },
+    ".raw/wasaby.Backend/Отладка/Профилирование/Perforator/Подготовка к работе.sabydoc": {
+      "hash": "bae638d92b34cf0ab2722e67836307fa",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": ["wiki/concepts/Wasaby-Perforator.md"]
+    },
+    ".raw/wasaby.Backend/Отладка/Отладка Python/Отладка Python.sabydoc": {
+      "hash": "58ce2f6b3842a14b13e3d858846eefbe",
+      "ingested_at": "2026-06-14",
+      "pages_created": ["wiki/concepts/Wasaby-Python-Debug.md"],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Отладка/Отладка Python/Отладка Python в VS Code.sabydoc": {
+      "hash": "3c8802fe2d4302d8fe0f83f95eb050fb",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": ["wiki/concepts/Wasaby-Python-Debug.md"]
+    },
+    ".raw/wasaby.Backend/Отладка/Отладка Python/Отладка Python через IDE PyCharm, Python Remote Debug.sabydoc": {
+      "hash": "97a9d427e07043d24e37b395615bb793",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": ["wiki/concepts/Wasaby-Python-Debug.md"]
+    },
+    ".raw/wasaby.Backend/Отладка/Юнит-тестирование C++ и Python/Моки внешних ресурсов.sabydoc": {
+      "hash": "cff949055f6ff88f19ebcc7bea58b018",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": ["wiki/concepts/Wasaby-Unit-Testing.md"]
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис истории (history-clickhouse)/Сервис истории (history-clickhouse).sabydoc": {
+      "hash": "2bf9ed2e12be18239c5774fd26326596",
+      "ingested_at": "2026-06-14",
+      "pages_created": ["wiki/concepts/Wasaby-History-Service.md"],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Middleware/MQ/MQ.sabydoc": {
+      "hash": "d1ce3f0afedafeeb4ec43cff4d507481",
+      "ingested_at": "2026-06-14",
+      "pages_created": ["wiki/concepts/Wasaby-MQ.md"],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Middleware/MQ/Шина обмена серверными событиями.sabydoc": {
+      "hash": "9bf357b28d76860ba4c689f7a598831b",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": ["wiki/concepts/Wasaby-MQ.md"]
+    },
+    ".raw/wasaby.Backend/Middleware/MQ/Шина обмена асинхронными вызовами.sabydoc": {
+      "hash": "0d3820ff7ab68681f5443333a9290063",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": ["wiki/concepts/Wasaby-MQ.md"]
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис request-broker/Сервис request-broker.sabydoc": {
+      "hash": "1a4569d1f7856a006af8028ec4ce8e3a",
+      "ingested_at": "2026-06-14",
+      "pages_created": ["wiki/concepts/Wasaby-Request-Broker.md"],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис выполнения задач по расписанию. Планировщик заданий (scheduler).sabydoc": {
+      "hash": "a3eb6ad4abb9d6bdf6b254f1d8e12fee",
+      "ingested_at": "2026-06-14",
+      "pages_created": ["wiki/concepts/Wasaby-Scheduler.md"],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Middleware/Платформенный механизм кэширования отчетов (report-prefetch-service)/Платформенный механизм кэширования отчетов (report-prefetch-service).sabydoc": {
+      "hash": "5b50834869b71a10464f757a786d15d9",
+      "ingested_at": "2026-06-14",
+      "pages_created": ["wiki/concepts/Wasaby-Report-Prefetch.md"],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Сервисы общего назначения/Приложения семейства Converter Html и Webshot/Техническая документация/API сервиса конвертации HTML.sabydoc": {
+      "hash": "dff51fd1334b143598df8ce70bc55fe3",
+      "ingested_at": "2026-06-14",
+      "pages_created": ["wiki/concepts/Wasaby-HTML-Converter.md"],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Сервисы общего назначения/Сервис информеров/Сервис информеров.sabydoc": {
+      "hash": "4a4e43c57c4b0563996bee13b77c066f",
+      "ingested_at": "2026-06-14",
+      "pages_created": ["wiki/concepts/Wasaby-Informers.md"],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Сервисы общего назначения/Сервис информеров/Руководство разработчика/Добавление нового информера_счетчика.sabydoc": {
+      "hash": "95d0d18674516cbf985a0fff43260f7f",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": ["wiki/concepts/Wasaby-Informers.md"]
+    },
+    ".raw/wasaby.Backend/Сервисы общего назначения/Сервис информеров/Руководство разработчика/Пример обращения к сервису.sabydoc": {
+      "hash": "8d6f28272f258fec9694c8ce86adf040",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": ["wiki/concepts/Wasaby-Informers.md"]
+    }
+  },
+  "address_map": {
+    "wiki/concepts/DragonScale Memory.md": "c-000001",
+    "wiki/concepts/DWC-Card-Events-Migration.md": "c-000004",
+    "wiki/concepts/FranchiseCard-Import-POS-SaleValidation-Bug.md": "c-000005",
+    "wiki/concepts/ImportDiscountCard-Franchise-Client-Import.md": "c-000006",
+    "wiki/concepts/Persistent Wiki Artifact.md": "c-000007",
+    "wiki/concepts/Query-Time Retrieval.md": "c-000008",
+    "wiki/concepts/Source-First Synthesis.md": "c-000009",
+    "wiki/meta/2026-04-24-v1.6.0-release-session.md": "c-000010",
+    "wiki/meta/DWC-Card-HandleChangeData-Session.md": "c-000011",
+    "wiki/meta/PromoCode-SafeDelete-Sabyget-Bug.md": "c-000012",
+    "wiki/concepts/ReferralProgram-Stub-Implementation.md": "c-000013",
+    "wiki/concepts/SabyGet-Product-Overview.md": "c-000014",
+    "wiki/concepts/SabyGet-Landing-Page.md": "c-000015",
+    "wiki/concepts/SabyGet-Loyalty-Subsystems.md": "c-000016",
+    "wiki/sources/sabyget-docs-2026-05-18.md": "c-000017",
+    "wiki/concepts/AVIF-to-PNG-Windows-Conversion.md": "c-000018",
+    "wiki/concepts/SBIS-Access-Request-API.md": "c-000019",
+    "wiki/sources/sbis-access-request-2026-05-19.md": "c-000020",
+    "wiki/concepts/Saby-External-API-Auth.md": "c-000021",
+    "wiki/concepts/Saby-External-API-Tasks.md": "c-000022",
+    "wiki/concepts/Saby-API-Error-Codes.md": "c-000023",
+    "wiki/sources/saby-api-docs-2026-05-21.md": "c-000024",
+    "wiki/concepts/SBIS-Record-Format.md": "c-000025",
+    "wiki/concepts/SBIS-Internal-API-Methods.md": "c-000026",
+    "wiki/sources/sbis-api-sbis-mcp-2026-05-21.md": "c-000027",
+    "wiki/concepts/Saby-API-Document-Object.md": "c-000028",
+    "wiki/concepts/Saby-API-Navigation-Object.md": "c-000029",
+    "wiki/concepts/Saby-API-Protocol.md": "c-000030",
+    "wiki/sources/saby-api-docs-objects-2026-05-21.md": "c-000031",
+    "wiki/sources/sbis-jsonrpc-protocol-format.md": "c-000032",
+    "wiki/concepts/Wasaby-SharedFuture.md": "c-000033",
+    "wiki/sources/wasaby-sharedfuture-2026-05-22.md": "c-000034",
+    "wiki/meta/SabyBank-Application-Card-Conversation-2026-05-25.md": "c-000035",
+    "wiki/entities/Мусохранов-Андрей-Владиславович.md": "c-000036",
+    "wiki/entities/Федько-Юрий-Сергеевич.md": "c-000037",
+    "wiki/entities/Алябушев-Александр-Александрович.md": "c-000038",
+    "wiki/entities/Омельяненко-Егор-Анатольевич.md": "c-000039",
+    "wiki/entities/Курников-Михаил-Сергеевич.md": "c-000040",
+    "wiki/entities/Дюднева-Светлана-Андреевна.md": "c-000041",
+    "wiki/entities/Чумакин-Андрей-Андреевич.md": "c-000042",
+    "wiki/concepts/Loyalty-System-Teams.md": "c-000043",
+    "wiki/concepts/Transport-VIS-Platform.md": "c-000044",
+    "wiki/sources/loyalty-vis-org-2026-05-26.md": "c-000045",
+    "wiki/sources/sveshnikov-stub-creation-thoughts-2026-05-28.md": "c-000046",
+    "wiki/concepts/ReferralStub-TargetAction-Pattern.md": "c-000047",
+    "wiki/entities/Свешников-Андрей.md": "c-000048",
+    "wiki/sources/wasaby-bl-async-invoke-2026-06-11.md": "c-000072",
+    "wiki/concepts/Wasaby-BL-AsyncInvoke.md": "c-000073",
+    "wiki/concepts/RetailPresto-Offline-Debug-Setup.md": "c-000074",
+    "wiki/sources/retail-presto-offline-dev-2025.md": "c-000075",
+    "wiki/concepts/Wasaby-Dev-Standards.md": "c-000105",
+    "wiki/concepts/Wasaby-SQL-Standard.md": "c-000106",
+    "wiki/concepts/Wasaby-Python-Standard.md": "c-000107",
+    "wiki/concepts/Wasaby-Cpp-String-Standard.md": "c-000108",
+    "wiki/concepts/Wasaby-Service-Framework.md": "c-000109",
+    "wiki/concepts/Wasaby-BL-Calls.md": "c-000110",
+    "wiki/concepts/Wasaby-BL-Objects.md": "c-000111",
+    "wiki/concepts/Wasaby-Unit-Testing.md": "c-000112",
+    "wiki/concepts/Wasaby-SQL-DBA.md": "c-000113",
+    "wiki/concepts/Wasaby-Long-Running-Operations.md": "c-000114",
+    "wiki/concepts/Wasaby-Task-Queue.md": "c-000115",
+    "wiki/concepts/Wasaby-Service-Node-Architecture.md": "c-000116",
+    "wiki/concepts/Wasaby-i18n.md": "c-000117",
+    "wiki/concepts/Wasaby-Third-Party-Libraries.md": "c-000118",
+    "wiki/concepts/Wasaby-Parameters-Service.md": "c-000119",
+    "wiki/concepts/Wasaby-Distributed-Locks.md": "c-000120",
+    "wiki/concepts/Wasaby-ClickHouse.md": "c-000121",
+    "wiki/concepts/Wasaby-FTS.md": "c-000122",
+    "wiki/concepts/Wasaby-File-Transfer.md": "c-000123",
+    "wiki/concepts/Wasaby-Memray.md": "c-000124",
+    "wiki/concepts/Wasaby-Perforator.md": "c-000125",
+    "wiki/concepts/Wasaby-Python-Debug.md": "c-000126",
+    "wiki/concepts/Wasaby-History-Service.md": "c-000127",
+    "wiki/concepts/Wasaby-MQ.md": "c-000128",
+    "wiki/concepts/Wasaby-Request-Broker.md": "c-000129",
+    "wiki/concepts/Wasaby-Scheduler.md": "c-000130",
+    "wiki/concepts/Wasaby-Report-Prefetch.md": "c-000131",
+    "wiki/concepts/Wasaby-HTML-Converter.md": "c-000132",
+    "wiki/concepts/Wasaby-Informers.md": "c-000133"
+  },
+  "retired_addresses": {
+    "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
+    "c-000003": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)"
+  }
+}
