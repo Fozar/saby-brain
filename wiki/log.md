@@ -10,6 +10,11 @@ related:
   - "[[index]]"
 ---
 
+## [2026-06-15] save | Баг: удаление фичи entity_sp до полного раскатывания
+- Type: synthesis
+- Location: wiki/questions/entity-sp-deletion-order-2026-06-15.md
+- From: bugfix #06108231 — не подтягивается точка продаж в диалог создания типа ДК на 26.4100; откат `1fb3ffbd1c` (35 файлов); ключевой принцип: фича удаляется только после 100% раскатки
+
 ## [2026-06-14] ingest | wasaby.Backend — Conan / STOMP / Mailings / Sync Broker / DWC full API / i18n extras (продолжение 9)
 - Sources: 5 файлов (Conan, STOMP, массовые рассылки, облачный брокер синхронизации, DWC API)
 - Pages created: [[Wasaby-Conan]] (c-000139), [[Wasaby-STOMP]] (c-000140), [[Wasaby-Mass-Mailings]] (c-000141), [[Wasaby-Sync-Broker]] (c-000142)

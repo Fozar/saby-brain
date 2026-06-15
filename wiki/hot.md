@@ -14,6 +14,10 @@ related:
 
 # Recent Context
 
+## 2026-06-15 — Bugfix entity_sp deletion (задача 06108231)
+
+Откат коммита `1fb3ffbd1c` (удаление фичи `entity_sp`) на `26.4100/bugfix/06108231_entity_sp_revert`. Принцип: фича удаляется только после 100% раскатки на всех стендах. Подробности: [[entity-sp-deletion-order-2026-06-15]].
+
 ## 2026-06-15 — CreateLead auto-creates stub (задача 06152561)
 
 `ReferralProgram.CreateLead` теперь автоматически вызывает `CreateStub` после создания CRM-сделки. Реализовано в `create_lead.py`: `_get_stub_status_from_events` (маппинг TransitionResults → LinkType) + `_create_stub_for_lead` (SQL UUID + вызов CreateStub). Архитектура: GetLead + CreateStub критичные (без try/except), история некритичная. 7/7 тестов зелёные. Подробности: [[ReferralProgram-Stub-Implementation]].
