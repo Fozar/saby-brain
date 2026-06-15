@@ -1,7 +1,7 @@
 ---
 type: concept
 title: SabyBank RKO Referral — Рефералка в Заявках в банк на РКО
-updated: 2026-04-10
+updated: 2026-06-15
 tags:
   - price-formation
   - referral
