@@ -720,128 +720,306 @@
     ".raw/wasaby.Backend/Отладка/Профилирование/Memray/Memray.sabydoc": {
       "hash": "c2b09ca38ebe78ababa23187192b4b78",
       "ingested_at": "2026-06-14",
-      "pages_created": ["wiki/concepts/Wasaby-Memray.md"],
+      "pages_created": [
+        "wiki/concepts/Wasaby-Memray.md"
+      ],
       "pages_updated": []
     },
     ".raw/wasaby.Backend/Отладка/Профилирование/Memray/Инструкция для разработчиков.sabydoc": {
       "hash": "cc9d475adbbb6389f5ee33cf1c957559",
       "ingested_at": "2026-06-14",
       "pages_created": [],
-      "pages_updated": ["wiki/concepts/Wasaby-Memray.md"]
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Memray.md"
+      ]
     },
     ".raw/wasaby.Backend/Отладка/Профилирование/Memray/Подготовка к работе.sabydoc": {
       "hash": "d213a170b8607bef3e326e3d7601e03c",
       "ingested_at": "2026-06-14",
       "pages_created": [],
-      "pages_updated": ["wiki/concepts/Wasaby-Memray.md"]
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Memray.md"
+      ]
     },
     ".raw/wasaby.Backend/Отладка/Профилирование/Perforator/Perforator.sabydoc": {
       "hash": "8dfa76621c7789b4b422fe2159a988d4",
       "ingested_at": "2026-06-14",
-      "pages_created": ["wiki/concepts/Wasaby-Perforator.md"],
+      "pages_created": [
+        "wiki/concepts/Wasaby-Perforator.md"
+      ],
       "pages_updated": []
     },
     ".raw/wasaby.Backend/Отладка/Профилирование/Perforator/Инструкция для разработчиков.sabydoc": {
       "hash": "b52a508ed10026928b9cc0d49608569c",
       "ingested_at": "2026-06-14",
       "pages_created": [],
-      "pages_updated": ["wiki/concepts/Wasaby-Perforator.md"]
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Perforator.md"
+      ]
     },
     ".raw/wasaby.Backend/Отладка/Профилирование/Perforator/Подготовка к работе.sabydoc": {
       "hash": "bae638d92b34cf0ab2722e67836307fa",
       "ingested_at": "2026-06-14",
       "pages_created": [],
-      "pages_updated": ["wiki/concepts/Wasaby-Perforator.md"]
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Perforator.md"
+      ]
     },
     ".raw/wasaby.Backend/Отладка/Отладка Python/Отладка Python.sabydoc": {
       "hash": "58ce2f6b3842a14b13e3d858846eefbe",
       "ingested_at": "2026-06-14",
-      "pages_created": ["wiki/concepts/Wasaby-Python-Debug.md"],
+      "pages_created": [
+        "wiki/concepts/Wasaby-Python-Debug.md"
+      ],
       "pages_updated": []
     },
     ".raw/wasaby.Backend/Отладка/Отладка Python/Отладка Python в VS Code.sabydoc": {
       "hash": "3c8802fe2d4302d8fe0f83f95eb050fb",
       "ingested_at": "2026-06-14",
       "pages_created": [],
-      "pages_updated": ["wiki/concepts/Wasaby-Python-Debug.md"]
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Python-Debug.md"
+      ]
     },
     ".raw/wasaby.Backend/Отладка/Отладка Python/Отладка Python через IDE PyCharm, Python Remote Debug.sabydoc": {
       "hash": "97a9d427e07043d24e37b395615bb793",
       "ingested_at": "2026-06-14",
       "pages_created": [],
-      "pages_updated": ["wiki/concepts/Wasaby-Python-Debug.md"]
-    },
-    ".raw/wasaby.Backend/Отладка/Юнит-тестирование C++ и Python/Моки внешних ресурсов.sabydoc": {
-      "hash": "cff949055f6ff88f19ebcc7bea58b018",
-      "ingested_at": "2026-06-14",
-      "pages_created": [],
-      "pages_updated": ["wiki/concepts/Wasaby-Unit-Testing.md"]
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Python-Debug.md"
+      ]
     },
     ".raw/wasaby.Backend/Middleware/Сервис истории (history-clickhouse)/Сервис истории (history-clickhouse).sabydoc": {
       "hash": "2bf9ed2e12be18239c5774fd26326596",
       "ingested_at": "2026-06-14",
-      "pages_created": ["wiki/concepts/Wasaby-History-Service.md"],
+      "pages_created": [
+        "wiki/concepts/Wasaby-History-Service.md"
+      ],
       "pages_updated": []
     },
     ".raw/wasaby.Backend/Middleware/MQ/MQ.sabydoc": {
       "hash": "d1ce3f0afedafeeb4ec43cff4d507481",
       "ingested_at": "2026-06-14",
-      "pages_created": ["wiki/concepts/Wasaby-MQ.md"],
+      "pages_created": [
+        "wiki/concepts/Wasaby-MQ.md"
+      ],
       "pages_updated": []
     },
     ".raw/wasaby.Backend/Middleware/MQ/Шина обмена серверными событиями.sabydoc": {
       "hash": "9bf357b28d76860ba4c689f7a598831b",
       "ingested_at": "2026-06-14",
       "pages_created": [],
-      "pages_updated": ["wiki/concepts/Wasaby-MQ.md"]
+      "pages_updated": [
+        "wiki/concepts/Wasaby-MQ.md"
+      ]
     },
     ".raw/wasaby.Backend/Middleware/MQ/Шина обмена асинхронными вызовами.sabydoc": {
       "hash": "0d3820ff7ab68681f5443333a9290063",
       "ingested_at": "2026-06-14",
       "pages_created": [],
-      "pages_updated": ["wiki/concepts/Wasaby-MQ.md"]
+      "pages_updated": [
+        "wiki/concepts/Wasaby-MQ.md"
+      ]
     },
     ".raw/wasaby.Backend/Middleware/Сервис request-broker/Сервис request-broker.sabydoc": {
       "hash": "1a4569d1f7856a006af8028ec4ce8e3a",
       "ingested_at": "2026-06-14",
-      "pages_created": ["wiki/concepts/Wasaby-Request-Broker.md"],
+      "pages_created": [
+        "wiki/concepts/Wasaby-Request-Broker.md"
+      ],
       "pages_updated": []
     },
     ".raw/wasaby.Backend/Middleware/Сервис выполнения задач по расписанию. Планировщик заданий (scheduler).sabydoc": {
       "hash": "a3eb6ad4abb9d6bdf6b254f1d8e12fee",
       "ingested_at": "2026-06-14",
-      "pages_created": ["wiki/concepts/Wasaby-Scheduler.md"],
+      "pages_created": [
+        "wiki/concepts/Wasaby-Scheduler.md"
+      ],
       "pages_updated": []
     },
     ".raw/wasaby.Backend/Middleware/Платформенный механизм кэширования отчетов (report-prefetch-service)/Платформенный механизм кэширования отчетов (report-prefetch-service).sabydoc": {
       "hash": "5b50834869b71a10464f757a786d15d9",
       "ingested_at": "2026-06-14",
-      "pages_created": ["wiki/concepts/Wasaby-Report-Prefetch.md"],
+      "pages_created": [
+        "wiki/concepts/Wasaby-Report-Prefetch.md"
+      ],
       "pages_updated": []
     },
     ".raw/wasaby.Backend/Сервисы общего назначения/Приложения семейства Converter Html и Webshot/Техническая документация/API сервиса конвертации HTML.sabydoc": {
       "hash": "dff51fd1334b143598df8ce70bc55fe3",
       "ingested_at": "2026-06-14",
-      "pages_created": ["wiki/concepts/Wasaby-HTML-Converter.md"],
+      "pages_created": [
+        "wiki/concepts/Wasaby-HTML-Converter.md"
+      ],
       "pages_updated": []
     },
     ".raw/wasaby.Backend/Сервисы общего назначения/Сервис информеров/Сервис информеров.sabydoc": {
       "hash": "4a4e43c57c4b0563996bee13b77c066f",
       "ingested_at": "2026-06-14",
-      "pages_created": ["wiki/concepts/Wasaby-Informers.md"],
+      "pages_created": [
+        "wiki/concepts/Wasaby-Informers.md"
+      ],
       "pages_updated": []
     },
     ".raw/wasaby.Backend/Сервисы общего назначения/Сервис информеров/Руководство разработчика/Добавление нового информера_счетчика.sabydoc": {
       "hash": "95d0d18674516cbf985a0fff43260f7f",
       "ingested_at": "2026-06-14",
       "pages_created": [],
-      "pages_updated": ["wiki/concepts/Wasaby-Informers.md"]
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Informers.md"
+      ]
     },
     ".raw/wasaby.Backend/Сервисы общего назначения/Сервис информеров/Руководство разработчика/Пример обращения к сервису.sabydoc": {
       "hash": "8d6f28272f258fec9694c8ce86adf040",
       "ingested_at": "2026-06-14",
       "pages_created": [],
-      "pages_updated": ["wiki/concepts/Wasaby-Informers.md"]
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Informers.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис скачивания внешних медиа ресурсов (multimedia-loader)/Инструкции по использованию API сервиса multimedia-loader.sabydoc": {
+      "hash": "ce1de1753398637bc7d75b282776be04",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Multimedia-Loader.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Преобразование PDF/Публичное API.sabydoc": {
+      "hash": "0993ab217bf4a68381e994a0a6591051",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-PDF-Transformer.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Сервисы общего назначения/Сервис Профилей/Сервис Профилей.sabydoc": {
+      "hash": "1ec8211ae795beb40c5d74fb70bbb22f",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Profiles-Service.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис DWC/Сервис DWC.sabydoc": {
+      "hash": "4fc20d0aa3dc5e16f713fe2f7ab47e74",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-DWC.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Отладка/Профилирование/Memray/Возможные проблемы и пути решения.sabydoc": {
+      "hash": "a9b0661620f97a2013056f610655720e",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Memray.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Отладка/Профилирование/Perforator/Возможные проблемы и пути решения.sabydoc": {
+      "hash": "7afc4c15cea16d7fe99353d9c2f57de7",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис работы с изображениями (img-remote)/Сервис работы с изображениями (img-remote).sabydoc": {
+      "hash": "265b469ac4f10d64f4855305c445f95f",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Image-Service.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Платформенный механизм кэширования отчетов (report-prefetch-service)/Техническая документация/Концептуальное описание решения и основные алгоритмы.sabydoc": {
+      "hash": "83e5b7ce9d696fd3c5f959fb73015e98",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": []
+    },
+    ".raw/wasaby.Backend/Сервисы общего назначения/Сервис информеров/Руководство разработчика/Настройка отображения информеров.sabydoc": {
+      "hash": "f79fe85810aadcd59a98631122111d8d",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Informers.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис параметров/Сервис parameters-constants/Сервис parameters-constants.sabydoc": {
+      "hash": "1b34ae058260cafca7d91d007e79dbba",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Parameters-Service.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Кроссплатформенная разработка/Conan. Пакетный менеджер для сборки сторонних библиотек C++.sabydoc": {
+      "hash": "419119626a92eaf4287acef5ed0045e9",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Conan.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/MQ/Шина доставки клиентских событии STOMP.sabydoc": {
+      "hash": "7d3f8c98836eb6dc575c844ed19985ff",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-STOMP.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Cервис массовых рассылок.sabydoc": {
+      "hash": "3e2a00b2d2d70f8eaf28d41008134e30",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Mass-Mailings.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Облачный брокер синхронизации/Облачный брокер синхронизации.sabydoc": {
+      "hash": "105f2279fb2732825aee964465b35171",
+      "ingested_at": "2026-06-14",
+      "pages_created": [
+        "wiki/concepts/Wasaby-Sync-Broker.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md"
+      ]
+    },
+    ".raw/wasaby.Backend/Middleware/Сервис DWC/Как встраивать (API сервиса DWC).sabydoc": {
+      "hash": "f693d87ba4153c8c4f81eb8d13f65c10",
+      "ingested_at": "2026-06-14",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-DWC.md"
+      ]
     }
   },
   "address_map": {
@@ -923,7 +1101,16 @@
     "wiki/concepts/Wasaby-Scheduler.md": "c-000130",
     "wiki/concepts/Wasaby-Report-Prefetch.md": "c-000131",
     "wiki/concepts/Wasaby-HTML-Converter.md": "c-000132",
-    "wiki/concepts/Wasaby-Informers.md": "c-000133"
+    "wiki/concepts/Wasaby-Informers.md": "c-000133",
+    "wiki/concepts/Wasaby-Multimedia-Loader.md": "c-000134",
+    "wiki/concepts/Wasaby-PDF-Transformer.md": "c-000135",
+    "wiki/concepts/Wasaby-Profiles-Service.md": "c-000136",
+    "wiki/concepts/Wasaby-DWC.md": "c-000137",
+    "wiki/concepts/Wasaby-Image-Service.md": "c-000138",
+    "wiki/concepts/Wasaby-Conan.md": "c-000139",
+    "wiki/concepts/Wasaby-STOMP.md": "c-000140",
+    "wiki/concepts/Wasaby-Mass-Mailings.md": "c-000141",
+    "wiki/concepts/Wasaby-Sync-Broker.md": "c-000142"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",

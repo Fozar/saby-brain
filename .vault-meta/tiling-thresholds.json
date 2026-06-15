@@ -2,10 +2,11 @@
   "version": 1,
   "model": "nomic-embed-text",
   "bands": {
-    "error": 0.90,
-    "review": 0.80
+    "error": 0.95,
+    "review": 0.92
   },
-  "calibrated": false,
-  "calibration_pairs_labeled": 0,
-  "notes": "Conservative seed thresholds, NOT calibrated against this vault and NOT a literature-backed interpolation. Published reference points: Sentence Transformers community_detection defaults to 0.75; Quora-duplicate calibrations land around 0.7715-0.8352 for F1 and accuracy objectives. At 0.80 review floor, expect false negatives against those baselines. Replace with vault-calibrated bands when 50-100 labeled pairs are available. See wiki-lint SKILL.md Semantic Tiling section for the calibration procedure."
+  "calibrated": true,
+  "calibration_pairs_labeled": 114,
+  "calibration_date": "2026-06-14",
+  "notes": "Calibrated on 114 Error-band pairs from tiling-report-2026-06-14.md. Zero true duplicates found at 0.90 threshold. Findings: entity pages (Tensor employees) cluster at 0.92-0.98 (distinct — similar bio format); concept-source pairs cluster at 0.90-0.94 (distinct — expected, page created from source); same-domain concepts (DiscountCard cluster, UpdateSystem cluster) cluster at 0.90-0.95 (similar — different angles, cross-links added). Raised error to 0.95 and review to 0.92 to reduce noise from 5117 to ~40 pairs."
 }

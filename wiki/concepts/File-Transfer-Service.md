@@ -11,7 +11,7 @@ related:
   - "[[SabyDisk-Platform]]"
   - "[[FileStorage-Service]]"
   - "[[Binary-Storage-Options]]"
-  - "[[Async-Calls-Bus]]"
+  - "[[Wasaby-MQ]]"
   - "[[LRS-Long-Request-Service]]"
 created: 2026-04-12
 updated: 2026-04-12
@@ -24,7 +24,7 @@ updated: 2026-04-12
 ## Две задачи
 
 1. **Возврат результата длительной операции клиенту** (например, выгрузка в Excel через LRS)
-2. **Передача файлов между сервисами БЛ** (Huge Payload Protocol в [[Async-Calls-Bus]])
+2. **Передача файлов между сервисами БЛ** (Huge Payload Protocol в [[Wasaby-MQ]])
 
 ## Хранилища (storage)
 

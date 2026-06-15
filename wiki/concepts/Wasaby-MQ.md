@@ -14,8 +14,14 @@ tags:
 status: current
 related:
   - "[[Wasaby-BL-Calls]]"
+  - "[[Wasaby-BL-AsyncInvoke]]"
   - "[[Wasaby-Task-Queue]]"
   - "[[Wasaby-File-Transfer]]"
+  - "[[File-Transfer-Service]]"
+  - "[[Wasaby-RabbitMQ]]"
+  - "[[STOMP-Events-Bus]]"
+  - "[[Server-Events-Bus]]"
+  - "[[Request-Broker-Service]]"
 sources:
   - ".raw/wasaby.Backend/Middleware/MQ/MQ.sabydoc"
   - ".raw/wasaby.Backend/Middleware/MQ/Шина обмена серверными событиями.sabydoc"
@@ -109,8 +115,16 @@ sources:
 
 Ручной перезапуск отложенных вызовов — кнопка в реестре асинхронных очередей (аварийная ситуация).
 
+### Состав кластера
+
+Состав запрашивается каждые 5 минут (`RabbitMQNode.NodeListJSON`). Shovel-соединения между Proxy и Main слоями — `dynamic_shovel`.
+
 ## Связанные страницы
 
-- [[Wasaby-BL-Calls]] — AsyncInvoke использует шину асинхронных вызовов
+- [[Wasaby-BL-AsyncInvoke]] — AsyncInvoke API (EndPoint, Invoke, callbacks, delivery guarantees)
+- [[Wasaby-BL-Calls]] — обзор вызовов БЛ
 - [[Wasaby-Task-Queue]] — `plugin-task-queue` для диспетчеризации задач
-- [[Wasaby-File-Transfer]] — Huge Payload Protocol
+- [[Wasaby-File-Transfer]] / [[File-Transfer-Service]] — Huge Payload Protocol
+- [[STOMP-Events-Bus]] — шина клиентских событий (браузер)
+- [[Server-Events-Bus]] — шина серверных событий
+- [[Wasaby-RabbitMQ]] — низкоуровневый RabbitMQ

@@ -12,6 +12,7 @@ related:
   - "[[Хоттабыч-System]]"
   - "[[UpdateSystem-FAQ]]"
   - "[[Wasaby-Cloud-Management]]"
+  - "[[UpdateSystem-ReleasePlans]]"
 created: 2026-06-12
 updated: 2026-06-12
 address: c-000076

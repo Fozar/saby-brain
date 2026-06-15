@@ -15,12 +15,13 @@ related:
   - "[[DWC-Client-Library-v1]]"
   - "[[DWC-Migration-SDK]]"
   - "[[price-formation/_index]]"
+  - "[[Wasaby-DWC]]"
 created: 2026-04-10
 ---
 
 # DWC - Distributed Workflow Coordinator (v2)
 
-Navigation: [[price-formation/_index]] | [[DWC-Migration-SDK]] | [[DWC-Client-Library-v1]]
+Navigation: [[price-formation/_index]] | [[DWC-Migration-SDK]] | [[DWC-Client-Library-v1]] | [[Wasaby-DWC]]
 
 **DWC (Distributed Workflow Coordinator)** — сервис для описания и выполнения сложных асинхронных бизнес-сценариев в кластерах сервисов СБИС.
 

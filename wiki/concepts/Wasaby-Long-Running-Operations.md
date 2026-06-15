@@ -15,6 +15,7 @@ status: current
 related:
   - "[[Wasaby-BL-Calls]]"
   - "[[Wasaby-Service-Framework]]"
+  - "[[LRS-Long-Request-Service]]"
 sources:
   - ".raw/wasaby.Backend/Middleware/Длительные операции/Длительные операции.sabydoc"
   - ".raw/wasaby.Backend/Middleware/Длительные операции/Работа с длительными операциями на бизнес-логике.sabydoc"
@@ -145,3 +146,4 @@ workflow2.LongRequestNotify("Обработано 150 из 1000 записей")
 
 - [[Wasaby-BL-Calls]] — AsyncInvoke как альтернатива для простых фоновых задач
 - [[Wasaby-Task-Queue]] — очередь задач для фоновой обработки
+- [[LRS-Long-Request-Service]] — детальная документация LRS: шардирование, бесшовное обновление, схема БД

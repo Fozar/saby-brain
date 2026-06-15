@@ -13,6 +13,7 @@ related:
   - "[[DWC-Client-Library-v1]]"
   - "[[Wasaby-DB-Access-Patterns]]"
   - "[[price-formation/_index]]"
+  - "[[Wasaby-Long-Running-Operations]]"
 created: 2026-04-10
 ---
 
@@ -289,3 +290,8 @@ settings.SetResultLinkText("Текст с параметром %1% %2%", "Пар
 
 - Серверное: `https://wi.sbis.ru/doc/platform/developmentapl/middleware/long-request-service/`
 - Клиентское (UI-часть): `https://wi.sbis.ru/doc/platform/developmentapl/middleware/long-request-service/#visual`
+
+## Связанные страницы
+
+- [[Wasaby-Long-Running-Operations]] — LRS в Wasaby (платформенная перспектива, API workflow2)
+- [[DWC-Distributed-Workflow-Coordinator]] — базовый DWC-сервис, надстройкой над которым является LRS

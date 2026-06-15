@@ -19,6 +19,7 @@ related:
   - "[[Wasaby-Scripts]]"
   - "[[Wasaby-Cloud-Management]]"
   - "[[UpdateSystem-DBConversion]]"
+  - "[[ReleasePlans-System]]"
 sources:
   - "[[release-plans-registry-2026-06-12]]"
 address: c-000083

@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-06-14 | Total pages: 312 | Sources ingested: 167
+Last updated: 2026-06-14 | Total pages: 334 | Sources ingested: 186
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -113,6 +113,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[Linter-Standarization-Project]] — проект подключения SonarQube+СТАН+pre-commit хуков к 10 репозиториям Лояльности и Транспорта ВИС; завершён 04.05.2026, перерасход +19.1% (status: completed)
 - [[SonarQube-Stan-Linter-Setup]] — пошаговая инструкция: TSLint→ESLint, report, исправление, pre-commit хуки, SonarQube sonar2 (status: current)
 - [[Price-Formation-Test-Runner]] — запуск тестов по классу/файлу/директории; пути run/, py_tests_runner, sbis_root, таймауты, /run-tests skill (status: current)
+- [[PriceFormation-Test-Framework]] — фреймворк юнит-тестирования price-formation (status: current)
 - [[ReferralProgram-GetPartnerList-Unjoined-Partners]] — GetPartnerList: CTE+LEFT JOIN вместо INNER JOIN, курсор PartnerId, SearchString в Python, партнёры без реферального кода через AgentContract (status: completed)
 - [[BonusChart-IterativeBlock-Bug-Fix]] — итеративный блок (10K ВЦД DESC) обрезал данные графика до конца месяца; фикс: 2B limit + skip EMA при WithoutResults=True (status: developing)
 - [[PostgreSQL-CTE-Cursor-Pushdown]] — проталкивание курсора пагинации внутрь CTE до GROUP BY; 3-4x ускорение без индекса; паттерн корректности для 1-к-1 CTE (status: current)
@@ -166,6 +167,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[BonusSettings-Sync-Restart-Bug]] — bugfix: при lty_broker_bonus_set настройки бонусов не обновлялись при рестарте; fix: PullAll→re_sync (reset cursor→FirstSync), в shelf (status: shelved)
 - [[ReferralProgram-DetachPartner-Implementation]] — `ReferralProgram.DetachPartner` для AT: удаление реферального кода партнёра (Карта+CRM+ВидЦеныДокумент), защита от боя, OWNER_MODERATOR (status: active)
 - [[ReferralProgram-Stub-Implementation]] — `ReferralProgram.CreateStub` + `UpdateStub`: 2 метода, 4 бизнес-сценария, StatusDate/EffectiveDate правило, LinkType константы, SQL+тесты (status: active)
+- [[ReferralStub-TargetAction-Pattern]] — паттерн целевого действия корешков: TargetAction, StatusDate, FilterByStatus (status: current)
 - [[LRS-Long-Request-Service]] — LRS надстройка над DWC: фоновые операции, прогресс, результаты, история 90д, шардированная БД, бесшовное обновление (status: current)
 - [[Loyalty-Sale-Application]] — подсистема применения лояльности на продаже: задачи, C++ ядро CalcDiscount, цикл расчёта, скидки/подарки/бонусы/штампики, режим оферты, организация кода (status: current)
 - [[Profiles-Service]] — Сервис Профилей: Персона-UUID, 3 контура (RW/RO-any/RO-spec), bi-directional sync, local-first стратегия (status: current)
@@ -183,12 +185,16 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[PriceFormation-Common-Helpers]] — cross-package price formation utilities and shared helpers (status: evergreen)
 - [[DCCommon-Helpers]] — DCCommon shared helpers for the discount card subsystem (status: evergreen)
 - [[Loyalty-Franchise-Mechanics]] — алгоритмы событий лояльности для франшизных сценариев (status: current)
+- [[Franchise-Contract-API]] — API договоров франшизы: методы FranchiseContract.* (status: current)
+- [[Franchise-Loyalty-Architecture]] — архитектура лояльности франшизы (status: current)
+- [[Franchise-Loyalty-System]] — система лояльности франшизы (status: current)
+- [[Franchise-SabyNet-Subsystem]] — подсистема Saby Net для франшизы (status: current)
 - [[Wasaby-BL-Call-Loop-Pattern]] — петля вызовов БЛ: причины (EndPoint+auth_data в одном ClientID), решение: CreateMultitenantEndpointByClientId; антипаттерны TenantContext (status: current)
-- [[Wasaby-BL-Objects]] — BL объекты, справочник объектов, сервис контракт, черновики, pgBouncer/пул соединений, SelectCurrentDB, задачи планировщика (status: current)
 - [[Wasaby-BL-Methods]] — таксономия методов БЛ; 7 типов; доступность Service Contract/Internal; наследование; перекрытие по имени (status: current)
 - [[Wasaby-BL-CRUD]] — Create/Read/Update/Delete/Copy/Merge/DeleteSelected/Sync: сигнатуры, алгоритмы, обработчики (status: current)
 - [[Wasaby-BL-List-Methods]] — декларативный + ручной список; ДопПоля/Фильтр/Сортировка/Навигация; типы фильтра Free/Linked/Hierarchical; DoS-защита ≤100 записей (status: current)
 - [[Wasaby-BL-List-Advanced]] — расширенные паттерны: курсорная/мульти навигация, порционная загрузка, ListIterator, ShowMarked, MoveToFolder, Sum.ByMethod, TranslitListCall, ListWithParents (status: current)
+- [[CursorNavigation-Mechanism]] — механизм курсорной навигации (status: evergreen)
 - [[Wasaby-Dev-Standards]] (c-000105) — стандарты разработки бэкенда Wasaby: Python/C++/SQL; Radon/Pylint инструменты; формула code review score (status: current)
 - [[Wasaby-SQL-Standard]] (c-000106) — стандарт SQL: PascalCase, 3-пробела, запятые после поля, именование @PK/rTable-Field/iTable-Index (status: current)
 - [[Wasaby-Python-Standard]] (c-000107) — стандарт Python: PEP-8 + 120 символов, CamelCase для методов БЛ, антипаттерны (Божественный объект, хелперы) (status: current)
@@ -216,8 +222,19 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[Wasaby-Request-Broker]] (c-000129) — брокер async-вызовов с гарантией: отслеживание статуса по ID, backup-сервис с компенсацией, для DWC/Scheduler (status: current)
 - [[Wasaby-Scheduler]] (c-000130) — планировщик задач: расписание (интервал/ежедневно/еженедельно/ежемесячно), Genie, итеративные задачи, приоритеты параметров (status: current)
 - [[Wasaby-Report-Prefetch]] (c-000131) — кэширование больших отчётов: Prefetch.List, PrefetchMethod/Pages/SessionId, иерархия, сортировка на стороне Prefetch, fallback при ошибке (status: current)
+- [[Report-Prefetch-Service]] — сервис предварительного расчёта отчётов: архитектура, интеграция (status: current)
+- [[ReportPrefetch-DB-Schema]] — схема БД Report Prefetch: таблицы и индексы (status: current)
 - [[Wasaby-HTML-Converter]] (c-000132) — HTML→PDF: converter_html/PdfConverter.ConvertHtml/ConvertUrl/ConvertHtmlToFileTransfer, webshot/ImageConverter, delayed print (status: current)
 - [[Wasaby-Informers]] (c-000133) — информеры/счётчики: Redis-кэш, Counters.Set, Informers.GetJoinData, восстановление через планировщик 100мс (status: current)
+- [[Wasaby-Multimedia-Loader]] (c-000134) — загрузка файлов из интернета по URL: Get/1/2, GetWithPipeline/2; pipeline: Antivirus/MimeTypes/ToFileTransfer/ToSbisDisk (status: current)
+- [[Wasaby-PDF-Transformer]] (c-000135) — конвертация PDF→PDF/A: ConvertPDFToPDFA/2 и /3; Conformance Level1A–Level4F (status: current)
+- [[Wasaby-Profiles-Service]] (c-000136) — централизованный сервис профилей пользователей: Персона/UUID, три контура RW/RO-any/RO-spec, двусторонняя синхронизация (status: current)
+- [[Wasaby-DWC]] (c-000137) — Distributed Workflow Coordinator: граф задач, rate limiting, merge/dedup вызовов, отложенное исполнение (status: current)
+- [[Wasaby-Image-Service]] (c-000138) — img-remote: stateful сервис обработки изображений (ImageMagick); сессия = один BL-вызов; использовать только через Image-BL модуль (status: current)
+- [[Wasaby-Conan]] (c-000139) — Conan C++ package manager: 1 lib=1 recipe=1 repo, Jenkins builds, conan-server, local_build.py, версия = версия платформы (status: current)
+- [[Wasaby-STOMP]] (c-000140) — STOMP bus: BL→AMQP→Route→Web→WebSocket клиент; exchange !web-entrypoint; области доставки user/client/global (status: current)
+- [[Wasaby-Mass-Mailings]] (c-000141) — сервис массовых рассылок: md_client.MassDistribution, SetReceiver/DelReceiver/Commit; задачи выполняются через DWC per subscriber (status: current)
+- [[Wasaby-Sync-Broker]] (c-000142) — облачный брокер синхронизации: хранит факты изменений, реактивная синхронизация через STOMP-уведомления (status: current)
 - [[LoyaltyPrograms-IterativeListLoading]] — ListWithCursor, ListWithCompositeCursor, IterativeBlockSizeEmaMixin, SaleListWithCursor: итеративная порционная загрузка реестров покупок (status: current)
 - [[Wasaby-BL-Advanced]] — кэширование, таймауты (Call/Execution/SetTimeout), Antibot (Frequent call protection), Access area, Handlers, Custom method, ConfidentialOutput/Scope, Proxy/HTTP, File methods (status: current)
 - [[Wasaby-Python-Patterns]] — sbis.Error/Warning; `with CreateTransaction`; работа с файлами через with (status: current)
@@ -246,7 +263,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[Wasaby-Local-Stand-Setup]] — Локальный стенд: файловая структура, тестовые домены и логины, Genie, SDK совместимость (status: current)
 - [[Wasaby-RabbitMQ]] — RabbitMQ базовые концепции: exchange типы (fanout/direct/topic/headers), durability, QoS, Publish Confirms (status: current)
 - [[STOMP-Events-Bus]] — Шина клиентских событий: 2 слоя (Route/Web), WebSocket+STOMP, сегментирование по CID, 3 диапазона публикации (status: current)
-- [[Async-Calls-Bus]] — Шина асинхронных вызовов: Proxy+Main слои, именование очередей, Huge Payload Protocol >100 КБ (status: current)
+- [[Wasaby-MQ]] — RabbitMQ шины: асинхронные вызовы (AsyncInvoke) + серверные события + STOMP; 2 слоя (Proxy/Main), именование очередей, Huge Payload >100 КБ (c-000128) (status: current)
 - [[Wasaby-BL-AsyncInvoke]] — Invoke/AsyncInvoke API: локальный/удалённый вызов, EndPoint, аутентификация, гарантии доставки (AMQP/RBC), callbacks/errbacks, SetAsyncPriority (c-000073) (status: current)
 - [[Server-Events-Bus]] — Шина серверных событий: pub-sub между БЛ, гарантия через durable флаг, Proxy+Main (status: current)
 - [[Request-Broker-Service]] — request-broker: трекинг статуса async-запросов для DWC/Scheduler; 3 компонента, berkeley-db, backup-компенсация (status: current)
@@ -348,7 +365,12 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[linter-project-2026-05-18]] — 2026-05-18 | SonarQube+СТАН linter project docs
 - [[sabyget-docs-2026-05-18]] — 2026-05-18 | 10 docs: SabyGet product + subsystems + data architecture | 3 pages created
 - [[sbis-access-request-2026-05-19]] — 2026-05-19 | 2 docs: API запросов доступа + Поддержка | 1 page created
+- [[saby-api-docs-2026-05-21]] — 2026-05-21 | Saby API Docs: аутентификация и задачи (СБИС.СписокЗадач, error codes)
+- [[sbis-api-sbis-mcp-2026-05-21]] — 2026-05-21 | SBIS API reference для sbis-mcp: методы, форматы, протокол
+- [[sbis-jsonrpc-protocol-format]] — формат протокола JSON-RPC (wasaby.Backend)
 - [[saby-api-docs-objects-2026-05-21]] — 2026-05-21 | 6 docs: Документ + Навигация + протокол + типы данных + строки | 3 pages created
+- [[wasaby-sharedfuture-2026-05-22]] — 2026-05-22 | параллельные удалённые запросы: Shared Future, FutureInvoke, ParallelTasks
+- [[sveshnikov-stub-creation-thoughts-2026-05-28]] — 2026-05-28 | мысли Свешникова: создание корешков и реферальные сценарии
 - [[wasaby-cross-client-call-2026-06-04]] — 2026-06-04 | Форум wasaby.Backend: вызов БЛ-метода под другим клиентом+юзером без петли; AuthByClientAndUserId vs CreateMultitenantEndpointByClientId | 1 page created, 1 updated
 - [[wasaby-bl-call-loop-user-switch-2026-06-04]] — 2026-06-04 | SBIS Forum: петля вызовов при смене пользователя, одном ClientID; CreateMultitenantEndpointByClientId как решение | 1 page created
 - [[sbis-plan-june-2026]] — 2026-06-09 | SBIS план работ «Система лояльности» июнь 2026: 19 пунктов, 37.3ч; SabyBank RKO Referral, корешки, DWC внедрение, удаление фич | 1 page created

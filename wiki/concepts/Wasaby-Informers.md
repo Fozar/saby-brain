@@ -93,6 +93,24 @@ Counters = obj.AsyncInvoke('Set', {
 | `Counters.Set(values)` | Установить значения счётчиков |
 | `Informers.Set(...)` | Установить значение информера |
 
+## Настройка отображения на странице
+
+В `contentConfig` страницы можно управлять видимостью информеров:
+
+```json
+"informersConfig": {
+  "excludesNames": ["HiddenForCurrentPageInformer"],
+  "includesNames": ["ShownOnlyForCurrentPageInformer"]
+}
+```
+
+- `excludesNames` — скрыть указанные информеры на этой странице
+- `includesNames` — показать информеры, помеченные как `isHidden` в конфиге
+
+### Системные имена стандартных информеров
+
+`Notes`, `Messages`, `Calls`, `CallsCenter`, `Webinar`, `Meeting`, `Videoconference`, `Consultations`, `License`, `EQueue`, `Scripts`, `Auction`, `Claims`, `ConsultantChannels`, `ActiveCall`, `TodayInformer`, `Basket`
+
 ## Связанные страницы
 
 - [[Wasaby-BL-Calls]] — вызов `AsyncInvoke('Set', ...)` на сервис informers

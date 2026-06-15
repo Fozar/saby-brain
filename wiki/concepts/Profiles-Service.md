@@ -11,6 +11,7 @@ status: current
 related:
   - "[[Wasaby-Framework]]"
   - "[[Multitenancy-Architecture]]"
+  - "[[Wasaby-Profiles-Service]]"
 created: 2026-04-10
 ---
 
@@ -76,3 +77,8 @@ Git:
 - `git.sbis.ru/usermngt/profiles2`
 
 Public API: `online.sbis.ru/shared/disk/31bd6721-e745-4ab6-9e18-2e77fdb9e22f`
+
+## Связанные страницы
+
+- [[Wasaby-Profiles-Service]] — Сервис Профилей (платформенная перспектива: типы контактов, права, Demo/ФЛ режимы)
+- [[Multitenancy-Architecture]] — мультиарендность: изолированные схемы, маршрутизация

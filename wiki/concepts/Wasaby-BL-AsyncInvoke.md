@@ -11,12 +11,14 @@ tags:
   - rbc
 status: current
 related:
-  - "[[Async-Calls-Bus]]"
+  - "[[Wasaby-MQ]]"
   - "[[Wasaby-BL-Advanced]]"
   - "[[Wasaby-BL-Methods]]"
   - "[[Request-Broker-Service]]"
   - "[[File-Transfer-Service]]"
   - "[[DWC-Distributed-Workflow-Coordinator]]"
+  - "[[Wasaby-BL-Objects]]"
+  - "[[Sync-Broker]]"
 created: 2026-06-11
 updated: 2026-06-11
 ---
@@ -65,6 +67,9 @@ blcore::EndPoint ep{ L"telephony" };
 int result = blcore::Object{ L"Phonebook", ep }.Invoke< int >( L"ReadNumber", param1, param2 );
 ```
 
+> [!warning] Вызов по абсолютному URL
+> Политики аутентификации (`AuthByUserID` и др.) не работают, если вместо системного имени сервиса используется абсолютный URL.
+
 ## Аутентификация при удалённом вызове
 
 По умолчанию используется текущая сессия. Для **персональных сервисов** необходимо явно задать пользователя/клиента через `auth_data` в EndPoint:
@@ -105,7 +110,7 @@ response = ep.MyBLOName.MyMethodName(param1, param2)
 - Обработан **не менее одного раза** — может быть повторён; число повторов задаётся `SetRepeatCnt`.
 - Управление возвращается после подтверждения от брокера.
 - Протоколы:
-  - **AMQP** (по умолчанию) — через [[Async-Calls-Bus]] / RabbitMQ.
+  - **AMQP** (по умолчанию) — через [[Wasaby-MQ]] / RabbitMQ.
   - **RBC** — через платформенный [[Request-Broker-Service]].
 
 ```python
@@ -214,7 +219,7 @@ obj.AsyncInvoke('НазваниеМетода', param,
 - **Ошибки**: `<основная>#error`
 - **Отложенные**: `<основная>#delay<ВремяПовтора>`
 
-Подробнее о шине — [[Async-Calls-Bus]].
+Подробнее о шине — [[Wasaby-MQ]].
 
 ## Модули для асинхронных вызовов
 
@@ -227,3 +232,10 @@ obj.AsyncInvoke('НазваниеМетода', param,
 | `RequestBrokerClient` | Работа с request-broker (при RBC) |
 | `Berkeley DB` / `Berkeley Storage` | Локальное временное хранилище вызовов |
 | `MessageBroker` | Базовый модуль для произвольного брокера |
+
+## Связанные страницы
+
+- [[Wasaby-BL-Objects]] — BL-объекты и их типы методов (CRUD, List, File, Remote)
+- [[DWC-Distributed-Workflow-Coordinator]] — граф задач для сложных async-сценариев
+- [[Sync-Broker]] — офлайн-облако синхронизация: работает поверх async-вызовов
+- [[Wasaby-MQ]] — шина AMQP: детали протокола и именования очередей

@@ -132,6 +132,15 @@ sh memray_script.sh flamegraph -h
 
 Заказывать через поручение "Выполнить на рабочем" в ЦОД.
 
+## FAQ
+
+| Ошибка / предупреждение | Причина | Решение |
+|------------------------|---------|---------|
+| `chmod:/rm:/mkdir: '/mnt/heaptrack/...': Read-only file system` | Разделяемая директория подключена на чтение | Переподключить в режиме записи/чтения |
+| `Can't read /etc/scl/conf/devtoolset-9, devtoolset-9 is probably not installed` | Скрипт пытается включить devtoolset-9 для нового gdb | Игнорировать — не критично |
+| Ошибка `umount`: `/mnt/heaptrack/` Busy | Директория занята | `sudo umount -f -l /mnt/heaptrack` |
+| `Failed to stop tracking in remote process: no previous memray attach call detected` | Не ошибка — Memray уже отцепился по таймауту; скрипт пытается отцепить явно | Игнорировать |
+
 ## Связанные страницы
 
 - [[Wasaby-Perforator]] — профилировщик CPU (Perforator от Яндекса)

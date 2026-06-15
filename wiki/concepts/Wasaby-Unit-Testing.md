@@ -162,21 +162,43 @@ def test_with_mock():
 
 ### Таблица типов для type hints
 
-| Python | Тип Saby |
-|--------|----------|
-| `int` | ftINT64 |
-| `str` | ftSTRING |
-| `float` | ftDOUBLE |
-| `bytes` | ftBINARY |
-| `sbis.Record` | ftRECORD |
-| `sbis.RecordSet` | ftRECORDSET |
-| `list[int]` | ftARRAY_INT64 |
-| `uuid.UUID` | ftUUID |
+| Python type hint | Тип Saby |
+|-----------------|----------|
 | `None` | ftUNDEFINED |
+| `int` | ftINT64 |
+| `float` | ftDOUBLE |
+| `str` | ftSTRING |
+| `bytes` | ftBINARY |
+| `date` | ftDATE |
+| `time` | ftTIME |
+| `datetime` | ftDATETIME |
+| `timedelta` | ftTIMEINTERVAL |
+| `Decimal` | ftDECIMAL |
+| `UUID` | ftUUID |
+| `dict` | ftHASH_TABLE |
+| `Record` | ftRECORD |
+| `RecordSet` | ftRECORDSET |
+| `list[int]` | ftARRAY_INT64 |
+| `list[float]` | ftARRAY_DOUBLE |
+| `list[str]` | ftARRAY_TEXT |
+| `list[bool]` | ftARRAY_BOOLEAN |
+| `list[date]` | ftARRAY_DATE |
+| `list[time]` | ftARRAY_TIME |
+| `list[datetime]` | ftARRAY_DATETIME |
+| `list[timedelta]` | ftARRAY_TIMEINTERVAL |
+| `list[Decimal]` | ftARRAY_DECIMAL |
+| `list[UUID]` | ftARRAY_UUID |
+| `ObjectId` | ftIDENTIFIER |
+| `Navigation` | ftNAVIGATION |
+| `SortingList` | ftSORTING |
+| `RpcFile` | ftRPC_FILE |
+| `Flags` | ftFLAGS |
 
-### C++ mock_service
+> [!warning] Нельзя замокать из Python методы с оригиналами на C++, если те используют типы, не имеющие представления в Python.
 
-**CMakeLists.txt** для теста без сервиса:
+### C++ mock_service (тест без сервиса)
+
+**CMakeLists.txt**:
 ```cmake
 sbis_add_sdk_dependencies(sbis-lib300 sbis-bl-core300 sbis-rpc-service300 sbis-mock-service)
 sbis_enable_static_build(GENERATE_STATIC_INITIALIZERS INITIALIZERS "InitTest")
@@ -202,6 +224,18 @@ BOOST_AUTO_TEST_CASE(TestSomeLib) {
     // mock автоматически уничтожается при выходе из области видимости
 }
 ```
+
+### C++ mock_service (тест мобильного микросервиса с сервисом)
+
+В отличие от теста без сервиса, здесь облако уже развёрнуто. Нужно:
+1. Добавить модуль `MockService` в s3srv тестового облака через Genie
+2. В CMakeLists.txt добавить только `sbis-mock-service` (без `sbis-lib300` и InitTest)
+
+```cmake
+sbis_add_sdk_dependencies(sbis-mock-service)
+```
+
+Код теста аналогичен тесту без сервиса — тот же `mock_service::MockService("service_name"_sv)`.
 
 ### monkeypatch для EndPoint (pytest)
 

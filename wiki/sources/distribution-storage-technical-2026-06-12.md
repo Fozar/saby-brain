@@ -10,7 +10,7 @@ tags:
 status: current
 related:
   - "[[UpdateSystem-DistributionStorage]]"
-  - "[[DistributionStorage-DB-Schema]]"
+  - "[[UpdateSystem-DistributionStorage-DB]]"
 address: c-000096
 ---
 

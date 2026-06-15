@@ -10,6 +10,40 @@ related:
   - "[[index]]"
 ---
 
+## [2026-06-14] ingest | wasaby.Backend — Conan / STOMP / Mailings / Sync Broker / DWC full API / i18n extras (продолжение 9)
+- Sources: 5 файлов (Conan, STOMP, массовые рассылки, облачный брокер синхронизации, DWC API)
+- Pages created: [[Wasaby-Conan]] (c-000139), [[Wasaby-STOMP]] (c-000140), [[Wasaby-Mass-Mailings]] (c-000141), [[Wasaby-Sync-Broker]] (c-000142)
+- Pages updated: [[Wasaby-DWC]] (full WorkflowBuilder/Sender API, .dwc metadata, merge policies), [[Wasaby-i18n]] (контекст перевода, роли ИмяРоли@@, системные секции ИмяУчасткаСистемы@@)
+- Key insight: STOMP bus — 2-layer RabbitMQ: Route (AMQP from BL) → Web (WebSocket клиентам); Sync Broker хранит ФАКТЫ изменений, а не сами данные; MassDistribution = DWC per subscribed user
+
+## [2026-06-14] ingest | wasaby.Backend batch — ЗАВЕРШЁН (итог)
+- Sources: 557 файлов просмотрено; ~60 обработано; ~497 пропущено (ops/archived/roadmaps/training links/internal arch)
+- Pages created: c-000105..c-000138 (34 новые страницы; [[Wasaby-Dev-Standards]], [[Wasaby-SQL-Standard]], [[Wasaby-Python-Standard]], [[Wasaby-Cpp-String-Standard]], [[Wasaby-Service-Framework]], [[Wasaby-BL-Calls]], [[Wasaby-BL-Objects]], [[Wasaby-Unit-Testing]], [[Wasaby-SQL-DBA]], [[Wasaby-Long-Running-Operations]], [[Wasaby-Task-Queue]], [[Wasaby-Service-Node-Architecture]], [[Wasaby-i18n]], [[Wasaby-Third-Party-Libraries]], [[Wasaby-Parameters-Service]], [[Wasaby-Distributed-Locks]], [[Wasaby-ClickHouse]], [[Wasaby-FTS]], [[Wasaby-File-Transfer]], [[Wasaby-Memray]], [[Wasaby-Perforator]], [[Wasaby-Python-Debug]], [[Wasaby-History-Service]], [[Wasaby-MQ]], [[Wasaby-Request-Broker]], [[Wasaby-Scheduler]], [[Wasaby-Report-Prefetch]], [[Wasaby-HTML-Converter]], [[Wasaby-Informers]], [[Wasaby-Multimedia-Loader]], [[Wasaby-PDF-Transformer]], [[Wasaby-Profiles-Service]], [[Wasaby-DWC]], [[Wasaby-Image-Service]])
+- Key insight: Batch охватывает всё разработческое API Wasaby backend: от стандартов и фреймворка до middleware (MQ, брокеры, планировщик, кэш отчётов, конвертеры, информеры, профилировщики, отладка)
+
+## [2026-06-14] ingest | wasaby.Backend batch — финализация (продолжение 8)
+- Source: `.raw/wasaby.Backend/` — 3 файла (informers display, parameters-constants, prefetch arch)
+- Pages created: none
+- Pages updated: [[Wasaby-Informers]] (display config: excludesNames/includesNames + список стандартных), [[Wasaby-Parameters-Service]] (раздел parameters-constants)
+- Key insight: informers отображением можно управлять через contentConfig страницы; parameters-constants = parameters без автоочистки + API для выборки по периоду действия
+
+## [2026-06-14] ingest | wasaby.Backend batch — DWC / Image / Memray FAQ (продолжение 7)
+- Source: `.raw/wasaby.Backend/` — 4 файла (img-remote, Memray FAQ, Perforator FAQ, DWC)
+- Pages created: [[Wasaby-DWC]] (c-000137), [[Wasaby-Image-Service]] (c-000138)
+- Pages updated: [[Wasaby-Memray]] (FAQ секция — 4 известные ошибки)
+- Key insight: img-remote stateful — сессия = один BL вызов, нет публичного API, только через Image-BL; DWC = async граф задач с rate limiting
+
+## [2026-06-14] ingest | wasaby.Backend batch — DWC + Profiles + MockService (продолжение 6)
+- Source: `.raw/wasaby.Backend/` — 3 файла (DWC, Сервис Профилей, Моки внешних ресурсов)
+- Pages created: [[Wasaby-Profiles-Service]] (c-000136), [[Wasaby-DWC]] (c-000137)
+- Pages updated: [[Wasaby-Unit-Testing]] (полная таблица type hints для MockService + C++ тест с сервисом)
+- Key insight: DWC = граф задач с rate-limiting и merge/dedup; Персона = UUID физлица (пользователь = 64-bit Client<<32|Лицо); MockService type hints — 28 типов Python→Saby
+
+## [2026-06-14] ingest | wasaby.Backend batch — Multimedia-Loader / PDF-Transformer (продолжение 5)
+- Source: `.raw/wasaby.Backend/Middleware/` — 2 файла
+- Pages created: [[Wasaby-Multimedia-Loader]] (c-000134), [[Wasaby-PDF-Transformer]] (c-000135)
+- Key insight: Multimedia Loader поддерживает пользовательские pipeline с операциями Antivirus/MimeTypes/ToFileTransfer; PDF Transformer конвертирует PDF→PDF/A с 11 уровнями соответствия (Level1A..Level4F)
+
 ## [2026-06-14] ingest | wasaby.Backend batch — Сервисы общего назначения (продолжение 4)
 - Source: `.raw/wasaby.Backend/Сервисы общего назначения/` — 5 файлов
 - Pages created: [[Wasaby-HTML-Converter]] (c-000132), [[Wasaby-Informers]] (c-000133)

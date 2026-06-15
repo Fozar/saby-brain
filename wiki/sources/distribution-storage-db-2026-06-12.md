@@ -10,7 +10,7 @@ tags:
 status: current
 related:
   - "[[UpdateSystem-DistributionStorage]]"
-  - "[[DistributionStorage-DB-Schema]]"
+  - "[[UpdateSystem-DistributionStorage-DB]]"
 address: c-000094
 ---
 
@@ -74,5 +74,5 @@ ServicePart(Revision), ServicePart(md)
 
 ## Страницы, созданные на основе этого источника
 
-- [[DistributionStorage-DB-Schema]] — детальная схема БД
+- [[UpdateSystem-DistributionStorage-DB]] — детальная схема БД
 - [[UpdateSystem-DistributionStorage]] — обновлён раздел БД

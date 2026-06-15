@@ -16,6 +16,7 @@ related:
   - "[[Sync-Broker-Sharding]]"
   - "[[Sync-Broker-Reactive]]"
   - "[[Sync-Broker-Management]]"
+  - "[[Wasaby-Sync-Broker]]"
 created: 2026-04-10
 ---
 
@@ -137,3 +138,10 @@ broker_event.Send()
 - Конкретный пример: `lty_broker_bonus_set` включила `SyncLoyalty` → `Sync(BonusSettingsSync())` параллельно с `BrokerSyncLoyalty` → `Sync(PromoCodeSync())` → курсор промокодов сломан. Fix: [[BrokerLoyalty-BonusSettings-Race-Fix]].
 
 **SyncManager framework:** `BrokerSyncLoyalty` использует `offlinesynchronizer.SyncManager` — гарантирует последовательную обработку зарегистрированных синхронизаторов (`AbstractSync`). `LoyaltySynchronizer(name)` реализует `AbstractSync`: `Pull(filters)` и `PullAll()` делегируют нужному handler'у по `name`. Регистрация при старте: `LoyaltySync.sync_init()` → `SyncManager.Instance().AddSync(...)`.
+
+## Связанные страницы
+
+- [[Wasaby-Sync-Broker]] — облачный брокер синхронизации (платформенная перспектива: факты изменений, STOMP-уведомления)
+- [[Sync-Broker-Architecture]] — детальная архитектура: 4 компонента, primary/regular sync, PG→CH
+- [[Sync-Broker-Sharding]] — шардирование: роутер, личные очереди, алгоритм кэша маршрутов
+- [[Sync-Broker-Reactive]] — реактивная синхронизация: 3 типа STOMP (no-body/inline/loadable)
