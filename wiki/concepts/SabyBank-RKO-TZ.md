@@ -88,7 +88,6 @@ Navigation: [[SabyBank-RKO-Referral]] | [[SabyBank-RKO-WorkPlan]] | [[price-form
 
 **Система [SabyNet]:**
 - ЛК Владельца / Партнёра
-- Механизм приглашения Партнёров
 
 ---
 

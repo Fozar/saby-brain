@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/SabyBank-RKO-TZ.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "SabyBank-RKO-TZ"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "wiki/concepts/SabyBank-RKO-TZ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки"
+              "title": "Обратные ссылки для SabyBank-RKO-TZ"
             }
           },
           {
@@ -195,6 +200,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/hot.md",
     "raw/Программируем/Оформление технической документации/Шаблон базы знаний разработки внутреннего продукта/[Подсистема]/Техническая документация/Подсистема распределения прав.pdf",
     "raw/Программируем/Оформление технической документации/Шаблон базы знаний разработки внутреннего продукта/[Подсистема]/Техническая документация/Параметры облака, задачи планировщика.pdf",
     "raw/Программируем/Оформление технической документации/Шаблон базы знаний разработки внутреннего продукта/[Подсистема]/Техническая документация/Организация кода.pdf",
@@ -205,7 +211,6 @@
     "raw/Программируем/Оформление технической документации/Шаблон базы знаний разработки внутреннего продукта/[Подсистема]/Техническая документация/[Облачный сервис].pdf",
     "raw/Программируем/Общие механики разработки/Интернационализация/Как локализовать приложение/Как локализовать UI мобильного приложения/Локализация UI мобильного приложения в iOS.pdf",
     "raw/Программируем/Общие механики разработки/Интернационализация/Как локализовать приложение/Как локализовать UI мобильного приложения/Локализация UI мобильного приложения в Android.pdf",
-    "raw/Программируем/Общие механики разработки/Система прав/Техническая документация/Сервис управления правами в облаке (rights-mng)/Сервис управления правами в облаке (rights-mng).pdf",
     "wiki/sources/sabybank-rko-referral-pdf-2026-06-15.md",
     "wiki/concepts/SabyBank-RKO-WorkPlan.md",
     "wiki/concepts/SabyBank-RKO-TZ.md",
@@ -213,7 +218,6 @@
     "wiki/meta/tiling-report-2026-06-14.md",
     "wiki/concepts/Semantic Topic Clustering.md",
     "wiki/concepts/FileStorage-Service.md",
-    "wiki/hot.md",
     "wiki/concepts/Wasaby-DWC.md",
     "wiki/concepts/Wasaby-STOMP.md",
     "wiki/concepts/Wasaby-Profiles-Service.md",
