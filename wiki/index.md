@@ -153,7 +153,9 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[Акции-Info-Model]] — Promotion/Discount объектная модель; Conditions 15+ полей; Profit/Threshold структуры (status: current)
 - [[Акции-Architecture]] — конкурс скидок 3-приоритетный; суммируемые скидки; комплектные; алгоритм округления; OOP Discount hierarchy (status: current)
 - [[Акции-UI]] — LoyaltyOnline/Promotion/registry:Browser; promoRegistry:Base мастер-деталь; компоненты карусели/баннера/продаж (status: current)
-- [[SabyBank-RKO-Referral]]
+- [[SabyBank-RKO-Referral]] — проект рефералки в заявках на РКО; корешки ВЦД, 3 API, 4 этапа, выпуск 18.08.26 (status: current)
+- [[SabyBank-RKO-TZ]] — полное ТЗ: API-методы, схема хранения, выборки БД с индексами, UI-декомпозиция (status: current)
+- [[SabyBank-RKO-WorkPlan]] — план работ 166,5 дня: этапы, сроки, исполнители по каждой задаче (status: current)
 - [[SetLeadPrice-SABYBANK-Stub-Branch]] — ветвление SetLeadPrice по ProgramType.SABYBANK: корешки фильтруются по ТипСвязи IS NOT NULL (status: current)
 - [[SabyBank-Stub-Rewards-Calculation]] — GetLeadPeriodList и sql_get_price_stats (GetStats/GetStatsByPartner) переведены на корешки для SabyBank; SQL-паттерн `<> 1 OR ТипСвязи IS NOT NULL`; IsSabyBank Python-флаг (status: current) — ветвление SetLeadPrice по ProgramType.SABYBANK: корешки фильтруются по @ВидЦеныДокумент+ТипСвязи IS NOT NULL вместо Документ; история не пишется (status: current) — проект: рефералка для банковских заявок на РКО по API; корешки ВЦД, 3 API метода, 4 этапа, срок 18.08.26 (status: current)
 - [[Loyalty-React-Migration-Project]] — проект: перевод 5 разделов лояльности на React; 147,5 чд, дедлайн 27.02.26; новый Bonus.GetBaseSettings, курсорная навигация, порционная загрузка (status: active)

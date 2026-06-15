@@ -22,7 +22,7 @@ created: 2026-04-10
 
 # SabyBank RKO Referral — Рефералка в Заявках в банк на РКО
 
-Navigation: [[price-formation/_index]] | [[ReferralProgram-Module]] | [[ReferralDeals-System]]
+Navigation: [[price-formation/_index]] | [[SabyBank-RKO-TZ]] | [[SabyBank-RKO-WorkPlan]] | [[ReferralProgram-Module]] | [[ReferralDeals-System]]
 
 Проект внедряет реферальную систему на Заявки, отправляемые в банк на открытие расчётного счёта (РКО) по API. Цель — Тензор получает статистику по заявкам и возможность начислять вознаграждения.
 
