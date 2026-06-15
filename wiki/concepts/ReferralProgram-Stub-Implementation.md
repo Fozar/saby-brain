@@ -3,7 +3,7 @@ type: decision
 address: c-000013
 title: "ReferralProgram Stub Implementation — CreateStub, UpdateStub, ReadStub"
 created: 2026-05-08
-updated: 2026-06-04
+updated: 2026-06-15
 decision_date: 2026-05-08
 status: active
 tags:
@@ -163,6 +163,92 @@ RETURNING TRUE
 
 ---
 
+## CreateLead → CreateStub Integration (задача 06152561, 2026-06-15)
+
+`ReferralProgram.CreateLead` теперь автоматически создаёт корешок после создания CRM-сделки.
+
+### Поток выполнения
+
+```
+CreateLead
+  → sbis.CRMLead.insertRecord(...)        # создать сделку → result.Get('@Документ')
+  → sbis.ReferralProgram.GetLead(program_id, doc_id, None, partner_id)  # КРИТИЧНЫЙ
+  → _get_stub_status_from_events(events)   # маппинг статуса
+  → [try] ReferralLeadHistory.commit_new_lead(...)  # НЕКРИТИЧНЫЙ (try/except)
+  → _create_stub_for_lead(...)             # КРИТИЧНЫЙ
+```
+
+**Принцип**: GetLead и CreateStub — критичные операции, падение = падение метода. Запись в историю — некритичная, оборачивается в `try/except`.
+
+### Маппинг статуса из CRM-событий
+
+`sbis.ReferralProgram.GetLead` возвращает `Record` с полем `Events` (RecordSet от `SourcesSales.GetLeadInfoV2`). Сортировка: от новых к старым, `events[0]` — последнее событие.
+
+Поле `Events.Статус` использует `TransitionResults`: `INWORK=0`, `POSITIVE=1`, `NEGATIVE=2`.
+
+```python
+def _get_stub_status_from_events(events) -> tuple[int, str | None]:
+    if not events or events.Size() == 0:
+        return LinkType.REQUEST_IN_PROGRESS, sbis.rk('В работе')
+
+    last_event = events[0]
+    crm_status = last_event.Get('Статус')
+    transition_name = last_event.Get('НазваниеПерехода')
+
+    if crm_status == 1:   # POSITIVE
+        return LinkType.REQUEST_SUCCESS, str(transition_name) if transition_name else sbis.rk('Завершено положительно')
+    if crm_status == 2:   # NEGATIVE
+        return LinkType.REQUEST_FAILURE, str(transition_name) if transition_name else sbis.rk('Завершено отрицательно')
+    return LinkType.REQUEST_IN_PROGRESS, str(transition_name) if transition_name else sbis.rk('В работе')
+```
+
+`НазваниеПерехода` — приоритетный источник `StatusDescription`. `sbis.rk(...)` — только fallback при пустом имени.
+
+### SQL для UUID документа
+
+```sql
+SELECT "ИдентификаторДокумента"
+FROM "Документ"
+WHERE "@Документ" = $1
+```
+
+Используется в `_create_stub_for_lead` для получения UUID сделки (`RequestUUID` корешка). Если UUID не найден — `ValueError` (не `sbis.Warning`).
+
+### SqlQueryScalar порядок вызовов в CreateLead
+
+```python
+# 1. is_referral_code_exists_for_partner  → True/False
+# 2. SQL_GET_REFERRAL_CODE_IDENTIFIER     → referral_code_uuid
+# 3. _SQL_GET_LEAD_UUID                   → lead_doc_uuid
+```
+
+При мокировании в тестах: `mock.patch('sbis.SqlQueryScalar', side_effect=[True, referral_code_uuid, lead_doc_uuid])`.
+
+### Тестовый паттерн
+
+Новый тест `test_create_lead_creates_stub`:
+```python
+mock.patch('sbis.ReferralProgram.GetLead') as mock_get_lead,
+mock.patch('sbis.ReferralProgram.CreateStub') as mock_create_stub,
+mock.patch('sbis.SqlQueryScalar', side_effect=[True, referral_code_uuid, lead_doc_uuid])
+# ...
+mock_get_lead.return_value = sbis.Record({'LeadNum': lead_num, 'LeadDate': None})
+# Assertions:
+request.Get('RequestUUID') == str(lead_doc_uuid)
+request.Get('RequestNumber') == lead_num   # int, не str
+request.Get('Status') == 10               # REQUEST_IN_PROGRESS
+```
+
+Остальные 5 тестов CreateLead — добавлены:
+```python
+mock.patch('sbis.ReferralProgram.GetLead') as mock_get_lead,
+mock.patch('priceformationonline.referralprogram.referralprogram.create_lead._create_stub_for_lead')
+# setup:
+mock_get_lead.return_value = sbis.Record({'LeadNum': None, 'LeadDate': None})
+```
+
+---
+
 ## Тесты
 
 ### CreateStub
@@ -184,6 +270,10 @@ RETURNING TRUE
 - `test_client_name_not_changed_when_none` — None не затирает ClientName
 - `test_status_description_updated_in_attributes` — StatusDescription → Events[1].НазваниеПерехода
 - `test_not_found_raises_warning` — несуществующий UUID → Warning
+
+### CreateLead (задача 06152561)
+- `test_create_lead_creates_stub` — при создании сделки создаётся корешок с правильным RequestNumber (int) и RequestUUID
+- Остальные 5 тестов CreateLead — добавлены моки `sbis.ReferralProgram.GetLead` и `_create_stub_for_lead`
 
 ### ReadStub
 - `test_returns_request_uuid` — UUID заявки
