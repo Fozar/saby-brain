@@ -10,6 +10,11 @@ related:
   - "[[index]]"
 ---
 
+## [2026-06-16] save | ReferralProgram Data Model
+- Type: concept
+- Location: wiki/concepts/ReferralProgram-Data-Model.md
+- From: анализ задачи 06096778 (миграция оффера Т-банк между Реф. Сетями) — модель данных, access_data_guid, utm_rfcid, оценка задач
+
 ## [2026-06-15] save | Баг: удаление фичи entity_sp до полного раскатывания
 - Type: synthesis
 - Location: wiki/questions/entity-sp-deletion-order-2026-06-15.md

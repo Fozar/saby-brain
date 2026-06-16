@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/concepts/SabyBank-RKO-TZ.md",
+                "file": "wiki/concepts/SabyBank-RKO-Referral.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SabyBank-RKO-TZ"
+              "title": "SabyBank-RKO-Referral"
             }
           }
         ]
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/concepts/SabyBank-RKO-TZ.md",
+                "file": "wiki/concepts/SabyBank-RKO-Referral.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для SabyBank-RKO-TZ"
+              "title": "Обратные ссылки для SabyBank-RKO-Referral"
             }
           },
           {
@@ -199,9 +198,14 @@
       "new-3d-graph:Open 3d graph": false
     }
   },
-  "active": "832ab43d08cf9e30",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "wiki/concepts/ReferralProgram-Data-Model.md",
+    "wiki/index.md.tmp.32400.c3af7ec903b3",
+    "wiki/hot.md",
+    "wiki/hot.md.tmp.32400.7f822ce32b8d",
+    "wiki/log.md.tmp.32400.8cbac843ff3d",
+    "wiki/concepts/SabyBank-RKO-TZ.md",
     "wiki/concepts/ReferralProgram-Data-Model.md.tmp.32400.fbf4fa664fdf",
     "wiki/hot.md.tmp.9788.0134c5292138",
     "wiki/questions/entity-sp-deletion-order-2026-06-15.md",
@@ -210,13 +214,8 @@
     "wiki/concepts/ReferralProgram-Stub-Implementation.md.tmp.9788.abd787439aae",
     "wiki/concepts/ReferralProgram-Stub-Implementation.md.tmp.9788.a26497bfdbce",
     "wiki/concepts/ReferralProgram-Stub-Implementation.md.tmp.9788.77a4f1b00c29",
-    "wiki/hot.md",
-    "raw/Программируем/Оформление технической документации/Шаблон базы знаний разработки внутреннего продукта/[Подсистема]/Техническая документация/Подсистема распределения прав.pdf",
-    "raw/Программируем/Оформление технической документации/Шаблон базы знаний разработки внутреннего продукта/[Подсистема]/Техническая документация/Параметры облака, задачи планировщика.pdf",
-    "raw/Программируем/Оформление технической документации/Шаблон базы знаний разработки внутреннего продукта/[Подсистема]/Техническая документация/Организация кода.pdf",
     "wiki/sources/sabybank-rko-referral-pdf-2026-06-15.md",
     "wiki/concepts/SabyBank-RKO-WorkPlan.md",
-    "wiki/concepts/SabyBank-RKO-TZ.md",
     "wiki/meta/dashboard.md",
     "wiki/meta/tiling-report-2026-06-14.md",
     "wiki/concepts/Semantic Topic Clustering.md",
@@ -236,7 +235,6 @@
     "wiki/concepts/Wasaby-Informers.md",
     "wiki/concepts/Wasaby-HTML-Converter.md",
     "wiki/concepts/Wasaby-Report-Prefetch.md",
-    "wiki/concepts/Wasaby-Scheduler.md",
     "13d90799073d45f02fa067907dbc0342_MD5.avif",
     "52c4aef86af0a71fe2d54ae2f996a298_MD5.avif",
     "e20a67b67cc5784a31e5812261b5034c_MD5.avif",

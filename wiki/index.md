@@ -64,6 +64,10 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ---
 
+## Price Formation — Concepts
+
+- [[ReferralProgram-Data-Model]] — модель данных реф. программ: ВидЦены→Раздел→БизнесГруппа, AdObject-источники, access_data_guid, utm_rfcid, миграция между Реф. Сетями (задача 06096778) (status: developing)
+
 ## Price Formation — Decisions
 
 - [[Loyalty-IterativeLoading-TD-CommonSolutions]] — ТД итеративной загрузки (пункт 594287653): мастер в Бонусах + ссылки из ДК/Промокодов/Реферальной; иерархия классов на 4100 (не-итеративные базы удалены, `GetClientListWithStats` де-итеративизирован); предложение раздела БЗ «Общие решения» (status: active)
