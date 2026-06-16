@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/Promocode-Info-Model.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "Promocode-Info-Model"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "referra",
+                "query": "expirationper",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "wiki/concepts/Promocode-Info-Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки"
+              "title": "Обратные ссылки для Promocode-Info-Model"
             }
           },
           {
@@ -194,7 +199,7 @@
       "new-3d-graph:Open 3d graph": false
     }
   },
-  "active": "832ab43d08cf9e30",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "wiki/questions/DiscountRegistry-Revive-Performance.md",
     "wiki/hot.md",
