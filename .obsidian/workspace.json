@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/concepts/Promocode-Info-Model.md",
+                "file": "wiki/concepts/Wasaby-Framework.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Promocode-Info-Model"
+              "title": "Wasaby-Framework"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "expirationper",
+                "query": "s3mod",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5
+    "width": 311.5
   },
   "right": {
     "id": "7092b65be1e76349",
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/concepts/Promocode-Info-Model.md",
+                "file": "wiki/concepts/Wasaby-Framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Promocode-Info-Model"
+              "title": "Обратные ссылки для Wasaby-Framework"
             }
           },
           {
@@ -201,6 +201,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/domains/price-formation/_index.md",
+    "wiki/concepts/Promocode-Info-Model.md",
     "wiki/questions/DiscountRegistry-Revive-Performance.md",
     "wiki/hot.md",
     "wiki/concepts/SabyBank-RKO-Referral.md",
@@ -235,8 +237,6 @@
     "wiki/concepts/_index.md",
     "wiki/concepts/Hot Cache.md",
     "wiki/concepts/Wasaby-PDF-Transformer.md",
-    "wiki/concepts/Wasaby-Multimedia-Loader.md",
-    "wiki/concepts/Wasaby-Informers.md",
     "13d90799073d45f02fa067907dbc0342_MD5.avif",
     "52c4aef86af0a71fe2d54ae2f996a298_MD5.avif",
     "e20a67b67cc5784a31e5812261b5034c_MD5.avif",
