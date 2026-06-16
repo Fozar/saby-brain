@@ -14,6 +14,10 @@ related:
 
 # Recent Context
 
+## 2026-06-17 — LoyaltyReferral: выделение рефералки в отдельный модуль (задача 05256826)
+
+Старт выноса реферальной системы из `PriceFormation.Online` в новый BL-модуль `LoyaltyReferral`. План Андрея (4 этапа, добросками; прецедент — KZ Кузакова): 1) модуль+компонент, 2) добавить в online-сборки, 3) зависимости («подумать», риск цикла), 4) перенос кода (сделки→бонусы). Сделано: модуль с `component_uuid` как у PF.Online + зависимость только на `PriceFormation.Online` (mirror KZ); добавлен в тестовые сборки `tests_new/online` и `online_with_discount_core`; echo-метод `LoyaltyReferral.Echo` + тест (зелёный после `test_manager.py -project online --build true`). Ключевое: `Socnet` — локальный класс, не модуль; внешние Python-пакеты `rightcheck`→Rights-Py, `user_service_cloud`→UserServiceCloud-Py, `multitenancy`→Multitenancy-Py (приходят транзитивно). Боевая регистрация — `online/inside` `online32.s3srv:454` (ещё не сделано). Тесты `tests_new` — git-симлинки на `tests/`. ⚠️ `kaizen_zone` модуля отличается от канона; не пайпить билд через `tail` (маскирует exit-код). Подробности: [[LoyaltyReferral-Module-Extraction]].
+
 ## 2026-06-16 — ReferralProgram SetStubPrice/SetLeadPrice: рекорд-результат (задача 04307161, saby bank)
 
 Оба метода теперь возвращают `sbis.Record({'AccruedCount', 'NotAccruedCount'})` вместо `int` — для UI-уведомления «скольким начислено / скольким нет», по образцу `DiscountCard.BatchDeleteOrLock`. `accrued = RETURNING.Size()`, `not_accrued = len(marked) − accrued` (не начислено = неуспешный `ТипСвязи` для корешков / не та программа для сделок). Правки: `set_stub_price.py`, `set_lead_price.py` (+хелпер `_build_result`), `ReferralProgram.orx` (`returns SCALAR→RECORD`, два `<return>`), тесты (9/9 OK). UI-уведомление — отдельная задача. Подробности: [[ReferralProgram-SetPrice-Record-Return]].

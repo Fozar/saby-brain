@@ -66,6 +66,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Price Formation — Concepts
 
+- [[LoyaltyReferral-Module-Extraction]] — выделение рефералки в отдельный СБИС-модуль LoyaltyReferral: план Андрея (4 этапа), зависимости (mirror KZ, rightcheck→Rights-Py, user_service_cloud→UserServiceCloud-Py), регистрация в online32.s3srv:454, симлинки tests_new→tests, echo-метод, грабли test_manager (задача 05256826) (status: developing)
 - [[ReferralProgram-SetPrice-Record-Return]] — SetStubPrice/SetLeadPrice возвращают Record(AccruedCount, NotAccruedCount) вместо int; «скольким начислено / нет» как в DiscountCard.BatchDeleteOrLock (задача 04307161, saby bank) (status: developing)
 - [[ReferralProgram-Data-Model]] — модель данных реф. программ: ВидЦены→Раздел→БизнесГруппа, AdObject-источники, access_data_guid, utm_rfcid, миграция между Реф. Сетями (задача 06096778) (status: developing)
 

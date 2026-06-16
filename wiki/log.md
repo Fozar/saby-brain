@@ -10,6 +10,11 @@ related:
   - "[[index]]"
 ---
 
+## [2026-06-17] save | LoyaltyReferral Module Extraction
+- Type: concept
+- Location: wiki/concepts/LoyaltyReferral-Module-Extraction.md
+- From: сессия по задаче 05256826 — заведение модуля LoyaltyReferral, зависимости, регистрация в сборках, echo-метод + тест, симлинки tests_new
+
 ## [2026-06-16] save | ReferralProgram SetPrice Record Return
 - Type: concept
 - Location: wiki/concepts/ReferralProgram-SetPrice-Record-Return.md
