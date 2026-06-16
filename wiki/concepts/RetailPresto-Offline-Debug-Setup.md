@@ -42,9 +42,31 @@ related:
 
 ## Шаг 0 — Отключить автообновление
 
-Файл: `СБИС-Розница\user_data\service\user-config.ini`
+Файл: `C:\ProgramData\Saby Retail\<hash>\program_data\user-config.ini`
+
+Путь `<hash>` берётся из `sbis-config.ini` → поле `КаталогДанных`. Для Saby Retail на машине Тимошенко А.:
+```
+C:\ProgramData\Saby Retail\518b6458a0e96fa0f047c8cb56d3e44d\program_data\user-config.ini
+```
+
+> [!warning] Неверный путь из старой инструкции
+> `СБИС-Розница\user_data\service\user-config.ini` и `<версия>\service\user-config.ini` — не работают.
+> Файл читается из `КаталогДанных`, а не из директории рядом с `sbis-config.ini`.
+
+Минимальный user-config.ini для разработки на test-online:
 
 ```ini
+[Базовая конфигурация]
+Модули=meta/RetailCore.s3srv
+OnlineService=https://test-online.sbis.ru
+OAuthService=https://test-online.sbis.ru/oauth/
+LongRequestService=https://test-online.sbis.ru/long-requests
+FileTransferService=https://test-online.sbis.ru/file-transfer
+
+[UI]
+DebugMode=Да
+Mode=NORMALMIZED
+
 [Updater]
 АвтоматическоеОбновление=Нет
 ```
