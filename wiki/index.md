@@ -72,6 +72,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 - [[Loyalty-IterativeLoading-TD-CommonSolutions]] — ТД итеративной загрузки (пункт 594287653): мастер в Бонусах + ссылки из ДК/Промокодов/Реферальной; иерархия классов на 4100 (не-итеративные базы удалены, `GetClientListWithStats` де-итеративизирован); предложение раздела БЗ «Общие решения» (status: active)
 - [[Feature-Flag-Removal-LOYALTY-IT-NAV]] — удалены фичи `loyalty_it_nav` и `bonus_it_navigation`: итеративная навигация стала постоянной, OLD path оставлен только для `GetClientListWithStats` (status: active)
+- [[ReferralProgram-GetLeadPeriodList-LeadCount-Source]] — источник LeadCount: для стандартных программ — `get_sales_sources_stats` (маркетинг), для SabyBank — ВЦД по `ДатаВремя`; `ВЦД` ≠ таблица лидов (задача №04307081) (status: active)
 - [[ReferralProgram-GetStubList-Filter-Redesign]] — редизайн фильтров GetStubList: два периода → единый `Date` (по дате создания или статуса в зависимости от `Status`), добавлен `PartnerId` (status: active)
 
 ## Price Formation — Analysis
