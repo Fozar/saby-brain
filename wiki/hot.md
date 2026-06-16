@@ -14,6 +14,10 @@ related:
 
 # Recent Context
 
+## 2026-06-16 — Оживление реестра «Скидки» offline (задача 12221993)
+
+Оптимизация оживления реестра «Скидки» Retail offline (2567→<2300 мс). Ключевой вывод: `Promotion.GetSaleList` **проксируется в облако**, BL ≈ 300–400 мс (~15%) из 2567 мс, ~3 итеративных round-trip; остальное — клиентский рендер. Первая страница идёт Seq Scan по `ВидЦеныДокумент` (нет индекса по `EffectiveDate` для общих продаж). Push-down фильтров / партиал-индекс **конфликтует с EMA** (он опирается на нефильтрованный `ScannedCount`). Выбран вариант C: `UNION → UNION ALL` (output-neutral) + тюнинг EMA (`_MAX_BLOCK 20k→30k`, `_K=3.0`), остаток — фронту. Подробности: [[DiscountRegistry-Revive-Performance]].
+
 ## 2026-06-16 — ReferralProgram GetLeadPeriodList: LeadCount из маркетинга (задача №04307081)
 
 Баг: `LeadCount` считал только лиды с вознаграждением (`Бонусы > 0` в ВЦД). Ключевой инсайт: `ВидЦеныДокумент` — таблица **вознаграждений**, не лидов; для стандартных программ записи создаются только через `SetLeadPrice` (UPDATE). Решение: стандартные программы → `get_sales_sources_stats('Лид', source_ids, ...)` из CRM/маркетинга per-period в Python; SabyBank/стабы → ВЦД по `ДатаВремя` (дата создания корешка), без `Бонусы > 0`. Подробности: [[ReferralProgram-GetLeadPeriodList-LeadCount-Source]].

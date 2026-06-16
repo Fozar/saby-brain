@@ -77,6 +77,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Price Formation — Analysis
 
+- [[DiscountRegistry-Revive-Performance]] — оживление реестра «Скидки» offline (2567→<2300 мс): GetSaleList проксируется в облако, BL ~15% времени; первая страница идёт Seq Scan по ВидЦеныДокумент (нет индекса EffectiveDate); push-down/индекс конфликтует с EMA → выбран вариант C (UNION ALL + тюнинг _MAX_BLOCK/_K), остаток фронту (status: developing)
 - [[ReferralProgram-ZeroReward-Lead-Filter-Bug]] — баг №05265686: лиды с нулевым/NULL вознаграждением не видны в фильтре «Завершено положительно»; fix: убрать `Бонусы > 0` из query + разрешить ВЦД-запись при price=0 (status: fixed)
 - [[CardEmission-FullResync-PK-Conflict-Fix]] — полная пересинхронизация выпусков карт падала на duplicate key: upsert вставлял уже существующие неизменённые записи (`Updated IS NULL` ловит их, т.к. UPDATE отбирает только DISTINCT); фикс — `AND NOT EXISTS (... ВидКарты ...)` в CTE Inserted (status: fixed)
 - [[PromoCode-Generation-Memory-Optimization]] — генерация промокодов без выгрузки всех существующих номеров в память: батчевая проверка кандидатов через индекс CaseInsensitiveUniqueNumber (`upper("Номер") = ANY(...)`); `filter_taken` callback; `_skip_license` паттерн для устранения дублей лицензии (status: fixed)

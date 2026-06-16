@@ -10,6 +10,11 @@ related:
   - "[[index]]"
 ---
 
+## [2026-06-16] save | DiscountRegistry Revive Performance
+- Type: synthesis
+- Location: wiki/questions/DiscountRegistry-Revive-Performance.md
+- From: задача №12221993 — оптимизация оживления реестра «Скидки» Retail offline; вывод что BL ~15% времени (GetSaleList проксируется в облако, ~3 round-trip), конфликт push-down/индекс с EMA, выбран вариант C (UNION ALL + тюнинг блока)
+
 ## [2026-06-16] save | ReferralProgram GetLeadPeriodList — LeadCount источник
 - Type: decision
 - Location: wiki/meta/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md
