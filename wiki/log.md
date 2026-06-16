@@ -10,6 +10,11 @@ related:
   - "[[index]]"
 ---
 
+## [2026-06-16] save | ReferralProgram GetLeadPeriodList — LeadCount источник
+- Type: decision
+- Location: wiki/meta/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md
+- From: задача №04307081 — `LeadCount` показывал только лиды с вознаграждением; для стандартных программ источник перенесён в маркетинг (`get_sales_sources_stats`), для SabyBank — ВЦД по `ДатаВремя`
+
 ## [2026-06-16] save | ReferralProgram Data Model
 - Type: concept
 - Location: wiki/concepts/ReferralProgram-Data-Model.md
