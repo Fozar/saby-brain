@@ -10,6 +10,11 @@ related:
   - "[[index]]"
 ---
 
+## [2026-06-16] save | ReferralProgram SetPrice Record Return
+- Type: concept
+- Location: wiki/concepts/ReferralProgram-SetPrice-Record-Return.md
+- From: доработка ReferralProgram.SetStubPrice/SetLeadPrice — возврат Record(AccruedCount, NotAccruedCount) по образцу DiscountCard.BatchDeleteOrLock (задача 04307161)
+
 ## [2026-06-16] save | DiscountRegistry Revive Performance
 - Type: synthesis
 - Location: wiki/questions/DiscountRegistry-Revive-Performance.md

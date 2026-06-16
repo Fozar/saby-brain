@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/questions/DiscountRegistry-Revive-Performance.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "DiscountRegistry-Revive-Performance"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -74,7 +70,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,7 +91,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/questions/DiscountRegistry-Revive-Performance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для DiscountRegistry-Revive-Performance"
+              "title": "Обратные ссылки"
             }
           },
           {
@@ -198,13 +194,13 @@
       "new-3d-graph:Open 3d graph": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "832ab43d08cf9e30",
   "lastOpenFiles": [
+    "wiki/questions/DiscountRegistry-Revive-Performance.md",
     "wiki/hot.md",
     "wiki/concepts/SabyBank-RKO-Referral.md",
     "wiki/hot.md.tmp.35584.5c7e71d1012a",
     "wiki/log.md.tmp.35584.0328dd4a713c",
-    "wiki/questions/DiscountRegistry-Revive-Performance.md",
     "wiki/questions/DiscountRegistry-Revive-Performance.md.tmp.35584.3f6beb185e6f",
     "wiki/hot.md.tmp.32400.96e6467b4241",
     "wiki/log.md.tmp.32400.ef83326254d1",

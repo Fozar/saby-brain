@@ -14,6 +14,10 @@ related:
 
 # Recent Context
 
+## 2026-06-16 — ReferralProgram SetStubPrice/SetLeadPrice: рекорд-результат (задача 04307161, saby bank)
+
+Оба метода теперь возвращают `sbis.Record({'AccruedCount', 'NotAccruedCount'})` вместо `int` — для UI-уведомления «скольким начислено / скольким нет», по образцу `DiscountCard.BatchDeleteOrLock`. `accrued = RETURNING.Size()`, `not_accrued = len(marked) − accrued` (не начислено = неуспешный `ТипСвязи` для корешков / не та программа для сделок). Правки: `set_stub_price.py`, `set_lead_price.py` (+хелпер `_build_result`), `ReferralProgram.orx` (`returns SCALAR→RECORD`, два `<return>`), тесты (9/9 OK). UI-уведомление — отдельная задача. Подробности: [[ReferralProgram-SetPrice-Record-Return]].
+
 ## 2026-06-16 — Оживление реестра «Скидки» offline (задача 12221993)
 
 Оптимизация оживления реестра «Скидки» Retail offline (2567→<2300 мс). Ключевой вывод: `Promotion.GetSaleList` **проксируется в облако**, BL ≈ 300–400 мс (~15%) из 2567 мс, ~3 итеративных round-trip; остальное — клиентский рендер. Первая страница идёт Seq Scan по `ВидЦеныДокумент` (нет индекса по `EffectiveDate` для общих продаж). Push-down фильтров / партиал-индекс **конфликтует с EMA** (он опирается на нефильтрованный `ScannedCount`). Выбран вариант C: `UNION → UNION ALL` (output-neutral) + тюнинг EMA (`_MAX_BLOCK 20k→30k`, `_K=3.0`), остаток — фронту. Подробности: [[DiscountRegistry-Revive-Performance]].
