@@ -16,6 +16,7 @@ related:
   - "[[Loyalty-Franchise-Mechanics]]"
   - "[[DiscountCard-Service-API]]"
   - "[[Wasaby-DB-Access-Patterns]]"
+  - "[[Bonus-GetTotalBalance-Franchise-Performance]]"
 created: 2026-04-10
 ---
 

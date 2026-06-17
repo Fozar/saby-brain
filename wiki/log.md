@@ -10,6 +10,11 @@ related:
   - "[[index]]"
 ---
 
+## [2026-06-17] save | Bonus.GetTotalBalance — деградация на франшизе (~80k карт)
+- Type: synthesis
+- Location: wiki/questions/Bonus-GetTotalBalance-Franchise-Performance.md
+- From: разбор задачи 05292113 (виджет «Бонусы» не строится, GetTotalBalance ~4.5 с)
+
 ## [2026-06-17] save | LoyaltyReferral Module Extraction
 - Type: concept
 - Location: wiki/concepts/LoyaltyReferral-Module-Extraction.md

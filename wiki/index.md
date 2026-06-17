@@ -79,6 +79,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Price Formation — Analysis
 
+- [[Bonus-GetTotalBalance-Franchise-Performance]] — задача 05292113: виджет «Бонусы» не строится на франшизном аккаунте (~80k персональных счетов), GetTotalBalance ~4.5 с; узкое место — поимённый `Card.GetBonusBalanceByCards` (передача 80k UUID + возврат 79943 строк), сам SQL по индексу 461 мс; решение — агрегат SUM на стороне СДК (status: developing)
 - [[DiscountRegistry-Revive-Performance]] — оживление реестра «Скидки» offline (2567→<2300 мс): GetSaleList проксируется в облако, BL ~15% времени; первая страница идёт Seq Scan по ВидЦеныДокумент (нет индекса EffectiveDate); push-down/индекс конфликтует с EMA → выбран вариант C (UNION ALL + тюнинг _MAX_BLOCK/_K), остаток фронту (status: developing)
 - [[ReferralProgram-ZeroReward-Lead-Filter-Bug]] — баг №05265686: лиды с нулевым/NULL вознаграждением не видны в фильтре «Завершено положительно»; fix: убрать `Бонусы > 0` из query + разрешить ВЦД-запись при price=0 (status: fixed)
 - [[CardEmission-FullResync-PK-Conflict-Fix]] — полная пересинхронизация выпусков карт падала на duplicate key: upsert вставлял уже существующие неизменённые записи (`Updated IS NULL` ловит их, т.к. UPDATE отбирает только DISTINCT); фикс — `AND NOT EXISTS (... ВидКарты ...)` в CTE Inserted (status: fixed)
