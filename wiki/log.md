@@ -10,6 +10,13 @@ related:
   - "[[index]]"
 ---
 
+## [2026-06-24] ingest | Звонок: Мусохранов — Тимошенко (ревью MR-ов)
+- Source: `.raw/Совещания/Звонок 2026-06-24 093221. Мусохранов Андрей, Тимошенко Александр.md`
+- Summary: [[zvonok-musohranov-timoshenko-2026-06-24]]
+- Pages created: [[zvonok-musohranov-timoshenko-2026-06-24]], [[ReferralProgram-GetLeadPeriodList-LeadCount-Source]]
+- Pages updated: [[ReferralProgram-Stub-Implementation]]
+- Key insight: Цикл по источникам в GetLeadPeriodList запрещён — один запрос к ВидЦеныДокумент считает и LeadCount, и RewardSum; CreateLead→CreateStub требует регрессионных сценариев для старых рефералок.
+
 ## [2026-06-17] save | Bonus.GetTotalBalance — деградация на франшизе (~80k карт)
 - Type: synthesis
 - Location: wiki/questions/Bonus-GetTotalBalance-Franchise-Performance.md

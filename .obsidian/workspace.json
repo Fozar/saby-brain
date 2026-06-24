@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/concepts/Wasaby-Framework.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Wasaby-Framework"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -95,7 +91,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/concepts/Wasaby-Framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Wasaby-Framework"
+              "title": "Обратные ссылки"
             }
           },
           {
@@ -201,6 +196,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/concepts/Wasaby-Framework.md",
     "wiki/hot.md.tmp.2872.db596a4a5428",
     "wiki/concepts/Bonus-GetTotalBalance.md.tmp.2872.77546be97011",
     "wiki/log.md.tmp.2872.88e4cfb79f7b",
@@ -218,7 +214,6 @@
     "wiki/hot.md",
     "wiki/concepts/SabyBank-RKO-Referral.md",
     "wiki/hot.md.tmp.35584.5c7e71d1012a",
-    "wiki/log.md.tmp.35584.0328dd4a713c",
     "wiki/meta/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md",
     "wiki/concepts/ReferralProgram-Data-Model.md",
     "wiki/concepts/SabyBank-RKO-TZ.md",

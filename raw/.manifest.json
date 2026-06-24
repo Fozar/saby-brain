@@ -1020,6 +1020,20 @@
       "pages_updated": [
         "wiki/concepts/Wasaby-DWC.md"
       ]
+    },
+    ".raw/Совещания/Звонок 2026-06-24 093221. Мусохранов Андрей, Тимошенко Александр.md": {
+      "hash": "c2e05e9968e051984eb0324c8103f8d4",
+      "ingested_at": "2026-06-24",
+      "pages_created": [
+        "wiki/sources/zvonok-musohranov-timoshenko-2026-06-24.md",
+        "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/ReferralProgram-Stub-Implementation.md",
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
     }
   },
   "address_map": {
@@ -1110,7 +1124,9 @@
     "wiki/concepts/Wasaby-Conan.md": "c-000139",
     "wiki/concepts/Wasaby-STOMP.md": "c-000140",
     "wiki/concepts/Wasaby-Mass-Mailings.md": "c-000141",
-    "wiki/concepts/Wasaby-Sync-Broker.md": "c-000142"
+    "wiki/concepts/Wasaby-Sync-Broker.md": "c-000142",
+    "wiki/sources/zvonok-musohranov-timoshenko-2026-06-24.md": "c-000144",
+    "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md": "c-000145"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",

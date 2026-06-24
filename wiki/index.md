@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-06-14 | Total pages: 334 | Sources ingested: 186
+Last updated: 2026-06-24 | Total pages: 336 | Sources ingested: 187
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -90,6 +90,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[GetIndividualBatch-AttachPersonId-Timeout-Fix]] — таймаут рассылки SabyGet: CRMClients.AttachPersonId ~5с×100 получателей; фикс — вынос привязки персон в фоновый DWC `one_task="0"` (повтор Варианта A с исправлением рассинхрона one_task); rc-26.3211 (status: fixed)
 - [[PromoCode-NotifyGenerated-DWC-Ordering]] — регресс таймаут-фикса: синхронный notify SabyGet после фоновой привязки слал пустой PersonID; фикс — `NotifyGenerated` финальной задачей того же DWC-сценария (барьер «notify после attach»; `AddTask` без parallel-block = последовательно); распространяется на все типы генерации (status: developing)
 - [[SabyBank-Application-Card-Conversation-2026-05-25]] — обсуждение карточки заявки SabyBank: хранить vs тянуть данные, принадлежность телефона, API-подход; уточнить у Свешникова (status: current)
+- [[zvonok-musohranov-timoshenko-2026-06-24]] (c-000144) — 2026-06-24 | ревью MR-ов CreateLead→CreateStub и GetLeadPeriodList; запрет цикла по источникам; регрессионные риски корешка при статусе 10
 
 ## Concepts
 
@@ -177,7 +178,8 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[BrokerLoyalty-BonusSettings-Race-Fix]] — bugfix: гонка SyncBrokerClient при lty_broker_bonus_set → сломанный курсор промокодов; fix: BonusSettings перенесён в BrokerSyncLoyalty/SyncManager (status: active)
 - [[BonusSettings-Sync-Restart-Bug]] — bugfix: при lty_broker_bonus_set настройки бонусов не обновлялись при рестарте; fix: PullAll→re_sync (reset cursor→FirstSync), в shelf (status: shelved)
 - [[ReferralProgram-DetachPartner-Implementation]] — `ReferralProgram.DetachPartner` для AT: удаление реферального кода партнёра (Карта+CRM+ВидЦеныДокумент), защита от боя, OWNER_MODERATOR (status: active)
-- [[ReferralProgram-Stub-Implementation]] — `ReferralProgram.CreateStub` + `UpdateStub`: 2 метода, 4 бизнес-сценария, StatusDate/EffectiveDate правило, LinkType константы, SQL+тесты (status: active)
+- [[ReferralProgram-Stub-Implementation]] — `ReferralProgram.CreateStub` + `UpdateStub`: 2 метода, 4 бизнес-сценария, StatusDate/EffectiveDate правило, LinkType константы, SQL+тесты; ревью Мусохранова 2026-06-24 (status: active)
+- [[ReferralProgram-GetLeadPeriodList-LeadCount-Source]] (c-000145) — решение: LeadCount/RewardSum из одного запроса к ВидЦеныДокумент, без цикла по источникам через marketing-API (status: active)
 - [[ReferralStub-TargetAction-Pattern]] — паттерн целевого действия корешков: TargetAction, StatusDate, FilterByStatus (status: current)
 - [[LRS-Long-Request-Service]] — LRS надстройка над DWC: фоновые операции, прогресс, результаты, история 90д, шардированная БД, бесшовное обновление (status: current)
 - [[Loyalty-Sale-Application]] — подсистема применения лояльности на продаже: задачи, C++ ядро CalcDiscount, цикл расчёта, скидки/подарки/бонусы/штампики, режим оферты, организация кода (status: current)

@@ -1,21 +1,14 @@
 #!/usr/bin/env bash
-# allocate-address.sh — atomic creation-order address allocation for the vault.
+# allocate-address.sh — thin wrapper; delegates to allocate-address.py.
 #
-# Reserves the next address of the form c-NNNNNN and increments the counter
-# under an exclusive flock. On missing counter file, recovers by scanning the
-# vault for the highest existing c-NNNNNN in page frontmatter and resuming from
-# max+1. Never silently resets to 1 in a non-empty vault.
+# The original flock-based implementation does not work on Windows.
+# Use allocate-address.py directly, or let this script forward to it.
 #
 # Usage:
 #   ./scripts/allocate-address.sh           # prints the reserved address (e.g. c-000042) to stdout
 #   ./scripts/allocate-address.sh --peek    # prints the next value without incrementing
 #   ./scripts/allocate-address.sh --rebuild # recomputes counter from max observed and exits
-#
-# Exit codes:
-#   0 — success
-#   1 — lock acquisition failed (another writer is holding the lock)
-#   2 — vault-meta directory missing and cannot be created
-#   3 — counter value corrupt or non-numeric
+exec python "$(dirname "$0")/allocate-address.py" "$@"
 
 set -euo pipefail
 
