@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "wiki/sources/zvonok-musohranov-timoshenko-2026-06-24.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "zvonok-musohranov-timoshenko-2026-06-24"
             }
           }
         ]
@@ -70,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -91,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "wiki/sources/zvonok-musohranov-timoshenko-2026-06-24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки"
+              "title": "Обратные ссылки для zvonok-musohranov-timoshenko-2026-06-24"
             }
           },
           {
@@ -196,6 +200,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/hot.md",
     "wiki/concepts/Wasaby-Framework.md",
     "wiki/hot.md.tmp.2872.db596a4a5428",
     "wiki/concepts/Bonus-GetTotalBalance.md.tmp.2872.77546be97011",
@@ -211,7 +216,6 @@
     "wiki/domains/price-formation/_index.md",
     "wiki/concepts/Promocode-Info-Model.md",
     "wiki/questions/DiscountRegistry-Revive-Performance.md",
-    "wiki/hot.md",
     "wiki/concepts/SabyBank-RKO-Referral.md",
     "wiki/hot.md.tmp.35584.5c7e71d1012a",
     "wiki/meta/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md",
