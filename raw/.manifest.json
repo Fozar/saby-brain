@@ -1021,6 +1021,20 @@
         "wiki/concepts/Wasaby-DWC.md"
       ]
     },
+    ".raw/Совещания/Совещание 23.06.26 Сдача ТД.md": {
+      "hash": "054211f968ab9a1871830052a19994a6",
+      "ingested_at": "2026-06-25",
+      "pages_created": [
+        "wiki/sources/soveshanie-sdacha-td-itload-2026-06-23.md",
+        "wiki/entities/Ютман-Элина.md"
+      ],
+      "pages_updated": [
+        "wiki/meta/Loyalty-IterativeLoading-TD-CommonSolutions.md",
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
     ".raw/Совещания/Звонок 2026-06-24 093221. Мусохранов Андрей, Тимошенко Александр.md": {
       "hash": "c2e05e9968e051984eb0324c8103f8d4",
       "ingested_at": "2026-06-24",
@@ -1126,7 +1140,9 @@
     "wiki/concepts/Wasaby-Mass-Mailings.md": "c-000141",
     "wiki/concepts/Wasaby-Sync-Broker.md": "c-000142",
     "wiki/sources/zvonok-musohranov-timoshenko-2026-06-24.md": "c-000144",
-    "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md": "c-000145"
+    "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md": "c-000145",
+    "wiki/sources/soveshanie-sdacha-td-itload-2026-06-23.md": "c-000146",
+    "wiki/entities/Ютман-Элина.md": "c-000147"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
