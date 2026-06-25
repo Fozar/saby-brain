@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/zvonok-musohranov-timoshenko-2026-06-24.md",
+                "file": "wiki/sources/sbis-plan-june-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "zvonok-musohranov-timoshenko-2026-06-24"
+              "title": "sbis-plan-june-2026"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/zvonok-musohranov-timoshenko-2026-06-24.md",
+                "file": "wiki/sources/sbis-plan-june-2026.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для zvonok-musohranov-timoshenko-2026-06-24"
+              "title": "Обратные ссылки для sbis-plan-june-2026"
             }
           },
           {
@@ -200,6 +200,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/hot.md",
+    "wiki/sources/zvonok-musohranov-timoshenko-2026-06-24.md",
     "wiki/hot.md.tmp.27196.c60ae0ccdc2b",
     "wiki/hot.md.tmp.27196.e3f34e193741",
     "wiki/sources/sbis-plan-june-2026.md.tmp.27196.daad51713260",
@@ -210,8 +212,6 @@
     "wiki/sources/sbis-plan-june-2026.md.tmp.27196.3932b9e03c91",
     "wiki/sources/sbis-plan-june-2026.md.tmp.27196.fb0337796c24",
     "wiki/sources/sbis-plan-june-2026.md.tmp.27196.be9fdd60a911",
-    "wiki/sources/sbis-plan-june-2026.md.tmp.27196.959f12290b97",
-    "wiki/hot.md",
     "wiki/concepts/Wasaby-Framework.md",
     "wiki/questions/Bonus-GetTotalBalance-Franchise-Performance.md",
     "wiki/concepts/LoyaltyReferral-Module-Extraction.md",
