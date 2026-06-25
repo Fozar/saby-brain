@@ -90,6 +90,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[GetIndividualBatch-AttachPersonId-Timeout-Fix]] — таймаут рассылки SabyGet: CRMClients.AttachPersonId ~5с×100 получателей; фикс — вынос привязки персон в фоновый DWC `one_task="0"` (повтор Варианта A с исправлением рассинхрона one_task); rc-26.3211 (status: fixed)
 - [[PromoCode-NotifyGenerated-DWC-Ordering]] — регресс таймаут-фикса: синхронный notify SabyGet после фоновой привязки слал пустой PersonID; фикс — `NotifyGenerated` финальной задачей того же DWC-сценария (барьер «notify после attach»; `AddTask` без parallel-block = последовательно); распространяется на все типы генерации (status: developing)
 - [[SabyBank-Application-Card-Conversation-2026-05-25]] — обсуждение карточки заявки SabyBank: хранить vs тянуть данные, принадлежность телефона, API-подход; уточнить у Свешникова (status: current)
+- [[soveshanie-sdacha-td-itload-2026-06-23]] (c-000146) — 2026-06-23 | ревью ТД итеративной загрузки Федько: диаграмма иерархии бракована, EMA упростить под спойлер, согласовать с [[Ютман-Элина]]
 - [[zvonok-musohranov-timoshenko-2026-06-24]] (c-000144) — 2026-06-24 | ревью MR-ов CreateLead→CreateStub и GetLeadPeriodList; запрет цикла по источникам; регрессионные риски корешка при статусе 10
 
 ## Concepts

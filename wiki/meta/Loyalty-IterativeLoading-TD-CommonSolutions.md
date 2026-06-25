@@ -19,6 +19,8 @@ related:
   - "[[Tensor-TechDoc-Standards]]"
   - "[[Федько-Юрий-Сергеевич]]"
   - "[[Тимошенко А.А.]]"
+  - "[[Ютман-Элина]]"
+  - "[[soveshanie-sdacha-td-itload-2026-06-23]]"
 ---
 
 # Loyalty Iterative Loading — ТД и предложение «Общие решения»
