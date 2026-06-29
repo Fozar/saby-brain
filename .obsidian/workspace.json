@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/sources/soveshanie-sdacha-td-itload-2026-06-23.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "soveshanie-sdacha-td-itload-2026-06-23"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/soveshanie-sdacha-td-itload-2026-06-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для soveshanie-sdacha-td-itload-2026-06-23"
+              "title": "Обратные ссылки"
             }
           },
           {
@@ -200,6 +195,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/sources/soveshanie-sdacha-td-itload-2026-06-23.md",
     "wiki/hot.md",
     "wiki/sources/sbis-plan-june-2026.md",
     "wiki/hot.md.tmp.23852.c435a65a18c5",
@@ -209,7 +205,6 @@
     "wiki/meta/Loyalty-IterativeLoading-TD-CommonSolutions.md.tmp.23852.433cedcdb467",
     "wiki/entities/Ютман-Элина.md",
     "wiki/entities/Ютман-Элина.md.tmp.23852.3381342a0380",
-    "wiki/sources/soveshanie-sdacha-td-itload-2026-06-23.md",
     "wiki/sources/soveshanie-sdacha-td-itload-2026-06-23.md.tmp.23852.9c916508f3d1",
     "raw/Совещания/Совещание 23.06.26 Сдача ТД.md",
     "raw/Совещания/Новый текстовый документ.txt",
