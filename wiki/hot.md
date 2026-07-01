@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-06-30
+updated: 2026-07-01
 tags:
   - meta
   - hot-cache
