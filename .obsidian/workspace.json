@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/questions/DiscountRegistry-Revive-Performance.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "DiscountRegistry-Revive-Performance"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -95,7 +91,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/questions/DiscountRegistry-Revive-Performance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для DiscountRegistry-Revive-Performance"
+              "title": "Обратные ссылки"
             }
           },
           {
@@ -201,6 +196,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/questions/DiscountRegistry-Revive-Performance.md",
     "wiki/hot.md.tmp.13548.92bb16928be7",
     "wiki/hot.md.tmp.13548.abeea4af7155",
     "wiki/index.md.tmp.13548.950d45968c35",
@@ -217,7 +213,6 @@
     "wiki/index.md.tmp.23852.8686dbdbd60a",
     "wiki/index.md.tmp.23852.39d202d79545",
     "wiki/log.md.tmp.23852.ba5e2e796165",
-    "wiki/meta/Loyalty-IterativeLoading-TD-CommonSolutions.md.tmp.23852.433cedcdb467",
     "wiki/entities/Ютман-Элина.md",
     "raw/Совещания/Совещание 23.06.26 Сдача ТД.md",
     "wiki/sources/zvonok-musohranov-timoshenko-2026-06-24.md",
@@ -225,7 +220,6 @@
     "wiki/concepts/LoyaltyReferral-Module-Extraction.md",
     "wiki/domains/price-formation/_index.md",
     "wiki/concepts/Promocode-Info-Model.md",
-    "wiki/questions/DiscountRegistry-Revive-Performance.md",
     "wiki/concepts/SabyBank-RKO-Referral.md",
     "wiki/meta/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md",
     "wiki/concepts/ReferralProgram-Data-Model.md",
