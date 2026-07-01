@@ -2,13 +2,14 @@
 type: synthesis
 title: "DiscountRegistry-Revive-Performance"
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-01
 tags:
   - price-formation
   - performance
   - loyalty
   - iterative-navigation
   - retail-offline
+  - sql-indexes
 status: developing
 related:
   - "[[Bonus-GetSaleList-Duplicate-W-Records-Iterative-Block-Bug]]"
