@@ -10,6 +10,13 @@ related:
   - "[[index]]"
 ---
 
+## [2026-07-01] save | DiscountRegistry: убраны «пустые» запросы + корректировка про индексы
+- Type: synthesis (обновление существующей страницы)
+- Location: wiki/questions/DiscountRegistry-Revive-Performance.md
+- From: реализация фикса hasMore в Promotion.GetSaleList (задача 12221993, 2-я итерация)
+- Key insight: CTE `SaleDateBound` = точный MIN(EffectiveDate) LATERAL per-id (Index-Only-Scan, 8.5мс «Все» / 0.11мс узкая) обрывает итерацию на последней продаже. Правила: только LATERAL per-id (иначе backward-scan 47с), без tight-фильтров (9с). Индексы EffectiveDateSale/EffectiveDateDocument/EffectiveDate ЕСТЬ в PricingRetailOnline.dicx (проверено на стенде) — прежний тезис об их отсутствии опровергнут.
+- Pages updated: [[DiscountRegistry-Revive-Performance]], [[index]], [[hot]]
+
 ## [2026-06-30] ingest | Звонок: Мусохранов — Тимошенко (сдача задачи корешков)
 - Source: `.raw/Совещания/Звонок 2026-06-30 121753. Мусохранов Андрей, Тимошенко Александр.md`
 - Summary: [[zvonok-musohranov-timoshenko-2026-06-30]]

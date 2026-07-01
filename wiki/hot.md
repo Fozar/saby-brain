@@ -14,6 +14,10 @@ related:
 
 # Recent Context
 
+## 2026-07-01 — Реестр «Скидки»: убраны «пустые» запросы (задача 12221993, 2-я итерация)
+
+**[[DiscountRegistry-Revive-Performance]]** обновлён. `Promotion.GetSaleList` возвращал `hasMore=true`, хотя продаж за период уже нет (итерация не завершалась, пока сканируются любые движения `ВидЦеныДокумент`). Фикс: CTE `SaleDateBound` = точная `MIN(EffectiveDate)` по акциям, **LATERAL per-id** (Index-Only-Scan по `EffectiveDateSale`/`EffectiveDateDocument`); контрольная запись не эмитится при `ControlRecord.DateWTZ ≤ MinSaleDate`; оверрайд `_prepare_next_position_iterative` трактует отсутствие контрольной как терминальную страницу. Замеры на стенде: «Все» 297 акций **8.5 мс**, узкая **0.11 мс**. ⚠️ **Только LATERAL per-id** (`= ANY(array)` → backward-scan 47 с; tight-фильтры Активирована/ТипСвязи/Сумма → 9 с). **Важная корректировка:** индексы по `EffectiveDate` ЕСТЬ (в `PricingRetailOnline.dicx`, в бою 26.3234/26.4100) — прежний тезис об их отсутствии опровергнут замером. Тесты `GetSaleList` 11/11 OK (проект `online`).
+
 ## 2026-06-30 — Сдача задачи корешков (Мусохранов — Тимошенко)
 
 **[[zvonok-musohranov-timoshenko-2026-06-30]]**: Короткий звонок (5 мин) о сдаче задачи по корешкам для существующих сделок.
