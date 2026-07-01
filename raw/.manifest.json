@@ -1048,6 +1048,18 @@
         "wiki/log.md",
         "wiki/hot.md"
       ]
+    },
+    ".raw/Совещания/Звонок 2026-06-30 121753. Мусохранов Андрей, Тимошенко Александр.md": {
+      "hash": "cf8907f209cc9a853e2b6da7eb6afe0f",
+      "ingested_at": "2026-06-30",
+      "pages_created": [
+        "wiki/sources/zvonok-musohranov-timoshenko-2026-06-30.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
     }
   },
   "address_map": {
@@ -1142,7 +1154,8 @@
     "wiki/sources/zvonok-musohranov-timoshenko-2026-06-24.md": "c-000144",
     "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md": "c-000145",
     "wiki/sources/soveshanie-sdacha-td-itload-2026-06-23.md": "c-000146",
-    "wiki/entities/Ютман-Элина.md": "c-000147"
+    "wiki/entities/Ютман-Элина.md": "c-000147",
+    "wiki/sources/zvonok-musohranov-timoshenko-2026-06-30.md": "c-000148"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
