@@ -48,6 +48,13 @@ All concept pages — ideas, patterns, and frameworks extracted from sources.
 - [[Franchise-Loyalty-Architecture]] — franchise group support in loyalty DB: FranchiseRole Owner/Participant, UUID lists on ВидЦены/ВидКарты/CardType/Operation, cross-account activation
 - [[Loyalty-Franchise-Mechanics]] — БЛ Лояльности event subscriptions for franchise lifecycle: 5 events, folder creation logic, FranchiseRole values, sync/bonus flows
 - [[Franchise-Loyalty-System]] — business overview of franchise loyalty: Owner/Participant model, sync (full-overwrite by UUID), unified customer base via Owner account, СДК as shared balance store
+
+### Customer Journey / Маршруты (Путь клиента) — new scenario engine, developing
+
+- [[Loyalty-CustomerJourney-Project]] — project overview: umbrella project building the Маршруты scenario engine on top of Loyalty; folder map of not-yet-ingested sibling docs (status: developing)
+- [[LoyaltyScenarios-Marshruty-Architecture]] — 3-party component model (Лояльность/Маршруты/Выборки), scenario types, flow-graph editor, event catalog, execution model, open ownership questions (status: developing)
+- [[LoyaltyScenario-ReactivationInactiveClients]] — concrete example scenario: 30-day inactivity → 100 bonus points + email → 10-day wait → thank-you email (status: developing)
+- ⚠️ Overlaps with parallel-agent pages [[Saby-Loyalty-Scenarios-Engine]], [[Route-Platform-Architecture]], [[CustomerJourney-Project]], [[CustomerJourney-Scenarios-Project]], [[CustomerJourney-Loyalty-Scenarios-Project]], [[Loyalty-Scenario-Reactivation-Inactive-Clients]] — same "Путь клиента" batch, not reconciled; orchestrator merge pending
 - [[Saby-Loyalty-Scenarios-Engine]] — движок маркетинговых сценариев (customer journey) в Retail/Presto: типы (по событию/периодический/разовый), конструктор условий Если/И/ИЛИ, блоки Действие/Условие/Ожидание, ветвление по событию, Цели (status: developing)
 - [[Loyalty-Scenario-Reactivation-Inactive-Clients]] — пример сценария «Давно не покупали»: 30д без покупки → 100Б + email → ожидание 10д → thank-you email; открытые вопросы ревью (status: current)
 - [[CustomerJourney-Loyalty-Scenarios-Project]] — «Путь клиента»: раннее исследование/бенчмарк конкурента [[Mindbox]] для проектирования CDP-подобной системы сценариев; перечень документов проекта (status: developing)

@@ -89,9 +89,16 @@ Loyalty and price formation system for the SBIS (Saby) platform. Manages discoun
 
 ## Customer Journey / Marketing Automation (early-stage project)
 
+> [!note] Несколько параллельных umbrella-страниц одного проекта
+> Батч источников из папки `.raw/Путь клиента/` ингестировался несколькими параллельными агентами — см. [[CustomerJourney-Loyalty-Scenarios-Project]], [[CustomerJourney-Scenarios-Project]], [[CustomerJourney-Project]], [[Saby-Loyalty-Scenarios-Engine]] как разные точки входа в один и тот же проект. Не объединены на момент ингеста — требуется дедуп/merge оркестратором.
+
 - [[CustomerJourney-Loyalty-Scenarios-Project]] — «Путь клиента»: ранний проект построения CDP-подобной системы триггерных сценариев лояльности, бенчмарк конкурента [[Mindbox]]
 - [[AbandonedCart-Loyalty-Scenario]] — сценарий «Брошенная корзина»: условия, события, UX-анализ момента авторизации
 - [[TriggerScenario-ConditionsActions-Reference]] — справочник условий/событий сценарного конструктора (снят с Mindbox)
+- [[CustomerJourney-Project]] — умбрелла по `Примеры различных сценариев со схемами.pdf` + `Инсталляционные цепочки.pdf`
+- [[CustomerJourney-Scenario-Builder]] — механика конструктора: типы узлов, race-паттерн ожидания, полные таблицы фильтров/действий/событий
+- [[CustomerJourney-Scenario-Catalog]] — каталог 34 примеров сценариев в 8 категориях, разбор 9 диаграмм
+- [[CustomerJourney-Installation-Chains]] — черновой список категорий предустановленных уведомительных цепочек
 
 ---
 
