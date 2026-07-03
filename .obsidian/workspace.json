@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/discount-card-design-constructor-2026-07-03.md",
+                "file": "wiki/hot.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "discount-card-design-constructor-2026-07-03"
+              "title": "hot"
             }
           },
           {
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/discount-card-design-constructor-2026-07-03.md",
+                "file": "wiki/hot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для discount-card-design-constructor-2026-07-03"
+              "title": "Обратные ссылки для hot"
             }
           },
           {
@@ -214,11 +214,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/hot.md.tmp.10252.dd56c89638a4",
+    "wiki/sources/discount-card-design-constructor-2026-07-03.md",
+    "wiki/hot.md.tmp.10252.5add96302100",
     "wiki/log.md.tmp.10252.a0d2b7fa5d22",
     "wiki/index.md.tmp.10252.15b4aaefc48a",
     "wiki/entities/Ютман-Элина.md",
     "wiki/index.md.tmp.10252.30a0b9b32c9c",
-    "wiki/sources/discount-card-design-constructor-2026-07-03.md",
     "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md",
     "wiki/entities/Ютман-Элина.md.tmp.10252.a59e10e89a93",
     "wiki/entities/Ютман-Элина.md.tmp.10252.5232f4a3de91",
@@ -228,8 +230,6 @@
     "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md.tmp.10252.18a6fd220f4b",
     "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md.tmp.10252.9bfd379678d9",
     "wiki/concepts/DiscountCard-Design-Constructor-Project.md",
-    "wiki/concepts/DiscountCard-Design-Constructor-Project.md.tmp.10252.e28b54c76864",
-    "wiki/sources/discount-card-design-constructor-2026-07-03.md.tmp.10252.9b7811b77f65",
     "wiki/entities/Морозов-Алексей-Васильевич.md",
     "wiki/entities/Морозов.md",
     "wiki/hot.md",
