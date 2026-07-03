@@ -1,85 +1,19 @@
 ---
 type: concept
-title: "Customer Journey / Путь клиента — Loyalty Scenarios Project"
+title: "Customer Journey / Путь клиента — Loyalty Scenarios Project — merged"
 created: 2026-07-03
 updated: 2026-07-03
-status: developing
+status: merged
+merged_into: "[[CustomerJourney-Scenarios-Project]]"
 tags:
-  - price-formation
-  - loyalty
-  - marketing-automation
-  - project
-  - mindbox
+  - redirect
 related:
-  - "[[AbandonedCart-Loyalty-Scenario]]"
-  - "[[TriggerScenario-ConditionsActions-Reference]]"
-  - "[[Mindbox]]"
-  - "[[Loyalty-Product-Overview]]"
-  - "[[SabyGet-Loyalty-Subsystems]]"
-  - "[[ReferralDeals-System]]"
-  - "[[Promocode-Subsystem-Overview]]"
-  - "[[Route-Platform-Architecture]]"
-  - "[[LoyaltyScenario-ReactivationInactiveClients]]"
-  - "[[domains/price-formation/_index]]"
-  - "[[CustomerJourney-Scenario-Model]]"
-  - "[[CustomerJourney-WorkPlan]]"
-  - "[[CustomerJourney-Route-Service-API]]"
-  - "[[CustomerJourney-Test-Plan]]"
-  - "[[CustomerJourney-Events-Actions-Catalog]]"
-  - "[[Saby-Scheme-Constructors]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
 ---
 
-# Путь клиента (Customer Journey) — Loyalty Scenarios Project
+# Customer Journey / Путь клиента — Loyalty Scenarios Project
 
-Ранняя (research/дизайн) стадия проекта Tensor/Saby по построению **системы триггерных сценариев лояльности** — маркетинг-автоматизации в духе CDP-платформ (Customer Data Platform), запускающей рассылки/действия по событиям клиента (брошенная корзина, реактивация неактивных клиентов, дни рождения и т.п.).
+> [!note] Merged
+> This page was one of 4 independent umbrella-project pages created by parallel batch-ingest agents on 2026-07-03 (no page locks existed in this vault checkout). Its content — the Mindbox-benchmark methodology note and the ingested-documents map — has been folded into the canonical project page: **[[CustomerJourney-Scenarios-Project]]** (see §Провенанс и методология проектирования).
 
-Источник вдохновения/бенчмарк — коммерческая CDP-платформа **[[Mindbox]]** (mindbox.ru): её сценарийный конструктор используется как эталон при проектировании собственной таксономии событий/условий/действий и UI-конструктора сценариев.
-
-> [!note] Стадия проекта
-> Документы в папке `.raw/Путь клиента/` — черновики раннего исследования (скриншоты чужого продукта, вопросы без ответов, пометки от руки типа «тут даже еще не спросили авторизацию»). Технического решения по своей архитектуре на момент этих двух документов ещё нет — идёт сбор требований и конкурентный анализ.
-
-## Ингестированные документы (из этого батча)
-
-- [[AbandonedCart-Loyalty-Scenario]] — сценарий «Брошенная корзина»: логика, необходимые события, разбор UX-пробелов на примере реального чек-аута (ресторан «Мили» + SabyGet)
-- [[TriggerScenario-ConditionsActions-Reference]] — справочник условий/действий сценарного конструктора Mindbox (событийный каталог + фильтры), используемый как база словаря для собственной системы; **используется другими сценарными документами проекта как общий справочник**
-
-## Ингестированные документы (батч 2026-07-03, второй агент)
-
-Параллельный агент обработал ещё 10 файлов из той же папки в отдельном проходе — детали разнесены по новым концепт-страницам, а не дублированы здесь:
-
-- [[CustomerJourney-Scenario-Model]] — понятийная модель (Сценарий/Событие/Фильтр/Действие/Ожидание/Завершение), таблица блоков схемы vs Mindbox/REES46, UI макетов реестра+карточки сценария (из `Концептуальное решение.pdf`, `2.pdf`, `3 (Вопросы).pdf`, `Блоки для сценариев лояльности.pdf`)
-- [[CustomerJourney-WorkPlan]] — полный план работ (515 чд, этапы 1.1–2.5 + технологические) из `План работ по проекту.pdf`
-- [[CustomerJourney-Route-Service-API]] — backend API (Route.*, AutoTrace.*, Сервис Выборок/Триггеров), извлечено из плана работ
-- [[CustomerJourney-Test-Plan]] — план тестирования из `План тестирования.pdf`
-- [[CustomerJourney-Events-Actions-Catalog]] — итоговый (не-Mindbox) каталог событий/действий из `События-действия для сценариев лояльности.sabydoc.pdf`
-- [[Saby-Scheme-Constructors]] — реестр 12 конструкторов схем Saby из `Конструкторы схем (Деев).pdf`; проект «Путь клиента» — конструктор №12
-- `Сравнение с конкурентами.pdf`, `Эксплуатация системы.pdf` — оказались **незаполненными корпоративными шаблонами** без проектного контента (см. source-страницы `put-klienta-sravnenie-konkurentami-shablon-2026-07-03`, `put-klienta-ekspluatatsiya-shablon-2026-07-03`)
-
-> [!warning] Известное расхождение именования между параллельными батчами — требует cross-batch dedup оркестратором
-> Этот же проект получил разные имена концепт-страниц от разных агентов в одном ингест-прогоне: **`CustomerJourney-Loyalty-Scenarios-Project`** (эта страница), **`Saby-Loyalty-Scenarios-Engine`** (см. ниже — предположительно уже существующий production-движок) и, по словам координатора, возможно ещё **`Loyalty-CustomerJourney-Project`** от третьего агента. Также возможен дубль каталога событий: [[TriggerScenario-ConditionsActions-Reference]] (Mindbox-версия) vs [[CustomerJourney-Events-Actions-Catalog]] (Saby-целевая версия) — оба содержат частично пересекающиеся списки событий/действий. **Не консолидировано в рамках этого батча** — оставлено оркестратору для cross-batch merge/rename pass.
-
-## Прочие документы проекта (ещё не ингестированы)
-
-| Файл | Предположительное содержание |
-|------|-------------------------------|
-| `Инсталляционные цепочки.pdf` | Онбординг-цепочки (welcome-серии) |
-| `Примеры различных сценариев со схемами.pdf` | Примеры сценариев (помимо брошенной корзины) со схемами |
-| `Сценарий -Реактивация неактивных клиентов (давно не покупали)-.sabydoc.pdf` | Сценарий «Реактивация неактивных клиентов» |
-| `Сценарий _Реактивация неактивных клиентов (давно не покупали)_МОРОЗОВ правит.pdf` | Версия того же сценария с правками ([[Морозов-Алексей-Васильевич]]) |
-| `Техническое задание.pdf` | ТЗ проекта |
-
-> [!key-insight] Проект строит свою CDP/триггерную систему по образцу Mindbox
-> Документы показывают методологию: сначала разобрать чужой продукт (Mindbox) блок за блоком — событие, условие, расписание, фильтры — затем спроектировать аналог для экосистемы Saby (Retail/SabyGet), проверяя UX-гэпы на реальных сценариях (например, момент авторизации относительно момента брошенной корзины).
-
-## Связь с существующей системой лояльности
-
-Каталог событий Mindbox (см. [[TriggerScenario-ConditionsActions-Reference]]) пересекается по смыслу с уже существующими в вики подсистемами лояльности Saby:
-- «Использован реферальный промокод клиента», «Выдан промокод», «Гашение промокода» → [[Promocode-Subsystem-Overview]], [[ReferralDeals-System]]
-- «Изменения заданного баланса», «Баланс клиента стал отрицательным», «Бонусные баллы стали доступны» → [[Bonus-Programs-Architecture]]
-- «Статус карты изменен», «Замена дисконтной карты» → [[DiscountCard-Subsystem-Overview]]
-- Виджет чек-аута на примере SabyGet (см. [[AbandonedCart-Loyalty-Scenario]]) → [[SabyGet-Loyalty-Subsystems]]
-
-Проект пока не связан напрямую (в источниках) ни с одним конкретным BL-модулем price-formation — это раннее исследование, предшествующее техническому решению.
-
-> [!key-insight] У Saby уже есть собственный движок сценариев — исследование, вероятно, про его развитие/пересмотр
-> Параллельно ингестированные документы из той же папки `.raw/Путь клиента/` (сценарий «Реактивация неактивных клиентов») выявили, что в Retail/Presto **уже существует и эксплуатируется** движок «Сценарии лояльности» — [[Route-Platform-Architecture]] (раздел «Скидки и акции → Сценарии», с демо-статистикой 8276 проходов). Более того, **«Брошенная корзина» уже входит в список сценариев-шаблонов по умолчанию** этого существующего движка. Это меняет прочтение документов текущего батча: [[AbandonedCart-Loyalty-Scenario]] и [[TriggerScenario-ConditionsActions-Reference]], вероятно, не про создание системы с нуля, а про **бенчмарк Mindbox с целью развития/переосмысления уже существующего** [[Route-Platform-Architecture]] (например, обогащение каталога событий/условий или пересмотр UX уже существующего шаблона «Брошенная корзина»). В прочитанных здесь двух документах прямой ссылки на существующий движок нет — связь выведена по совпадению доменной области и не подтверждена текстом источника.
+Go to [[CustomerJourney-Scenarios-Project]].
