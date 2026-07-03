@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/entities/Морозов.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Морозов"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/entities/Морозов.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Морозов"
+              "title": "Обратные ссылки"
             }
           },
           {
@@ -200,12 +195,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/entities/Морозов-Алексей-Васильевич.md",
+    "wiki/entities/Морозов.md",
     "wiki/hot.md",
     "wiki/concepts/CustomerJourney-Scenarios-Project.md",
     "wiki/log.md.tmp.10252.a399b6afc971",
     "wiki/index.md.tmp.10252.2ee3c2d58cc3",
     "wiki/index.md.tmp.10252.5bf4d35dc1d8",
-    "wiki/entities/Морозов-Алексей-Васильевич.md",
     "scripts/_tmp_update_manifest.py",
     "scripts/_tmp_update_manifest.py.tmp.10252.d578862a9f14",
     "wiki/sources/sedCvk4ZL",
@@ -235,7 +231,6 @@
     "wiki/concepts/CustomerJourney-Test-Plan.md",
     "wiki/concepts/Saby-Scheme-Constructors.md",
     "wiki/entities/Гаврилов-Михаил.md",
-    "wiki/concepts/Trigger-System-Contract.md",
     "13d90799073d45f02fa067907dbc0342_MD5.avif",
     "52c4aef86af0a71fe2d54ae2f996a298_MD5.avif",
     "e20a67b67cc5784a31e5812261b5034c_MD5.avif",
