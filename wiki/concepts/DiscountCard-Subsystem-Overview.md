@@ -21,8 +21,10 @@ related:
   - "[[Franchise-Loyalty-System]]"
   - "[[DCCommon-Helpers]]"
   - "[[PriceFormation-Common-Helpers]]"
+  - "[[DiscountCard-Design-Constructor-Project]]"
+  - "[[DiscountCard-Design-Constructor-Architecture]]"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-07-03
 ---
 
 # Discount Card Subsystem Overview (СДК)
@@ -101,10 +103,17 @@ Source: `raw/Описание.md` | Domain: [[price-formation/_index]]
 | **Криптография / cvs / hsm** | Подписание AW-образов сертификатом разработчика |
 | **pass-updater** | Создание и обновление AW/GPay образов |
 | **Сервис рассылок** | Массовые рассылки на AW-образы |
-| **Брендбук** | Настройки дизайна для карт и промокодов |
+| **Брендбук** | Настройки дизайна для карт и промокодов ⚠️ выводится из эксплуатации в этой роли — см. ниже |
 | **Webshot** | Скриншоты frontend-компонентов (баннеры штампиков) |
 | **СБИС.Диск** | Загрузка/удаление файлов (иконки, баннеры, excel-файлы) |
+
+> [!contradiction] Устаревает с проектом [[DiscountCard-Design-Constructor-Project]]
+> Строка «Брендбук — настройки дизайна для карт и промокодов» верна на 2026-04-10 (дата этого ингеста), но проект [[DiscountCard-Design-Constructor-Project|«Перевод дизайна дисконтных карт на конструктор»]] (ТЗ подписан 17.04.2026) переносит дизайн ДК на сайт-конструктор (site-builder) и явно предписывает **удалить** данные о дизайне на сервисе Брендбука после массовой конвертации (см. [[DiscountCard-Design-Constructor-WorkPlan|план работ]], этап «Конвертация дизайна карты из брендбука», срок 01.07.2026–05.12.2026). После завершения этого этапа строку про Брендбук в этой таблице нужно считать legacy.
 
 ## API
 
 См. детальную спецификацию методов → [[DiscountCard-Service-API]]
+
+## Смежный проект: перевод дизайна на конструктор
+
+См. [[DiscountCard-Design-Constructor-Project]] (бизнес-контекст), [[DiscountCard-Design-Constructor-Architecture]] (техническое решение: ПО ДизайнКарты/КартаЛояльности, site-builder, каталог виджетов), [[DiscountCard-Design-Constructor-WorkPlan]] (252,5 чд, срок 20.02.2027).
