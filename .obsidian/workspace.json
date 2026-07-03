@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/concepts/CustomerJourney-Scenarios-Project.md",
+                "file": "wiki/sources/customer-journey-tz-2026-07-03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CustomerJourney-Scenarios-Project"
+              "title": "customer-journey-tz-2026-07-03"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/concepts/CustomerJourney-Scenarios-Project.md",
+                "file": "wiki/sources/customer-journey-tz-2026-07-03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для CustomerJourney-Scenarios-Project"
+              "title": "Обратные ссылки для customer-journey-tz-2026-07-03"
             }
           },
           {
@@ -200,6 +200,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/concepts/CustomerJourney-Scenarios-Project.md",
+    "wiki/concepts/LoyaltyScenario-ReactivationInactiveClients.md.tmp.10252.d07c3d45d633",
+    "wiki/concepts/LoyaltyScenario-ReactivationInactiveClients.md.tmp.10252.1a7bd95ca3bd",
+    "wiki/concepts/CustomerJourney-UI-Decomposition.md.tmp.10252.46545b23d4c9",
     "wiki/concepts/Route-Platform-Architecture.md.tmp.10252.c5accc3e39fd",
     "wiki/concepts/CustomerJourney-Scenarios-Project.md.tmp.10252.ac59addb2d7c",
     "wiki/concepts/CustomerJourney-Scenarios-Project.md.tmp.10252.078ee8f39e90",
@@ -207,10 +211,6 @@
     "wiki/domains/price-formation/_index.md.tmp.10252.99ac9d5d1eb5",
     "wiki/domains/price-formation/_index.md.tmp.10252.360a25c88691",
     "wiki/entities/_index.md.tmp.10252.9849a66bf0aa",
-    "wiki/concepts/_index.md.tmp.10252.5e1a633df226",
-    "wiki/comparisons/sedvs6uUX",
-    "wiki/concepts/sedCeTHRU",
-    "wiki/concepts/sedESF27D",
     "wiki/sources/put-klienta-ekspluatatsiya-shablon-2026-07-03.md",
     "wiki/sources/put-klienta-sravnenie-konkurentami-shablon-2026-07-03.md",
     "wiki/sources/put-klienta-sobytiya-deystviya-2026-07-03.md",

@@ -9,7 +9,7 @@ tags:
   - customer-journey
   - marshruty
   - scenario-design
-status: developing
+status: current
 created: 2026-07-03
 updated: 2026-07-03
 related:
@@ -17,11 +17,17 @@ related:
   - "[[CustomerJourney-Scenarios-Project]]"
   - "[[Выборки-Module]]"
   - "[[loyalty-scenario-reactivation-inactive-v1-2026-07-03]]"
+  - "[[reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03]]"
+  - "[[Морозов-Алексей-Васильевич]]"
+  - "[[CustomerJourney-Scenario-Model]]"
 ---
 
 # Сценарий «Реактивация неактивных клиентов (давно не покупали)»
 
 The first concrete scenario used to design the [[Route-Platform-Architecture|Маршруты scenario engine]]. Also appears as the "Давно не покупали" tile in the scenario list example.
+
+> [!note] Канонический пример — сведён из 2 источников
+> Эта страница объединяет два независимых документа из `.raw/Путь клиента/`, описывающих один и тот же мокап: [[loyalty-scenario-reactivation-inactive-v1-2026-07-03]] (v1, детальный walkthrough с полной карточкой прохода клиента) и [[reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03]] (ревью [[Морозов-Алексей-Васильевич]], с агрегированной demo-статистикой и 7 аннотациями-пометками). Третье, менее детальное упоминание того же примера («Покупатель не активен 30 дней», с другими демо-числами 100/50) — в [[CustomerJourney-Scenario-Model]], оставлено отдельно как часть более широкой понятийной модели.
 
 ## Business rule
 
@@ -52,6 +58,19 @@ Illustrates the pass-detail timeline described in [[Route-Platform-Architecture]
 
 Other sample (mock/synthetic) clients enrolled in the same run: Олег, Екатерина, Александрова Николай, Егор, Обручев Сергей, Наталия, Новосельцев Валентин.
 
+## Aggregate demo statistics (dashboard screenshot, Морозов review)
+
+A second, aggregate-level view of the same mockup (from the reviewed sibling document) shows dashboard-level funnel numbers rather than a single client's timeline:
+
+| Метрика | Значение |
+|---|---|
+| Клиентов в выборке | 1 027 |
+| Разослано писем / в ожидании | 935 / 895 |
+| Совершили покупку в течение 10д | 40 (по накопительным цифрам на узле) |
+| Сумма (демо) | 65 227 |
+
+Sample client names on these dashboard screenshots (Олег, Загребова Елена, Евгения, Александрова Николай, Егор, Наталия, Новосельцев Валентин) are demo/test data, not real Tensor customers.
+
 ## Statistics requirements (not yet designed)
 
 The document explicitly lists required metrics for the Статистика tab, marked "новый макет" (new mockup needed, not yet built):
@@ -61,6 +80,18 @@ The document explicitly lists required metrics for the Статистика tab,
 - Кол-во отправленных писем
 - Кол-во и сумма покупок
 
-## Provenance & revision note
+## Открытые вопросы (ревью Морозова, полный список)
 
-Extracted from v1 of the design doc: [[loyalty-scenario-reactivation-inactive-v1-2026-07-03]]. A sibling document with edits/comments from **Морозов** covers the same scenario and was ingested in parallel as [[reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03]], which produced its own overlapping concept page [[LoyaltyScenario-ReactivationInactiveClients]] (near-duplicate of this page, different name). A third overlapping description of the same example ("Покупатель не активен (30 дней)") exists at [[CustomerJourney-Scenario-Model]] from yet another parallel source. All three describe the same business scenario from different documents in the same batch — **not reconciled at write time**; merge/dedupe is left to the orchestrator's cross-batch finalize pass.
+Аннотации-пометки из ревью [[Морозов-Алексей-Васильевич]] (см. [[reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03]]):
+
+1. Незавершённый скриншот элемента меню «Лояльность»
+2. Не задокументирован пошагово сценарий типа «По событию»
+3. Макет окна стартовых условий на момент документирования не финализирован
+4. Предложение добавить условие «Покупали» в отбор (см. "Gap flagged by the doc's own authors" выше — тот же вопрос зафиксирован независимо в обоих источниках)
+5. Отсутствует настройка срока сгорания бонусов, начисленных сценарием
+6. Непонятен смысл поля «Выберите способ отправки…» в действии «Отправить»
+7. «Цели» сценария не заполнены на момент документирования («Без целей пока»)
+
+## Provenance
+
+Extracted from v1 of the design doc [[loyalty-scenario-reactivation-inactive-v1-2026-07-03]] (detailed client-level walkthrough) and the reviewed sibling [[reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03]] (aggregate dashboard + Морозов's 7 open-question annotations). A third, less detailed mention of the same example ("Покупатель не активен (30 дней)") exists at [[CustomerJourney-Scenario-Model]] as part of a broader conceptual-model comparison with Mindbox/REES46 — left separate rather than merged in, since its unique value is the competitor comparison, not this scenario's specifics.
