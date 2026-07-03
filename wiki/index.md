@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-06-24 | Total pages: 336 | Sources ingested: 187
+Last updated: 2026-07-03 | Total pages: 387 | Sources ingested: 204
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -69,6 +69,15 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[LoyaltyReferral-Module-Extraction]] — выделение рефералки в отдельный СБИС-модуль LoyaltyReferral: план Андрея (4 этапа), зависимости (mirror KZ, rightcheck→Rights-Py, user_service_cloud→UserServiceCloud-Py), регистрация в online32.s3srv:454, симлинки tests_new→tests, echo-метод, грабли test_manager (задача 05256826) (status: developing)
 - [[ReferralProgram-SetPrice-Record-Return]] — SetStubPrice/SetLeadPrice возвращают Record(AccruedCount, NotAccruedCount) вместо int; «скольким начислено / нет» как в DiscountCard.BatchDeleteOrLock (задача 04307161, saby bank) (status: developing)
 - [[ReferralProgram-Data-Model]] — модель данных реф. программ: ВидЦены→Раздел→БизнесГруппа, AdObject-источники, access_data_guid, utm_rfcid, миграция между Реф. Сетями (задача 06096778) (status: developing)
+
+## Price Formation — Customer Journey / Маршруты (Путь клиента)
+
+- [[CustomerJourney-Scenarios-Project]] (c-000156) — канонический обзор нового движка сценариев лояльности «Путь клиента» / Маршруты: цели, аудитория (~670 Presto-аккаунтов), 4 подсистемы-владельца, лицензирование (status: current)
+- [[Route-Platform-Architecture]] (c-000160) — Платформа Маршрутов: `RouteService.StartTrace/OnEvent`, sequence-диаграммы, модель Route/Trace/Events, DWC-пачки по 1000 клиентов (status: current)
+- [[Trigger-System-Contract]] (c-000162) — Система триггеров: JSON-контракт `triggers-data`/`base/actions`, каталог событий/действий по приоритетам (status: current)
+- [[LoyaltyScenario-ReactivationInactiveClients]] (c-000164) — канонический пример сценария «Давно не покупали»: конфигурация, demo-статистика, открытые вопросы ревью Морозова (status: current)
+- [[CustomerJourney-Scenario-Catalog]] (c-000154) — каталог 34 примеров готовых сценариев в 8 категориях (status: current)
+- См. полный список (16 concept-страниц, 10 entity-страниц) в [[domains/price-formation/_index]] §Customer Journey и [[concepts/_index]] §Customer Journey
 
 ## Price Formation — Decisions
 
