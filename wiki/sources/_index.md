@@ -28,6 +28,12 @@ All source pages — summaries of ingested documents, transcripts, articles, and
 
 ---
 
+## Documentation Review
+
+- [[reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03]] — 2026-07-03 | Сценарий «Реактивация неактивных клиентов»: аннотированная версия (Морозов), 7 ревью-пометок, sibling к чистовику `.sabydoc.pdf`
+
+---
+
 ## Articles
 
 <!-- Add article source pages here -->

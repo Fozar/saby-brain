@@ -87,6 +87,14 @@ Loyalty and price formation system for the SBIS (Saby) platform. Manages discoun
 
 ---
 
+## Customer Journey / Marketing Automation (early-stage project)
+
+- [[CustomerJourney-Loyalty-Scenarios-Project]] — «Путь клиента»: ранний проект построения CDP-подобной системы триггерных сценариев лояльности, бенчмарк конкурента [[Mindbox]]
+- [[AbandonedCart-Loyalty-Scenario]] — сценарий «Брошенная корзина»: условия, события, UX-анализ момента авторизации
+- [[TriggerScenario-ConditionsActions-Reference]] — справочник условий/событий сценарного конструктора (снят с Mindbox)
+
+---
+
 ## Common Infrastructure
 
 - [[CursorNavigation-Mechanism]] — курсорная пагинация: `NavField`, `NavigationParams`, `get_list_by_cursor`, `get_nav_expressions`, `add_cursor_params`; варианты `List[NavField]` (современный) и `str` (устаревший); поддержка ndFORWARD/ndBACKWARD/ndBOTHWAYS
@@ -124,3 +132,5 @@ Loyalty and price formation system for the SBIS (Saby) platform. Manages discoun
 - [[franchise-loyalty-2026-04-10]] - 1 doc from `raw/` (Описание: franchise loyalty business overview, sync mechanism, unified customer base) (2026-04-10)
 - [[report-prefetch-service-2026-04-13]] - 1 doc from `raw/` (Платформенный механизм кэширования отчётов: Prefetch.List/Data/AppendBatch, микросессии, иерархия, сортировка+индексы, поиск, суммирование) (2026-04-13)
 - [[report-prefetch-db-schema-2026-04-13]] - 1 doc from `raw/` (Схема базы данных: SessionId/StoredReport/ReportPage/ReportData/Method/ShardsAmountHistory, 5 выборок, индексы) (2026-04-13)
+- [[put-klienta-abandoned-cart-2026-07-03]] - 1 doc from `.raw/Путь клиента/` (сценарий «Брошенная корзина», бенчмарк Mindbox) (2026-07-03)
+- [[put-klienta-conditions-actions-2026-07-03]] - 1 doc from `.raw/Путь клиента/` (справочник условий/событий сценарного конструктора Mindbox) (2026-07-03)
