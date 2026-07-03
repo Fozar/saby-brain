@@ -145,3 +145,4 @@ New marketing-automation / scenario engine ("Маршруты") built on top of 
 - [[report-prefetch-db-schema-2026-04-13]] - 1 doc from `raw/` (Схема базы данных: SessionId/StoredReport/ReportPage/ReportData/Method/ShardsAmountHistory, 5 выборок, индексы) (2026-04-13)
 - [[put-klienta-abandoned-cart-2026-07-03]] - 1 doc from `.raw/Путь клиента/` (сценарий «Брошенная корзина», бенчмарк Mindbox) (2026-07-03)
 - [[put-klienta-conditions-actions-2026-07-03]] - 1 doc from `.raw/Путь клиента/` (справочник условий/событий сценарного конструктора Mindbox) (2026-07-03)
+- [[loyalty-scenario-reactivation-inactive-v1-2026-07-03]] - 1 doc from `.raw/Путь клиента/` (сценарий «Реактивация неактивных клиентов (давно не покупали)», v1; Маршруты/Выборки ownership questions) (2026-07-03)
