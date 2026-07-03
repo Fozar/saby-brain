@@ -1,5 +1,6 @@
 ---
 type: concept
+address: c-000159
 title: "Путь клиента — план работ (515 чд)"
 created: 2026-07-03
 updated: 2026-07-03

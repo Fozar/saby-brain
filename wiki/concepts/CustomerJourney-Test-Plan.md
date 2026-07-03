@@ -1,5 +1,6 @@
 ---
 type: concept
+address: c-000157
 title: "Путь клиента — план тестирования"
 created: 2026-07-03
 updated: 2026-07-03

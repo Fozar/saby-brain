@@ -1,5 +1,6 @@
 ---
 type: concept
+address: c-000156
 title: "CustomerJourney Scenarios Project (Путь клиента)"
 created: 2026-07-03
 updated: 2026-07-03

@@ -1,5 +1,6 @@
 ---
 type: concept
+address: c-000152
 title: "Путь клиента — Сервис Маршрутов: backend API"
 created: 2026-07-03
 updated: 2026-07-03

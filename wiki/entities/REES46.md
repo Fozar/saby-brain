@@ -1,5 +1,6 @@
 ---
 type: entity
+address: c-000166
 title: "REES46"
 entity_type: product
 role: "Конкурент — маркетинг-автоматизация / CDP-платформа"

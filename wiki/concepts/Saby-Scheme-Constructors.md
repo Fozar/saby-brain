@@ -1,5 +1,6 @@
 ---
 type: concept
+address: c-000161
 title: "Конструкторы схем Saby — семейство прикладных редакторов"
 created: 2026-07-03
 updated: 2026-07-03

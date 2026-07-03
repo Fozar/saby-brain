@@ -1,5 +1,6 @@
 ---
 type: source
+address: c-000187
 title: "Путь клиента — План тестирования"
 updated: 2026-07-03
 tags:

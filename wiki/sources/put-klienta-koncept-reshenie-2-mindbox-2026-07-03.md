@@ -1,5 +1,6 @@
 ---
 type: source
+address: c-000183
 title: "Путь клиента — Концептуальное решение 2 (обзор Mindbox)"
 updated: 2026-07-03
 tags:

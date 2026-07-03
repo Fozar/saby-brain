@@ -1,5 +1,6 @@
 ---
 type: source
+address: c-000186
 title: "Путь клиента — План работ по проекту (515 чд)"
 updated: 2026-07-03
 tags:

@@ -1,5 +1,6 @@
 ---
 type: entity
+address: c-000167
 title: "Выборки (Selections module)"
 aliases:
   - "Selections module"

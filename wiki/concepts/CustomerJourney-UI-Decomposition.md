@@ -1,5 +1,6 @@
 ---
 type: concept
+address: c-000158
 title: "CustomerJourney UI Decomposition (Путь клиента — интерфейс)"
 created: 2026-07-03
 updated: 2026-07-03

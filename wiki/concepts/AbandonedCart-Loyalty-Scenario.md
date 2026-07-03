@@ -1,5 +1,6 @@
 ---
 type: concept
+address: c-000149
 title: "Abandoned Cart Loyalty Scenario (Брошенная корзина)"
 created: 2026-07-03
 updated: 2026-07-03

@@ -1,5 +1,6 @@
 ---
 type: concept
+address: c-000163
 title: "Trigger Scenario Conditions/Actions Reference (Список Условий/Действий)"
 created: 2026-07-03
 updated: 2026-07-03

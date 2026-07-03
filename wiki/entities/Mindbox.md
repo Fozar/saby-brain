@@ -1,5 +1,6 @@
 ---
 type: entity
+address: c-000165
 title: "Mindbox"
 created: 2026-07-03
 updated: 2026-07-03

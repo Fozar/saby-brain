@@ -1,5 +1,6 @@
 ---
 type: source
+address: c-000185
 title: "Путь клиента — Конструкторы схем (Деев)"
 updated: 2026-07-03
 tags:

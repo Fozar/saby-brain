@@ -1,5 +1,6 @@
 ---
 type: source
+address: c-000182
 title: "Путь клиента — Концептуальное решение (1)"
 updated: 2026-07-03
 tags:

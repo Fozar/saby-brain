@@ -1,5 +1,6 @@
 ---
 type: concept
+address: c-000162
 title: "Trigger System Contract (Система триггеров)"
 created: 2026-07-03
 updated: 2026-07-03

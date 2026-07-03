@@ -1,5 +1,6 @@
 ---
 type: concept
+address: c-000160
 title: "Route Platform Architecture (Платформа Маршрутов)"
 created: 2026-07-03
 updated: 2026-07-03
