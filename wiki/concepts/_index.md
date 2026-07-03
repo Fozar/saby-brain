@@ -48,6 +48,8 @@ All concept pages — ideas, patterns, and frameworks extracted from sources.
 - [[Franchise-Loyalty-Architecture]] — franchise group support in loyalty DB: FranchiseRole Owner/Participant, UUID lists on ВидЦены/ВидКарты/CardType/Operation, cross-account activation
 - [[Loyalty-Franchise-Mechanics]] — БЛ Лояльности event subscriptions for franchise lifecycle: 5 events, folder creation logic, FranchiseRole values, sync/bonus flows
 - [[Franchise-Loyalty-System]] — business overview of franchise loyalty: Owner/Participant model, sync (full-overwrite by UUID), unified customer base via Owner account, СДК as shared balance store
+- [[Saby-Loyalty-Scenarios-Engine]] — движок маркетинговых сценариев (customer journey) в Retail/Presto: типы (по событию/периодический/разовый), конструктор условий Если/И/ИЛИ, блоки Действие/Условие/Ожидание, ветвление по событию, Цели (status: developing)
+- [[Loyalty-Scenario-Reactivation-Inactive-Clients]] — пример сценария «Давно не покупали»: 30д без покупки → 100Б + email → ожидание 10д → thank-you email; открытые вопросы ревью (status: current)
 
 ---
 

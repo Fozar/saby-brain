@@ -14,6 +14,7 @@ related:
   - "[[Loyalty-Public-API]]"
   - "[[ReferralProgram-Module]]"
   - "[[price-formation/_index]]"
+  - "[[Saby-Loyalty-Scenarios-Engine]]"
 created: 2026-04-10
 ---
 
@@ -97,6 +98,7 @@ Not yet formalized as a distinct entity. Closest analog: персональна�
 | **Промокоды** | Promo code emission types, instance issuance, client display |
 | **Статистика** | Widgets and reports for loyalty effectiveness |
 | **Лояльность в Retail/Presto/Salon** | Specialized UI registries; houses the core discount calculation engine |
+| **Сценарии лояльности** | Visual marketing-automation builder ([[Saby-Loyalty-Scenarios-Engine]]): periodic/event/one-time triggers, condition-based client selection, chained actions (bonus accrual, discount, promo code, send), wait blocks with event branching, goals |
 | **Подсказки на кассе** | Cashier hint actions: text, product lists, discount card offers |
 | **Наценки** | Negative discounts (service fees); no separate trigger logic |
 | **Внешние бонусные системы** | Integration with UDS, Premium Bonus, Iiko via public API |

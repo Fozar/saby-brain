@@ -26,6 +26,7 @@ All entity pages — people, organizations, products, and tools.
 
 - [[Тимошенко А.А.]] — инженер-программист 2+, Тензор; BL-разработчик loyalty/price-formation, ответственный за SabyBank RKO Referral и DWC-промокоды
 - [[Andrej Karpathy]] — AI researcher, educator; originated the LLM Wiki pattern
+- [[Морозов]] — ревьюер/автор правок документации по [[Saby-Loyalty-Scenarios-Engine]]; роль и подразделение не подтверждены (status: stub)
 
 ---
 
