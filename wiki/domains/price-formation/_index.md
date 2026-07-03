@@ -100,6 +100,18 @@ Loyalty and price formation system for the SBIS (Saby) platform. Manages discoun
 - [[CustomerJourney-Scenario-Catalog]] — каталог 34 примеров сценариев в 8 категориях, разбор 9 диаграмм
 - [[CustomerJourney-Installation-Chains]] — черновой список категорий предустановленных уведомительных цепочек
 
+### Техническое задание (согласованная финальная спецификация)
+
+`Техническое задание.pdf` — в отличие от черновиков/бенчмарков выше, это **согласованный** документ (макеты помечены «Согласовано») с конкретным API, sequence-диаграммами и полной моделью данных:
+
+- [[CustomerJourney-Scenarios-Project]] — цели, аудитория (~670 Presto-аккаунтов), 4 подсистемы-владельца ([[Route-Platform-Architecture]]/[[Trigger-System-Contract]]/Скрипты/Выборки), понятийная модель, лицензирование (полный тариф)
+- [[Route-Platform-Architecture]] — Платформа Маршрутов: `RouteService.StartTrace/OnEvent`, `Route.Start/Stop/Status`, sequence-диаграммы запуска и авто-проходчика, модель Route/Trace/Events, DWC-пачки по 1000 клиентов, глобальная предфильтрация
+- [[Trigger-System-Contract]] — Система триггеров: JSON-контракт (`triggers-data`/`base/actions`), каталог событий по приоритетам (1-3), каталог действий, `layout.Card`/`Trigger.Notify`
+- [[CustomerJourney-UI-Decomposition]] — UI: реестр (мастер-деталь), карточка сценария (5 вкладок), карточка прохода, компоненты `Route/ScriptPage/*`
+
+> [!contradiction] «Раннее исследование» vs «согласованное ТЗ»
+> [[CustomerJourney-Loyalty-Scenarios-Project]] описывает проект как раннюю research-стадию («технического решения по своей архитектуре ещё нет»). `Техническое задание.pdf` — это уже принятое техническое решение с согласованными макетами. Раздел 6 ТЗ явно опирается на существующую (эксплуатируемую) Платформу Маршрутов как готовую инфраструктуру — согласуется с находкой про [[Saby-Loyalty-Scenarios-Engine]] в той же umbrella-странице. Также: [[CustomerJourney-Route-Service-API]] (из планового `План работ по проекту.pdf`) называет методы `AutoTrace.Start/Run/OnEvent`, тогда как финальное ТЗ фиксирует `RouteService.StartTrace/StartClientRoute/OnEvent` — вероятно переименование между планированием и финальным ТЗ, надо сверить при ингесте `Концептуальное решение*.pdf`. Также вероятный дубль сущности: [[Чусовитин-А]] (эта страница, из ТЗ) ≈ [[Чусовитин-Александр]] (из плана работ) — требует ручной проверки перед слиянием.
+
 ---
 
 ## Common Infrastructure
@@ -153,3 +165,4 @@ New marketing-automation / scenario engine ("Маршруты") built on top of 
 - [[put-klienta-abandoned-cart-2026-07-03]] - 1 doc from `.raw/Путь клиента/` (сценарий «Брошенная корзина», бенчмарк Mindbox) (2026-07-03)
 - [[put-klienta-conditions-actions-2026-07-03]] - 1 doc from `.raw/Путь клиента/` (справочник условий/событий сценарного конструктора Mindbox) (2026-07-03)
 - [[loyalty-scenario-reactivation-inactive-v1-2026-07-03]] - 1 doc from `.raw/Путь клиента/` (сценарий «Реактивация неактивных клиентов (давно не покупали)», v1; Маршруты/Выборки ownership questions) (2026-07-03)
+- [[customer-journey-tz-2026-07-03]] - 1 PDF (51 стр.) из `.raw/Путь клиента/` — согласованное ТЗ проекта «Путь клиента»: цели, Платформа Маршрутов, Система триггеров, UI-декомпозиция (2026-07-03)

@@ -64,6 +64,10 @@ All concept pages — ideas, patterns, and frameworks extracted from sources.
 - [[CustomerJourney-Scenario-Builder]] — механика конструктора: типы узлов (старт/условие/действие/ожидание-race/цель), 2 типа старта (событие/выборка), полные таблицы фильтров/действий/событий с пометками MVP (status: developing)
 - [[CustomerJourney-Scenario-Catalog]] — каталог 34 примеров сценариев в 8 категориях (приветствие/возврат/лояльные клиенты/бонусы/реферальная/праздники/сервис/разовые), разбор структуры 9 диаграмм (status: current)
 - [[CustomerJourney-Installation-Chains]] — черновой список категорий предустановленных уведомительных цепочек (начисления/уведомления/карты/промокоды) (status: developing)
+- [[CustomerJourney-Scenarios-Project]] — «Путь клиента» из **согласованного** `Техническое задание.pdf`: цели/критерии (возвращение клиента, брошенная корзина), аудитория (~670 Presto-аккаунтов), 4 подсистемы-владельца, понятийная модель, лицензирование; ⚠️ см. предупреждение выше про параллельные umbrella-страницы того же проекта (status: developing)
+- [[Route-Platform-Architecture]] — Платформа Маршрутов из финального ТЗ: `RouteService.StartTrace/OnEvent`, `Route.Start/Stop/Status`, 2 sequence-диаграммы (запуск/авто-проходчик), модель Route/Trace/Events, DWC-пачки по 1000 клиентов, глобальная предфильтрация; ⚠️ методы отличаются от `AutoTrace.*` в [[CustomerJourney-Route-Service-API]] (status: developing)
+- [[Trigger-System-Contract]] — Система триггеров из финального ТЗ: JSON-контракт (`triggers-data`/`base/actions`), каталог событий по приоритетам (1-3: брошенная корзина/покупка/бонусы/промокоды/карта), каталог действий, `layout.Card`/`Trigger.Notify` (status: developing)
+- [[CustomerJourney-UI-Decomposition]] — UI из финального ТЗ: реестр сценариев (мастер-деталь), карточка сценария (5 вкладок: Описание/Этапы/Схема/Проходы/Статистика), карточка прохода, компоненты `Route/ScriptPage/*` (status: developing)
 
 ---
 
