@@ -1060,6 +1060,212 @@
         "wiki/log.md",
         "wiki/hot.md"
       ]
+    },
+    ".raw/Путь клиента/Техническое задание.pdf": {
+      "hash": "71af422c85375b3719514b8c3abff70a",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/customer-journey-tz-2026-07-03.md",
+        "wiki/concepts/CustomerJourney-Scenarios-Project.md",
+        "wiki/concepts/Route-Platform-Architecture.md",
+        "wiki/concepts/Trigger-System-Contract.md",
+        "wiki/concepts/CustomerJourney-UI-Decomposition.md",
+        "wiki/entities/Окладников-Д.md",
+        "wiki/entities/Чусовитин-Александр.md",
+        "wiki/entities/Гаттаулин-Э.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md",
+        "wiki/domains/price-formation/_index.md"
+      ]
+    },
+    ".raw/Путь клиента/Примеры различных сценариев со схемами.pdf": {
+      "hash": "e4192dc71d29463da9f0449b7261b90e",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-scenario-examples-2026-07-03.md",
+        "wiki/concepts/CustomerJourney-Scenario-Builder.md",
+        "wiki/concepts/CustomerJourney-Scenario-Catalog.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/_index.md",
+        "wiki/concepts/Loyalty-Product-Overview.md"
+      ]
+    },
+    ".raw/Путь клиента/Инсталляционные цепочки.pdf": {
+      "hash": "6da9c9cf2db143abf4d9cd346b4c9e71",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-installation-chains-2026-07-03.md",
+        "wiki/concepts/CustomerJourney-Installation-Chains.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/_index.md"
+      ]
+    },
+    ".raw/Путь клиента/Сценарий -Реактивация неактивных клиентов (давно не покупали)-.sabydoc.pdf": {
+      "hash": "5eb6b948e6daf5fac9685739f8b8bbfb",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/loyalty-scenario-reactivation-inactive-v1-2026-07-03.md",
+        "wiki/concepts/LoyaltyScenario-ReactivationInactiveClients.md",
+        "wiki/entities/Выборки-Module.md",
+        "wiki/entities/Гаврилов-Михаил.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md",
+        "wiki/domains/price-formation/_index.md"
+      ]
+    },
+    ".raw/Путь клиента/Сценарий _Реактивация неактивных клиентов (давно не покупали)_МОРОЗОВ правит.pdf": {
+      "hash": "ad03c3770645a1523221a70074738b35",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03.md",
+        "wiki/entities/Морозов-Алексей-Васильевич.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/LoyaltyScenario-ReactivationInactiveClients.md",
+        "wiki/concepts/Route-Platform-Architecture.md",
+        "wiki/concepts/CustomerJourney-UI-Decomposition.md",
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md"
+      ]
+    },
+    ".raw/Путь клиента/Брошенная корзина.pdf": {
+      "hash": "168d61406b8f937d390db6be0a4dca1f",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-abandoned-cart-2026-07-03.md",
+        "wiki/concepts/AbandonedCart-Loyalty-Scenario.md",
+        "wiki/entities/Mindbox.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md",
+        "wiki/domains/price-formation/_index.md"
+      ]
+    },
+    ".raw/Путь клиента/Список УсловийДействий.pdf": {
+      "hash": "a4c808983c4737d3d6054b8a390d6918",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-conditions-actions-2026-07-03.md",
+        "wiki/concepts/TriggerScenario-ConditionsActions-Reference.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/_index.md"
+      ]
+    },
+    ".raw/Путь клиента/Концептуальное решение.pdf": {
+      "hash": "51ba3bdcffa90a4506cf99208d154fc3",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-koncept-reshenie-1-2026-07-03.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/CustomerJourney-Scenario-Model.md",
+        "wiki/domains/price-formation/_index.md"
+      ]
+    },
+    ".raw/Путь клиента/Концептуальное решение 2.pdf": {
+      "hash": "7aa9f4aec7f5396471aecf3bc1973cd9",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-koncept-reshenie-2-mindbox-2026-07-03.md",
+        "wiki/entities/REES46.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/CustomerJourney-Scenario-Model.md",
+        "wiki/entities/_index.md"
+      ]
+    },
+    ".raw/Путь клиента/Концептуальное решение 3 (Вопросы).pdf": {
+      "hash": "25872fcf552722ecb7605893ce73818c",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-koncept-reshenie-3-voprosy-2026-07-03.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/CustomerJourney-Scenario-Model.md"
+      ]
+    },
+    ".raw/Путь клиента/Блоки для сценариев лояльности.pdf": {
+      "hash": "663b637d9d7163a0fbc5c7abd6860b27",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-bloki-scenariev-2026-07-03.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/CustomerJourney-Scenario-Model.md"
+      ]
+    },
+    ".raw/Путь клиента/Конструкторы схем (Деев).pdf": {
+      "hash": "da3b89e13ee5e42f77775cdf8a4f887a",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-konstruktory-shem-deev-2026-07-03.md",
+        "wiki/concepts/Saby-Scheme-Constructors.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/_index.md"
+      ]
+    },
+    ".raw/Путь клиента/План работ по проекту.pdf": {
+      "hash": "5ab6bea321ca40b7a45d0d44dd6ac11e",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-plan-rabot-2026-07-03.md",
+        "wiki/concepts/CustomerJourney-WorkPlan.md",
+        "wiki/concepts/CustomerJourney-Route-Service-API.md",
+        "wiki/entities/Матюшев-Дмитрий.md",
+        "wiki/entities/Полевщиков-Евгений.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md"
+      ]
+    },
+    ".raw/Путь клиента/План тестирования.pdf": {
+      "hash": "649eae7b513f9bb39c0cf73aeb657bad",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-plan-testirovaniya-2026-07-03.md",
+        "wiki/concepts/CustomerJourney-Test-Plan.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/_index.md",
+        "wiki/entities/Дюднева-Светлана-Андреевна.md"
+      ]
+    },
+    ".raw/Путь клиента/События-действия  для сценариев лояльности.sabydoc.pdf": {
+      "hash": "f9466a6184850e28ae8c57c61925ae8d",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-sobytiya-deystviya-2026-07-03.md",
+        "wiki/concepts/CustomerJourney-Events-Actions-Catalog.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/_index.md"
+      ]
+    },
+    ".raw/Путь клиента/Сравнение с конкурентами.pdf": {
+      "hash": "55664a81dcc8da5d9ec6c052b8176f3e",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-sravnenie-konkurentami-shablon-2026-07-03.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Путь клиента/Эксплуатация системы.pdf": {
+      "hash": "4f1907ab8b18fad0c425a607f46b6021",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/sources/put-klienta-ekspluatatsiya-shablon-2026-07-03.md"
+      ],
+      "pages_updated": []
     }
   },
   "address_map": {
@@ -1155,7 +1361,50 @@
     "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md": "c-000145",
     "wiki/sources/soveshanie-sdacha-td-itload-2026-06-23.md": "c-000146",
     "wiki/entities/Ютман-Элина.md": "c-000147",
-    "wiki/sources/zvonok-musohranov-timoshenko-2026-06-30.md": "c-000148"
+    "wiki/sources/zvonok-musohranov-timoshenko-2026-06-30.md": "c-000148",
+    "wiki/concepts/AbandonedCart-Loyalty-Scenario.md": "c-000149",
+    "wiki/concepts/CustomerJourney-Events-Actions-Catalog.md": "c-000150",
+    "wiki/concepts/CustomerJourney-Installation-Chains.md": "c-000151",
+    "wiki/concepts/CustomerJourney-Route-Service-API.md": "c-000152",
+    "wiki/concepts/CustomerJourney-Scenario-Builder.md": "c-000153",
+    "wiki/concepts/CustomerJourney-Scenario-Catalog.md": "c-000154",
+    "wiki/concepts/CustomerJourney-Scenario-Model.md": "c-000155",
+    "wiki/concepts/CustomerJourney-Scenarios-Project.md": "c-000156",
+    "wiki/concepts/CustomerJourney-Test-Plan.md": "c-000157",
+    "wiki/concepts/CustomerJourney-UI-Decomposition.md": "c-000158",
+    "wiki/concepts/CustomerJourney-WorkPlan.md": "c-000159",
+    "wiki/concepts/Route-Platform-Architecture.md": "c-000160",
+    "wiki/concepts/Saby-Scheme-Constructors.md": "c-000161",
+    "wiki/concepts/Trigger-System-Contract.md": "c-000162",
+    "wiki/concepts/TriggerScenario-ConditionsActions-Reference.md": "c-000163",
+    "wiki/concepts/LoyaltyScenario-ReactivationInactiveClients.md": "c-000164",
+    "wiki/entities/Mindbox.md": "c-000165",
+    "wiki/entities/REES46.md": "c-000166",
+    "wiki/entities/Выборки-Module.md": "c-000167",
+    "wiki/entities/Гаврилов-Михаил.md": "c-000168",
+    "wiki/entities/Гаттаулин-Э.md": "c-000169",
+    "wiki/entities/Матюшев-Дмитрий.md": "c-000170",
+    "wiki/entities/Морозов-Алексей-Васильевич.md": "c-000171",
+    "wiki/entities/Окладников-Д.md": "c-000172",
+    "wiki/entities/Полевщиков-Евгений.md": "c-000173",
+    "wiki/entities/Чусовитин-Александр.md": "c-000174",
+    "wiki/sources/customer-journey-tz-2026-07-03.md": "c-000175",
+    "wiki/sources/loyalty-scenario-reactivation-inactive-v1-2026-07-03.md": "c-000176",
+    "wiki/sources/put-klienta-abandoned-cart-2026-07-03.md": "c-000177",
+    "wiki/sources/put-klienta-bloki-scenariev-2026-07-03.md": "c-000178",
+    "wiki/sources/put-klienta-conditions-actions-2026-07-03.md": "c-000179",
+    "wiki/sources/put-klienta-ekspluatatsiya-shablon-2026-07-03.md": "c-000180",
+    "wiki/sources/put-klienta-installation-chains-2026-07-03.md": "c-000181",
+    "wiki/sources/put-klienta-koncept-reshenie-1-2026-07-03.md": "c-000182",
+    "wiki/sources/put-klienta-koncept-reshenie-2-mindbox-2026-07-03.md": "c-000183",
+    "wiki/sources/put-klienta-koncept-reshenie-3-voprosy-2026-07-03.md": "c-000184",
+    "wiki/sources/put-klienta-konstruktory-shem-deev-2026-07-03.md": "c-000185",
+    "wiki/sources/put-klienta-plan-rabot-2026-07-03.md": "c-000186",
+    "wiki/sources/put-klienta-plan-testirovaniya-2026-07-03.md": "c-000187",
+    "wiki/sources/put-klienta-scenario-examples-2026-07-03.md": "c-000188",
+    "wiki/sources/put-klienta-sobytiya-deystviya-2026-07-03.md": "c-000189",
+    "wiki/sources/put-klienta-sravnenie-konkurentami-shablon-2026-07-03.md": "c-000190",
+    "wiki/sources/reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03.md": "c-000191"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
