@@ -27,6 +27,7 @@ All entity pages — people, organizations, products, and tools.
 - [[Тимошенко А.А.]] — инженер-программист 2+, Тензор; BL-разработчик loyalty/price-formation, ответственный за SabyBank RKO Referral и DWC-промокоды
 - [[Andrej Karpathy]] — AI researcher, educator; originated the LLM Wiki pattern
 - [[Морозов]] — ревьюер/автор правок документации по [[Saby-Loyalty-Scenarios-Engine]]; роль и подразделение не подтверждены (status: stub)
+- [[Гаврилов-Михаил]] — владелец модуля [[Выборки-Module]] (сегментация клиентов) для сценариев лояльности; роль/подразделение не подтверждены (status: stub)
 
 ---
 
@@ -39,6 +40,7 @@ All entity pages — people, organizations, products, and tools.
 ## Products & Tools
 
 - [[Mindbox]] — внешняя CDP/маркетинг-автоматизация платформа (mindbox.ru); конкурентный референс для проекта [[CustomerJourney-Loyalty-Scenarios-Project]]
+- [[Выборки-Module]] — модуль сегментации/выборки клиентов для сценариев лояльности; владелец [[Гаврилов-Михаил]] (status: current)
 
 ---
 

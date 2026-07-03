@@ -25,6 +25,9 @@ related:
 
 Umbrella project (source folder `.raw/Путь клиента/`) building a new **marketing-automation / scenario engine** ("Маршруты") on top of the existing Лояльность subsystem — the ability to define multi-step, triggered customer journeys (reactivation, abandoned cart, birthday, welcome bonus, etc.) with conditions, wait periods, and actions (bonus accrual, discounts, promo codes, notifications).
 
+> [!warning] Duplicate/overlapping project-overview pages created by parallel batch-ingest agents
+> Other agents ingesting sibling files from `.raw/Путь клиента/` concurrently created their own project-overview pages under different names: [[CustomerJourney-Project]], [[CustomerJourney-Scenarios-Project]], [[CustomerJourney-Loyalty-Scenarios-Project]]. This page was written independently (from the "Реактивация неактивных клиентов" v1 document only) and was **not reconciled** with those. The orchestrator should merge this cluster of near-duplicate project pages in its cross-batch finalize pass.
+
 ## Status
 
 Early architecture/design phase. First ingested document ([[loyalty-scenario-reactivation-inactive-v1-2026-07-03]]) is a walkthrough-style discussion doc dominated by unresolved ownership questions between Лояльность, the new Маршруты platform, and the Выборки segmentation module — see [[LoyaltyScenarios-Marshruty-Architecture]] for the extracted architecture and open-questions list.

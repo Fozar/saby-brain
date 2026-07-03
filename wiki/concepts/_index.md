@@ -53,6 +53,10 @@ All concept pages — ideas, patterns, and frameworks extracted from sources.
 - [[CustomerJourney-Loyalty-Scenarios-Project]] — «Путь клиента»: раннее исследование/бенчмарк конкурента [[Mindbox]] для проектирования CDP-подобной системы сценариев; перечень документов проекта (status: developing)
 - [[AbandonedCart-Loyalty-Scenario]] — сценарий «Брошенная корзина» (Mindbox-версия): условия, события, полная схема, UX-анализ момента авторизации (сайт «Мили» / SabyGet); ⚠️ пересекается с уже существующим шаблоном «Брошенная корзина» в [[Saby-Loyalty-Scenarios-Engine]] (status: developing)
 - [[TriggerScenario-ConditionsActions-Reference]] — справочник событий/фильтров сценарного конструктора Mindbox (8 категорий, ~36 событий, построитель фильтров); общий словарь для сценарных документов проекта (status: developing)
+- [[CustomerJourney-Project]] — «Путь клиента»: умбрелла-страница по `Примеры различных сценариев со схемами.pdf` + `Инсталляционные цепочки.pdf`; ⚠️ см. [[CustomerJourney-Loyalty-Scenarios-Project]]/[[CustomerJourney-Scenarios-Project]] — несколько параллельно созданных umbrella-страниц одного проекта, требуют слияния оркестратором (status: developing)
+- [[CustomerJourney-Scenario-Builder]] — механика конструктора: типы узлов (старт/условие/действие/ожидание-race/цель), 2 типа старта (событие/выборка), полные таблицы фильтров/действий/событий с пометками MVP (status: developing)
+- [[CustomerJourney-Scenario-Catalog]] — каталог 34 примеров сценариев в 8 категориях (приветствие/возврат/лояльные клиенты/бонусы/реферальная/праздники/сервис/разовые), разбор структуры 9 диаграмм (status: current)
+- [[CustomerJourney-Installation-Chains]] — черновой список категорий предустановленных уведомительных цепочек (начисления/уведомления/карты/промокоды) (status: developing)
 
 ---
 
