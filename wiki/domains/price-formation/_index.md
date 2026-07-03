@@ -87,38 +87,32 @@ Loyalty and price formation system for the SBIS (Saby) platform. Manages discoun
 
 ---
 
-## Customer Journey / Marketing Automation (early-stage project)
+## Customer Journey / Маршруты (Путь клиента)
 
-> [!note] Несколько параллельных umbrella-страниц одного проекта
-> Батч источников из папки `.raw/Путь клиента/` ингестировался несколькими параллельными агентами — см. [[CustomerJourney-Scenarios-Project]], [[CustomerJourney-Scenarios-Project]], [[CustomerJourney-Scenarios-Project]], [[Route-Platform-Architecture]] как разные точки входа в один и тот же проект. Не объединены на момент ингеста — требуется дедуп/merge оркестратором.
+Новый движок маркетинговой автоматизации / customer journey orchestration («Маршруты»), строится поверх существующей системы лояльности: визуальный конструктор триггерных сценариев (реактивация, брошенная корзина, день рождения, приветственный бонус) с условиями, ожиданием и действиями. Источник — 17 PDF из `.raw/Путь клиента/`, ингестированных 2026-07-03 шестью параллельными агентами; страницы ниже — результат дедуп-прохода оркестратора (см. [[CustomerJourney-Scenarios-Project]] за детали слияния).
 
-- [[CustomerJourney-Scenarios-Project]] — «Путь клиента»: ранний проект построения CDP-подобной системы триггерных сценариев лояльности, бенчмарк конкурента [[Mindbox]]
-- [[AbandonedCart-Loyalty-Scenario]] — сценарий «Брошенная корзина»: условия, события, UX-анализ момента авторизации
-- [[TriggerScenario-ConditionsActions-Reference]] — справочник условий/событий сценарного конструктора (снят с Mindbox)
-- [[CustomerJourney-Scenarios-Project]] — умбрелла по `Примеры различных сценариев со схемами.pdf` + `Инсталляционные цепочки.pdf`
+- [[CustomerJourney-Scenarios-Project]] — канонический обзор проекта (из **согласованного** `Техническое задание.pdf`): цели, аудитория (~670 Presto-аккаунтов), 4 подсистемы-владельца, понятийная модель, лицензирование (полный тариф)
+- [[Route-Platform-Architecture]] — канонической архитектура Платформы Маршрутов: `RouteService.StartTrace/OnEvent`, `Route.Start/Stop/Status`, sequence-диаграммы запуска и авто-проходчика, модель Route/Trace/Events, DWC-пачки по 1000 клиентов, глобальная предфильтрация, 3-party ownership (Лояльность/Маршруты/Выборки)
+- [[Trigger-System-Contract]] — Система триггеров: JSON-контракт (`triggers-data`/`base/actions`), каталог событий по приоритетам (1-3), каталог действий, `layout.Card`/`Trigger.Notify`
+- [[CustomerJourney-UI-Decomposition]] — UI: реестр (мастер-деталь), карточка сценария (5 вкладок), карточка прохода, компоненты `Route/ScriptPage/*`
+- [[CustomerJourney-Scenario-Model]] — понятийная модель + сравнение блоков схемы vs Mindbox/[[REES46]] + UI реестра/карточки сценария (из `Концептуальное решение 1-3.pdf` + `Блоки для сценариев лояльности.pdf`)
 - [[CustomerJourney-Scenario-Builder]] — механика конструктора: типы узлов, race-паттерн ожидания, полные таблицы фильтров/действий/событий
 - [[CustomerJourney-Scenario-Catalog]] — каталог 34 примеров сценариев в 8 категориях, разбор 9 диаграмм
 - [[CustomerJourney-Installation-Chains]] — черновой список категорий предустановленных уведомительных цепочек
-- [[CustomerJourney-Scenario-Model]] — понятийная модель + сравнение блоков схемы vs Mindbox/[[REES46]] + UI реестра/карточки сценария (из `Концептуальное решение 1-3.pdf` + `Блоки для сценариев лояльности.pdf`)
-- [[CustomerJourney-WorkPlan]] — план работ 515 чд (этапы 1.1–2.5 + технологические), из `План работ по проекту.pdf`
-- [[CustomerJourney-Route-Service-API]] — Сервис Маршрутов backend (`Route.*`, `AutoTrace.*`) из планового документа — см. предупреждение ниже про расхождение с методами `RouteService.*` из финального ТЗ
-- [[CustomerJourney-Test-Plan]] — план тестирования, период 01.08–28.11.2026
+- [[LoyaltyScenario-ReactivationInactiveClients]] — канонический пример сценария «Давно не покупали»: 30-дневная неактивность → 100 бонусов + email → ожидание 10 дней → thank-you email; открытые вопросы ревью Морозова
+- [[AbandonedCart-Loyalty-Scenario]] — сценарий «Брошенная корзина»: условия, события, UX-анализ момента авторизации; уже существует как шаблон по умолчанию
+- [[TriggerScenario-ConditionsActions-Reference]] — справочник условий/событий сценарного конструктора (снят с Mindbox, использован как эталон)
 - [[CustomerJourney-Events-Actions-Catalog]] — целевой (не-Mindbox) каталог событий/действий MVP, из `События-действия для сценариев лояльности.sabydoc.pdf`
+- [[CustomerJourney-WorkPlan]] — план работ 515 чд (этапы 1.1–2.5 + технологические), из `План работ по проекту.pdf`
+- [[CustomerJourney-Route-Service-API]] — ранний вариант Сервиса Маршрутов backend (`Route.*`, `AutoTrace.*`) из планового документа — методы переименованы в финальном ТЗ, см. [[Route-Platform-Architecture]] (`RouteService.*`)
+- [[CustomerJourney-Test-Plan]] — план тестирования, период 01.08–28.11.2026
 - [[Saby-Scheme-Constructors]] — реестр 12 конструкторов схем Saby; «Путь клиента» — конструктор №12
+- [[Выборки-Module]] — модуль сегментации аудитории (владелец [[Гаврилов-Михаил]])
 
-### Техническое задание (согласованная финальная спецификация)
-
-`Техническое задание.pdf` — в отличие от черновиков/бенчмарков выше, это **согласованный** документ (макеты помечены «Согласовано») с конкретным API, sequence-диаграммами и полной моделью данных:
-
-- [[CustomerJourney-Scenarios-Project]] — цели, аудитория (~670 Presto-аккаунтов), 4 подсистемы-владельца ([[Route-Platform-Architecture]]/[[Trigger-System-Contract]]/Скрипты/Выборки), понятийная модель, лицензирование (полный тариф)
-- [[Route-Platform-Architecture]] — Платформа Маршрутов: `RouteService.StartTrace/OnEvent`, `Route.Start/Stop/Status`, sequence-диаграммы запуска и авто-проходчика, модель Route/Trace/Events, DWC-пачки по 1000 клиентов, глобальная предфильтрация
-- [[Trigger-System-Contract]] — Система триггеров: JSON-контракт (`triggers-data`/`base/actions`), каталог событий по приоритетам (1-3), каталог действий, `layout.Card`/`Trigger.Notify`
-- [[CustomerJourney-UI-Decomposition]] — UI: реестр (мастер-деталь), карточка сценария (5 вкладок), карточка прохода, компоненты `Route/ScriptPage/*`
-
-> [!contradiction] «Раннее исследование» vs «согласованное ТЗ»
-> [[CustomerJourney-Scenarios-Project]] описывает проект как раннюю research-стадию («технического решения по своей архитектуре ещё нет»). `Техническое задание.pdf` — это уже принятое техническое решение с согласованными макетами. Раздел 6 ТЗ явно опирается на существующую (эксплуатируемую) Платформу Маршрутов как готовую инфраструктуру — согласуется с находкой про [[Route-Platform-Architecture]] в той же umbrella-странице. Также: [[CustomerJourney-Route-Service-API]] (из планового `План работ по проекту.pdf`) называет методы `AutoTrace.Start/Run/OnEvent`, тогда как финальное ТЗ фиксирует `RouteService.StartTrace/StartClientRoute/OnEvent` — вероятно переименование между планированием и финальным ТЗ, надо сверить при ингесте `Концептуальное решение*.pdf`. Также вероятный дубль сущности: [[Чусовитин-Александр]] (эта страница, из ТЗ) ≈ [[Чусовитин-Александр]] (из плана работ) — требует ручной проверки перед слиянием.
+> [!key-insight] Разрешённое противоречие: «раннее исследование» vs «уже существует» — это один и тот же мокап, увиденный на разных стадиях
+> Несколько черновиков батча (Mindbox-бенчмарк, ранний open-questions документ) читались как описание independent research-стадии, тогда как другой документ (ревью Морозова, скриншоты с демо-статистикой «8276 проходов») выглядел как описание уже эксплуатируемой в проде системы. После сведения всех 17 источников: это **один и тот же новый продукт** («Путь клиента» / «Сценарии лояльности» / Маршруты), задокументированный на разных стадиях проектирования — от конкурентного бенчмарка и открытых архитектурных вопросов до высокоточных мокапов с демо-данными и, наконец, согласованного ТЗ с sequence-диаграммами. Скриншоты с «демо-статистикой» — это мокапы с плейсхолдер-данными для дизайн-ревью, а не живой прод. Открытый вопрос про «сотни тысяч покупателей по тысячам маршрутов в аккаунтах online» (из `Концептуальное решение.pdf`) о масштабировании остаётся нерешённым на момент ТЗ.
 >
-> **Подтверждающая деталь из `Концептуальное решение.pdf`** (самый ранний из документов батча, датировка неизвестна но по содержанию предшествует плану работ/ТЗ): формулировка открытого вопроса — *«Самое главное — не проработан механизм поддержки проходов сотни тысяч покупателей по тысячам маршрутов в аккаунтах **online**!»* — акцент на слове «online» подразумевает, что offline/Presto-версия сценариев (см. [[Route-Platform-Architecture]]) уже существует и работает; черновики этого батча описывают перенос/масштабирование существующего движка на облачную (online) платформу, а не создание системы с нуля. Также см. `Концептуальное решение 3 (Вопросы).pdf`: демо-скриншот реестра сценариев содержит реалистичные данные (счётчики покупателей 200/208/364/659/206/109/78/140/62, реальные Ф.И.О. ответственных) — похоже на скриншот уже существующего интерфейса, а не чистый мокап.
+> Также разрешено расхождение имён методов: [[CustomerJourney-Route-Service-API]] (`AutoTrace.Start/Run/OnEvent`, из планового `План работ по проекту.pdf`) — черновая нотация раннего этапа планирования; финальное согласованное ТЗ ([[Route-Platform-Architecture]]) фиксирует `RouteService.StartTrace/StartClientRoute/OnEvent` — это переименование между стадиями, а не два разных API.
 
 ---
 
@@ -144,17 +138,6 @@ Loyalty and price formation system for the SBIS (Saby) platform. Manages discoun
 ## Key Entities
 
 - [[ReferralProgram-Module]] - partner referral system with leads, stats, invoices
-
----
-
-## Customer Journey / Маршруты (Путь клиента)
-
-New marketing-automation / scenario engine ("Маршруты") built on top of Loyalty, allowing multi-step triggered customer journeys (reactivation, abandoned cart, birthday, welcome bonus). Early design phase — architecture inferred from a design-discussion doc dominated by open ownership questions between Лояльность, Маршруты, and the Выборки segmentation module.
-
-- [[CustomerJourney-Scenarios-Project]] - project overview, folder map, sibling docs not yet ingested
-- [[Route-Platform-Architecture]] - 3-party component model (Лояльность/Маршруты/Выборки), scenario types, flow-graph editor, event catalog, execution model, open ownership questions
-- [[LoyaltyScenario-ReactivationInactiveClients]] - concrete example scenario: 30-day inactivity → 100 bonus points + email → 10-day wait → thank-you email
-- [[Выборки-Module]] - audience segmentation module (owner: [[Гаврилов-Михаил]])
 
 ---
 

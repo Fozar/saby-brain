@@ -120,7 +120,4 @@ All loyalty application events write to **ВидЦеныДокумент** — a
 
 ## Marketing Automation Layer (Путь клиента)
 
-A visual customer-journey/marketing-automation scenario builder is being designed on top of this loyalty system (project **«Путь клиента»**), reusing Промокод/Бонусы/Карта events as triggers and client attributes (LTV, cart, referral status) as segmentation conditions. See [[CustomerJourney-Scenarios-Project]] (design docs: scenario example catalog + installation chains) and its mechanics page [[CustomerJourney-Scenario-Builder]] / catalog [[CustomerJourney-Scenario-Catalog]].
-
-> [!note] Parallel naming for the same underlying project
-> Sibling documents from the same source folder were ingested concurrently under different naming schemes — [[Route-Platform-Architecture]] ("Сценарии лояльности" in Retail/Presto), [[CustomerJourney-Scenarios-Project]], [[CustomerJourney-Scenarios-Project]] (Маршруты/Триггеры/Выборки architecture) — likely describing the same "Путь клиента" project from different documents/angles. Not reconciled here; flagged for the orchestrator's cross-batch dedup pass.
+A visual customer-journey/marketing-automation scenario builder is being designed on top of this loyalty system (project **«Путь клиента»**), reusing Промокод/Бонусы/Карта events as triggers and client attributes (LTV, cart, referral status) as segmentation conditions. See [[CustomerJourney-Scenarios-Project]] (canonical project overview, from the settled ТЗ) and its mechanics page [[CustomerJourney-Scenario-Builder]] / catalog [[CustomerJourney-Scenario-Catalog]] / architecture [[Route-Platform-Architecture]].
