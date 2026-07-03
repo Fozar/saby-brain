@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/hot.md",
+                "file": "wiki/entities/Морозов.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hot"
+              "title": "Морозов"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/hot.md",
+                "file": "wiki/entities/Морозов.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для hot"
+              "title": "Обратные ссылки для Морозов"
             }
           },
           {
@@ -200,6 +200,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/hot.md",
     "wiki/concepts/CustomerJourney-Scenarios-Project.md",
     "wiki/log.md.tmp.10252.a399b6afc971",
     "wiki/index.md.tmp.10252.2ee3c2d58cc3",
