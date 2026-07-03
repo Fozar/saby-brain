@@ -120,6 +120,17 @@ Loyalty and price formation system for the SBIS (Saby) platform. Manages discoun
 
 ---
 
+## Customer Journey / Маршруты (Путь клиента)
+
+New marketing-automation / scenario engine ("Маршруты") built on top of Loyalty, allowing multi-step triggered customer journeys (reactivation, abandoned cart, birthday, welcome bonus). Early design phase — architecture inferred from a design-discussion doc dominated by open ownership questions between Лояльность, Маршруты, and the Выборки segmentation module.
+
+- [[Loyalty-CustomerJourney-Project]] - project overview, folder map, sibling docs not yet ingested
+- [[LoyaltyScenarios-Marshruty-Architecture]] - 3-party component model (Лояльность/Маршруты/Выборки), scenario types, flow-graph editor, event catalog, execution model, open ownership questions
+- [[LoyaltyScenario-ReactivationInactiveClients]] - concrete example scenario: 30-day inactivity → 100 bonus points + email → 10-day wait → thank-you email
+- [[Выборки-Module]] - audience segmentation module (owner: [[Гаврилов-Михаил]])
+
+---
+
 ## Sources Ingested
 
 - [[price-formation-docs-2026-04-10]] - 12 docs from `docs/` folder (2026-04-10)

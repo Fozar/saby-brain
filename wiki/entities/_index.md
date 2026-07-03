@@ -38,7 +38,7 @@ All entity pages — people, organizations, products, and tools.
 
 ## Products & Tools
 
-<!-- Add tool and product pages here -->
+- [[Mindbox]] — внешняя CDP/маркетинг-автоматизация платформа (mindbox.ru); конкурентный референс для проекта [[CustomerJourney-Loyalty-Scenarios-Project]]
 
 ---
 
