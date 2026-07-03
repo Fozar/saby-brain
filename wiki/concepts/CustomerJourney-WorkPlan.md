@@ -12,7 +12,7 @@ tags:
   - work-plan
   - project-management
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Route-Service-API]]"
   - "[[CustomerJourney-Events-Actions-Catalog]]"
   - "[[Морозов-Алексей-Васильевич]]"
@@ -23,7 +23,7 @@ related:
 
 # Путь клиента — план работ
 
-Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[domains/price-formation/_index]]
+Navigation: [[CustomerJourney-Scenarios-Project]] | [[domains/price-formation/_index]]
 
 Источник: `План работ по проекту.pdf`. Полный план работ проекта «Путь клиента» (сценарии лояльности / триггерный маршрутизатор клиентов).
 
@@ -93,7 +93,7 @@ Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[domains/price-form
 
 ## Связанные страницы
 
-- [[CustomerJourney-Loyalty-Scenarios-Project]] — обзор проекта
+- [[CustomerJourney-Scenarios-Project]] — обзор проекта
 - [[CustomerJourney-Route-Service-API]] — backend, реализующий этапы 1.2/2.1/2.2
 - [[CustomerJourney-Scenario-Model]] — UI/понятийная модель, реализуемая в этапе 1.2
 - [[CustomerJourney-Events-Actions-Catalog]] — каталог событий/действий этапа 1.1

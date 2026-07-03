@@ -12,7 +12,7 @@ tags:
 status: current
 related:
   - "[[AbandonedCart-Loyalty-Scenario]]"
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[Mindbox]]"
   - "[[TriggerScenario-ConditionsActions-Reference]]"
 ---
@@ -25,7 +25,7 @@ related:
 
 ## Содержание документа
 
-Черновой рабочий документ (не финализированное ТЗ) — дизайн сценария «Брошенная корзина» для проекта [[CustomerJourney-Loyalty-Scenarios-Project]], построенный методом разбора аналогичной реализации в конкурентной CDP-платформе [[Mindbox]].
+Черновой рабочий документ (не финализированное ТЗ) — дизайн сценария «Брошенная корзина» для проекта [[CustomerJourney-Scenarios-Project]], построенный методом разбора аналогичной реализации в конкурентной CDP-платформе [[Mindbox]].
 
 Структура:
 1. **Текстовое описание сценария** (условия срабатывания, необходимые события, открытый вопрос о хранении сессии, ссылка на документацию Mindbox)
@@ -40,7 +40,7 @@ related:
 
 - [[AbandonedCart-Loyalty-Scenario]] — полный разбор сценария, referenced Mindbox-реализации, UX-анализа авторизации на примерах «Мили»/SabyGet
 - [[Mindbox]] (создана/дополнена как сущность-референс)
-- [[CustomerJourney-Loyalty-Scenarios-Project]] (создана как зонтичная страница проекта — покрывает оба документа этого батча + перечисляет неингестированные документы папки)
+- [[CustomerJourney-Scenarios-Project]] (создана как зонтичная страница проекта — покрывает оба документа этого батча + перечисляет неингестированные документы папки)
 
 ## Ключевые факты
 
@@ -53,4 +53,4 @@ related:
 
 ## Связанные документы проекта (папка, не ингестированы)
 
-См. полный перечень в [[CustomerJourney-Loyalty-Scenarios-Project]].
+См. полный перечень в [[CustomerJourney-Scenarios-Project]].

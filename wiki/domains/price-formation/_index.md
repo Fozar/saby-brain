@@ -90,12 +90,12 @@ Loyalty and price formation system for the SBIS (Saby) platform. Manages discoun
 ## Customer Journey / Marketing Automation (early-stage project)
 
 > [!note] Несколько параллельных umbrella-страниц одного проекта
-> Батч источников из папки `.raw/Путь клиента/` ингестировался несколькими параллельными агентами — см. [[CustomerJourney-Loyalty-Scenarios-Project]], [[CustomerJourney-Scenarios-Project]], [[CustomerJourney-Project]], [[Saby-Loyalty-Scenarios-Engine]] как разные точки входа в один и тот же проект. Не объединены на момент ингеста — требуется дедуп/merge оркестратором.
+> Батч источников из папки `.raw/Путь клиента/` ингестировался несколькими параллельными агентами — см. [[CustomerJourney-Scenarios-Project]], [[CustomerJourney-Scenarios-Project]], [[CustomerJourney-Scenarios-Project]], [[Route-Platform-Architecture]] как разные точки входа в один и тот же проект. Не объединены на момент ингеста — требуется дедуп/merge оркестратором.
 
-- [[CustomerJourney-Loyalty-Scenarios-Project]] — «Путь клиента»: ранний проект построения CDP-подобной системы триггерных сценариев лояльности, бенчмарк конкурента [[Mindbox]]
+- [[CustomerJourney-Scenarios-Project]] — «Путь клиента»: ранний проект построения CDP-подобной системы триггерных сценариев лояльности, бенчмарк конкурента [[Mindbox]]
 - [[AbandonedCart-Loyalty-Scenario]] — сценарий «Брошенная корзина»: условия, события, UX-анализ момента авторизации
 - [[TriggerScenario-ConditionsActions-Reference]] — справочник условий/событий сценарного конструктора (снят с Mindbox)
-- [[CustomerJourney-Project]] — умбрелла по `Примеры различных сценариев со схемами.pdf` + `Инсталляционные цепочки.pdf`
+- [[CustomerJourney-Scenarios-Project]] — умбрелла по `Примеры различных сценариев со схемами.pdf` + `Инсталляционные цепочки.pdf`
 - [[CustomerJourney-Scenario-Builder]] — механика конструктора: типы узлов, race-паттерн ожидания, полные таблицы фильтров/действий/событий
 - [[CustomerJourney-Scenario-Catalog]] — каталог 34 примеров сценариев в 8 категориях, разбор 9 диаграмм
 - [[CustomerJourney-Installation-Chains]] — черновой список категорий предустановленных уведомительных цепочек
@@ -116,9 +116,9 @@ Loyalty and price formation system for the SBIS (Saby) platform. Manages discoun
 - [[CustomerJourney-UI-Decomposition]] — UI: реестр (мастер-деталь), карточка сценария (5 вкладок), карточка прохода, компоненты `Route/ScriptPage/*`
 
 > [!contradiction] «Раннее исследование» vs «согласованное ТЗ»
-> [[CustomerJourney-Loyalty-Scenarios-Project]] описывает проект как раннюю research-стадию («технического решения по своей архитектуре ещё нет»). `Техническое задание.pdf` — это уже принятое техническое решение с согласованными макетами. Раздел 6 ТЗ явно опирается на существующую (эксплуатируемую) Платформу Маршрутов как готовую инфраструктуру — согласуется с находкой про [[Saby-Loyalty-Scenarios-Engine]] в той же umbrella-странице. Также: [[CustomerJourney-Route-Service-API]] (из планового `План работ по проекту.pdf`) называет методы `AutoTrace.Start/Run/OnEvent`, тогда как финальное ТЗ фиксирует `RouteService.StartTrace/StartClientRoute/OnEvent` — вероятно переименование между планированием и финальным ТЗ, надо сверить при ингесте `Концептуальное решение*.pdf`. Также вероятный дубль сущности: [[Чусовитин-А]] (эта страница, из ТЗ) ≈ [[Чусовитин-Александр]] (из плана работ) — требует ручной проверки перед слиянием.
+> [[CustomerJourney-Scenarios-Project]] описывает проект как раннюю research-стадию («технического решения по своей архитектуре ещё нет»). `Техническое задание.pdf` — это уже принятое техническое решение с согласованными макетами. Раздел 6 ТЗ явно опирается на существующую (эксплуатируемую) Платформу Маршрутов как готовую инфраструктуру — согласуется с находкой про [[Route-Platform-Architecture]] в той же umbrella-странице. Также: [[CustomerJourney-Route-Service-API]] (из планового `План работ по проекту.pdf`) называет методы `AutoTrace.Start/Run/OnEvent`, тогда как финальное ТЗ фиксирует `RouteService.StartTrace/StartClientRoute/OnEvent` — вероятно переименование между планированием и финальным ТЗ, надо сверить при ингесте `Концептуальное решение*.pdf`. Также вероятный дубль сущности: [[Чусовитин-Александр]] (эта страница, из ТЗ) ≈ [[Чусовитин-Александр]] (из плана работ) — требует ручной проверки перед слиянием.
 >
-> **Подтверждающая деталь из `Концептуальное решение.pdf`** (самый ранний из документов батча, датировка неизвестна но по содержанию предшествует плану работ/ТЗ): формулировка открытого вопроса — *«Самое главное — не проработан механизм поддержки проходов сотни тысяч покупателей по тысячам маршрутов в аккаунтах **online**!»* — акцент на слове «online» подразумевает, что offline/Presto-версия сценариев (см. [[Saby-Loyalty-Scenarios-Engine]]) уже существует и работает; черновики этого батча описывают перенос/масштабирование существующего движка на облачную (online) платформу, а не создание системы с нуля. Также см. `Концептуальное решение 3 (Вопросы).pdf`: демо-скриншот реестра сценариев содержит реалистичные данные (счётчики покупателей 200/208/364/659/206/109/78/140/62, реальные Ф.И.О. ответственных) — похоже на скриншот уже существующего интерфейса, а не чистый мокап.
+> **Подтверждающая деталь из `Концептуальное решение.pdf`** (самый ранний из документов батча, датировка неизвестна но по содержанию предшествует плану работ/ТЗ): формулировка открытого вопроса — *«Самое главное — не проработан механизм поддержки проходов сотни тысяч покупателей по тысячам маршрутов в аккаунтах **online**!»* — акцент на слове «online» подразумевает, что offline/Presto-версия сценариев (см. [[Route-Platform-Architecture]]) уже существует и работает; черновики этого батча описывают перенос/масштабирование существующего движка на облачную (online) платформу, а не создание системы с нуля. Также см. `Концептуальное решение 3 (Вопросы).pdf`: демо-скриншот реестра сценариев содержит реалистичные данные (счётчики покупателей 200/208/364/659/206/109/78/140/62, реальные Ф.И.О. ответственных) — похоже на скриншот уже существующего интерфейса, а не чистый мокап.
 
 ---
 
@@ -151,8 +151,8 @@ Loyalty and price formation system for the SBIS (Saby) platform. Manages discoun
 
 New marketing-automation / scenario engine ("Маршруты") built on top of Loyalty, allowing multi-step triggered customer journeys (reactivation, abandoned cart, birthday, welcome bonus). Early design phase — architecture inferred from a design-discussion doc dominated by open ownership questions between Лояльность, Маршруты, and the Выборки segmentation module.
 
-- [[Loyalty-CustomerJourney-Project]] - project overview, folder map, sibling docs not yet ingested
-- [[LoyaltyScenarios-Marshruty-Architecture]] - 3-party component model (Лояльность/Маршруты/Выборки), scenario types, flow-graph editor, event catalog, execution model, open ownership questions
+- [[CustomerJourney-Scenarios-Project]] - project overview, folder map, sibling docs not yet ingested
+- [[Route-Platform-Architecture]] - 3-party component model (Лояльность/Маршруты/Выборки), scenario types, flow-graph editor, event catalog, execution model, open ownership questions
 - [[LoyaltyScenario-ReactivationInactiveClients]] - concrete example scenario: 30-day inactivity → 100 bonus points + email → 10-day wait → thank-you email
 - [[Выборки-Module]] - audience segmentation module (owner: [[Гаврилов-Михаил]])
 

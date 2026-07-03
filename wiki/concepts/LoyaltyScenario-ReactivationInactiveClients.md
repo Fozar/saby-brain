@@ -13,15 +13,15 @@ status: developing
 created: 2026-07-03
 updated: 2026-07-03
 related:
-  - "[[LoyaltyScenarios-Marshruty-Architecture]]"
-  - "[[Loyalty-CustomerJourney-Project]]"
+  - "[[Route-Platform-Architecture]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[Выборки-Module]]"
   - "[[loyalty-scenario-reactivation-inactive-v1-2026-07-03]]"
 ---
 
 # Сценарий «Реактивация неактивных клиентов (давно не покупали)»
 
-The first concrete scenario used to design the [[LoyaltyScenarios-Marshruty-Architecture|Маршруты scenario engine]]. Also appears as the "Давно не покупали" tile in the scenario list example.
+The first concrete scenario used to design the [[Route-Platform-Architecture|Маршруты scenario engine]]. Also appears as the "Давно не покупали" tile in the scenario list example.
 
 ## Business rule
 
@@ -41,7 +41,7 @@ The first concrete scenario used to design the [[LoyaltyScenarios-Marshruty-Arch
 
 ## Sample run observed in mockup (client: Загребова Елена)
 
-Illustrates the pass-detail timeline described in [[LoyaltyScenarios-Marshruty-Architecture]]:
+Illustrates the pass-detail timeline described in [[Route-Platform-Architecture]]:
 
 1. **19 авг** — «Клиент отобран» (matched: Физлица Есть Email, Не было покупок за последние 30 дн)
 2. Действие: «Начислить 100Б, отправить Email»
@@ -63,4 +63,4 @@ The document explicitly lists required metrics for the Статистика tab,
 
 ## Provenance & revision note
 
-Extracted from v1 of the design doc: [[loyalty-scenario-reactivation-inactive-v1-2026-07-03]]. A sibling document with edits/comments from **Морозов** covers the same scenario and was ingested in parallel as [[reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03]], which produced its own overlapping concept page [[Loyalty-Scenario-Reactivation-Inactive-Clients]] (near-duplicate of this page, different name). A third overlapping description of the same example ("Покупатель не активен (30 дней)") exists at [[CustomerJourney-Scenario-Model]] from yet another parallel source. All three describe the same business scenario from different documents in the same batch — **not reconciled at write time**; merge/dedupe is left to the orchestrator's cross-batch finalize pass.
+Extracted from v1 of the design doc: [[loyalty-scenario-reactivation-inactive-v1-2026-07-03]]. A sibling document with edits/comments from **Морозов** covers the same scenario and was ingested in parallel as [[reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03]], which produced its own overlapping concept page [[LoyaltyScenario-ReactivationInactiveClients]] (near-duplicate of this page, different name). A third overlapping description of the same example ("Покупатель не активен (30 дней)") exists at [[CustomerJourney-Scenario-Model]] from yet another parallel source. All three describe the same business scenario from different documents in the same batch — **not reconciled at write time**; merge/dedupe is left to the orchestrator's cross-batch finalize pass.

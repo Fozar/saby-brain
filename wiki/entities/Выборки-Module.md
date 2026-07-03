@@ -15,15 +15,15 @@ created: 2026-07-03
 updated: 2026-07-03
 related:
   - "[[Гаврилов-Михаил]]"
-  - "[[LoyaltyScenarios-Marshruty-Architecture]]"
+  - "[[Route-Platform-Architecture]]"
   - "[[LoyaltyScenario-ReactivationInactiveClients]]"
-  - "[[Loyalty-CustomerJourney-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[loyalty-scenario-reactivation-inactive-v1-2026-07-03]]"
 ---
 
 # Выборки (Selections module)
 
-A Saby/Tensor audience-segmentation component, owned by a separate team led by [[Гаврилов-Михаил]]. Supplies the client-condition builder UI (fields + И/ИЛИ boolean composition) and backend evaluation used by the [[LoyaltyScenarios-Marshruty-Architecture|Маршруты scenario engine]] to select the audience for a loyalty scenario.
+A Saby/Tensor audience-segmentation component, owned by a separate team led by [[Гаврилов-Михаил]]. Supplies the client-condition builder UI (fields + И/ИЛИ boolean composition) and backend evaluation used by the [[Route-Platform-Architecture|Маршруты scenario engine]] to select the audience for a loyalty scenario.
 
 ## Role in the scenario engine
 
@@ -37,7 +37,7 @@ Composed with И/ИЛИ (AND/OR) boolean logic groups.
 
 ## Open questions
 
-- How the identifier of a saved selection + its metadata is persisted and handed off to the scenario dialog is unresolved as of v1 of the source document (see [[LoyaltyScenarios-Marshruty-Architecture]]).
+- How the identifier of a saved selection + its metadata is persisted and handed off to the scenario dialog is unresolved as of v1 of the source document (see [[Route-Platform-Architecture]]).
 
 ## Sources
 

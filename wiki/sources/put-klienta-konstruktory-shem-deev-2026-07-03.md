@@ -11,7 +11,7 @@ tags:
 status: current
 related:
   - "[[Saby-Scheme-Constructors]]"
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
 created: 2026-07-03
 ---
 
@@ -27,7 +27,7 @@ created: 2026-07-03
 ## Извлечено на страницы
 
 - [[Saby-Scheme-Constructors]] — новая страница, полный реестр 12 конструкторов
-- [[CustomerJourney-Loyalty-Scenarios-Project]] — контекст: проект официально входит в семейство конструкторов схем, а не разрабатывается изолированно
+- [[CustomerJourney-Scenarios-Project]] — контекст: проект официально входит в семейство конструкторов схем, а не разрабатывается изолированно
 
 ## Связанные документы этого проекта
 

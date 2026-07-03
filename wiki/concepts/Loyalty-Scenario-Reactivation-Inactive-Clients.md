@@ -11,7 +11,7 @@ tags:
   - marketing-automation
 status: current
 related:
-  - "[[Saby-Loyalty-Scenarios-Engine]]"
+  - "[[Route-Platform-Architecture]]"
   - "[[reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03]]"
   - "[[Loyalty-Product-Overview]]"
 created: 2026-07-03
@@ -19,7 +19,7 @@ created: 2026-07-03
 
 # Сценарий «Реактивация неактивных клиентов (давно не покупали)»
 
-Конкретный пример/шаблон сценария, построенный на движке [[Saby-Loyalty-Scenarios-Engine]]. Цель — вернуть клиентов, переставших покупать, за счёт бонусного стимула и напоминания.
+Конкретный пример/шаблон сценария, построенный на движке [[Route-Platform-Architecture]]. Цель — вернуть клиентов, переставших покупать, за счёт бонусного стимула и напоминания.
 
 ## Бизнес-формула
 
@@ -74,7 +74,7 @@ created: 2026-07-03
 
 ## Related
 
-- [[Saby-Loyalty-Scenarios-Engine]] — общий движок, на котором построен сценарий
+- [[Route-Platform-Architecture]] — общий движок, на котором построен сценарий
 - [[Loyalty-Product-Overview]] — обзор продукта лояльности
 - [[CustomerJourney-Scenario-Model]] — тот же пример-сценарий («Покупатель не активен 30 дней») из документа «Концептуальное решение»
 - [[loyalty-scenario-reactivation-inactive-v1-2026-07-03]] — sibling-источник с существенно большей детализацией того же примера

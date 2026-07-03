@@ -12,7 +12,7 @@ status: current
 related:
   - "[[CustomerJourney-WorkPlan]]"
   - "[[CustomerJourney-Route-Service-API]]"
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
 created: 2026-07-03
 ---
 

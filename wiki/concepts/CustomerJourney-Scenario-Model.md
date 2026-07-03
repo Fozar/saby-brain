@@ -11,7 +11,7 @@ tags:
   - customer-journey
   - data-model
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Events-Actions-Catalog]]"
   - "[[CustomerJourney-Route-Service-API]]"
   - "[[Mindbox]]"
@@ -20,7 +20,7 @@ related:
 
 # Путь клиента — понятийная модель сценария
 
-Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[domains/price-formation/_index]]
+Navigation: [[CustomerJourney-Scenarios-Project]] | [[domains/price-formation/_index]]
 
 Понятийная модель («Концептуальное решение 2») и типы блоков схемы («Блоки для сценариев лояльности»), которыми оперирует конструктор сценариев проекта «Путь клиента». Модель спроектирована по образцу конкурента [[Mindbox]] (с оглядкой на [[REES46]]).
 
@@ -84,7 +84,7 @@ Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[domains/price-form
 
 ## Связанные страницы
 
-- [[CustomerJourney-Loyalty-Scenarios-Project]] — обзор проекта
+- [[CustomerJourney-Scenarios-Project]] — обзор проекта
 - [[CustomerJourney-Events-Actions-Catalog]] — итоговый (не-Mindbox) каталог событий/действий
 - [[CustomerJourney-Route-Service-API]] — бэкенд-реализация (Сервис Маршрутов)
 - [[Mindbox]], [[REES46]] — эталонные конкурентные продукты

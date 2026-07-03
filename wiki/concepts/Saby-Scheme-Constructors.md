@@ -11,14 +11,14 @@ tags:
   - schemes
   - figma
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Route-Service-API]]"
   - "[[Wasaby-Scripts]]"
 ---
 
 # Конструкторы схем Saby
 
-Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[domains/price-formation/_index]]
+Navigation: [[CustomerJourney-Scenarios-Project]] | [[domains/price-formation/_index]]
 
 Источник: `Конструкторы схем (Деев).pdf`. Единый список платформенных **редакторов графов/схем** внутри Saby, объединённых общим макетом-стандартом (Figma «Конструктор схем»), которому подчиняются все прикладные конструкторы. Проект «Путь клиента» (сценарии лояльности) — новый, 12-й конструктор в этом семействе.
 
@@ -41,7 +41,7 @@ Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[domains/price-form
 | 9 | Престо: схема зала | Выполнение проекта | Теплухин Артём / Пирогов Сергей |
 | 10 | Редактор картинок | — | — |
 | 11 | Печатные формы: редактор ценников | — | — |
-| **12** | **Сценарии лояльности (путь клиента)** | **New** | см. [[CustomerJourney-Loyalty-Scenarios-Project]] |
+| **12** | **Сценарии лояльности (путь клиента)** | **New** | см. [[CustomerJourney-Scenarios-Project]] |
 
 > [!note] Ограниченность источника
 > Таблица деталей (макет/проект/ответственный) в исходном документе заполнена только для конструкторов 1–9; пункты 10–12 упомянуты лишь в кратком списке без деталей.
@@ -54,6 +54,6 @@ Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[domains/price-form
 
 ## Связанные страницы
 
-- [[CustomerJourney-Loyalty-Scenarios-Project]] — 12-й конструктор: сценарии лояльности
+- [[CustomerJourney-Scenarios-Project]] — 12-й конструктор: сценарии лояльности
 - [[CustomerJourney-Route-Service-API]] — Сервис Маршрутов, общий для конструкторов
 - [[Wasaby-Scripts]] — DeveloperScript/Скрипты — платформа, с которой визуально роднится редактор маршрутов

@@ -11,7 +11,7 @@ tags:
   - marketing-automation
   - cdp
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[AbandonedCart-Loyalty-Scenario]]"
   - "[[TriggerScenario-ConditionsActions-Reference]]"
   - "[[CustomerJourney-Scenario-Model]]"
@@ -20,7 +20,7 @@ related:
 
 # Mindbox
 
-Внешняя коммерческая **CDP-платформа** (Customer Data Platform / маркетинг-автоматизация) — `mindbox.ru`. В вики упоминается как **конкурентный референс/бенчмарк**, изучаемый командой Tensor/Saby при проектировании собственной системы триггерных сценариев лояльности ([[CustomerJourney-Loyalty-Scenarios-Project]]), а не как интегрируемый продукт.
+Внешняя коммерческая **CDP-платформа** (Customer Data Platform / маркетинг-автоматизация) — `mindbox.ru`. В вики упоминается как **конкурентный референс/бенчмарк**, изучаемый командой Tensor/Saby при проектировании собственной системы триггерных сценариев лояльности ([[CustomerJourney-Scenarios-Project]]), а не как интегрируемый продукт.
 
 ## Продукт: сценарийный конструктор (workflow builder)
 

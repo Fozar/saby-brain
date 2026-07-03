@@ -9,7 +9,7 @@ tags:
   - customer-journey
 status: current
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Scenario-Model]]"
 created: 2026-07-03
 ---
@@ -31,7 +31,7 @@ created: 2026-07-03
 ## Извлечено на страницы
 
 - [[CustomerJourney-Scenario-Model]] — примеры сценариев, решение (Сервис маршрутов + визуальный редактор), открытый вопрос масштаба
-- [[CustomerJourney-Loyalty-Scenarios-Project]] — обновлён (см. секцию контекста)
+- [[CustomerJourney-Scenarios-Project]] — обновлён (см. секцию контекста)
 
 ## Связанные документы этого проекта
 

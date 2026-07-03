@@ -12,7 +12,7 @@ tags:
   - backend
   - api
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Scenario-Model]]"
   - "[[CustomerJourney-WorkPlan]]"
   - "[[Wasaby-BL-Calls]]"
@@ -21,12 +21,12 @@ related:
 
 # Путь клиента — Сервис Маршрутов (backend API)
 
-Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[CustomerJourney-WorkPlan]]
+Navigation: [[CustomerJourney-Scenarios-Project]] | [[CustomerJourney-WorkPlan]]
 
 Проектируемая backend-архитектура платформы маршрутов для сценариев лояльности, извлечена из «План работ по проекту.pdf» (этапы 1.2, 2.1, 2.2). Реализуется существующим на платформе **Сервисом Маршрутов** (используется другими прикладными конструкторами, см. [[Saby-Scheme-Constructors]]) совместно с новыми **Сервисом Выборок** и **Сервисом Триггеров**.
 
 > [!note] Статус
-> Планируемые методы, ещё не реализованы на момент документа (план работ, срок проекта — 27.03.2027). Соответствует ранней стадии проекта, см. [[CustomerJourney-Loyalty-Scenarios-Project]].
+> Планируемые методы, ещё не реализованы на момент документа (план работ, срок проекта — 27.03.2027). Соответствует ранней стадии проекта, см. [[CustomerJourney-Scenarios-Project]].
 
 > [!contradiction] Расхождение имён методов с финальным ТЗ
 > [[Route-Platform-Architecture]] (построена на **согласованном** `Техническое задание.pdf` — более позднем документе того же проекта) фиксирует другие имена методов авто-проходчика: `RouteService.StartTrace`, `RouteService.StartClientRoute`, `RouteService.OnEvent` — вместо `AutoTrace.Start/Run/OnEvent` этой страницы. Похоже на переименование между стадией планирования и финальным ТЗ, не подтверждено текстом источников напрямую.
@@ -80,7 +80,7 @@ Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[CustomerJourney-Wo
 
 ## Связанные страницы
 
-- [[CustomerJourney-Loyalty-Scenarios-Project]] — обзор проекта
+- [[CustomerJourney-Scenarios-Project]] — обзор проекта
 - [[CustomerJourney-Scenario-Model]] — понятийная модель, из которой строится API
 - [[CustomerJourney-WorkPlan]] — полный план работ с датами и исполнителями
 - [[Полевщиков-Евгений]] — основной backend-разработчик Сервиса Маршрутов

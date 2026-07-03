@@ -10,7 +10,7 @@ tags:
   - template
 status: current
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[Tensor-TechDoc-Standards]]"
 created: 2026-07-03
 ---

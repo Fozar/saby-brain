@@ -16,7 +16,7 @@ status: developing
 created: 2026-07-03
 updated: 2026-07-03
 related:
-  - "[[Loyalty-CustomerJourney-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[LoyaltyScenario-ReactivationInactiveClients]]"
   - "[[Выборки-Module]]"
   - "[[Гаврилов-Михаил]]"
@@ -34,7 +34,7 @@ A new UI section **«Сценарии»** ("Scenarios") is being added to the Л
 > Extracted from an early internal design-discussion document ([[loyalty-scenario-reactivation-inactive-v1-2026-07-03]]) that is mostly a list of **open ownership questions**, not a settled spec. Ownership assignments below marked "assumed" are the document authors' working hypothesis, not a confirmed decision. A revised sibling document (Морозов edits) may resolve some of these — check for updates before relying on this as ground truth.
 
 > [!warning] Duplicate/overlapping pages created by parallel batch-ingest agents
-> Other agents ingesting sibling files from the same `.raw/Путь клиента/` folder concurrently created several overlapping pages describing the same underlying feature under different names: [[Saby-Loyalty-Scenarios-Engine]], [[Route-Platform-Architecture]], [[CustomerJourney-Scenario-Builder]], [[CustomerJourney-Scenarios-Project]]. This page was written independently and was **not reconciled** with those at creation time. The orchestrator should merge/dedupe this cluster in its cross-batch finalize pass rather than treating these as independent facts.
+> Other agents ingesting sibling files from the same `.raw/Путь клиента/` folder concurrently created several overlapping pages describing the same underlying feature under different names: [[Route-Platform-Architecture]], [[Route-Platform-Architecture]], [[CustomerJourney-Scenario-Builder]], [[CustomerJourney-Scenarios-Project]]. This page was written independently and was **not reconciled** with those at creation time. The orchestrator should merge/dedupe this cluster in its cross-batch finalize pass rather than treating these as independent facts.
 
 ## Three-party component model
 

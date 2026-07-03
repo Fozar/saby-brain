@@ -10,7 +10,7 @@ tags:
   - crm
   - price-formation
 related:
-  - "[[CustomerJourney-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Scenario-Builder]]"
   - "[[CustomerJourney-Scenario-Catalog]]"
   - "[[Bonus-Programs-Architecture]]"

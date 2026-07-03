@@ -11,7 +11,7 @@ tags:
   - crm
   - price-formation
 related:
-  - "[[CustomerJourney-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Installation-Chains]]"
   - "[[CustomerJourney-Scenario-Catalog]]"
 ---
@@ -39,7 +39,7 @@ related:
 
 ## Что обновлено
 
-- [[CustomerJourney-Project]] — добавлена ссылка на этот источник как второй ингестированный файл проекта
+- [[CustomerJourney-Scenarios-Project]] — добавлена ссылка на этот источник как второй ингестированный файл проекта
 
 ## Ключевые наблюдения
 

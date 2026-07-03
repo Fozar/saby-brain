@@ -10,7 +10,7 @@ tags:
   - crm
   - price-formation
 related:
-  - "[[CustomerJourney-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Scenario-Catalog]]"
   - "[[CustomerJourney-Installation-Chains]]"
   - "[[Loyalty-Product-Overview]]"
@@ -21,7 +21,7 @@ related:
 
 # CustomerJourney Scenario Builder
 
-Механика визуального конструктора сценариев («Путь клиента» — [[CustomerJourney-Project]]). Источник: `Примеры различных сценариев со схемами.pdf`, раздел «Отбор клиентов / Действия / События / Условия на схеме» (стр. 10–14).
+Механика визуального конструктора сценариев («Путь клиента» — [[CustomerJourney-Scenarios-Project]]). Источник: `Примеры различных сценариев со схемами.pdf`, раздел «Отбор клиентов / Действия / События / Условия на схеме» (стр. 10–14).
 
 ## Строительные блоки схемы (по диаграммам)
 

@@ -11,7 +11,7 @@ tags:
   - rees46
 status: current
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Scenario-Model]]"
   - "[[Mindbox]]"
   - "[[REES46]]"

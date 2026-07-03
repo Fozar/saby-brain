@@ -13,14 +13,14 @@ tags:
   - customer-journey
 status: current
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Scenario-Model]]"
   - "[[Mindbox]]"
 ---
 
 # REES46
 
-**REES46** — внешняя коммерческая платформа маркетинг-автоматизации / персонализации, упомянута как вторичный ориентир (наряду с [[Mindbox]]) при проектировании конструктора сценариев лояльности проекта [[CustomerJourney-Loyalty-Scenarios-Project|Путь клиента]].
+**REES46** — внешняя коммерческая платформа маркетинг-автоматизации / персонализации, упомянута как вторичный ориентир (наряду с [[Mindbox]]) при проектировании конструктора сценариев лояльности проекта [[CustomerJourney-Scenarios-Project|Путь клиента]].
 
 | Атрибут | Значение |
 |---|---|
@@ -44,6 +44,6 @@ related:
 
 ## Связанные страницы
 
-- [[CustomerJourney-Loyalty-Scenarios-Project]] — проект, где используется как бенчмарк
+- [[CustomerJourney-Scenarios-Project]] — проект, где используется как бенчмарк
 - [[CustomerJourney-Scenario-Model]] — сравнительная таблица блоков
 - [[Mindbox]] — основной (более детально проанализированный) конкурент

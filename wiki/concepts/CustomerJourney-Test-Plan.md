@@ -12,7 +12,7 @@ tags:
   - testing
   - qa
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-WorkPlan]]"
   - "[[CustomerJourney-Events-Actions-Catalog]]"
   - "[[Дюднева-Светлана-Андреевна]]"
@@ -20,7 +20,7 @@ related:
 
 # Путь клиента — план тестирования
 
-Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[CustomerJourney-WorkPlan]]
+Navigation: [[CustomerJourney-Scenarios-Project]] | [[CustomerJourney-WorkPlan]]
 
 Источник: `План тестирования.pdf`, подписан ЭП **Морозов Алексей Васильевич** 01.07.26.
 
@@ -70,7 +70,7 @@ Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[CustomerJourney-Wo
 
 ## Связанные страницы
 
-- [[CustomerJourney-Loyalty-Scenarios-Project]] — обзор проекта
+- [[CustomerJourney-Scenarios-Project]] — обзор проекта
 - [[CustomerJourney-WorkPlan]] — план работ, из которого выводятся сценарии сдачи по этапам
 - [[CustomerJourney-Events-Actions-Catalog]] — полный каталог событий/действий, покрываемых тестами
 - [[Дюднева-Светлана-Андреевна]] — ответственный тестировщик

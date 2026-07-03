@@ -12,7 +12,7 @@ tags:
   - events
   - reference
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Scenario-Model]]"
   - "[[CustomerJourney-WorkPlan]]"
   - "[[TriggerScenario-ConditionsActions-Reference]]"
@@ -20,7 +20,7 @@ related:
 
 # Путь клиента — итоговый каталог событий и действий
 
-Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[CustomerJourney-Scenario-Model]]
+Navigation: [[CustomerJourney-Scenarios-Project]] | [[CustomerJourney-Scenario-Model]]
 
 Источник: `События-действия для сценариев лояльности.sabydoc.pdf`. В отличие от [[TriggerScenario-ConditionsActions-Reference]] (справочник конкурента [[Mindbox]], используемый как эталон на этапе исследования), этот документ — **собственный целевой каталог**, урезанный до объёма первого релиза проекта («Необходимо обновить, всё не обязательное убрали из проекта»).
 
@@ -66,7 +66,7 @@ Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[CustomerJourney-Sc
 
 ## Связанные страницы
 
-- [[CustomerJourney-Loyalty-Scenarios-Project]] — обзор проекта
+- [[CustomerJourney-Scenarios-Project]] — обзор проекта
 - [[CustomerJourney-Scenario-Model]] — как события/действия используются в блоках схемы
 - [[CustomerJourney-WorkPlan]] — трудозатраты на реализацию (Этап 1.1)
 - [[TriggerScenario-ConditionsActions-Reference]] — справочник-эталон конкурента Mindbox

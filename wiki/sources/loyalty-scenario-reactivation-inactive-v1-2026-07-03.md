@@ -11,8 +11,8 @@ tags:
   - scenario-design
 status: current
 related:
-  - "[[Loyalty-CustomerJourney-Project]]"
-  - "[[LoyaltyScenarios-Marshruty-Architecture]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
+  - "[[Route-Platform-Architecture]]"
   - "[[LoyaltyScenario-ReactivationInactiveClients]]"
   - "[[Выборки-Module]]"
   - "[[Гаврилов-Михаил]]"
@@ -24,7 +24,7 @@ related:
 
 **File:** `.raw/Путь клиента/Сценарий -Реактивация неактивных клиентов (давно не покупали)-.sabydoc.pdf`
 **Format:** `.sabydoc` export (Saby internal wiki-page format) rendered to PDF, 6 pages, with UI screenshots and a design commentary overlay (green text = answered/settled, red text = open `[Вопрос N]` questions, yellow highlight = "новое окно/макет нужен" TODO markers).
-**Project folder:** `Путь клиента` (Customer Journey) — a Saby/Tensor initiative building a generic scenario/marketing-automation engine ("Маршруты") on top of the existing Лояльность (Loyalty) subsystem. See [[Loyalty-CustomerJourney-Project]] for the folder's other (not-yet-ingested) documents.
+**Project folder:** `Путь клиента` (Customer Journey) — a Saby/Tensor initiative building a generic scenario/marketing-automation engine ("Маршруты") on top of the existing Лояльность (Loyalty) subsystem. See [[CustomerJourney-Scenarios-Project]] for the folder's other (not-yet-ingested) documents.
 
 > [!note] Sibling document — parallel ingest
 > A **second, revised version** of this same scenario document is being ingested in parallel by another agent: `.raw/Путь клиента/Сценарий _Реактивация неактивных клиентов (давно не покупали)_МОРОЗОВ правит.pdf` — contains edits/comments from **Морозов**. This source page describes only the v1 (unedited) document. Once the sibling source page exists, diff the two for resolved questions / changed UI / changed business rule and add `[[contradiction]]` callouts where the revised version disagrees with this one. The orchestrator's finalize pass should cross-link both source pages and this note.
@@ -45,7 +45,7 @@ The bulk of the document is a numbered walkthrough of the scenario-builder UI, e
 
 Full walkthrough, configured example values (100 bonus points, 10-day wait, sample "Ресторан Мили" tenant used for email templates, sample client pass timeline with a real purchase example: order 9247 ₽ containing "GUESS NOELLE 8 TOP ZIP" 3499₽ + "Туфли Dino Ricci Select 39 Коричневый" 5748₽) — see [[LoyaltyScenario-ReactivationInactiveClients]].
 
-General scenario-builder architecture extracted from this walkthrough (menu structure, scenario types, general settings, condition-builder, flow-graph editor block types, event catalog, execution/scheduling model, open ownership questions) — see [[LoyaltyScenarios-Marshruty-Architecture]].
+General scenario-builder architecture extracted from this walkthrough (menu structure, scenario types, general settings, condition-builder, flow-graph editor block types, event catalog, execution/scheduling model, open ownership questions) — see [[Route-Platform-Architecture]].
 
 ## Screenshots described (page → content)
 

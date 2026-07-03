@@ -11,7 +11,7 @@ tags:
   - crm
   - price-formation
 related:
-  - "[[CustomerJourney-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Scenario-Builder]]"
   - "[[CustomerJourney-Scenario-Catalog]]"
 ---
@@ -34,7 +34,7 @@ related:
 
 ## Что создано в вики
 
-- [[CustomerJourney-Project]] — умбрелла-страница проекта «Путь клиента», статус, связь с продуктовой линейкой Saby (Saby CRM/Маркетинг, Saby Target — открытый вопрос), связь с backend-подсистемами лояльности
+- [[CustomerJourney-Scenarios-Project]] — умбрелла-страница проекта «Путь клиента», статус, связь с продуктовой линейкой Saby (Saby CRM/Маркетинг, Saby Target — открытый вопрос), связь с backend-подсистемами лояльности
 - [[CustomerJourney-Scenario-Builder]] — механика конструктора: типы узлов, race-паттерн ожидания, каскадные сценарии, полные таблицы фильтров/действий/событий
 - [[CustomerJourney-Scenario-Catalog]] — все 34 примера сценария с описанием логики и структуры 9 диаграмм
 

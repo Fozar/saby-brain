@@ -10,7 +10,7 @@ tags:
   - ui-mockup
 status: current
 related:
-  - "[[CustomerJourney-Loyalty-Scenarios-Project]]"
+  - "[[CustomerJourney-Scenarios-Project]]"
   - "[[CustomerJourney-Scenario-Model]]"
 created: 2026-07-03
 ---

@@ -14,7 +14,7 @@ related:
   - "[[Loyalty-Public-API]]"
   - "[[ReferralProgram-Module]]"
   - "[[price-formation/_index]]"
-  - "[[Saby-Loyalty-Scenarios-Engine]]"
+  - "[[Route-Platform-Architecture]]"
 created: 2026-04-10
 ---
 
@@ -98,7 +98,7 @@ Not yet formalized as a distinct entity. Closest analog: персональна�
 | **Промокоды** | Promo code emission types, instance issuance, client display |
 | **Статистика** | Widgets and reports for loyalty effectiveness |
 | **Лояльность в Retail/Presto/Salon** | Specialized UI registries; houses the core discount calculation engine |
-| **Сценарии лояльности** | Visual marketing-automation builder ([[Saby-Loyalty-Scenarios-Engine]]): periodic/event/one-time triggers, condition-based client selection, chained actions (bonus accrual, discount, promo code, send), wait blocks with event branching, goals |
+| **Сценарии лояльности** | Visual marketing-automation builder ([[Route-Platform-Architecture]]): periodic/event/one-time triggers, condition-based client selection, chained actions (bonus accrual, discount, promo code, send), wait blocks with event branching, goals |
 | **Подсказки на кассе** | Cashier hint actions: text, product lists, discount card offers |
 | **Наценки** | Negative discounts (service fees); no separate trigger logic |
 | **Внешние бонусные системы** | Integration with UDS, Premium Bonus, Iiko via public API |
@@ -120,7 +120,7 @@ All loyalty application events write to **ВидЦеныДокумент** — a
 
 ## Marketing Automation Layer (Путь клиента)
 
-A visual customer-journey/marketing-automation scenario builder is being designed on top of this loyalty system (project **«Путь клиента»**), reusing Промокод/Бонусы/Карта events as triggers and client attributes (LTV, cart, referral status) as segmentation conditions. See [[CustomerJourney-Project]] (design docs: scenario example catalog + installation chains) and its mechanics page [[CustomerJourney-Scenario-Builder]] / catalog [[CustomerJourney-Scenario-Catalog]].
+A visual customer-journey/marketing-automation scenario builder is being designed on top of this loyalty system (project **«Путь клиента»**), reusing Промокод/Бонусы/Карта events as triggers and client attributes (LTV, cart, referral status) as segmentation conditions. See [[CustomerJourney-Scenarios-Project]] (design docs: scenario example catalog + installation chains) and its mechanics page [[CustomerJourney-Scenario-Builder]] / catalog [[CustomerJourney-Scenario-Catalog]].
 
 > [!note] Parallel naming for the same underlying project
-> Sibling documents from the same source folder were ingested concurrently under different naming schemes — [[Saby-Loyalty-Scenarios-Engine]] ("Сценарии лояльности" in Retail/Presto), [[CustomerJourney-Loyalty-Scenarios-Project]], [[CustomerJourney-Scenarios-Project]] (Маршруты/Триггеры/Выборки architecture) — likely describing the same "Путь клиента" project from different documents/angles. Not reconciled here; flagged for the orchestrator's cross-batch dedup pass.
+> Sibling documents from the same source folder were ingested concurrently under different naming schemes — [[Route-Platform-Architecture]] ("Сценарии лояльности" in Retail/Presto), [[CustomerJourney-Scenarios-Project]], [[CustomerJourney-Scenarios-Project]] (Маршруты/Триггеры/Выборки architecture) — likely describing the same "Путь клиента" project from different documents/angles. Not reconciled here; flagged for the orchestrator's cross-batch dedup pass.
