@@ -1266,6 +1266,36 @@
         "wiki/sources/put-klienta-ekspluatatsiya-shablon-2026-07-03.md"
       ],
       "pages_updated": []
+    },
+    ".raw/Перевод дизайна дисконтных карт на конструктор/Техническое задание.pdf": {
+      "hash": "c8dc116819304c5faf741bf2d9efe099",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md",
+        "wiki/sources/discount-card-design-constructor-2026-07-03.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/DiscountCard-Subsystem-Overview.md",
+        "wiki/index.md"
+      ]
+    },
+    ".raw/Перевод дизайна дисконтных карт на конструктор/Описание бизнес-процессов.pdf": {
+      "hash": "36feadbae2a5dfdc24410c06f1c60e01",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/concepts/DiscountCard-Design-Constructor-Project.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Перевод дизайна дисконтных карт на конструктор/План работ по проекту.pdf": {
+      "hash": "8d073b8591b0f1b7314953ca4bebc5bc",
+      "ingested_at": "2026-07-03",
+      "pages_created": [
+        "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md"
+      ],
+      "pages_updated": [
+        "wiki/entities/Ютман-Элина.md"
+      ]
     }
   },
   "address_map": {
@@ -1404,7 +1434,11 @@
     "wiki/sources/put-klienta-scenario-examples-2026-07-03.md": "c-000188",
     "wiki/sources/put-klienta-sobytiya-deystviya-2026-07-03.md": "c-000189",
     "wiki/sources/put-klienta-sravnenie-konkurentami-shablon-2026-07-03.md": "c-000190",
-    "wiki/sources/reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03.md": "c-000191"
+    "wiki/sources/reaktivaciya-neaktivnyh-klientov-morozov-2026-07-03.md": "c-000191",
+    "wiki/sources/discount-card-design-constructor-2026-07-03.md": "c-000192",
+    "wiki/concepts/DiscountCard-Design-Constructor-Project.md": "c-000193",
+    "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md": "c-000194",
+    "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md": "c-000195"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
