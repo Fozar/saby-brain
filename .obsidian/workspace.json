@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/discount-card-design-constructor-2026-07-03.md",
+                "file": "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "discount-card-design-constructor-2026-07-03"
+              "title": "DiscountCard-Design-Constructor-Architecture"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/discount-card-design-constructor-2026-07-03.md",
+                "file": "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для discount-card-design-constructor-2026-07-03"
+              "title": "Обратные ссылки для DiscountCard-Design-Constructor-Architecture"
             }
           },
           {
@@ -200,9 +200,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/sources/discount-card-design-constructor-2026-07-03.md",
+    "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md",
+    "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md.tmp.10252.9bfd379678d9",
     "wiki/concepts/DiscountCard-Design-Constructor-Project.md",
     "wiki/concepts/DiscountCard-Design-Constructor-Project.md.tmp.10252.e28b54c76864",
-    "wiki/sources/discount-card-design-constructor-2026-07-03.md",
     "wiki/sources/discount-card-design-constructor-2026-07-03.md.tmp.10252.9b7811b77f65",
     "wiki/entities/Морозов-Алексей-Васильевич.md",
     "wiki/entities/Морозов.md",
@@ -215,7 +217,6 @@
     "scripts/_tmp_update_manifest.py.tmp.10252.d578862a9f14",
     "wiki/sources/sedCvk4ZL",
     "wiki/sources/sedgDe7b7",
-    "wiki/sources/sedrHiNn4",
     "wiki/sources/customer-journey-tz-2026-07-03.md",
     "wiki/sources/put-klienta-ekspluatatsiya-shablon-2026-07-03.md",
     "wiki/sources/put-klienta-sravnenie-konkurentami-shablon-2026-07-03.md",
@@ -235,7 +236,6 @@
     "wiki/concepts/CustomerJourney-UI-Decomposition.md",
     "wiki/entities/Чусовитин-Александр.md",
     "wiki/entities/Матюшев-Дмитрий.md",
-    "wiki/concepts/CustomerJourney-Test-Plan.md",
     "13d90799073d45f02fa067907dbc0342_MD5.avif",
     "52c4aef86af0a71fe2d54ae2f996a298_MD5.avif",
     "e20a67b67cc5784a31e5812261b5034c_MD5.avif",
