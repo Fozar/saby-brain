@@ -16,6 +16,7 @@ related:
   - "[[CustomerJourney-Scenario-Model]]"
   - "[[CustomerJourney-WorkPlan]]"
   - "[[Wasaby-BL-Calls]]"
+  - "[[Route-Platform-Architecture]]"
 ---
 
 # Путь клиента — Сервис Маршрутов (backend API)
@@ -26,6 +27,9 @@ Navigation: [[CustomerJourney-Loyalty-Scenarios-Project]] | [[CustomerJourney-Wo
 
 > [!note] Статус
 > Планируемые методы, ещё не реализованы на момент документа (план работ, срок проекта — 27.03.2027). Соответствует ранней стадии проекта, см. [[CustomerJourney-Loyalty-Scenarios-Project]].
+
+> [!contradiction] Расхождение имён методов с финальным ТЗ
+> [[Route-Platform-Architecture]] (построена на **согласованном** `Техническое задание.pdf` — более позднем документе того же проекта) фиксирует другие имена методов авто-проходчика: `RouteService.StartTrace`, `RouteService.StartClientRoute`, `RouteService.OnEvent` — вместо `AutoTrace.Start/Run/OnEvent` этой страницы. Похоже на переименование между стадией планирования и финальным ТЗ, не подтверждено текстом источников напрямую.
 
 ## Компоненты
 
