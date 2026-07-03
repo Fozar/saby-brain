@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md",
+                "file": "wiki/sources/discount-card-design-constructor-2026-07-03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DiscountCard-Design-Constructor-Architecture"
+              "title": "discount-card-design-constructor-2026-07-03"
+            }
+          },
+          {
+            "id": "66a46bab5f2733c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/entities/Ютман-Элина.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ютман-Элина"
             }
           }
         ]
@@ -94,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md",
+                "file": "wiki/sources/discount-card-design-constructor-2026-07-03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для DiscountCard-Design-Constructor-Architecture"
+              "title": "Обратные ссылки для discount-card-design-constructor-2026-07-03"
             }
           },
           {
@@ -200,14 +214,16 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/entities/Ютман-Элина.md",
+    "wiki/index.md.tmp.10252.30a0b9b32c9c",
+    "wiki/sources/discount-card-design-constructor-2026-07-03.md",
+    "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md",
     "wiki/entities/Ютман-Элина.md.tmp.10252.a59e10e89a93",
     "wiki/entities/Ютман-Элина.md.tmp.10252.5232f4a3de91",
     "wiki/concepts/DiscountCard-Subsystem-Overview.md.tmp.10252.3e508bbd8902",
     "wiki/concepts/DiscountCard-Subsystem-Overview.md.tmp.10252.030cad881dde",
     "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md",
     "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md.tmp.10252.18a6fd220f4b",
-    "wiki/sources/discount-card-design-constructor-2026-07-03.md",
-    "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md",
     "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md.tmp.10252.9bfd379678d9",
     "wiki/concepts/DiscountCard-Design-Constructor-Project.md",
     "wiki/concepts/DiscountCard-Design-Constructor-Project.md.tmp.10252.e28b54c76864",
@@ -217,8 +233,6 @@
     "wiki/hot.md",
     "wiki/concepts/CustomerJourney-Scenarios-Project.md",
     "wiki/log.md.tmp.10252.a399b6afc971",
-    "wiki/index.md.tmp.10252.2ee3c2d58cc3",
-    "wiki/index.md.tmp.10252.5bf4d35dc1d8",
     "wiki/sources/customer-journey-tz-2026-07-03.md",
     "wiki/sources/put-klienta-ekspluatatsiya-shablon-2026-07-03.md",
     "wiki/sources/put-klienta-sravnenie-konkurentami-shablon-2026-07-03.md",
