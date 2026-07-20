@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-07-03 | Total pages: 391 | Sources ingested: 205
+Last updated: 2026-07-20 | Total pages: 392 | Sources ingested: 205
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -88,6 +88,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Price Formation — Analysis
 
+- [[DCQuestionary-BirthDay-Existing-Client-Bug]] (c-000196) — баг №0625711: анкета выдачи ДК не проставляет дату рождения существующему клиенту без неё; собственная регрессия от апрельского MR !141867 (убрал `BirthDay` из `UpdateFields` целиком, фикся другой баг — перезапись). Фикс: `NeedSearchResult=True` + fail-closed чтение `SearchResult.BirthDay` + точечный `CRMClients.SaveCustomer`. Смежные находки (не фикшены): та же безусловная перезапись в `helpers.py`/`process_file.py` (status: fixed)
 - [[Bonus-GetTotalBalance-Franchise-Performance]] — задача 05292113: виджет «Бонусы» не строится на франшизном аккаунте (~80k персональных счетов), GetTotalBalance ~4.5 с; узкое место — поимённый `Card.GetBonusBalanceByCards` (передача 80k UUID + возврат 79943 строк), сам SQL по индексу 461 мс; решение — агрегат SUM на стороне СДК (status: developing)
 - [[DiscountRegistry-Revive-Performance]] — оживление реестра «Скидки» offline (2567→<2300 мс): GetSaleList проксируется в облако, BL ~15% времени; UNION ALL + тюнинг EMA; убраны «пустые» запросы (hasMore) через CTE SaleDateBound = MIN(EffectiveDate) LATERAL per-id (8.5мс/0.11мс); индексы EffectiveDate ЕСТЬ в PricingRetailOnline.dicx — прежний тезис об их отсутствии опровергнут замером (status: developing)
 - [[ReferralProgram-ZeroReward-Lead-Filter-Bug]] — баг №05265686: лиды с нулевым/NULL вознаграждением не видны в фильтре «Завершено положительно»; fix: убрать `Бонусы > 0` из query + разрешить ВЦД-запись при price=0 (status: fixed)

@@ -10,6 +10,14 @@ related:
   - "[[index]]"
 ---
 
+## [2026-07-20] save | DCQuestionary: не проставляется дата рождения существующему клиенту
+- Type: decision
+- Location: wiki/meta/DCQuestionary-BirthDay-Existing-Client-Bug.md
+- From: баг №0625711 (регламент «Ошибка на стенде»), фикс в price-formation
+- Key insight: собственная регрессия — апрельский MR !141867 фиксил перезапись BirthDay существующего клиента, убрав поле из `UpdateFields` целиком, и заодно исключил возможность впервые проставить ДР. `CRMClients.GetCustomerOrCreate` не поддерживает «update if empty» — переиспользуемый обходной путь (от ответственного за метод): `NeedSearchResult=True` → читать `SearchResult.<Field>` → точечный `CRMClients.SaveCustomer`, если пусто. Урок ревью: guard на пустоту поля должен быть fail-closed (`search_result and not search_result.Get(...)`), а не просто `not search_result.Get(...)` — иначе `SearchResult=None` воспроизводит тот же баг. Смежные находки (не фикшены): та же безусловная перезапись BirthDay в `helpers.py`/`process_file.py`.
+- Pages created: [[DCQuestionary-BirthDay-Existing-Client-Bug]]
+- Pages updated: [[index]], [[hot]]
+
 ## [2026-07-03] ingest | Перевод дизайна дисконтных карт на конструктор — 3 PDF
 - Source: `.raw/Перевод дизайна дисконтных карт на конструктор/` (выборочно: `Техническое задание.pdf`, `Описание бизнес-процессов.pdf`, `План работ по проекту.pdf`; из 6 файлов папки — `План тестирования.pdf`, `Сравнение с конкурентами.pdf`, `Эксплуатация системы.pdf` не читались по решению пользователя)
 - Summary: [[discount-card-design-constructor-2026-07-03]] — дизайн дисконтных карт (Wallet/GPay/оборотная сторона) переезжает с сервиса «Брендбук» на конструктор сайтов (site-builder), новый тип конструктора с прикладными объектами ПО ДизайнКарты и ПО КартаЛояльности, жёсткие Apple/Google-регламентированные слоты вместо свободного DnD

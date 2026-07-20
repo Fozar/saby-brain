@@ -11,28 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/hot.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "hot"
-            }
-          },
-          {
-            "id": "66a46bab5f2733c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/entities/Ютман-Элина.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ютман-Элина"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -108,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/hot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для hot"
+              "title": "Обратные ссылки"
             }
           },
           {
@@ -214,6 +195,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/hot.md",
     "wiki/hot.md.tmp.10252.dd56c89638a4",
     "wiki/sources/discount-card-design-constructor-2026-07-03.md",
     "wiki/hot.md.tmp.10252.5add96302100",
@@ -228,11 +210,9 @@
     "wiki/concepts/DiscountCard-Subsystem-Overview.md.tmp.10252.030cad881dde",
     "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md",
     "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md.tmp.10252.18a6fd220f4b",
-    "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md.tmp.10252.9bfd379678d9",
     "wiki/concepts/DiscountCard-Design-Constructor-Project.md",
     "wiki/entities/Морозов-Алексей-Васильевич.md",
     "wiki/entities/Морозов.md",
-    "wiki/hot.md",
     "wiki/concepts/CustomerJourney-Scenarios-Project.md",
     "wiki/sources/customer-journey-tz-2026-07-03.md",
     "wiki/sources/put-klienta-ekspluatatsiya-shablon-2026-07-03.md",
