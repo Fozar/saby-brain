@@ -10,6 +10,14 @@ related:
   - "[[index]]"
 ---
 
+## [2026-07-21] ingest | Реферальная система в подборе персонала — «Приведи друга» (ТЗ + План работ)
+- Source: `.raw/Реферальная система в подборе персонала/` (2 md: `Техническое задание...md`, `План работ по проекту.md`)
+- Summary: [[recruitment-referral-2026-07-21]]
+- Pages created: [[RecruitmentReferral-Project]] (c-000197), [[RecruitmentReferral-TZ]] (c-000198), [[RecruitmentReferral-WorkPlan]] (c-000199), [[recruitment-referral-2026-07-21]] (c-000200)
+- Pages updated: [[index]], [[hot]], [[domains/price-formation/_index]], [[SabyBank-RKO-Referral]], [[ReferralDeals-System]], [[ReferralStub-TargetAction-Pattern]]
+- Key insight: третья реферальная вертикаль на едином ядре `ReferralProgram.*` + корешки `ВидЦеныДокумент` — после [[ReferralDeals-System|сделок]] и [[SabyBank-RKO-Referral|SabyBank РКО]]. Здесь целевой документ = «Кандидат на вакансию», партнёр = сотрудник аккаунта (без приглашения/договоров), вознаграждение может быть в рублях / вирт. валюте / бейдже. Применяется [[ReferralStub-TargetAction-Pattern]]: корешок создаётся целевым документом (кандидатом/откликом). Ранняя редакция: концепт связи «рефералка↔вакансия» не согласован, все оценки «? дней», много открытых развилок (где хранить источник — в отклике/кандидате; алгоритм соответствия вакансия→программа с иерархией организаций; наименование «Карьера» vs «Вакансии»). Мокапы UI (site-builder previewer + битые File.png) недоступны за авторизацией — не транскрибированы.
+- Images: не ингестированы — скриншоты за SBIS-авторизацией + плейсхолдеры; интерактивные прототипы в Axure.
+
 ## [2026-07-20] save | DCQuestionary: не проставляется дата рождения существующему клиенту
 - Type: decision
 - Location: wiki/meta/DCQuestionary-BirthDay-Existing-Client-Bug.md

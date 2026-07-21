@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-07-20 | Total pages: 392 | Sources ingested: 205
+Last updated: 2026-07-21 | Total pages: 396 | Sources ingested: 206
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -69,6 +69,9 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[LoyaltyReferral-Module-Extraction]] — выделение рефералки в отдельный СБИС-модуль LoyaltyReferral: план Андрея (4 этапа), зависимости (mirror KZ, rightcheck→Rights-Py, user_service_cloud→UserServiceCloud-Py), регистрация в online32.s3srv:454, симлинки tests_new→tests, echo-метод, грабли test_manager (задача 05256826) (status: developing)
 - [[ReferralProgram-SetPrice-Record-Return]] — SetStubPrice/SetLeadPrice возвращают Record(AccruedCount, NotAccruedCount) вместо int; «скольким начислено / нет» как в DiscountCard.BatchDeleteOrLock (задача 04307161, saby bank) (status: developing)
 - [[ReferralProgram-Data-Model]] — модель данных реф. программ: ВидЦены→Раздел→БизнесГруппа, AdObject-источники, access_data_guid, utm_rfcid, миграция между Реф. Сетями (задача 06096778) (status: developing)
+- [[RecruitmentReferral-Project]] (c-000197) — проект «Приведи друга»: третья реферальная вертикаль (после сделок и SabyBank), целевой документ = «Кандидат на вакансию», партнёр = сотрудник; вознаграждение рубли/вирт.валюта/бейдж; SabyNet «Карьера»/«Вакансии» + SabyHRM + карьерный сайт + SabyMy (status: developing)
+- [[RecruitmentReferral-TZ]] (c-000198) — ТЗ: SabyNet-конфигурация «Карьера», доработки ReferralProgram.Create/Read/Update/GetList/GetLeadPeriodList, 5 новых API, источники данных UI (7 страниц), уникальный индекс (ID_РефПрограммы, ID_ДокументаКандидата) (status: developing)
+- [[RecruitmentReferral-WorkPlan]] (c-000199) — план работ: 12 прикладных этапов (SabyNet-конфиг → панель → SabyHRM → карточка 5 вкладок → справочник источников → карьерный сайт → виджеты → генерация ссылки → отклик → вознаграждение → виджет SabyMy); оценки «? дней», незакрытые развилки (status: developing)
 
 ## Price Formation — Customer Journey / Маршруты (Путь клиента)
 
@@ -357,6 +360,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[storage-services-2026-04-12]] — 2026-04-12 | 5 docs: SabyDisk + FileStorage + file-transfer + хранение | 4 pages created
 - [[wasaby-list-advanced-2026-04-14]] — 2026-04-14 | 10 docs: Wasaby BL list advanced patterns | 1 page created, 1 updated
 - [[loyalty-react-migration-2026-04-14]] — 2026-04-14 | 3 docs: цель, ТЗ, план работ проекта перевода лояльности на React | 2 pages created
+- [[recruitment-referral-2026-07-21]] (c-000200) — 2026-07-21 | 2 docs: ТЗ + план работ проекта «Приведи друга» (реферальная система в подборе персонала) | 3 concept pages created
 - [[at-coverage-referral-deals-2026-04-12]] — 2026-04-12 | 2 docs: план работ + ТЗ проекта АТ-покрытия | 1 page created
 - [[wasaby-bl-docs-2026-04-10]] — 2026-04-10 | 37 Wasaby BL Framework docs | 6 pages created
 - [[external-loyalty-2026-04-10]] — 2026-04-10 | 6 External Loyalty docs (UDS/PB/iiko) | 3 pages created, 1 updated

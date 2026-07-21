@@ -13,6 +13,7 @@ status: current
 related:
   - "[[ReferralProgram-Module]]"
   - "[[ReferralDeals-System]]"
+  - "[[RecruitmentReferral-Project]]"
   - "[[Loyalty-Database-Schema]]"
   - "[[SabyBank-RKO-TZ]]"
   - "[[SabyBank-RKO-WorkPlan]]"
