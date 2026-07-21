@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "raw/Техническое задание Реферальная система в подборе персонала.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "Техническое задание Реферальная система в подборе персонала"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "raw/Техническое задание Реферальная система в подборе персонала.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки"
+              "title": "Обратные ссылки для Техническое задание Реферальная система в подборе персонала"
             }
           },
           {
@@ -195,6 +200,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "raw/Реферальная система в подборе персонала/План работ по проекту.md",
+    "raw/Техническое задание Реферальная система в подборе персонала.md",
+    "raw/Реферальная система в подборе персонала",
     "wiki/hot.md",
     "wiki/hot.md.tmp.10252.dd56c89638a4",
     "wiki/sources/discount-card-design-constructor-2026-07-03.md",
@@ -209,7 +217,6 @@
     "wiki/concepts/DiscountCard-Subsystem-Overview.md.tmp.10252.3e508bbd8902",
     "wiki/concepts/DiscountCard-Subsystem-Overview.md.tmp.10252.030cad881dde",
     "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md",
-    "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md.tmp.10252.18a6fd220f4b",
     "wiki/concepts/DiscountCard-Design-Constructor-Project.md",
     "wiki/entities/Морозов-Алексей-Васильевич.md",
     "wiki/entities/Морозов.md",
@@ -229,7 +236,6 @@
     "wiki/entities/Чусовитин-А.md",
     "wiki/entities/REES46.md",
     "wiki/entities/Окладников-Д.md",
-    "wiki/entities/Полевщиков-Евгений.md",
     "13d90799073d45f02fa067907dbc0342_MD5.avif",
     "52c4aef86af0a71fe2d54ae2f996a298_MD5.avif",
     "e20a67b67cc5784a31e5812261b5034c_MD5.avif",
