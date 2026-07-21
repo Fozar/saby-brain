@@ -16,6 +16,8 @@ related:
   - "[[Wasaby-Framework]]"
   - "[[ReferralProgram-GetPartnerList-Unjoined-Partners]]"
   - "[[AT-Coverage-ReferralDeals-Project]]"
+  - "[[SabyBank-RKO-Referral]]"
+  - "[[RecruitmentReferral-Project]]"
 created: 2026-04-10
 ---
 

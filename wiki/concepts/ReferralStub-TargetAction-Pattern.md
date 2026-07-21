@@ -13,6 +13,7 @@ tags:
 status: current
 related:
   - "[[SabyBank-RKO-Referral]]"
+  - "[[RecruitmentReferral-Project]]"
   - "[[ReferralProgram-Stub-Implementation]]"
   - "[[sveshnikov-stub-creation-thoughts-2026-05-28]]"
 ---

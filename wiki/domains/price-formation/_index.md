@@ -32,6 +32,8 @@ related:
   - "[[Promocode-Subsystem-Overview]]"
   - "[[Promocode-Info-Model]]"
   - "[[ReferralDeals-System]]"
+  - "[[SabyBank-RKO-Referral]]"
+  - "[[RecruitmentReferral-Project]]"
   - "[[Franchise-Contract-API]]"
   - "[[Franchise-SabyNet-Subsystem]]"
   - "[[Franchise-Loyalty-Architecture]]"
