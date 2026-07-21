@@ -1296,6 +1296,44 @@
       "pages_updated": [
         "wiki/entities/Ютман-Элина.md"
       ]
+    },
+    ".raw/Реферальная система в подборе персонала/Техническое задание Реферальная система в подборе персонала.md": {
+      "hash": "4fc23ecc6405e440efd1f12bd5e9ff90",
+      "ingested_at": "2026-07-21",
+      "pages_created": [
+        "wiki/concepts/RecruitmentReferral-Project.md",
+        "wiki/concepts/RecruitmentReferral-TZ.md",
+        "wiki/concepts/RecruitmentReferral-WorkPlan.md",
+        "wiki/sources/recruitment-referral-2026-07-21.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/price-formation/_index.md",
+        "wiki/concepts/SabyBank-RKO-Referral.md",
+        "wiki/concepts/ReferralDeals-System.md",
+        "wiki/concepts/ReferralStub-TargetAction-Pattern.md"
+      ]
+    },
+    ".raw/Реферальная система в подборе персонала/План работ по проекту.md": {
+      "hash": "db00ff442bb969c3f660c2c9d9106551",
+      "ingested_at": "2026-07-21",
+      "pages_created": [
+        "wiki/concepts/RecruitmentReferral-Project.md",
+        "wiki/concepts/RecruitmentReferral-TZ.md",
+        "wiki/concepts/RecruitmentReferral-WorkPlan.md",
+        "wiki/sources/recruitment-referral-2026-07-21.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md",
+        "wiki/domains/price-formation/_index.md",
+        "wiki/concepts/SabyBank-RKO-Referral.md",
+        "wiki/concepts/ReferralDeals-System.md",
+        "wiki/concepts/ReferralStub-TargetAction-Pattern.md"
+      ]
     }
   },
   "address_map": {
@@ -1438,7 +1476,11 @@
     "wiki/sources/discount-card-design-constructor-2026-07-03.md": "c-000192",
     "wiki/concepts/DiscountCard-Design-Constructor-Project.md": "c-000193",
     "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md": "c-000194",
-    "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md": "c-000195"
+    "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md": "c-000195",
+    "wiki/concepts/RecruitmentReferral-Project.md": "c-000197",
+    "wiki/concepts/RecruitmentReferral-TZ.md": "c-000198",
+    "wiki/concepts/RecruitmentReferral-WorkPlan.md": "c-000199",
+    "wiki/sources/recruitment-referral-2026-07-21.md": "c-000200"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
