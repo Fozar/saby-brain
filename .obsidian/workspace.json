@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/Реферальная система в подборе персонала/План работ по проекту.md",
+                "file": "raw/QA/Как вызвать синхронно БЛ-метод под другим клиентом и юзером, не образуя петли.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "План работ по проекту"
+              "title": "Как вызвать синхронно БЛ-метод под другим клиентом и юзером, не образуя петли"
             }
           }
         ]
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raw/Реферальная система в подборе персонала/План работ по проекту.md",
+                "file": "raw/QA/Как вызвать синхронно БЛ-метод под другим клиентом и юзером, не образуя петли.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для План работ по проекту"
+              "title": "Обратные ссылки для Как вызвать синхронно БЛ-метод под другим клиентом и юзером, не образуя петли"
             }
           },
           {
@@ -199,8 +198,12 @@
       "new-3d-graph:Open 3d graph": false
     }
   },
-  "active": "832ab43d08cf9e30",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "raw/QA/SetPool у Endpoint, что нужно передать, чтобы выполнение шло не на основном пуле.md",
+    "raw/QA/Как вызвать синхронно БЛ-метод под другим клиентом и юзером, не образуя петли.md",
+    "raw/Реферальная система в подборе персонала/План работ по проекту.md",
+    "raw/QA",
     "wiki/domains/price-formation/_index.md.tmp.34784.cf3a7610e47a",
     "wiki/hot.md.tmp.34784.296292a81562",
     "wiki/hot.md.tmp.34784.bd1d11169b46",
@@ -210,14 +213,11 @@
     "wiki/concepts/SabyBank-RKO-Referral.md.tmp.34784.eb733ee8034e",
     "wiki/index.md.tmp.34784.fb10e78bc1a5",
     "wiki/index.md.tmp.34784.ee98e69ff186",
-    "wiki/index.md.tmp.34784.ae785dcb28c7",
     "wiki/sources/recruitment-referral-2026-07-21.md",
-    "wiki/sources/recruitment-referral-2026-07-21.md.tmp.34784.e03cb07a1722",
     "wiki/concepts/RecruitmentReferral-WorkPlan.md",
     "wiki/concepts/RecruitmentReferral-TZ.md",
     "wiki/concepts/RecruitmentReferral-Project.md",
     "raw/Реферальная система в подборе персонала/Техническое задание Реферальная система в подборе персонала.md",
-    "raw/Реферальная система в подборе персонала/План работ по проекту.md",
     "wiki/hot.md",
     "wiki/sources/discount-card-design-constructor-2026-07-03.md",
     "wiki/entities/Ютман-Элина.md",
@@ -236,7 +236,6 @@
     "wiki/sources/put-klienta-konstruktory-shem-deev-2026-07-03.md",
     "wiki/sources/put-klienta-bloki-scenariev-2026-07-03.md",
     "wiki/sources/put-klienta-koncept-reshenie-3-voprosy-2026-07-03.md",
-    "wiki/sources/put-klienta-koncept-reshenie-2-mindbox-2026-07-03.md",
     "13d90799073d45f02fa067907dbc0342_MD5.avif",
     "52c4aef86af0a71fe2d54ae2f996a298_MD5.avif",
     "e20a67b67cc5784a31e5812261b5034c_MD5.avif",
