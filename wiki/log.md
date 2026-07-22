@@ -10,6 +10,14 @@ related:
   - "[[index]]"
 ---
 
+## [2026-07-22] ingest | QA-тред кластер «петля вызовов БЛ» (4 форумных треда)
+- Source: `.raw/QA/` (4 md: SetPool у Endpoint; другой схеме того же сервиса; под другим клиентом и юзером; смена пользователя)
+- Summary: [[wasaby-bl-call-loop-setpool-2026-07-22]], [[wasaby-bl-call-loop-setpool-ext-registration-2026-07-22]]
+- Pages created: [[wasaby-bl-call-loop-setpool-2026-07-22]] (c-000201), [[wasaby-bl-call-loop-setpool-ext-registration-2026-07-22]] (c-000202)
+- Pages updated: [[Wasaby-BL-Call-Loop-Pattern]], [[index]], [[hot]]
+- Уже были в вики (пропущены как дубли): тред Черемисина 10.07.25 → [[wasaby-cross-client-call-2026-06-04]]; тред Разговорова 05.08.25 → [[wasaby-bl-call-loop-user-switch-2026-06-04]].
+- Key insight: все 4 треда — один кластер (23.06.25 Лемешко → 08.07.25 Тимошенко → 10.07.25 Черемисин → 05.08.25 Разговоров) с единым решением `CreateMultitenantEndpointByClientId`. Новое из необработанных тредов: (1) служебный пул / `SetPool` — интуитивный, но НЕ каноничный обход петли; (2) `TenantContext` избыточен — `CreateMultitenantEndpointByClientId` заменяет его. Основная масса каждого файла — секции «Похожие темы» (форумный шум), не ингестированы.
+
 ## [2026-07-21] ingest | Реферальная система в подборе персонала — «Приведи друга» (ТЗ + План работ)
 - Source: `.raw/Реферальная система в подборе персонала/` (2 md: `Техническое задание...md`, `План работ по проекту.md`)
 - Summary: [[recruitment-referral-2026-07-21]]

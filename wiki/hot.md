@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-07-21
+updated: 2026-07-22
 tags:
   - meta
   - hot-cache
@@ -13,6 +13,14 @@ related:
 ---
 
 # Recent Context
+
+## 2026-07-22 — QA-кластер «петля вызовов БЛ» (4 форумных треда)
+
+Ингестирован `.raw/QA/` — 4 форумных треда wasaby.Backend об одной проблеме: **петля вызовов (call loop)** при переигрывании БЛ-метода под другим клиентом/пользователем в рамках одного юнита. Единое решение во всех — **`CreateMultitenantEndpointByClientId`** (модуль multitenancy). Кластер уже был частично в вики; создано 2 новых source-страницы из необработанных тредов: [[wasaby-bl-call-loop-setpool-2026-07-22]] (Лемешко, 23.06.25 — корневой) и [[wasaby-bl-call-loop-setpool-ext-registration-2026-07-22]] ([[Тимошенко А.А.|Тимошенко]], 08.07.25 — `ext-registration→ext-registration`). Два других треда — дубли уже ингестированных ([[wasaby-cross-client-call-2026-06-04]], [[wasaby-bl-call-loop-user-switch-2026-06-04]]) — пропущены.
+
+**Новое:** (1) **служебный пул / `SetPool`** — интуитивный, но НЕ каноничный обход петли (проблема в маршрутизации внутри юнита, а не в пуле); (2) **`TenantContext` избыточен** — `CreateMultitenantEndpointByClientId` заменяет его. Полная концепция: [[Wasaby-BL-Call-Loop-Pattern]]; вызов под другим клиентом+пользователем (нужен `AuthByClientAndUserId` / подмена `sid` через `icsSESSION_ID`): [[Wasaby-Cross-Client-BL-Call]].
+
+---
 
 ## 2026-07-21 — Реферальная система в подборе персонала «Приведи друга» (ТЗ + План работ)
 

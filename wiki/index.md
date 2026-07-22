@@ -406,6 +406,8 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[sveshnikov-stub-creation-thoughts-2026-05-28]] — 2026-05-28 | мысли Свешникова: создание корешков и реферальные сценарии
 - [[wasaby-cross-client-call-2026-06-04]] — 2026-06-04 | Форум wasaby.Backend: вызов БЛ-метода под другим клиентом+юзером без петли; AuthByClientAndUserId vs CreateMultitenantEndpointByClientId | 1 page created, 1 updated
 - [[wasaby-bl-call-loop-user-switch-2026-06-04]] — 2026-06-04 | SBIS Forum: петля вызовов при смене пользователя, одном ClientID; CreateMultitenantEndpointByClientId как решение | 1 page created
+- [[wasaby-bl-call-loop-setpool-2026-07-22]] — 2025-06-23 (ingest 2026-07-22) | SBIS Forum (Лемешко): корневой тред кластера «петля вызовов»; служебный пул (SetPool) не решает, канон — CreateMultitenantEndpointByClientId (c-000201)
+- [[wasaby-bl-call-loop-setpool-ext-registration-2026-07-22]] — 2025-07-08 (ingest 2026-07-22) | SBIS Forum (Тимошенко): ext-registration→ext-registration под другим ClientID; TenantContext не спасает от петли, TenantContext не нужен с CreateMultitenantEndpointByClientId (c-000202)
 - [[sbis-plan-june-2026]] — 2026-06-09 | SBIS план работ «Система лояльности» июнь 2026: 19 пунктов, 37.3ч; SabyBank RKO Referral, корешки, DWC внедрение, удаление фич | 1 page created
 - [[wasaby-bl-async-invoke-2026-06-11]] — 2026-06-11 | Sync/async BL call API: EndPoint, Invoke/AsyncInvoke, delivery guarantees, callbacks, Huge Payload | 1 page created
 
