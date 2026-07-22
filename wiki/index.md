@@ -106,6 +106,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[soveshanie-sdacha-td-itload-2026-06-23]] (c-000146) — 2026-06-23 | ревью ТД итеративной загрузки Федько: диаграмма иерархии бракована, EMA упростить под спойлер, согласовать с [[Ютман-Элина]]
 - [[zvonok-musohranov-timoshenko-2026-06-24]] (c-000144) — 2026-06-24 | ревью MR-ов CreateLead→CreateStub и GetLeadPeriodList; запрет цикла по источникам; регрессионные риски корешка при статусе 10
 - [[zvonok-musohranov-timoshenko-2026-06-30]] (c-000148) — 2026-06-30 | сдача задачи корешков: миграция существующих сделок реализована, проверка невозможна до версии 400; GUI не готов; сдавать как есть с декларацией планов
+- [[zvonok-musohranov-timoshenko-2026-07-22]] (c-000203) — 2026-07-22 | как тестировать ВНР миграции корешков: отладить метод из консоли на фикстуре до оборачивания в ВНР; не спихивать сплошную проверку на QA ([[Настя-QA]]) без явного сценария
 
 ## Concepts
 
@@ -199,6 +200,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[ReferralProgram-Stub-Implementation]] — `ReferralProgram.CreateStub` + `UpdateStub`: 2 метода, 4 бизнес-сценария, StatusDate/EffectiveDate правило, LinkType константы, SQL+тесты; ревью Мусохранова 2026-06-24 (status: active)
 - [[ReferralProgram-GetLeadPeriodList-LeadCount-Source]] (c-000145) — решение: LeadCount/RewardSum из одного запроса к ВидЦеныДокумент, без цикла по источникам через marketing-API (status: active)
 - [[ReferralStub-TargetAction-Pattern]] — паттерн целевого действия корешков: TargetAction, StatusDate, FilterByStatus (status: current)
+- [[Migration-Console-First-Testing-Pattern]] (c-000204) — методология проверки сложной миграции: отладить ядро как метод из консоли на фикстуре, только потом ВНР + QA с явным сценарием (status: active)
 - [[LRS-Long-Request-Service]] — LRS надстройка над DWC: фоновые операции, прогресс, результаты, история 90д, шардированная БД, бесшовное обновление (status: current)
 - [[Loyalty-Sale-Application]] — подсистема применения лояльности на продаже: задачи, C++ ядро CalcDiscount, цикл расчёта, скидки/подарки/бонусы/штампики, режим оферты, организация кода (status: current)
 - [[Profiles-Service]] — Сервис Профилей: Персона-UUID, 3 контура (RW/RO-any/RO-spec), bi-directional sync, local-first стратегия (status: current)
@@ -329,6 +331,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 ## Entities
 
 - [[Тимошенко А.А.]] — инженер-программист 2+, Тензор; BL loyalty/price-formation, SabyBank RKO Referral, DWC-промокоды (status: current)
+- [[Настя-QA]] (c-000205) — тестировщик, проверка миграции реф. сделок на корешки; фамилия неизвестна (status: current)
 - [[Tensor-Company]] — Тензор: федеральный IT-холдинг, Saby/СБИС, 4.5M+ клиентов, №1 ЭДО в России (status: current)
 - [[Мусохранов-Андрей-Владиславович]] — руководитель направления 2+, Система лояльности + Транспорт ВИС (c-000036) (status: current)
 - [[Ютман-Элина]] — разработчик, ответственная за систему бонусов PriceFormation.Online; итеративная загрузка (c-000147) (status: current)
