@@ -17,6 +17,8 @@ related:
   - "[[Wasaby-BL-Methods]]"
   - "[[Wasaby-SharedFuture]]"
   - "[[wasaby-bl-call-loop-user-switch-2026-06-04]]"
+  - "[[wasaby-bl-call-loop-setpool-2026-07-22]]"
+  - "[[wasaby-bl-call-loop-setpool-ext-registration-2026-07-22]]"
 created: 2026-06-04
 ---
 
@@ -58,6 +60,10 @@ result = ep.SomeObject.SomeMethod(params)
 - Вызов метода под другим пользователем того же аккаунта
 - Тот же сервис, та же группа серверов, тот же ClientID
 - Не нужно передавать `service_name`, если сервис тот же
+- `TenantContext` при этом **не нужен** — `CreateMultitenantEndpointByClientId` заменяет его (Бойцов Е., 08.07.25; см. [[wasaby-bl-call-loop-setpool-ext-registration-2026-07-22]])
+
+> [!warning] Служебный пул (SetPool) — не решение петли
+> Интуитивный workaround «увести вызов на служебный пул через `SetPool`» петлю **не устраняет**: проблема в маршрутизации внутри юнита, а не в пуле. Канонический фикс — `CreateMultitenantEndpointByClientId`. Вызовы между аккаунтами одного юнита сами по себе не запрещены. (Корневой тред: Лемешко, 23.06.25, [[wasaby-bl-call-loop-setpool-2026-07-22]].)
 
 ---
 
@@ -129,3 +135,9 @@ result = ep.SomeObject.SomeMethod(params)
 - Межсхемные вызовы в рамках одного сервиса (`ext-registration → ext-registration` под другим ClientID)
 
 Известна с ~2017, воспроизводилась вновь в апреле 2025 (см. [[wasaby-bl-call-loop-user-switch-2026-06-04]]).
+
+Хронология форумных тредов (один кластер, одно решение — `CreateMultitenantEndpointByClientId`):
+- **23.06.25** — Лемешко Никита (корневой): петля между аккаунтами одного юнита; идея служебного пула. [[wasaby-bl-call-loop-setpool-2026-07-22]]
+- **08.07.25** — [[Тимошенко А.А.]]: `ext-registration → ext-registration` под другим ClientID; `TenantContext` не помог. [[wasaby-bl-call-loop-setpool-ext-registration-2026-07-22]]
+- **10.07.25** — Черемисин Илья: другой клиент *и* пользователь (нужен `AuthByClientAndUserId` / подмена `sid`). [[wasaby-cross-client-call-2026-06-04]]
+- **05.08.25** — Разговоров Андрей: смена пользователя в том же аккаунте. [[wasaby-bl-call-loop-user-switch-2026-06-04]]
