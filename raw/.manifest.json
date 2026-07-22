@@ -1334,6 +1334,32 @@
         "wiki/concepts/ReferralDeals-System.md",
         "wiki/concepts/ReferralStub-TargetAction-Pattern.md"
       ]
+    },
+    ".raw/QA/SetPool у Endpoint, что нужно передать, чтобы выполнение шло не на основном пуле.md": {
+      "hash": "a7d940a042b5f176a18ee7b38c8b675e",
+      "ingested_at": "2026-07-22",
+      "pages_created": [
+        "wiki/sources/wasaby-bl-call-loop-setpool-2026-07-22.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-BL-Call-Loop-Pattern.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    ".raw/QA/Как вызвать метод БЛ в другой схеме того же сервиса без петли вызовов.md": {
+      "hash": "825cde891452b715c724a87a8bea59ac",
+      "ingested_at": "2026-07-22",
+      "pages_created": [
+        "wiki/sources/wasaby-bl-call-loop-setpool-ext-registration-2026-07-22.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-BL-Call-Loop-Pattern.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
     }
   },
   "address_map": {
@@ -1480,7 +1506,9 @@
     "wiki/concepts/RecruitmentReferral-Project.md": "c-000197",
     "wiki/concepts/RecruitmentReferral-TZ.md": "c-000198",
     "wiki/concepts/RecruitmentReferral-WorkPlan.md": "c-000199",
-    "wiki/sources/recruitment-referral-2026-07-21.md": "c-000200"
+    "wiki/sources/recruitment-referral-2026-07-21.md": "c-000200",
+    "wiki/sources/wasaby-bl-call-loop-setpool-2026-07-22.md": "c-000201",
+    "wiki/sources/wasaby-bl-call-loop-setpool-ext-registration-2026-07-22.md": "c-000202"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
