@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/questions/PromoCode-NotifyGenerated-DWC-Ordering.md",
+                "file": "wiki/sources/zvonok-musohranov-timoshenko-2026-07-22.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PromoCode-NotifyGenerated-DWC-Ordering"
+              "title": "zvonok-musohranov-timoshenko-2026-07-22"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/questions/PromoCode-NotifyGenerated-DWC-Ordering.md",
+                "file": "wiki/sources/zvonok-musohranov-timoshenko-2026-07-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для PromoCode-NotifyGenerated-DWC-Ordering"
+              "title": "Обратные ссылки для zvonok-musohranov-timoshenko-2026-07-22"
             }
           },
           {
@@ -200,6 +200,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/hot.md",
+    "wiki/questions/PromoCode-NotifyGenerated-DWC-Ordering.md",
     "wiki/hot.md.tmp.34784.86d01f447243",
     "wiki/log.md.tmp.34784.37a22334998b",
     "wiki/index.md.tmp.34784.656f62073498",
@@ -213,7 +215,6 @@
     "wiki/concepts/Migration-Console-First-Testing-Pattern.md",
     "wiki/concepts/Migration-Console-First-Testing-Pattern.md.tmp.34784.9cbb350ad62d",
     "wiki/sources/zvonok-musohranov-timoshenko-2026-07-22.md",
-    "wiki/sources/zvonok-musohranov-timoshenko-2026-07-22.md.tmp.34784.ea0c2cdcf0ef",
     "raw/Совещания/Звонок 2026-07-22 130258. Мусохранов Андрей, Тимошенко Александр.md",
     "wiki/questions/ReferralProgram-ZeroReward-Lead-Filter-Bug.md",
     "raw/QA/Как вызвать метод БЛ в другой схеме того же сервиса без петли вызовов.md",
@@ -232,7 +233,6 @@
     "wiki/concepts/RecruitmentReferral-TZ.md",
     "wiki/concepts/RecruitmentReferral-Project.md",
     "raw/Реферальная система в подборе персонала/Техническое задание Реферальная система в подборе персонала.md",
-    "wiki/hot.md",
     "wiki/sources/discount-card-design-constructor-2026-07-03.md",
     "wiki/entities/Ютман-Элина.md",
     "wiki/concepts/DiscountCard-Design-Constructor-Architecture.md",
