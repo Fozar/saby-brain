@@ -12,6 +12,7 @@ tags:
   - sabybank
 status: active
 related:
+  - "[[ReferralStub-Backfill-Service-Method]]"
   - "[[SabyBank-RKO-Referral]]"
   - "[[ReferralProgram-Stub-Implementation]]"
   - "[[zvonok-musohranov-timoshenko-2026-07-22]]"
@@ -48,6 +49,10 @@ Navigation: [[SabyBank-RKO-Referral]] | [[zvonok-musohranov-timoshenko-2026-07-2
 
 > [!key-insight] ВНР — «комбайн»
 > Тестирование через ВНР дорого: много согласований, медленный цикл, разработчик и QA «замучаются». Отдельный метод отлаживается быстрее и **надёжнее** — локализация ошибки и фикс происходят в одном шаге. Спихивать проверку сложной миграции целиком на QA — неправильно: у QA нет способа убедиться, что по неотсмотренным сделкам не создан мусор.
+
+## Применение
+
+- [[ReferralStub-Backfill-Service-Method]] (2026-07-23) — паттерн применён на поручении №06155143: ВНР разобрана на служебный метод `ReferralProgram.CreateStubsForExistingLeads(ProgramId, DryRun)` + тонкую обёртку-перебор. Роль «сверки по идентификаторам» играет возвращаемая выборка `Stubs`, роль безопасной репетиции — `DryRun`.
 
 ## Родственные принципы в вики
 
