@@ -109,6 +109,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[zvonok-musohranov-timoshenko-2026-06-24]] (c-000144) — 2026-06-24 | ревью MR-ов CreateLead→CreateStub и GetLeadPeriodList; запрет цикла по источникам; регрессионные риски корешка при статусе 10
 - [[zvonok-musohranov-timoshenko-2026-06-30]] (c-000148) — 2026-06-30 | сдача задачи корешков: миграция существующих сделок реализована, проверка невозможна до версии 400; GUI не готов; сдавать как есть с декларацией планов
 - [[zvonok-musohranov-timoshenko-2026-07-22]] (c-000203) — 2026-07-22 | как тестировать ВНР миграции корешков: отладить метод из консоли на фикстуре до оборачивания в ВНР; не спихивать сплошную проверку на QA ([[Настя-QA]]) без явного сценария
+- [[zvonok-musohranov-timoshenko-2026-07-23]] (c-000207) — 2026-07-23 | ревью подсчёта статистики по корешкам: `GetPartnerList` строго по реф. программе; решение хранить сумму по сделкам в поле «Сумма» ВЦД (`SUM` рядом с `COUNT`, пока пусто); открытые вопросы по `ТипСвязи`/индексам
 
 ## Concepts
 
@@ -188,6 +189,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[SabyBank-RKO-TZ]] — полное ТЗ: API-методы, схема хранения, выборки БД с индексами, UI-декомпозиция (status: current)
 - [[SabyBank-RKO-WorkPlan]] — план работ 166,5 дня: этапы, сроки, исполнители по каждой задаче (status: current)
 - [[SetLeadPrice-SABYBANK-Stub-Branch]] — ветвление SetLeadPrice по ProgramType.SABYBANK: корешки фильтруются по ТипСвязи IS NOT NULL (status: current)
+- [[ReferralStub-DealSum-Field]] — сумма по сделкам в корешках: хранить в поле «Сумма» ВЦД, `SUM` рядом с `COUNT` в подзапросе, пока писать пусто; наполнение из платформенного метода отложено (status: planned)
 - [[SabyBank-Stub-Rewards-Calculation]] — GetLeadPeriodList и sql_get_price_stats (GetStats/GetStatsByPartner) переведены на корешки для SabyBank; SQL-паттерн `<> 1 OR ТипСвязи IS NOT NULL`; IsSabyBank Python-флаг (status: current) — ветвление SetLeadPrice по ProgramType.SABYBANK: корешки фильтруются по @ВидЦеныДокумент+ТипСвязи IS NOT NULL вместо Документ; история не пишется (status: current) — проект: рефералка для банковских заявок на РКО по API; корешки ВЦД, 3 API метода, 4 этапа, срок 18.08.26 (status: current)
 - [[Loyalty-React-Migration-Project]] — проект: перевод 5 разделов лояльности на React; 147,5 чд, дедлайн 27.02.26; новый Bonus.GetBaseSettings, курсорная навигация, порционная загрузка (status: active)
 - [[AT-Coverage-ReferralDeals-Project]] — проект АТ-покрытия реферальной системы сделок: 0%→95% МК, 9 этапов, дедлайн 31.05.26 (status: current)
@@ -421,6 +423,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 ## Questions
 
 - [[How does the LLM Wiki pattern work]] — how the pattern works and why it outperforms RAG at human scale (status: developing)
+- [[ReferralStub-Stats-Index-Questions]] — корешки: нужен ли фильтр по `ТипСвязи` при подсчёте всех статусов; покрытие индексами (карта+EffectiveDate), «жирный» индекс по `ТипСвязи` (status: open)
 
 ---
 
