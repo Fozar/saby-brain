@@ -10,6 +10,14 @@ related:
   - "[[index]]"
 ---
 
+## [2026-07-23] save | CreateStubsForExistingLeads — миграция корешков как служебный метод
+- Type: decision
+- Location: wiki/meta/ReferralStub-Backfill-Service-Method.md (c-000206)
+- From: сессия разработки по поручению №06155143 (переработка ВНР миграции корешков + текст подзадачи на доброску)
+- Pages created: [[ReferralStub-Backfill-Service-Method]] (c-000206)
+- Pages updated: [[index]], [[hot]]
+- Key insight: [[Migration-Console-First-Testing-Pattern]] применён на практике — ядро миграции вынесено в служебный `ReferralProgram.CreateStubsForExistingLeads(ProgramId, DryRun)` по одной программе, ВНР сведена к перебору программ. Проверяемость обеспечивают две вещи: `DryRun` (ничего не пишет) и возврат `Stubs` (`LeadId/OperationId/CardId/LinkType/Bonus`) — сверка по количеству и идентификаторам вместо «на глаз». Идемпотентность — по `OperationId` = UUID сделки, вставка пачками по 500 в отдельных транзакциях. Права — только служебная роль `PF-Discount`.
+
 ## [2026-07-22] ingest | Звонок Мусохранов — Тимошенко: как тестировать ВНР миграции корешков
 - Source: `.raw/Совещания/Звонок 2026-07-22 130258. Мусохранов Андрей, Тимошенко Александр.md`
 - Summary: [[zvonok-musohranov-timoshenko-2026-07-22]]
