@@ -1377,6 +1377,23 @@
         "wiki/log.md",
         "wiki/hot.md"
       ]
+    },
+    ".raw/Совещания/Звонок 2026-07-23 100252. Мусохранов Андрей, Тимошенко Александр.md": {
+      "hash": "500c025abb8500eae4d3015ff152229f",
+      "ingested_at": "2026-07-23",
+      "pages_created": [
+        "wiki/sources/zvonok-musohranov-timoshenko-2026-07-23.md",
+        "wiki/concepts/ReferralStub-DealSum-Field.md",
+        "wiki/questions/ReferralStub-Stats-Index-Questions.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/SabyBank-Stub-Rewards-Calculation.md",
+        "wiki/entities/Мусохранов-Андрей-Владиславович.md",
+        "wiki/entities/Тимошенко А.А..md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
     }
   },
   "address_map": {
@@ -1528,7 +1545,10 @@
     "wiki/sources/wasaby-bl-call-loop-setpool-ext-registration-2026-07-22.md": "c-000202",
     "wiki/sources/zvonok-musohranov-timoshenko-2026-07-22.md": "c-000203",
     "wiki/concepts/Migration-Console-First-Testing-Pattern.md": "c-000204",
-    "wiki/entities/Настя-QA.md": "c-000205"
+    "wiki/entities/Настя-QA.md": "c-000205",
+    "wiki/sources/zvonok-musohranov-timoshenko-2026-07-23.md": "c-000210",
+    "wiki/concepts/ReferralStub-DealSum-Field.md": "c-000208",
+    "wiki/questions/ReferralStub-Stats-Index-Questions.md": "c-000209"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",

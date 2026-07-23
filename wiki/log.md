@@ -10,6 +10,13 @@ related:
   - "[[index]]"
 ---
 
+## [2026-07-23] ingest | Звонок 2026-07-23: Мусохранов — Тимошенко (ревью подсчёта статистики по корешкам)
+- Source: `.raw/Совещания/Звонок 2026-07-23 100252. Мусохранов Андрей, Тимошенко Александр.md`
+- Summary: [[zvonok-musohranov-timoshenko-2026-07-23]] (c-000210)
+- Pages created: [[zvonok-musohranov-timoshenko-2026-07-23]] (c-000210), [[ReferralStub-DealSum-Field]] (c-000208), [[ReferralStub-Stats-Index-Questions]] (c-000209)
+- Pages updated: [[SabyBank-Stub-Rewards-Calculation]], [[Мусохранов-Андрей-Владиславович]], [[Тимошенко А.А.]], [[index]], [[hot]]
+- Key insight: корешок несёт только статус+вознаграждение, а `GetPartnerList` показывает сумму по сделкам → решено хранить сумму в свободном поле «Сумма» `ВидЦеныДокумент` и считать `SUM` рядом с `COUNT` в том же подзапросе (пока писать пусто — функционал не реализован). Открытые вопросы, помеченные «странное»: нужен ли фильтр по `ТипСвязи` при подсчёте всех статусов (перестраховка vs влияние на индекс) и покрытие индексами `(Карта, EffectiveDate)`.
+
 ## [2026-07-23] save | Bonus.GetTotalBalance — локальный скан «Карта» как источник 1 ГБ/итерация
 - Type: synthesis
 - Location: wiki/questions/Bonus-GetTotalBalance-Local-Card-Scan-Memory.md (c-000207)
