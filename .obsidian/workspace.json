@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/zvonok-musohranov-timoshenko-2026-07-22.md",
+                "file": "wiki/questions/BonusChart-IterativeBlock-Bug-Fix.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "zvonok-musohranov-timoshenko-2026-07-22"
+              "title": "BonusChart-IterativeBlock-Bug-Fix"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/zvonok-musohranov-timoshenko-2026-07-22.md",
+                "file": "wiki/questions/BonusChart-IterativeBlock-Bug-Fix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для zvonok-musohranov-timoshenko-2026-07-22"
+              "title": "Обратные ссылки для BonusChart-IterativeBlock-Bug-Fix"
             }
           },
           {
@@ -200,6 +200,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/sources/zvonok-musohranov-timoshenko-2026-07-22.md",
     "wiki/questions/Bonus-GetTotalBalance-Franchise-Performance.md.tmp.45252.b87da6c6e1e4",
     "wiki/hot.md.tmp.45252.ebf86cd59608",
     "wiki/log.md.tmp.45252.36ccfea9cf54",
@@ -211,13 +212,11 @@
     "wiki/hot.md.tmp.43560.3b076063ec0b",
     "wiki/hot.md.tmp.43560.6b529915198c",
     "wiki/log.md.tmp.43560.b17298e39ab0",
-    "wiki/index.md.tmp.43560.42d1a1606104",
     "wiki/meta/ReferralStub-Backfill-Service-Method.md",
     "wiki/hot.md",
     "wiki/questions/PromoCode-NotifyGenerated-DWC-Ordering.md",
     "wiki/entities/Настя-QA.md",
     "wiki/concepts/Migration-Console-First-Testing-Pattern.md",
-    "wiki/sources/zvonok-musohranov-timoshenko-2026-07-22.md",
     "raw/Совещания/Звонок 2026-07-22 130258. Мусохранов Андрей, Тимошенко Александр.md",
     "wiki/questions/ReferralProgram-ZeroReward-Lead-Filter-Bug.md",
     "raw/QA/Как вызвать метод БЛ в другой схеме того же сервиса без петли вызовов.md",
