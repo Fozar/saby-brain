@@ -53,7 +53,7 @@
       "query": "path:wiki",
       "color": {
         "a": 1,
-        "rgb": 4473924
+        "rgb": 16774932
       }
     }
   ],
@@ -67,6 +67,6 @@
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 80,
-  "scale": 0.07058167567046399,
+  "scale": 0.09895430218636997,
   "close": false
 }
