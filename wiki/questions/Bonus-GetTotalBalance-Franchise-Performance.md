@@ -87,3 +87,14 @@ Index Scan using "iCard-Identifier" on "Card"
 семантику `BonusBalance` (полный) против `AvailableBonusBalance` (доступный, читается из `Карта`).
 
 Методы 1a/1b — зона СДК `discount-cards`, согласовать с Кузаковым Ю.
+
+## Что было сделано дальше (2026-07-23)
+
+Коммит `1be452e6e2` (23.06.2026) закрыл СДК-ветку в духе 1a/1b: `_sum_cards_balance()` /
+`_get_balance_by_cards()` заменены скалярным `_get_personal_cards_balance_sum()` →
+`Card.GetPersonalCardBonusBalanceSum(ClientID)`. Массив 80k UUID и возврат 79 943 строк ушли.
+
+Отложенный здесь скан `Карта` (~943 мс) **не трогали** — и ровно он всплыл отдельной задачей
+**07208958** на стенде `test-inside`, уже как потребитель ~1 ГБ памяти за итерацию: после починки
+СДК-ветки он остался единственным крупным расходом. Разбор, сопоставление EXPLAIN с CTE и
+предложенный локальный фикс — в [[Bonus-GetTotalBalance-Local-Card-Scan-Memory]].

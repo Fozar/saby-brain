@@ -10,6 +10,14 @@ related:
   - "[[index]]"
 ---
 
+## [2026-07-23] save | Bonus.GetTotalBalance — локальный скан «Карта» как источник 1 ГБ/итерация
+- Type: synthesis
+- Location: wiki/questions/Bonus-GetTotalBalance-Local-Card-Scan-Memory.md (c-000207)
+- From: разбор задачи 07208958 (ошибка на стенде, `LoyaltyWidgets.GetBonusesNew`, test-inside)
+- Pages created: [[Bonus-GetTotalBalance-Local-Card-Scan-Memory]] (c-000207)
+- Pages updated: [[Bonus-GetTotalBalance-Franchise-Performance]], [[index]], [[hot]]
+- Key insight: не новая деградация, а **отложенный хвост** 05292113 — локальный скан `Карта` (~943 мс) тогда пометили вторичным, и после починки СДК-ветки коммитом `1be452e6e2` он остался единственным крупным потребителем и всплыл отдельным багом. Разбор FILTER в финальном `SELECT` показал, что оба дорогих джойна (`ЧастноеЛицо` ~750 МБ, `ВидКарты EP` ~210 МБ) вычисляют `IsFranchise`, который влияет на результат только при `has_franchise=True` → для не-франшизных аккаунтов это чистые накладные расходы, снимаются условными блоками шаблона. Фикс НЕ реализован: открыт вопрос, франшизный ли аккаунт на стенде (от этого зависит, закрывает ли правка именно этот тикет).
+
 ## [2026-07-23] save | CreateStubsForExistingLeads — миграция корешков как служебный метод
 - Type: decision
 - Location: wiki/meta/ReferralStub-Backfill-Service-Method.md (c-000206)
