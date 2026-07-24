@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": false,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:wiki/entities",
@@ -62,7 +62,7 @@
   "textFadeMultiplier": -1,
   "nodeSizeMultiplier": 2,
   "lineSizeMultiplier": 0.8,
-  "collapse-forces": false,
+  "collapse-forces": true,
   "centerStrength": 0.25,
   "repelStrength": 20,
   "linkStrength": 1,
