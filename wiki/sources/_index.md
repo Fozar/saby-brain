@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Sources Index"
-updated: 2026-04-07
+updated: 2026-07-29
 tags:
   - meta
   - index
@@ -66,5 +66,20 @@ All source pages — summaries of ingested documents, transcripts, articles, and
 ---
 
 - [[db-conversion-2026-06-12]] — 2026-06-12 | 4 PDF: Описание + База данных + Организация кода + Параметры облака (Конвертация БД, Система обновлений) | 1 page created, 2 pages updated
+
+---
+
+## Диалоги SBIS — batch 2026-07-29 (10 источников)
+
+- [[referral-crmthemeid-answers-2026-07-28]] (c-000221) — 2026-07-28 | CRMThemeId по реф. коду: Мусохранов/Ткачук закрывают 2 из 3 развилок (`@AdObject`, `null` при пустом результате), срок 4100/4200 | 1 page created, 1 question page updated
+- [[bonus-report-getlist-limit-increase-2026-07-28]] (c-000216) — 2026-07-28 | Отчёт «Движение бонусов»: безопасность увеличения chunk-лимита `BonusOperationAdm.GetList` 100→1000/10000, курсорная пагинация + индекс | 2 pages created
+- [[sabybank-rko-bug-partner-terminated-contract-2026-07-29]] (c-000214) — 2026-07-29 | РСС на РКО: расторгнутый договор виден клиенту → после правки инверсия (действующий не виден) | 2 pages created, 1 concept updated
+- [[sabybank-rko-bug-applications-not-shown-sabynet-2026-07-28]] (c-000220) — 2026-07-28 | РСС на РКО: новые заявки не отображаются в ЛК SabyNet Владельца | 1 page created (+ агрегирующая [[SabyBank-RKO-Partner-Display-Bugs]])
+- [[discount-card-type-settings-flaky-autotest-2026-07-29]] (c-000215) — 2026-07-29 | Флаки автотестов ДК: настройки типа не успевают прогрузиться; ожидание, что DWC починит — не подтверждено | 2 pages created
+- [[dwc-card-events-rollout-status-2026-07-28]] (c-000218) — 2026-07-28 | Поручение включить `dwc_card` на всех — rollout не запланирован | 1 page created, 1 concept updated
+- [[referral-leadperiodlist-koreshki-followup-2026-07-29]] (c-000213) — 2026-07-29 | Follow-up по отсутствию вознаграждений за 2026 в GetLeadPeriodList (стандартная программа, корешки без фичи) | 1 page created
+- [[referral-loyalty-disk-access-task-closed-2026-07-28]] (c-000217) — 2026-07-28/29 | Закрытие 2-летней задачи: доступ к «Система лояльности» не влияет на реф. программу на СБИС.Диске | 1 page created
+- [[partner-cabinet-source-mechanism-tz-2026-07-28]] (c-000219) — 2026-07-28 | ТЗ определения источника при заявке через ЛК партнёра — тонкий источник (1 реплика), задача на этапе Маркетинг | 1 page created
+- [[zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29]] (c-000222) — 2026-07-29 | Звонок (ASR, низкая достоверность): статус сборки/переноса, контроль этапов задачи | 1 page created
 
 ## Add new sources here after each ingest.

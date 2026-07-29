@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-07-28 | Total pages: 398 | Sources ingested: 206
+Last updated: 2026-07-29 | Total pages: 411 | Sources ingested: 216
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -89,6 +89,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[Feature-Flag-Removal-LOYALTY-IT-NAV]] — удалены фичи `loyalty_it_nav` и `bonus_it_navigation`: итеративная навигация стала постоянной, OLD path оставлен только для `GetClientListWithStats` (status: active)
 - [[ReferralProgram-GetLeadPeriodList-LeadCount-Source]] — источник LeadCount: для стандартных программ — `get_sales_sources_stats` (маркетинг), для SabyBank — ВЦД по `ДатаВремя`; `ВЦД` ≠ таблица лидов (задача №04307081) (status: active)
 - [[ReferralProgram-GetStubList-Filter-Redesign]] — редизайн фильтров GetStubList: два периода → единый `Date` (по дате создания или статуса в зависимости от `Status`), добавлен `PartnerId` (status: active)
+- [[BonusOperationAdm-GetList-Chunk-Limit-Increase]] (c-000224) — безопасность увеличения chunk-лимита отчёта «Движение бонусов» 100→1000/10000: курсорная пагинация + индекс `CardUUID_PriceEntityUUID-Bonuses`, риск только в размере ответа (status: active)
 
 ## Price Formation — Analysis
 
@@ -106,6 +107,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[GetIndividualBatch-AttachPersonId-Timeout-Fix]] — таймаут рассылки SabyGet: CRMClients.AttachPersonId ~5с×100 получателей; фикс — вынос привязки персон в фоновый DWC `one_task="0"` (повтор Варианта A с исправлением рассинхрона one_task); rc-26.3211 (status: fixed)
 - [[PromoCode-NotifyGenerated-DWC-Ordering]] — регресс таймаут-фикса: синхронный notify SabyGet после фоновой привязки слал пустой PersonID; фикс — `NotifyGenerated` финальной задачей того же DWC-сценария (барьер «notify после attach»; `AddTask` без parallel-block = последовательно); распространяется на все типы генерации (status: developing)
 - [[SabyBank-Application-Card-Conversation-2026-05-25]] — обсуждение карточки заявки SabyBank: хранить vs тянуть данные, принадлежность телефона, API-подход; уточнить у Свешникова (status: current)
+- [[SabyBank-RKO-Partner-Display-Bugs]] (c-000223) — кластер 2 багов на стенде (24.07.26, Земцова): расторгнутый договор виден клиенту → инверсия после правки; новые заявки не видны Владельцу в SabyNet (status: active)
 - [[soveshanie-sdacha-td-itload-2026-06-23]] (c-000146) — 2026-06-23 | ревью ТД итеративной загрузки Федько: диаграмма иерархии бракована, EMA упростить под спойлер, согласовать с [[Ютман-Элина]]
 - [[zvonok-musohranov-timoshenko-2026-06-24]] (c-000144) — 2026-06-24 | ревью MR-ов CreateLead→CreateStub и GetLeadPeriodList; запрет цикла по источникам; регрессионные риски корешка при статусе 10
 - [[zvonok-musohranov-timoshenko-2026-06-30]] (c-000148) — 2026-06-30 | сдача задачи корешков: миграция существующих сделок реализована, проверка невозможна до версии 400; GUI не готов; сдавать как есть с декларацией планов
