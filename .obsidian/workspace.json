@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/referral-leadperiodlist-koreshki-followup-2026-07-29.md",
+                "file": "wiki/log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "referral-leadperiodlist-koreshki-followup-2026-07-29"
+              "title": "log"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/referral-leadperiodlist-koreshki-followup-2026-07-29.md",
+                "file": "wiki/log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для referral-leadperiodlist-koreshki-followup-2026-07-29"
+              "title": "Обратные ссылки для log"
             }
           },
           {
@@ -200,6 +200,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/sources/referral-leadperiodlist-koreshki-followup-2026-07-29.md",
+    "raw/Диалоги SBIS/019fad37-dc88-790c-97bc-76cf7086ecea.md",
+    "raw/Диалоги SBIS/019fad37-dc88-790c-97bc-76cf7086ecea.md.tmp.24044.d9cfb2f36d50",
     "raw/Диалоги SBIS/019fad14-31da-7092-a5e4-fc22e5e463ee.md",
     "raw/Диалоги SBIS/019fad14-31da-7092-a5e4-fc22e5e463ee.md.tmp.24044.24a67fb68547",
     "wiki/log.md",
@@ -212,7 +215,6 @@
     "wiki/index.md.tmp.27212.cc61d055e763",
     "wiki/index.md.tmp.27212.aafcc81f04e2",
     "wiki/index.md.tmp.27212.9452e408365f",
-    "wiki/sources/_index.md.tmp.27212.9f2d433d5ffb",
     "wiki/questions/Bonus-GetTotalBalance-Local-Card-Scan-Memory.md",
     "wiki/questions/Bonus-GetTotalBalance-Franchise-Performance.md",
     "wiki/questions/Bonus-GetSaleList-SuspectSaleIds-Hash-Regression.md",
@@ -228,14 +230,12 @@
     "wiki/sources/bonus-report-getlist-limit-increase-2026-07-28.md",
     "wiki/sources/discount-card-type-settings-flaky-autotest-2026-07-29.md",
     "wiki/sources/sabybank-rko-bug-partner-terminated-contract-2026-07-29.md",
-    "wiki/sources/referral-leadperiodlist-koreshki-followup-2026-07-29.md",
     "wiki/hot.md",
     "wiki/entities/Настя-QA.md",
     "wiki/sources/zvonok-musohranov-timoshenko-2026-07-23.md",
     "wiki/questions/ReferralStub-Stats-Index-Questions.md",
     "wiki/concepts/ReferralStub-DealSum-Field.md",
     "raw/Совещания/Звонок 2026-07-23 100252. Мусохранов Андрей, Тимошенко Александр.md",
-    "wiki/sources/zvonok-musohranov-timoshenko-2026-07-22.md",
     "b574f7eb0125c1b0124a6fc9ae01137f_MD5.avif",
     "d0b1a1d090a19d801608dc5637e37b4d_MD5.avif",
     "10671913693748aff0ddd78f4ab4b13b_MD5.avif",
