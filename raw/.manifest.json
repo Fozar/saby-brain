@@ -1394,6 +1394,144 @@
         "wiki/hot.md",
         "wiki/log.md"
       ]
+    },
+    "raw/Диалоги SBIS/05fa821f-254d-4c51-a808-91c1f1070750.md": {
+      "hash": "fbae7644554690d701e475f663ba94a5",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/referral-leadperiodlist-koreshki-followup-2026-07-29.md"
+      ],
+      "pages_updated": [
+        "wiki/sources/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/edefef17-381e-450f-9613-c3c4fa885357.md": {
+      "hash": "9a43f05d1387d7ace874c3289c987edf",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/sabybank-rko-bug-partner-terminated-contract-2026-07-29.md",
+        "wiki/concepts/SabyBank-RKO-Partner-Display-Bugs.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/SabyBank-RKO-Referral.md",
+        "wiki/sources/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/a3ea0b39-7e9a-4707-8ccf-7fa3da46ae83.md": {
+      "hash": "2b0f7507142b8832aff69286eceb37ef",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/discount-card-type-settings-flaky-autotest-2026-07-29.md",
+        "wiki/questions/DiscountCardType-Settings-Async-Load-Flaky-Autotest.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/DWC-Card-Events-Migration.md",
+        "wiki/sources/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/c89da1fa-3bc7-4099-8e69-6aa865fcc16b.md": {
+      "hash": "b8b288a711fa9dbc90ceec5be7094520",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/bonus-report-getlist-limit-increase-2026-07-28.md",
+        "wiki/concepts/BonusOperationAdm-GetList-Chunk-Limit-Increase.md"
+      ],
+      "pages_updated": [
+        "wiki/sources/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/3e1911a7-c5fa-41cb-9d86-7b7fe8c062d9.md": {
+      "hash": "ed9e39a8169bd24ee61e04677481a315",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/referral-loyalty-disk-access-task-closed-2026-07-28.md"
+      ],
+      "pages_updated": [
+        "wiki/sources/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/870d5121-7ea3-4f52-bf36-1b279e3665f2.md": {
+      "hash": "c471f94761942ffde5ab82a403dfec38",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/dwc-card-events-rollout-status-2026-07-28.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/DWC-Card-Events-Migration.md",
+        "wiki/sources/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/598adac5-b76b-4345-a0a9-a28f7914a1f3.md": {
+      "hash": "391e5ae88881cab61a6d21909ba05187",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/partner-cabinet-source-mechanism-tz-2026-07-28.md"
+      ],
+      "pages_updated": [
+        "wiki/sources/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/019f9405-44ba-7032-b837-4482688479c3.md": {
+      "hash": "621cba4d672cb7d40b0a6bb30dd6015a",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/sabybank-rko-bug-applications-not-shown-sabynet-2026-07-28.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/SabyBank-RKO-Partner-Display-Bugs.md",
+        "wiki/sources/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/019f6a41-14ec-7092-b0ac-98e0b96f8c4a.md": {
+      "hash": "e5813cf849f85f21a851f52e3d96b4de",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/referral-crmthemeid-answers-2026-07-28.md"
+      ],
+      "pages_updated": [
+        "wiki/questions/ReferralProgram-CRMThemeId-By-Referral-Code.md",
+        "wiki/sources/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/019facd1-e05f-7990-a482-ac9c533c216a.md": {
+      "hash": "98585b897bba0d3d4b158da0e0cccbcc",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29.md"
+      ],
+      "pages_updated": [
+        "wiki/sources/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
     }
   },
   "address_map": {
@@ -1548,10 +1686,7 @@
     "wiki/entities/Настя-QA.md": "c-000205",
     "wiki/sources/zvonok-musohranov-timoshenko-2026-07-23.md": "c-000210",
     "wiki/concepts/ReferralStub-DealSum-Field.md": "c-000208",
-    "wiki/questions/ReferralStub-Stats-Index-Questions.md": "c-000209"
-  },
-  "retired_addresses": {
-    "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
-    "c-000003": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)"
-  }
-}
+    "wiki/questions/ReferralStub-Stats-Index-Questions.md": "c-000209",
+    "wiki/sources/referral-leadperiodlist-koreshki-followup-2026-07-29.md": "c-000213",
+    "wiki/sources/sabybank-rko-bug-partner-terminated-contract-2026-07-29.md": "c-000214",
+    "wiki/sources/discount-card-type-settings-flaky-autotest-2026
