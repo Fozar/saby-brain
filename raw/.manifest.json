@@ -1532,6 +1532,36 @@
         "wiki/hot.md",
         "wiki/log.md"
       ]
+    },
+    "raw/Диалоги SBIS/019fad14-31da-7092-a5e4-fc22e5e463ee.md": {
+      "hash": "574b44b25ba2429a32cee36d2fcccbd2",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/zvonok-tim-sveshnikov-referral-history-buttons-2026-07-29.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md",
+        "wiki/sources/_index.md"
+      ]
+    },
+    "raw/Диалоги SBIS/019fad37-dc88-790c-97bc-76cf7086ecea.md": {
+      "hash": "e34b6ded37367205e0bbb7dbf3c88898",
+      "ingested_at": "2026-07-29",
+      "pages_created": [
+        "wiki/sources/zvonok-tim-sveshnikov-mihel-referral-history-ui-2026-07-29.md",
+        "wiki/entities/Михель-Витольд.md",
+        "wiki/concepts/ReferralProgram-History-UI-Design.md"
+      ],
+      "pages_updated": [
+        "wiki/entities/Свешников-Андрей.md",
+        "wiki/concepts/ReferralProgram-Data-Model.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md",
+        "wiki/sources/_index.md"
+      ]
     }
   },
   "address_map": {
@@ -1699,7 +1729,11 @@
     "wiki/sources/zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29.md": "c-000222",
     "wiki/concepts/SabyBank-RKO-Partner-Display-Bugs.md": "c-000223",
     "wiki/concepts/BonusOperationAdm-GetList-Chunk-Limit-Increase.md": "c-000224",
-    "wiki/questions/DiscountCardType-Settings-Async-Load-Flaky-Autotest.md": "c-000225"
+    "wiki/questions/DiscountCardType-Settings-Async-Load-Flaky-Autotest.md": "c-000225",
+    "wiki/entities/Михель-Витольд.md": "c-000226",
+    "wiki/sources/zvonok-tim-sveshnikov-referral-history-buttons-2026-07-29.md": "c-000227",
+    "wiki/sources/zvonok-tim-sveshnikov-mihel-referral-history-ui-2026-07-29.md": "c-000228",
+    "wiki/concepts/ReferralProgram-History-UI-Design.md": "c-000229"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
