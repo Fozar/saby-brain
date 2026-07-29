@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/log.md",
+                "file": "wiki/questions/BonusChart-IterativeBlock-Bug-Fix.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "log"
+              "title": "BonusChart-IterativeBlock-Bug-Fix"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/log.md",
+                "file": "wiki/questions/BonusChart-IterativeBlock-Bug-Fix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для log"
+              "title": "Обратные ссылки для BonusChart-IterativeBlock-Bug-Fix"
             }
           },
           {
@@ -198,8 +198,18 @@
       "new-3d-graph:Open 3d graph": false
     }
   },
-  "active": "5565f1231fe95c42",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/concepts/SabyBank-RKO-Referral.md.tmp.27212.f712303ed50d",
+    "wiki/concepts/SabyBank-RKO-Referral.md.tmp.27212.1da5a2de07a0",
+    "wiki/concepts/DWC-Card-Events-Migration.md.tmp.27212.2b899a3bb3da",
+    "wiki/concepts/DWC-Card-Events-Migration.md.tmp.27212.b4125d97e254",
+    "wiki/questions/Bonus-GetTotalBalance-Local-Card-Scan-Memory.md",
+    "wiki/questions/Bonus-GetTotalBalance-Franchise-Performance.md",
+    "wiki/questions/Bonus-GetSaleList-SuspectSaleIds-Hash-Regression.md",
+    "wiki/log.md",
+    "wiki/questions/ReferralProgram-CRMThemeId-By-Referral-Code.md.tmp.27212.65f46a58ad0c",
+    "wiki/questions/ReferralProgram-CRMThemeId-By-Referral-Code.md.tmp.27212.5d3ad8477acc",
     "wiki/questions/ReferralProgram-CRMThemeId-By-Referral-Code.md.tmp.27212.f38405aa8aaa",
     "wiki/questions/DiscountCardType-Settings-Async-Load-Flaky-Autotest.md",
     "wiki/questions/DiscountCardType-Settings-Async-Load-Flaky-Autotest.md.tmp.27212.239c7ede2c9a",
@@ -210,17 +220,11 @@
     "wiki/sources/zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29.md",
     "wiki/sources/zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29.md.tmp.27212.d12a719b07e5",
     "wiki/sources/referral-crmthemeid-answers-2026-07-28.md",
-    "wiki/sources/referral-crmthemeid-answers-2026-07-28.md.tmp.27212.00976743bcb0",
     "wiki/sources/sabybank-rko-bug-applications-not-shown-sabynet-2026-07-28.md",
-    "wiki/sources/sabybank-rko-bug-applications-not-shown-sabynet-2026-07-28.md.tmp.27212.f73987f91d72",
     "wiki/sources/partner-cabinet-source-mechanism-tz-2026-07-28.md",
-    "wiki/sources/partner-cabinet-source-mechanism-tz-2026-07-28.md.tmp.27212.b91a4ea0620d",
     "wiki/sources/dwc-card-events-rollout-status-2026-07-28.md",
-    "wiki/sources/dwc-card-events-rollout-status-2026-07-28.md.tmp.27212.e436d4160861",
     "wiki/sources/referral-loyalty-disk-access-task-closed-2026-07-28.md",
-    "wiki/sources/referral-loyalty-disk-access-task-closed-2026-07-28.md.tmp.27212.94fe5c46cac1",
     "wiki/sources/bonus-report-getlist-limit-increase-2026-07-28.md",
-    "wiki/sources/bonus-report-getlist-limit-increase-2026-07-28.md.tmp.27212.9f4c71eebc66",
     "wiki/sources/discount-card-type-settings-flaky-autotest-2026-07-29.md",
     "wiki/sources/sabybank-rko-bug-partner-terminated-contract-2026-07-29.md",
     "wiki/sources/referral-leadperiodlist-koreshki-followup-2026-07-29.md",
@@ -232,10 +236,6 @@
     "wiki/concepts/ReferralStub-DealSum-Field.md",
     "raw/Совещания/Звонок 2026-07-23 100252. Мусохранов Андрей, Тимошенко Александр.md",
     "wiki/sources/zvonok-musohranov-timoshenko-2026-07-22.md",
-    "wiki/questions/Bonus-GetTotalBalance-Local-Card-Scan-Memory.md",
-    "wiki/meta/ReferralStub-Backfill-Service-Method.md",
-    "wiki/questions/PromoCode-NotifyGenerated-DWC-Ordering.md",
-    "wiki/concepts/Migration-Console-First-Testing-Pattern.md",
     "b574f7eb0125c1b0124a6fc9ae01137f_MD5.avif",
     "d0b1a1d090a19d801608dc5637e37b4d_MD5.avif",
     "10671913693748aff0ddd78f4ab4b13b_MD5.avif",
