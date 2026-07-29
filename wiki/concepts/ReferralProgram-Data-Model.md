@@ -12,6 +12,7 @@ status: developing
 related:
   - "[[SabyBank-RKO-Referral]]"
   - "[[ReferralProgram-Stub-Implementation]]"
+  - "[[ReferralProgram-History-UI-Design]]"
 ---
 
 # ReferralProgram — модель данных и архитектура
