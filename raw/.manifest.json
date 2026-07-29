@@ -1689,4 +1689,20 @@
     "wiki/questions/ReferralStub-Stats-Index-Questions.md": "c-000209",
     "wiki/sources/referral-leadperiodlist-koreshki-followup-2026-07-29.md": "c-000213",
     "wiki/sources/sabybank-rko-bug-partner-terminated-contract-2026-07-29.md": "c-000214",
-    "wiki/sources/discount-card-type-settings-flaky-autotest-2026
+    "wiki/sources/discount-card-type-settings-flaky-autotest-2026-07-29.md": "c-000215",
+    "wiki/sources/bonus-report-getlist-limit-increase-2026-07-28.md": "c-000216",
+    "wiki/sources/referral-loyalty-disk-access-task-closed-2026-07-28.md": "c-000217",
+    "wiki/sources/dwc-card-events-rollout-status-2026-07-28.md": "c-000218",
+    "wiki/sources/partner-cabinet-source-mechanism-tz-2026-07-28.md": "c-000219",
+    "wiki/sources/sabybank-rko-bug-applications-not-shown-sabynet-2026-07-28.md": "c-000220",
+    "wiki/sources/referral-crmthemeid-answers-2026-07-28.md": "c-000221",
+    "wiki/sources/zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29.md": "c-000222",
+    "wiki/concepts/SabyBank-RKO-Partner-Display-Bugs.md": "c-000223",
+    "wiki/concepts/BonusOperationAdm-GetList-Chunk-Limit-Increase.md": "c-000224",
+    "wiki/questions/DiscountCardType-Settings-Async-Load-Flaky-Autotest.md": "c-000225"
+  },
+  "retired_addresses": {
+    "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
+    "c-000003": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)"
+  }
+}

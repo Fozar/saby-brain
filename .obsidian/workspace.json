@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/log.md",
+                "file": "wiki/sources/referral-leadperiodlist-koreshki-followup-2026-07-29.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "log"
+              "title": "referral-leadperiodlist-koreshki-followup-2026-07-29"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/log.md",
+                "file": "wiki/sources/referral-leadperiodlist-koreshki-followup-2026-07-29.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для log"
+              "title": "Обратные ссылки для referral-leadperiodlist-koreshki-followup-2026-07-29"
             }
           },
           {
@@ -200,6 +200,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/log.md",
     "wiki/questions/BonusChart-IterativeBlock-Bug-Fix.md",
     "wiki/log.md.tmp.27212.dfd8fc8e8bc7",
     "wiki/log.md.tmp.27212.844a4a22e908",
@@ -214,7 +215,6 @@
     "wiki/questions/Bonus-GetTotalBalance-Local-Card-Scan-Memory.md",
     "wiki/questions/Bonus-GetTotalBalance-Franchise-Performance.md",
     "wiki/questions/Bonus-GetSaleList-SuspectSaleIds-Hash-Regression.md",
-    "wiki/log.md",
     "wiki/questions/DiscountCardType-Settings-Async-Load-Flaky-Autotest.md",
     "wiki/concepts/BonusOperationAdm-GetList-Chunk-Limit-Increase.md",
     "wiki/concepts/SabyBank-RKO-Partner-Display-Bugs.md",
