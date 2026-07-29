@@ -81,5 +81,7 @@ All source pages — summaries of ingested documents, transcripts, articles, and
 - [[referral-loyalty-disk-access-task-closed-2026-07-28]] (c-000217) — 2026-07-28/29 | Закрытие 2-летней задачи: доступ к «Система лояльности» не влияет на реф. программу на СБИС.Диске | 1 page created
 - [[partner-cabinet-source-mechanism-tz-2026-07-28]] (c-000219) — 2026-07-28 | ТЗ определения источника при заявке через ЛК партнёра — тонкий источник (1 реплика), задача на этапе Маркетинг | 1 page created
 - [[zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29]] (c-000222) — 2026-07-29 | Звонок (ASR, низкая достоверность): статус сборки/переноса, контроль этапов задачи | 1 page created
+- [[zvonok-tim-sveshnikov-referral-history-buttons-2026-07-29]] (c-000227) — 2026-07-29 | Звонок 1/2: постановка задачи «история изменений» по офферам/лидам/корешкам | 1 page created
+- [[zvonok-tim-sveshnikov-mihel-referral-history-ui-2026-07-29]] (c-000228) — 2026-07-29 | Звонок 2/2 (+Витольд): дизайн-решение по кнопкам истории, вторая реф. сеть на бою | 1 page created, 1 entity created, 1 concept created
 
 ## Add new sources here after each ingest.

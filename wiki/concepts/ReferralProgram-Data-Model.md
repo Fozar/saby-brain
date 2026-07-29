@@ -2,7 +2,7 @@
 type: concept
 title: "ReferralProgram Data Model"
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-29
 tags:
   - referral-program
   - price-formation
