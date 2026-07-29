@@ -16,7 +16,7 @@ status: seed
 confidence: medium
 related:
   - "[[DWC-Card-Events-Migration]]"
-  - "[[Omelyanenko-Egor-Anatolievich]]"
+  - "[[Омельяненко-Егор-Анатольевич]]"
   - "[[Тимошенко А.А.]]"
 ---
 
