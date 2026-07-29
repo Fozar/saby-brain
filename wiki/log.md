@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-07-28
+updated: 2026-07-29
 tags:
   - meta
   - log
@@ -9,6 +9,21 @@ status: evergreen
 related:
   - "[[index]]"
 ---
+
+## [2026-07-29] batch ingest | 10 диалогов SBIS (raw/Диалоги SBIS/) — CRMThemeId отвечен, кластер багов РСС на РКО, chunk-лимит бонусов, флаки ДК
+
+- Type: batch ingest (10 источников, режим Batch Ingest — единая cross-reference запись)
+- Sources: `raw/Диалоги SBIS/{05fa821f-254d-4c51-a808-91c1f1070750, edefef17-381e-450f-9613-c3c4fa885357, a3ea0b39-7e9a-4707-8ccf-7fa3da46ae83, c89da1fa-3bc7-4099-8e69-6aa865fcc16b, 3e1911a7-c5fa-41cb-9d86-7b7fe8c062d9, 870d5121-7ea3-4f52-bf36-1b279e3665f2, 598adac5-b76b-4345-a0a9-a28f7914a1f3, 019f9405-44ba-7032-b837-4482688479c3, 019f6a41-14ec-7092-b0ac-98e0b96f8c4a, 019facd1-e05f-7990-a482-ac9c533c216a}.md`
+- Pages created (13): [[referral-leadperiodlist-koreshki-followup-2026-07-29]] (c-000213), [[sabybank-rko-bug-partner-terminated-contract-2026-07-29]] (c-000214), [[discount-card-type-settings-flaky-autotest-2026-07-29]] (c-000215), [[bonus-report-getlist-limit-increase-2026-07-28]] (c-000216), [[referral-loyalty-disk-access-task-closed-2026-07-28]] (c-000217), [[dwc-card-events-rollout-status-2026-07-28]] (c-000218), [[partner-cabinet-source-mechanism-tz-2026-07-28]] (c-000219), [[sabybank-rko-bug-applications-not-shown-sabynet-2026-07-28]] (c-000220), [[referral-crmthemeid-answers-2026-07-28]] (c-000221), [[zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29]] (c-000222), [[SabyBank-RKO-Partner-Display-Bugs]] (c-000223), [[BonusOperationAdm-GetList-Chunk-Limit-Increase]] (c-000224), [[DiscountCardType-Settings-Async-Load-Flaky-Autotest]] (c-000225)
+- Pages updated: [[ReferralProgram-CRMThemeId-By-Referral-Code]] (c-000212 — 2 из 3 развилок закрыты, чеклист обновлён), [[DWC-Card-Events-Migration]] (c-000004 — секция rollout-статуса), [[SabyBank-RKO-Referral]] (секция «Известные баги на стенде»), [[index]], [[hot]], [[sources/_index]]
+- Cross-reference pass (после всех 10 источников):
+  - [[referral-crmthemeid-answers-2026-07-28]] прямо отвечает на 2 из 3 развилок в ранее созданном (2026-07-28, тот же день) [[ReferralProgram-CRMThemeId-By-Referral-Code]] — question-страница обновлена ответами, а не создана заново.
+  - Оба бага РСС на РКО ([[sabybank-rko-bug-partner-terminated-contract-2026-07-29]], [[sabybank-rko-bug-applications-not-shown-sabynet-2026-07-28]]) — один репортёр (Земцова А.В.), одна дата ошибки (24.07.26), одна фаза тестирования [[SabyBank-RKO-Referral]] → объединены под [[SabyBank-RKO-Partner-Display-Bugs]] вместо двух изолированных source-заметок.
+  - [[discount-card-type-settings-flaky-autotest-2026-07-29]] (флаки ДК) ссылается на [[DWC-Card-Events-Migration]] («проект DWC должен был это полечить»); отдельно [[dwc-card-events-rollout-status-2026-07-28]] показывает, что массовый rollout `dwc_card` не запланирован — связаны через новый `> [!gap]` на странице DWC-Card-Events-Migration (флаг мог быть просто выключен на затронутом стенде).
+  - [[referral-leadperiodlist-koreshki-followup-2026-07-29]] — не новое знание, а живое подтверждение уже задокументированного решения [[ReferralProgram-GetLeadPeriodList-LeadCount-Source]] §«Будущее» (обычные программы пока не считаются по корешкам).
+- Key insight: Единственная содержательная контр-находка — **флип бага РСС на РКО** (см. `> [!contradiction]` на [[sabybank-rko-bug-partner-terminated-contract-2026-07-29]] и на агрегирующей странице): фикс исходной жалобы («расторгнутый договор виден») обернулся противоположным дефектом («действующий договор не виден») — похоже на инвертированный фильтр статуса, диагностика не завершена.
+- Known issue (окружение, не вики): `scripts/wiki-lock.sh` использует `flock`, отсутствующий в Windows Git Bash этого чекаута (`flock: command not found`, meta-lock не берётся). При единственном писателе в рамках этой сессии продолжили запись напрямую через filesystem-транспорт (документированный «last floor»); при параллельном ingest в этом окружении блокировка сейчас **не работает** — нужно либо ставить `flock` (WSL/Cygwin), либо явно документировать Windows-хост как single-writer-only до фикса.
+- Data note: [[598adac5|partner-cabinet-source-mechanism-tz-2026-07-28]] и [[019facd1|zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29]] — тонкие источники (1 реплика / зашумлённый ASR); зафиксированы с пометками `[!gap]`/`[!note]` о низкой информационной плотности, не форсировано в полноценные concept-страницы.
 
 ## [2026-07-28] save | Задача №07164990: CRMThemeId по реф. коду партнёра — контекст собран, вопросы заданы
 - Type: question

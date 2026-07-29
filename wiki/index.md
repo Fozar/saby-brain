@@ -177,6 +177,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[DiscountCard-Diagnostic-Service]] — admin panel for tasks/requests, promo concierge, DB indexes (status: current)
 - [[DiscountCard-Admin-Ops]] — inside.sbis.ru ClickHouse monitoring; auto-update triggers; AW/GPay infra setup
 - [[DiscountCardType-GetListSimple-FranchiseGroupId-Bug]] — баг 4283565: пустой список типов карт в офлайне из-за FranchiseGroupId="retail" в SQL-фильтре (status: current)
+- [[DiscountCardType-Settings-Async-Load-Flaky-Autotest]] (c-000225) — открытый вопрос: флаки автотестов на вкладке «Настройки» типа ДК сразу после создания; ожидание, что DWC-переход починит асинхронность — не подтверждено (status: open)
 - [[DiscountCard-Design-Constructor-Project]] — проект перевода дизайна ДК с Брендбука на конструктор сайтов; бизнес-процессы редактирования лицевой/оборотной стороны (status: developing)
 - [[DiscountCard-Design-Constructor-Architecture]] — ПО ДизайнКарты/КартаЛояльности, site-builder, каталог виджетов (Layout/Logo/Banner/InfoBlock/Barcode), миграция из Брендбука (status: developing)
 - [[DiscountCard-Design-Constructor-WorkPlan]] — 252,5 чд по 5 этапам + 89,5 чд управления; срок 20.02.2027 (status: developing)
