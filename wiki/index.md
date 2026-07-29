@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-07-21 | Total pages: 396 | Sources ingested: 206
+Last updated: 2026-07-28 | Total pages: 398 | Sources ingested: 206
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -92,6 +92,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Price Formation — Analysis
 
+- [[Bonus-GetSaleList-SuspectSaleIds-Hash-Regression]] (c-000211) — задача №06244326: `Bonus.GetSaleList` 16–17 с на автотестовом аккаунте, реестр «Бонусы/Покупки» рвёт скролл. `EXPLAIN`: 13.29 из 13.33 с — в CTE `SuspectSaleIds` при пустом результате; планировщик разворачивает коррелированный `EXISTS` в hash semi-join и материализует всю историю бонусов клиента (3 млн строк, 2.4 млн buffers, хеш на диск). Не про EMA/размер блока (выборка блока 32.8 мс) и не про отсутствие индексов; на бою (rc-26.3248) тот же код — латентно. **Фикс реализован и замерен: 14 530 → 225 мс (~53×)** через `BlockBound`/`BlockSales` + `OFFSET 0` (не `AS MATERIALIZED` — стенд на PG 10.21); тесты 41 OK, планы в `logs/explain-06244326/`. Не закоммичено, ветка не выбрана (status: developing)
 - [[DCQuestionary-BirthDay-Existing-Client-Bug]] (c-000196) — баг №0625711: анкета выдачи ДК не проставляет дату рождения существующему клиенту без неё; собственная регрессия от апрельского MR !141867 (убрал `BirthDay` из `UpdateFields` целиком, фикся другой баг — перезапись). Фикс: `NeedSearchResult=True` + fail-closed чтение `SearchResult.BirthDay` + точечный `CRMClients.SaveCustomer`. Смежные находки (не фикшены): та же безусловная перезапись в `helpers.py`/`process_file.py` (status: fixed)
 - [[Bonus-GetTotalBalance-Local-Card-Scan-Memory]] (c-000207) — задача 07208958: `GetBonusesNew` ест ~1 ГБ/итерация на `test-inside`; отложенный хвост 05292113 — после починки СДК-ветки (`1be452e6e2`) доминирующим стал локальный скан `Карта`. Дорогие джойны (`ЧастноеЛицо` ~750 МБ, `ВидКарты EP` ~210 МБ) нужны только ради `IsFranchise`, а он влияет на результат лишь при `has_franchise=True` → предложено сделать их условными. Открыто: франшизный ли аккаунт (status: developing)
 - [[Bonus-GetTotalBalance-Franchise-Performance]] — задача 05292113: виджет «Бонусы» не строится на франшизном аккаунте (~80k персональных счетов), GetTotalBalance ~4.5 с; узкое место — поимённый `Card.GetBonusBalanceByCards` (передача 80k UUID + возврат 79943 строк), сам SQL по индексу 461 мс; решение — агрегат SUM на стороне СДК (status: developing)
@@ -422,6 +423,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Questions
 
+- [[ReferralProgram-CRMThemeId-By-Referral-Code]] (c-000212) — задача №07164990 (проект «Авторегистрация для Alfa ID и СберБизнес»): метод «реф. код партнёра → CRMThemeId»; путь Карта→Эмиссия→ВидЦеныВидКарты→ВидЦены; 3 открытых развилки — формат входа, multitenancy, поведение при пустом результате (status: open)
 - [[How does the LLM Wiki pattern work]] — how the pattern works and why it outperforms RAG at human scale (status: developing)
 - [[ReferralStub-Stats-Index-Questions]] — корешки: нужен ли фильтр по `ТипСвязи` при подсчёте всех статусов; покрытие индексами (карта+EffectiveDate), «жирный» индекс по `ТипСвязи` (status: open)
 

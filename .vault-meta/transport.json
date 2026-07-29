@@ -1,0 +1,4 @@
+{
+  "transport": "filesystem",
+  "detected_by": "detect-transport.py"
+}

@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/entities/Настя-QA.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Настя-QA"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/entities/Настя-QA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Настя-QA"
+              "title": "Обратные ссылки"
             }
           },
           {
@@ -200,6 +195,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/entities/Настя-QA.md",
     "wiki/sources/zvonok-musohranov-timoshenko-2026-07-23.md",
     "wiki/hot.md",
     "wiki/questions/BonusChart-IterativeBlock-Bug-Fix.md",
@@ -220,7 +216,6 @@
     "wiki/questions/Bonus-GetTotalBalance-Local-Card-Scan-Memory.md",
     "wiki/meta/ReferralStub-Backfill-Service-Method.md",
     "wiki/questions/PromoCode-NotifyGenerated-DWC-Ordering.md",
-    "wiki/entities/Настя-QA.md",
     "wiki/concepts/Migration-Console-First-Testing-Pattern.md",
     "raw/Совещания/Звонок 2026-07-22 130258. Мусохранов Андрей, Тимошенко Александр.md",
     "wiki/questions/ReferralProgram-ZeroReward-Lead-Filter-Bug.md",

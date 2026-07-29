@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-06-12
+updated: 2026-07-28
 tags:
   - meta
   - log
@@ -9,6 +9,30 @@ status: evergreen
 related:
   - "[[index]]"
 ---
+
+## [2026-07-28] save | Задача №07164990: CRMThemeId по реф. коду партнёра — контекст собран, вопросы заданы
+- Type: question
+- Location: wiki/questions/ReferralProgram-CRMThemeId-By-Referral-Code.md (c-000212)
+- From: разбор задачи №07164990 (проект «Авторегистрация для Alfa ID и СберБизнес») — SBIS-задача, тред оценки, ТЗ проекта, код `LoyaltyReferral`
+- Pages created: [[ReferralProgram-CRMThemeId-By-Referral-Code]] (c-000212)
+- Pages updated: [[index]], [[hot]]
+- Key insight: «тема отношений» = `CRMThemeId` в `ВидЦены.Атрибуты->ReferralProgram`, единственный боевой потребитель — `create_lead.py:148` (поле `Регламент` для `CRMLead.insertRecord`). Путь от реф. кода: `Карта.Атрибуты->AdObject` → `Эмиссия` → `ВидЦеныВидКарты` → `ВидЦены` — тот же джойн, что в `SQL_GET_REFERRAL_CODE_*` (`core.py:495-561`), но с другой точкой входа. **ТЗ проекта метод не описывает** — задача добавлена поверх; в ТЗ есть только строковый `КодПартнера` для `Billing.CreateAccount`, которого в price-formation нет вообще. Три развилки закрыть без постановщика нельзя: формат входа (`utm_rfcid` целиком / `@AdObject` / UUID карты), нужен ли `CreateMultitenantEndpointByClientId` по первой части кода, и Warning vs 0 при пустом результате. Реализация не начата.
+
+## [2026-07-28] save | Bonus.GetSaleList — фикс SuspectSaleIds реализован и замерен (14 530 → 225 мс)
+- Type: synthesis (обновление)
+- Location: wiki/questions/Bonus-GetSaleList-SuspectSaleIds-Hash-Regression.md (c-000211)
+- From: реализация фикса задачи №06244326 + замер на `test-osr-db19/load-ext-4`, схема `_01216129`
+- Pages created: —
+- Pages updated: [[Bonus-GetSaleList-SuspectSaleIds-Hash-Regression]], [[index]], [[hot]]
+- Key insight: барьером оптимизатора взят **`OFFSET 0`, а не `AS MATERIALIZED`** — стенд на **PostgreSQL 10.21**, где `MATERIALIZED` (PG12+) это синтаксическая ошибка; признак старой версии виден в самом плане (одноразовые CTE показаны как `CTE Scan`, PG12+ их бы заинлайнил). Замер: 14 530 → 225 мс (~53×), buffers 2.42 млн → 70 тыс., спил хеша на диск исчез; `SuspectSaleIds` Hash Join → **Nested Loop Semi Join** 13 287 → 118 мс с `Index Cond: "Sale" = bs."Sale"` по `iВидЦеныДокумент-Retail`. Тесты 41 OK. **Проверка эквивалентности на живых данных вырождена** — оба множества пусты, т.к. на аккаунте нет продаж с бонусными движениями более чем на одну `EffectiveDate` (последние — 30.09.2025); опора на логику преобразования + `test_8` (розничной симметрии в тестах нет). Планы сохранены в `logs/explain-06244326/`. Инструментальное: `psycopg` недоступен (SSL-инспекция ломает pip), EXPLAIN снят через датасурсы PyCharm с постраничным `fetch_query_result(offset=…)` — вывод режется до 10 строк.
+
+## [2026-07-27] save | Bonus.GetSaleList — 13 секунд в SuspectSaleIds (hash semi-join по всей истории)
+- Type: synthesis
+- Location: wiki/questions/Bonus-GetSaleList-SuspectSaleIds-Hash-Regression.md (c-000211)
+- From: разбор задачи №06244326 (ошибка на стенде, реестр «Бонусы/Покупки», test-online) — вопрос [[Ютман-Элина]] о 16–17 с БЛ
+- Pages created: [[Bonus-GetSaleList-SuspectSaleIds-Hash-Regression]] (c-000211)
+- Pages updated: [[Bonus-GetSaleList-Duplicate-W-Records-Iterative-Block-Bug]], [[index]], [[hot]]
+- Key insight: `EXPLAIN (ANALYZE, BUFFERS)` — 13 287 из 13 325 мс в CTE `SuspectSaleIds`, который возвращает **rows=0**. Планировщик разворачивает коррелированный `EXISTS` в hash semi-join и строит хеш по всей истории бонусов клиента (7 `ВидЦены` × 428 779 = 3 001 450 строк, 2.42 млн buffers, `Batches: 16 (originally 1)`), промашка оценки в 900 раз. Отвергнуты три версии: размер блока/EMA (выборка блока 32.8 мс), отсутствие индексов (есть, выбираются), «доработка только в 4100» (`Suspect*` с `rc-26.3211`, на бою `rc-26.3248` текст CTE побайтово тот же). Масштабируется по числу бонусных движений **клиента**, а не по объёму `ВидЦеныДокумент` → на бою латентно, не отсутствует. Опровергнут раздел «Индексы — проверено безопасно» исходной страницы: проверять надо форму плана, а не наличие индекса. Фикс (`MATERIALIZED` + `BlockSales` + nested loop по `Retail (Sale, ДатаВремя)`) не реализован.
 
 ## [2026-07-23] ingest | Звонок 2026-07-23: Мусохранов — Тимошенко (ревью подсчёта статистики по корешкам)
 - Source: `.raw/Совещания/Звонок 2026-07-23 100252. Мусохранов Андрей, Тимошенко Александр.md`
