@@ -10,6 +10,14 @@ related:
   - "[[index]]"
 ---
 
+## [2026-07-30] save | Урезание объёма задачи истории реф. программы до истории корешков
+
+- Type: decision
+- Location: wiki/meta/ReferralStub-History-Scope-Cut.md (c-000232)
+- From: conversation on price-formation — задача №07012946, ветка `26.4200/feature/aatimoshenko/07012946`: из трёх пунктов постановки [[ReferralProgram-History-UI-Design]] в ветке оставлен только бэкенд истории корешка; `ReferralProgram.GetHistoryList` (2 коммита) и проваливание из истории оффера удалены, `history_object.py`/`price_entity.py` возвращены к `rc-26.4200`; reset + force-push → один коммит `0813f6d628`, MR !147258
+- Key insight: в историю оффера события по корешкам не пишутся **вообще** — усиление относительно исходной постановки, где «создание корешков» оставалось в истории оффера. Побочный регресс-риск: проверка «корешок не найден» в `update_stub` теперь срабатывает всегда, а не только при переданном `Price`. Механизм отложенного проваливания задокументирован для будущей задачи (префикс `@event_` обязателен, на чтении приходит в `Attributes` без него).
+- Pages updated: [[ReferralProgram-History-UI-Design]] (раздел «Ревизия объёма», related), [[index]], [[hot]]
+
 ## [2026-07-30] save | Повторное удаление фичи entity_sp (backend, price-formation)
 
 - Type: synthesis (update)
