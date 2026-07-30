@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-07-29 | Total pages: 411 | Sources ingested: 216
+Last updated: 2026-07-30 | Total pages: 411 | Sources ingested: 216
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -431,6 +431,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Questions
 
+- [[entity-sp-deletion-order-2026-06-15]] — price-formation: удаление фичи entity_sp до 100% раскатки ломало ДК-диалог; откат в июне, повторное удаление 2026-07-30 (только backend-часть, 35 файлов) после стабилизации на стороне другой команды (status: resolved)
 - [[ReferralProgram-CRMThemeId-By-Referral-Code]] (c-000212) — задача №07164990 (проект «Авторегистрация для Alfa ID и СберБизнес»): метод «реф. код партнёра → CRMThemeId»; путь Карта→Эмиссия→ВидЦеныВидКарты→ВидЦены; 3 открытых развилки — формат входа, multitenancy, поведение при пустом результате (status: open)
 - [[How does the LLM Wiki pattern work]] — how the pattern works and why it outperforms RAG at human scale (status: developing)
 - [[ReferralStub-Stats-Index-Questions]] — корешки: нужен ли фильтр по `ТипСвязи` при подсчёте всех статусов; покрытие индексами (карта+EffectiveDate), «жирный» индекс по `ТипСвязи` (status: open)

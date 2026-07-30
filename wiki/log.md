@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-07-29
+updated: 2026-07-30
 tags:
   - meta
   - log
@@ -9,6 +9,14 @@ status: evergreen
 related:
   - "[[index]]"
 ---
+
+## [2026-07-30] save | Повторное удаление фичи entity_sp (backend, price-formation)
+
+- Type: synthesis (update)
+- Location: wiki/questions/entity-sp-deletion-order-2026-06-15.md (status: developing → resolved)
+- From: conversation on price-formation — откат отката: `git revert fa95ca0235` (revert июньского удаления `1fb3ffbd1c`) на ветке `26.5100/bugfix/aatimoshenko/05144878_feature_del` от `rc-26.5100`, 2 конфликта разрешены вручную (код мутировал за 1.5 месяца), закоммичено `930d0b1dc9`
+- Key insight: блокер удаления был не в price-formation, а в нестабильности `entity_sp` на стороне другой команды; объём повтора сознательно ограничен исходными 35 файлами — новые `check_feature(ENTITY_SP)` в отчётах/markup/promotion/license.py вне скоупа
+- Pages updated: [[entity-sp-deletion-order-2026-06-15]], [[index]], [[hot]]
 
 ## [2026-07-30] dialogs-scan | Разбор реализации UI истории реф. программы (1 сообщение)
 
