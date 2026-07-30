@@ -86,6 +86,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Price Formation — Decisions
 
+- [[ReferralStub-History-Scope-Cut]] (c-000232) — задача №07012946: объём урезан до отдельной истории корешка (`ReferralStubHistory`, объект `ReferralStub`, id = `OperationId`); `GetHistoryList`, проваливание из истории оффера и `event_attributes` в `HistoryObject` удалены из ветки (reset + force-push); в историю оффера корешки не пишут вообще (status: active)
 - [[ReferralStub-Backfill-Service-Method]] (c-000206) — миграция корешков по существующим реф. сделкам вынесена из ВНР в служебный метод `ReferralProgram.CreateStubsForExistingLeads(ProgramId, DryRun)`: одна программа за вызов, возврат `Stubs` для сверки по идентификаторам, идемпотентность по `OperationId`; ВНР — тонкая обёртка (status: active)
 - [[Loyalty-IterativeLoading-TD-CommonSolutions]] — ТД итеративной загрузки (пункт 594287653): мастер в Бонусах + ссылки из ДК/Промокодов/Реферальной; иерархия классов на 4100 (не-итеративные базы удалены, `GetClientListWithStats` де-итеративизирован); предложение раздела БЗ «Общие решения» (status: active)
 - [[Feature-Flag-Removal-LOYALTY-IT-NAV]] — удалены фичи `loyalty_it_nav` и `bonus_it_navigation`: итеративная навигация стала постоянной, OLD path оставлен только для `GetClientListWithStats` (status: active)
