@@ -83,5 +83,6 @@ All source pages — summaries of ingested documents, transcripts, articles, and
 - [[zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29]] (c-000222) — 2026-07-29 | Звонок (ASR, низкая достоверность): статус сборки/переноса, контроль этапов задачи | 1 page created
 - [[zvonok-tim-sveshnikov-referral-history-buttons-2026-07-29]] (c-000227) — 2026-07-29 | Звонок 1/2: постановка задачи «история изменений» по офферам/лидам/корешкам | 1 page created
 - [[zvonok-tim-sveshnikov-mihel-referral-history-ui-2026-07-29]] (c-000228) — 2026-07-29 | Звонок 2/2 (+Витольд): дизайн-решение по кнопкам истории, вторая реф. сеть на бою | 1 page created, 1 entity created, 1 concept created
+- [[referral-history-implementation-breakdown-2026-07-29]] (c-000230) — 2026-07-29 | Диалог: разбор реализации UI истории (3 пункта, распределение Тимошенко/Лебедева) | 1 page created, 1 entity created
 
 ## Add new sources here after each ingest.

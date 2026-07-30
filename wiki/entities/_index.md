@@ -47,6 +47,7 @@ All entity pages — people, organizations, products, and tools.
 - [[Mindbox]] — внешняя CDP/маркетинг-автоматизация платформа (mindbox.ru); конкурентный референс для проекта [[CustomerJourney-Scenarios-Project]]
 - [[REES46]] — внешняя маркетинг-автоматизация платформа; вторичный конкурентный референс (блоки схемы) наряду с [[Mindbox]] (status: current)
 - [[Выборки-Module]] — модуль сегментации/выборки клиентов для сценариев лояльности; владелец [[Гаврилов-Михаил]] (status: current)
+- [[Лебедева-Наталья]] (c-000231) — разработчик; реализует UI истории корешка, потребитель `ReferralProgram.GetHistoryList` (status: current)
 
 ---
 
