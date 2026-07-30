@@ -3,6 +3,20 @@
   "created": "2026-04-23",
   "description": "Ingest delta tracker and address map for the claude-obsidian vault. Do not hand-edit; wiki-ingest maintains this.",
   "sources": {
+    "raw/Диалоги SBIS/019f1c60-d761-7b2b-95fa-3ab61865088c.md": {
+      "hash": "312e6dac8acee6dcf17c6d3f71e18eb4",
+      "ingested_at": "2026-07-30",
+      "pages_created": [
+        "wiki/sources/referral-history-implementation-breakdown-2026-07-29.md",
+        "wiki/entities/Лебедева-Наталья.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/ReferralProgram-History-UI-Design.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
     "raw/Описание продукта.md": {
       "hash": "c34c0374ccda26842b4cbd63965d49e8",
       "ingested_at": "2026-05-18",
@@ -1565,6 +1579,8 @@
     }
   },
   "address_map": {
+    "wiki/sources/referral-history-implementation-breakdown-2026-07-29.md": "c-000230",
+    "wiki/entities/Лебедева-Наталья.md": "c-000231",
     "wiki/concepts/DragonScale Memory.md": "c-000001",
     "wiki/concepts/DWC-Card-Events-Migration.md": "c-000004",
     "wiki/concepts/FranchiseCard-Import-POS-SaleValidation-Bug.md": "c-000005",
