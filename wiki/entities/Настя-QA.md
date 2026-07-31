@@ -1,31 +1,20 @@
 ---
 type: entity
-address: c-000205
-title: "Настя (QA — реферальная миграция)"
+title: "Настя (QA) — merged"
 entity_type: person
-role: "Тестировщик, проверка миграции реферальных сделок на корешки"
-first_mentioned: "[[zvonok-musohranov-timoshenko-2026-07-22]]"
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-31
+status: merged
+merged_into: "[[Земцова-Анастасия]]"
 tags:
-  - entity
-  - person
-  - tensor
-  - qa
-status: current
+  - redirect
 related:
-  - "[[SabyBank-RKO-Referral]]"
-  - "[[Тимошенко А.А.]]"
-  - "[[Мусохранов-Андрей-Владиславович]]"
+  - "[[Земцова-Анастасия]]"
 ---
 
 # Настя (QA)
 
-Тестировщик, привлечённый к проверке миграции существующих реферальных сделок на корешки (`ВидЦеныДокумент`) в рамках [[SabyBank-RKO-Referral]].
+> [!note] Merged
+> Created as a stub from a first-name-only mention in [[zvonok-musohranov-timoshenko-2026-07-22]] («фамилия неизвестна»). Batch-ingest 2026-07-31 (5 sources under `raw/Диалоги SBIS/`: `206d1fba`, `019f60a3`, `65e0d9ad`, `79e80c8d`, `019fb20d`) confirmed the full identity — same person, same QA role on referral-program/SabyBank RKO testing. All history folded into **[[Земцова-Анастасия]]** (address `c-000205` carried over).
 
-> [!gap] Данные минимальны
-> Фамилия и точная должность неизвестны — упомянута только по имени в [[zvonok-musohranov-timoshenko-2026-07-22]]. Уточнить при появлении в других источниках; при выяснении переименовать страницу.
-
-## Упоминания
-
-- [[zvonok-musohranov-timoshenko-2026-07-22]] — прогнала ВНР миграции по ~200 заявкам (3 бизнес-группы, ~20 реф. программ) на тестовом контуре; выборочно проверила 5 программ. Мусохранов отметил, что сплошную проверку такой миграции нельзя перекладывать на QA без явного сценария — см. [[Migration-Console-First-Testing-Pattern]].
+Go to [[Земцова-Анастасия]].

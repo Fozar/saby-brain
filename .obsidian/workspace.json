@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/log.md",
+                "file": "wiki/entities/Лебедева-Наталья.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "log"
+              "title": "Лебедева-Наталья"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/log.md",
+                "file": "wiki/entities/Лебедева-Наталья.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для log"
+              "title": "Обратные ссылки для Лебедева-Наталья"
             }
           },
           {
@@ -200,26 +200,28 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/entities/Земцова-Анастасия.md",
+    "wiki/entities/Лебедева-Наталья.md.tmp.55800.407dc56c3a1c",
+    "wiki/entities/Лебедева-Наталья.md.tmp.55800.5327e452f996",
+    "wiki/entities/Свешников-Андрей.md.tmp.55800.80f15c9d03a7",
+    "wiki/log.md",
+    "wiki/entities/Свешников-Андрей.md.tmp.55800.c43a6dd6c5ce",
+    "wiki/entities/Самарина-Ирина.md",
+    "wiki/entities/Самарина-Ирина.md.tmp.55800.168e12af8bb8",
+    "wiki/entities/Настя-QA.md.tmp.55800.a358808a1e13",
+    "wiki/entities/Земцова-Анастасия.md.tmp.55800.da4db5c3baf9",
     "automation/logs/daily_dialogs_scan.log.tmp.55800.cfca4b6246cc",
     "automation/dialogs_scan_state.json.tmp.55800.cdf3e3920e0b",
     "raw/Диалоги SBIS/019fb25a-2372-78e0-baa5-c0e04ae2783c.md",
     "raw/Диалоги SBIS/019fb25a-2372-78e0-baa5-c0e04ae2783c.md.tmp.55800.07505adf92e4",
     "raw/Диалоги SBIS/019fb20d-a75e-75c1-b116-982919ae574e.md",
-    "raw/Диалоги SBIS/019fb20d-a75e-75c1-b116-982919ae574e.md.tmp.55800.543bb901ddb5",
     "raw/Диалоги SBIS/79e80c8d-1cac-4435-be82-04ef943b4667.md",
-    "raw/Диалоги SBIS/79e80c8d-1cac-4435-be82-04ef943b4667.md.tmp.55800.88d7138a5459",
     "raw/Диалоги SBIS/019f18d1-d81d-758c-b529-92312b3cc65c.md",
-    "raw/Диалоги SBIS/019f18d1-d81d-758c-b529-92312b3cc65c.md.tmp.55800.616d5d2a8d10",
     "raw/Диалоги SBIS/4c01a23b-fb97-45fc-b7ec-7febf745c91f.md",
-    "raw/Диалоги SBIS/4c01a23b-fb97-45fc-b7ec-7febf745c91f.md.tmp.55800.3144226e66b2",
     "raw/Диалоги SBIS/186b7743-0149-4c92-8052-a5aa9631d024.md",
-    "raw/Диалоги SBIS/186b7743-0149-4c92-8052-a5aa9631d024.md.tmp.55800.a086fc1add11",
     "raw/Диалоги SBIS/3067c623-6ace-4ec5-b355-b36794ae2f7a.md",
-    "raw/Диалоги SBIS/3067c623-6ace-4ec5-b355-b36794ae2f7a.md.tmp.55800.6d7b7ba8d893",
     "raw/Диалоги SBIS/019fb1d0-a23b-7661-b1c8-75882705f334.md",
-    "raw/Диалоги SBIS/019fb1d0-a23b-7661-b1c8-75882705f334.md.tmp.55800.379547f76f7e",
     "raw/Диалоги SBIS/44bd4968-7524-4f38-b55c-b4b829c84560.md",
-    "raw/Диалоги SBIS/44bd4968-7524-4f38-b55c-b4b829c84560.md.tmp.55800.59d6955f5434",
     "raw/Диалоги SBIS/65e0d9ad-ff1d-4347-8eee-7abb7532c022.md",
     "raw/Диалоги SBIS/019f60a3-2774-7c37-845f-159b66e3b891.md",
     "raw/Диалоги SBIS/27e85adc-2350-430c-9d7b-18b7d67f4694.md",
@@ -233,9 +235,6 @@
     "wiki/sources/zvonok-tim-sveshnikov-mihel-referral-history-ui-2026-07-29.md",
     "wiki/sources/zvonok-tim-sveshnikov-referral-history-buttons-2026-07-29.md",
     "wiki/entities/Михель-Витольд.md",
-    "wiki/sources/referral-leadperiodlist-koreshki-followup-2026-07-29.md",
-    "raw/Диалоги SBIS/019fad37-dc88-790c-97bc-76cf7086ecea.md",
-    "raw/Диалоги SBIS/019fad14-31da-7092-a5e4-fc22e5e463ee.md",
     "b574f7eb0125c1b0124a6fc9ae01137f_MD5.avif",
     "d0b1a1d090a19d801608dc5637e37b4d_MD5.avif",
     "10671913693748aff0ddd78f4ab4b13b_MD5.avif",
