@@ -200,6 +200,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "scratch_fix_manifest.py",
+    "scratch_fix_manifest.py.tmp.55800.6460f70f5027",
     "wiki/index.md.tmp.55800.e276a4e84146",
     "wiki/index.md.tmp.55800.0dcfdd087ea1",
     "wiki/index.md.tmp.55800.212cf890c2ce",
@@ -209,8 +211,6 @@
     "wiki/hot.md.tmp.55800.6474fb2222e8",
     "wiki/hot.md.tmp.55800.921f15cc2381",
     "wiki/log.md.tmp.55800.d27585c6fb39",
-    "wiki/log.md.tmp.55800.f92379fd8622",
-    "wiki/sources/_index.md.tmp.55800.3764666b24f0",
     "wiki/entities/Мусохранов-Андрей-Владиславович.md",
     "wiki/meta/ReferralProgram-MoveToAgentGroup.md",
     "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md",
