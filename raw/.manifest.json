@@ -4,14 +4,13 @@
   "description": "Ingest delta tracker and address map for the claude-obsidian vault. Do not hand-edit; wiki-ingest maintains this.",
   "sources": {
     "raw/Диалоги SBIS/019f1c60-d761-7b2b-95fa-3ab61865088c.md": {
-      "hash": "312e6dac8acee6dcf17c6d3f71e18eb4",
-      "ingested_at": "2026-07-30",
-      "pages_created": [
-        "wiki/sources/referral-history-implementation-breakdown-2026-07-29.md",
-        "wiki/entities/Лебедева-Наталья.md"
-      ],
+      "hash": "5f3c4102df4cb8acce5c2b310be9d25a",
+      "ingested_at": "2026-07-31",
+      "pages_created": [],
       "pages_updated": [
-        "wiki/concepts/ReferralProgram-History-UI-Design.md",
+        "wiki/sources/referral-history-implementation-breakdown-2026-07-29.md",
+        "wiki/meta/ReferralStub-History-Scope-Cut.md",
+        "wiki/entities/Мусохранов-Андрей-Владиславович.md",
         "wiki/index.md",
         "wiki/hot.md",
         "wiki/log.md"
@@ -1576,6 +1575,201 @@
         "wiki/log.md",
         "wiki/sources/_index.md"
       ]
+    },
+    "raw/Диалоги SBIS/206d1fba-617c-4c8f-8986-bb16595b1003.md": {
+      "hash": "ded020d86618e9df427d76534ac6ae22",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/crm-license-request-local-stand-2026-07-31.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/971c21aa-af1c-416f-8a1d-275e2cb5648b.md": {
+      "hash": "c4f0bebbd82d8f6e5016cb2fb9e91297",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/sabybank-inn-kpp-stub-storage-2026-07-31.md",
+        "wiki/meta/SabyBank-Stub-INN-KPP-Storage.md"
+      ],
+      "pages_updated": [
+        "wiki/entities/Тимошенко А.А..md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/27e85adc-2350-430c-9d7b-18b7d67f4694.md": {
+      "hash": "636ec0eb6c42d0ef4061296bd1b24f17",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/getpartnerlist-stub-stats-2026-07-31.md",
+        "wiki/meta/ReferralProgram-GetPartnerList-Stub-Stats.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/ReferralStub-DealSum-Field.md",
+        "wiki/entities/Тимошенко А.А..md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/019f60a3-2774-7c37-845f-159b66e3b891.md": {
+      "hash": "3f310ae5ad0ddaf8cc7af6bdb3c59599",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/getstublist-bug-no-records-2026-07-31.md",
+        "wiki/concepts/ReferralProgram-GetStubList-Bug-Partner-No-Records.md"
+      ],
+      "pages_updated": [
+        "wiki/entities/Лебедева-Наталья.md",
+        "wiki/entities/Земцова-Анастасия.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/65e0d9ad-ff1d-4347-8eee-7abb7532c022.md": {
+      "hash": "a8f5a73c3906d5cd32105ff1d9922ca8",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/ref-deals-convert-feature-enable-2026-07-31.md",
+        "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md"
+      ],
+      "pages_updated": [
+        "wiki/entities/Лебедева-Наталья.md",
+        "wiki/entities/Земцова-Анастасия.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/44bd4968-7524-4f38-b55c-b4b829c84560.md": {
+      "hash": "5c25af28c2219afdc56b87f9f3d545ab",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/mr-comment-for-program-method-2026-07-31.md"
+      ],
+      "pages_updated": [
+        "wiki/meta/ReferralStub-History-Scope-Cut.md",
+        "wiki/entities/Мусохранов-Андрей-Владиславович.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/019fb1d0-a23b-7661-b1c8-75882705f334.md": {
+      "hash": "89f1453ae6137a3f14b92c2b8df22b48",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/mr-review-stub-history-call-2026-07-30.md"
+      ],
+      "pages_updated": [
+        "wiki/meta/ReferralStub-History-Scope-Cut.md",
+        "wiki/entities/Мусохранов-Андрей-Владиславович.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/3067c623-6ace-4ec5-b355-b36794ae2f7a.md": {
+      "hash": "dec49fd58f6d33cb4e4553f463105eec",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/crmthemeid-plan-item-verified-2026-07-31.md"
+      ],
+      "pages_updated": [
+        "wiki/questions/ReferralProgram-CRMThemeId-By-Referral-Code.md",
+        "wiki/entities/Тимошенко А.А..md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/186b7743-0149-4c92-8052-a5aa9631d024.md": {
+      "hash": "c6f4e332b4f6c55b9f272834318e8ca3",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/release-error-analysis-2026-07-31.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/4c01a23b-fb97-45fc-b7ec-7febf745c91f.md": {
+      "hash": "a906c558c86532a5b86da2e9b627fcce",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/updatestub-status-check-2026-07-31.md",
+        "wiki/entities/Самарина-Ирина.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/019f18d1-d81d-758c-b529-92312b3cc65c.md": {
+      "hash": "0cf84cb1c0a8fefa110ac344abebdfe0",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/referral-transfer-hide-plan-item-2026-07-31.md"
+      ],
+      "pages_updated": [
+        "wiki/entities/Свешников-Андрей.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/79e80c8d-1cac-4435-be82-04ef943b4667.md": {
+      "hash": "3376547c796c153974172fcef8fb77c9",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/movetoagentgroup-test-data-2026-07-30.md",
+        "wiki/meta/ReferralProgram-MoveToAgentGroup.md"
+      ],
+      "pages_updated": [
+        "wiki/entities/Земцова-Анастасия.md",
+        "wiki/entities/Свешников-Андрей.md",
+        "wiki/entities/Самарина-Ирина.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/019fb20d-a75e-75c1-b116-982919ae574e.md": {
+      "hash": "f31cb430d7d9dfecd8176f810fa78b77",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/createstubsforexistingleads-bug-4100-2026-07-30.md"
+      ],
+      "pages_updated": [
+        "wiki/meta/ReferralStub-Backfill-Service-Method.md",
+        "wiki/entities/Земцова-Анастасия.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    "raw/Диалоги SBIS/019fb25a-2372-78e0-baa5-c0e04ae2783c.md": {
+      "hash": "1d5155346ec2e41308d2482924bb7fa6",
+      "ingested_at": "2026-07-31",
+      "pages_created": [
+        "wiki/sources/zvonok-history-button-placement-2026-07-30.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/ReferralProgram-History-UI-Design.md",
+        "wiki/entities/Свешников-Андрей.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
     }
   },
   "address_map": {
@@ -1749,7 +1943,27 @@
     "wiki/entities/Михель-Витольд.md": "c-000226",
     "wiki/sources/zvonok-tim-sveshnikov-referral-history-buttons-2026-07-29.md": "c-000227",
     "wiki/sources/zvonok-tim-sveshnikov-mihel-referral-history-ui-2026-07-29.md": "c-000228",
-    "wiki/concepts/ReferralProgram-History-UI-Design.md": "c-000229"
+    "wiki/concepts/ReferralProgram-History-UI-Design.md": "c-000229",
+    "wiki/entities/Самарина-Ирина.md": "c-000233",
+    "wiki/sources/crm-license-request-local-stand-2026-07-31.md": "c-000234",
+    "wiki/sources/sabybank-inn-kpp-stub-storage-2026-07-31.md": "c-000235",
+    "wiki/sources/getpartnerlist-stub-stats-2026-07-31.md": "c-000236",
+    "wiki/sources/getstublist-bug-no-records-2026-07-31.md": "c-000237",
+    "wiki/sources/ref-deals-convert-feature-enable-2026-07-31.md": "c-000238",
+    "wiki/sources/mr-comment-for-program-method-2026-07-31.md": "c-000239",
+    "wiki/sources/mr-review-stub-history-call-2026-07-30.md": "c-000240",
+    "wiki/sources/crmthemeid-plan-item-verified-2026-07-31.md": "c-000241",
+    "wiki/sources/release-error-analysis-2026-07-31.md": "c-000242",
+    "wiki/sources/updatestub-status-check-2026-07-31.md": "c-000243",
+    "wiki/sources/referral-transfer-hide-plan-item-2026-07-31.md": "c-000244",
+    "wiki/sources/movetoagentgroup-test-data-2026-07-30.md": "c-000245",
+    "wiki/sources/createstubsforexistingleads-bug-4100-2026-07-30.md": "c-000246",
+    "wiki/sources/zvonok-history-button-placement-2026-07-30.md": "c-000247",
+    "wiki/meta/ReferralProgram-GetPartnerList-Stub-Stats.md": "c-000248",
+    "wiki/meta/SabyBank-Stub-INN-KPP-Storage.md": "c-000249",
+    "wiki/concepts/ReferralProgram-GetStubList-Bug-Partner-No-Records.md": "c-000250",
+    "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md": "c-000251",
+    "wiki/meta/ReferralProgram-MoveToAgentGroup.md": "c-000252"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
