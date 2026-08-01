@@ -33,6 +33,8 @@ All entity pages — people, organizations, products, and tools.
 - [[Гаттаулин-Э]] — разработчик, владелец подсистемы Скрипты (базовые компоненты реестра/карточки маршрутов, UI-редактор схем) в проекте [[CustomerJourney-Scenarios-Project]] (status: current)
 - [[Матюшев-Дмитрий]] — ответственный за этап «Триггерные события» (93 чд) проекта [[CustomerJourney-Scenarios-Project|Путь клиента]], из `План работ по проекту.pdf` (status: current)
 - [[Полевщиков-Евгений]] — ведущий backend-разработчик Сервиса Маршрутов (~50+ чд), реализует Route/AutoTrace API — см. [[CustomerJourney-Route-Service-API]] (status: current)
+- [[Земцова-Анастасия]] (c-000205) — тестировщик (QA), Тензор; реферальная программа/SabyBank RKO — миграция на корешки, перенос реф. программ, включение фич на стендах (merged from [[Настя-QA]]) (status: current)
+- [[Самарина-Ирина]] (c-000233) — проект-менеджер, Тензор; SabyBank RKO Referral совместно со [[Свешников-Андрей|Свешниковым А.]] (status: current)
 
 ---
 

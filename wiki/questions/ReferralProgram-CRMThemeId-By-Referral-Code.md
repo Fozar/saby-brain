@@ -3,19 +3,20 @@ type: question
 address: c-000212
 title: "Метод получения CRMThemeId по реф. коду партнёра — открытые развилки"
 created: 2026-07-28
-updated: 2026-07-29
+updated: 2026-07-31
 tags:
   - price-formation
   - referral-program
   - loyalty-referral
   - autoregistration
   - open-question
-status: open
+status: resolved
 related:
   - "[[ReferralProgram-Data-Model]]"
   - "[[ReferralProgram-Module]]"
   - "[[LoyaltyReferral-Module-Extraction]]"
   - "[[Wasaby-BL-Call-Loop-Pattern]]"
+  - "[[crmthemeid-plan-item-verified-2026-07-31]]"
 ---
 
 # CRMThemeId по реф. коду партнёра (задача №07164990)
@@ -94,7 +95,11 @@ utm_rfcid = {ClientID владельца}_{@AdObject партнёрского и
 ## Открытые пункты
 
 - [x] ~~Дождаться ответа Маранова В.Ф. по формату входа и контексту вызова~~ — ответ получен 2026-07-28 от Мусохранова А.В. и Ткачука М. (см. §«Ответы получены» выше)
-- [ ] Уточнить, нужен ли `CreateMultitenantEndpointByClientId` / пара `GetX`/`GetXByPartner`, если зовущий контур не в аккаунте Тензора (принцип задан, техническая проверка не выполнена)
-- [ ] Тех. решение и реализация (новый файл в `loyaltyreferral/referralprogram/referralprogram/` + объявление в `LoyaltyReferral/ReferralProgram.orx` + `.uax`)
-- [ ] Тесты в `tests_new` (моки — `TestLoyalty.orx`)
-- [ ] Учесть целевой срок 4100/4200, озвученный Ткачуком М.
+- [x] ~~Тех. решение и реализация~~ — реализован в **26.4200** (source: [[crmthemeid-plan-item-verified-2026-07-31]])
+- [x] ~~Учесть целевой срок 4100/4200~~ — уложились в 4200
+- [x] ~~Уточнить, нужен ли `CreateMultitenantEndpointByClientId`~~ — Красавин М. проверил вызов метода «на схеме тензора» 2026-07-31: «метод работает без ошибок». Прямого подтверждения использования `CreateMultitenantEndpointByClientId` в источнике нет, но практическая проверка в целевом контексте пройдена — вопрос закрыт по факту
+- [ ] Тесты в `tests_new` (моки — `TestLoyalty.orx`) — статус не подтверждён последним источником
+
+## Обновление 2026-07-31 — реализовано и проверено
+
+Тимошенко сдал пункт плана: `ReferralProgram.GetCRMThemeId` реализован в 26.4200, вход — `AdObject` (INTEGER), пример вызова через консоль приложен. Маранов В.Ф. попросил [[Красавин Михаил|Красавина М.]] проверить вызов «на схеме тензора»; Красавин подтвердил в течение часа: «метод работает без ошибок». Источник: [[crmthemeid-plan-item-verified-2026-07-31]]. Статус страницы переведён в `resolved`.
