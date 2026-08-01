@@ -93,6 +93,8 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[ReferralProgram-GetLeadPeriodList-LeadCount-Source]] — источник LeadCount: для стандартных программ — `get_sales_sources_stats` (маркетинг), для SabyBank — ВЦД по `ДатаВремя`; `ВЦД` ≠ таблица лидов (задача №04307081) (status: active)
 - [[ReferralProgram-GetStubList-Filter-Redesign]] — редизайн фильтров GetStubList: два периода → единый `Date` (по дате создания или статуса в зависимости от `Status`), добавлен `PartnerId` (status: active)
 - [[BonusOperationAdm-GetList-Chunk-Limit-Increase]] (c-000224) — безопасность увеличения chunk-лимита отчёта «Движение бонусов» 100→1000/10000: курсорная пагинация + индекс `CardUUID_PriceEntityUUID-Bonuses`, риск только в размере ответа (status: active)
+- [[ReferralProgram-GetStubList-Bug-Partner-No-Records]] (c-000250) — баг на стенде (заведён 14.07.26): `GetStubList` не возвращает записи корешков у партнёра; причина не диагностирована, возможная связь с `PartnerId`-фильтром из [[ReferralProgram-GetStubList-Filter-Redesign]] не подтверждена (status: open)
+- [[ReferralProgram-RefDealsConvert-Feature]] (c-000251) — фича `ref_deals_convert`: переход реестра «Заявки» на данные из корешков; техническая реализация не задокументирована, включение на `pre` дважды не удалось (status: developing)
 
 ## Price Formation — Analysis
 
@@ -345,7 +347,8 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[Свешников-Андрей]] (c-000048) — менеджер проекта 2+, Тензор; проект-менеджер рефералки/SabyBank RKO, со-ответственный за реф. сеть на бою (status: current)
 - [[Михель-Витольд]] (c-000226) — со-ответственный (с Свешниковым) за реф. сеть на бою и тестовых; участвует в проектировании UI истории изменений (status: current)
 - [[Лебедева-Наталья]] (c-000231) — разработчик; реализует UI истории корешка (кнопка в карточке/ховере), потребитель `ReferralProgram.GetHistoryList` (status: current)
-- [[Настя-QA]] (c-000205) — тестировщик, проверка миграции реф. сделок на корешки; фамилия неизвестна (status: current)
+- [[Земцова-Анастасия]] (c-000205) — тестировщик (QA), Тензор; реферальная программа/SabyBank RKO — миграция на корешки, перенос программ, включение фич (merged from «Настя-QA») (status: current)
+- [[Самарина-Ирина]] (c-000233) — проект-менеджер, Тензор; SabyBank RKO Referral совместно со Свешниковым А. (status: current)
 - [[Tensor-Company]] — Тензор: федеральный IT-холдинг, Saby/СБИС, 4.5M+ клиентов, №1 ЭДО в России (status: current)
 - [[Мусохранов-Андрей-Владиславович]] — руководитель направления 2+, Система лояльности + Транспорт ВИС (c-000036) (status: current)
 - [[Ютман-Элина]] — разработчик, ответственная за систему бонусов PriceFormation.Online; итеративная загрузка (c-000147) (status: current)
@@ -427,13 +430,14 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[wasaby-bl-call-loop-setpool-ext-registration-2026-07-22]] — 2025-07-08 (ingest 2026-07-22) | SBIS Forum (Тимошенко): ext-registration→ext-registration под другим ClientID; TenantContext не спасает от петли, TenantContext не нужен с CreateMultitenantEndpointByClientId (c-000202)
 - [[sbis-plan-june-2026]] — 2026-06-09 | SBIS план работ «Система лояльности» июнь 2026: 19 пунктов, 37.3ч; SabyBank RKO Referral, корешки, DWC внедрение, удаление фич | 1 page created
 - [[wasaby-bl-async-invoke-2026-06-11]] — 2026-06-11 | Sync/async BL call API: EndPoint, Invoke/AsyncInvoke, delivery guarantees, callbacks, Huge Payload | 1 page created
+- Batch 2026-07-31 | 15 диалогов SBIS: `for_program` в истории корешков, GetCRMThemeId проверен, MoveToAgentGroup/INN-КПП/GetPartnerList-статистика сданы, entity-merge Земцова | 14 source + 5 concept + 1 entity created, 8 pages updated — см. [[sources/_index]] §«batch 2026-07-31» и [[log]]
 
 ---
 
 ## Questions
 
 - [[entity-sp-deletion-order-2026-06-15]] — price-formation: удаление фичи entity_sp до 100% раскатки ломало ДК-диалог; откат в июне, повторное удаление 2026-07-30 (только backend-часть, 35 файлов) после стабилизации на стороне другой команды (status: resolved)
-- [[ReferralProgram-CRMThemeId-By-Referral-Code]] (c-000212) — задача №07164990 (проект «Авторегистрация для Alfa ID и СберБизнес»): метод «реф. код партнёра → CRMThemeId»; путь Карта→Эмиссия→ВидЦеныВидКарты→ВидЦены; 3 открытых развилки — формат входа, multitenancy, поведение при пустом результате (status: open)
+- [[ReferralProgram-CRMThemeId-By-Referral-Code]] (c-000212) — задача №07164990 (проект «Авторегистрация для Alfa ID и СберБизнес»): метод «реф. код партнёра → CRMThemeId»; реализован в 26.4200, проверен Красавиным М. «на схеме тензора» 2026-07-31 (status: resolved)
 - [[How does the LLM Wiki pattern work]] — how the pattern works and why it outperforms RAG at human scale (status: developing)
 - [[ReferralStub-Stats-Index-Questions]] — корешки: нужен ли фильтр по `ТипСвязи` при подсчёте всех статусов; покрытие индексами (карта+EffectiveDate), «жирный» индекс по `ТипСвязи` (status: open)
 
