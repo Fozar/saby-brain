@@ -85,4 +85,26 @@ All source pages — summaries of ingested documents, transcripts, articles, and
 - [[zvonok-tim-sveshnikov-mihel-referral-history-ui-2026-07-29]] (c-000228) — 2026-07-29 | Звонок 2/2 (+Витольд): дизайн-решение по кнопкам истории, вторая реф. сеть на бою | 1 page created, 1 entity created, 1 concept created
 - [[referral-history-implementation-breakdown-2026-07-29]] (c-000230) — 2026-07-29 | Диалог: разбор реализации UI истории (3 пункта, распределение Тимошенко/Лебедева) | 1 page created, 1 entity created
 
+---
+
+## Диалоги SBIS — batch 2026-07-31 (15 источников)
+
+- [[referral-history-implementation-breakdown-2026-07-29]] (c-000230, updated) — +2 сообщения 2026-07-31: уточнение имени объекта истории `ReferralStub`/`ReferralStub_<ID>`
+- [[crm-license-request-local-stand-2026-07-31]] (c-000234) — 2026-07-31 | Запрос лицензии CRM на локальном стенде (минорный)
+- [[sabybank-inn-kpp-stub-storage-2026-07-31]] (c-000235) — 2026-07-31 | Сохранение ИНН/КПП в корешках заявок SabyBank реализовано | 1 concept created
+- [[getpartnerlist-stub-stats-2026-07-31]] (c-000236) — 2026-07-31 | GetPartnerList: статистика по заявкам на основе корешков сдана | 1 concept created
+- [[getstublist-bug-no-records-2026-07-31]] (c-000237) — заведён 2026-07-14, координация репро 2026-07-31 | Баг GetStubList не возвращает записи у партнёра | 1 concept created
+- [[ref-deals-convert-feature-enable-2026-07-31]] (c-000238) — задача 2026-06-15, включение 2026-07-31 | Фича `ref_deals_convert`, включение на pre не подтверждено | 1 concept created
+- [[mr-review-stub-history-call-2026-07-30]] (c-000240) — 2026-07-30/31 | MR-ревью истории корешков: вопрос Мусохранова о фильтрации по программе → звонок
+- [[mr-comment-for-program-method-2026-07-31]] (c-000239) — 2026-07-31 | MR-комментарий: метод `for_program` добавлен в класс истории корешков
+- [[crmthemeid-plan-item-verified-2026-07-31]] (c-000241) — 2026-07-31 | GetCRMThemeId реализован в 26.4200, проверен Красавиным М. | 1 question page resolved
+- [[release-error-analysis-2026-07-31]] (c-000242) — 2026-07-31 | Рутинный пункт плана: выпуск версии, анализ ошибок
+- [[updatestub-status-check-2026-07-31]] (c-000243) — задача 2026-04-30, уточнение статуса 2026-07-31 | Статус ReferralProgram.UpdateStub (SabyBank) — уже внедрён
+- [[referral-transfer-hide-plan-item-2026-07-31]] (c-000244) — 2026-07-31 | Перенос/скрытие реф. программ между конфигурациями сдано | 1 concept created
+- [[movetoagentgroup-test-data-2026-07-30]] (c-000245) — 2026-07-30 | Проверка ReferralProgram.MoveToAgentGroup, подготовка тестовых данных
+- [[createstubsforexistingleads-bug-4100-2026-07-30]] (c-000246) — 2026-07-30 | Баг CreateStubsForExistingLeads не находит сделки, включена в 4100
+- [[zvonok-history-button-placement-2026-07-30]] (c-000247) — 2026-07-30 | Звонок: место кнопки истории корешка в интерфейсе (карточка vs опции записи реестра)
+
+Итог batch: 14 новых source-страниц + 1 обновление; 5 concept/decision-страниц создано, 3 обновлено (`ReferralStub-History-Scope-Cut`, `ReferralStub-DealSum-Field`, `ReferralStub-Backfill-Service-Method`, `ReferralProgram-History-UI-Design`); 1 question-страница закрыта (`ReferralProgram-CRMThemeId-By-Referral-Code`); 1 entity merge (Настя-QA → Земцова-Анастасия), 1 entity создана (Самарина-Ирина).
+
 ## Add new sources here after each ingest.

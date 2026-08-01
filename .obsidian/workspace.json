@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/entities/Мусохранов-Андрей-Владиславович.md",
+                "file": "wiki/entities/Алябушев-Александр-Александрович.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Мусохранов-Андрей-Владиславович"
+              "title": "Алябушев-Александр-Александрович"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/entities/Мусохранов-Андрей-Владиславович.md",
+                "file": "wiki/entities/Алябушев-Александр-Александрович.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Мусохранов-Андрей-Владиславович"
+              "title": "Обратные ссылки для Алябушев-Александр-Александрович"
             }
           },
           {
@@ -200,6 +200,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/sources/_index.md.tmp.55800.3764666b24f0",
+    "wiki/entities/Мусохранов-Андрей-Владиславович.md",
     "wiki/entities/_index.md.tmp.55800.6caabab4fa81",
     "wiki/questions/ReferralProgram-CRMThemeId-By-Referral-Code.md.tmp.55800.e2352d501acb",
     "wiki/questions/ReferralProgram-CRMThemeId-By-Referral-Code.md.tmp.55800.83e3d1d5ef2a",
@@ -210,7 +212,6 @@
     "wiki/concepts/ReferralStub-DealSum-Field.md.tmp.55800.2877015750a6",
     "wiki/concepts/ReferralStub-DealSum-Field.md.tmp.55800.30956cb4f14d",
     "wiki/meta/ReferralStub-History-Scope-Cut.md.tmp.55800.4f395cac65d6",
-    "wiki/meta/ReferralStub-History-Scope-Cut.md.tmp.55800.a33968bffa01",
     "wiki/meta/ReferralProgram-MoveToAgentGroup.md",
     "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md",
     "wiki/concepts/ReferralProgram-GetStubList-Bug-Partner-No-Records.md",
@@ -235,7 +236,6 @@
     "wiki/log.md",
     "wiki/entities/Самарина-Ирина.md",
     "raw/Диалоги SBIS/019fb25a-2372-78e0-baa5-c0e04ae2783c.md",
-    "raw/Диалоги SBIS/019fb20d-a75e-75c1-b116-982919ae574e.md",
     "b574f7eb0125c1b0124a6fc9ae01137f_MD5.avif",
     "d0b1a1d090a19d801608dc5637e37b4d_MD5.avif",
     "10671913693748aff0ddd78f4ab4b13b_MD5.avif",

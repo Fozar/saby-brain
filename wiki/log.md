@@ -10,6 +10,18 @@ related:
   - "[[index]]"
 ---
 
+## [2026-07-31] batch ingest | 15 диалогов SBIS — история корешков (for_program), перенос программ, GetCRMThemeId проверен
+
+- Type: batch ingest (15 источников `raw/Диалоги SBIS/`, 2026-07-30/31; 1 из них — обновление ранее ингестированного файла)
+- Sources: `019f1c60...` (update, +2 msg), `206d1fba...`, `971c21aa...`, `27e85adc...`, `019f60a3...`, `65e0d9ad...`, `44bd4968...`, `019fb1d0...`, `3067c623...`, `186b7743...`, `4c01a23b...`, `019f18d1...`, `79e80c8d...`, `019fb20d...`, `019fb25a...`
+- Pages created (source, 14): [[crm-license-request-local-stand-2026-07-31]] (c-000234), [[sabybank-inn-kpp-stub-storage-2026-07-31]] (c-000235), [[getpartnerlist-stub-stats-2026-07-31]] (c-000236), [[getstublist-bug-no-records-2026-07-31]] (c-000237), [[ref-deals-convert-feature-enable-2026-07-31]] (c-000238), [[mr-comment-for-program-method-2026-07-31]] (c-000239), [[mr-review-stub-history-call-2026-07-30]] (c-000240), [[crmthemeid-plan-item-verified-2026-07-31]] (c-000241), [[release-error-analysis-2026-07-31]] (c-000242), [[updatestub-status-check-2026-07-31]] (c-000243), [[referral-transfer-hide-plan-item-2026-07-31]] (c-000244), [[movetoagentgroup-test-data-2026-07-30]] (c-000245), [[createstubsforexistingleads-bug-4100-2026-07-30]] (c-000246), [[zvonok-history-button-placement-2026-07-30]] (c-000247)
+- Pages created (concept/decision, 5): [[ReferralProgram-GetPartnerList-Stub-Stats]] (c-000248), [[SabyBank-Stub-INN-KPP-Storage]] (c-000249), [[ReferralProgram-GetStubList-Bug-Partner-No-Records]] (c-000250), [[ReferralProgram-RefDealsConvert-Feature]] (c-000251), [[ReferralProgram-MoveToAgentGroup]] (c-000252)
+- Pages created (entity, 1): [[Самарина-Ирина]] (c-000233)
+- Entity merge: [[Настя-QA]] → [[Земцова-Анастасия]] (address c-000205 carried over) — identity confirmed across 5 of the 15 sources (miration/QA testing role matches)
+- Pages updated: [[referral-history-implementation-breakdown-2026-07-29]] (naming clarification `ReferralStub`/`ReferralStub_<ID>`), [[ReferralStub-History-Scope-Cut]] (§for_program, MR review call), [[ReferralStub-DealSum-Field]] (COUNT implemented, SUM still pending), [[ReferralStub-Backfill-Service-Method]] (bug fixed, enabled in 4100), [[ReferralProgram-History-UI-Design]] (button placement decision), [[ReferralProgram-CRMThemeId-By-Referral-Code]] (status: open → resolved), [[Свешников-Андрей]], [[Лебедева-Наталья]], [[Мусохранов-Андрей-Владиславович]], [[Тимошенко А.А.]], [[entities/_index]], [[concepts/_index]], [[sources/_index]], [[index]], [[hot]]
+- Key insight: `ReferralProgram.GetCRMThemeId` (задача №07164990) реализован в 26.4200 и практически проверен в целевом контексте («на схеме тензора») — первая полностью закрытая развилка из открытых вопросов batch 2026-07-29. Параллельно ревью Мусохранова на MR истории корешков ([[ReferralStub-History-Scope-Cut]]) вскрыло пробел в исходном объёме («истории по программе нет вообще») и потребовало доработки методом `for_program` в тот же день.
+- Contradictions: `[!contradiction]` добавлен в [[mr-review-stub-history-call-2026-07-30]] — исходная формулировка объёма [[ReferralStub-History-Scope-Cut]] («истории по корешкам программы нет, только по отдельности») вызвала возражение ревьюера и была расширена методом `for_program`, а не отменена
+
 ## [2026-07-30] save | Урезание объёма задачи истории реф. программы до истории корешков
 
 - Type: decision

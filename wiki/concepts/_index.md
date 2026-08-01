@@ -48,6 +48,11 @@ All concept pages — ideas, patterns, and frameworks extracted from sources.
 - [[Franchise-Loyalty-Architecture]] — franchise group support in loyalty DB: FranchiseRole Owner/Participant, UUID lists on ВидЦены/ВидКарты/CardType/Operation, cross-account activation
 - [[Loyalty-Franchise-Mechanics]] — БЛ Лояльности event subscriptions for franchise lifecycle: 5 events, folder creation logic, FranchiseRole values, sync/bonus flows
 - [[Franchise-Loyalty-System]] — business overview of franchise loyalty: Owner/Participant model, sync (full-overwrite by UUID), unified customer base via Owner account, СДК as shared balance store
+- [[ReferralProgram-GetPartnerList-Stub-Stats]] (c-000248) — GetPartnerList: статистика по количеству заявок (всех/успешных) из корешков (status: active)
+- [[SabyBank-Stub-INN-KPP-Storage]] (c-000249) — сохранение ИНН/КПП клиента в корешках заявок SabyBank (status: active)
+- [[ReferralProgram-GetStubList-Bug-Partner-No-Records]] (c-000250) — баг: GetStubList не возвращает записи у партнёра (status: open)
+- [[ReferralProgram-RefDealsConvert-Feature]] (c-000251) — фича `ref_deals_convert`: переход реестра «Заявки» на данные из корешков (status: developing)
+- [[ReferralProgram-MoveToAgentGroup]] (c-000252) — перенос/скрытие реф. программ между конфигурациями (status: active)
 
 ### Customer Journey / Маршруты (Путь клиента) — new scenario engine, developing
 
