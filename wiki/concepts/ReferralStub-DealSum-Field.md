@@ -3,7 +3,7 @@ type: concept
 address: c-000208
 title: "Сумма по сделкам в корешках — поле «Сумма» ВидЦеныДокумент"
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-07-31
 tags:
   - price-formation
   - referral-program
@@ -14,6 +14,7 @@ status: planned
 related:
   - "[[SabyBank-Stub-Rewards-Calculation]]"
   - "[[ReferralProgram-GetPartnerList-Unjoined-Partners]]"
+  - "[[ReferralProgram-GetPartnerList-Stub-Stats]]"
   - "[[ReferralStub-Stats-Index-Questions]]"
   - "[[SabyBank-RKO-Referral]]"
   - "[[zvonok-musohranov-timoshenko-2026-07-23]]"
@@ -43,3 +44,7 @@ related:
 ## Связь
 
 Продолжает [[SabyBank-Stub-Rewards-Calculation]] (§3 `GetPartnerList` был отложен — теперь к нему добавляется требование суммы по сделкам). Открытые вопросы по индексам/`ТипСвязи` — [[ReferralStub-Stats-Index-Questions]]. Проект: [[SabyBank-RKO-Referral]]. Источник: [[zvonok-musohranov-timoshenko-2026-07-23]].
+
+## Обновление 2026-07-31 — количество заявок реализовано, сумма остаётся отложенной
+
+[[ReferralProgram-GetPartnerList-Stub-Stats]]: `GetPartnerList` сдан со статистикой по **количеству** заявок (всех и успешных) на основе корешков — это `COUNT`-часть решения выше. Источник сдачи ([[getpartnerlist-stub-stats-2026-07-31]]) не упоминает поле «Сумма» и не подтверждает его наполнение — по умолчанию считать, что пункт 3 этого решения («пока писать пусто/ноль») всё ещё в силе. Статус страницы остаётся `planned` до явного подтверждения наполнения суммы.

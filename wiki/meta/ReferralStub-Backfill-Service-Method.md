@@ -3,7 +3,7 @@ type: decision
 address: c-000206
 title: "CreateStubsForExistingLeads — миграция корешков как служебный метод вместо ВНР"
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-07-31
 decision_date: 2026-07-23
 status: active
 tags:
@@ -18,6 +18,8 @@ related:
   - "[[ReferralProgram-Stub-Implementation]]"
   - "[[ReferralStub-TargetAction-Pattern]]"
   - "[[zvonok-musohranov-timoshenko-2026-07-22]]"
+  - "[[createstubsforexistingleads-bug-4100-2026-07-30]]"
+  - "[[Земцова-Анастасия]]"
 ---
 
 # CreateStubsForExistingLeads — миграция корешков как служебный метод вместо ВНР
