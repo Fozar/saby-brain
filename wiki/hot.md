@@ -14,6 +14,20 @@ related:
 
 # Recent Context
 
+## 2026-08-05 — Задача №07294792: мастер-фильтр заявок на корешках — чинился не счётчик, а вознаграждение
+
+**[[ReferralProgram-GetLeadPeriodList-Stub-Mode]]**: постановка «мастер-фильтр должен считать заявки по корешкам под фичей для обычных программ и всегда для SabyBank» на деле уже была выполнена для `LeadCount` — с коммита `4f0b9b8983` (17.06.26) подзапрос отбирает `ТипСвязи IS NOT NULL` по `ДатаВремя` безусловно. Незакрытым оставался **`Price`**: `IsStubMode` зависел только от `program_type == SABYBANK`.
+
+**Корень**: миграция сделок на корешки (`create_stubs_for_existing_leads.py:411`) вставляет корешок **без** `"Документ"` — только `OperationId`/`ТипСвязи`/`Бонусы`/`EffectiveDate`. Ветка `IsStubMode = "0"` ищет либо `Документ IS NOT NULL`, либо `Документ IS NULL AND OperationId IS NULL` — корешок сделки не подходит ни под одно условие, вознаграждение по нему терялось. Старые записи по сделкам миграция не удаляет → переключение режима суммы не задваивает.
+
+**Решение**: `IsStubMode = SabyBank OR check_feature(REF_DEALS_CONVERT)` — тот же гейт, что в [[ReferralProgram-GetPartnerList-Stub-Stats|GetPartnerList]] и `get_stats_helpers.use_stub_lead_counters`. Плюс отдельный признак `IsSabyBank`: у обычных программ даже в режиме корешков остаются вознаграждения за посетителей (корешками не оформляются) — без OR-ветки они бы молча пропали при включении фичи. `LeadCount` не трогали: без фичи поведение ровно прежнее.
+
+**Маркетинг здесь неприменим** (в отличие от `GetStats`/`GetPartnerList`): `SalesSources.ReadStat` агрегирует по `Place`/`AdObject` за один интервал без разбивки по месяцам, а фильтр запрашивает до 40 периодов за страницу (`DateFilter/PrefetchConfig.ts`) → до 40 межсервисных вызовов, догма «в цикле по строкам не делать межсервисных вызовов». Фронт колонку «Лиды» и так рисует только при `isSettlementsDeals || ref_deals_convert`.
+
+**Побочно**: `GetStubList` опознаёт корешок по `OperationId IS NOT NULL`, а `LeadCount` — по `ТипСвязи IS NOT NULL`; на боевых данных заполнены оба, расхождение закрыто коррелирующим тестом (`LeadCount` == `GetStubList(Date)`, `Price` == сумме `Price` из `GetStubList(Date, Status)`). 12/12 тестов OK, pylint 10/10, не закоммичено. Порядок выката: сначала домиграция ([[ReferralStub-Backfill-Service-Method]]), потом фича.
+
+---
+
 ## 2026-08-05 — Задача №07076892: выгрузка дисконтных карт в Excel — пять слоёв без потолка, БЛ-метод `Excel.SaveToFile` оказался нерабочим
 
 **[[ExportDiscountCard-Excel-Memory-Optimization]]**: `ExportDiscountCard.PrepareFile` выжирает память контейнера (утилизация 50.53, prod12/`online-ru-09`, инцидент 07.07.2026) и работает 2166 с. Причина не одна — пять независимых мест без ограничения, каждое умножается на число карт: выборка всех карт аккаунта без лимита → бонусный баланс ~5 запросов **на карту** → промежуточная python-матрица всех строк → `ms_excel.write2file_xlsx` строит книгу целиком в памяти (`xlsxwriter.Workbook(bio)` без `constant_memory`) → `bio.getvalue()` дублирует готовый zip.
@@ -248,6 +262,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 - **SabyBank RKO Referral**: [[SabyBank-RKO-Referral]] — релиз 18.08.2026
 - **Рекрутинговая рефералка «Приведи друга»**: [[RecruitmentReferral-Project]] — третья реферальная вертикаль, целевой документ «Кандидат на вакансию»; ранняя редакция (оценки/сроки не проставлены)
 - **История корешков реф. программы**: [[ReferralStub-History-Scope-Cut]] — backend готов, `for_program` добавлен 2026-07-31; UI (кнопки, размещение) — на август, см. [[ReferralProgram-History-UI-Design]]
+- **Реестр «Заявки» на корешках**: [[ReferralProgram-RefDealsConvert-Feature]] — фича `ref_deals_convert`; БЛ-методы переведены (`GetStats`, `GetPartnerList`, [[ReferralProgram-GetLeadPeriodList-Stub-Mode|GetLeadPeriodList]]), включение на `pre` пока не подтверждено
 - **Перенос реф. программ между конфигурациями**: [[ReferralProgram-MoveToAgentGroup]] — реализовано, тестируется (Земцова)
 
 Полная история — [[log]].
