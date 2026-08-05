@@ -10,6 +10,14 @@ related:
   - "[[index]]"
 ---
 
+## [2026-08-05] save | GetLeadPeriodList — мастер-фильтр заявок на корешках под ref_deals_convert
+
+- Type: decision
+- Location: wiki/meta/ReferralProgram-GetLeadPeriodList-Stub-Mode.md (c-000254)
+- From: conversation on price-formation — задача №07294792 (этап «Реестр "Заявки" на данных из "корешков"»), реализация + тесты
+- Key insight: постановка «считать заявки по корешкам под фичей» уже была выполнена для `LeadCount` (коммит `4f0b9b8983`, 17.06.26 — `ТипСвязи IS NOT NULL` безусловно); реально не работал `Price`, потому что миграция (`create_stubs_for_existing_leads.py:411`) создаёт корешок **без** `"Документ"`, а ветка `IsStubMode = "0"` ловит только `Документ IS NOT NULL` либо `Документ IS NULL AND OperationId IS NULL` — корешок сделки не подходит ни под одно условие. Решение: `IsStubMode = SabyBank OR check_feature(REF_DEALS_CONVERT)` (тот же гейт, что в `GetPartnerList`/`GetStats`) + новый признак `IsSabyBank`, сохраняющий вознаграждения за посетителей у обычных программ. Маркетинговой ветки в этом методе нет и быть не может: `SalesSources.ReadStat` агрегирует за один интервал без разбивки по месяцам, а фильтр запрашивает до 40 периодов за страницу. Побочно зафиксировано расхождение признаков корешка: `GetStubList` — по `OperationId`, `LeadCount` — по `ТипСвязи`; закрыто коррелирующим тестом
+- Pages updated: [[index]], [[hot]], [[ReferralProgram-RefDealsConvert-Feature]]
+
 ## [2026-08-05] save | ExportDiscountCard.PrepareFile — выгрузка карт в Excel без памяти
 
 - Type: synthesis
