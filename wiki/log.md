@@ -10,6 +10,14 @@ related:
   - "[[index]]"
 ---
 
+## [2026-08-05] save | Событие смены источника у сделки — локальная подписка вместо доработки CRM
+
+- Type: decision
+- Location: wiki/meta/ReferralProgram-SourceChanged-Local-Event.md
+- From: conversation on price-formation — задача №07222426 (корешок при смене источника у существующей сделки). Разбор клиентского `.sbislogz` + серверных логов облака `pre-test-online`, сцепленных по `uuid` асинхронного вызова через `SalesSources.ManualPick` (advert-service) → `SourcesSales.InstalledOnLead` (пул `online`)
+- Key insight: `SourcesSales.InstalledOnLead` публикует локальные события `salessources.source_changed`/`sourcessales.name_changed` **в пуле `online`**, том же, где упакован `LoyaltyReferral` — начальный вывод «local = нужна доработка CRM» был неверным; в `on_event.py` уже есть рабочий прецедент того же паттерна (`Lead.StateChanged` → `event.SetLocalCallback`). Побочно поправлено описание параметров `cloud_get_logs` в `sbis-mcp/src/sbis_mcp/server.py` — naive `from_dt`/`to_dt` трактуются как локальное время хоста MCP-сервера (UTC+7), не UTC и не московское.
+- Pages updated: [[index]], [[hot]]
+
 ## [2026-07-31] batch ingest | 15 диалогов SBIS — история корешков (for_program), перенос программ, GetCRMThemeId проверен
 
 - Type: batch ingest (15 источников `raw/Диалоги SBIS/`, 2026-07-30/31; 1 из них — обновление ранее ингестированного файла)

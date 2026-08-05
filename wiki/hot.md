@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-07-31
+updated: 2026-08-05
 tags:
   - meta
   - hot-cache
@@ -13,6 +13,16 @@ related:
 ---
 
 # Recent Context
+
+## 2026-08-05 — Задача №07222426: событие смены источника у сделки найдено внутри пула `online`, доработка CRM не нужна
+
+**[[ReferralProgram-SourceChanged-Local-Event]]**: чтобы создавать корешок при смене источника у *существующей* сделки на реферальный (сейчас — только при создании новой), нужно было найти событие смены источника. Разбор клиентского `.sbislogz` (смена источника в UI Деловые линии → Птица-Синица, ООО) + серверных логов `pre-test-online`, сцепленных по `uuid` асинхронного вызова: `SalesSources.ManualPick` (advert-service, отдельный физический сервис) → async `SourcesSales.InstalledOnLead` — выполняется **в пуле `online`**, том же, где упакован `LoyaltyReferral`.
+
+**Ключевой разворот вывода**: `SourcesSales.InstalledOnLead` публикует два «локальных» события (`[event][local]` в логе) — `salessources.source_changed` (`ObjectId`/`TypeName`/`Place`/`AdObject`/`OldSourceId`) и `sourcessales.name_changed`. Первая гипотеза («local» = недоступно снаружи, нужна доработка CRM, добавляющая price-formation в список async-подписчиков рядом с `KPIDoc.NeedCalculateOnSourceChange` и др.) была **отвергнута**: по [[Server-Events-Bus]] «local» означает лишь, что издатель и подписчик оказались в одном воркере — брокер не участвует, событие не становится недоступным снаружи процесса публикации. Прямой прецедент в самом price-formation: `on_event.py:16-20` уже подписывает `ReferralProgram.HandleLeadStateChanged` на `Lead.StateChanged` через `event.SetLocalCallback` — тот же паттерн. Решение: добавить аналогичную подписку на `salessources.source_changed` в `on_event.py`, без правок со стороны CRM/advert-service. Не проверено на практике — нужен тестовый обработчик на стенде перед полной реализацией.
+
+**Побочная находка**: описание параметров `cloud_get_logs` (MCP-сервер `sbis-mcp`) вводило в заблуждение — naive `from_dt`/`to_dt` трактуются как локальное время **хоста MCP-сервера** (в этой среде — UTC+7), не UTC и не московское; три первых запроса логов промахнулись мимо окна из-за этого. Docstring в `sbis-mcp/src/sbis_mcp/server.py` поправлен.
+
+---
 
 ## 2026-07-31 — Batch ingest 15 диалогов SBIS: for_program закрывает пробел в истории корешков, GetCRMThemeId проверен, entity-merge Земцова
 

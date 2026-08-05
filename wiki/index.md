@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-07-31 | Total pages: 436 | Sources ingested: 230
+Last updated: 2026-08-05 | Total pages: 437 | Sources ingested: 230
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -86,6 +86,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Price Formation — Decisions
 
+- [[ReferralProgram-SourceChanged-Local-Event]] — задача №07222426: `SourcesSales.InstalledOnLead` (смена источника у сделки) публикует локальные события `salessources.source_changed`/`sourcessales.name_changed` в пуле `online` — том же, где живёт LoyaltyReferral; подписка через `event.SetLocalCallback` (прецедент — `Lead.StateChanged`), без доработок CRM (status: active)
 - [[ReferralStub-History-Scope-Cut]] (c-000232) — задача №07012946: объём урезан до отдельной истории корешка (`ReferralStubHistory`, объект `ReferralStub`, id = `OperationId`); `GetHistoryList`, проваливание из истории оффера и `event_attributes` в `HistoryObject` удалены из ветки (reset + force-push); в историю оффера корешки не пишут вообще (status: active)
 - [[ReferralStub-Backfill-Service-Method]] (c-000206) — миграция корешков по существующим реф. сделкам вынесена из ВНР в служебный метод `ReferralProgram.CreateStubsForExistingLeads(ProgramId, DryRun)`: одна программа за вызов, возврат `Stubs` для сверки по идентификаторам, идемпотентность по `OperationId`; ВНР — тонкая обёртка (status: active)
 - [[Loyalty-IterativeLoading-TD-CommonSolutions]] — ТД итеративной загрузки (пункт 594287653): мастер в Бонусах + ссылки из ДК/Промокодов/Реферальной; иерархия классов на 4100 (не-итеративные базы удалены, `GetClientListWithStats` де-итеративизирован); предложение раздела БЗ «Общие решения» (status: active)
