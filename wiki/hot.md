@@ -14,6 +14,18 @@ related:
 
 # Recent Context
 
+## 2026-08-05 — Задача №07076892: выгрузка дисконтных карт в Excel — пять слоёв без потолка, БЛ-метод `Excel.SaveToFile` оказался нерабочим
+
+**[[ExportDiscountCard-Excel-Memory-Optimization]]**: `ExportDiscountCard.PrepareFile` выжирает память контейнера (утилизация 50.53, prod12/`online-ru-09`, инцидент 07.07.2026) и работает 2166 с. Причина не одна — пять независимых мест без ограничения, каждое умножается на число карт: выборка всех карт аккаунта без лимита → бонусный баланс ~5 запросов **на карту** → промежуточная python-матрица всех строк → `ms_excel.write2file_xlsx` строит книгу целиком в памяти (`xlsxwriter.Workbook(bio)` без `constant_memory`) → `bio.getvalue()` дублирует готовый zip.
+
+**Решение**: (1) баланс пачками по 1000 с группировкой по типу карты — существующий `sql_get_bonus_operations` расширен необязательным `card_id_list` (директивы `{% ifnull %}`/`{% ifnotnull %}`), `CardId` первым в `ORDER BY` → разбор потока по картам одним проходом; расчёт `calculate_bonus_balance` общий, не продублирован; франшиза (`FranchiseRole is not None`) и не-облако остаются на поштучном пути через `discount-cards`; (2) построчная запись через `excel.light_printer.LightPrinter({'ConstantMemory': True})` — модуль `Excel` уже был в зависимостях `PriceFormation.Online.s3mod`; (3) потолок `_MAX_EXPORT_ROWS = 500000` как предохранитель.
+
+**Главная находка (переиспользуемая)**: звать выгрузку через `sbis.Excel.SaveToFile` **нельзя** — `RecordSetToExcel.__init__` (`rs_printer.py:77`) делает `self.options.get("RoundFields", None)` на пришедшем `sbis.Record`, а у `sbis.Record.get()` сигнатура без аргументов (`Record.pyi:736`) → `TypeError` на любом непустом `Options`; с `Options=None` включается `in_memory=True`, то есть никакой экономии памяти. Корректно разбирают `Options` только `Excel.Save`/`Excel.SaveList` через `save_custom` (`options.as_dict()`), но они требуют списочного БЛ-метода — это отдельная архитектура (вариант B, отложен).
+
+**Побочно**: `ms_excel` писал все ячейки через `str(value)` — суммы в выгрузках не складывались, переход на `Excel` чинит это попутно (видимое для клиентов изменение); `ExportPersonalBalance._lrs_task_method` указывает на `ExportDiscountCard.PrepareFile` — чужой экспорт, баг не фикшен (расширять фикс без согласования нельзя); причина скипа `TestExportPromocode` (зависимости CAOnline у `ms_excel`) отпала. pylint 10/10, все тесты OK, но модуль `Excel` в тестовом проекте замокан — **реальное формирование файла автотестами не покрывается**, нужна ручная проверка на стенде. Перенесено на дальнюю веху: затронут базовый класс всех трёх выгрузок и общий SQL бонусного баланса.
+
+---
+
 ## 2026-08-05 — Задача №07222426: событие смены источника у сделки найдено внутри пула `online`, доработка CRM не нужна
 
 **[[ReferralProgram-SourceChanged-Local-Event]]**: чтобы создавать корешок при смене источника у *существующей* сделки на реферальный (сейчас — только при создании новой), нужно было найти событие смены источника. Разбор клиентского `.sbislogz` (смена источника в UI Деловые линии → Птица-Синица, ООО) + серверных логов `pre-test-online`, сцепленных по `uuid` асинхронного вызова: `SalesSources.ManualPick` (advert-service, отдельный физический сервис) → async `SourcesSales.InstalledOnLead` — выполняется **в пуле `online`**, том же, где упакован `LoyaltyReferral`.

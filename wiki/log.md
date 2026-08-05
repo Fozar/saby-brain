@@ -10,6 +10,14 @@ related:
   - "[[index]]"
 ---
 
+## [2026-08-05] save | ExportDiscountCard.PrepareFile — выгрузка карт в Excel без памяти
+
+- Type: synthesis
+- Location: wiki/questions/ExportDiscountCard-Excel-Memory-Optimization.md (c-000253)
+- From: conversation on price-formation — задача №07076892 (регламент «Ошибка», инцидент 6a4cd630aff653d23a7b7db5 от 07.07.2026, prod12/online-ru-09, утилизация памяти 50.53, метод 2166 с). Серверные логи недоступны (retention 3 суток), разбор целиком по коду
+- Key insight: БЛ-метод `Excel.SaveToFile` непригоден для больших выгрузок — `RecordSetToExcel.__init__` (`rs_printer.py:77`) зовёт `self.options.get("RoundFields", None)` на пришедшем `sbis.Record`, у которого `get()` объявлен без аргументов и «ничего не делает» (`Record.pyi:736`) → `TypeError` на любом непустом `Options`; с `Options=None` включается `in_memory=True` и книга опять целиком в памяти. Корректно разбирают `Options` только `Excel.Save`/`SaveList` через `save_custom` (`options.as_dict()`), но им нужен списочный БЛ-метод. Отсюда прямой импорт `excel.light_printer.LightPrinter`. Побочно: `ms_excel` делал все ячейки текстом (`str(value)`), переход на `Excel` это чинит; `ExportPersonalBalance._lrs_task_method` указывает на чужой экспорт (не фикшено); причина `@test_new_skip` у `TestExportPromocode` (зависимости CAOnline) отпала
+- Pages updated: [[index]], [[hot]]
+
 ## [2026-08-05] save | Событие смены источника у сделки — локальная подписка вместо доработки CRM
 
 - Type: decision
