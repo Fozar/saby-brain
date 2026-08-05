@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-08-05 | Total pages: 437 | Sources ingested: 230
+Last updated: 2026-08-05 | Total pages: 438 | Sources ingested: 230
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -99,6 +99,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Price Formation — Analysis
 
+- [[ExportDiscountCard-Excel-Memory-Optimization]] (c-000253) — задача №07076892 / инцидент 07.07.2026: `ExportDiscountCard.PrepareFile` ест память контейнера (утилизация 50.53) и работает 2166 с. Пять слоёв без потолка: выборка карт без лимита → баланс ~5 запросов **на карту** → промежуточная python-матрица → `ms_excel` строит книгу целиком в памяти → `bio.getvalue()` дублирует zip. Фикс: баланс пачками по 1000 с группировкой по типу карты (расширен `sql_get_bonus_operations` параметром `card_id_list`, расчёт не продублирован; франшиза остаётся поштучной), построчная запись через `excel.light_printer.LightPrinter` в `ConstantMemory`, потолок `_MAX_EXPORT_ROWS=500000`. Ключевая находка: БЛ-метод `Excel.SaveToFile` непригоден — `RecordSetToExcel` зовёт `options.get("RoundFields", None)` на `sbis.Record`, у которого `get()` без аргументов. pylint 10/10, тесты OK, на стенде не проверено; перенесено на дальнюю веху (status: developing)
 - [[Bonus-GetSaleList-SuspectSaleIds-Hash-Regression]] (c-000211) — задача №06244326: `Bonus.GetSaleList` 16–17 с на автотестовом аккаунте, реестр «Бонусы/Покупки» рвёт скролл. `EXPLAIN`: 13.29 из 13.33 с — в CTE `SuspectSaleIds` при пустом результате; планировщик разворачивает коррелированный `EXISTS` в hash semi-join и материализует всю историю бонусов клиента (3 млн строк, 2.4 млн buffers, хеш на диск). Не про EMA/размер блока (выборка блока 32.8 мс) и не про отсутствие индексов; на бою (rc-26.3248) тот же код — латентно. **Фикс реализован и замерен: 14 530 → 225 мс (~53×)** через `BlockBound`/`BlockSales` + `OFFSET 0` (не `AS MATERIALIZED` — стенд на PG 10.21); тесты 41 OK, планы в `logs/explain-06244326/`. Не закоммичено, ветка не выбрана (status: developing)
 - [[DCQuestionary-BirthDay-Existing-Client-Bug]] (c-000196) — баг №0625711: анкета выдачи ДК не проставляет дату рождения существующему клиенту без неё; собственная регрессия от апрельского MR !141867 (убрал `BirthDay` из `UpdateFields` целиком, фикся другой баг — перезапись). Фикс: `NeedSearchResult=True` + fail-closed чтение `SearchResult.BirthDay` + точечный `CRMClients.SaveCustomer`. Смежные находки (не фикшены): та же безусловная перезапись в `helpers.py`/`process_file.py` (status: fixed)
 - [[Bonus-GetTotalBalance-Local-Card-Scan-Memory]] (c-000207) — задача 07208958: `GetBonusesNew` ест ~1 ГБ/итерация на `test-inside`; отложенный хвост 05292113 — после починки СДК-ветки (`1be452e6e2`) доминирующим стал локальный скан `Карта`. Дорогие джойны (`ЧастноеЛицо` ~750 МБ, `ВидКарты EP` ~210 МБ) нужны только ради `IsFranchise`, а он влияет на результат лишь при `has_franchise=True` → предложено сделать их условными. Открыто: франшизный ли аккаунт (status: developing)
