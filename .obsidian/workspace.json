@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/meta/ReferralProgram-SourceChanged-Local-Event.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "ReferralProgram-SourceChanged-Local-Event"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -96,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/meta/ReferralProgram-SourceChanged-Local-Event.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,6 +197,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/meta/ReferralProgram-SourceChanged-Local-Event.md",
     "wiki/hot.md.tmp.42800.69375a274e0b",
     "wiki/hot.md.tmp.42800.39f50f4d159e",
     "wiki/log.md.tmp.42800.e9c6ca876a82",
@@ -214,7 +210,6 @@
     "wiki/index.md.tmp.40540.95aa8a66c358",
     "wiki/index.md.tmp.40540.a9865888bcc0",
     "wiki/questions/ExportDiscountCard-Excel-Memory-Optimization.md",
-    "wiki/questions/ExportDiscountCard-Excel-Memory-Optimization.md.tmp.40540.1d2f7ddd3847",
     "wiki/hot.md",
     "wiki/entities/Алябушев-Александр-Александрович.md",
     "wiki/entities/Мусохранов-Андрей-Владиславович.md",

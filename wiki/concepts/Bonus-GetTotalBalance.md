@@ -17,6 +17,8 @@ related:
   - "[[DiscountCard-Service-API]]"
   - "[[Wasaby-DB-Access-Patterns]]"
   - "[[Bonus-GetTotalBalance-Franchise-Performance]]"
+  - "[[Bonus-GetTotalBalance-Local-Card-Scan-Memory]]"
+  - "[[Card-IsBonus-Flag]]"
 created: 2026-04-10
 ---
 
@@ -147,14 +149,19 @@ FROM combined
 ## SDK-хелперы
 
 ```python
-_get_balance_by_cards(card_uuids)
-    → sbis.EndPoint(ServiceName.discount_cards).Card.GetBonusBalanceByCards(uuids)
-    → dict[CardUUID, Bonus] или None при ошибке (+ WarningMsg)
+_get_personal_cards_balance_sum()
+    → sbis.EndPoint(ServiceName.discount_cards).Card.GetPersonalCardBonusBalanceSum(ClientID)
+    → скаляр или 0 при ошибке (+ WarningMsg)
 
 _get_balance_by_card_type(agent_group_id, card_type_uuid)
     → sbis.EndPoint(ServiceName.discount_cards).Card.GetBonusBalanceByCardType(uuid)
     → float или None при ошибке/партнёрской роли
 ```
+
+> [!note] Поимённый `_get_balance_by_cards` больше не существует
+> Заменён скалярным `_get_personal_cards_balance_sum()` коммитом `1be452e6e2` (23.06.2026) —
+> см. [[Bonus-GetTotalBalance-Franchise-Performance]]. Массив 80k UUID в аргументе и возврат
+> 79 943 строк ушли.
 
 ---
 

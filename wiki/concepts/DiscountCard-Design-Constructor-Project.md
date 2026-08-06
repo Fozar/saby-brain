@@ -3,7 +3,7 @@ type: concept
 address: c-000193
 title: "DiscountCard Design Constructor — Project"
 created: 2026-07-03
-updated: 2026-07-03
+updated: 2026-08-06
 status: developing
 tags:
   - loyalty
@@ -16,6 +16,9 @@ related:
   - "[[DiscountCard-Subsystem-Overview]]"
   - "[[Ютман-Элина]]"
   - "[[Омельяненко-Егор-Анатольевич]]"
+  - "[[Черных-Константин-Евгеньевич]]"
+  - "[[Куимова-Наталья-Владимировна]]"
+  - "[[discount-card-design-constructor-attachments-2026-08-06]]"
 ---
 
 # DiscountCard Design Constructor — Project
@@ -75,3 +78,9 @@ Source: `Техническое задание.pdf`, `Описание бизн�
 ## Таймлайн и охват внедрения
 
 См. детали → [[DiscountCard-Design-Constructor-WorkPlan]]. Техническое решение → [[DiscountCard-Design-Constructor-Architecture]].
+
+## Команда
+
+Менеджер проекта — [[Черных-Константин-Евгеньевич|Черных К. Е.]], технический руководитель — [[Ютман-Элина|Ютман Э. Ю.]], ответственный тестировщик — [[Куимова-Наталья-Владимировна|Куимова Н. В.]]. Полный состав (31 участник, 251,5 чд) — [[DiscountCard-Design-Constructor-WorkPlan]] §Команда и роли.
+
+Карточка проекта в SBIS: `project.sbis.ru/uuid/27bc0552-d5e9-4bf0-a351-8da9418d284b`, `doc_id=552551747` — оттуда достаются вложения, см. [[discount-card-design-constructor-attachments-2026-08-06]].

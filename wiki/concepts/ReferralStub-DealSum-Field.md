@@ -3,15 +3,15 @@ type: concept
 address: c-000208
 title: "Сумма по сделкам в корешках — поле «Сумма» ВидЦеныДокумент"
 created: 2026-07-23
-updated: 2026-07-31
+updated: 2026-08-06
 tags:
   - price-formation
   - referral-program
   - sabybank
   - sql
-  - open-question
-status: planned
+status: resolved
 related:
+  - "[[ReferralStub-LeadSum-Implementation]]"
   - "[[SabyBank-Stub-Rewards-Calculation]]"
   - "[[ReferralProgram-GetPartnerList-Unjoined-Partners]]"
   - "[[ReferralProgram-GetPartnerList-Stub-Stats]]"
@@ -44,6 +44,18 @@ related:
 ## Связь
 
 Продолжает [[SabyBank-Stub-Rewards-Calculation]] (§3 `GetPartnerList` был отложен — теперь к нему добавляется требование суммы по сделкам). Открытые вопросы по индексам/`ТипСвязи` — [[ReferralStub-Stats-Index-Questions]]. Проект: [[SabyBank-RKO-Referral]]. Источник: [[zvonok-musohranov-timoshenko-2026-07-23]].
+
+## Обновление 2026-08-06 — сумма реализована, пункт 3 отменён
+
+[[ReferralStub-LeadSum-Implementation]]: задача №08052776 закрывает пункт 3 («пока писать пусто/ноль»).
+Поле API названо `LeadSum` — одноимённо колонке `GetPartnerList`. Наполняется тремя путями: `CreateStub`
+и `UpdateStub` (присылает вызывающая сторона; для SabyBank — после доработки на их стороне),
+`CreateStubsForExistingLeads` (из `ДокументРасширение.Сумма` сделки) и `HandleLeadStateChanged`
+(обычные реферальные сделки, у которых на момент создания корешка суммы ещё нет). Место хранения —
+ровно то, что решено 23.07: колонка `Сумма` `ВидЦеныДокумент`, `SUM` рядом с `COUNT`.
+
+Открытым остаётся только **доброска уже созданных корешков** — миграция идемпотентна по `OperationId`
+и повторный прогон существующие корешки пропускает.
 
 ## Обновление 2026-07-31 — количество заявок реализовано, сумма остаётся отложенной
 
