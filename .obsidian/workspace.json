@@ -11,10 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           }
         ]
@@ -197,6 +197,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/concepts/ReferralProgram-SabyNet-Widgets-Redesign.md",
+    "wiki/concepts/ReferralProgram-SabyNet-Widgets-Redesign.md.tmp.28848.2f5415a22eaa",
+    "wiki/concepts/ReferralProgram-Leads-Section.md",
+    "wiki/concepts/ReferralProgram-Leads-Section.md.tmp.28848.8596cf0cd8ec",
+    "wiki/concepts/ReferralProgram-ContractorCard-Programs-Tab.md",
+    "wiki/concepts/ReferralProgram-ContractorCard-Programs-Tab.md.tmp.28848.c03c8ac7c88a",
     "wiki/concepts/ReferralProgram-Folders-Priority-Sprint.md",
     "wiki/concepts/ReferralProgram-Folders-Priority-Sprint.md.tmp.28848.001fa1b01c29",
     "wiki/concepts/ReferralProgram-Part2-Project.md",
@@ -208,9 +214,6 @@
     "wiki/index.md.tmp.42800.7137b27073c2",
     "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md.tmp.42800.4b2bd5305713",
     "wiki/meta/ReferralProgram-GetLeadPeriodList-Stub-Mode.md",
-    "wiki/meta/ReferralProgram-GetLeadPeriodList-Stub-Mode.md.tmp.42800.cae2f51090f0",
-    "wiki/hot.md.tmp.40540.2c365f473f28",
-    "wiki/log.md.tmp.40540.c46fe800515b",
     "wiki/questions/ExportDiscountCard-Excel-Memory-Optimization.md",
     "wiki/hot.md",
     "wiki/entities/Алябушев-Александр-Александрович.md",
@@ -230,9 +233,6 @@
     "wiki/sources/mr-comment-for-program-method-2026-07-31.md",
     "wiki/sources/mr-review-stub-history-call-2026-07-30.md",
     "wiki/sources/ref-deals-convert-feature-enable-2026-07-31.md",
-    "wiki/sources/getstublist-bug-no-records-2026-07-31.md",
-    "wiki/sources/getpartnerlist-stub-stats-2026-07-31.md",
-    "wiki/sources/sabybank-inn-kpp-stub-storage-2026-07-31.md",
     "b574f7eb0125c1b0124a6fc9ae01137f_MD5.avif",
     "d0b1a1d090a19d801608dc5637e37b4d_MD5.avif",
     "10671913693748aff0ddd78f4ab4b13b_MD5.avif",
