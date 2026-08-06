@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-08-05 | Total pages: 438 | Sources ingested: 230
+Last updated: 2026-08-06 | Total pages: 450 | Sources ingested: 231
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -66,6 +66,15 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Price Formation — Concepts
 
+- [[ReferralProgram-Part2-Project]] (c-000260) — зонтик проекта «Реферальная программа (2 часть)» (`project.sbis.ru/uuid/15d9be83-…`, doc_id=544981304): 10 спринтов ЛК Владельца/Партнёра в SabyNet, 30 партнёров / 5–7 владельцев, ответственные; здесь же первоисточник перехода статистики на корешки (status: developing)
+- [[ReferralProgram-Folders-Priority-Sprint]] (c-000261) — спринт №2 (78 дней): папки офферов через `ВидЦены.Раздел` без изменения схемы, `Folder`/`FolderName`, новый `ReferralProgram.Move` (сигнатура `IndexNumber.Move`), фильтр `IsJoined` по наличию `AdObject`, поля статистики в `GetList` (включая `LeadSum`), отказ от Маркетинга в пользу `ВидЦеныДокумент` (7д), курсорная навигация заявок 6д (status: developing)
+- [[ReferralProgram-ContractorCard-Programs-Tab]] (c-000262) — спринт №3 (35,5 дней): новые `ReferralProgram.GetListByContractor` (цепочка Карта→ВидКарты→ВидЦеныВидКарты→ВидЦены) и `ContractorHasPrograms` (GetListByContractor с лимитом 1) + встраивание в `Контрагент.CRMNavigationPreload` (status: developing)
+- [[ReferralProgram-SelfJoin]] (c-000267) — самостоятельное присоединение партнёра через `saby.ru/referral` без приглашения владельца (45 дней, 26.51xx): страница `partners.saby.ru/<ИД группы>/accept`, признак автоподключения на группе через ВНР, авто-создание и акцепт приглашения + заявка «Агенты Saby»; только ЮЛ (status: developing)
+- [[ReferralProgram-Offer-Visibility]] (c-000265) — доступность офферов «Всем кроме» + папки партнёров в `ВидЦеныРасширение.ТипПредоставления` по аналогии с доступностью скидки по клиентам; отвергнут вариант с отдельными бизнес-группами (status: developing)
+- [[ReferralProgram-Leads-Section]] (c-000263) — сквозной раздел «Лиды» по всем программам для Владельца и Партнёра: помесячная статистика, карусель программ, фильтры, создание лида (status: developing)
+- [[ReferralProgram-SabyNet-Widgets-Redesign]] (c-000264) — разводящая и виджеты реф. сети: плиточные «Мои программы»/«Станьте участником», таблица «Партнёры», удаление виджета «Новости»; разработки почти нет — настройка конфигурации на inside + перенос виджетов из компонента «Система лояльности» (status: developing)
+- [[ReferralProgram-Offer-Topics]] (c-000266) — темы (теги направлений бизнеса) у офферов + поиск; три независимых механизма группировки: папки офферов / папки партнёров / темы (status: developing)
+- [[ReferralProgram-SabyNet-Offer-Contract]] (c-000268) — спринт №4: новый тип договора «Оферта SabyNet» вместо агентского при приглашении партнёра (без вознаграждения и срока), выбор аккаунта при выборе юрлица (status: developing)
 - [[LoyaltyReferral-Module-Extraction]] — выделение рефералки в отдельный СБИС-модуль LoyaltyReferral: план Андрея (4 этапа), зависимости (mirror KZ, rightcheck→Rights-Py, user_service_cloud→UserServiceCloud-Py), регистрация в online32.s3srv:454, симлинки tests_new→tests, echo-метод, грабли test_manager (задача 05256826) (status: developing)
 - [[ReferralProgram-SetPrice-Record-Return]] — SetStubPrice/SetLeadPrice возвращают Record(AccruedCount, NotAccruedCount) вместо int; «скольким начислено / нет» как в DiscountCard.BatchDeleteOrLock (задача 04307161, saby bank) (status: developing)
 - [[ReferralProgram-Data-Model]] — модель данных реф. программ: ВидЦены→Раздел→БизнесГруппа, AdObject-источники, access_data_guid, utm_rfcid, миграция между Реф. Сетями (задача 06096778) (status: developing)
@@ -350,6 +359,8 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Entities
 
+- [[Тихонов-Илья]] (c-000269) — разработчик БЛ спринта самоприсоединения к реф. программе: метод инфо о программе (2д) + метод автоподключения (3д) (status: current)
+- [[Кулешов-Дмитрий]] (c-000270) — frontend спринта самоприсоединения: страница `partners.saby.ru/<ИД>/accept`, компонент автоподключения, редирект из диалога регистрации (status: current)
 - [[Тимошенко А.А.]] — инженер-программист 2+, Тензор; BL loyalty/price-formation, SabyBank RKO Referral, DWC-промокоды (status: current)
 - [[Свешников-Андрей]] (c-000048) — менеджер проекта 2+, Тензор; проект-менеджер рефералки/SabyBank RKO, со-ответственный за реф. сеть на бою (status: current)
 - [[Михель-Витольд]] (c-000226) — со-ответственный (с Свешниковым) за реф. сеть на бою и тестовых; участвует в проектировании UI истории изменений (status: current)
@@ -381,6 +392,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Sources
 
+- [[referral-program-part2-attachments-2026-08-06]] (c-000271) — 2026-08-06 | 14 вложений карточки проекта «Реферальная программа (2 часть)» | 9 concepts + 2 entities created; 3 документа — пустые шаблоны (status: current)
 - [[retail-presto-offline-dev-2025]] — 2026-06-11 | 2 docs: инструкция по разработке в офлайне + диалог о подмене модулей | 1 concept created (c-000074) (status: current)
 - [[loyalty-vis-org-2026-05-26]] — 2026-05-26 | пasted text: оргструктура «Система лояльности + Транспорт ВИС» | 9 pages created (c-000036..c-000045)
 - [[tensor-company-docs-2026-04-12]] — 2026-04-12 | 4 docs: company culture, principles, rules, glossary | 3 pages created
