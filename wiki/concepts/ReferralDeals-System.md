@@ -18,6 +18,7 @@ related:
   - "[[AT-Coverage-ReferralDeals-Project]]"
   - "[[SabyBank-RKO-Referral]]"
   - "[[RecruitmentReferral-Project]]"
+  - "[[ReferralProgram-Part2-Project]]"
 created: 2026-04-10
 ---
 
@@ -26,6 +27,9 @@ created: 2026-04-10
 Navigation: [[price-formation/_index]] | [[ReferralProgram-Module]] | [[Loyalty-Database-Schema]]
 
 Подсистема предоставляет прозрачный механизм учёта и тарификации сделок, создаваемых в процессе продвижения Партнёрами продуктов Владельца реферальных программ.
+
+> [!note] Продуктовое развитие этой подсистемы
+> ЛК Владельца и Партнёра, разделы «Программы» и «Лиды», виджеты, папки и доступность офферов развиваются проектом [[ReferralProgram-Part2-Project]] («Реферальная программа (2 часть)», с окт. 2025).
 
 > [!note] Отличие от ReferralProgram-Module
 > [[ReferralProgram-Module]] описывает онлайн-реферальную программу (utm-ссылки, РКО в банке). «Реферальная система сделок» — отдельная подсистема на платформе SabyNet, ориентированная на явные сделки (Leads) с расчётом вознаграждений Партнёрам.

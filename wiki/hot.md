@@ -5,6 +5,7 @@ updated: 2026-08-06
 tags:
   - meta
   - hot-cache
+  - referral
 status: evergreen
 related:
   - "[[index]]"
@@ -13,6 +14,20 @@ related:
 ---
 
 # Recent Context
+
+## 2026-08-06 — Вложения проекта «Реферальная программа (2 часть)»: найден первоисточник корешков и незакрытый хвост `LeadSum`
+
+**[[ReferralProgram-Part2-Project]]**: карточка `project.sbis.ru/uuid/15d9be83-…` → `doc_id=544981304`, 14 документов. Проект — **продуктовая обвязка** (ЛК Владельца/Партнёра в SabyNet) над тем ядром, которое вики знала только со стороны БЛ. Масштаб скромный: 30 аккаунтов-партнёров, 5–7 владельцев.
+
+**Главное**: тех. реализация [[ReferralProgram-Folders-Priority-Sprint|спринта №2]] (декабрь 2025) дословно ставит переход статистики на `ВидЦеныДокумент` и **отказ от сервиса Маркетинга**, оценка **7 дней** — это первоисточник линии [[ReferralProgram-Stub-Implementation]] → [[ReferralStub-Backfill-Service-Method]] → [[ReferralProgram-RefDealsConvert-Feature]]. Сегодняшнее поле `LeadSum` ([[ReferralStub-LeadSum-Implementation]]) заказано **ещё в двух методах** — `ReferralProgram.GetList` и `GetListByContractor`, то есть выдача суммы наружу не закрыта.
+
+**Новые БЛ-методы, которых не было в вики**: `ReferralProgram.Move` (сигнатура платформенного `IndexNumber.Move`), `GetListByContractor` (Карта→ВидКарты→ВидЦеныВидКарты→ВидЦены), `ContractorHasPrograms` (тот же список с лимитом 1, встраивается в `Контрагент.CRMNavigationPreload`) — [[ReferralProgram-ContractorCard-Programs-Tab]]; плюс `Folder`/`FolderName` и фильтр `IsJoined` (участие — **по наличию `AdObject`**). Папки офферов схему БД не трогают (иерархия `ВидЦены.Раздел` уже есть); доступность «Всем кроме» — в `ВидЦеныРасширение.ТипПредоставления` по аналогии с доступностью скидки по клиентам, отдельные бизнес-группы отвергнуты ([[ReferralProgram-Offer-Visibility]]).
+
+**Самое свежее**: [[ReferralProgram-SelfJoin]] (31.07–03.08.2026, 45 дней, тест 26.51xx) — партнёр подключается сам через `saby.ru/referral` → `partners.saby.ru/<ИД группы>/accept`, признак автоподключения на группе через ВНР, авто-создание и акцепт приглашения + заявка «Агенты Saby»; только ЮЛ. Новые лица: [[Тихонов-Илья]] (БЛ), [[Кулешов-Дмитрий]] (UI).
+
+**Отрицательный результат повторился**: «Сравнение с конкурентами» и «Эксплуатация системы» — снова пустые корпоративные шаблоны (февраль 2025), плюс пусты концепты спринтов №3 «Приоритеты и папки» и №5 «Ручное изменение суммы». Технически: эти два файла лежат «голым» JSON, а не zip — `convert_sabydoc_to_markdown` на них падает.
+
+---
 
 ## 2026-08-06 — Вложения проекта «Дизайн ДК на конструкторе»: команда восстановлена, два документа оказались пустыми шаблонами
 
@@ -307,6 +322,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 - **Путь клиента / Маршруты**: [[CustomerJourney-Scenarios-Project]] — новый движок сценариев лояльности, релиз 01.12.2026
 - **Дизайн ДК на конструкторе**: [[DiscountCard-Design-Constructor-Project]] — перевод дизайна дисконтных карт с Брендбука на конструктор сайтов, срок 20.02.2027
 - **Loyalty Desktop Broker Migration**: [[Loyalty-Desktop-Broker-Migration]] — feature flag `lty_broker_card_type`, ~60д
+- **Реферальная программа (2 часть)**: [[ReferralProgram-Part2-Project]] — ЛК Владельца/Партнёра в SabyNet, 10 спринтов; активный — [[ReferralProgram-SelfJoin|самоприсоединение партнёра]] (45 дней, 26.51xx)
 - **SabyBank RKO Referral**: [[SabyBank-RKO-Referral]] — релиз 18.08.2026
 - **Рекрутинговая рефералка «Приведи друга»**: [[RecruitmentReferral-Project]] — третья реферальная вертикаль, целевой документ «Кандидат на вакансию»; ранняя редакция (оценки/сроки не проставлены)
 - **История корешков реф. программы**: [[ReferralStub-History-Scope-Cut]] — backend готов, `for_program` добавлен 2026-07-31; UI (кнопки, размещение) — на август, см. [[ReferralProgram-History-UI-Design]]

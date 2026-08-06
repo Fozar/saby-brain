@@ -98,3 +98,8 @@ pylint 10.00/10. Не закоммичено.
       Отдельная задача, продолжение [[ReferralStub-Backfill-Service-Method]]
 - [ ] Проверка на стенде: автотесты мокают CRM, реальное наполнение `ДокументРасширение.Сумма`
       из `GetRawDocs` автотестами не доказывается
+- [ ] **`LeadSum` заказан ещё в двух методах.** Проект [[ReferralProgram-Part2-Project]] требует
+      `LeadSum`/`PositiveLeadSum` в `ReferralProgram.GetList` ([[ReferralProgram-Folders-Priority-Sprint|спринт №2]],
+      статистика на плитке оффера) и в `ReferralProgram.GetListByContractor`
+      ([[ReferralProgram-ContractorCard-Programs-Tab|спринт №3]], вкладка «Программы» в карточке контрагента).
+      Сейчас поле отдаётся только в `GetPartnerList`/`ReadStub`/`GetStubList` — выдача наружу закрыта не полностью

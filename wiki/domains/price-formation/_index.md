@@ -82,6 +82,12 @@ Loyalty and price formation system for the SBIS (Saby) platform. Manages discoun
 - [[Promocode-Subsystem-Overview]] - 4 types (Общий/Индивидуальный/Партнёрский/ЗаАктивность); technically = ДК; SabyGet/profiles/DCService integration
 - [[Promocode-Info-Model]] - PromoCode object hierarchy; 14 ConditionData fields; NumberFormat; PromoCodeEmission
 - [[ReferralDeals-System]] - Owner/Partner deal referral; sabyReferralProgram.CreateLead; rewards=bonuses; 10 DB queries; 3 SabyNet widgets
+- [[ReferralProgram-Part2-Project]] - проект «Реферальная программа (2 часть)»: ЛК Владельца/Партнёра в SabyNet, 10 спринтов; первоисточник перехода статистики на корешки `ВидЦеныДокумент`
+- [[ReferralProgram-Folders-Priority-Sprint]] - спринт №2: папки офферов (`ВидЦены.Раздел`), `ReferralProgram.Move`, `IsJoined`, статистика в `GetList`, курсорная навигация заявок
+- [[ReferralProgram-ContractorCard-Programs-Tab]] - спринт №3: `GetListByContractor`, `ContractorHasPrograms`, встраивание в `Контрагент.CRMNavigationPreload`
+- [[ReferralProgram-SelfJoin]] - самостоятельное присоединение партнёра через `saby.ru/referral`, страница `/accept`, авто-акцепт приглашения, заявка «Агенты Saby»
+- [[ReferralProgram-Offer-Visibility]] - доступность офферов «Всем кроме» + папки партнёров (`ВидЦеныРасширение.ТипПредоставления`)
+- [[ReferralProgram-Leads-Section]] / [[ReferralProgram-SabyNet-Widgets-Redesign]] / [[ReferralProgram-Offer-Topics]] / [[ReferralProgram-SabyNet-Offer-Contract]] - разделы «Лиды», виджеты разводящей, темы офферов, «Оферта SabyNet»
 - [[Franchise-Contract-API]] - 12 external `FranchiseContract.*` methods: lifecycle handlers (OnAccept/OnRestore/OnTerminate), operator CRUD, PointSalesList, AccessData
 - [[Franchise-SabyNet-Subsystem]] - Saby Net franchise configuration: custom regulation (reduced fields), operator workflow, no KPI, shared bonus programs/акции across multi-account networks
 - [[Franchise-Loyalty-Architecture]] - DB schema changes for franchise loyalty: FranchiseRole/FranchiseUUIDList on ВидЦены/ВидКарты/CardType; Operation.CardUUID+PriceEntityUUID in СДК
