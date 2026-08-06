@@ -16,6 +16,7 @@ related:
   - "[[ReferralProgram-Stub-Implementation]]"
   - "[[ReferralProgram-Data-Model]]"
   - "[[SabyBank-RKO-Referral]]"
+  - "[[ReferralProgram-GetLeadPeriodList-HasPrices-Compat]]"
 ---
 
 # ReferralProgram.GetLeadPeriodList — LeadCount: источник данных

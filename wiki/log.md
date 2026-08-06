@@ -10,6 +10,13 @@ related:
   - "[[index]]"
 ---
 
+## [2026-08-07] save | Задача №080611736 — HasPrices не долетал от старого владельца в GetLeadPeriodList
+
+- Type: save (decision)
+- Location: wiki/concepts/ReferralProgram-GetLeadPeriodList-HasPrices-Compat.md (c-000272)
+- Root cause: `HasPrices`-метаданное для колонки вознаграждения в мастер-фильтре ставится только в `rc-26.4100`; у владельца на old его нет → фронт партнёра колонку не рисует. Фикс — на `26.3264/bugfix/aatimoshenko/080611736`, смержен в `26.4100/bugfix/aatimoshenko/080611736`. Второй симптом тикета (этапы сделки) — баг фронта (`Footer.tsx`), не наш.
+- Pages updated: [[ReferralProgram-GetLeadPeriodList-HasPrices-Compat]], [[ReferralProgram-GetLeadPeriodList-LeadCount-Source]], [[hot]]
+
 ## [2026-08-06] ingest | Вложения проекта «Реферальная программа (2 часть)» — продуктовая обвязка над корешками
 
 - Type: ingest
