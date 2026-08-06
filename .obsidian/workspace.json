@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md",
+                "file": "wiki/concepts/UpdateSystem-Patches.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ReferralProgram-GetLeadPeriodList-LeadCount-Source"
+              "title": "UpdateSystem-Patches"
             }
           }
         ]
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "источник сделки",
+                "query": "tensor flow",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +76,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -96,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md",
+                "file": "wiki/concepts/UpdateSystem-Patches.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,6 +203,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md",
     "wiki/concepts/ReferralDeals-System.md.tmp.28848.43be8110068a",
     "wiki/concepts/ReferralDeals-System.md.tmp.28848.e9892aeb1f01",
     "wiki/meta/ReferralStub-LeadSum-Implementation.md.tmp.28848.43243c4bb4af",
@@ -212,7 +214,6 @@
     "wiki/index.md.tmp.28848.a2f54cd41651",
     "wiki/index.md.tmp.28848.9ce6857effa5",
     "wiki/index.md.tmp.28848.3673b4b9f9a6",
-    "wiki/index.md.tmp.28848.b36c8bd7fc7b",
     "wiki/sources/referral-program-part2-attachments-2026-08-06.md",
     "wiki/entities/Кулешов-Дмитрий.md",
     "wiki/entities/Тихонов-Илья.md",
