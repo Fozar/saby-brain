@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ReferralProgram-GetLeadPeriodList-LeadCount-Source"
             }
           }
         ]
@@ -92,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,6 +202,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/concepts/ReferralProgram-SelfJoin.md",
+    "wiki/concepts/ReferralProgram-SelfJoin.md.tmp.28848.45b19c366e0c",
+    "wiki/concepts/ReferralProgram-Offer-Topics.md",
+    "wiki/concepts/ReferralProgram-Offer-Topics.md.tmp.28848.f624d35b0885",
+    "wiki/concepts/ReferralProgram-Offer-Visibility.md",
+    "wiki/concepts/ReferralProgram-Offer-Visibility.md.tmp.28848.5bbbd5bac173",
     "wiki/concepts/ReferralProgram-SabyNet-Widgets-Redesign.md",
     "wiki/concepts/ReferralProgram-SabyNet-Widgets-Redesign.md.tmp.28848.2f5415a22eaa",
     "wiki/concepts/ReferralProgram-Leads-Section.md",
@@ -210,9 +221,6 @@
     "wiki/meta/ReferralProgram-SourceChanged-Local-Event.md",
     "wiki/hot.md.tmp.42800.69375a274e0b",
     "wiki/hot.md.tmp.42800.39f50f4d159e",
-    "wiki/log.md.tmp.42800.e9c6ca876a82",
-    "wiki/index.md.tmp.42800.7137b27073c2",
-    "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md.tmp.42800.4b2bd5305713",
     "wiki/meta/ReferralProgram-GetLeadPeriodList-Stub-Mode.md",
     "wiki/questions/ExportDiscountCard-Excel-Memory-Optimization.md",
     "wiki/hot.md",
@@ -230,9 +238,6 @@
     "wiki/sources/updatestub-status-check-2026-07-31.md",
     "wiki/sources/release-error-analysis-2026-07-31.md",
     "wiki/sources/crmthemeid-plan-item-verified-2026-07-31.md",
-    "wiki/sources/mr-comment-for-program-method-2026-07-31.md",
-    "wiki/sources/mr-review-stub-history-call-2026-07-30.md",
-    "wiki/sources/ref-deals-convert-feature-enable-2026-07-31.md",
     "b574f7eb0125c1b0124a6fc9ae01137f_MD5.avif",
     "d0b1a1d090a19d801608dc5637e37b4d_MD5.avif",
     "10671913693748aff0ddd78f4ab4b13b_MD5.avif",
