@@ -3,7 +3,7 @@ type: concept
 address: c-000004
 title: "DWC-Card-Events-Migration"
 created: 2026-05-13
-updated: 2026-07-28
+updated: 2026-08-10
 tags:
   - dwc
   - discount-card
