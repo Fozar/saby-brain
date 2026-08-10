@@ -76,8 +76,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -201,7 +200,7 @@
       "new-3d-graph:Open 3d graph": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "5565f1231fe95c42",
   "lastOpenFiles": [
     "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md.tmp.28848.8f3806d8d7e7",
     "wiki/log.md.tmp.28848.6fc1342d5921",
