@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-08-06
+updated: 2026-08-10
 tags:
   - meta
   - hot-cache
@@ -14,6 +14,16 @@ related:
 ---
 
 # Recent Context
+
+## 2026-08-10 — №03266097 + №08106197: у удалённых событий лояльности есть потребители вне СДК, и две точки публикации были забыты
+
+**[[Loyalty-Events-External-Consumers]]** (новая): коммит по №03266097 (`26.6100/feature/aatimoshenko/03266097`) удалил публикацию 14 событий. Проверка каждого имени через `saby-search` по всей кодовой базе (не по price-formation!) дала два подписчика **вне discount-cards**, которые сломаются молча: `sabyget/core` `on_event.py:32` → `Tasks.EventUpdateBonusFlag` (на `online.loyalty-card.card-type-data.changed`) и `saby-forms` `on_event.py:11` → `Survey.UpdatePromocode` (на `online.loyalty-system.promocode-type-data.changed`). Подписки СДК на все 14 событий удалены в `discount-cards www/DCService/on_event.py` (ветка `26.6100/feature/aatimoshenko/03266097`).
+
+**Решение — не тянуть их на DWC, а re-publish из СДК.** Прецедент уже был: `dccore/cardtype/core.py:12 notify_changes` публикует `discount-cards.card-type.changed` (`application='sabyget'`) из `CardType.HandleChangeData:200` и `PromocodeType.HandleChangeData:145`; SabyGet на него уже подписан (`on_event.py:19` → `Tasks.EventByDiscountCard`), надо лишь перевесить второй обработчик. Для SabyForms добавлен аналог `notify_promocode_type_changes` → `discount-cards.promocode-type.changed`, `application='saby-forms'` — имя приложения подтверждено их константой `EVENT_APPLICATION_NAME` (`SabyForms/Events/__init__.py:18`). Важно: новое событие **не эквивалентно** старому — payload сжат до `{ClientID, …TypeID}`, срабатывает только по 4 полям и **не при создании** (`if current_card_type is not None`). SabyForms остаётся подписан на `promocode-type-survey.linked/unlinked` — их мы публикуем по-прежнему.
+
+**[[DWC-Card-Events-Migration]]** обновлена: №08106197 («Ошибка», ветка `26.4200/bugfix/aatimoshenko/08106197`) добирает две забытые публикующие точки — `dcservice/.../notify_changed.py:async_notify_changed_cards` и `loyaltyprograms/bonus/notify_sabyget.py:BonusOperationEventQueue.publish`. Обе жили вне пакета `discountcard/loyaltycard`, поэтому не попались при первой волне. Добавлен workflow `Card.HandleChangeBonusBalance` в `DiscountCard.dwc`. **Батчинг по 50 при DWC снят** — сценарий с `one_task="1"` и ключом ограничения по ClientID не пережил бы несколько задач подряд. QA-сценарии выписаны на странице.
+
+---
 
 ## 2026-08-06 — Вложения проекта «Реферальная программа (2 часть)»: найден первоисточник корешков и незакрытый хвост `LeadSum`
 

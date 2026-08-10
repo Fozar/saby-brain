@@ -10,6 +10,13 @@ related:
   - "[[index]]"
 ---
 
+## [2026-08-10] save | Внешние потребители событий лояльности + забытые точки DWC-миграции
+
+- Type: save (concept)
+- Location: wiki/concepts/Loyalty-Events-External-Consumers.md (c-000273)
+- Ключевое: из 14 событий, удалённых в №03266097, два имеют подписчиков вне СДК — `sabyget/core` (`Tasks.EventUpdateBonusFlag`) и `saby-forms` (`Survey.UpdatePromocode`); обе подписки ломаются молча. Решение — не DWC, а re-publish собственного события из discount-cards (прецедент `discount-cards.card-type.changed` из `notify_changes`); добавлен аналог `discount-cards.promocode-type.changed` с `application='saby-forms'`. Отдельно №08106197 (4200) добирает две забытые публикующие точки: `async_notify_changed_cards` и `BonusOperationEventQueue.publish`; при DWC батчинг по 50 снимается из-за `one_task="1"` + ключа ограничения по ClientID.
+- Pages updated: [[Loyalty-Events-External-Consumers]] (new), [[DWC-Card-Events-Migration]], [[index]], [[hot]]
+
 ## [2026-08-07] save | Задача №080611736 — HasPrices не долетал от старого владельца в GetLeadPeriodList
 
 - Type: save (decision)
