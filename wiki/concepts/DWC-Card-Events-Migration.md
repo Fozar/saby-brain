@@ -17,6 +17,7 @@ related:
   - "[[DWC-Promocode-Events-Migration]]"
   - "[[DiscountCard-Subsystem-Overview]]"
   - "[[Saby-Feature-Toggles-API]]"
+  - "[[Loyalty-Events-External-Consumers]]"
 ---
 
 # DWC-Card-Events-Migration
@@ -40,14 +41,49 @@ related:
 > [!gap] Возможная связь с флаки-автотестами ДК
 > [[DiscountCardType-Settings-Async-Load-Flaky-Autotest]] фиксирует ожидание команды тестирования, что этот DWC-переход устранит асинхронность между созданием типа ДК и готовностью данных настроек — на практике (2026-07-29) флаки сохраняется. Не выяснено, включён ли `dwc_card` на затронутом тестовом стенде.
 
-## Статус (2026-05-27)
+## Забытые сценарии — задача №08106197 (2026-08-10)
+
+Регламент «Ошибка», ветка `26.4200/bugfix/aatimoshenko/08106197` от `rc-26.4200`.
+
+Первая волна миграции покрыла только «профильные» точки в `loyaltycard/notify.py` и `personalcard/merge.py`. Два публикующих места остались на событиях, потому что живут **вне** пакета `discountcard/loyaltycard` и при обходе кода не попались:
+
+| Забытая точка | Событие | Переведена на |
+|---------------|---------|---------------|
+| `dcservice/servicediscountcard/notify_changed.py` → `async_notify_changed_cards` | `online.loyalty-card.card-data.changed` | `Card.HandleChangeData` |
+| `loyaltyprograms/bonus/notify_sabyget.py` → `BonusOperationEventQueue.publish` | `discount-cards.bonusoperation.online` | `Card.HandleChangeBonusBalance` |
+
+Урок: искать публикацию надо **по имени события через grep по всему репозиторию**, а не по пакетам предметной области. `async_notify_changed_cards` вызывается из ~10 мест (создание/изменение/выдача карты, импорт карт и персональных карт, смена персоны, вступление в ПЛ, объединение частных лиц, удаление клиента).
+
+> [!note] `Card.HandleChangeBonusBalance` вернулся, но в другой роли
+> Сценарий, удалённый в rc-26.4100, обслуживал `notify_bonus_balance_changed` (изменение баланса карты) — там делегирование в `Card.HandleChangeData` осталось. Новый одноимённый сценарий обслуживает **поток бонусных операций** из `notify_sabyget` (метод СДК `Card.HandleChangeBonusBalance` существовал всегда — это обработчик события `discount-cards.bonusoperation.online`, `Online.orx:513`).
+
+### Батчинг снимается при переходе на DWC
+
+Событийный путь бьёт операции пачками по 50 — это ограничение размера сообщения шины. При DWC батчинг **убран**: сценарий объявлен с `one_task="1"` и `limit_key_template="%1%"` (ключ = ClientID), поэтому несколько задач подряд для одного клиента конфликтовали бы по ключу ограничения. Ставится одна задача на весь RecordSet.
+
+```python
+if check_feature(Feature.DWC_CARD):
+    # Задача ставится одна на все операции: батчи нужны только для ограничения размера сообщения шины.
+    send_changes_via_dwc(event_data, 'Card.HandleChangeBonusBalance', 'HandleChangeBonusBalance')
+else:
+    batch_size = 50
+    ...
+```
+
+Тот же подход в `notify_card_data_changed`: параметр `batch_size` при включённом флаге игнорируется.
+
+---
+
+## Статус (2026-08-10)
 
 | Сценарий | Статус | Источник |
 |----------|--------|---------|
 | `Card.HandleChangeData` | ✅ реализован | `notify_card_data_changed` (все изменения данных, включая бонусы) |
+| `Card.HandleChangeData` (забытая точка) | ✅ 08106197 | `dcservice/.../notify_changed.py` → `async_notify_changed_cards` |
 | `Card.HandleDelete` | ✅ реализован | `notify_card_deleted` |
 | `Card.HandleMerge` | ✅ реализован | `personalcard/merge.py` → `_notify_loyalty_card_merged` |
-| `Card.HandleChangeBonusBalance` | ~~удалён~~ | был `notify_bonus_balance_changed`, убран в rc-26.4100 |
+| `Card.HandleChangeBonusBalance` | ✅ 08106197 | `notify_sabyget.py` → `BonusOperationEventQueue.publish` |
+| ~~`Card.HandleChangeBonusBalance` (старый)~~ | ~~удалён~~ | был `notify_bonus_balance_changed`, убран в rc-26.4100 |
 
 ---
 
@@ -184,3 +220,19 @@ SimpleRecordMatcher(sbis.Record(
 | `PriceFormation.feature` | Feature flag declaration |
 | `tests/.../loyaltycard/notify.py` | Unit tests (HandleChangeData, HandleChangeBonusBalance) |
 | `tests/.../personalcard/merge.py` | Unit tests (HandleMerge) |
+| `priceformationonline/dcservice/servicediscountcard/notify_changed.py` | Забытая точка `async_notify_changed_cards` (08106197) |
+| `priceformationonline/loyaltyprograms/bonus/notify_sabyget.py` | Забытая точка `BonusOperationEventQueue.publish` (08106197) |
+
+---
+
+## Сценарии проверки для QA (08106197)
+
+Проверять в обоих состояниях `dwc_card`. При включённом флаге в мониторе DWC появляются сценарии `Card.HandleChangeData` и `Card.HandleChangeBonusBalance`, событий быть не должно.
+
+**Карты** (`async_notify_changed_cards`) — создание карты, изменение, выдача клиенту, импорт карт из файла (приоритетный кейс — наибольший объём), импорт персональных карт, смена персоны у карты, вступление в программу лояльности, объединение частных лиц, удаление клиента.
+
+**Бонусы** (`BonusOperationEventQueue.publish`, все через `sbis.Bonus.ChangeHandler`) — продажа с начислением и со списанием, возврат, корректировка продажи, изменение операций на складском документе, реферальная продажа/возврат, ручное изменение баланса (одиночное / удаление / массовое), приветственные бонусы, бонусы за просмотр и отзыв, начисление на праздник и ДР, сгорание.
+
+**Обязательный кейс на объём:** операция, порождающая >50 бонусных движений — раньше уходило пачками по 50, теперь одной задачей.
+
+**Смежное:** событие `referral.bonusoperation.create` в SabyGet шлётся СДК из `Card.HandleChangeBonusBalance` (`handle_change_bonus_balance.py:187`) — теперь приходит по DWC-пути, реферальная статистика должна обновляться.
