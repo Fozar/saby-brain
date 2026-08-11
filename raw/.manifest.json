@@ -1771,6 +1771,38 @@
         "wiki/hot.md",
         "wiki/log.md"
       ]
+    },
+    ".raw/Скрипты.md": {
+      "hash": "185a633cd51092feccc6c4a2a0c86e41",
+      "ingested_at": "2026-08-11",
+      "pages_created": [],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Scripts.md",
+        "wiki/sources/skripty-2026-06-12.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md",
+        "wiki/concepts/_index.md",
+        "wiki/sources/_index.md"
+      ]
+    },
+    ".raw/Визуализация зависимостей модулей БЛ дистрибутива онлайна с помощью Graphviz.md": {
+      "hash": "d3aca44bae02516a21b8f459d7c867a0",
+      "ingested_at": "2026-08-11",
+      "pages_created": [
+        "wiki/sources/graphviz-bl-dependency-viz-2026-08-10.md",
+        "wiki/concepts/BL-Module-Dependency-Graphviz.md",
+        "wiki/entities/Садомов-А.А..md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Wasaby-Module-System.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md",
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md",
+        "wiki/sources/_index.md"
+      ]
     }
   },
   "address_map": {
@@ -1964,7 +1996,11 @@
     "wiki/meta/SabyBank-Stub-INN-KPP-Storage.md": "c-000249",
     "wiki/concepts/ReferralProgram-GetStubList-Bug-Partner-No-Records.md": "c-000250",
     "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md": "c-000251",
-    "wiki/meta/ReferralProgram-MoveToAgentGroup.md": "c-000252"
+    "wiki/meta/ReferralProgram-MoveToAgentGroup.md": "c-000252",
+    "wiki/sources/skripty-2026-06-12.md": "c-000274",
+    "wiki/sources/graphviz-bl-dependency-viz-2026-08-10.md": "c-000275",
+    "wiki/concepts/BL-Module-Dependency-Graphviz.md": "c-000276",
+    "wiki/entities/Садомов-А.А..md": "c-000277"
   },
   "retired_addresses": {
     "c-000002": "retired — allocated but discarded during Windows allocator debugging (2026-05-18)",
