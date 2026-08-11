@@ -463,6 +463,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Questions
 
+- [[ReferralProgram-History-Migration-Feasibility]] — задача №07012946: раздельная история офферов по реф. сетям задним числом не мигрируется — у сервиса История нет API правки существующих событий, а переигрывание событий искажает дату/автора; рабочий путь — фильтрация на чтении по списку ID офферов сети, без изменения хранения (status: developing)
 - [[entity-sp-deletion-order-2026-06-15]] — price-formation: удаление фичи entity_sp до 100% раскатки ломало ДК-диалог; откат в июне, повторное удаление 2026-07-30 (только backend-часть, 35 файлов) после стабилизации на стороне другой команды (status: resolved)
 - [[ReferralProgram-CRMThemeId-By-Referral-Code]] (c-000212) — задача №07164990 (проект «Авторегистрация для Alfa ID и СберБизнес»): метод «реф. код партнёра → CRMThemeId»; реализован в 26.4200, проверен Красавиным М. «на схеме тензора» 2026-07-31 (status: resolved)
 - [[How does the LLM Wiki pattern work]] — how the pattern works and why it outperforms RAG at human scale (status: developing)

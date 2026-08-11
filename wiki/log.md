@@ -10,6 +10,13 @@ related:
   - "[[index]]"
 ---
 
+## [2026-08-11] save | ReferralProgram History Migration Feasibility
+
+- Type: synthesis
+- Location: wiki/questions/ReferralProgram-History-Migration-Feasibility.md
+- From: conversation on задачу №07012946 — можно ли смигрировать старую историю офферов при переходе на раздельную историю по реф. сетям
+- Key insight: сервис История (`sbis/core`+`sbis/middleware`, владелец Польс Н.С.) публично не отдаёт API правки существующих событий (только `List`/`GetClientHistory`/`Actions_By_Objects` на чтение и `HandleHistory`/`HistoryMsgSet` на запись) — переименование `Объект` задним числом невозможно; переигрывание событий через `История.History_Of_Object`+`HistoryMsgSet` тоже не подходит, потому что формат записи не содержит поля даты/автора → искажает хронологию. Рабочий путь — фильтровать существующий поток на чтении по списку ID офферов текущей сети, без изменения хранения.
+
 ## [2026-08-11] ingest | Скрипты (полная статья) + визуализация зависимостей БЛ-модулей (Graphviz)
 
 - Type: ingest (2 root-файла `.raw/`, отсутствовали в `.raw/.manifest.json`)
