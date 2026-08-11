@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/Как разрабатывать в RetailPresto-offline 2025.md",
+                "file": "raw/Скрипты.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Как разрабатывать в RetailPresto-offline 2025"
+              "title": "Скрипты"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raw/Как разрабатывать в RetailPresto-offline 2025.md",
+                "file": "raw/Скрипты.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,6 +202,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/concepts/Wasaby-Scripts.md.tmp.43380.b02de10f2c79",
+    "wiki/concepts/Wasaby-Scripts.md.tmp.43380.ca1ef1c74125",
+    "raw/Как разрабатывать в RetailPresto-offline 2025.md",
+    "wiki/concepts/Wasaby-Scripts.md.tmp.43380.5db6723fbc08",
     "raw/Визуализация зависимостей модулей БЛ дистрибутива онлайна с помощью Graphviz.md",
     "wiki/hot.md.tmp.43240.350406062eff",
     "wiki/hot.md.tmp.43240.72ce84635987",
@@ -211,9 +215,7 @@
     "wiki/concepts/DWC-Card-Events-Migration.md.tmp.43240.620a7a55c4cc",
     "wiki/concepts/DWC-Card-Events-Migration.md.tmp.43240.c9720fe4dddb",
     "wiki/concepts/DWC-Card-Events-Migration.md.tmp.43240.e781442129c7",
-    "wiki/concepts/DWC-Card-Events-Migration.md.tmp.43240.a168f0e90650",
     "wiki/concepts/Loyalty-Events-External-Consumers.md",
-    "wiki/concepts/Loyalty-Events-External-Consumers.md.tmp.43240.be6db0cf3083",
     "3942627570b6c8f00d7062a9222a9f86_MD5.svg",
     "7b44fe25e8aaa9acd92d5eea06749d3d_MD5.svg",
     "wiki/concepts/UpdateSystem-Patches.md",
@@ -238,7 +240,6 @@
     "wiki/entities/Алябушев-Александр-Александрович.md",
     "wiki/entities/Мусохранов-Андрей-Владиславович.md",
     "wiki/meta/ReferralProgram-MoveToAgentGroup.md",
-    "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md",
     "b574f7eb0125c1b0124a6fc9ae01137f_MD5.avif",
     "d0b1a1d090a19d801608dc5637e37b4d_MD5.avif",
     "10671913693748aff0ddd78f4ab4b13b_MD5.avif",
