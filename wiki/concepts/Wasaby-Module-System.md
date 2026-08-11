@@ -15,7 +15,9 @@ related:
   - "[[Wasaby-Service-Architecture]]"
   - "[[Wasaby-Distribution-Schema]]"
   - "[[Saby-Service-Config]]"
+  - "[[BL-Module-Dependency-Graphviz]]"
 created: 2026-04-13
+updated: 2026-08-11
 ---
 
 # Wasaby Module System
@@ -223,9 +225,14 @@ s3cld — облако/проект/приложение
 <svc>-ps-ru     — сервис UI для России (наследует <svc>-ps + <svc>-ui-ru)
 ```
 
+## Инструментарий: визуализация зависимостей
+
+Для анализа транзитивных зависимостей между БЛ-модулями (объявленных в s3mod) существует внутренний sandbox-инструмент `S3modToGraphviz` — генерирует DOT-граф зависимостей из `*.s3mod`-файлов, рендерится через Graphviz. См. [[BL-Module-Dependency-Graphviz]].
+
 ## Связанные страницы
 
 - [[Wasaby-Service-Architecture]] — процессная модель и запуск
 - [[Wasaby-Platform-Modules]] — платформенные сервисные модули (Image, IPC Storage, XML-Py, sbis)
 - [[Wasaby-Distribution-Schema]] — конкретная схема дистрибутивов online
 - [[Saby-Service-Config]] — конфигурация vs переключатели функционала
+- [[BL-Module-Dependency-Graphviz]] — визуализация графа s3mod-зависимостей через Graphviz

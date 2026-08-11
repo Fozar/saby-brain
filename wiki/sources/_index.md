@@ -52,6 +52,8 @@ All source pages — summaries of ingested documents, transcripts, articles, and
 - [[report-prefetch-db-schema-2026-04-13]] — 2026-04-13 | Схема БД report-prefetch-service: 6 таблиц (SessionId/StoredReport/ReportPage/ReportData/Method/ShardsAmountHistory), 5 типовых выборок, таблица индексов | 1 page created, 1 page updated
 - [[report-prefetch-service-2026-04-13]] — 2026-04-13 | Платформенный механизм кэширования отчётов (report-prefetch-service): Prefetch.List/Data/AppendBatch, микросессии, иерархия, сортировка+индексы, поиск, суммирование | 1 page created, 2 updated
 - [[wasaby-infra-2026-04-12]] — 2026-04-12 | 13 Wasaby инфраструктурных docs (Хоттабыч/патчи/скрипты/права/cloud-ctrl/маршрутизация/дистрибутивы/стенды) | 8 pages created
+- [[skripty-2026-06-12]] — 2026-06-12 | полная статья «Скрипты» (DeveloperScript); дополняет [[wasaby-infra-2026-04-12]] | 0 pages created, 1 updated ([[Wasaby-Scripts]])
+- [[graphviz-bl-dependency-viz-2026-08-10]] — 2026-08-10 | внутренний пост: визуализация зависимостей БЛ-модулей через Graphviz (S3modToGraphviz) | 2 pages created, 1 updated
 - [[tests-new-readme-2026-04-11]] — 2026-04-11 | tests_new/README.md: unit test framework setup, three projects, test_manager.py, cmake/ninja, mocking patterns | 1 page created, 1 updated
 - [[franchise-api-2026-04-10]] — 2026-04-10 | API Франшизы (FranchiseContract.* 12 methods) | 1 page created, 2 updated
 - [[loyalty-db-franchise-2026-04-10]] — 2026-04-10 | База данных: loyalty DB schema changes for franchise (ВидЦеныЛица, ВидЦеныРасширение, ВидЦены, ВидКарты, CardType, Operation) | 1 page created, 1 updated
