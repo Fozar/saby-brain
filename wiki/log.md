@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-08-06
+updated: 2026-08-11
 tags:
   - meta
   - log
@@ -9,6 +9,20 @@ status: evergreen
 related:
   - "[[index]]"
 ---
+
+## [2026-08-11] ingest | Скрипты (полная статья) + визуализация зависимостей БЛ-модулей (Graphviz)
+
+- Type: ingest (2 root-файла `.raw/`, отсутствовали в `.raw/.manifest.json`)
+- File 1: `.raw/Скрипты.md` → wiki/sources/skripty-2026-06-12.md (c-000274)
+  - Pages created: none (тема уже покрыта существующей канонической страницей)
+  - Pages updated: [[Wasaby-Scripts]] (+ «Отчёт выполнения скрипта», +«Файлы со списком клиентов по стендам», +файл `services`, +прямое соединение с БД для схемы public/pgbouncer, +лимит 300 000 DWC-сценариев)
+  - Key insight: диапазон «Ограничение одновременного выполнения» — 0–999, а не 0–100 (более ранний частичный клиппинг вводил в заблуждение); отмечено `> [!contradiction]`
+- File 2: `.raw/Визуализация зависимостей модулей БЛ дистрибутива онлайна с помощью Graphviz.md` → wiki/sources/graphviz-bl-dependency-viz-2026-08-10.md (c-000275)
+  - Pages created: [[BL-Module-Dependency-Graphviz]] (c-000276), [[Садомов-А.А.]] (c-000277)
+  - Pages updated: [[Wasaby-Module-System]] (+раздел «Инструментарий: визуализация зависимостей»)
+  - Key insight: первый прецедент в вики инструментария для визуализации s3mod-графа зависимостей (sandbox-инструмент `S3modToGraphviz`, DOT/Graphviz); мотивирующий кейс — рефакторинг `Cadres → ЗиК` в `Cadres → SalaryCore`
+- Pages updated (both): [[index]], [[hot]], [[concepts/_index]], [[entities/_index]], [[sources/_index]]
+- Manifest: оба файла записаны в `.raw/.manifest.json` (hash, ingested_at, pages_created, pages_updated)
 
 ## [2026-08-10] save | Внешние потребители событий лояльности + забытые точки DWC-миграции
 

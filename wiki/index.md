@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-04-07
+updated: 2026-08-11
 tags:
   - meta
   - index
@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-08-06 | Total pages: 450 | Sources ingested: 231
+Last updated: 2026-08-11 | Total pages: 455 | Sources ingested: 233
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -61,6 +61,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[release-plans-2026-06-12]] (c-000097) — 2026-06-12 | Планы выпуска: принципы, зависимости, статусы, фильтры, ТД (7 PDF)
 - [[release-plans-registry-2026-06-12]] (c-000098) — 2026-06-12 | Реестр работ / Планы выпуска: алгоритм работы, структура плана, создание нового плана, ТД
 - [[update-system-work-registry-2026-06-12]] (c-000100) — 2026-06-12 | Реестр работ: реестр, типы работ, термины, экспорт в изолированные облака
+- [[skripty-2026-06-12]] (c-000274) — 2026-06-12 | полная статья «Скрипты» (DeveloperScript): отчёт выполнения, файлы клиентов по стендам, прямое соединение с БД для схемы public; дополняет [[Wasaby-Scripts]] и правит диапазон лимита 0–999 (было 0–100)
 
 ---
 
@@ -307,6 +308,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[Wasaby-Performance-Budget]] — бюджет производительности Wasaby: метрики VR/TTI/REQ/Size/BL/Leak, пороги по типажам, правила, Perfalyze (status: current)
 - [[Wasaby-App-Optimization]] — обзор уровней оптимизации: UI / middleware / БЛ / СУБД; карта инструментов (status: current)
 - [[Хоттабыч-System]] — Система обновлений Хоттабыч: дистрибутивы, патчи, скрипты, агенты, фазы обновления (status: current)
+- [[BL-Module-Dependency-Graphviz]] (c-000276) — визуализация зависимостей БЛ-модулей через Graphviz: sandbox-инструмент S3modToGraphviz, кейс Cadres→ЗиК→SalaryCore (status: current)
 - [[Wasaby-Patches]] — Патчи: экстренная правка файлов дистрибутива без пересборки; 4-шаговый процесс для интерфейса и БЛ (status: current)
 - [[Wasaby-Scripts]] — DeveloperScript: произвольный код на сервисе через DWC, .orx, ВНР, анализ логов (status: current)
 - [[Wasaby-Access-Control]] — Права: участки системы (.uax), роли (.rlx), ограничения/Access Area, наследование, разрешающая политика (status: current)
@@ -369,6 +371,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[Лебедева-Наталья]] (c-000231) — разработчик; реализует UI истории корешка (кнопка в карточке/ховере), потребитель `ReferralProgram.GetHistoryList` (status: current)
 - [[Земцова-Анастасия]] (c-000205) — тестировщик (QA), Тензор; реферальная программа/SabyBank RKO — миграция на корешки, перенос программ, включение фич (merged from «Настя-QA») (status: current)
 - [[Самарина-Ирина]] (c-000233) — проект-менеджер, Тензор; SabyBank RKO Referral совместно со Свешниковым А. (status: current)
+- [[Садомов-А.А.]] (c-000277) — автор S3modToGraphviz, визуализация зависимостей БЛ-модулей (status: stub)
 - [[Tensor-Company]] — Тензор: федеральный IT-холдинг, Saby/СБИС, 4.5M+ клиентов, №1 ЭДО в России (status: current)
 - [[Мусохранов-Андрей-Владиславович]] — руководитель направления 2+, Система лояльности + Транспорт ВИС (c-000036) (status: current)
 - [[Ютман-Элина]] — разработчик, ответственная за систему бонусов PriceFormation.Online; итеративная загрузка (c-000147) (status: current)
@@ -394,6 +397,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Sources
 
+- [[graphviz-bl-dependency-viz-2026-08-10]] (c-000275) — 2026-08-10 | внутренний пост: визуализация зависимостей БЛ-модулей через Graphviz (S3modToGraphviz), кейс Cadres→ЗиК→SalaryCore | 2 pages created, 1 updated
 - [[referral-program-part2-attachments-2026-08-06]] (c-000271) — 2026-08-06 | 14 вложений карточки проекта «Реферальная программа (2 часть)» | 9 concepts + 2 entities created; 3 документа — пустые шаблоны (status: current)
 - [[retail-presto-offline-dev-2025]] — 2026-06-11 | 2 docs: инструкция по разработке в офлайне + диалог о подмене модулей | 1 concept created (c-000074) (status: current)
 - [[loyalty-vis-org-2026-05-26]] — 2026-05-26 | пasted text: оргструктура «Система лояльности + Транспорт ВИС» | 9 pages created (c-000036..c-000045)
