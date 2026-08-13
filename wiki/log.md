@@ -10,6 +10,14 @@ related:
   - "[[index]]"
 ---
 
+## [2026-08-13] save | DiscountCardType.Create/Init — конструктор дизайна ДК в диалоге создания типа карты
+
+- Type: synthesis
+- Location: wiki/questions/DiscountCardType-Create-Design-Constructor.md
+- From: conversation on задачу №06242691 — внедрение нового конструктора Дизайна ДК в диалог создания типа карты (ТР, реализация, блокер)
+- Key insight: обработчик `ПослеСоздать` в Wasaby получает узкую запись только с полями БД — вычисляемое поле (`CardTemplateId`) оттуда вернуть нельзя, его заполняет `after`-обработчик списочного метода, чьё имя передано первым аргументом в `Create`; поле обязано быть объявлено и как `<calculating calc_on_sever="true">`, и как `<return full_path="РП.…">`, иначе `record.TestField` вернёт `None` и значение молча потеряется. `SiteId` дизайна хранится в колонке СДК `CardTemplate.SiteId` (уже существует, пишется через `CardTypeTemplate.Update`), дублировать его в `ВидКарты.Атрибуты` нельзя — ломается на типах карт с несколькими дизайнами.
+- Status: реализация зашелвлена, не закоммичена — 12.08 Михайленко попросила приостановить три пересекающиеся задачи до обсуждения с Омельяненко Е.
+
 ## [2026-08-11] save | ReferralProgram History Migration Feasibility
 
 - Type: synthesis

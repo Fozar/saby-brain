@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-08-11
+updated: 2026-08-13
 tags:
   - meta
   - index
@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-08-11 | Total pages: 455 | Sources ingested: 233
+Last updated: 2026-08-13 | Total pages: 456 | Sources ingested: 233
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started]]
 
@@ -111,6 +111,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Price Formation — Analysis
 
+- [[DiscountCardType-Create-Design-Constructor]] (c-000278) — задача №06242691: диалог создания типа карты на новом конструкторе Дизайна ДК. ТР от 11.08 сократило БЛ до двух пунктов (сайт не создаём, ПО к сайту не привязываем): `Create` инициализирует `ViewDetails` шаблона СДК дефолтной темой и отдаёт `CardTemplateId`/`SiteId`, `Init` сохраняет `SiteId` в `CardTemplate.SiteId` и дописывает во фрейм обратной стороны блоки адрес/телефон/реф. ссылка (механика переиспользована у анкеты — `Site.GetPages`/`Site.Save`). Ключевое: обработчик `ПослеСоздать` получает **узкую запись только с полями БД** — вычисляемое поле оттуда не вернуть, его заполняет `after` списочного метода, чьё имя передано в `Create`, и поле нужно объявить и `<calculating>`, и `<return full_path="РП.…">`. `SiteId` хранится в СДК (колонка уже есть), не в `ВидКарты.Атрибуты`. Реализовано, тесты и pylint зелёные, **зашелвлено**: 12.08 Михайленко попросила приостановить три пересекающиеся задачи до обсуждения с [[Омельяненко-Егор-Анатольевич|Егором]] (status: blocked)
 - [[GetClientListWithStats-Franchise-PersonalAccount-Zero-Balance-SDK]] — задача №08041679 (стенд): после расторжения франшизного договора в реестре Бонусы\Клиенты не показывается баланс части физлиц. Две гипотезы опровергнуты логами: `has_franchise` остаётся `True` (папка владельца не удаляется при расторжении с одним франчайзи), СДК-метод `Card.GetBonusBalanceByCards` находит все переданные UUID (персональные счета там тоже хранятся, не только карты). Прямой запрос к правильному хосту СДК (`discount-cards-db.test.nix.tensor.ru`, локальный чекаут датасорсов вёл на другой шард) показал: 4 из 6 франшизных персональных счетов имеют `BonusBalance=0` в самой БД СДК — код price-formation запросил и корректно отобразил именно то, что там лежит. **Не наш баг** — рекомендация переведена на discount-cards (status: developing)
 - [[ExportDiscountCard-Excel-Memory-Optimization]] (c-000253) — задача №07076892 / инцидент 07.07.2026: `ExportDiscountCard.PrepareFile` ест память контейнера (утилизация 50.53) и работает 2166 с. Пять слоёв без потолка: выборка карт без лимита → баланс ~5 запросов **на карту** → промежуточная python-матрица → `ms_excel` строит книгу целиком в памяти → `bio.getvalue()` дублирует zip. Фикс: баланс пачками по 1000 с группировкой по типу карты (расширен `sql_get_bonus_operations` параметром `card_id_list`, расчёт не продублирован; франшиза остаётся поштучной), построчная запись через `excel.light_printer.LightPrinter` в `ConstantMemory`, потолок `_MAX_EXPORT_ROWS=500000`. Ключевая находка: БЛ-метод `Excel.SaveToFile` непригоден — `RecordSetToExcel` зовёт `options.get("RoundFields", None)` на `sbis.Record`, у которого `get()` без аргументов. pylint 10/10, тесты OK, на стенде не проверено; перенесено на дальнюю веху (status: developing)
 - [[Bonus-GetSaleList-SuspectSaleIds-Hash-Regression]] (c-000211) — задача №06244326: `Bonus.GetSaleList` 16–17 с на автотестовом аккаунте, реестр «Бонусы/Покупки» рвёт скролл. `EXPLAIN`: 13.29 из 13.33 с — в CTE `SuspectSaleIds` при пустом результате; планировщик разворачивает коррелированный `EXISTS` в hash semi-join и материализует всю историю бонусов клиента (3 млн строк, 2.4 млн buffers, хеш на диск). Не про EMA/размер блока (выборка блока 32.8 мс) и не про отсутствие индексов; на бою (rc-26.3248) тот же код — латентно. **Фикс реализован и замерен: 14 530 → 225 мс (~53×)** через `BlockBound`/`BlockSales` + `OFFSET 0` (не `AS MATERIALIZED` — стенд на PG 10.21); тесты 41 OK, планы в `logs/explain-06244326/`. Не закоммичено, ветка не выбрана (status: developing)
