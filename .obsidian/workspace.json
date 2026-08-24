@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raw/Скрипты.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Скрипты"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           }
         ]
@@ -96,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raw/Скрипты.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,6 +197,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "raw/Скрипты.md",
     "wiki/hot.md.tmp.42872.b5cb67280267",
     "wiki/hot.md.tmp.42872.1cb7e28fa689",
     "wiki/log.md.tmp.42872.a3097426f3e2",
@@ -212,7 +208,6 @@
     "wiki/concepts/RecruitmentReferral-WorkPlan.md.tmp.42872.163264c2826c",
     "wiki/concepts/RecruitmentReferral-WorkPlan.md.tmp.42872.9416bda323b7",
     "wiki/concepts/RecruitmentReferral-WorkPlan.md.tmp.42872.9a29051ab76f",
-    "wiki/concepts/RecruitmentReferral-WorkPlan.md.tmp.42872.f036aca855c1",
     "wiki/questions/RecruitmentReferral-BL-Scope-Estimate.md",
     "wiki/questions/DiscountCardType-Create-Design-Constructor.md",
     "wiki/questions/ReferralProgram-History-Migration-Feasibility.md",
