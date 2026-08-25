@@ -10,6 +10,15 @@ related:
   - "[[index]]"
 ---
 
+## [2026-08-25] save | Конструктор Дизайна ДК — отдельный метод для обратной стороны, ПО без логотипа
+
+- Type: synthesis
+- Location: wiki/questions/DiscountCardType-Create-Design-Constructor.md
+- From: conversation on задачу №06242691 — ответы Кузакова и Ютман, разбор ТЗ, объявления ПО ДизайнКарты и СДК на rc-26.5100
+- Key insight: `DiscountCardType.Init` нельзя переделать под возврат данных ТП — он подключён на фронте в CRUD-биндинге `SbisService` как `update` (`LoyaltyAnalytics/DiscountCardType/Helpers.ts:156`) и объявлен `returns="SCALAR"`; Ютман согласовала отдельный метод. Реализован `DiscountCardTemplate.GetBackSideData`. Вторая половина общего кода упирается не в `ThemeData`, а в отсутствие ПО ДизайнКарты: `LoyaltyCardDesign` объявлен в `DiscountCard.aorx:18` с пустым `<methods/>`, конструктор читает именно ПО, а не старый формат `ViewDetails`, поэтому ни формат записи, ни писатель пока не определены. В свойствах ПО **нет логотипа**, хотя ТР требует его инициализировать.
+- Tooling: тестовый стенд `test_build/.../online` собран 20.07 и не совпадает с `rc-26.5100` — `pnt_toolbox.invoke_service_method` в нём без `InvokeTimeout`, падает импорт `tests_helpers.test_case`
+- Updated: [[DiscountCardType-Create-Design-Constructor]] (границы работы, ТЗ vs ТР, метод обратной стороны, ПО ДизайнКарты, гипотеза по `ViewDetails`)
+
 ## [2026-08-25] save | Конструктор Дизайна ДК — задача передана, ТР переписано, общий хелпер
 
 - Type: synthesis

@@ -30,10 +30,21 @@ related:
 
 Задача №06242691 (`019ef85e-68a4-791c-9274-146c1ac2e866`), веха 26.5100 online/inside до 10.10.26, часть проекта [[DiscountCard-Design-Constructor-Project|«Перевод дизайна дисконтных карт на конструктор»]]. Пункт плана `604450129` в «План работ (Разработка): август 2026, Система лояльности, Федько Юрий», план 3 ч, срок 31.08.
 
-Блокер от 12.08 снят: 25.08 [[Омельяненко-Егор-Анатольевич|Егор]] снял с задач Михайленко Елену и передал их Тимошенко, решение велено обсуждать с [[Ютман-Элина|Ютман]] и Кузаковым. Требуется **общий код на три пересекающиеся задачи**, а не три отдельные реализации — прямая формулировка Михайленко 25.08: «Нужен общий код который позволит решить эти три задачи».
+Блокер от 12.08 снят: 25.08 [[Омельяненко-Егор-Анатольевич|Егор]] снял с задач Михайленко Елену и передал их Тимошенко, решение велено обсуждать с [[Ютман-Элина|Ютман]] и Кузаковым.
 
-> [!warning] Раздел «Реализация» ниже описывает ветку от 13.08 и частично устарел
-> ТР переписывалась дважды после того, как эта реализация была зашелвлена. Что именно разошлось — см. §Устаревшие части зашелвленной реализации.
+## Границы работы: только общий код
+
+Текущий рабочий предмет — **не задача целиком, а общий код** для трёх пересекающихся задач. Формулировка Михайленко 25.08: «Нужен общий код который позволит решить эти три задачи» со ссылками на `019ef85f`, `019ef85e`, `019ef861`. Всё, что не переиспользуется всеми тремя, в эту работу не входит.
+
+| Внутри границы | Снаружи |
+|---|---|
+| данные ТП для лицевой стороны (баннер, логотип, название) | подключение хелпера в `DiscountCardType.Create`/`Init` — это сценарий задачи `019ef85e` |
+| данные ТП для обратной стороны (адрес, телефон) + метод БЛ, который их отдаёт | то же для `DiscountCardTemplate.Create/Save` и пустого представления — Кузаков и Омельяненко |
+| сборка `ViewDetails`/данных ПО при создании | возврат `CardTemplateId`/`SiteId` в формате каждого `Create`, `calculated_fields`, `get_list.after` |
+| | сохранение `SiteId` в методе сохранения каждого сценария |
+| | весь фронт: внедрение `Editor`/плеера, предзагрузка, заполнение блоков, перезапрос при смене ТП |
+
+Метод БЛ в `.orx` границу не нарушает, если сам метод общий на три сценария.
 
 ## Три задачи и их владельцы
 
@@ -60,33 +71,53 @@ related:
 
 Источники `ViewDetails` раскрыты 25.08: баннер и логотип — с **опубликованной** ТП, «по аналогии с промостраницей Промокода, метод уже есть»; название — с той же ТП; цвета — «пока не делаем»; блоки — «Кэшбэк» → `[Кэшбэк]` и «Ваши бонусы» → `[Баланс бонусов]`.
 
-`DiscountCardType.Init` **сменил смысл**: было «вычитываем контент сайта по `SiteId`, заполняем фрейм обратной стороны», стало «возвращает данные по ТП для заполнения обратной стороны» → `address: string`, `phone: string`. Заполнение выполняет фронт перед сохранением сайта.
-
 Ответы Ютман 25.08 дословно: «сайт на Create создавать не будем, только поле добавить в формат метода надо. Сайт создастся через механизмы конструктора, вам на Update надо будет только идентификатор из SiteId сохранить в БД»; «данные для этих полей нам откуда-то получить надо, поэтому метод по-прежнему нужен». Пункт исходной постановки «в `Update` удалить созданный сайт / чистить сайты у черновиков» отпал вместе с созданием сайта.
 
 > [!note] Свежая версия ТР не приходит по ссылке из вложения задачи
 > `disk.sbis.ru/disk/api/v1/<id>_<version>` отдаёт зафиксированный снимок. Актуальную редакцию возвращает тот же адрес **без второго uuid**: `disk.sbis.ru/disk/api/v1/68a8b956-51fa-4cf5-ab8c-9a092720ddca`. Различие обнаружилось на правке Ютман 25.08 — по «версионному» href приходил документ двухдневной давности.
 
+### ТЗ старше ТР и расходится с ним
+
+Раздел ТЗ «Диалог создания Типа карты»: «В методе создания **`DiscountCardType.Create`** создаем сайт Дизайна ДК и инициализируем его начальными значениями по аналогии с существующим механизмом… На фронт возвращаем в поле `SiteId` идентификатор созданного сайта. В методе сохранения **`DiscountCardType.Update`** сохраняем идентификатор из поля `SiteId` в таблице `CardTemplate.SiteId`». ТЗ не переиздавалось и всё ещё описывает создание сайта на бэке — приоритет за ТР, согласованным Ютман 25.08.
+
+Полезное из ТЗ: оно фиксирует **пару методов для нашего сценария — `DiscountCardType.*`**, а `DiscountCardTemplate.*` — это соседняя задача `019ef85f` (диалог создания Дизайна). Сообщение Лебедевой 11.08, где `DiscountCardTemplate` названо для обоих сценариев, — опечатка.
+
+## Метод для данных обратной стороны
+
+`DiscountCardType.Init` **расширить нельзя**, хотя ТР описывает нужную функцию под этим именем. Метод существует давно (`DiscountCard.orx:2963`, автор Михайленко, реализация `discountcardtype/init.py`), объявлен `returns="SCALAR"` → `INTEGER` «Идентификатор типа карты», и — главное — подключён на фронте в CRUD-биндинге `SbisService` как `update` (`client/LoyaltyAnalytics/DiscountCardType/Helpers.ts:156`). Смена сигнатуры на `RECORD` ломает контракт источника. Плюс данные обратной стороны нужны ещё и при **смене ТП**, до сохранения, — через метод сохранения такой сценарий не обслужить.
+
+Ютман 25.08 на прямой вопрос: **«Нет, не хотим, можем сделать отдельный метод для этого»**. Решение — отдельный лёгкий метод, который фронт зовёт при открытии конструктора и при каждой смене ТП.
+
 ## Состояние СДК на `rc-26.5100`
 
 Проверено по `origin/rc-26.5100` (`6becc4ee7`) репозитория `discount-cards`.
 
-- `SiteId` **уже в контракте** `CardTypeTemplate.Update` (`www/DCService/dcservice/online/cardtypetemplate/update.py:69`). Закрытый MR Кузакова №06296014 (`019f12c1-4273-7417-9a4b-8c8eff694ef8`, 08.08) завёл колонку и поддержал чтение/сохранение. В `price-formation` `save.py` целиком прокидывает запись в `CardTypeTemplate.Update` — то есть сохранение поля работает само, доработок под `Update` не требуется.
-- `ViewDetails` — JSONB-колонка `CardTemplate` с описанной структурой (`www/DCCore/Core.dicx:556`): `Logo`/`LogoID`, `Strip`/`StripID` (баннер), `Description`, `OrganizationName`, `BackgroundColor`/`TextColor`/`LabelColor`, `TypeBarCode`, `ShowDescription`, `BannerType`, `CustomBlockList`, `Widgets{aw, gp}`. Под неё есть датакласс `ViewDetails` с `KEY_MAPPING`/`from_db`/`from_brandbook`/`to_db` и готовый `DEFAULT_VIEW_DETAILS` (`www/DCCore/dccore/cardtemplate/entity.py:127` и `:245`).
-- Пишется **мержем**, а не перезаписью: `www/DCCore/dccore/cardtemplate/save.py` → `"ViewDetails" = COALESCE("ViewDetails", '{}') || !ViewDetails`.
+- `SiteId` **уже в контракте** `CardTypeTemplate.Update` (`www/DCService/dcservice/online/cardtypetemplate/update.py:69`). Закрытый MR Кузакова №06296014 (`019f12c1-4273-7417-9a4b-8c8eff694ef8`, 08.08) завёл колонку и поддержал чтение/сохранение. В `price-formation` `save.py` целиком прокидывает запись в `CardTypeTemplate.Update`, поэтому для объекта **`DiscountCardTemplate`** сохранение поля работает само. Внимание: для нашего сценария пара — `DiscountCardType.Create/Update`, это **другой объект**, и сохранение `SiteId` там своё.
+- `ViewDetails` — JSONB-колонка `CardTemplate` со структурой (`www/DCCore/Core.dicx:556`): `Logo`/`LogoID`, `Strip`/`StripID` (баннер), `Description`, `OrganizationName`, `BackgroundColor`/`TextColor`/`LabelColor`, `TypeBarCode`, `ShowDescription`, `BannerType`, `CustomBlockList`, `Widgets{aw, gp}`. Под неё есть датакласс с `KEY_MAPPING`/`from_db`/`from_brandbook`/`to_db` и `DEFAULT_VIEW_DETAILS` (`www/DCCore/dccore/cardtemplate/entity.py:127` и `:245`).
+- `CardTemplate.Save` для записи `ViewDetails` **не годится**: его публичный контракт (`www/DCService/Online.orx:1087`) — всего три поля `@Template`, `CardTypeID`, `ClientDependentDataChanged`. JSON-мерж `"ViewDetails" = COALESCE(...) || !ViewDetails` в `dccore/cardtemplate/save.py` — внутренний путь, снаружи недоступен.
 
-### Засада: `ThemeData` перезатирает `ViewDetails`
+### Гипотеза: класть `ViewDetails` в запись, не передавая `ThemeData`
 
-`www/DCService/dcservice/online/cardtypetemplate/update.py:88`:
+`CardTypeTemplate` — **декларативный CRUD-объект** (`CardTypeTemplate.Записать` с алиасом `БазовыйОбъект.Update`), а `update.py` — обработчик `before_update(new_record, input_record)`. Его докстринг: `new_record` — «Запись, которая будет сохранена. Формат — от объединённых записи из БД по формату `CardTypeTemplate` и `input_record`», и `ViewDetails: JSON` перечислен среди её полей. Пересборка из брендбука происходит **только** внутри `if theme_data:` (`update.py:88`), а `ThemeData` — поле исключительно входной записи.
 
-```python
-theme_data = input_record.Get('ThemeData')
-if theme_data:
-    view_details = _format_view_details(theme_data)
-    new_record.Set('ViewDetails', view_details)
-```
+Отсюда: положить `ViewDetails` прямо в запись `CardTypeTemplate.Update` и не слать `ThemeData`. Новых методов в СДК не нужно — это согласуется с ответом Кузакова Михайленко от 06.08 «думаю, `CardTypeTemplate.Update` должно хватить».
 
-При непустом `ThemeData` поле **безусловно пересобирается из брендбука**. А `CardTypeTemplate.Create` — это только обработчик `before_create` с валидацией `ClientID`/`CardTypeID`, создание декларативное, `ViewDetails` он не трогает вовсе. Следствие: инициализировать надо отдельным вызовом после `Create`, и при новом конструкторе `ThemeData` из `price-formation` слать нельзя, иначе инициализация затрётся. Вопрос вынесен Кузакову 25.08, ответа пока нет.
+Не проверено: пишет ли декларативный CRUD колонку целиком или мержит JSON. По коду похоже на первое, значит частичный `ViewDetails` заменит колонку — на создании это безопасно (поле пустое), но словарь надо собирать полный.
+
+**Риск гипотезы**: `save.py:36` шлёт `ThemeData` всегда, значит при первом сохранении дизайна старым путём инициализация будет перезатёрта. То есть отказ от `ThemeData` — не локальная правка `Create`, а переключение ветки под фичей. Вопрос стоит формулировать не «чем класть `ViewDetails`», а «с какого момента и под какой фичей перестаём слать `ThemeData`».
+
+## ПО ДизайнКарты — объявлено, методов нет
+
+`LoyaltyCardDesign` (`local_name="ДизайнКарты"`) объявлен в `www/service/Модули/PriceFormation.Online/DiscountCard.aorx:18`, ответственная — [[Лебедева-Наталья|Лебедева]], блок `<methods/>` пуст. Методы делает Кузаков по задаче `0905e5c8-ce61-489e-a905-23d73b76fe21`; 25.08 на вопрос о сроке ответил «На неделе».
+
+Свойства: `Banner` (composite `Image`), `ShowStamps`, `Stamps` (`StampsDesign`), `CardType`, `Block1`…`Block5` (`CardDesignInfoblock`), `Title`, `Subtitle`, `BackgroundColor`, `TextColor`, `HeaderColor`, `BarcodeType` (enum: 0 — штрихкод, 1 — QR).
+
+`CardDesignInfoblock` = `{Title: string, Description: string}` — блоки из ТР ложатся один в один: `Block1 = {Title: 'Кэшбэк', Description: '[Кэшбэк]'}`, `Block2 = {Title: 'Ваши бонусы', Description: '[Баланс бонусов]'}`.
+
+> [!warning] В ПО нет свойства «Логотип»
+> Есть `Banner`, логотипа нет, а ТР требует инициализировать логотип с опубликованной ТП. Либо логотип идёт мимо ПО (в `ViewDetails.Logo`), либо в объявлении его забыли. Вопрос к Лебедевой или Ютман, не задан.
+
+Следствие для `ViewDetails`: конструктор читает **ПО**, а не старый формат `ViewDetails` (`Logo`/`Strip`/`Widgets{aw,gp}`). Значит инициализировать надо в формате ПО, а как ПО ложится в колонку — определит его реализация, которой ещё нет. Пока ПО не появилось, неизвестен ни формат записи, ни то, кто пишет: мы через `CardTypeTemplate.Update` или методы ПО. Ответ про `ThemeData` сам по себе ничего не разблокирует — разумнее дождаться ПО.
 
 ## Данные точки продаж
 
@@ -98,29 +129,26 @@ if theme_data:
 
 ### Расхождение в текстах блоков
 
-Существующий механизм (`discountcarddesign/get_draft_list.py:52`) задаёт блоки как `{'label': 'Кешбэк', 'value': '[BonusDescr]'}` и `{'label': 'Ваши бонусы', 'value': '[BonusBalance]'}`. ТР от 25.08 требует «Кэшбэк» → `[Кэшбэк]` и «Ваши бонусы» → `[Баланс бонусов]`. Разные подстановки и разное написание «Кешбэк/Кэшбэк» — уточнять у Ютман перед реализацией `ViewDetails`.
+Существующий механизм (`discountcarddesign/get_draft_list.py:52`) задаёт блоки как `{'label': 'Кешбэк', 'value': '[BonusDescr]'}` и `{'label': 'Ваши бонусы', 'value': '[BonusBalance]'}`. ТР от 25.08 требует «Кэшбэк» → `[Кэшбэк]` и «Ваши бонусы» → `[Баланс бонусов]`. Разные подстановки и разное написание «Кешбэк/Кэшбэк» — уточнять у Ютман перед реализацией.
 
 ## Реализация
 
-### Часть по ТП (25.08, ветка `26.4213/bugfix/aatimoshenko/07248704`)
+Ветка `rc-26.5100`. Шелф от 13.08 (`Add_design_template_IDs_for_discount_cards`) признан неактуальным — задача пересматривается заново, ветка `26.5100/feature/aatimoshenko/06242691` пуста, коммитов над `rc-26.5100` нет.
+
+Сделана часть по ТП:
 
 - `priceformationonline/helpers/sale_point.py` → `get_sale_point_contacts(sale_point_id) -> (адрес, телефоны)`.
-- `priceformationonline/dcservice/servicediscountcard/discountcardtemplate/core/sale_point.py` → `get_design_sale_point()` (`{Id, Name, Logo, Banner}` с опубликованной ТП) и `get_back_side_data()` (`{Address, Phone}` — тело будущего `Init`).
+- `priceformationonline/dcservice/servicediscountcard/discountcardtemplate/core/sale_point.py` → `get_design_sale_point()` (`{Id, Name, Logo, Banner}` с опубликованной ТП) и `get_back_side_data(sale_point_id, sale_point_composite_key)` (`{Address, Phone}`, композитный ключ в приоритете, фолбэк на ТП по умолчанию).
+- `DCService.orx` → метод `DiscountCardTemplate.GetBackSideData(SalePointId, SalePointCompositeKey) → {Address, Phone}`, `access_mode="0"`. Категорию не проставлял: соседние `DiscountCardTemplate.*` объявлены без неё, а категории «Хелперы» в проекте не существует (в обоих репозиториях в ходу `CRUD`, `USER`, `List`, `Handler`, `Service`, `Franchise`).
+- `DCService.uax` → `<privilegy access="2" object="DiscountCardTemplate.GetBackSideData"/>` в праве `PF-DiscountCardType-RO`. Метод читающий, а `RO` служит базой для полного `PF-DiscountCardType`, которому объект `DiscountCardTemplate` и так выдан целиком.
+- Тесты `tests/tests_priceformationonline/dcservice/servicediscountcard/discountcardtemplate/get_back_side_data.py` — 4 кейса.
 
-pylint 10.00/10, тестов пока нет. Код написан **не в ветке задачи**, а в текущей рабочей — при оформлении надо переносить. `get_sale_point_contacts` дублирует ~10 строк приватного `_get_sale_point_phones` из устаревшего `get_draft_list.py:316` (там уже стоит `sbis.ErrorMsg('Вызывается устаревшая функция')`).
+pylint 10.00/10, `.orx` проходит XML-разбор.
 
-### Ветка от 13.08 (`26.5100/feature/aatimoshenko/06242691`, зашелвлено)
+> [!bug] Тестовый стенд собран под другую ветку
+> `test_build/price-formation/tests/online` собран 20.07. На `rc-26.5100` `priceformationcommon/helpers/cloud.py:11` импортирует `InvokeTimeout` из `pnt_toolbox.invoke_service_method`, а в модуле стенда этого имени нет — падает импорт `tests_helpers.test_case`, до тестов дело не доходит. Нужен пересбор через `test_manager` под 26.5100.
 
-Всё под фичей `dc_design_new` (`Feature.DC_DESIGN_NEW`). `init_template_design(card_type_id, template_id, card_title)` читала аспект через `ThemeManager.Read`, прогоняла через `provide_dc_theme_data` и отдавала в `CardTypeTemplate.Update`, полагаясь на конвертацию темы в `ViewDetails` силами СДК. `Init` сохраняла `SiteId` и дописывала во фрейм обратной стороны виджеты `:Address`, `:Phone`, `:Referral` (`discountcardtype/design_site.py`), идемпотентно, с глушением ошибок через `Try`. Механика правки сайта была вынесена из анкеты (`dcquestionary/.../core_site_constructor.py`) в общий `priceformationonline/core/site_constructor.py` с параметром `constructor_id`. Текст реферального блока собирался процентом = max по `Level1/2/3BonusPercent` из `ReferralBonus.ReadLite()`. Тесты: 9 новых `design_site` + по 2 кейса в `create`/`init`, зелёные, pylint 10.00/10.
-
-### Устаревшие части зашелвленной реализации
-
-- `design_site.py` — дописывание блоков обратной стороны на бэке. По ТР от 25.08 это делает UI, БЛ только отдаёт `address`/`phone`. Вероятно, не нужен целиком; вынос `site_constructor.py` теряет обоснование вместе с ним.
-- Реферальный блок и `get_referral_bonus_info` — реф. ссылка удалена из ТР.
-- Инициализация `ViewDetails` дефолтами аспекта брендбука — ТР от 25.08 требует баннер, логотип и название **с опубликованной ТП**, а не дефолты. Прежнее допущение («дефолты аспекта устраивают») снято.
-- Сохранение `SiteId` из `Init` — по ответу Ютман это делает `Update`, и оно уже работает через СДК.
-
-Что остаётся годным: расклад по `ПослеСоздать`/`calculated_fields` (см. ниже), вывод про хранение `SiteId`, находки по тестам.
+Мелочи на будущее: `get_sale_point_contacts` дублирует ~10 строк приватного `_get_sale_point_phones` из устаревшего `get_draft_list.py:316` (там уже `sbis.ErrorMsg('Вызывается устаревшая функция')`); импорт `get_sale_point_data` из пакета `loyaltyprograms.promocode` в `dcservice` — межпакетная связность, продиктованная ТР.
 
 ## Переиспользуемые находки
 
@@ -140,9 +168,9 @@ pylint 10.00/10, тестов пока нет. Код написан **не в �
 
 ## Открытые вопросы
 
-- **Как класть `ViewDetails`, не попав под перезапись из `ThemeData`** — вопрос Кузакову от 25.08. Без ответа вторая половина хелпера не пишется.
+- **Формат и способ записи данных ПО ДизайнКарты** — блокирует вторую половину общего кода. Разумнее дождаться реализации ПО (Кузаков, «на неделе»), чем гадать: она снимет и формат, и производный вопрос про `ThemeData`.
+- **`ThemeData`** — с какого момента и под какой фичей перестаём его слать, чтобы `_format_view_details` не затирал инициализацию. Кузакову задан в старой формулировке 25.08, ответ — «не могу ответить, возможно, подробней есть в ТЗ»; в ТЗ ответа нет.
+- **Логотип в ПО** — свойства нет, а ТР требует его инициализировать. Не задан.
 - **Тексты блоков** — `[Кэшбэк]`/`[Баланс бонусов]` из ТР против `[BonusDescr]`/`[BonusBalance]` из существующего механизма.
-- **Сроки ПО `LoyaltyCardDesign`** — задача Кузакова `0905e5c8-ce61-489e-a905-23d73b76fe21` (срок был 08.08, статус «В обработке»). Самому хелперу методы ПО не нужны (данные ПО сохраняет конструктор), но без ПО конструктор не прочитает преустановленные данные по `CardTemplateId`.
-- **Границы хелпера** — заводит ли метод `DiscountCardType.Init` в `.orx` автор хелпера или владельцы сценариев.
+- **Пересбор тестового стенда** под 26.5100 — иначе тесты не гоняются.
 - **Пункт плана под переданную задачу** `019ef85f` — 3 ч на две задачи не бьётся.
-- Расхождение имён: ТР называет методы `DiscountCardType.Create/Update/Init`, Лебедева 11.08 писала про `DiscountCardTemplate.Create/Update`, Кузаков дорабатывал `DiscountCardTemplate`.
