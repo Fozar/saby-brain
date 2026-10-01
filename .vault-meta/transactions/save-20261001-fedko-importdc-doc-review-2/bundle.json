@@ -1,0 +1,53 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/concepts/Fedko-Documentation-Philosophy.md": "0f227090f087ce40c30be7862864b85533104bde9a307bf8c7633398da06a2ce",
+    "wiki/hot-archive.md": "1993fb02522b72d5c5cb831b188083d77f8b7c8b721e9a65f2b48c97f4416ebf",
+    "wiki/hot.md": "1b5a0b381942f6e939fd9b510c252df3ebca8cc252e23b0d07e3512f901d454a",
+    "wiki/index.md": "7239d707c573da92910e902947c8761a23db744fc001844036895ec1636b74fc",
+    "wiki/log.md": "0f4c8e715e4eb1da7d2fa4d6dfff1d5c0b32d15a4789d7f5c4108da018ad60bc",
+    "wiki/sources/sovechanie-fedko-omelyanenko-timoshenko-importdc-doc-2026-10-01.md": null
+  },
+  "operation_id": "save-20261001-fedko-importdc-doc-review-2",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "content/wiki__sources__sovechanie-fedko-omelyanenko-timoshenko-importdc-doc-2026-10-01.md",
+      "mode": "create",
+      "path": "wiki/sources/sovechanie-fedko-omelyanenko-timoshenko-importdc-doc-2026-10-01.md",
+      "sha256": "055a75d002fb86b17dae1ecd9ad761b288c22845c7aedb0a0c303ad864a650df"
+    },
+    {
+      "content_file": "content/wiki__concepts__Fedko-Documentation-Philosophy.md",
+      "mode": "replace",
+      "path": "wiki/concepts/Fedko-Documentation-Philosophy.md",
+      "sha256": "07f4b1b7e5447819a634db40c4adabc9976d0520f70890beef4532ff76c35ce6"
+    },
+    {
+      "content_file": "content/wiki__index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "a9ca7519bde102f5d867de1dab7f171603f3c054c02e071be98f24e184b39c8f"
+    },
+    {
+      "content_file": "content/wiki__log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "2d8b06334752e90ee13704d53663e6fd609c13d512c4e6ad3685f1977d2075ac"
+    },
+    {
+      "content_file": "content/wiki__hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "46d4f23a17c259aa1e374127cb31c09d2b8d1e616b46d34afd0957c084b3d2da"
+    },
+    {
+      "content_file": "content/wiki__hot-archive.md",
+      "mode": "replace",
+      "path": "wiki/hot-archive.md",
+      "sha256": "ad172deb4cf1f396526eac1dd64a164d0959d257d38840aae84efff535d14bcf"
+    }
+  ]
+}

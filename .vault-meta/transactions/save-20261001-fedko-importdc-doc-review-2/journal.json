@@ -1,0 +1,75 @@
+{
+  "applied": [
+    "wiki/sources/sovechanie-fedko-omelyanenko-timoshenko-importdc-doc-2026-10-01.md",
+    "wiki/concepts/Fedko-Documentation-Philosophy.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "approval_sha256": "cc12ac216318079142814de8476b2f3540464353bc4fe276ad457b8cd1e687a3",
+  "completed_epoch": 1790867126.268058,
+  "created_epoch": 1790867125.9716103,
+  "expanded_bundle_sha256": "eab1fc017a92dfd071d3403aeb664b136fb68a91ecb628a9a7feabd450c61866",
+  "input_bundle_sha256": "eab1fc017a92dfd071d3403aeb664b136fb68a91ecb628a9a7feabd450c61866",
+  "operation_id": "save-20261001-fedko-importdc-doc-review-2",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "055a75d002fb86b17dae1ecd9ad761b288c22845c7aedb0a0c303ad864a650df",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/sources/sovechanie-fedko-omelyanenko-timoshenko-importdc-doc-2026-10-01.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "07f4b1b7e5447819a634db40c4adabc9976d0520f70890beef4532ff76c35ce6",
+      "original_mode": 384,
+      "original_sha256": "0f227090f087ce40c30be7862864b85533104bde9a307bf8c7633398da06a2ce",
+      "path": "wiki/concepts/Fedko-Documentation-Philosophy.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "a9ca7519bde102f5d867de1dab7f171603f3c054c02e071be98f24e184b39c8f",
+      "original_mode": 511,
+      "original_sha256": "7239d707c573da92910e902947c8761a23db744fc001844036895ec1636b74fc",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "2d8b06334752e90ee13704d53663e6fd609c13d512c4e6ad3685f1977d2075ac",
+      "original_mode": 511,
+      "original_sha256": "0f4c8e715e4eb1da7d2fa4d6dfff1d5c0b32d15a4789d7f5c4108da018ad60bc",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "46d4f23a17c259aa1e374127cb31c09d2b8d1e616b46d34afd0957c084b3d2da",
+      "original_mode": 511,
+      "original_sha256": "1b5a0b381942f6e939fd9b510c252df3ebca8cc252e23b0d07e3512f901d454a",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0005.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "ad172deb4cf1f396526eac1dd64a164d0959d257d38840aae84efff535d14bcf",
+      "original_mode": 511,
+      "original_sha256": "1993fb02522b72d5c5cb831b188083d77f8b7c8b721e9a65f2b48c97f4416ebf",
+      "path": "wiki/hot-archive.md"
+    }
+  ]
+}

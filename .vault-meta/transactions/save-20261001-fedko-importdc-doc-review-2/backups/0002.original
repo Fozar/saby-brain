@@ -182,7 +182,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[JSONB-Array-Containment-Optimization]] — PostgreSQL: замена EXISTS+jsonb_array_elements_text на @> оператор; устраняет SubPlan, снижает время с ~435ms до ~1ms (status: current)
 - [[Python-Code-Standards-SBIS]] — PEP-8 + Wasaby exceptions: 120 chars, CamelCase for platform methods (status: current)
 - [[Tensor-TechDoc-Standards]] — when/what/how to write ТД: structure, audience matrix, formatting rules, anti-patterns; с 01.10 — ссылки на автодок БЛ, draw.io и сиквенс-диаграммы, шаблон «Алгоритмы и процессы», регламент проверки ТД (status: current)
-- [[Fedko-Documentation-Philosophy]] — философия документации Юры Федько: 18 принципов приёмки ТД (читатель без контекста, акценты, расшифровка последствий, ссылки на вики, без чужой логики) + чек-лист перед сдачей (status: developing)
+- [[Fedko-Documentation-Philosophy]] — философия документации Юры Федько: 11 принципов приёмки ТД (читатель без контекста, акценты, расшифровка последствий, ссылки на вики, без чужой логики) + чек-лист перед сдачей (status: developing)
 - [[Python-Localization-rk]] — rk() function rules: no static vars, no concatenation, plurals (status: current)
 - [[Bonus-GetSaleTotals-Timeout-Fix]] — bugfix: таймаут заголовка реестра Бонусы/Покупки; MIN(EffectiveDate) без фильтра → 17s/3M строк; fix: новый индекс BonusSaleEffectiveDate (ВидЦены, EffectiveDate) (status: active)
 - [[ReferralBonus-GetSaleList-Iterative-Ordering-Bug]] — bugfix реестра рефералки: (1) дубли SaleId → GROUP BY Sale + MAX(EffectiveDate) + ORDER BY SaleId; (2) хаотичный порядок при скролле вверх → backward даёт ASC, фронт разворачивает; инверсия вставки графиков/итогов в общем `add_graphic_data` по `navigation.Direction()` (status: fixed)
@@ -450,7 +450,6 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[saby-products-lineup-2026-04-12]] — 2026-04-12 | full Saby product catalog
 - [[tensor-techdoc-standards-2026-04-12]] — 2026-04-12 | Tensor tech doc standards
 - [[kb-oformlenie-dokumentacii-2026-10-01]] — 2026-10-01 | БЗ «Оформление документации»: регламент проверки ТД, шаблон «Алгоритмы и процессы», Best Practice
-- [[sovechanie-fedko-omelyanenko-timoshenko-importdc-doc-2026-10-01]] — 2026-10-01 | вторая сдача ТД импорта и экспорта ДК Федько: схема без UML, таблица полей, вопросы о второй карте и ограничениях
 - [[wasaby-infra-2026-04-12]] — 2026-04-12 | Wasaby infrastructure docs
 - [[tests-new-readme-2026-04-11]] — 2026-04-11 | test framework README
 - [[zvonok-offer-bug-zlateks-2026-04-13]] — 2026-04-13 | Zlateks offer bug investigation

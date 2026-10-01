@@ -1,0 +1,33 @@
+{
+  "approval_sha256": "cc12ac216318079142814de8476b2f3540464353bc4fe276ad457b8cd1e687a3",
+  "bundle_sha256": "eab1fc017a92dfd071d3403aeb664b136fb68a91ecb628a9a7feabd450c61866",
+  "changed_paths": [
+    "wiki/sources/sovechanie-fedko-omelyanenko-timoshenko-importdc-doc-2026-10-01.md",
+    "wiki/concepts/Fedko-Documentation-Philosophy.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "expanded_bundle_sha256": "eab1fc017a92dfd071d3403aeb664b136fb68a91ecb628a9a7feabd450c61866",
+  "hashes": {
+    "wiki/concepts/Fedko-Documentation-Philosophy.md": "07f4b1b7e5447819a634db40c4adabc9976d0520f70890beef4532ff76c35ce6",
+    "wiki/hot-archive.md": "ad172deb4cf1f396526eac1dd64a164d0959d257d38840aae84efff535d14bcf",
+    "wiki/hot.md": "46d4f23a17c259aa1e374127cb31c09d2b8d1e616b46d34afd0957c084b3d2da",
+    "wiki/index.md": "a9ca7519bde102f5d867de1dab7f171603f3c054c02e071be98f24e184b39c8f",
+    "wiki/log.md": "2d8b06334752e90ee13704d53663e6fd609c13d512c4e6ad3685f1977d2075ac",
+    "wiki/sources/sovechanie-fedko-omelyanenko-timoshenko-importdc-doc-2026-10-01.md": "055a75d002fb86b17dae1ecd9ad761b288c22845c7aedb0a0c303ad864a650df"
+  },
+  "modes": {
+    "wiki/concepts/Fedko-Documentation-Philosophy.md": 384,
+    "wiki/hot-archive.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511,
+    "wiki/sources/sovechanie-fedko-omelyanenko-timoshenko-importdc-doc-2026-10-01.md": 384
+  },
+  "operation_id": "save-20261001-fedko-importdc-doc-review-2",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}
