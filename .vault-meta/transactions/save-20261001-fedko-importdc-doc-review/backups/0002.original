@@ -5,7 +5,7 @@ entity_type: person
 address: c-000037
 role: "Руководитель направления (2 категории) — Система лояльности"
 created: 2026-05-26
-updated: 2026-10-01
+updated: 2026-05-26
 tags:
   - entity
   - person
@@ -13,7 +13,6 @@ tags:
   - manager
 status: current
 related:
-  - "[[Fedko-Documentation-Philosophy]]"
   - "[[Tensor-Company]]"
   - "[[Loyalty-System-Teams]]"
   - "[[ExternalLoyalty-Integrations]]"
@@ -48,10 +47,6 @@ related:
 | Дисконтные карты, лояльность на продаже (backend) | [[Омельяненко-Егор-Анатольевич]] |
 | Система лояльности (frontend) | [[Курников-Михаил-Сергеевич]] |
 | QA: Система лояльности | [[Дюднева-Светлана-Андреевна]] |
-
-## Требования к документации
-
-На ревью ТД оценивает прежде всего, как документ прочтёт человек без контекста автора: формальный язык, акценты «зачем шаг и что получим», ссылки на вики, расшифровка последствий, аккуратность оформления. Свод принципов — [[Fedko-Documentation-Philosophy]]. Разборы: [[soveshanie-sdacha-td-itload-2026-06-23]], [[zvonok-fedko-omelyanenko-timoshenko-importdc-doc-2026-09-30]].
 
 ## Связанные страницы
 

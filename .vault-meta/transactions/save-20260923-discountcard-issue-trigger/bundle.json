@@ -1,0 +1,46 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/concepts/DiscountCard-Issue-Trigger-Event.md": null,
+    "wiki/hot-archive.md": "61448b9ae21c21f598b87e192327a36f1d99a8fce6bfd266a5a72c492b1d5b07",
+    "wiki/hot.md": "73e7f3bfaca7bce540c4df1ba6a69b8b0945188172002383dab852c749b4bd5b",
+    "wiki/index.md": "721cdd64239ce9348e15043118e222d0c9b32d61bbd389f58fa24a56c9427d3c",
+    "wiki/log.md": "ad9fa2af3ff9db12110c9fcb37da6c91ead0446b23afc908be5781901e3caf95"
+  },
+  "operation_id": "save-20260923-discountcard-issue-trigger",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "/mnt/c/Users/aa.timoshenko/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/29c819ee-5196-425f-9882-9739867b02b3/scratchpad/out/wiki__concepts__DiscountCard-Issue-Trigger-Event.md",
+      "mode": "create",
+      "path": "wiki/concepts/DiscountCard-Issue-Trigger-Event.md",
+      "sha256": "e0577fd39778e8574ee6481025db9916482e01804d7b9d0eba02aa0d82659c73"
+    },
+    {
+      "content_file": "/mnt/c/Users/aa.timoshenko/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/29c819ee-5196-425f-9882-9739867b02b3/scratchpad/out/wiki__index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "53b85faf7e56e8968f597188c7d3e95217a9f28ee14b6867de174f78d683e76d"
+    },
+    {
+      "content_file": "/mnt/c/Users/aa.timoshenko/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/29c819ee-5196-425f-9882-9739867b02b3/scratchpad/out/wiki__log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "af627c19d7fee5beea33e32d4b2c8a77f99d79915e987b1b98fb9fa0206b0230"
+    },
+    {
+      "content_file": "/mnt/c/Users/aa.timoshenko/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/29c819ee-5196-425f-9882-9739867b02b3/scratchpad/out/wiki__hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "1c0391971c55bd4ff742d821d98f0eaa2f078fdacea52ffe389b41979c7f2603"
+    },
+    {
+      "content_file": "/mnt/c/Users/aa.timoshenko/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/29c819ee-5196-425f-9882-9739867b02b3/scratchpad/out/wiki__hot-archive.md",
+      "mode": "replace",
+      "path": "wiki/hot-archive.md",
+      "sha256": "4cc801ec80292149b10678c660cc567cf9581222f2ce2420b96c73b23f414360"
+    }
+  ]
+}

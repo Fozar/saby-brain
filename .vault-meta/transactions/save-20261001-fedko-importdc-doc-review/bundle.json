@@ -1,0 +1,53 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/concepts/Fedko-Documentation-Philosophy.md": null,
+    "wiki/entities/Федько-Юрий-Сергеевич.md": "e2baea18d6e05021e531024bfd8b033ae6d73cd1af616e47b91cd50b9257059f",
+    "wiki/hot.md": "80689f5f7605836696b9506377684debec2a2f7db8eeceb5351b122b867d6daf",
+    "wiki/index.md": "612b19e4bd9c4c77e86825ddce90837216199b5ce0ad99f1da3b4aab7b4f143c",
+    "wiki/log.md": "2a7406aedd3c9e91adf930029cdd3a31e0074c110c2ebd48154aee3224bd2d8b",
+    "wiki/sources/zvonok-fedko-omelyanenko-timoshenko-importdc-doc-2026-09-30.md": null
+  },
+  "operation_id": "save-20261001-fedko-importdc-doc-review",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "wiki__sources__zvonok-fedko-omelyanenko-timoshenko-importdc-doc-2026-09-30.md",
+      "mode": "create",
+      "path": "wiki/sources/zvonok-fedko-omelyanenko-timoshenko-importdc-doc-2026-09-30.md",
+      "sha256": "5ed8f59ad9d31d6f6f3c7d9adb64bc11987c605387e53b95e9cebd0c78513947"
+    },
+    {
+      "content_file": "wiki__concepts__Fedko-Documentation-Philosophy.md",
+      "mode": "create",
+      "path": "wiki/concepts/Fedko-Documentation-Philosophy.md",
+      "sha256": "0abdcf541172ce3bc9c555ee89d7b232a6a571390b2e40f218ecd7cb01debe30"
+    },
+    {
+      "content_file": "wiki__entities__Федько-Юрий-Сергеевич.md",
+      "mode": "replace",
+      "path": "wiki/entities/Федько-Юрий-Сергеевич.md",
+      "sha256": "231c8f96b6510ae7e93a3e9d3c7e565e61c4c1172c0f194a89e62406c22ddbaa"
+    },
+    {
+      "content_file": "wiki__index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "fb3b5d515f287658f8b99c09f9b90f5b332df02b7d2322e3a3f3d40196ed257d"
+    },
+    {
+      "content_file": "wiki__log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "0ddaba7d2970b9eb05bd4ec29ad2b83026c23de86c80d14595ea522ccd940688"
+    },
+    {
+      "content_file": "wiki__hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "bf48763c1ba74642a5171349943f6deb1ad983b5fae170ed29487e34e452493e"
+    }
+  ]
+}

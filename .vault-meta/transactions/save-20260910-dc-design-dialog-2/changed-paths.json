@@ -1,0 +1,33 @@
+{
+  "approval_sha256": "cd26fa17e9427bdd5486264f59a6ddedb5dc94fb9b8191b1ccb3989f5a8239dd",
+  "bundle_sha256": "11bd42ddd1097b5fb8654a82ffc59a52ff47fbce8ec7987b0148932887fdefbd",
+  "changed_paths": [
+    "wiki/questions/DiscountCardTemplate-Create-Design-Dialog.md",
+    "wiki/questions/DiscountCardType-Create-Design-Constructor.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "expanded_bundle_sha256": "11bd42ddd1097b5fb8654a82ffc59a52ff47fbce8ec7987b0148932887fdefbd",
+  "hashes": {
+    "wiki/hot-archive.md": "181762d27b06392f6b827573fc9b6a92de04da54bca8610a38a4691569910a6c",
+    "wiki/hot.md": "a83ef9a57c9533e485482dd660e775e00094246bf37947e08ba229f7c866b742",
+    "wiki/index.md": "69ef018d467e3ca119f046beb41d46d4197444841daa24386f997d7962d96c14",
+    "wiki/log.md": "068edb4d7ac15e716c98add6a9d4bbae8f8eb7ac2cb1ba95a529caae8598582f",
+    "wiki/questions/DiscountCardTemplate-Create-Design-Dialog.md": "b2d697deec08c5e3df6c196f8a25574de002b759cee23d751c48721b5270c89f",
+    "wiki/questions/DiscountCardType-Create-Design-Constructor.md": "48c0bb4bb5453c119ba3616eeb64aeaa2fddee6caea618b7e65e04b6e445747b"
+  },
+  "modes": {
+    "wiki/hot-archive.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511,
+    "wiki/questions/DiscountCardTemplate-Create-Design-Dialog.md": 384,
+    "wiki/questions/DiscountCardType-Create-Design-Constructor.md": 511
+  },
+  "operation_id": "save-20260910-dc-design-dialog-2",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

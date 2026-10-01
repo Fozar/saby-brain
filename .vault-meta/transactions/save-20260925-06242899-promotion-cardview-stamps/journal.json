@@ -1,0 +1,65 @@
+{
+  "applied": [
+    "wiki/concepts/Promotion-CardView-Constructor-Stamps.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "approval_sha256": "24e8f24db05e4b51cd9531361357c0352b186733feaf8c51630ae5f3dbaa8a45",
+  "completed_epoch": 1790307404.2541213,
+  "created_epoch": 1790307403.9629633,
+  "expanded_bundle_sha256": "6137523d0457b7a98a69c1777be63e328c96ed494eb10dac24ae34d8439d5460",
+  "input_bundle_sha256": "6137523d0457b7a98a69c1777be63e328c96ed494eb10dac24ae34d8439d5460",
+  "operation_id": "save-20260925-06242899-promotion-cardview-stamps",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "3109735fae8c13f531b5887279924855875b3553e2b986b149764a42696b8ad3",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/Promotion-CardView-Constructor-Stamps.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "4f7834ca37d372b542d02a036336fea88829c508c31679f499446d2105c45993",
+      "original_mode": 511,
+      "original_sha256": "53b85faf7e56e8968f597188c7d3e95217a9f28ee14b6867de174f78d683e76d",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "32233b202d75552301ebebd05e00d36761ee4468d153e0108d44ea0666276c82",
+      "original_mode": 511,
+      "original_sha256": "af627c19d7fee5beea33e32d4b2c8a77f99d79915e987b1b98fb9fa0206b0230",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "79ac1776b768d6906d4a42d006459d2a32dcf4e475e2260f6fc3fe93ca184632",
+      "original_mode": 511,
+      "original_sha256": "1c0391971c55bd4ff742d821d98f0eaa2f078fdacea52ffe389b41979c7f2603",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "70a448ec0d57286c44f200073ebbacef4e4496b04c3168cf1ca0ae24d5f9d2a6",
+      "original_mode": 511,
+      "original_sha256": "4cc801ec80292149b10678c660cc567cf9581222f2ce2420b96c73b23f414360",
+      "path": "wiki/hot-archive.md"
+    }
+  ]
+}

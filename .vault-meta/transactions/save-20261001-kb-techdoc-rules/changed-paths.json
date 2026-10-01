@@ -1,0 +1,36 @@
+{
+  "approval_sha256": "37dbf2e9b893d092e1f6957948107e4aa6b1afbb7dbab17b33d752e3708c656f",
+  "bundle_sha256": "2dccc5b1d0956d7a7a6b8d5414d022f45ebeb56c590f2d83b9db9d11e1127b78",
+  "changed_paths": [
+    "wiki/sources/kb-oformlenie-dokumentacii-2026-10-01.md",
+    "wiki/concepts/Tensor-TechDoc-Standards.md",
+    "wiki/concepts/Fedko-Documentation-Philosophy.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "expanded_bundle_sha256": "2dccc5b1d0956d7a7a6b8d5414d022f45ebeb56c590f2d83b9db9d11e1127b78",
+  "hashes": {
+    "wiki/concepts/Fedko-Documentation-Philosophy.md": "0f227090f087ce40c30be7862864b85533104bde9a307bf8c7633398da06a2ce",
+    "wiki/concepts/Tensor-TechDoc-Standards.md": "7e330aec5773b460c09305e9e417c8a143b7cad599c2840f28d249bc6e483f34",
+    "wiki/hot-archive.md": "1993fb02522b72d5c5cb831b188083d77f8b7c8b721e9a65f2b48c97f4416ebf",
+    "wiki/hot.md": "1b5a0b381942f6e939fd9b510c252df3ebca8cc252e23b0d07e3512f901d454a",
+    "wiki/index.md": "7239d707c573da92910e902947c8761a23db744fc001844036895ec1636b74fc",
+    "wiki/log.md": "0f4c8e715e4eb1da7d2fa4d6dfff1d5c0b32d15a4789d7f5c4108da018ad60bc",
+    "wiki/sources/kb-oformlenie-dokumentacii-2026-10-01.md": "94a317742db10e38d346b76ad1ce920f74d057c0fe27bc87c1f20dc0107af34f"
+  },
+  "modes": {
+    "wiki/concepts/Fedko-Documentation-Philosophy.md": 384,
+    "wiki/concepts/Tensor-TechDoc-Standards.md": 511,
+    "wiki/hot-archive.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511,
+    "wiki/sources/kb-oformlenie-dokumentacii-2026-10-01.md": 384
+  },
+  "operation_id": "save-20261001-kb-techdoc-rules",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

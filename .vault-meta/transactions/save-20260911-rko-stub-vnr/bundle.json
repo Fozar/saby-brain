@@ -1,0 +1,46 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/hot-archive.md": "181762d27b06392f6b827573fc9b6a92de04da54bca8610a38a4691569910a6c",
+    "wiki/hot.md": "a83ef9a57c9533e485482dd660e775e00094246bf37947e08ba229f7c866b742",
+    "wiki/index.md": "69ef018d467e3ca119f046beb41d46d4197444841daa24386f997d7962d96c14",
+    "wiki/log.md": "068edb4d7ac15e716c98add6a9d4bbae8f8eb7ac2cb1ba95a529caae8598582f",
+    "wiki/meta/RKO-Existing-Requests-Stub-Backfill.md": null
+  },
+  "operation_id": "save-20260911-rko-stub-vnr",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "/mnt/c/Users/aa.timoshenko/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/22c6d421-1cc8-455d-bc53-4a238c83a8c9/scratchpad/save-drafts/note.md",
+      "mode": "create",
+      "path": "wiki/meta/RKO-Existing-Requests-Stub-Backfill.md",
+      "sha256": "62eab11528d87aaaad0200b199cb5729752414ea3a331dfb4883e096751dfe97"
+    },
+    {
+      "content_file": "/mnt/c/Users/aa.timoshenko/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/22c6d421-1cc8-455d-bc53-4a238c83a8c9/scratchpad/save-drafts/index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "721cdd64239ce9348e15043118e222d0c9b32d61bbd389f58fa24a56c9427d3c"
+    },
+    {
+      "content_file": "/mnt/c/Users/aa.timoshenko/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/22c6d421-1cc8-455d-bc53-4a238c83a8c9/scratchpad/save-drafts/log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "ad9fa2af3ff9db12110c9fcb37da6c91ead0446b23afc908be5781901e3caf95"
+    },
+    {
+      "content_file": "/mnt/c/Users/aa.timoshenko/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/22c6d421-1cc8-455d-bc53-4a238c83a8c9/scratchpad/save-drafts/hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "73e7f3bfaca7bce540c4df1ba6a69b8b0945188172002383dab852c749b4bd5b"
+    },
+    {
+      "content_file": "/mnt/c/Users/aa.timoshenko/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/22c6d421-1cc8-455d-bc53-4a238c83a8c9/scratchpad/save-drafts/hot-archive.md",
+      "mode": "replace",
+      "path": "wiki/hot-archive.md",
+      "sha256": "61448b9ae21c21f598b87e192327a36f1d99a8fce6bfd266a5a72c492b1d5b07"
+    }
+  ]
+}

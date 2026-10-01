@@ -1,0 +1,39 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/hot.md": "1b403b9cad122d2be5033d3d58d5a0af8e2ddb3a3624359908c8fd81620f7c70",
+    "wiki/index.md": "4f7834ca37d372b542d02a036336fea88829c508c31679f499446d2105c45993",
+    "wiki/log.md": "32233b202d75552301ebebd05e00d36761ee4468d153e0108d44ea0666276c82",
+    "wiki/questions/LoyaltyWidgets-Counter-Period-Arg-Localization.md": null
+  },
+  "operation_id": "save-20260930-88221034354131-counter-period-localization",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "wiki__questions__LoyaltyWidgets-Counter-Period-Arg-Localization.md",
+      "mode": "create",
+      "path": "wiki/questions/LoyaltyWidgets-Counter-Period-Arg-Localization.md",
+      "sha256": "1ffba3d6ef75088bac185692484ee54b35b60fbfb1553da8cd8e0f7c3eea3405"
+    },
+    {
+      "content_file": "wiki__index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "612b19e4bd9c4c77e86825ddce90837216199b5ce0ad99f1da3b4aab7b4f143c"
+    },
+    {
+      "content_file": "wiki__log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "2a7406aedd3c9e91adf930029cdd3a31e0074c110c2ebd48154aee3224bd2d8b"
+    },
+    {
+      "content_file": "wiki__hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "80689f5f7605836696b9506377684debec2a2f7db8eeceb5351b122b867d6daf"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-10-01
+updated: 2026-09-25
 tags:
   - meta
   - log
@@ -9,37 +9,6 @@ status: evergreen
 related:
   - "[[index]]"
 ---
-
-## [2026-10-01] ingest | БЗ «Оформление документации»: регламент проверки ТД, шаблон «Алгоритмы и процессы»
-
-- Source: `.raw/Оформление документации/` (5 файлов, отрендерены из sabydoc папки `765b987c-4b6c-4474-b165-5fbe5b04bd7b`)
-- Summary: [[kb-oformlenie-dokumentacii-2026-10-01]]
-- Pages created: [[kb-oformlenie-dokumentacii-2026-10-01]]
-- Pages updated: [[Tensor-TechDoc-Standards]], [[Fedko-Documentation-Philosophy]], [[index]], [[hot]], [[hot-archive]]
-- Key insight: философия Федько — верхний уровень над правилами базы знаний. Правила говорят, что и где писать (автодок БЛ или services-info, draw.io, сиквенс-диаграмма на процесс). Федько проверяет, как это читается, и сужает ссылки до вики.
-- Четыре статьи папки уже были в [[tensor-techdoc-standards-2026-04-12]], их повторно не разбирали. «Правила оформления» сняты заново ради разделов про API и диаграммы.
-
-## [2026-10-01] save | Звонок 30.09: ревью ТД импорта ДК у Федько + философия документации
-
-- Type: source + concept
-- Location: wiki/sources/zvonok-fedko-omelyanenko-timoshenko-importdc-doc-2026-09-30.md, wiki/concepts/Fedko-Documentation-Philosophy.md
-- From: `.raw/Совещания/Звонок 2026-09-30 2054. Омельяненко Егор, Федько Юрий.md` — транскрипт записи звонка (47:37, gpt-4o-transcribe-diarize, говорящие по контексту)
-- Key insight: Федько согласен со смыслом документа об импорте дисконтных карт, но не принимает текст: «Мне не нравятся буквы, но мне нравятся мысли». Документ смотрит директор (январь), поэтому писать нужно как формальный документ.
-- Философия документации сведена из двух ревью (23.06 итеративная загрузка, 30.09 импорт ДК) в 11 принципов и чек-лист.
-- Ограничения: ledgers (`wiki/meta/ledgers/`) в хранилище не заведены, claim-записи не создавались; `.raw` — симлинк на `raw/`, движок через него не пишет, поэтому операция save без адресов и manifest, транскрипт положен в `raw/Совещания/` отдельно; атрибуция говорящих ненадёжна на коротких репликах.
-- Created: [[zvonok-fedko-omelyanenko-timoshenko-importdc-doc-2026-09-30]], [[Fedko-Documentation-Philosophy]]
-- Updated: [[Федько-Юрий-Сергеевич]], [[index]], [[hot]]
-
-## [2026-09-30] save | №88221034354131: «Период» в виджете «Счётчик» не переводится — не наш баг
-
-- Type: synthesis
-- Location: wiki/questions/LoyaltyWidgets-Counter-Period-Arg-Localization.md
-- From: conversation по ошибке на стенде №88221034354131 (`4bd6e576-c716-415d-bc49-65a9db80efe1`) — лента и переписка задачи (Буранов, Посивнич, Алексеев 29.07.25; Буранов → Агафонцев 20.08.26; возвраты 22.09 и 30.09.26), `git log` price-formation (`6bf0e1e151`, `6949a0929d`, `9142deb8b3`), `LoyaltyWidgets.aorx`, `PriceFormation.Online/lang/en.json`, июльский `.sbislogz` с ответом `DataContext.Find`
-- Key insight: окно настроек счётчика показывает `title` параметра из `DataContext.Find` без учёта языка, а `title` в Genie один. Бэк уже отдаёт `name="Period"`, `local_name="Период"`, `title="Период"`, перевод в словаре модуля есть — третья правка aorx ничего не даст.
-- Подтверждение со стороны: у чужого метода `КоличествоАккаунтовПоФишке` параметр с тем же описанием (`name: "Period"`, `title: "Период"`) тоже не переводился.
-- Рекомендация: переназначить Буранову А. («Система типов и контекст данных»); выбор между `name` и переводом `title` для остальных локалей — с Агафонцевым Д.
-- Инструментальное: `sbis_get_timeline` не отдаёт URL файлов перехода, скачать скриншот 30.09 и `.sbislogz` 23.09 не удалось.
-- Created: [[LoyaltyWidgets-Counter-Period-Arg-Localization]]
 
 ## [2026-09-25] save | №06242899: вкладка акции на конструкторе Дизайна ДК — штампики без ShowStamps
 

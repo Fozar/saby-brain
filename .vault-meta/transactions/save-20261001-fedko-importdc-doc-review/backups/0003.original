@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-10-01
+updated: 2026-09-23
 tags:
   - meta
   - index
@@ -140,7 +140,6 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[zvonok-musohranov-timoshenko-2026-06-30]] (c-000148) — 2026-06-30 | сдача задачи корешков: миграция существующих сделок реализована, проверка невозможна до версии 400; GUI не готов; сдавать как есть с декларацией планов
 - [[zvonok-musohranov-timoshenko-2026-07-22]] (c-000203) — 2026-07-22 | как тестировать ВНР миграции корешков: отладить метод из консоли на фикстуре до оборачивания в ВНР; не спихивать сплошную проверку на QA ([[Настя-QA]]) без явного сценария
 - [[zvonok-musohranov-timoshenko-2026-07-23]] (c-000210) — 2026-07-23 | ревью подсчёта статистики по корешкам: `GetPartnerList` строго по реф. программе; решение хранить сумму по сделкам в поле «Сумма» ВЦД (`SUM` рядом с `COUNT`, пока пусто); открытые вопросы по `ТипСвязи`/индексам
-- [[zvonok-fedko-omelyanenko-timoshenko-importdc-doc-2026-09-30]] — 2026-09-30 | ревью ТД импорта ДК из файла у Федько: смысл верный, текст не принят — переписать формальным языком, с акцентами, ссылками на вики и без разговорных оборотов
 
 ## Concepts
 
@@ -181,8 +180,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[PostgreSQL-CTE-Cursor-Pushdown]] — проталкивание курсора пагинации внутрь CTE до GROUP BY; 3-4x ускорение без индекса; паттерн корректности для 1-к-1 CTE (status: current)
 - [[JSONB-Array-Containment-Optimization]] — PostgreSQL: замена EXISTS+jsonb_array_elements_text на @> оператор; устраняет SubPlan, снижает время с ~435ms до ~1ms (status: current)
 - [[Python-Code-Standards-SBIS]] — PEP-8 + Wasaby exceptions: 120 chars, CamelCase for platform methods (status: current)
-- [[Tensor-TechDoc-Standards]] — when/what/how to write ТД: structure, audience matrix, formatting rules, anti-patterns; с 01.10 — ссылки на автодок БЛ, draw.io и сиквенс-диаграммы, шаблон «Алгоритмы и процессы», регламент проверки ТД (status: current)
-- [[Fedko-Documentation-Philosophy]] — философия документации Юры Федько: 11 принципов приёмки ТД (читатель без контекста, акценты, расшифровка последствий, ссылки на вики, без чужой логики) + чек-лист перед сдачей (status: developing)
+- [[Tensor-TechDoc-Standards]] — when/what/how to write ТД: structure, audience matrix, formatting rules, anti-patterns (status: current)
 - [[Python-Localization-rk]] — rk() function rules: no static vars, no concatenation, plurals (status: current)
 - [[Bonus-GetSaleTotals-Timeout-Fix]] — bugfix: таймаут заголовка реестра Бонусы/Покупки; MIN(EffectiveDate) без фильтра → 17s/3M строк; fix: новый индекс BonusSaleEffectiveDate (ВидЦены, EffectiveDate) (status: active)
 - [[ReferralBonus-GetSaleList-Iterative-Ordering-Bug]] — bugfix реестра рефералки: (1) дубли SaleId → GROUP BY Sale + MAX(EffectiveDate) + ORDER BY SaleId; (2) хаотичный порядок при скролле вверх → backward даёт ASC, фронт разворачивает; инверсия вставки графиков/итогов в общем `add_graphic_data` по `navigation.Direction()` (status: fixed)
@@ -449,7 +447,6 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[saby-naming-guide-2026-04-12]] — 2026-04-12 | official Saby product naming rules
 - [[saby-products-lineup-2026-04-12]] — 2026-04-12 | full Saby product catalog
 - [[tensor-techdoc-standards-2026-04-12]] — 2026-04-12 | Tensor tech doc standards
-- [[kb-oformlenie-dokumentacii-2026-10-01]] — 2026-10-01 | БЗ «Оформление документации»: регламент проверки ТД, шаблон «Алгоритмы и процессы», Best Practice
 - [[wasaby-infra-2026-04-12]] — 2026-04-12 | Wasaby infrastructure docs
 - [[tests-new-readme-2026-04-11]] — 2026-04-11 | test framework README
 - [[zvonok-offer-bug-zlateks-2026-04-13]] — 2026-04-13 | Zlateks offer bug investigation

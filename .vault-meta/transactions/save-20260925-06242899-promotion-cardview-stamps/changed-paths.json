@@ -1,0 +1,30 @@
+{
+  "approval_sha256": "24e8f24db05e4b51cd9531361357c0352b186733feaf8c51630ae5f3dbaa8a45",
+  "bundle_sha256": "6137523d0457b7a98a69c1777be63e328c96ed494eb10dac24ae34d8439d5460",
+  "changed_paths": [
+    "wiki/concepts/Promotion-CardView-Constructor-Stamps.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "expanded_bundle_sha256": "6137523d0457b7a98a69c1777be63e328c96ed494eb10dac24ae34d8439d5460",
+  "hashes": {
+    "wiki/concepts/Promotion-CardView-Constructor-Stamps.md": "3109735fae8c13f531b5887279924855875b3553e2b986b149764a42696b8ad3",
+    "wiki/hot-archive.md": "70a448ec0d57286c44f200073ebbacef4e4496b04c3168cf1ca0ae24d5f9d2a6",
+    "wiki/hot.md": "79ac1776b768d6906d4a42d006459d2a32dcf4e475e2260f6fc3fe93ca184632",
+    "wiki/index.md": "4f7834ca37d372b542d02a036336fea88829c508c31679f499446d2105c45993",
+    "wiki/log.md": "32233b202d75552301ebebd05e00d36761ee4468d153e0108d44ea0666276c82"
+  },
+  "modes": {
+    "wiki/concepts/Promotion-CardView-Constructor-Stamps.md": 384,
+    "wiki/hot-archive.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20260925-06242899-promotion-cardview-stamps",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

@@ -1,0 +1,30 @@
+{
+  "approval_sha256": "7b7798e1a2ef4fd987786a5b729d6ced12217d0e7cce196e3a03a0c0c89286ce",
+  "bundle_sha256": "5f8fc4c7c76e44546b29783d39c423bdf9a9609f1ec35ae9e1835d327f4cb03a",
+  "changed_paths": [
+    "wiki/concepts/DiscountCard-Issue-Trigger-Event.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "expanded_bundle_sha256": "5f8fc4c7c76e44546b29783d39c423bdf9a9609f1ec35ae9e1835d327f4cb03a",
+  "hashes": {
+    "wiki/concepts/DiscountCard-Issue-Trigger-Event.md": "e0577fd39778e8574ee6481025db9916482e01804d7b9d0eba02aa0d82659c73",
+    "wiki/hot-archive.md": "4cc801ec80292149b10678c660cc567cf9581222f2ce2420b96c73b23f414360",
+    "wiki/hot.md": "1c0391971c55bd4ff742d821d98f0eaa2f078fdacea52ffe389b41979c7f2603",
+    "wiki/index.md": "53b85faf7e56e8968f597188c7d3e95217a9f28ee14b6867de174f78d683e76d",
+    "wiki/log.md": "af627c19d7fee5beea33e32d4b2c8a77f99d79915e987b1b98fb9fa0206b0230"
+  },
+  "modes": {
+    "wiki/concepts/DiscountCard-Issue-Trigger-Event.md": 384,
+    "wiki/hot-archive.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20260923-discountcard-issue-trigger",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

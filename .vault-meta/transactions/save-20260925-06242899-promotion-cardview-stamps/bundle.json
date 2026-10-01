@@ -1,0 +1,46 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/concepts/Promotion-CardView-Constructor-Stamps.md": null,
+    "wiki/hot-archive.md": "4cc801ec80292149b10678c660cc567cf9581222f2ce2420b96c73b23f414360",
+    "wiki/hot.md": "1c0391971c55bd4ff742d821d98f0eaa2f078fdacea52ffe389b41979c7f2603",
+    "wiki/index.md": "53b85faf7e56e8968f597188c7d3e95217a9f28ee14b6867de174f78d683e76d",
+    "wiki/log.md": "af627c19d7fee5beea33e32d4b2c8a77f99d79915e987b1b98fb9fa0206b0230"
+  },
+  "operation_id": "save-20260925-06242899-promotion-cardview-stamps",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "wiki__concepts__Promotion-CardView-Constructor-Stamps.md",
+      "mode": "create",
+      "path": "wiki/concepts/Promotion-CardView-Constructor-Stamps.md",
+      "sha256": "3109735fae8c13f531b5887279924855875b3553e2b986b149764a42696b8ad3"
+    },
+    {
+      "content_file": "wiki__index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "4f7834ca37d372b542d02a036336fea88829c508c31679f499446d2105c45993"
+    },
+    {
+      "content_file": "wiki__log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "32233b202d75552301ebebd05e00d36761ee4468d153e0108d44ea0666276c82"
+    },
+    {
+      "content_file": "wiki__hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "79ac1776b768d6906d4a42d006459d2a32dcf4e475e2260f6fc3fe93ca184632"
+    },
+    {
+      "content_file": "wiki__hot-archive.md",
+      "mode": "replace",
+      "path": "wiki/hot-archive.md",
+      "sha256": "70a448ec0d57286c44f200073ebbacef4e4496b04c3168cf1ca0ae24d5f9d2a6"
+    }
+  ]
+}

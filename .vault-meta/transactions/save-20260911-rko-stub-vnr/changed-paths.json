@@ -1,0 +1,30 @@
+{
+  "approval_sha256": "902f6bbfd3f49df4f92e7eb9e95dde2dd604b4fd6b967b03c10b54993686e54d",
+  "bundle_sha256": "9f7779e2277bf8a7daeedbe32dafa3f1646b4d42e1220d93602ad5d50df0ae0c",
+  "changed_paths": [
+    "wiki/meta/RKO-Existing-Requests-Stub-Backfill.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "expanded_bundle_sha256": "9f7779e2277bf8a7daeedbe32dafa3f1646b4d42e1220d93602ad5d50df0ae0c",
+  "hashes": {
+    "wiki/hot-archive.md": "61448b9ae21c21f598b87e192327a36f1d99a8fce6bfd266a5a72c492b1d5b07",
+    "wiki/hot.md": "73e7f3bfaca7bce540c4df1ba6a69b8b0945188172002383dab852c749b4bd5b",
+    "wiki/index.md": "721cdd64239ce9348e15043118e222d0c9b32d61bbd389f58fa24a56c9427d3c",
+    "wiki/log.md": "ad9fa2af3ff9db12110c9fcb37da6c91ead0446b23afc908be5781901e3caf95",
+    "wiki/meta/RKO-Existing-Requests-Stub-Backfill.md": "62eab11528d87aaaad0200b199cb5729752414ea3a331dfb4883e096751dfe97"
+  },
+  "modes": {
+    "wiki/hot-archive.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511,
+    "wiki/meta/RKO-Existing-Requests-Stub-Backfill.md": 384
+  },
+  "operation_id": "save-20260911-rko-stub-vnr",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

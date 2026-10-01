@@ -1,0 +1,53 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/hot-archive.md": "2407721602e2a0fb9a60bf3ab7d5f34fab99e39f355526ea4fc4a56b42a66032",
+    "wiki/hot.md": "dd770404ec0faf033e96b49112613ef6afdbd080393fa42dac453c576dd1441b",
+    "wiki/index.md": "c7c051b1da235ac7f8fcbcdf94594ab21ab5cca42233966a0ba1c2ccad90a6d9",
+    "wiki/log.md": "29a4516f199e6f6bc8d38d9dea7771f068680cfc797e1584a2405509a417551b",
+    "wiki/questions/DiscountCardTemplate-Create-Design-Dialog.md": null,
+    "wiki/questions/DiscountCardType-Create-Design-Constructor.md": "ab75b44ea77dce53f2917df612e608a3121828a3f7f95ad0c74ab5978ad89d66"
+  },
+  "operation_id": "save-20260910-dc-design-dialog",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "/mnt/c/Users/AA059D~1.TIM/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/add983b2-a385-4b00-820b-7af44fc4ec6e/scratchpad/drafts/DiscountCardTemplate-Create-Design-Dialog.md",
+      "mode": "create",
+      "path": "wiki/questions/DiscountCardTemplate-Create-Design-Dialog.md",
+      "sha256": "1b384c24189a4eba6366f521bc1e5fed49e2ad88fe58feddf26df6b26e5981e1"
+    },
+    {
+      "content_file": "/mnt/c/Users/AA059D~1.TIM/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/add983b2-a385-4b00-820b-7af44fc4ec6e/scratchpad/drafts/DiscountCardType-Create-Design-Constructor.md",
+      "mode": "replace",
+      "path": "wiki/questions/DiscountCardType-Create-Design-Constructor.md",
+      "sha256": "48c0bb4bb5453c119ba3616eeb64aeaa2fddee6caea618b7e65e04b6e445747b"
+    },
+    {
+      "content_file": "/mnt/c/Users/AA059D~1.TIM/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/add983b2-a385-4b00-820b-7af44fc4ec6e/scratchpad/drafts/index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "69ef018d467e3ca119f046beb41d46d4197444841daa24386f997d7962d96c14"
+    },
+    {
+      "content_file": "/mnt/c/Users/AA059D~1.TIM/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/add983b2-a385-4b00-820b-7af44fc4ec6e/scratchpad/drafts/log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "20a032fe30cd203be0d09add636f8e406470be269da7cb213c9076aefb99efee"
+    },
+    {
+      "content_file": "/mnt/c/Users/AA059D~1.TIM/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/add983b2-a385-4b00-820b-7af44fc4ec6e/scratchpad/drafts/hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "e143b46cb0c61a395a7d96b2e0450c1655320f010e95fd5cdf40e9df305c4d67"
+    },
+    {
+      "content_file": "/mnt/c/Users/AA059D~1.TIM/AppData/Local/Temp/claude/C--Users-aa-timoshenko-PycharmProjects-price-formation/add983b2-a385-4b00-820b-7af44fc4ec6e/scratchpad/drafts/hot-archive.md",
+      "mode": "replace",
+      "path": "wiki/hot-archive.md",
+      "sha256": "181762d27b06392f6b827573fc9b6a92de04da54bca8610a38a4691569910a6c"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "approval_sha256": "1226e11d3deca818fd449d8efca0a5a8046f1eec843b764f646d4d9b7c781684",
+  "bundle_sha256": "042736d0cfd1fbf71163362b200cd5bb96806598819ee8bfd821f3913e5b78ed",
+  "changed_paths": [
+    "wiki/sources/zvonok-fedko-omelyanenko-timoshenko-importdc-doc-2026-09-30.md",
+    "wiki/concepts/Fedko-Documentation-Philosophy.md",
+    "wiki/entities/Федько-Юрий-Сергеевич.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md"
+  ],
+  "expanded_bundle_sha256": "042736d0cfd1fbf71163362b200cd5bb96806598819ee8bfd821f3913e5b78ed",
+  "hashes": {
+    "wiki/concepts/Fedko-Documentation-Philosophy.md": "0abdcf541172ce3bc9c555ee89d7b232a6a571390b2e40f218ecd7cb01debe30",
+    "wiki/entities/Федько-Юрий-Сергеевич.md": "231c8f96b6510ae7e93a3e9d3c7e565e61c4c1172c0f194a89e62406c22ddbaa",
+    "wiki/hot.md": "bf48763c1ba74642a5171349943f6deb1ad983b5fae170ed29487e34e452493e",
+    "wiki/index.md": "fb3b5d515f287658f8b99c09f9b90f5b332df02b7d2322e3a3f3d40196ed257d",
+    "wiki/log.md": "0ddaba7d2970b9eb05bd4ec29ad2b83026c23de86c80d14595ea522ccd940688",
+    "wiki/sources/zvonok-fedko-omelyanenko-timoshenko-importdc-doc-2026-09-30.md": "5ed8f59ad9d31d6f6f3c7d9adb64bc11987c605387e53b95e9cebd0c78513947"
+  },
+  "modes": {
+    "wiki/concepts/Fedko-Documentation-Philosophy.md": 384,
+    "wiki/entities/Федько-Юрий-Сергеевич.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511,
+    "wiki/sources/zvonok-fedko-omelyanenko-timoshenko-importdc-doc-2026-09-30.md": 384
+  },
+  "operation_id": "save-20261001-fedko-importdc-doc-review",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}
