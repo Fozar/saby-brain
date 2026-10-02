@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-10-02
+updated: 2026-10-01
 tags:
   - meta
   - log
@@ -9,13 +9,6 @@ status: evergreen
 related:
   - "[[index]]"
 ---
-
-## [2026-10-02] save | №090810941: петля discount-cards -> online -> discount-cards за франшизным балансом
-
-- Source: сессия Claude Code 02.10 (задача SBIS, код price-formation и discount-cards, MR !151571 и !27955)
-- Pages created: [[DiscountCard-GetListWithStats-SDK-Call-Loop]]
-- Pages updated: [[index]], [[hot]], [[hot-archive]]
-- Key insight: петлю убрал фильтр `SkipFranchiseBalance` — online не ходит в СДК за франшизным балансом, СДК досчитывает его сам; описание метода не должно знать вызывающего
 
 ## [2026-10-01] ingest | Совещание 01.10: вторая сдача ТД импорта и экспорта ДК у Федько
 
