@@ -1,0 +1,65 @@
+{
+  "applied": [
+    "wiki/concepts/PromoCode-Registry-Search-By-Code.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "approval_sha256": "bf7c646ecc2bf15b46e931ce8c2f496189b00ac0a07587f1b51a7ac068174717",
+  "completed_epoch": 1791191334.9782689,
+  "created_epoch": 1791191334.769542,
+  "expanded_bundle_sha256": "c6f2282add43d6f678f50db75f01b8341e79b00c7602611276d3d9c7e3580e93",
+  "input_bundle_sha256": "c6f2282add43d6f678f50db75f01b8341e79b00c7602611276d3d9c7e3580e93",
+  "operation_id": "save-20261005-promocode-registry-search-by-code",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "3f49a9aa3de38781a700e2b19774c5c097f8c4f47fdc6ace3150287f2fcdf188",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/PromoCode-Registry-Search-By-Code.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "357f883caaaaa5333be36089aa45a272827f03e03d719bf8eec1aca15adb08e9",
+      "original_mode": 511,
+      "original_sha256": "a457f43232c0dd78dabf59e5c8fe9d1566638174898f2c5dafd54998c0794688",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "955eb3924fc05090fe26839949a824c4921cc2be87c8480928dc825562a6f087",
+      "original_mode": 511,
+      "original_sha256": "316d90fa2a230ba1eef0aaa7756c016c99861f3e946204396b1bf0a525557af2",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "2df972cd79846742c09c67d8ccaf1aad2ef03f0b9eb8616580dbeb78d5a453cf",
+      "original_mode": 511,
+      "original_sha256": "4bc9416f3b45b8a2a8b1a365ede3f5fcc0f6bb41c807afa8f2a5aa00c4e322d2",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "4993e2a42af93713bfe013c9fadedc7b29f8fc23454b1f09fceb24b6c440269d",
+      "original_mode": 511,
+      "original_sha256": "020faa4d6c208e7335ff729346a7e3b47bdf2360ac5019f96a2626f297dfa79c",
+      "path": "wiki/hot-archive.md"
+    }
+  ]
+}

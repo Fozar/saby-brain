@@ -1,0 +1,30 @@
+{
+  "approval_sha256": "bf7c646ecc2bf15b46e931ce8c2f496189b00ac0a07587f1b51a7ac068174717",
+  "bundle_sha256": "c6f2282add43d6f678f50db75f01b8341e79b00c7602611276d3d9c7e3580e93",
+  "changed_paths": [
+    "wiki/concepts/PromoCode-Registry-Search-By-Code.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "expanded_bundle_sha256": "c6f2282add43d6f678f50db75f01b8341e79b00c7602611276d3d9c7e3580e93",
+  "hashes": {
+    "wiki/concepts/PromoCode-Registry-Search-By-Code.md": "3f49a9aa3de38781a700e2b19774c5c097f8c4f47fdc6ace3150287f2fcdf188",
+    "wiki/hot-archive.md": "4993e2a42af93713bfe013c9fadedc7b29f8fc23454b1f09fceb24b6c440269d",
+    "wiki/hot.md": "2df972cd79846742c09c67d8ccaf1aad2ef03f0b9eb8616580dbeb78d5a453cf",
+    "wiki/index.md": "357f883caaaaa5333be36089aa45a272827f03e03d719bf8eec1aca15adb08e9",
+    "wiki/log.md": "955eb3924fc05090fe26839949a824c4921cc2be87c8480928dc825562a6f087"
+  },
+  "modes": {
+    "wiki/concepts/PromoCode-Registry-Search-By-Code.md": 384,
+    "wiki/hot-archive.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20261005-promocode-registry-search-by-code",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}
