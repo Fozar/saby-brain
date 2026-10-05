@@ -1,0 +1,65 @@
+{
+  "applied": [
+    "wiki/concepts/SabyGet-Franchisee-Join-Greeting-Bonus.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "approval_sha256": "9ad4248f1b8abf1e315b9f24d7c70cb005a7163baad9258a908d4c9b02971eaf",
+  "completed_epoch": 1791193464.0722692,
+  "created_epoch": 1791193463.1069968,
+  "expanded_bundle_sha256": "a39122620c0fd3acae2a4417c955cac46470f36b8363c354a62d1ff8d75ffbb0",
+  "input_bundle_sha256": "a39122620c0fd3acae2a4417c955cac46470f36b8363c354a62d1ff8d75ffbb0",
+  "operation_id": "save-20261005-02185039-franchisee-greeting",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "891c1be9c0f9bee59857992545941c1c5428d39e07bdb8fe78fbad497b2345ae",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/SabyGet-Franchisee-Join-Greeting-Bonus.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "185b4e90f89b666d72f3f7ac6eddc892dc2b8a420a8cd013530915335b1dffac",
+      "original_mode": 511,
+      "original_sha256": "357f883caaaaa5333be36089aa45a272827f03e03d719bf8eec1aca15adb08e9",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "946d909603a68f0f18bf87bd72e9ea10d1c354c549d170c0fff17a4383273d98",
+      "original_mode": 511,
+      "original_sha256": "955eb3924fc05090fe26839949a824c4921cc2be87c8480928dc825562a6f087",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "d3ae0c355ac0a0ae95008679890131d1b76f8a0bef97604bc569b454872216b3",
+      "original_mode": 511,
+      "original_sha256": "2df972cd79846742c09c67d8ccaf1aad2ef03f0b9eb8616580dbeb78d5a453cf",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "4d0933e12046d362b67e196684859786743d742eb7b1d6a12df3734166701641",
+      "original_mode": 511,
+      "original_sha256": "4993e2a42af93713bfe013c9fadedc7b29f8fc23454b1f09fceb24b6c440269d",
+      "path": "wiki/hot-archive.md"
+    }
+  ]
+}

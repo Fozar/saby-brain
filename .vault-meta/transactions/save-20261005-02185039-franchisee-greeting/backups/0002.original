@@ -10,13 +10,6 @@ related:
   - "[[index]]"
 ---
 
-## [2026-10-05] save | №02185039: приветственные бонусы при присоединении к партнёру франшизы в SabyGet
-
-- Source: сессия Claude Code 05.10 (задача SBIS и ошибка-первоисточник, лента, код price-formation, discount-cards, sabyget/core через saby-search)
-- Pages created: [[SabyGet-Franchisee-Join-Greeting-Bonus]]
-- Pages updated: [[index]], [[hot]], [[hot-archive]]
-- Key insight: у партнёра `GreetingValue` всегда пустой, потому что приветственные настройки нарочно не синхронизируются, а начисляет их аккаунт владельца. Вместо прокси в СДК можно взять значение владельца прямо в online `GetDescriptionBySalePointV2`, без правок SabyGet
-
 ## [2026-10-05] save | №03129162: поиск в реестре промокодов по коду выданного промокода
 
 - Source: сессия Claude Code 05.10 (задача SBIS, лента, видео из задачи, код price-formation)

@@ -1,0 +1,30 @@
+{
+  "approval_sha256": "9ad4248f1b8abf1e315b9f24d7c70cb005a7163baad9258a908d4c9b02971eaf",
+  "bundle_sha256": "a39122620c0fd3acae2a4417c955cac46470f36b8363c354a62d1ff8d75ffbb0",
+  "changed_paths": [
+    "wiki/concepts/SabyGet-Franchisee-Join-Greeting-Bonus.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "expanded_bundle_sha256": "a39122620c0fd3acae2a4417c955cac46470f36b8363c354a62d1ff8d75ffbb0",
+  "hashes": {
+    "wiki/concepts/SabyGet-Franchisee-Join-Greeting-Bonus.md": "891c1be9c0f9bee59857992545941c1c5428d39e07bdb8fe78fbad497b2345ae",
+    "wiki/hot-archive.md": "4d0933e12046d362b67e196684859786743d742eb7b1d6a12df3734166701641",
+    "wiki/hot.md": "d3ae0c355ac0a0ae95008679890131d1b76f8a0bef97604bc569b454872216b3",
+    "wiki/index.md": "185b4e90f89b666d72f3f7ac6eddc892dc2b8a420a8cd013530915335b1dffac",
+    "wiki/log.md": "946d909603a68f0f18bf87bd72e9ea10d1c354c549d170c0fff17a4383273d98"
+  },
+  "modes": {
+    "wiki/concepts/SabyGet-Franchisee-Join-Greeting-Bonus.md": 384,
+    "wiki/hot-archive.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20261005-02185039-franchisee-greeting",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}
