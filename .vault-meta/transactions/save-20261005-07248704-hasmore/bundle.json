@@ -1,0 +1,46 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/concepts/PartnerPromoCode-SaleNode-HasMore-Iterative-Bug.md": null,
+    "wiki/hot-archive.md": "5ed9303623bf68a033e222c61c62b4a44fcee8cffc670205a7f665f6650caf85",
+    "wiki/hot.md": "63e4174f208ae2f5e968f6124174527d4d57afd3e1ea80fe59c11c4af53d98bb",
+    "wiki/index.md": "e90f789b304fca29f1050741f9f3b6ed9f478e52ae9565f41feaed9e13067d3e",
+    "wiki/log.md": "9eb233dd38e1c50a0313f87e03aa3fadafe69341a1a5cc5b3b4267a09fa0f685"
+  },
+  "operation_id": "save-20261005-07248704-hasmore",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "d_note.md",
+      "mode": "create",
+      "path": "wiki/concepts/PartnerPromoCode-SaleNode-HasMore-Iterative-Bug.md",
+      "sha256": "a821e32be07fb4079d99d041e4bf1ebd892a2477c851e7514d46b1aca534ba6b"
+    },
+    {
+      "content_file": "d_index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "a457f43232c0dd78dabf59e5c8fe9d1566638174898f2c5dafd54998c0794688"
+    },
+    {
+      "content_file": "d_log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "316d90fa2a230ba1eef0aaa7756c016c99861f3e946204396b1bf0a525557af2"
+    },
+    {
+      "content_file": "d_hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "4bc9416f3b45b8a2a8b1a365ede3f5fcc0f6bb41c807afa8f2a5aa00c4e322d2"
+    },
+    {
+      "content_file": "d_archive.md",
+      "mode": "replace",
+      "path": "wiki/hot-archive.md",
+      "sha256": "020faa4d6c208e7335ff729346a7e3b47bdf2360ac5019f96a2626f297dfa79c"
+    }
+  ]
+}

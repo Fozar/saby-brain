@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-10-05
+updated: 2026-10-02
 tags:
   - meta
   - log
@@ -9,13 +9,6 @@ status: evergreen
 related:
   - "[[index]]"
 ---
-
-## [2026-10-05] save | №07248704: «Ещё...» под продажей партнёрского промокода — hasMore при исчерпанном блоке
-
-- Source: сессия Claude Code 05.10 (задача SBIS, лента, `.sbislogz` 24.07, код price-formation)
-- Pages created: [[PartnerPromoCode-SaleNode-HasMore-Iterative-Bug]]
-- Pages updated: [[index]], [[hot]], [[hot-archive]]
-- Key insight: третий возврат; кнопку рисует `n: true` порционного `PromoCode.GetSaleList`, а не дубль. Неполный блок значит конец данных. Фикс локально в `PromoCodeSaleListIterative`, ветка 26.6100 (первую по ошибке сделал от 5100)
 
 ## [2026-10-02] save | №090810941: петля discount-cards -> online -> discount-cards за франшизным балансом
 
