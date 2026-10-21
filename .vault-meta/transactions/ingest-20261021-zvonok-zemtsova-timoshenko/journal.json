@@ -1,0 +1,105 @@
+{
+  "applied": [
+    ".raw/Совещания/Звонок 2026-10-21 1310. Земцова Анастасия, Тимошенко Александр.md",
+    "wiki/sources/zvonok-zemtsova-timoshenko-2026-10-21.md",
+    "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md",
+    "wiki/meta/ReferralStub-Backfill-Service-Method.md",
+    "wiki/hot.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    ".vault-meta/address-counter.txt",
+    ".raw/.manifest.json"
+  ],
+  "approval_sha256": "6eb84ebebc32583f7a42294745cfc3c907c0ade50307f2af25140a4d59d68546",
+  "completed_epoch": 1792579206.6556058,
+  "created_epoch": 1792579206.2250228,
+  "expanded_bundle_sha256": "d0785ec5ce36bda6ad32d7876b581133ee31f6012b0105ba144798d497e4864f",
+  "input_bundle_sha256": "e49f5d89c7a05513c962fa098818b6c0241052bf954ca43e01debdd725d4632d",
+  "operation_id": "ingest-20261021-zvonok-zemtsova-timoshenko",
+  "operation_type": "ingest",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "4cebed5778b62df60d2dea755fd14458a9055f4725d5e2e20414f9afe79407ca",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": ".raw/Совещания/Звонок 2026-10-21 1310. Земцова Анастасия, Тимошенко Александр.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "25d42a7a0b40e007b55d5b42518e6498e9f527d9515168e0240caa5104c20fbe",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/sources/zvonok-zemtsova-timoshenko-2026-10-21.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "923064381fac7015523e1a4f8d6cc880932bb4620c28ca118f3ad5a8b6c99225",
+      "original_mode": 511,
+      "original_sha256": "5dbb43d5af7646f13ff7cb7fc2ef8b7f9b2721da3672a8bf512082f2cc6b1508",
+      "path": "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "604c6369c097d4bb9a5de89f40864821f7594ed55633bbafccc01eb9ac0f6fdb",
+      "original_mode": 511,
+      "original_sha256": "66307ea2279f81dbee3f9a6ac0b89b6b4f0c0cd5e8009ee0effad82a806e378a",
+      "path": "wiki/meta/ReferralStub-Backfill-Service-Method.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "22275ee84b4e4d1aefeae71eddc395537f63fd193c6d406d293e69d287121734",
+      "original_mode": 511,
+      "original_sha256": "6e13dca50ca66d65f30ac45e642ac692772e0f127f690c1b4637c9e565f2a3bc",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0005.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "9dbd5c873a0622d6839de6d03de08993424f56a8af4a3c47a98cbc2d161d22c2",
+      "original_mode": 511,
+      "original_sha256": "56034ce42a1657bd1975c610f8549b7e476950a0644bc59d260c3ecf88c38029",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0006.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "67815cbe146216a3cb48a98d56951112de8a4ee298ee4ce85c8f22411836b435",
+      "original_mode": 511,
+      "original_sha256": "2bf37c8a28cc833db8548b20f5b7cd8e71c0f96e2a01d90e6b71055ed7468a63",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0007.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "769c72e875add310e07ccefc2cacb5a2c983fb12b95197660903e335c4d373ce",
+      "original_mode": 511,
+      "original_sha256": "565b6c5dfda1c10331dff54981307263d2de6444cd54226a8964a58b1d1e5b0e",
+      "path": ".vault-meta/address-counter.txt"
+    },
+    {
+      "backup": "0008.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "ea9516e897b7bbe058e3d963b6f39dfdfb75e76adfb78d7b2434d39965596dde",
+      "original_mode": 511,
+      "original_sha256": "f5d732181f421c6cee9c0ca73d7ff5d87d658fe2e056d6a6afb8d7c3e0c9caac",
+      "path": ".raw/.manifest.json"
+    }
+  ]
+}

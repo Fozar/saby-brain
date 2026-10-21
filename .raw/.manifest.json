@@ -197,7 +197,8 @@
     "wiki/sources/zvonok-musohranov-timoshenko-2026-07-23.md": "c-000210",
     "wiki/sources/zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29.md": "c-000222",
     "wiki/sources/zvonok-tim-sveshnikov-mihel-referral-history-ui-2026-07-29.md": "c-000228",
-    "wiki/sources/zvonok-tim-sveshnikov-referral-history-buttons-2026-07-29.md": "c-000227"
+    "wiki/sources/zvonok-tim-sveshnikov-referral-history-buttons-2026-07-29.md": "c-000227",
+    "wiki/sources/zvonok-zemtsova-timoshenko-2026-10-21.md": "c-000281"
   },
   "created": "2026-04-23",
   "description": "Ingest delta tracker and address map for the claude-obsidian vault. Do not hand-edit; wiki-ingest maintains this.",
@@ -1415,6 +1416,20 @@
       "pages_updated": [
         "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
         "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    ".raw/Совещания/Звонок 2026-10-21 1310. Земцова Анастасия, Тимошенко Александр.md": {
+      "hash": "4cebed5778b62df60d2dea755fd14458a9055f4725d5e2e20414f9afe79407ca",
+      "ingested_at": "2026-10-21",
+      "pages_created": [
+        "wiki/sources/zvonok-zemtsova-timoshenko-2026-10-21.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md",
+        "wiki/meta/ReferralStub-Backfill-Service-Method.md",
         "wiki/index.md",
         "wiki/hot.md",
         "wiki/log.md"

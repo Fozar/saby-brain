@@ -1,0 +1,42 @@
+{
+  "approval_sha256": "6eb84ebebc32583f7a42294745cfc3c907c0ade50307f2af25140a4d59d68546",
+  "bundle_sha256": "e49f5d89c7a05513c962fa098818b6c0241052bf954ca43e01debdd725d4632d",
+  "changed_paths": [
+    ".raw/Совещания/Звонок 2026-10-21 1310. Земцова Анастасия, Тимошенко Александр.md",
+    "wiki/sources/zvonok-zemtsova-timoshenko-2026-10-21.md",
+    "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md",
+    "wiki/meta/ReferralStub-Backfill-Service-Method.md",
+    "wiki/hot.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    ".vault-meta/address-counter.txt",
+    ".raw/.manifest.json"
+  ],
+  "expanded_bundle_sha256": "d0785ec5ce36bda6ad32d7876b581133ee31f6012b0105ba144798d497e4864f",
+  "hashes": {
+    ".raw/.manifest.json": "ea9516e897b7bbe058e3d963b6f39dfdfb75e76adfb78d7b2434d39965596dde",
+    ".raw/Совещания/Звонок 2026-10-21 1310. Земцова Анастасия, Тимошенко Александр.md": "4cebed5778b62df60d2dea755fd14458a9055f4725d5e2e20414f9afe79407ca",
+    ".vault-meta/address-counter.txt": "769c72e875add310e07ccefc2cacb5a2c983fb12b95197660903e335c4d373ce",
+    "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md": "923064381fac7015523e1a4f8d6cc880932bb4620c28ca118f3ad5a8b6c99225",
+    "wiki/hot.md": "22275ee84b4e4d1aefeae71eddc395537f63fd193c6d406d293e69d287121734",
+    "wiki/index.md": "9dbd5c873a0622d6839de6d03de08993424f56a8af4a3c47a98cbc2d161d22c2",
+    "wiki/log.md": "67815cbe146216a3cb48a98d56951112de8a4ee298ee4ce85c8f22411836b435",
+    "wiki/meta/ReferralStub-Backfill-Service-Method.md": "604c6369c097d4bb9a5de89f40864821f7594ed55633bbafccc01eb9ac0f6fdb",
+    "wiki/sources/zvonok-zemtsova-timoshenko-2026-10-21.md": "25d42a7a0b40e007b55d5b42518e6498e9f527d9515168e0240caa5104c20fbe"
+  },
+  "modes": {
+    ".raw/.manifest.json": 511,
+    ".raw/Совещания/Звонок 2026-10-21 1310. Земцова Анастасия, Тимошенко Александр.md": 384,
+    ".vault-meta/address-counter.txt": 511,
+    "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511,
+    "wiki/meta/ReferralStub-Backfill-Service-Method.md": 511,
+    "wiki/sources/zvonok-zemtsova-timoshenko-2026-10-21.md": 384
+  },
+  "operation_id": "ingest-20261021-zvonok-zemtsova-timoshenko",
+  "operation_type": "ingest",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

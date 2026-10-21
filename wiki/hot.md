@@ -15,6 +15,10 @@ related:
 
 # Recent Context
 
+## 2026-10-21 — Приёмка корешков после ВНР: реестр и виджет сходятся под фичей
+
+**[[zvonok-zemtsova-timoshenko-2026-10-21]]**: Земцова сверила реестр «Заявки» и виджет оферов с фичей `ref_deals_convert` и без. Под фичей всё сходится (в «test [2.0]» 16 успешных и в реестре, и в виджете). Расхождения без фичи: две удалённые заявки (обе незавершённые) и заявка «Египет» со вручную сменённым источником, это битые данные, не ВНР. Единица в успешных «test [2.0]» (16 с фичей, 15 без) не выяснена. Решили пропускать на бой, Земцова довыполнит на тесте и притесте. По базе: успешных корешков 23 и 16, лишний у «test [2.0]» один из пяти на карте 93.
+
 ## 2026-10-21 — №09234904: звонок с Лебедевой, дорабатываем Card.GetListV2
 
 **[[zvonok-lebedeva-timoshenko-2026-10-21]]**: отдельный метод `Card.GetDesignViewData` (предложен 20.10) отклонён. Все экраны SabyGet (реестр «Карты», выданная карта, превью) закрываются `Card.GetListV2`: под условием «есть `SiteId` и у владельца включена `dc_design_new`» в `Template` баннер и фон плюс `SiteId`, `LoyaltyCardDesignId`, ИД карты. №09234998 решается тем же ТР, задачу передают Тимошенко. Правка `SiteId` в !28051 остаётся.
@@ -89,7 +93,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 - **Рекрутинговая рефералка «Приведи друга»**: [[RecruitmentReferral-Project]] — третья реферальная вертикаль, целевой документ «Кандидат на вакансию»; ранняя редакция (оценки/сроки не проставлены)
 - **История корешков реф. программы**: [[ReferralStub-History-Scope-Cut]] — backend готов, `for_program` добавлен 2026-07-31; UI (кнопки, размещение) — на август, см. [[ReferralProgram-History-UI-Design]]
 - **Сумма по сделкам в корешках**: [[ReferralStub-LeadSum-Implementation]] — поле `LeadSum` реализовано 2026-08-06; остались уведомление SabyBank (Артемьев Д.) и доброска существующих корешков
-- **Реестр «Заявки» на корешках**: [[ReferralProgram-RefDealsConvert-Feature]] — фича `ref_deals_convert` (вознаграждение в корешках: [[ReferralStub-Reward-Writing-Gap-2026-10]]); БЛ-методы переведены (`GetStats`, `GetPartnerList`, [[ReferralProgram-GetLeadPeriodList-Stub-Mode|GetLeadPeriodList]]), включение на `pre` пока не подтверждено
+- **Реестр «Заявки» на корешках**: [[ReferralProgram-RefDealsConvert-Feature]] — фича `ref_deals_convert` (вознаграждение в корешках: [[ReferralStub-Reward-Writing-Gap-2026-10]]); БЛ-методы переведены (`GetStats`, `GetPartnerList`, [[ReferralProgram-GetLeadPeriodList-Stub-Mode|GetLeadPeriodList]]), приёмка на fix пройдена 21.10 ([[zvonok-zemtsova-timoshenko-2026-10-21]]), включение на `pre` пока не подтверждено
 - **Перенос реф. программ между конфигурациями**: [[ReferralProgram-MoveToAgentGroup]] — реализовано, тестируется (Земцова)
 
 Полная история — [[log]].
