@@ -11,10 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           }
         ]
@@ -198,6 +198,10 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "wiki/hot.md",
+    "wiki/hot-archive.md",
+    "wiki/entities/Лебедева-Наталья.md",
+    "wiki/entities/Земцова-Анастасия.md",
+    "wiki/log.md",
     "wiki/concepts/SabyGet-Franchisee-Join-Greeting-Bonus.md",
     "wiki/concepts/PromoCode-Registry-Search-By-Code.md",
     "wiki/concepts/PartnerPromoCode-SaleNode-HasMore-Iterative-Bug.md",
@@ -231,10 +235,6 @@
     "wiki/concepts/UpdateSystem-Patches.md",
     "wiki/concepts/ReferralProgram-GetLeadPeriodList-HasPrices-Compat.md",
     "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md",
-    "wiki/sources/referral-program-part2-attachments-2026-08-06.md",
-    "wiki/entities/Кулешов-Дмитрий.md",
-    "wiki/entities/Тихонов-Илья.md",
-    "wiki/concepts/ReferralProgram-SabyNet-Offer-Contract.md",
     "b574f7eb0125c1b0124a6fc9ae01137f_MD5.avif",
     "d0b1a1d090a19d801608dc5637e37b4d_MD5.avif",
     "10671913693748aff0ddd78f4ab4b13b_MD5.avif",
