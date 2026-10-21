@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md"
+  ],
+  "approval_sha256": "070e009696c44688924f010ab3d081d5519ad4c41a438eed7777cc36029645ae",
+  "completed_epoch": 1792584062.1120117,
+  "created_epoch": 1792584061.896523,
+  "expanded_bundle_sha256": "7ba34220a9f59c7804b3ddff5375d834356ff99c7ce8795b0c9931687f10b75d",
+  "input_bundle_sha256": "7ba34220a9f59c7804b3ddff5375d834356ff99c7ce8795b0c9931687f10b75d",
+  "operation_id": "save-20261021-09234904-roadmap",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "27c661a820986ce937833b458064cc6f710ea58c6404786dd207e18b7f3c32a9",
+      "original_mode": 384,
+      "original_sha256": "e26747b2b0b0fe1f966aa2bfc365c27775d87e91794c58acb1ce4587dfb0409d",
+      "path": "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "d67071189d0ac98d474634257ef390bcc11e748af9513d3d8895df1a3271eba0",
+      "original_mode": 511,
+      "original_sha256": "69888ea47cbc11cafc9fdc2266db9faad9d6c23a1b45236163131071acc8475f",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "49ede80f15bb5756a3f6939c2c158a9a8089706ad562dcd7a6825c6359f8c186",
+      "original_mode": 511,
+      "original_sha256": "c45c43905849ec78694718e9f65240d1cad8721459273a611820eb420689f34b",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "924180878e532b96cac5ede2e253f7fa5669370722611c06499889503d11b238",
+      "original_mode": 511,
+      "original_sha256": "c7df2739e91e75a5e1a7600a12b20b6290ef1a562e08e651d652dee00a3e8dc1",
+      "path": "wiki/hot.md"
+    }
+  ]
+}

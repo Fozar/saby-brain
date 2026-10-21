@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "070e009696c44688924f010ab3d081d5519ad4c41a438eed7777cc36029645ae",
+  "bundle_sha256": "7ba34220a9f59c7804b3ddff5375d834356ff99c7ce8795b0c9931687f10b75d",
+  "changed_paths": [
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md"
+  ],
+  "expanded_bundle_sha256": "7ba34220a9f59c7804b3ddff5375d834356ff99c7ce8795b0c9931687f10b75d",
+  "hashes": {
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md": "27c661a820986ce937833b458064cc6f710ea58c6404786dd207e18b7f3c32a9",
+    "wiki/hot.md": "924180878e532b96cac5ede2e253f7fa5669370722611c06499889503d11b238",
+    "wiki/index.md": "d67071189d0ac98d474634257ef390bcc11e748af9513d3d8895df1a3271eba0",
+    "wiki/log.md": "49ede80f15bb5756a3f6939c2c158a9a8089706ad562dcd7a6825c6359f8c186"
+  },
+  "modes": {
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20261021-09234904-roadmap",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}
