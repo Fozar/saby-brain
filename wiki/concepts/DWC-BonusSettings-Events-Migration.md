@@ -106,3 +106,9 @@ def _send_xxx_via_dwc(...) -> None:
 | `PriceFormation.Online/LoyaltyPrograms.dwc` | +2 workflow |
 | `PriceFormation.Online/priceformationonline/loyaltyprograms/bonus/crud/notify_sdk.py` | event → DWC |
 | `PriceFormation.Online/priceformationonline/loyaltyprograms/promotion/has_available.py` | event → DWC |
+
+---
+
+## Удаление фичи (№03266097, 2026-10-21)
+
+Марина (чек-лист проекта) нашла `dwc_bonus_settings` в коде 6100. В price-formation фичу убрали ещё в августе (коммит `e5ee76df5c`), осталась в discount-cards: константа в `dcservice/core/core/feature.py`, проверка флага в `BonusSettings.HandleChangeHolidaySettings` и два теста. Убрали всё, событие `discount-cards.holidays.changed` теперь публикуется всегда. Ветка `26.6100/feature/aatimoshenko/03266097_delete_bonus_settings_feature`, MR !28104 и !28105. Тесты локально не гонял, ждём CI.
