@@ -18,6 +18,12 @@ related:
 - Pages updated: [[ReferralProgram-RefDealsConvert-Feature]], [[ReferralStub-Backfill-Service-Method]], [[index]], [[hot]]
 - Key insight: под фичей реестр и виджет сходятся, расхождения без фичи объяснены удалёнными заявками и вручную сменённым источником (битые данные, не ВНР). Не выяснено: единица в успешных «test [2.0]» (16 с фичей, 15 без). Решение: пропускаем на бой. Отдельно из базы: лишний успешный корешок «test [2.0]» один из пяти на карте 93, а удалённые заявки были незавершёнными и его не объясняют.
 
+## [2026-10-21] save | №09234904: разбор кода SabyGet, черновик документа для внедрения
+
+- Source: сессия Claude Code 21.10 (клоны `sabyget/core`, `sabyget/referral` `rc-26.6100`, discount-cards `rc-26.6100`)
+- Pages updated: [[SabyGet-Card-Preview-Design-Constructor]], [[zvonok-lebedeva-timoshenko-2026-10-21]], [[index]], [[hot]]
+- Key insight: превью невыданной карты SabyGet берёт из online `GetDescriptionBySalePointV2` и подставляет в `Card.Template`, поэтому online-часть нужна и имена полей должны совпадать. `WithStampsOnBanner` работает только для брендбука, баннер дизайна на конструкторе `GetListV2` теряет (читает `Strip` вместо `Banner`). Бэк SabyGet приводит `Template` к своему формату и новые поля отбросит. Черновик `docs/sabyget-new-design-dc.md`.
+
 ## [2026-10-21] ingest | Звонок 21.10 с Лебедевой: ТР внедрения нового дизайна ДК в SabyGet через Card.GetListV2
 
 - Source: `.raw/Совещания/Звонок 2026-10-21 1235. Лебедева Наталья, Тимошенко Александр.md` (автоматическая расшифровка, 12:35 до 12:54) и документ Лебедевой «Внедрение нового дизайна в сабигет» во вложениях №09234904

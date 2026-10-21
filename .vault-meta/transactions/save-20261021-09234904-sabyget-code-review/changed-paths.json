@@ -1,0 +1,30 @@
+{
+  "approval_sha256": "73eacb4a5b5a0719f56e7d60cbbc0673f7f411289ace444a63daf6c75eba8da2",
+  "bundle_sha256": "9a17b697bb438f5503fe800ebe93ac0605b149fce3d9031a7c9c2a4c5f0d640c",
+  "changed_paths": [
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
+    "wiki/sources/zvonok-lebedeva-timoshenko-2026-10-21.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md"
+  ],
+  "expanded_bundle_sha256": "9a17b697bb438f5503fe800ebe93ac0605b149fce3d9031a7c9c2a4c5f0d640c",
+  "hashes": {
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md": "e26747b2b0b0fe1f966aa2bfc365c27775d87e91794c58acb1ce4587dfb0409d",
+    "wiki/hot.md": "c7df2739e91e75a5e1a7600a12b20b6290ef1a562e08e651d652dee00a3e8dc1",
+    "wiki/index.md": "69888ea47cbc11cafc9fdc2266db9faad9d6c23a1b45236163131071acc8475f",
+    "wiki/log.md": "c45c43905849ec78694718e9f65240d1cad8721459273a611820eb420689f34b",
+    "wiki/sources/zvonok-lebedeva-timoshenko-2026-10-21.md": "98eabef058ab5be46adfe8618692dbbe1e70da933e7c38824490c826aea6bd04"
+  },
+  "modes": {
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511,
+    "wiki/sources/zvonok-lebedeva-timoshenko-2026-10-21.md": 384
+  },
+  "operation_id": "save-20261021-09234904-sabyget-code-review",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

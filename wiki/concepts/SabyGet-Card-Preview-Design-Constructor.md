@@ -97,6 +97,21 @@ related:
 
 **Что с кодом:** правка `SiteId` в `Template` (!28051, коммит `a4097c79b`) не откатывается, она входит в новое решение.
 
+## Разбор кода SabyGet 21.10 (после звонка)
+
+Код `sabyget/core` и `sabyget/referral` ветки `rc-26.6100` (поверхностный клон) и discount-cards `rc-26.6100`.
+
+- **Превью невыданной карты идёт из online, документ Лебедевой неточен.** `CardInfoByEstParams` кладёт в `CardPreview` поле `Template` из `GetDescriptionBySalePointV2` (`referral/bonus_system/base.py:200`). `FullCardList` -> `Card.GetListV2` отдаёт только выданные карты. В `get_bonus_details` (`sabyget_service/discount_cards/bonus_info.py:178-184`): нет карты, есть превью, тогда `Card = {Template: CardPreview, EmissionBarCode: CardPreview.TypeBarCode}`; есть карта, тогда `CardPreview = Card.Template`. Фронт всегда читает `Card.Template`, отсюда впечатление, что `CardPreview` не используется. Online-часть (!152256) нужна; имена новых полей в обоих источниках должны совпадать (сейчас в online `DesignID`).
+- **Фильтры `Card.GetListV2`:** страница заведения `ClientID` + `SalePoint` (или `ShopID`); реестр «Карты» `Keys`, `ForSiteList` (`GetCardListShortFrm` -> `CardList` -> `FullCardList`); диалог выданной карты `Card.ReadV2(card_id)`, внутри СДК `Keys` + `WithStampsOnBanner=True`; `referral/operations/base.py:477` `ClientID` + `SearchString`, читает только `SalePointList`. Признака «нужен плеер» SabyGet не передаёт.
+- **`WithStampsOnBanner`** SabyGet не передаёт, выставляет только `Card.ReadV2`. В `GetListV2` работает только в ветке брендбука (`_get_template_from_brand_book`, кеш `CardType.Info.StampsBannerImage`); для дизайна на конструкторе ветки нет, хотя кеш картинок для конструктора уже генерируется (№09236765).
+- **Баннер дизайна на конструкторе теряется.** В `ViewDetails` конструктора ключи `Logo`, `Banner` (URL строкой), `BackgroundColor` (`appobjectimpl/loyaltycarddesign/write.py:_set_images`). У такого дизайна нет `ApplicationKey`, `GetListV2` идёт в общую ветку: `BackgroundColor` и `Logo` читаются (ключи совпадают), баннер нет: SQL берёт `Strip`/`StripID`. На Inside `get_admin_list` уже читает `ViewDetails->>'Banner'`.
+- **Реестр «Карты» SabyGet:** картинка `FrontImg`, затем `TmplFrontImg` (= `OrgLogo`); `Template.StripImageUrl` приоритетен в `common.py:59`; фон `Template.BackgroundColor`.
+- **Бэк SabyGet отбросит новые поля:** `BonusCard.Read` описывает формат `Template` списком полей, `read_card` (`user_cards.py`) приводит запись через `MergeRecords` к `BonusCard.Read/2`. Новые поля надо добавить в их форматы (`BonusCard.Read`, `Card` в `Establishment.BonusDetails`). Не проверено на стенде.
+
+**Что отсюда для ТР `GetListV2`:** баннер конструктора (`ViewDetails->>'Banner'`) и баннер со штампиками при `WithStampsOnBanner`; новые поля `SiteId`, `LoyaltyCardDesignId` (= `Template.ID`), `CardUUID` под условием; в online переименовать `DesignID`.
+
+**Документ для SabyGet:** черновик `docs/sabyget-new-design-dc.md` в price-formation (не в git), 21.10.
+
 ## QA (после внедрения SabyGet, тестовый стенд)
 
 1. Тип карты с дизайном на конструкторе, фича `dc_design_new` включена: на странице заведения, не будучи участником, превью карты в новом дизайне.
