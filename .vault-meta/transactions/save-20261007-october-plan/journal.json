@@ -1,0 +1,185 @@
+{
+  "applied": [
+    "wiki/meta/Bug-Backlog-2026-10.md",
+    "wiki/meta/ReferralProgram-GetLeadPeriodList-Start-By-First-Stub.md",
+    "wiki/meta/ReferralStub-Backfill-Service-Method.md",
+    "wiki/concepts/DCQuestionary-Offline-Client-Duplicate-Bug.md",
+    "wiki/concepts/DiscountCard-Client-Delete-Event-Handlers.md",
+    "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md",
+    "wiki/concepts/DiscountCard-ImportExport-TD-Revision-5.md",
+    "wiki/concepts/LoyaltyReferral-RefProgram-FO-TZ-Alignment.md",
+    "wiki/concepts/PromoCode-Design-Constructor.md",
+    "wiki/concepts/PromoCode-Registry-Search-By-Code.md",
+    "wiki/concepts/ReferralStub-Partial-Indexes.md",
+    "wiki/concepts/Retail-Cleanup-Loyalty-Sales-Check.md",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "approval_sha256": "ac5baea6080c90e0e3baa6ae012f49c762c9daad1bebfdc7d4cca0a64b485018",
+  "completed_epoch": 1791388968.9000697,
+  "created_epoch": 1791388968.1629663,
+  "expanded_bundle_sha256": "4c73e8bd5e886defd8e56f3e09f2df65a6197b5a19d83264ffa3797bdfa20a3e",
+  "input_bundle_sha256": "4c73e8bd5e886defd8e56f3e09f2df65a6197b5a19d83264ffa3797bdfa20a3e",
+  "operation_id": "save-20261007-october-plan",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "57268e0d6cabe69309ef6e5243a25baf791c600966365211a7ff01be97650f88",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/meta/Bug-Backlog-2026-10.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "c112931371d9dcde55a0e9b3eece0e29b7255e5b5705ab6844141955b27d53de",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/meta/ReferralProgram-GetLeadPeriodList-Start-By-First-Stub.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "66307ea2279f81dbee3f9a6ac0b89b6b4f0c0cd5e8009ee0effad82a806e378a",
+      "original_mode": 511,
+      "original_sha256": "0ce5a9b9fd8b3dbc4bfb706a63407a2f53f88623ee78ebcf4dba2b6967107e64",
+      "path": "wiki/meta/ReferralStub-Backfill-Service-Method.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "3cee41e0fa91a031698db2a49f943d06f351437e4e76d30e253e7bbb0294a7cf",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/DCQuestionary-Offline-Client-Duplicate-Bug.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "8459ae187c2db5d093fd9bb301d6b9102c8dd6a3cdcca9dc98fb35570d9ca930",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/DiscountCard-Client-Delete-Event-Handlers.md"
+    },
+    {
+      "backup": "0005.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "c0281373cccde5ae27ed6e4729c516a75bd3e91637cc4792e5a3c179f7948d03",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md"
+    },
+    {
+      "backup": "0006.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "2ff6485bf19ebc80934ad0531fca0c28a3196c6ed286d5e55fb53ebe230c328b",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/DiscountCard-ImportExport-TD-Revision-5.md"
+    },
+    {
+      "backup": "0007.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "ad182e237d85be28f3fbc050dcb7d4d0033b5819c17fc95ea14ff88e28a51625",
+      "original_mode": 384,
+      "original_sha256": "67403fd12b279c73d5739fa64354729888d96162b4364d60200fbae756e0b312",
+      "path": "wiki/concepts/LoyaltyReferral-RefProgram-FO-TZ-Alignment.md"
+    },
+    {
+      "backup": "0008.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "729fa70e79d98b690f96da094caf1d5792cf29508f3b1fea0a32644b95af60a2",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/PromoCode-Design-Constructor.md"
+    },
+    {
+      "backup": "0009.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "423acd067feab7cc59f78f8a39a73daaf547a5a4d15a3a97463f6382d1219c93",
+      "original_mode": 384,
+      "original_sha256": "3f49a9aa3de38781a700e2b19774c5c097f8c4f47fdc6ace3150287f2fcdf188",
+      "path": "wiki/concepts/PromoCode-Registry-Search-By-Code.md"
+    },
+    {
+      "backup": "0010.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "8989c500a9047faeb201986010402168b435db2e7a0c9a314de6b85de39c813f",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/ReferralStub-Partial-Indexes.md"
+    },
+    {
+      "backup": "0011.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "85da805368795d48d9a095ca2264ced5ac40c2391d3430ed171fd6bbf922c906",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/Retail-Cleanup-Loyalty-Sales-Check.md"
+    },
+    {
+      "backup": "0012.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "96ce0f34a45c00de91f7147d9463f130c44629ebc302248ec23b40a05ca3e954",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md"
+    },
+    {
+      "backup": "0013.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "fc9146846a4d166b9eb8fcd5df94160cde2a69f8d949d922cad19207523b0e89",
+      "original_mode": 511,
+      "original_sha256": "05d72779d93121abb09d6374f46f4b67609a4b2f5ad27e758b23f46d0540f444",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0014.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "4b7723c25ac11682d1baa472488026db2b5c405f513f1902b484159a8cfa3948",
+      "original_mode": 511,
+      "original_sha256": "caab31534fa1d1615c9cda0cf5ba769398679b7c944a55ed02ffb05251a94eb7",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0015.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "22f17bea0aa982c6745cf260de04a6545b702b0c40276a64a2a00551d8adedfb",
+      "original_mode": 511,
+      "original_sha256": "1074f43de329397e21ceb3bff7def613f37e6da0be5ad4da3ef22f181f47f91b",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0016.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "7f0d9f309eed50fecae670d688a663b1dc7be36a0125d5baae1d0303b5c1b074",
+      "original_mode": 511,
+      "original_sha256": "75ce1d67427ef18ff6f26d6d162f02eeb9faf388f2a13f0dd78c298280c7ad72",
+      "path": "wiki/hot-archive.md"
+    }
+  ]
+}

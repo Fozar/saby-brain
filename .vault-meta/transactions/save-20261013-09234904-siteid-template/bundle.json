@@ -1,0 +1,46 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md": "1b6df2543262f2f51a689de7cb421af66d99cc4f3a23e8c44ac80ff43d160274",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md": "002a7124beb4b553fb2b2b858e0e9c13f0629899fec6d5b7a0d146a0aeabb1bb",
+    "wiki/hot.md": "ccbb6380515ea2124783f0d5a6ef85e0c27c57add17691170c2f6135ea9fc32f",
+    "wiki/index.md": "464f74793bdd82fc1f85a1d96cfd3dffd1374c631ab6ae398bef39e078389d79",
+    "wiki/log.md": "f2305e569f311cf0769e9c99bb8d91d23c11488a5030ee9cd2f533395a919420"
+  },
+  "operation_id": "save-20261013-09234904-siteid-template",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "wiki__concepts__SabyGet-Card-Preview-Design-Constructor.md",
+      "mode": "replace",
+      "path": "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
+      "sha256": "91e25d78b81965d17f9d454b903009ebd2a27d87ea772812c083d1dd27295c74"
+    },
+    {
+      "content_file": "wiki__concepts__SabyGet-Issued-Card-Design-Constructor.md",
+      "mode": "replace",
+      "path": "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md",
+      "sha256": "7b8b76fdd7fcf9cde9616f8ea1d297e1fde29384906467f9d2f3659a6fa0188e"
+    },
+    {
+      "content_file": "wiki__index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "6e0a72c3ce51b56b47ce25fdc41292fdc931a0a54775c91de751c05c7187eb4f"
+    },
+    {
+      "content_file": "wiki__log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "6844b8f3aa1d7a5ffe5ae5df0525cda93a77ade252ae1e601d03e2bfa25b7776"
+    },
+    {
+      "content_file": "wiki__hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "147878fbe23bcffcb686bdeb3e1cd751532a59f7bd65fa12c48212cd6d5a2972"
+    }
+  ]
+}

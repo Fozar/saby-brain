@@ -1,0 +1,89 @@
+---
+type: concept
+title: "SabyGet: превью ДК на странице заведения в новом дизайне"
+created: 2026-10-12
+updated: 2026-10-20
+status: developing
+tags:
+  - sabyget
+  - discount-cards
+  - site-builder
+  - tech-design
+related:
+  - "[[SabyGet-Issued-Card-Design-Constructor]]"
+  - "[[DiscountCard-Design-Constructor-Project]]"
+  - "[[DiscountCard-Design-Constructor-Architecture]]"
+  - "[[Test-Stand-Per-Release-Line]]"
+---
+
+# SabyGet: превью ДК на странице заведения в новом дизайне
+
+Задача в разработку №09234904 ([ссылка](https://online.sbis.ru/opendoc.html?guid=01a0cd72-fa62-7a81-8ecf-3574e33cb31e&client=3)), автор и ответственный Михель В.М., веха 26.6100, срок 28.11.2026. Этап «11 Карты в сабигет» проекта [[DiscountCard-Design-Constructor-Project]]. UI (компонент отображения ДК и хелпер предзагрузки `getDesignViewData(siteId, cardId, templateId)`) делает Лебедева Н. Парная задача про выданную карту: [[SabyGet-Issued-Card-Design-Constructor]] (№09234998).
+
+## Что просила постановка
+
+БЛ: добавить `SiteID` в `Card.GetListV2` из `CardTemplate.SiteId`; SabyGet протягивает его в `Establishment.BonusDetails`. Для хелпера ТЗ предлагает `siteId = BonusDetails.SiteID`, `cardId = CardPreview.ID`, `templateId = Card.Template.ID`. В заметках: новый дизайн показывать, если у владельца дизайна включена фича `dc_design_new` и есть `SiteId`, иначе старая логика.
+
+## Что выяснено по коду
+
+- **Превью не выданной карты идёт не из `Card.GetListV2`.** SabyGet берёт `CardPreview` из online `LoyaltyProgram.GetDescriptionBySalePointV2`, поле `Template` (`sgr_establishments.py:51`, `referral/bonus_system/base.py:138,200`). Его собирает price-formation `discountcard/discountcardtype/get_template.py`. `Card.GetListV2` попадает в `BonusDetails` только для выданной карты, тогда `CardPreview` перезаписывается шаблоном карты (`bonus_info.py:150`).
+- **`Template.ID` превью — это ID типа карты онлайна, а не дизайна.** ID дизайна (ПО ДизайнКарты) — `@Template` из `DiscountCardTemplate.Read`. Карты на этапе превью нет, `cardId` передавать нечего. ТЗ в этой части неточно; по решению Тимошенко постановщику об этом не сообщали.
+- `DiscountCardTemplate.Read(card_type_id)` уже отдаёт и `@Template`, и `SiteId`, поэтому новые поля не требуют лишних запросов.
+
+## Решение (согласовано 12.10, поправлено по ревью)
+
+- **СДК (discount-cards):** `Card.GetListV2` / `Card.ReadV2` отдают `SiteId` внутри `Template` (поле формата `TEMPLATE_FORMAT`, UUID, в `.orx` после `ShowDescription`) из активного дизайна типа карты, без проверки фичи (список карт из разных аккаунтов, фичу владельца дёшево не проверить). Для брендбука, хранимой карты и карты без дизайна онлайна `None`. Коммит перенесён из №09234998 в эту задачу.
+- **Online (price-formation):** `get_template` отдаёт в `Template` поля `DesignID` (`@Template`, int) и `SiteId` (uuid, только при включённой `dc_design_new`, иначе `None`). Поля объявлены в обеих версиях `GetDescriptionBySalePointV2` в `LoyaltyPrograms.orx`. Фронту хватает одного условия «`SiteId` заполнен».
+- Имя поля `SiteId`, как у колонки `CardTemplate.SiteId`. Сначала было `SiteID` (по постановке и по соседним `LogoID`, `StripID`), переименовано по замечанию ревьюбота в MR !28051.
+- Участник франшизы: шаблон читается у владельца, фича проверяется у участника. На практике не влияет: сетевые карты на конструктор не переводят.
+
+## Ревью MR !28051 (Кузаков Ю., 12–13.10)
+
+- `SiteId` перенесён из корня записи внутрь `Template`: это свойство дизайна, а не карты.
+- Тесты переписаны на хелперы СДК: `CardType.smart_create()`, `add_active_template(site_id=...)`, `smart_card_create(...)` вместо ручной сборки шаблона и карты.
+- Вопрос Кузакова в диалоге «зачем online-часть»: без неё превью на странице заведения не заработает, SabyGet берёт превью из `GetDescriptionBySalePointV2`, где `Template.ID` — ID типа карты, а плееру нужен ID дизайна. Ответ отправил Тимошенко.
+- Ответы в тредах MR пишет Тимошенко сам.
+
+## Чужие падения в CI price-formation
+
+В ветке упали `calc_with_meta_pos`: `test_nth_night_discount_threshold_by_total_quantity_uses_night_count` и `..._by_single_nom_quantity_uses_night_count`. Причина не в этой задаче: их сломал мерж `b9499968b0` (№10071142, Козлобродов), то же падение в чужом MR !152242, Jenkins `warehouse_price-formation_bl_ut` красный с 10782, 10781 зелёный. В свежей `rc-26.6100` и `rc-` discount-core исправления на 12.10 не было. Оба теста помечены `@skip` со ссылкой на ошибку [01a12f57](https://dev.saby.ru/opendoc.html?guid=01a12f57-9f58-779d-8bbe-680a30774cda&client=3), так же как `GetReceiptCardInfo.test_11`. Скип надо снять, когда ошибку исправят.
+
+## Состояние на 13.10.2026
+
+- discount-cards: ветка `26.6100/feature/aatimoshenko/09234904`, коммит `a4097c79b` «Card.GetListV2 и Card.ReadV2 отдают в Template SiteId сайта Дизайна ДК на конструкторе», MR !28051, запушено (force-with-lease).
+- price-formation: та же ветка, коммит `344b7a5028` «GetDescriptionBySalePointV2 отдаёт в Template SiteId и DesignID для превью ДК на конструкторе» (вместе со скипами), MR !152256, запушено.
+- Ждёт Тимошенко: ответы в MR !28051, закрыть MR !28028 и ветку `26.6100/feature/aatimoshenko/09234998`, выписать ошибку на Козлобродова по nth_night-тестам.
+- Задачи SabyGet на внедрение по-прежнему за Лебедевой.
+
+## Пересмотр ТР после замечания Лебедевой (13–20.10)
+
+- **13.10 Лебедева в MR №10123260:** текст задачи неактуален, `Card.GetListV2` трогать не надо. ТЗ не учло, что метод вызывают не только в диалоге: ещё список карт (`sabyget/core`, `discount_cards/base.py`) и `BonusDetails` (`sabyget/referral`, `operations/base.py`), где одного `SiteId` мало. Нужно другое ТР, скорее отдельный метод.
+- **14.10 Кузаков:** поправить конфликты и убрать скипы, доброску пока держит на себе.
+- ТЗ проекта ([[DiscountCard-Design-Constructor-Architecture]]) прямо закладывало `SiteID` по цепочкам `Card.GetListV2` -> `BonusDetails`, `Card.ReadV2` -> `BonusCard.Read`, `CardAdm.Read` -> `BonusCard.ReadForAdmin`. Отказ меняет ТЗ, Михелю надо сообщить. По той же схеме поставлена №09234826 (Inside, `CardAdm.Read` + `SiteID`, Лебедева).
+
+### Что выяснено по коду `rc-26.6100` (20.10)
+
+- `Questionary.GetCardData` для диалога не подходит: при каждом вызове запускает `CreateCardImage` и `ProvideCardPasses`.
+- От `@Card` отказались (Кузаков 13.10, задача №09236874): `NumberCard.Read` уже читает карту по UUID, данные карты для инфоблоков отдаёт `Card.GetDataForDesign(CardUUID)` (Кузаков).
+- `Card.GetListV2` UUID карты не отдаёт, только `Key` (`@Card`).
+- `LoyaltyCardDesign.Read` сверяет `ClientID` шаблона с текущим клиентом (`appobjectimpl/loyaltycarddesign/read.py:68-70`). В SabyGet под покупателем плеер ПО дизайна не прочитает: ни превью, ни выданная карта, ни страница получения. Решать в самом ПО (Кузаков).
+
+### Предложение (черновик Лебедевой, на 20.10 не отправлен)
+
+- `Card.GetListV2` не трогаем: коммит `a4097c79b` откатываем, MR !28051 закрываем.
+- Новый метод СДК (рабочее имя `Card.GetDesignViewData`): на вход `Card.Key`, на выходе `SiteId`, ИД дизайна (`@CardTemplate`) и `CardUUID` для плеера; метод проверяет, что карта принадлежит текущей персоне. ПО КартаЛояльности по UUID, данные карты из `GetDataForDesign`. Имя `CardUUID` как в `CreateCard`/`GetCardData` после переименования в №09236874.
+- Превью невыданной карты: online `GetDescriptionBySalePointV2` (!152256) остаётся как есть.
+- Список карт на новом дизайне: отдельной задачей по ТР Лебедевой.
+- Отдельно Кузакову: как открыть чтение `LoyaltyCardDesign.Read` в SabyGet.
+
+### Состояние на 20.10.2026
+
+- MR №10123260 у Тимошенко «В обработке» (после ревью Омельяненко). Код не менялся, ждём ответа Лебедевой.
+- !28051: три обсуждения Кузакова не закрыты (правки по ним сделаны). !152256: конфликты и скипы nth_night. !152257: автокопия ветки в `rc-26.6200`, тоже конфликты.
+
+## QA (после внедрения SabyGet, тестовый стенд)
+
+1. Тип карты с дизайном на конструкторе, фича `dc_design_new` включена: на странице заведения, не будучи участником, превью карты в новом дизайне.
+2. Та же карта, фича выключена: превью как раньше.
+3. Старый дизайн (брендбук): превью как раньше.
+4. Нажать «Получить»: выданная карта в новом дизайне, бонусы и описание выгод не изменились.

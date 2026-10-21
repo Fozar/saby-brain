@@ -1,0 +1,98 @@
+---
+type: concept
+title: "SabyGet: выданная карта на странице заведения в новом дизайне ДК"
+created: 2026-10-07
+updated: 2026-10-20
+status: developing
+tags:
+  - sabyget
+  - discount-cards
+  - site-builder
+  - tech-design
+related:
+  - "[[DiscountCard-Design-Constructor-Project]]"
+  - "[[DiscountCard-Design-Constructor-Architecture]]"
+  - "[[DiscountCard-Design-Constructor-WorkPlan]]"
+  - "[[SabyGet-Loyalty-Subsystems]]"
+  - "[[DiscountCardType-Create-Design-Constructor]]"
+  - "[[SabyGet-Card-Preview-Design-Constructor]]"
+---
+
+# SabyGet: выданная карта на странице заведения в новом дизайне ДК
+
+Задача в разработку №09234998 ([ссылка](https://online.sbis.ru/opendoc.html?guid=01a0cd77-2d7b-7648-af89-87889f73b5a7&client=3)), автор Михель В.М., создана 23.09.2026. Веха 26.6100, срок 28.11.2026. Этап проекта «11 Карты в сабигет» (Кузаков), проект [[DiscountCard-Design-Constructor-Project]]. В карточке исполнитель Лебедева Н., в плане октября пункт у Тимошенко: «Сделаны доработки на стороне лояльности, поставлены задачи на внедрение» (1,5 ч).
+
+Парная задача №09234904 ([ссылка](https://online.sbis.ru/opendoc.html?guid=01a0cd72-fa62-7a81-8ecf-3574e33cb31e&client=3)): превью карты на странице заведения. В ней БЛ «добавить SiteID в `Card.GetListV2`» и UI «компонент отображения ДК + хелпер предзагрузки для SabyGet» (Лебедева). Наша задача по UI ссылается на неё.
+
+## Что требует ТЗ
+
+ТЗ проекта, раздел «Карты в сабигет», три экрана:
+
+| Экран | Откуда SabyGet берёт данные | Лояльность | SabyGet |
+|---|---|---|---|
+| Страница заведения, превью карты (№09234904) | `Establishment.BonusDetails` | `Card.GetListV2` + `SiteID` | `BonusDetails` + `SiteID`, внедрить компонент |
+| Страница заведения, выданная карта (№09234998) | `Establishment.BonusDetails` | ничего сверх `Card.GetListV2` | внедрить компонент |
+| Страница Карт (задачи нет) | `BonusCard.Read` | `Card.ReadV2` + `SiteID` | `BonusCard.Read` + `SiteID`, внедрить компонент |
+
+Хелпер предзагрузки по ТЗ: `getDesignViewData(siteId, cardId, templateId)`. Для выданной карты на странице заведения ТЗ предлагает `siteId` = новое поле `SiteID` метода `Establishment.BonusDetails`, `cardId` = `CardPreview.ID`, `templateId` = `Card.Template.ID`.
+
+## Что выяснено
+
+**Цепочка данных выданной карты** (sabyget/core, rc-26.6100):
+- фронт: `SabyGetReferral/DataLoaders/PageLoader.ts:74` `readBonusDetails` -> `Establishment.BonusDetails`;
+- БЛ: `sabyget_service/discount_cards/bonus_info.py:117` `get_bonus_details` -> `BonusCard.FullCardList` -> `base.py:37` `Card.GetListV2` (СДК) -> `user_cards.py:97` `read_card` (приводит запись к формату `BonusCard.Read/2` через `MergeRecords`) -> поле `Card` результата;
+- если карта выдана, `CardPreview` = `Card.Template` (`bonus_info.py:149`). Значит `CardPreview.ID` в ТЗ для выданной карты это ID дизайна, а не карты. Идентификатор карты для ПО это `Card.Key` (`@Card` СДК).
+- `Establishment.BonusDetails` в `SabyGet.orx:5265`, ответственный Бритнев А.А.; последние правки `bonus_info.py` у Никитина Е.С.
+- панель бонусов заведения открывается и в киоске (`kiosk/ui`, `KioskBase/_payment/payKioskSlice.ts:459`).
+
+**СДК (discount-cards):**
+- `Card.ReadV2` (`dcservice/sabyget/card/read_v2.py`) это `Card.GetListV2` с фильтром `Keys`. Поле в `GetListV2` сразу появляется и в `ReadV2`, то есть закрывает БЛ лояльности для всех трёх экранов.
+- `Template.ID` в `GetListV2` = `COALESCE(StoredTemplate.@CardTemplate, OnlineTemplate.@CardTemplate)`, для карты онлайна это активный дизайн типа карты (`CT.ActiveTemplate`), он же ID ПО ДизайнКарты. `Key` = `@Card` СДК, он же ID ПО КартаЛояльности (решение Кузакова/Ютман от 28.09).
+- Образец уже сделан в анкете: `Questionary.CreateCard` отдаёт `SiteId`, `LoyaltyCardDesignId`, `CardId` (коммит `7d79aee7e`, есть в rc-26.6100). Фронт анкеты передаёт в плеер `siteId` и `contextConfigArguments {LoyaltyCardDesign: {id}, Card: {id}}` (`QuestionaryConstructor/_cardPreview/View/CardDataLoader.ts`, ветка Лебедевой `26.5100/bugfix/06242857_questionary_card_preview`).
+
+**ПО КартаЛояльности не реализовано.** В шаблонах сайта (`LoyaltyPublic/DiscountCard/Design/Templates/Bonus.site`) в контексте данных есть `LoyaltyCard` с пустым списком полей, а инфоблоки читают `['LoyaltyCard', 'FIO' | 'AvailableBonusBalance' | 'Discount' | 'Cashback' | ...]` с демо-значениями по умолчанию (`'Иванов И.И.'`, `'5%'`). Резолвера `LoyaltyCard.Read` нет ни в СДК, ни в online. В СДК есть только `LoyaltyCardDesign.Read/Write` и `NumberCard.Read` (Кузаков, 01.10, номер, баланс, блокировка, владелец). Если так и выпустить, на выданной карте в SabyGet инфоблоки покажут демо-данные вместо баланса и ФИО.
+
+## Тех. решение
+
+**Лояльность (СДК, discount-cards):** `Card.GetListV2` отдаёт `Template.SiteId` (UUID) из `CardTemplate.SiteId` активного дизайна типа карты (до ревью было поле `SiteID` в корне записи). Для дизайна на брендбуке, хранимой (добавленной вручную) карты и карты без дизайна онлайна `SiteId = None`. Остальные поля (`Template`, картинки, виджеты) не трогаем: их читают текущий UI SabyGet и мобильные приложения. `Card.ReadV2` получает поле автоматически. Это же закрывает пункт БЛ задачи №09234904.
+
+Отдельной доработки online (price-formation) не нужно.
+
+**SabyGet (задачи на внедрение):** протянуть `SiteId` в `Establishment.BonusDetails` и внедрить компонент Лебедевой в панель бонусов заведения. Для третьего экрана (страница Карт) задачи в этапе нет.
+
+## Черновики задач (не созданы)
+
+**1. SabyGet, БЛ + UI: выданная карта на странице заведения в новом дизайне ДК.** Кому: ответственному за `Establishment.BonusDetails` (Бритнев А.А., по `bonus_info.py` работал Никитин Е.С.); UI панели `SabyGetReferral` уточнить у них. Связать с №09234998 и №09234904, этап «11 Карты в сабигет».
+
+> Дизайн дисконтной карты переводим на конструктор сайтов (проект «Перевод дизайна дисконтных карт на конструктор»). После нажатия «Получить» на странице заведения выданная карта должна показываться в новом дизайне, если он настроен.
+>
+> БЛ. `Card.GetListV2` (discount-cards) теперь отдаёт в `Template` поле `SiteId` (UUID): сайт дизайна на конструкторе, `None` для старого дизайна. Нужно:
+> 1. В `Establishment.BonusDetails` добавить поле `SiteId`: брать `Card.Template.SiteId` выданной карты (цепочка `FullCardList` -> `Card.GetListV2` -> `read_card`).
+> 2. Проверить, что `SiteId` не теряется в `read_card` (запись приводится к формату `BonusCard.Read/2` через `MergeRecords`) и в формате поля `Card` метода `BonusDetails`.
+>
+> UI. Лояльность делает компонент отображения ДК и хелпер предзагрузки (задача №09234904). Перед открытием панели бонусов, если `SiteId` заполнен, вызвать хелпер и отдать результат компоненту в `preloadedData`. В хелпер передать: `siteId` = `SiteId`, `cardId` = `Card.Key`, `templateId` = `Card.Template.ID`. Если `SiteId` пустой, оставить текущее отображение.
+>
+> Панель открывается и из киоска (`KioskBase/_payment/payKioskSlice.ts`), проверить и там.
+
+**2. (вопрос к Михелю/Кузакову, не задача) Страница Карт SabyGet.** Третьего экрана из ТЗ (диалог карты в реестре sabyget.ru/cards, `BonusCard.Read`) в этапе нет. СДК после нашей правки уже отдаёт `Template.SiteId` в `Card.ReadV2`; со стороны SabyGet нужна такая же задача на `BonusCard.Read` и диалог карты.
+
+## Открытые вопросы
+
+1. **Кузакову / Ютман.** Кто и когда делает резолвер ПО КартаЛояльности (`LoyaltyCard.Read`) для инфоблоков? Без него выданная карта покажет демо-значения. Это `NumberCard` или отдельное ПО? Анкета передаёт в плеер ключ `Card`, а шаблоны сайта ждут `LoyaltyCard`.
+2. **Кузакову.** `NumberCard.Read` читает карту по `@Card` без проверки владельца. В SabyGet плеер будет звать его из сессии пользователя: нужна ли проверка, что карта принадлежит текущей персоне?
+3. ~~**Михелю.** Пункт БЛ задачи №09234904 делаем в рамках №09234998?~~ Решено 12.10: коммит СДК перенесён в №09234904, см. [[SabyGet-Card-Preview-Design-Constructor]].
+4. **Михелю / Ютман.** Мобильные приложения SabyGet/Brand (есть в плане тестирования) веб-плеер не покажут. Что показываем там, старый дизайн?
+
+## QA (после внедрения SabyGet, тестовый стенд)
+
+1. В аккаунте заведения настроить тип карты с дизайном на новом конструкторе, опубликовать. В SabyGet на странице заведения нажать «Получить»: выданная карта в новом дизайне (логотип, баннер, цвета, инфоблоки с реальным балансом и именем, а не «Иванов И.И.»).
+2. Тип карты со старым дизайном: после «Получить» карта выглядит как раньше.
+3. То же через киоск, если там открывается панель бонусов.
+
+## Состояние
+
+- 12.10.2026: правка СДК (`SiteID` в `Card.GetListV2` / `Card.ReadV2`) перенесена в задачу №09234904, ветка `26.6100/feature/aatimoshenko/09234904`, MR !28051. Старый MR !28028 и ветку `26.6100/feature/aatimoshenko/09234998` закрывает Тимошенко вручную. Подробности и online-часть для превью: [[SabyGet-Card-Preview-Design-Constructor]].
+- Выяснилось, что превью не выданной карты SabyGet берёт не из `Card.GetListV2`, а из online `GetDescriptionBySalePointV2`; `SiteId` и `DesignID` туда добавлены в рамках №09234904.
+- По ревью Кузакова поле переименовано в `SiteId` и перенесено внутрь `Template` (`Card.GetListV2`, `Card.ReadV2`), коммит `a4097c79b`. Текст задачи SabyGet выше поправлен под это.
+- Задачи SabyGet не созданы, вопросы 1, 2, 4 не отправлены.
+- 20.10.2026: MR !28028 и ветка `26.6100/feature/aatimoshenko/09234998` всё ещё открыты, закрыть. БЛ-требований от Лебедевой нет (обещала 09.10). Схема с `SiteId` в `Card.GetListV2` пересматривается: для выданной карты предложен отдельный метод для плеера (`Card.GetDesignViewData`, вход `Card.Key`, выход `SiteId`, ИД дизайна, `CardUUID`), см. [[SabyGet-Card-Preview-Design-Constructor]].

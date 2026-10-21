@@ -1,0 +1,85 @@
+{
+  "applied": [
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md",
+    "wiki/concepts/Test-Stand-Per-Release-Line.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "approval_sha256": "43847f27caa8588c05e358a3cb26d76e3ebf4344084a079ef157ec2f9eedaec7",
+  "completed_epoch": 1791791975.0646322,
+  "created_epoch": 1791791974.7682745,
+  "expanded_bundle_sha256": "6388200af6b313e30155be5e6198f88080bd40d0cf5520372d84aaaec3d6a252",
+  "input_bundle_sha256": "6388200af6b313e30155be5e6198f88080bd40d0cf5520372d84aaaec3d6a252",
+  "operation_id": "save-20261012-09234904-card-preview",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "1b6df2543262f2f51a689de7cb421af66d99cc4f3a23e8c44ac80ff43d160274",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "002a7124beb4b553fb2b2b858e0e9c13f0629899fec6d5b7a0d146a0aeabb1bb",
+      "original_mode": 511,
+      "original_sha256": "e2daff55e5c87a7782a432dda688398f82ef15c2410f4772bd2bfd194e73687e",
+      "path": "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "3523a489f35e301a18f3042aff59792f9c6168d59e7363df088d1c7739821215",
+      "original_mode": 511,
+      "original_sha256": "d4a84467f352a12cb8e931931bd4e98e2039b5e0ca779c7fadf95c2cb68b0fba",
+      "path": "wiki/concepts/Test-Stand-Per-Release-Line.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "f4bd9cad91b71d67a3a4b45055738ec62f4c32d2518909a23c7b16da88f77674",
+      "original_mode": 511,
+      "original_sha256": "35e6e0e8967635f7e0e82884bbf91d158a702b43a02e81a5ed1735f85d2470d3",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "859d7e280370c69d5306456a6882f8ff1895d8b66567711def111e7692bb2601",
+      "original_mode": 511,
+      "original_sha256": "5bd636a6b6d81bb4f688846b90a91f00000332a034191825869b9aa1d6c5ee10",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0005.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "542cc4ea62d42ab7479ada5b757860fa6d7394da2386268608ceb577f7f42113",
+      "original_mode": 511,
+      "original_sha256": "41d7e6a2158f67bbd5f77bde172f5a7149f181cb59cf9aa2602d18562065df6b",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0006.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "4c919ee6e3d091b9f9ef4e2d9ec48048bb81b16408d1b2d9f10462aef0c9584d",
+      "original_mode": 511,
+      "original_sha256": "7f0d9f309eed50fecae670d688a663b1dc7be36a0125d5baae1d0303b5c1b074",
+      "path": "wiki/hot-archive.md"
+    }
+  ]
+}

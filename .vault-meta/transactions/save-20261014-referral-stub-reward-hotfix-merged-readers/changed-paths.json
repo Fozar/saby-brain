@@ -1,0 +1,24 @@
+{
+  "approval_sha256": "3157b1426c2ee0c92e4e12bc6ee12fe2800ac11d36fca723a151adc535bc6ecc",
+  "bundle_sha256": "8d3d913a56585650a7bae2ed31010b65d884cda3887f257d8a14bb60badd1a83",
+  "changed_paths": [
+    "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "8d3d913a56585650a7bae2ed31010b65d884cda3887f257d8a14bb60badd1a83",
+  "hashes": {
+    "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md": "9e7a1aaaed7f7b69fc65efc35f57c4ab4b76916d7aff8abcd876f72cd4f94357",
+    "wiki/hot.md": "092e706c8e267010931a03838801daeb1c318471125cfabf72204df3a8dd6fe4",
+    "wiki/log.md": "1475381a98cf8edc6214f38512cb0163d32e3f67a00372b0d4947742a5bd44fa"
+  },
+  "modes": {
+    "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20261014-referral-stub-reward-hotfix-merged-readers",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

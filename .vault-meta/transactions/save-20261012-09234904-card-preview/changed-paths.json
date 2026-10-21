@@ -1,0 +1,36 @@
+{
+  "approval_sha256": "43847f27caa8588c05e358a3cb26d76e3ebf4344084a079ef157ec2f9eedaec7",
+  "bundle_sha256": "6388200af6b313e30155be5e6198f88080bd40d0cf5520372d84aaaec3d6a252",
+  "changed_paths": [
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md",
+    "wiki/concepts/Test-Stand-Per-Release-Line.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "expanded_bundle_sha256": "6388200af6b313e30155be5e6198f88080bd40d0cf5520372d84aaaec3d6a252",
+  "hashes": {
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md": "1b6df2543262f2f51a689de7cb421af66d99cc4f3a23e8c44ac80ff43d160274",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md": "002a7124beb4b553fb2b2b858e0e9c13f0629899fec6d5b7a0d146a0aeabb1bb",
+    "wiki/concepts/Test-Stand-Per-Release-Line.md": "3523a489f35e301a18f3042aff59792f9c6168d59e7363df088d1c7739821215",
+    "wiki/hot-archive.md": "4c919ee6e3d091b9f9ef4e2d9ec48048bb81b16408d1b2d9f10462aef0c9584d",
+    "wiki/hot.md": "542cc4ea62d42ab7479ada5b757860fa6d7394da2386268608ceb577f7f42113",
+    "wiki/index.md": "f4bd9cad91b71d67a3a4b45055738ec62f4c32d2518909a23c7b16da88f77674",
+    "wiki/log.md": "859d7e280370c69d5306456a6882f8ff1895d8b66567711def111e7692bb2601"
+  },
+  "modes": {
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md": 384,
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md": 511,
+    "wiki/concepts/Test-Stand-Per-Release-Line.md": 511,
+    "wiki/hot-archive.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20261012-09234904-card-preview",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

@@ -1,0 +1,65 @@
+{
+  "applied": [
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md"
+  ],
+  "approval_sha256": "7fa389331b3748e5a61c9263a41497d998f300ab18337586bf0773c5262057c7",
+  "completed_epoch": 1791878604.1686418,
+  "created_epoch": 1791878603.9190676,
+  "expanded_bundle_sha256": "7e0a1fcdf6e3e676fa685e52fcba35f65a13ce745b111ab2b2186ec713b448fb",
+  "input_bundle_sha256": "7e0a1fcdf6e3e676fa685e52fcba35f65a13ce745b111ab2b2186ec713b448fb",
+  "operation_id": "save-20261013-09234904-siteid-template",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "91e25d78b81965d17f9d454b903009ebd2a27d87ea772812c083d1dd27295c74",
+      "original_mode": 384,
+      "original_sha256": "1b6df2543262f2f51a689de7cb421af66d99cc4f3a23e8c44ac80ff43d160274",
+      "path": "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "7b8b76fdd7fcf9cde9616f8ea1d297e1fde29384906467f9d2f3659a6fa0188e",
+      "original_mode": 511,
+      "original_sha256": "002a7124beb4b553fb2b2b858e0e9c13f0629899fec6d5b7a0d146a0aeabb1bb",
+      "path": "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "6e0a72c3ce51b56b47ce25fdc41292fdc931a0a54775c91de751c05c7187eb4f",
+      "original_mode": 511,
+      "original_sha256": "464f74793bdd82fc1f85a1d96cfd3dffd1374c631ab6ae398bef39e078389d79",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "6844b8f3aa1d7a5ffe5ae5df0525cda93a77ade252ae1e601d03e2bfa25b7776",
+      "original_mode": 511,
+      "original_sha256": "f2305e569f311cf0769e9c99bb8d91d23c11488a5030ee9cd2f533395a919420",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "147878fbe23bcffcb686bdeb3e1cd751532a59f7bd65fa12c48212cd6d5a2972",
+      "original_mode": 511,
+      "original_sha256": "ccbb6380515ea2124783f0d5a6ef85e0c27c57add17691170c2f6135ea9fc32f",
+      "path": "wiki/hot.md"
+    }
+  ]
+}

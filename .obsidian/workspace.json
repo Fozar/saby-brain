@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/hot.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "hot"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -96,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/hot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,13 +197,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/hot.md",
     "wiki/concepts/SabyGet-Franchisee-Join-Greeting-Bonus.md",
     "wiki/concepts/PromoCode-Registry-Search-By-Code.md",
     "wiki/concepts/PartnerPromoCode-SaleNode-HasMore-Iterative-Bug.md",
     "wiki/concepts/Fedko-Documentation-Philosophy.md",
     "wiki/concepts/DiscountCard-GetListWithStats-SDK-Call-Loop.md",
     "wiki/sources/sovechanie-fedko-omelyanenko-timoshenko-importdc-doc-2026-10-01.md",
-    "wiki/hot.md",
     "raw/Совещания/Совещание 2026-10-01 1600. Сдача документации (импорт и экспорт ДК).md",
     "raw/Скрипты.md",
     "wiki/hot.md.tmp.42872.b5cb67280267",

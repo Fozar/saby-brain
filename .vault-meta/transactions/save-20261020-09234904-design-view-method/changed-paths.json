@@ -1,0 +1,36 @@
+{
+  "approval_sha256": "9814d8d8d1b1fed16adf55e4dc8852e8a44d494589e86973cf3284272c6f00fc",
+  "bundle_sha256": "e11d6b2b17c1efb6fbe1e32fd3c11089aed12a248722a31b3f8c71ceb9fe8df6",
+  "changed_paths": [
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md",
+    "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "expanded_bundle_sha256": "e11d6b2b17c1efb6fbe1e32fd3c11089aed12a248722a31b3f8c71ceb9fe8df6",
+  "hashes": {
+    "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md": "0be136526ee90059009a057c1f7d9b6e34ce5c7d80697ab377a28b8a5511d644",
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md": "05f43d075faaec0f52d43c24048498ed78ea60dc1412198ab3f766e74eb0c723",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md": "9601014626881fd14427879351440893a8f3d7ba64355c3db1eed643a86b9027",
+    "wiki/hot-archive.md": "7218834aad4671b38a69076e6a312bde348580a95577fead05462d4d874414cd",
+    "wiki/hot.md": "8430bce9076405dc15ed8f32e860c593517a5e8c60476e69779e046b4faafc3c",
+    "wiki/index.md": "164aceb5c523d9177b47324b9dbba166dd382c8693641b9730b604a424a29c8f",
+    "wiki/log.md": "f0e4d340d71e26dbc1baa0a070c71a96ef46823890a71d25f68e67e3413b7a37"
+  },
+  "modes": {
+    "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md": 384,
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md": 384,
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md": 511,
+    "wiki/hot-archive.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20261020-09234904-design-view-method",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md"
+  ],
+  "approval_sha256": "90868f5e6a660a2adbb59392162e2caf9def08e2df5f194d653d5973b9b160e4",
+  "completed_epoch": 1791789177.3108592,
+  "created_epoch": 1791789177.1447017,
+  "expanded_bundle_sha256": "86b721f795bbd6463a3428123c7e4588a089c43a4bcb3c895ff93bcccd7b48cd",
+  "input_bundle_sha256": "86b721f795bbd6463a3428123c7e4588a089c43a4bcb3c895ff93bcccd7b48cd",
+  "operation_id": "save-20261012-09236874-player-receiving-page",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "22bf4edea0b4fbb40aa44f2f59a6e380780f90a1f02c1faf387dcdcabd807ac1",
+      "original_mode": 384,
+      "original_sha256": "c0281373cccde5ae27ed6e4729c516a75bd3e91637cc4792e5a3c179f7948d03",
+      "path": "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "35e6e0e8967635f7e0e82884bbf91d158a702b43a02e81a5ed1735f85d2470d3",
+      "original_mode": 511,
+      "original_sha256": "77ee7ea987fbae2a44aef7b15a1819cc59a05dbb5bcf37aa96c49349a7cfdb8b",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "5bd636a6b6d81bb4f688846b90a91f00000332a034191825869b9aa1d6c5ee10",
+      "original_mode": 511,
+      "original_sha256": "425148d0f4cfebc363607a1fdc5917d96372c31b2e4dde5b5bd41db050e69220",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "41d7e6a2158f67bbd5f77bde172f5a7149f181cb59cf9aa2602d18562065df6b",
+      "original_mode": 511,
+      "original_sha256": "056fd20011556685906ee312c179f8ae28e7281fa232b815daf52a3ac063cd92",
+      "path": "wiki/hot.md"
+    }
+  ]
+}

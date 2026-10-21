@@ -1,0 +1,42 @@
+{
+  "approval_sha256": "0ae9306b1571d7e4a6e52737bfec34bd45aa6586c0d30c22ee0d2fe891a52d5e",
+  "bundle_sha256": "80577bde9bb6504d577e5444af66f547e66aeaa435d1abd93369075e15ef4be3",
+  "changed_paths": [
+    ".raw/Совещания/Звонок 2026-10-21 1235. Лебедева Наталья, Тимошенко Александр.md",
+    "wiki/sources/zvonok-lebedeva-timoshenko-2026-10-21.md",
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    ".vault-meta/address-counter.txt",
+    ".raw/.manifest.json"
+  ],
+  "expanded_bundle_sha256": "b187491ef1b4e134fb7e69cfe2f008aec14484fce482c420c080f15609e9b7b1",
+  "hashes": {
+    ".raw/.manifest.json": "f5d732181f421c6cee9c0ca73d7ff5d87d658fe2e056d6a6afb8d7c3e0c9caac",
+    ".raw/Совещания/Звонок 2026-10-21 1235. Лебедева Наталья, Тимошенко Александр.md": "5464cf2a601ac00cd63e8c483c7365c6c3258e38b0130b1299ff48872d6eadf8",
+    ".vault-meta/address-counter.txt": "565b6c5dfda1c10331dff54981307263d2de6444cd54226a8964a58b1d1e5b0e",
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md": "711c93aeda89e427d8a8bebef7554ca5e6662139c636e621823e6d26d620fd56",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md": "972b28efd4f112d7ff073be97b7f796ad0fb4ef010f964603cacea974fb58b7b",
+    "wiki/hot.md": "a2d2f56cbd0f297fa8a7892451950685c36c95753ed265f5e742fef86c49cd08",
+    "wiki/index.md": "56034ce42a1657bd1975c610f8549b7e476950a0644bc59d260c3ecf88c38029",
+    "wiki/log.md": "9acd50ee029956b12582e1a5a44991e18af4cdfa15cee8aa7ef1ae628a45ac32",
+    "wiki/sources/zvonok-lebedeva-timoshenko-2026-10-21.md": "2372c42d0ccc10fecbffa4a911d87939bcb21c0439d3ba37e83d2b11c7af4134"
+  },
+  "modes": {
+    ".raw/.manifest.json": 511,
+    ".raw/Совещания/Звонок 2026-10-21 1235. Лебедева Наталья, Тимошенко Александр.md": 384,
+    ".vault-meta/address-counter.txt": 511,
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md": 384,
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511,
+    "wiki/sources/zvonok-lebedeva-timoshenko-2026-10-21.md": 384
+  },
+  "operation_id": "ingest-20261021-zvonok-lebedeva-timoshenko",
+  "operation_type": "ingest",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

@@ -1,0 +1,32 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md": "050cf9ab06cf6f4c75b10f9236c9aa403b3ed3d2915ce1d93a68e22085b37358",
+    "wiki/hot.md": "9f299ec0254efcffc72fd85fd3df64ccfc5ea237a7700c44df9720e70a4237f3",
+    "wiki/log.md": "ba605d51ee26355ac2c052a7493bd18c5be506a494b84cfa2fd01da8c4508800"
+  },
+  "operation_id": "save-20261014-referral-stub-reward-hotfix-merged-readers",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "save_draft_7453de8b5c.md",
+      "mode": "replace",
+      "path": "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md",
+      "sha256": "9e7a1aaaed7f7b69fc65efc35f57c4ab4b76916d7aff8abcd876f72cd4f94357"
+    },
+    {
+      "content_file": "save_draft_e93d27d8cf.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "092e706c8e267010931a03838801daeb1c318471125cfabf72204df3a8dd6fe4"
+    },
+    {
+      "content_file": "save_draft_4440800135.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "1475381a98cf8edc6214f38512cb0163d32e3f67a00372b0d4947742a5bd44fa"
+    }
+  ]
+}

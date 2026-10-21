@@ -1,0 +1,65 @@
+{
+  "applied": [
+    "wiki/concepts/LoyaltyReferral-RefProgram-FO-TZ-Alignment.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "approval_sha256": "8164d63be745f7287c07b2f66345dc7a6ed70a7d1df35722a3ea095ec686853f",
+  "completed_epoch": 1791276237.3472707,
+  "created_epoch": 1791276237.096793,
+  "expanded_bundle_sha256": "882ad562cdeaca7280a0e92d5301aca40da6b513b30e7ff472c6b7b0ad973746",
+  "input_bundle_sha256": "882ad562cdeaca7280a0e92d5301aca40da6b513b30e7ff472c6b7b0ad973746",
+  "operation_id": "save-20261006-09152329-loyaltyreferral-tz",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "67403fd12b279c73d5739fa64354729888d96162b4364d60200fbae756e0b312",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/LoyaltyReferral-RefProgram-FO-TZ-Alignment.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "05d72779d93121abb09d6374f46f4b67609a4b2f5ad27e758b23f46d0540f444",
+      "original_mode": 511,
+      "original_sha256": "185b4e90f89b666d72f3f7ac6eddc892dc2b8a420a8cd013530915335b1dffac",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "caab31534fa1d1615c9cda0cf5ba769398679b7c944a55ed02ffb05251a94eb7",
+      "original_mode": 511,
+      "original_sha256": "946d909603a68f0f18bf87bd72e9ea10d1c354c549d170c0fff17a4383273d98",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "1074f43de329397e21ceb3bff7def613f37e6da0be5ad4da3ef22f181f47f91b",
+      "original_mode": 511,
+      "original_sha256": "d3ae0c355ac0a0ae95008679890131d1b76f8a0bef97604bc569b454872216b3",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "75ce1d67427ef18ff6f26d6d162f02eeb9faf388f2a13f0dd78c298280c7ad72",
+      "original_mode": 511,
+      "original_sha256": "4d0933e12046d362b67e196684859786743d742eb7b1d6a12df3734166701641",
+      "path": "wiki/hot-archive.md"
+    }
+  ]
+}

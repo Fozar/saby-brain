@@ -1,0 +1,30 @@
+{
+  "approval_sha256": "9b19aa992910f993fabc604aeebe9c383ccea0e4fc32300d5e4c300a6a3775a1",
+  "bundle_sha256": "18725de9a9489b9f555ea01183218dedbc5a2984acc17f1c3abd0b22deeb20c3",
+  "changed_paths": [
+    "wiki/concepts/Test-Stand-Per-Release-Line.md",
+    "wiki/index.md",
+    "wiki/concepts/PriceFormation-Test-Framework.md",
+    "wiki/log.md",
+    "wiki/hot.md"
+  ],
+  "expanded_bundle_sha256": "18725de9a9489b9f555ea01183218dedbc5a2984acc17f1c3abd0b22deeb20c3",
+  "hashes": {
+    "wiki/concepts/PriceFormation-Test-Framework.md": "8c47af2dad4830cd86cb446ed0e5a59d3f075b64dccbe7bec8d87dbd68ad5363",
+    "wiki/concepts/Test-Stand-Per-Release-Line.md": "639c08afe0ba64097eb18ab4f0ba92780dd860416b7787f2daec4e9aa5f62172",
+    "wiki/hot.md": "2a758f3727a71bd733b265605405ad742a350834e81b70af5e2fa058843099e3",
+    "wiki/index.md": "58b2f5165caf73fe4db752a6c0d0f80808083cf42b0fba46d9314046dc922d09",
+    "wiki/log.md": "425148d0f4cfebc363607a1fdc5917d96372c31b2e4dde5b5bd41db050e69220"
+  },
+  "modes": {
+    "wiki/concepts/PriceFormation-Test-Framework.md": 511,
+    "wiki/concepts/Test-Stand-Per-Release-Line.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20261008-test-stand-per-release-line-v2",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

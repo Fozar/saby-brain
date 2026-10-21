@@ -1,0 +1,105 @@
+{
+  "applied": [
+    ".raw/Совещания/Звонок 2026-10-21 1235. Лебедева Наталья, Тимошенко Александр.md",
+    "wiki/sources/zvonok-lebedeva-timoshenko-2026-10-21.md",
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    ".vault-meta/address-counter.txt",
+    ".raw/.manifest.json"
+  ],
+  "approval_sha256": "0ae9306b1571d7e4a6e52737bfec34bd45aa6586c0d30c22ee0d2fe891a52d5e",
+  "completed_epoch": 1792576781.5721638,
+  "created_epoch": 1792576781.2226608,
+  "expanded_bundle_sha256": "b187491ef1b4e134fb7e69cfe2f008aec14484fce482c420c080f15609e9b7b1",
+  "input_bundle_sha256": "80577bde9bb6504d577e5444af66f547e66aeaa435d1abd93369075e15ef4be3",
+  "operation_id": "ingest-20261021-zvonok-lebedeva-timoshenko",
+  "operation_type": "ingest",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "5464cf2a601ac00cd63e8c483c7365c6c3258e38b0130b1299ff48872d6eadf8",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": ".raw/Совещания/Звонок 2026-10-21 1235. Лебедева Наталья, Тимошенко Александр.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "2372c42d0ccc10fecbffa4a911d87939bcb21c0439d3ba37e83d2b11c7af4134",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/sources/zvonok-lebedeva-timoshenko-2026-10-21.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "711c93aeda89e427d8a8bebef7554ca5e6662139c636e621823e6d26d620fd56",
+      "original_mode": 384,
+      "original_sha256": "05f43d075faaec0f52d43c24048498ed78ea60dc1412198ab3f766e74eb0c723",
+      "path": "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "972b28efd4f112d7ff073be97b7f796ad0fb4ef010f964603cacea974fb58b7b",
+      "original_mode": 511,
+      "original_sha256": "9601014626881fd14427879351440893a8f3d7ba64355c3db1eed643a86b9027",
+      "path": "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "56034ce42a1657bd1975c610f8549b7e476950a0644bc59d260c3ecf88c38029",
+      "original_mode": 511,
+      "original_sha256": "164aceb5c523d9177b47324b9dbba166dd382c8693641b9730b604a424a29c8f",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0005.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "9acd50ee029956b12582e1a5a44991e18af4cdfa15cee8aa7ef1ae628a45ac32",
+      "original_mode": 511,
+      "original_sha256": "f0e4d340d71e26dbc1baa0a070c71a96ef46823890a71d25f68e67e3413b7a37",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0006.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "a2d2f56cbd0f297fa8a7892451950685c36c95753ed265f5e742fef86c49cd08",
+      "original_mode": 511,
+      "original_sha256": "8430bce9076405dc15ed8f32e860c593517a5e8c60476e69779e046b4faafc3c",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0007.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "565b6c5dfda1c10331dff54981307263d2de6444cd54226a8964a58b1d1e5b0e",
+      "original_mode": 511,
+      "original_sha256": "cb70dd73c714ef5a42f7072000c6e868d7c804d24d2de882a48b4cfb587a5952",
+      "path": ".vault-meta/address-counter.txt"
+    },
+    {
+      "backup": "0008.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "f5d732181f421c6cee9c0ca73d7ff5d87d658fe2e056d6a6afb8d7c3e0c9caac",
+      "original_mode": 511,
+      "original_sha256": "d226cc9ef25ad54e3692c1d5033d7aa54b29bfa010965690089e330d5096a15a",
+      "path": ".raw/.manifest.json"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "applied": [
+    "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "3a3952274522eb612df5e44f59d65d141be3babb4961232a27933d3d9693ccec",
+  "completed_epoch": 1791990657.3585463,
+  "created_epoch": 1791990657.1905174,
+  "expanded_bundle_sha256": "9de084180a66381d53bfe5ab5c52a3d8b4d84915cc00ddba3a1e53cd7904142c",
+  "input_bundle_sha256": "9de084180a66381d53bfe5ab5c52a3d8b4d84915cc00ddba3a1e53cd7904142c",
+  "operation_id": "save-20261014-referral-stub-reward-hotfix-state",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "050cf9ab06cf6f4c75b10f9236c9aa403b3ed3d2915ce1d93a68e22085b37358",
+      "original_mode": 384,
+      "original_sha256": "a8ec0d70503720de9d82890254d08953df7e3f2e46a204e6be56c45d2b476c53",
+      "path": "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "9f299ec0254efcffc72fd85fd3df64ccfc5ea237a7700c44df9720e70a4237f3",
+      "original_mode": 511,
+      "original_sha256": "319472a23bacd5690ed4a3b66843c782efa94babadb9fd3c0f9b3db30aec1c28",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "ba605d51ee26355ac2c052a7493bd18c5be506a494b84cfa2fd01da8c4508800",
+      "original_mode": 511,
+      "original_sha256": "aa4ceedebfac3954921fbbbf894e3392bef098772b743c401651a7007f63979c",
+      "path": "wiki/log.md"
+    }
+  ]
+}

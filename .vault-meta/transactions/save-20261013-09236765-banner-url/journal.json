@@ -1,0 +1,65 @@
+{
+  "applied": [
+    "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "approval_sha256": "67be58fb8cdddd674925e51bea81c3ebb22d52c2f56722378edfd8343861f7af",
+  "completed_epoch": 1791878552.5767589,
+  "created_epoch": 1791878552.3281078,
+  "expanded_bundle_sha256": "e7da1514803ee776500b0a8d6332026119342add4973d559397c5c266680ef36",
+  "input_bundle_sha256": "e7da1514803ee776500b0a8d6332026119342add4973d559397c5c266680ef36",
+  "operation_id": "save-20261013-09236765-banner-url",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "13d36a38dddadc0b7a1705f4652cf5a4204abc960e61c0d3aa87eb2a16f59b59",
+      "original_mode": 384,
+      "original_sha256": "22bf4edea0b4fbb40aa44f2f59a6e380780f90a1f02c1faf387dcdcabd807ac1",
+      "path": "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "464f74793bdd82fc1f85a1d96cfd3dffd1374c631ab6ae398bef39e078389d79",
+      "original_mode": 511,
+      "original_sha256": "f4bd9cad91b71d67a3a4b45055738ec62f4c32d2518909a23c7b16da88f77674",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "f2305e569f311cf0769e9c99bb8d91d23c11488a5030ee9cd2f533395a919420",
+      "original_mode": 511,
+      "original_sha256": "859d7e280370c69d5306456a6882f8ff1895d8b66567711def111e7692bb2601",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "ccbb6380515ea2124783f0d5a6ef85e0c27c57add17691170c2f6135ea9fc32f",
+      "original_mode": 511,
+      "original_sha256": "542cc4ea62d42ab7479ada5b757860fa6d7394da2386268608ceb577f7f42113",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "b028770ddd84a025510d2705fa0f9a8dd54e84c63672ecb26548df1f43e82b52",
+      "original_mode": 511,
+      "original_sha256": "4c919ee6e3d091b9f9ef4e2d9ec48048bb81b16408d1b2d9f10462aef0c9584d",
+      "path": "wiki/hot-archive.md"
+    }
+  ]
+}

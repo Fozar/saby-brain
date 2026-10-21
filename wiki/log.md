@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-10-05
+updated: 2026-10-21
 tags:
   - meta
   - log
@@ -9,6 +9,86 @@ status: evergreen
 related:
   - "[[index]]"
 ---
+
+## [2026-10-21] ingest | Звонок 21.10 с Лебедевой: ТР внедрения нового дизайна ДК в SabyGet через Card.GetListV2
+
+- Source: `.raw/Совещания/Звонок 2026-10-21 1235. Лебедева Наталья, Тимошенко Александр.md` (автоматическая расшифровка, 12:35 до 12:54) и документ Лебедевой «Внедрение нового дизайна в сабигет» во вложениях №09234904
+- Summary: [[zvonok-lebedeva-timoshenko-2026-10-21]]
+- Pages created: [[zvonok-lebedeva-timoshenko-2026-10-21]]
+- Pages updated: [[SabyGet-Card-Preview-Design-Constructor]], [[SabyGet-Issued-Card-Design-Constructor]], [[index]], [[hot]]
+- Key insight: отдельный метод не нужен, все экраны SabyGet закрываются `Card.GetListV2`; новый дизайн под условием «есть `SiteId` и у владельца включена `dc_design_new`» (одно без другого ломается при аварийном выключении фичи или до конвертации). На Тимошенко: стек вызовов SabyGet, `WithStampsOnBanner`, Бритнев, документ для внедрения к концу октября. Расходится с прежним разбором источник превью невыданной карты.
+
+## [2026-10-20] save | №09234904: Лебедева против SiteId в Card.GetListV2, предложен отдельный метод для плеера
+
+- Source: сессия Claude Code 20.10 (MR №10123260 и №10134760, задачи №09234904, №09236874, №09234998, №09234826, MR !28051, !28053, !152256, !152257, !28028, код discount-cards `rc-26.6100`)
+- Pages updated: [[SabyGet-Card-Preview-Design-Constructor]], [[SabyGet-Issued-Card-Design-Constructor]], [[DiscountCard-Design-Player-Page-Urls]], [[index]], [[hot]], [[hot-archive]]
+- Key insight: `Card.GetListV2` нужен не только диалогу, поэтому его не трогаем; для выданной карты отдельный лёгкий метод (`Card.GetDesignViewData`: `Card.Key` -> `SiteId`, ИД дизайна, `CardUUID`). `GetCardData` не годится из-за побочных эффектов. От `@Card` в ПО отказались, данные карты отдаёт `Card.GetDataForDesign`. Открытая дыра: `LoyaltyCardDesign.Read` проверяет аккаунт владельца, в SabyGet плеер дизайн не прочитает.
+
+## [2026-10-14] save | №10135529: хотфикс вознаграждения в корешках, слияние двух MR, читатели снова с учётом фичи
+
+- Source: сессия Claude Code 14.10 (MR !152402 и !152418 смержены в `rc-26.5106`, !152410 открыт, падение теста `test_counters_from_stubs_under_feature` в CI, замечания ревьюбота)
+- Pages updated: [[ReferralStub-Reward-Writing-Gap-2026-10]], [[hot]]
+- Key insight: минимальные читатели «всегда строки сделок» ломали базовый тест под фичей, поэтому вернули выбор источника по `ref_deals_convert`; ограничение на включение фичи снято. До слияния !152410 остаётся окно, где сумма может удваиваться. Тесты не прогонялись.
+
+## [2026-10-14] save | №10135529: итог хотфикса по вознаграждению в корешках, ограничение на включение фичи
+
+- Source: сессия Claude Code 14.10 (ветки `26.5106/bugfix/aatimoshenko/10135529-handler`, `-setleadprice`, `-vnr`, MR !152402, !152410, !152418 и замечания ревьюбота)
+- Pages updated: [[ReferralStub-Reward-Writing-Gap-2026-10]], [[hot]]
+- Key insight: хотфикс правит запись и ВНР, а читателей только минимально (без учёта фичи). Поэтому фичу `ref_deals_convert` нельзя включать до отдельной доброски на чтение из корешков: сумма, поставленная под фичей через `SetStubPrice`, текущие читатели не увидят. Тесты не прогонялись.
+
+## [2026-10-14] ingest | Звонок 14.10: вознаграждение в корешках обычных программ, разбивка хотфикса на три доброски
+
+- Source: `.raw/Совещания/Звонок 2026-10-14 155812. Мусохранов Андрей, Свешников Андрей, Тимошенко Александр.md` (3504 строки; автоматическая расшифровка, местами искажена)
+- Summary: [[zvonok-musohranov-sveshnikov-timoshenko-2026-10-14]]
+- Pages created: [[zvonok-musohranov-sveshnikov-timoshenko-2026-10-14]], [[ReferralStub-Reward-Writing-Gap-2026-10]]
+- Pages updated: [[ReferralProgram-RefDealsConvert-Feature]], [[index]], [[hot]]
+- Key insight: вознаграждение в корешок не писали ни обработчик сделки, ни `SetLeadPrice`, ни ВНР; поэтому под фичей `ref_deals_convert` оно пустое. Мусохранов не принял 17 файлов в хотфикс: оставляем запись и метод для ВНР тремя отдельными ветками, чтение откладываем.
+
+## [2026-10-13] save | №09236765: адрес страницы картинки баннера со штампиками для дизайна на конструкторе
+
+- Source: сессия Claude Code 12-13.10 (задача №09236765, MR !28052 discount-cards и замечания ревьюбота, код discount-cards `rc-26.6100`)
+- Pages updated: [[DiscountCard-Design-Player-Page-Urls]], [[index]], [[hot]], [[hot-archive]]
+- Key insight: одного адреса страницы мало: для дизайна на конструкторе картинка не генерировалась вообще, потому что все проверки штампиков шли по брендбуку. Введён `Template.with_stamps()` (конструктор: есть непустое значение в `ViewDetails.Stamps`, пустые `Icon`/`GiftIcon` не в счёт), на него переведены online, GPay, Wallet и смена активного дизайна
+
+## [2026-10-13] save | №09234904: SiteId внутрь Template по ревью, скип чужих nth_night-тестов
+
+- Source: сессия Claude Code 12–13.10 (MR !28051 discount-cards с замечаниями Кузакова и ревьюбота, MR !152256 price-formation, Jenkins `warehouse_price-formation_bl_ut`, `rc-26.6100`)
+- Pages updated: [[SabyGet-Card-Preview-Design-Constructor]], [[SabyGet-Issued-Card-Design-Constructor]], [[index]], [[hot]]
+- Key insight: поле называется `SiteId` и лежит внутри `Template` и в СДК, и в online; тесты СДК пишутся на хелперах `CardType.smart_create` / `add_active_template(site_id=...)`. Падения `calc_with_meta_pos` nth_night пришли с мержем №10071142 и не связаны с задачей, заскипаны со ссылкой на ошибку
+
+## [2026-10-12] save | №09234904: превью ДК в SabyGet в новом дизайне, SiteID и DesignID
+
+- Source: сессия Claude Code 12.10 (задачи №09234904 и №09234998, MR !28028 и !28051 discount-cards, код sabyget/core и sabyget/referral через saby-search, price-formation `rc-26.6100`)
+- Pages created: [[SabyGet-Card-Preview-Design-Constructor]]
+- Pages updated: [[SabyGet-Issued-Card-Design-Constructor]], [[Test-Stand-Per-Release-Line]], [[index]], [[hot]], [[hot-archive]]
+- Key insight: превью не выданной карты SabyGet берёт из online `GetDescriptionBySalePointV2.Template`, а не из `Card.GetListV2`, и там `Template.ID` — ID типа карты; поэтому кроме СДК добавлены `SiteID` (под фичей) и `DesignID` в online. Первая сборка стенда 26.61: pip стенда надо пускать мимо прокси (`repo-dev.mgmt.tensor.ru`), stdin фонового `tm` держать открытым
+
+## [2026-10-12] save | №09236874: плеер на странице получения ДК, пауза на совместимости ПО
+
+- Source: сессия Claude Code 12.10 (задача №09236874 и переписка, код discount-cards и price-formation на `rc-26.5100`/`rc-26.6100`)
+- Pages updated: [[DiscountCard-Design-Player-Page-Urls]], [[index]], [[hot]]
+- Key insight: ТР (вариант 3) согласовано, но резолвер `NumberCard.Read(Id: integer)` уже в бою с 26.5100, смена ключа ПО на UUID несовместима; предложено принимать и `@Card`, и UUID, ждём Кузакова
+
+## [2026-10-08] save | Тестовый стенд по линейкам версий
+
+- Source: сессия Claude Code 08.10 (test_manager.py, tests_new/CMakeLists.txt в rc-ветках, .idea/workspace.xml, локальная сборка test_build)
+- Pages created: [[Test-Stand-Per-Release-Line]]
+- Pages updated: [[PriceFormation-Test-Framework]], [[index]], [[hot]]
+- Key insight: стенд привязан к папке, а не к версии, поэтому стенд на линейку = постоянный worktree + vendor `D:/vendor/<линейка>`; SDK ветки задаёт CMakeLists, до выхода `X100` линейка живёт на `X000`. Скиллы `/run-tests` и `/test-manager` обновлены под схему
+
+## [2026-10-07] save | Разбор плана октября: тех. решения по 13 пунктам
+
+- Source: сессия Claude Code 07.10, субагенты по пунктам плана «Система лояльности (октябрь 2026)» (задачи SBIS, переписка, вложения, код price-formation, discount-cards, crm, sabyget)
+- Pages created: [[Bug-Backlog-2026-10]], [[ReferralProgram-GetLeadPeriodList-Start-By-First-Stub]], [[DCQuestionary-Offline-Client-Duplicate-Bug]], [[DiscountCard-Client-Delete-Event-Handlers]], [[DiscountCard-Design-Player-Page-Urls]], [[DiscountCard-ImportExport-TD-Revision-5]], [[PromoCode-Design-Constructor]], [[ReferralStub-Partial-Indexes]], [[Retail-Cleanup-Loyalty-Sales-Check]], [[SabyGet-Issued-Card-Design-Constructor]]
+- Pages updated: [[ReferralStub-Backfill-Service-Method]], [[LoyaltyReferral-RefProgram-FO-TZ-Alignment]], [[PromoCode-Registry-Search-By-Code]], [[index]], [[hot]], [[hot-archive]]
+- Key insight: заготовки в worktree по №03129162, №072010033, №03179884 (price-formation) и №09234998 (discount-cards); №0918668 и №06155143 закрываются ВНР, а не кодом; №09292882 не наш (синхронизация CRM)
+
+## [2026-10-06] save | №09152329: сверка LoyaltyReferral с ТЗ рефакторинга модулей лояльности
+
+- Source: сессия Claude Code 06.10 (поручение SBIS, этап и проект, ТЗ проекта .sabydoc, код price-formation)
+- Pages created: [[LoyaltyReferral-RefProgram-FO-TZ-Alignment]]
+- Pages updated: [[index]], [[hot]], [[hot-archive]]
+- Key insight: область «Реферальная программа сделок» уже в `LoyaltyReferral`, по ТЗ модуль надо привести к общим правилам и назвать `LoyaltyRefProgramOnline`. Формат «API в s3mod» в ТЗ не задан, образцов в репозитории нет; Python-код модуля снаружи не импортируют, так что API — только методы `ReferralProgram.*`
 
 ## [2026-10-05] save | №02185039: приветственные бонусы при присоединении к партнёру франшизы в SabyGet
 

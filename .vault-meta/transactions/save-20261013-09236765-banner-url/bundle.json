@@ -1,0 +1,46 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md": "22bf4edea0b4fbb40aa44f2f59a6e380780f90a1f02c1faf387dcdcabd807ac1",
+    "wiki/hot-archive.md": "4c919ee6e3d091b9f9ef4e2d9ec48048bb81b16408d1b2d9f10462aef0c9584d",
+    "wiki/hot.md": "542cc4ea62d42ab7479ada5b757860fa6d7394da2386268608ceb577f7f42113",
+    "wiki/index.md": "f4bd9cad91b71d67a3a4b45055738ec62f4c32d2518909a23c7b16da88f77674",
+    "wiki/log.md": "859d7e280370c69d5306456a6882f8ff1895d8b66567711def111e7692bb2601"
+  },
+  "operation_id": "save-20261013-09236765-banner-url",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "save/DiscountCard-Design-Player-Page-Urls.md",
+      "mode": "replace",
+      "path": "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md",
+      "sha256": "13d36a38dddadc0b7a1705f4652cf5a4204abc960e61c0d3aa87eb2a16f59b59"
+    },
+    {
+      "content_file": "save/index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "464f74793bdd82fc1f85a1d96cfd3dffd1374c631ab6ae398bef39e078389d79"
+    },
+    {
+      "content_file": "save/log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "f2305e569f311cf0769e9c99bb8d91d23c11488a5030ee9cd2f533395a919420"
+    },
+    {
+      "content_file": "save/hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "ccbb6380515ea2124783f0d5a6ef85e0c27c57add17691170c2f6135ea9fc32f"
+    },
+    {
+      "content_file": "save/hot-archive.md",
+      "mode": "replace",
+      "path": "wiki/hot-archive.md",
+      "sha256": "b028770ddd84a025510d2705fa0f9a8dd54e84c63672ecb26548df1f43e82b52"
+    }
+  ]
+}

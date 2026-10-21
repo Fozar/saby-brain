@@ -1,0 +1,52 @@
+---
+type: concept
+title: "SabyGet: превью ДК на странице заведения в новом дизайне"
+created: 2026-10-12
+updated: 2026-10-12
+status: developing
+tags:
+  - sabyget
+  - discount-cards
+  - site-builder
+  - tech-design
+related:
+  - "[[SabyGet-Issued-Card-Design-Constructor]]"
+  - "[[DiscountCard-Design-Constructor-Project]]"
+  - "[[DiscountCard-Design-Constructor-Architecture]]"
+  - "[[Test-Stand-Per-Release-Line]]"
+---
+
+# SabyGet: превью ДК на странице заведения в новом дизайне
+
+Задача в разработку №09234904 ([ссылка](https://online.sbis.ru/opendoc.html?guid=01a0cd72-fa62-7a81-8ecf-3574e33cb31e&client=3)), автор и ответственный Михель В.М., веха 26.6100, срок 28.11.2026. Этап «11 Карты в сабигет» проекта [[DiscountCard-Design-Constructor-Project]]. UI (компонент отображения ДК и хелпер предзагрузки `getDesignViewData(siteId, cardId, templateId)`) делает Лебедева Н. Парная задача про выданную карту: [[SabyGet-Issued-Card-Design-Constructor]] (№09234998).
+
+## Что просила постановка
+
+БЛ: добавить `SiteID` в `Card.GetListV2` из `CardTemplate.SiteId`; SabyGet протягивает его в `Establishment.BonusDetails`. Для хелпера ТЗ предлагает `siteId = BonusDetails.SiteID`, `cardId = CardPreview.ID`, `templateId = Card.Template.ID`. В заметках: новый дизайн показывать, если у владельца дизайна включена фича `dc_design_new` и есть `SiteId`, иначе старая логика.
+
+## Что выяснено по коду
+
+- **Превью не выданной карты идёт не из `Card.GetListV2`.** SabyGet берёт `CardPreview` из online `LoyaltyProgram.GetDescriptionBySalePointV2`, поле `Template` (`sgr_establishments.py:51`, `referral/bonus_system/base.py:138,200`). Его собирает price-formation `discountcard/discountcardtype/get_template.py`. `Card.GetListV2` попадает в `BonusDetails` только для выданной карты, тогда `CardPreview` перезаписывается шаблоном карты (`bonus_info.py:150`).
+- **`Template.ID` превью — это ID типа карты онлайна, а не дизайна.** ID дизайна (ПО ДизайнКарты) — `@Template` из `DiscountCardTemplate.Read`. Карты на этапе превью нет, `cardId` передавать нечего. ТЗ в этой части неточно; по решению Тимошенко постановщику об этом не сообщали.
+- `DiscountCardTemplate.Read(card_type_id)` уже отдаёт и `@Template`, и `SiteId`, поэтому новые поля не требуют лишних запросов.
+
+## Решение (согласовано 12.10)
+
+- **СДК (discount-cards):** `SiteID` в `Card.GetListV2` / `Card.ReadV2` из активного дизайна типа карты, без проверки фичи (список карт из разных аккаунтов, фичу владельца дёшево не проверить). Коммит перенесён из №09234998 в эту задачу.
+- **Online (price-formation):** `get_template` отдаёт в `Template` поля `DesignID` (`@Template`, int) и `SiteID` (uuid, только при включённой `dc_design_new`, иначе `None`). Поля объявлены в обеих версиях `GetDescriptionBySalePointV2` в `LoyaltyPrograms.orx`. Фронту хватает одного условия «`SiteID` заполнен».
+- Имя поля `SiteID`, а не `SiteId`: так в постановке и так принято в `Card.GetListV2` (`LogoID`, `StripID`, `FrontImgID`, `ClientID`). `SiteId` в SabyGet API встречается только в `Questionary.*`. Ревьюбот в MR !28051 предлагал `SiteId` (Low, 50%), ответ ему не отправлен.
+- Участник франшизы: шаблон читается у владельца, фича проверяется у участника. На практике не влияет: сетевые карты на конструктор не переводят.
+
+## Состояние на 12.10.2026
+
+- discount-cards: ветка `26.6100/feature/aatimoshenko/09234904`, коммит `f6fc0dc7a` (amend: тест брендбука сделан настоящим по замечанию ревьюбота в старом MR), MR !28051 mergeable. Прогон `test-core-and-service`: 1210 тестов, 2 падения в `handle_change_data` из-за расхождения времени на секунду, к правке не относятся.
+- price-formation: ветка `26.6100/feature/aatimoshenko/09234904`, коммит `b64e3c8884`, запушена. Тесты на стенде 26.61: 19 OK, 4 новых красные без правки.
+- Старый MR !28028 и ветку `26.6100/feature/aatimoshenko/09234998` закрывает Тимошенко вручную (авто-режим Claude закрыть MR не дал).
+- Задачи SabyGet на внедрение по-прежнему за Лебедевой.
+
+## QA (после внедрения SabyGet, тестовый стенд)
+
+1. Тип карты с дизайном на конструкторе, фича `dc_design_new` включена: на странице заведения, не будучи участником, превью карты в новом дизайне.
+2. Та же карта, фича выключена: превью как раньше.
+3. Старый дизайн (брендбук): превью как раньше.
+4. Нажать «Получить»: выданная карта в новом дизайне, бонусы и описание выгод не изменились.

@@ -1,0 +1,24 @@
+{
+  "approval_sha256": "3a3952274522eb612df5e44f59d65d141be3babb4961232a27933d3d9693ccec",
+  "bundle_sha256": "9de084180a66381d53bfe5ab5c52a3d8b4d84915cc00ddba3a1e53cd7904142c",
+  "changed_paths": [
+    "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "9de084180a66381d53bfe5ab5c52a3d8b4d84915cc00ddba3a1e53cd7904142c",
+  "hashes": {
+    "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md": "050cf9ab06cf6f4c75b10f9236c9aa403b3ed3d2915ce1d93a68e22085b37358",
+    "wiki/hot.md": "9f299ec0254efcffc72fd85fd3df64ccfc5ea237a7700c44df9720e70a4237f3",
+    "wiki/log.md": "ba605d51ee26355ac2c052a7493bd18c5be506a494b84cfa2fd01da8c4508800"
+  },
+  "modes": {
+    "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20261014-referral-stub-reward-hotfix-state",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

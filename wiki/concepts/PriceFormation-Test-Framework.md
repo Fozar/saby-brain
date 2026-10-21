@@ -1,7 +1,7 @@
 ---
 type: concept
 title: "PriceFormation Test Framework"
-updated: 2026-04-11
+updated: 2026-10-08
 tags:
   - price-formation
   - testing
@@ -16,6 +16,7 @@ related:
   - "[[Saby-Feature-Toggles-API]]"
   - "[[Wasaby-BL-Objects]]"
   - "[[Python-Code-Standards-SBIS]]"
+  - "[[Test-Stand-Per-Release-Line]]"
 created: 2026-04-11
 ---
 
@@ -74,6 +75,8 @@ git fetch
 ---
 
 ## Сборка и запуск через test_manager.py (рекомендуется)
+
+> Как держать отдельный стенд на каждую линейку версий и переключаться без пересборки: [[Test-Stand-Per-Release-Line]]. Конфигурации ниже описывают старую схему с одним стендом.
 
 `test_manager.py` находится в корне проекта. Автоматически:
 - проверяет окружение;

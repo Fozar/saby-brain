@@ -1,0 +1,46 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/concepts/PriceFormation-Test-Framework.md": "9907dc48a769d53b5ecb2410acc708c707766e93434facd1297bb606c1b09318",
+    "wiki/concepts/Test-Stand-Per-Release-Line.md": null,
+    "wiki/hot.md": "22f17bea0aa982c6745cf260de04a6545b702b0c40276a64a2a00551d8adedfb",
+    "wiki/index.md": "fc9146846a4d166b9eb8fcd5df94160cde2a69f8d949d922cad19207523b0e89",
+    "wiki/log.md": "4b7723c25ac11682d1baa472488026db2b5c405f513f1902b484159a8cfa3948"
+  },
+  "operation_id": "save-20261008-test-stand-per-release-line-v2",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "drafts/page.md",
+      "mode": "create",
+      "path": "wiki/concepts/Test-Stand-Per-Release-Line.md",
+      "sha256": "639c08afe0ba64097eb18ab4f0ba92780dd860416b7787f2daec4e9aa5f62172"
+    },
+    {
+      "content_file": "drafts/wiki__index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "58b2f5165caf73fe4db752a6c0d0f80808083cf42b0fba46d9314046dc922d09"
+    },
+    {
+      "content_file": "drafts/wiki__concepts__PriceFormation-Test-Framework.md",
+      "mode": "replace",
+      "path": "wiki/concepts/PriceFormation-Test-Framework.md",
+      "sha256": "8c47af2dad4830cd86cb446ed0e5a59d3f075b64dccbe7bec8d87dbd68ad5363"
+    },
+    {
+      "content_file": "drafts/wiki__log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "425148d0f4cfebc363607a1fdc5917d96372c31b2e4dde5b5bd41db050e69220"
+    },
+    {
+      "content_file": "drafts/wiki__hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "2a758f3727a71bd733b265605405ad742a350834e81b70af5e2fa058843099e3"
+    }
+  ]
+}

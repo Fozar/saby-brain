@@ -1,0 +1,65 @@
+{
+  "applied": [
+    "wiki/concepts/Test-Stand-Per-Release-Line.md",
+    "wiki/index.md",
+    "wiki/concepts/PriceFormation-Test-Framework.md",
+    "wiki/log.md",
+    "wiki/hot.md"
+  ],
+  "approval_sha256": "9b19aa992910f993fabc604aeebe9c383ccea0e4fc32300d5e4c300a6a3775a1",
+  "completed_epoch": 1791447148.7551203,
+  "created_epoch": 1791447148.497234,
+  "expanded_bundle_sha256": "18725de9a9489b9f555ea01183218dedbc5a2984acc17f1c3abd0b22deeb20c3",
+  "input_bundle_sha256": "18725de9a9489b9f555ea01183218dedbc5a2984acc17f1c3abd0b22deeb20c3",
+  "operation_id": "save-20261008-test-stand-per-release-line-v2",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "639c08afe0ba64097eb18ab4f0ba92780dd860416b7787f2daec4e9aa5f62172",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/Test-Stand-Per-Release-Line.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "58b2f5165caf73fe4db752a6c0d0f80808083cf42b0fba46d9314046dc922d09",
+      "original_mode": 511,
+      "original_sha256": "fc9146846a4d166b9eb8fcd5df94160cde2a69f8d949d922cad19207523b0e89",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "8c47af2dad4830cd86cb446ed0e5a59d3f075b64dccbe7bec8d87dbd68ad5363",
+      "original_mode": 511,
+      "original_sha256": "9907dc48a769d53b5ecb2410acc708c707766e93434facd1297bb606c1b09318",
+      "path": "wiki/concepts/PriceFormation-Test-Framework.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "425148d0f4cfebc363607a1fdc5917d96372c31b2e4dde5b5bd41db050e69220",
+      "original_mode": 511,
+      "original_sha256": "4b7723c25ac11682d1baa472488026db2b5c405f513f1902b484159a8cfa3948",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "2a758f3727a71bd733b265605405ad742a350834e81b70af5e2fa058843099e3",
+      "original_mode": 511,
+      "original_sha256": "22f17bea0aa982c6745cf260de04a6545b702b0c40276a64a2a00551d8adedfb",
+      "path": "wiki/hot.md"
+    }
+  ]
+}

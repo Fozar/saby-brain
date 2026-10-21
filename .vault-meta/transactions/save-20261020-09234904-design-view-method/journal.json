@@ -1,0 +1,85 @@
+{
+  "applied": [
+    "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md",
+    "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md",
+    "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    "wiki/hot-archive.md"
+  ],
+  "approval_sha256": "9814d8d8d1b1fed16adf55e4dc8852e8a44d494589e86973cf3284272c6f00fc",
+  "completed_epoch": 1792481326.5038836,
+  "created_epoch": 1792481326.1715837,
+  "expanded_bundle_sha256": "e11d6b2b17c1efb6fbe1e32fd3c11089aed12a248722a31b3f8c71ceb9fe8df6",
+  "input_bundle_sha256": "e11d6b2b17c1efb6fbe1e32fd3c11089aed12a248722a31b3f8c71ceb9fe8df6",
+  "operation_id": "save-20261020-09234904-design-view-method",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "05f43d075faaec0f52d43c24048498ed78ea60dc1412198ab3f766e74eb0c723",
+      "original_mode": 384,
+      "original_sha256": "91e25d78b81965d17f9d454b903009ebd2a27d87ea772812c083d1dd27295c74",
+      "path": "wiki/concepts/SabyGet-Card-Preview-Design-Constructor.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "9601014626881fd14427879351440893a8f3d7ba64355c3db1eed643a86b9027",
+      "original_mode": 511,
+      "original_sha256": "7b8b76fdd7fcf9cde9616f8ea1d297e1fde29384906467f9d2f3659a6fa0188e",
+      "path": "wiki/concepts/SabyGet-Issued-Card-Design-Constructor.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "0be136526ee90059009a057c1f7d9b6e34ce5c7d80697ab377a28b8a5511d644",
+      "original_mode": 384,
+      "original_sha256": "13d36a38dddadc0b7a1705f4652cf5a4204abc960e61c0d3aa87eb2a16f59b59",
+      "path": "wiki/concepts/DiscountCard-Design-Player-Page-Urls.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "164aceb5c523d9177b47324b9dbba166dd382c8693641b9730b604a424a29c8f",
+      "original_mode": 511,
+      "original_sha256": "78cdbf75cea49c1ce0ed13b2f2b2efbe0370b1c7e68a5201a466f24b674ac3b6",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "f0e4d340d71e26dbc1baa0a070c71a96ef46823890a71d25f68e67e3413b7a37",
+      "original_mode": 511,
+      "original_sha256": "1475381a98cf8edc6214f38512cb0163d32e3f67a00372b0d4947742a5bd44fa",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0005.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "8430bce9076405dc15ed8f32e860c593517a5e8c60476e69779e046b4faafc3c",
+      "original_mode": 511,
+      "original_sha256": "092e706c8e267010931a03838801daeb1c318471125cfabf72204df3a8dd6fe4",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0006.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "7218834aad4671b38a69076e6a312bde348580a95577fead05462d4d874414cd",
+      "original_mode": 511,
+      "original_sha256": "b028770ddd84a025510d2705fa0f9a8dd54e84c63672ecb26548df1f43e82b52",
+      "path": "wiki/hot-archive.md"
+    }
+  ]
+}

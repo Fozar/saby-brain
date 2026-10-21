@@ -1,0 +1,42 @@
+{
+  "approval_sha256": "ce6781429df286178836d8985ffb83409ef2eb4b4781cc2c460e83ea7ce07140",
+  "bundle_sha256": "c863d2b9ae35ad82e32113b10f414c5afc238edbc970814ae1ce4d09bc5d677b",
+  "changed_paths": [
+    ".raw/Совещания/Звонок 2026-10-14 155812. Мусохранов Андрей, Свешников Андрей, Тимошенко Александр.md",
+    "wiki/sources/zvonok-musohranov-sveshnikov-timoshenko-2026-10-14.md",
+    "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md",
+    "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/hot.md",
+    ".vault-meta/address-counter.txt",
+    ".raw/.manifest.json"
+  ],
+  "expanded_bundle_sha256": "9b6980512fb83e60cc4dc6dfe785c1d949135c9f84921de4c9930145f0371c90",
+  "hashes": {
+    ".raw/.manifest.json": "d226cc9ef25ad54e3692c1d5033d7aa54b29bfa010965690089e330d5096a15a",
+    ".raw/Совещания/Звонок 2026-10-14 155812. Мусохранов Андрей, Свешников Андрей, Тимошенко Александр.md": "7ad17ca8f944bdd2c7cad2cf1329ab9312efbff813c9c94e92260a35d748298b",
+    ".vault-meta/address-counter.txt": "cb70dd73c714ef5a42f7072000c6e868d7c804d24d2de882a48b4cfb587a5952",
+    "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md": "5dbb43d5af7646f13ff7cb7fc2ef8b7f9b2721da3672a8bf512082f2cc6b1508",
+    "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md": "a8ec0d70503720de9d82890254d08953df7e3f2e46a204e6be56c45d2b476c53",
+    "wiki/hot.md": "319472a23bacd5690ed4a3b66843c782efa94babadb9fd3c0f9b3db30aec1c28",
+    "wiki/index.md": "78cdbf75cea49c1ce0ed13b2f2b2efbe0370b1c7e68a5201a466f24b674ac3b6",
+    "wiki/log.md": "aa4ceedebfac3954921fbbbf894e3392bef098772b743c401651a7007f63979c",
+    "wiki/sources/zvonok-musohranov-sveshnikov-timoshenko-2026-10-14.md": "94852578b8d768a4999156cd7c5d5a5811cb2a84ee5250d78a2048ec5b7c647a"
+  },
+  "modes": {
+    ".raw/.manifest.json": 511,
+    ".raw/Совещания/Звонок 2026-10-14 155812. Мусохранов Андрей, Свешников Андрей, Тимошенко Александр.md": 384,
+    ".vault-meta/address-counter.txt": 511,
+    "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md": 511,
+    "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511,
+    "wiki/sources/zvonok-musohranov-sveshnikov-timoshenko-2026-10-14.md": 384
+  },
+  "operation_id": "ingest-20261014-referral-stub-reward-call",
+  "operation_type": "ingest",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}
