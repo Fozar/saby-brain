@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-10-21
+updated: 2026-10-22
 tags:
   - meta
   - log
@@ -9,6 +9,12 @@ status: evergreen
 related:
   - "[[index]]"
 ---
+
+## [2026-10-22] save | №09234904: этап 0 roadmap, ТР согласовано, вопрос Кузакову
+
+- Source: сессия Claude Code 22.10 (сообщения задачи №09234904, ответ Тимошенко в чате, код discount-cards `origin/rc-26.6100`)
+- Pages updated: [[SabyGet-Card-Preview-Design-Constructor]], [[index]], [[hot]], [[hot-archive]]
+- Key insight: имена полей согласованы с Лебедевой, Бритнев вне наших задач; единственный блокер — проверка владельца в `LoyaltyCardDesign.Read`
 
 ## [2026-10-21] ingest | Звонок 21.10 с Земцовой: приёмка корешков после ВНР, реестр и виджет с фичей и без
 
