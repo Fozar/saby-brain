@@ -95,6 +95,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 - **Сумма по сделкам в корешках**: [[ReferralStub-LeadSum-Implementation]] — поле `LeadSum` реализовано 2026-08-06; остались уведомление SabyBank (Артемьев Д.) и доброска существующих корешков
 - **Реестр «Заявки» на корешках**: [[ReferralProgram-RefDealsConvert-Feature]] — фича `ref_deals_convert` (вознаграждение в корешках: [[ReferralStub-Reward-Writing-Gap-2026-10]]); БЛ-методы переведены (`GetStats`, `GetPartnerList`, [[ReferralProgram-GetLeadPeriodList-Stub-Mode|GetLeadPeriodList]]), приёмка на fix пройдена 21.10 ([[zvonok-zemtsova-timoshenko-2026-10-21]]), включение на `pre` пока не подтверждено
 - **Перенос реф. программ между конфигурациями**: [[ReferralProgram-MoveToAgentGroup]] — реализовано, тестируется (Земцова)
+- **Служебное удаление промокодов**: [[PromoCode-TestDeleteType-Available-Events]] — №102111839, `TestDeleteType` не удаляет выпуск, если промокод по продаже был доступен к выдаче, но не выдан; веха 26.5118, анализ готов 22.10, ждёт одобрения решения
 
 Полная история — [[log]].
 
