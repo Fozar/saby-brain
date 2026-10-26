@@ -73,7 +73,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 - **Удаление клиента и ДК**: [[DiscountCard-Client-Delete-Event-Handlers]] — №03179884, веха 26.6100, срок 28.11; совещание 26.10: порядок до удаления частного лица, скрытие/восстановление, ИП/КФХ (порядок не согласован). Заготовка `D:/dev/wt03179884` не закоммичена, 9 тестов не запускались
 - **Путь клиента / Маршруты**: [[CustomerJourney-Scenarios-Project]] — новый движок сценариев лояльности, релиз 01.12.2026
-- **Дизайн ДК на конструкторе**: [[DiscountCard-Design-Constructor-Project]] — перевод дизайна дисконтных карт с Брендбука на конструктор сайтов, срок 20.02.2027
+- **Дизайн ДК на конструкторе**: [[DiscountCard-Design-Constructor-Project]] — перевод дизайна дисконтных карт с Брендбука на конструктор сайтов, срок 20.02.2027. Промокод (№09234630, [[PromoCode-Design-Constructor]]): 26.10 постановка обновлена после совещания, `SiteId` на верхнем уровне записи, ждёт сверки с заметками Тимошенко
 - **Loyalty Desktop Broker Migration**: [[Loyalty-Desktop-Broker-Migration]] — feature flag `lty_broker_card_type`, ~60д
 - **Реферальная программа (2 часть)**: [[ReferralProgram-Part2-Project]] — ЛК Владельца/Партнёра в SabyNet, 10 спринтов; активный — [[ReferralProgram-SelfJoin|самоприсоединение партнёра]] (45 дней, 26.51xx)
 - **SabyBank RKO Referral**: [[SabyBank-RKO-Referral]] — релиз 18.08.2026
