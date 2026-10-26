@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/DiscountCard-Client-Delete-Event-Handlers.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "117ff4f68a7c705531ce52613cba75de8e559ea3132e7629e7fc2fc605bc0c51",
+  "completed_epoch": 1792992434.5856943,
+  "created_epoch": 1792992434.3833623,
+  "expanded_bundle_sha256": "5d7ed5623f46cda561097c36eae64d90b345bc98e0693339cedb372ff1fa980f",
+  "input_bundle_sha256": "5d7ed5623f46cda561097c36eae64d90b345bc98e0693339cedb372ff1fa980f",
+  "operation_id": "context-03179884-20261026",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "7d2a8a2639c720a2c0f3ec79503548cd2f1b504413feca4892533f7acc9e33d2",
+      "original_mode": 511,
+      "original_sha256": "13759bce1982712cf98ed93073138c46c20f539b929e1794d8af18d1a23f10f2",
+      "path": "wiki/concepts/DiscountCard-Client-Delete-Event-Handlers.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "658ac784348b8b32444535d8dcc3ec66ee96867c717e42b73552ea5d94d6abc7",
+      "original_mode": 511,
+      "original_sha256": "f15a46d7939b01cb7cd2d87c591a15c4c4bc4473051edeb2a826a19f7726db90",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "b23ddae8f72fc3c7b8fda57ebc2c17069d0fb8bcb80e7f9f3155ada0a8c522c9",
+      "original_mode": 511,
+      "original_sha256": "55e885e9227e0c889e44f0f71776e7e2eec1bb6b45e1dae7fdff7a540f012534",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "94830fa6974b0b105b3057a234e516741089aaea35eb3a0ed744dca0fc13711a",
+      "original_mode": 511,
+      "original_sha256": "be85a572357e05dd10de733dc4d5ba7a45367e9793912eebca1035d1ee96ac55",
+      "path": "wiki/log.md"
+    }
+  ]
+}

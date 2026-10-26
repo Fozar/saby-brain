@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-10-22
+updated: 2026-10-23
 tags:
   - meta
   - log
@@ -9,6 +9,12 @@ status: evergreen
 related:
   - "[[index]]"
 ---
+
+## [2026-10-23] save | №10232921: ВНР даты создания корешков по дате сделки
+
+- Source: сессия Claude Code 23.10 (ошибка №10232921, код LoyaltyReferral, выборки fix `manual_tests._0c1708ed`)
+- Pages updated: [[ReferralStub-CreatedAt-Transition-VNR-10232921]], [[index]], [[hot]], [[hot-archive]]
+- Key insight: проблема только переходного периода, живой код не трогаем; дата корешка в реестре из `ВидЦеныДокумент.ДатаВремя`
 
 ## [2026-10-22] save | №09234904: этап 0 roadmap, ТР согласовано, вопрос Кузакову
 
@@ -1377,3 +1383,8 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 - Plugin: claude-obsidian v1.1.0
 - Structure: seed files + first ingest complete
 - Skills: wiki, wiki-ingest, wiki-query, wiki-lint, save, autoresearch
+
+
+## 2026-10-26 — №03179884: подготовка к совещанию
+
+[[DiscountCard-Client-Delete-Event-Handlers]]: сверены CRM (`origin/rc-26.6100`), контрагенты (`rc-26.6100`) и наши обработчики. Страница доведена до структуры задачи: где остановились, что выяснено по коду, решения, открытые вопросы, roadmap, ссылки. Главное: порядок обработки карт до удаления частного лица с CRM не согласован; у ИП/КФХ частное лицо удаляется в контрагентах до `deleted`; `allow` для изменения карт не годится; повторное удаление скрытого клиента с отвязанной картой, вероятно, не увидит её операции (вывод по коду, на стенде не проверялось). Код не менялся, тесты не запускались.

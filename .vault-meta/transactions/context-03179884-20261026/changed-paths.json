@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "117ff4f68a7c705531ce52613cba75de8e559ea3132e7629e7fc2fc605bc0c51",
+  "bundle_sha256": "5d7ed5623f46cda561097c36eae64d90b345bc98e0693339cedb372ff1fa980f",
+  "changed_paths": [
+    "wiki/concepts/DiscountCard-Client-Delete-Event-Handlers.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "5d7ed5623f46cda561097c36eae64d90b345bc98e0693339cedb372ff1fa980f",
+  "hashes": {
+    "wiki/concepts/DiscountCard-Client-Delete-Event-Handlers.md": "7d2a8a2639c720a2c0f3ec79503548cd2f1b504413feca4892533f7acc9e33d2",
+    "wiki/hot.md": "b23ddae8f72fc3c7b8fda57ebc2c17069d0fb8bcb80e7f9f3155ada0a8c522c9",
+    "wiki/index.md": "658ac784348b8b32444535d8dcc3ec66ee96867c717e42b73552ea5d94d6abc7",
+    "wiki/log.md": "94830fa6974b0b105b3057a234e516741089aaea35eb3a0ed744dca0fc13711a"
+  },
+  "modes": {
+    "wiki/concepts/DiscountCard-Client-Delete-Event-Handlers.md": 511,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "context-03179884-20261026",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

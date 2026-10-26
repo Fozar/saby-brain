@@ -2,7 +2,7 @@
 type: concept
 title: "SabyGet: превью ДК на странице заведения в новом дизайне"
 created: 2026-10-12
-updated: 2026-10-22
+updated: 2026-10-26
 status: developing
 tags:
   - sabyget
@@ -96,6 +96,25 @@ related:
 **Проверить до ТР:** откуда берётся превью невыданной карты (документ Лебедевой: `BonusDetails` -> `Card.GetListV2`; разбор 12.10: online `GetDescriptionBySalePointV2`, от этого зависит судьба !152256); `CardId` -> `CardUUID`; не ломает ли обрезка `Template` мобильные приложения; как проверить фичу у владельца в списке карт разных аккаунтов; доступ `LoyaltyCardDesign.Read`.
 
 **Что с кодом:** правка `SiteId` в `Template` (!28051, коммит `a4097c79b`) не откатывается, она входит в новое решение.
+
+## Где остановились (26.10.2026)
+
+- **Блокер снят.** Кузаков 22.10 убрал из `LoyaltyCardDesign.Read` проверку владельца шаблона (коммит `320fffd26`, документ MR №10228977 [ссылка](https://online.sbis.ru/opendoc.html?guid=01a16379-a69a-7887-9674-c1be8d123b8c&client=3), !28115/!28116, влит в `rc-26.6100`, собран 23.10). Плеер читает дизайн под любым пользователем, схема ТЗ «плеер сам читает ПО» остаётся.
+- **Баннер и штампики `GetListV2` влиты** в `rc-26.6100` 23.10 (!28113, документ MR [01a16337](https://online.sbis.ru/opendoc.html?guid=01a16337-a6f1-7508-93b0-3abdcfb5af04&client=3), сборка прошла).
+- **UI Лебедевой:** документ MR №10241368 ([ссылка](https://online.sbis.ru/opendoc.html?guid=01a16e3a-b059-745d-9bc9-1c1c97e98299&client=3)), price-formation !152923-!152925, «Публичное API для внедрения конструктора дизайна в сабигет» (26.10): `LoyaltySabyget/DiscountCard/Loader/Config.ts` `preloadDesignData(siteId, discountCardDesignId, loyaltyCardId?)`, без `siteId` старый вид. Расхождение: `loyaltyCardId` у неё `number` и кладётся в ПО `Card`, а ПО карты (`NumberCard.Read`) принимает только UUID (`assert is_uuid`), у нас поле `CardUUID`. Сверить с ней.
+- **Не сделано:** новые поля `SiteId` / `LoyaltyCardDesignId` / `CardUUID` в `Template` `GetListV2` под условием (коммит `a4097c79b` с `SiteId` не влит, ветка 09234904 отстала от `rc-26.6100` и пересекается с баннером в SQL); online `DesignID` -> `LoyaltyCardDesignId` (`344b7a5028`, не влит), скипы nth_night; способ проверки `dc_design_new` владельца; ответ Кузакову про `ShowStamps` (`Layout = 12`); закрыть !28028 и старые !28051/!152256/!152257 или переоформить новым документом MR; документ для SabyGet (срок по плану 31.10).
+
+### Новые поля GetListV2, в работе (26.10)
+
+- Ветка `26.6100/feature/aatimoshenko/09234904` (worktree `D:/dev/wt09234998`) перебазирована на `rc-26.6100`, конфликт с баннером в SQL решён (оставлены обе колонки).
+- Решено: фичу `dc_design_new` проверять один раз на каждого клиента из списка, у карт которого дизайн на конструкторе (так же делает Inside `get_admin_list`). Вариант «только по `SiteId`» отброшен: при аварийном выключении фичи старый вид не вернётся.
+- В `Template` поля `SiteId`, `LoyaltyCardDesignId` (= `CardTemplateID`, активный дизайн типа карты), `CardUUID` (`Card.Identifier`). Заполнены только при дизайне на конструкторе и включённой фиче, иначе пустые, в том числе в ветке брендбука. Описано в `SabyGet.orx` для `GetListV2` и `ReadV2`. Баннер (`_get_strip_image_url`) по-прежнему смотрит только на `SiteId`, без фичи.
+- Тесты: `is_feature_on` замокан в `call_method` (по умолчанию выключен), `test_new_design_fields` в GetListV2 и ReadV2. Прогон `test-core-and-service` запущен; старый `build/` worktree был собран по пути `d:/wt09234998`, переименован в `build_old`, сборка заново.
+- Наташе (диалог 26.10 «у тебя что-то готово?») подготовлен ответ: что влито, что в работе, `loyaltyCardId` передавать UUID строкой. Отправляет Тимошенко.
+- Первый прогон 1350 тестов: 3 падения в GetListV2Test (в ожидаемых словарях шаблона не было новых ключей), тесты поправлены, повторный прогон идёт. pylint 10/10.
+- Ответ Наташе по указанию Тимошенко только про свою работу (без доброски Кузакова): готово баннер и штампики (документ MR 01a16337), скоро новые поля и переименование в online, `loyaltyCardId` передавать UUID.
+- Повторный прогон 1350 OK. Влито amend + force-with-lease 26.10: коммит `4f5a3df94` «Card.GetListV2 и Card.ReadV2 отдают в Template SiteId, LoyaltyCardDesignId и CardUUID для дизайна ДК на конструкторе», тот же MR !28051.
+- Дальше:, online `DesignID` -> `LoyaltyCardDesignId` (!152256), новый документ MR.
 
 ## Где остановились (22.10.2026)
 

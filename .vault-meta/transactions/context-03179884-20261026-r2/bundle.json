@@ -1,0 +1,46 @@
+{
+  "address_requests": [],
+  "expected_hashes": {
+    "wiki/concepts/DiscountCard-Client-Delete-Event-Handlers.md": "7d2a8a2639c720a2c0f3ec79503548cd2f1b504413feca4892533f7acc9e33d2",
+    "wiki/hot-archive.md": "15143d76974314e03daffe54276098c1160a22da09ef77837cd1b0953bf0b052",
+    "wiki/hot.md": "1dbbf9d84ede9a7dae80609664b613903161fbffac93d0e811979ca2250d054a",
+    "wiki/index.md": "377c11a3c3cf7baecd626076ebd27937b5ec26b6918975b275f289913dd02897",
+    "wiki/log.md": "94830fa6974b0b105b3057a234e516741089aaea35eb3a0ed744dca0fc13711a"
+  },
+  "operation_id": "context-03179884-20261026-r2",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction.v1",
+  "source_manifest_updates": {},
+  "writes": [
+    {
+      "content_file": "/tmp/context-03179884-20261026-r2/wiki__concepts__DiscountCard-Client-Delete-Event-Handlers.md",
+      "mode": "replace",
+      "path": "wiki/concepts/DiscountCard-Client-Delete-Event-Handlers.md",
+      "sha256": "49aae60247e249c343ec2e0d5596b93a281a989c2bcae543b408c940769970d0"
+    },
+    {
+      "content_file": "/tmp/context-03179884-20261026-r2/wiki__hot.md",
+      "mode": "replace",
+      "path": "wiki/hot.md",
+      "sha256": "5aefa28dbf30180da4981deacbbe953db956cfcd58ed6659eaf81845eabf683c"
+    },
+    {
+      "content_file": "/tmp/context-03179884-20261026-r2/wiki__hot-archive.md",
+      "mode": "replace",
+      "path": "wiki/hot-archive.md",
+      "sha256": "28b869c2c83077a0992da65aa593bf61835a6e2f5ee5c22172ca3adb4bd10fa2"
+    },
+    {
+      "content_file": "/tmp/context-03179884-20261026-r2/wiki__index.md",
+      "mode": "replace",
+      "path": "wiki/index.md",
+      "sha256": "e8cfa428c4363990d51dba2a841ccca1fa9beea667a397f4121cfd96d3054a82"
+    },
+    {
+      "content_file": "/tmp/context-03179884-20261026-r2/wiki__log.md",
+      "mode": "replace",
+      "path": "wiki/log.md",
+      "sha256": "32fbd03d3cee9b38d52e4efd1cba1b79afe112f2ad611a808c79f93cae926f6e"
+    }
+  ]
+}
