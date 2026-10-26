@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-10-23
+updated: 2026-10-26
 tags:
   - meta
   - log
@@ -9,6 +9,14 @@ status: evergreen
 related:
   - "[[index]]"
 ---
+
+## [2026-10-26] ingest | Совещание 22.10 с Федько: экспорт ДК, удаление типа карты, синхронизация
+
+- Source: `.raw/Совещания/Совещание 2026-10-22 1609. Сдача документации (экспорт ДК, удаление типа карты, синхронизация).md` (автоматическая расшифровка, 16:11–17:36, sha256 3e82150f…)
+- Summary: [[sovechanie-fedko-omelyanenko-timoshenko-exportdc-doc-2026-10-22]]
+- Pages created: [[sovechanie-fedko-omelyanenko-timoshenko-exportdc-doc-2026-10-22]]
+- Pages updated: [[DiscountCard-ImportExport-TD-Revision-5]], [[Fedko-Documentation-Philosophy]], [[index]], [[hot]], [[hot-archive]]
+- Key insight: экспорт принят, кроме баланса бонусов; ключ лимита выгрузки без аккаунта признан ошибкой
 
 ## [2026-10-23] save | №10232921: ВНР даты создания корешков по дате сделки
 
