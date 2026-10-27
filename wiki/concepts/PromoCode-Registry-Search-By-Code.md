@@ -2,8 +2,8 @@
 type: concept
 title: "PromoCode.GetList - поиск в реестре промокодов по коду выданного промокода"
 created: 2026-10-05
-updated: 2026-10-07
-status: developing
+updated: 2026-10-27
+status: done
 tags:
   - promocode
   - registry
@@ -75,13 +75,18 @@ related:
 
 ## Открытые вопросы
 
-- Задача формально на Омельяненко, переназначение не сделано. Делать MR после переназначения.
+- Видео с демонстрацией поиска пользователь запишет сам и приложит к пункту плана (27.10). В итогах слово
+  «продемонстрировано» не ставим, пока видео нет.
+- Задача №03129162 на 27.10 в статусе «В обработке», ответственный Морозов А.В. Описание для help по задаче не найдено.
+- Прогон тестов класса `GetList` в переписке и коммитах не подтверждён.
 
-## Состояние
+## Состояние (2026-10-27)
 
-- Worktree `D:/dev/wt03129162`, ветка `26.6100/feature/aatimoshenko/03129162` от `origin/rc-26.6100` (`3b6ee7f333`). Изменения не закоммичены.
-- Изменённые файлы: `PriceFormation.Online/priceformationonline/loyaltyprograms/promocode/get_list.py`, `PriceFormation.Online/LoyaltyPrograms.orx`, `tests/tests_priceformationonline/loyaltyprograms/promocode/get_list.py`.
-- Осталось: прогнать тесты класса `GetList`, проверить план запроса на стенде (index scan по `CaseInsensitiveUniqueNumber`), коммит и MR.
+Код ушёл 19.10: четыре коммита «Поиск в реестре промокодов по коду выданного промокода» (`d3b350333f`, `d87cf727b7`,
+`f2aa0768b0`, `23d6972245`), последний уже в `rc-26.6100` и `rc-26.6200`. Вместе с MR 19.10 приложен explain запроса с поиском
+по промокоду (test, лояльность): https://explain.sbis.ru/archive/explain/36c734f4ef549fa802682ec24d03ad20:0:2026-10-19#explain
+Пункт плана октября «Готово», итоги написаны 27.10 (в СБИС не вставлены).
+Пункт плана: https://dev.saby.ru/opendoc.html?guid=b176d21a-651f-4557-a973-cb90eda815f9&client=3
 
 ## Оформление ТД для задачи
 
