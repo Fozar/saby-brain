@@ -126,9 +126,26 @@ related:
 - **`SiteId` в чтении:** СДК `ReadPromocodeBBImpl.RESULT_FORMAT` поля не отдаёт (SQL его уже читает) - нужна правка в discount-cards либо отдельное чтение `CardTemplate.Read` из онлайна.
 - Хелперы ДК для переиспользования: `card_design.build_view_details` (возвращает и блоки Кэшбэк/Ваши бонусы - промокоду не нужны), `init_design_template`, `discountcardtype/helpers.save_design_site_id_in_sdc` (через `CardTypeTemplate.Update`).
 
+## Решения 27.10 (Тимошенко)
+
+- Ид шаблона сайта - константа на бэке `PROMOCODE_SITE_TEMPLATE_ID` (пока шаблон ДК), сменим, когда Лебедева сделает отдельный.
+- `SiteId` при чтении - вариант А: правка СДК `PromocodeTemplate.Read`/`ReadByIdentifier`.
+- Сайт создаём только при первом сохранении (старая запись `Draft`). Если `Frames.Copy` упал - `WarningMsg`, `SiteId` пустой, фронт открывает брендбук; повторно не создаём. Брендбук поддерживаем, пока фичу не откроют всем.
+- Начальный дизайн: только название, логотип, баннер (`build_view_details(with_blocks=False)`).
+- price-formation работает в сервисе online, `Frames` вызываем напрямую, без `EndPoint('online')`.
+
+## Реализация (27.10, не закоммичено)
+
+- **price-formation**, `D:/dev/pf-26.61`, ветка `26.6100/feature/aatimoshenko/09234630` (перемотана на `rc-26.6100` 27.10): параметр `with_blocks` у `build_view_details`/`init_design_template`; онлайн `PromocodeTemplate.Save` под фичей заполняет `ViewDetails` нового шаблона и пишет `SiteId` через `CardTypeTemplate.Update`; `PromoCodeData.save_data` -> `_create_design_site` (копия шаблона при первом сохранении); `create_design` отдаёт `DesignData.SiteId = None`; контракты: `SiteId` в `DesignData` Create/Read/Update, в параметре `PromocodeTemplate.Save` и в ответе онлайн `PromocodeTemplate.Read`.
+- **discount-cards**, `D:/dev/wt09234630-sdk`, та же ветка: `SiteId` в `ReadPromocodeBBImpl.RESULT_FORMAT` и в `Online.orx` (Read, ReadByIdentifier), 2 теста.
+- Тесты: price-formation 26 новых и затронутых + регрессия промокодов, шаблонов и типов ДК - OK; СДК `test-core-and-service` 1355 OK. pylint 10/10.
+- В тестовом проекте нет `sbis.Frames` - в тестах подменяем объект целиком (`patch('sbis.Frames', create=True)`).
+- Тесты `promocode/update.py` и `discountcardtype/create.py` при запуске по папке не грузятся (импорт `tests_priceformationonline.*`), к задаче не относится; гонять с `tests/` в `PYTHONPATH`.
+
 ## Состояние
 
 07.10: собран контекст, ТР выше. Заготовку кода не делал: постановка БЛ "не окончательная" (Ютман 05.10).
 09.10: уточнено, что вся БЛ задачи на нас (`PromocodeTemplate.*`, `PromoCode.*`, СДК), пункт плана "В 26.6100 согласно требованиям", 2 дня. Слова Алябушева про "только ТР" относились к его команде. Ветка по плану `26.6100/feature/aatimoshenko/09234630` от `origin/rc-26.6100`. Объём правки в нашей зоне небольшой: `PromocodeTemplate.Save` (+ контракт), параметр блоков у `build_view_details`, `SiteId` в СДК `PromocodeTemplate.Read`.
 26.10: прошло совещание по ТР, Лебедева обновила постановку (раздел «Редакция постановки на 26.10»). `SiteId` на верхнем уровне записи, `TemplateId` убран. Заметки совещания сверены: `SiteId` в `DesignData`, брендбук создаётся и под фичей. Дальше попросить Лебедеву дописать это в задачу и проверить, не затрёт ли СДК `ViewDetails` при сохранении с `ThemeData`, затем код.
 27.10: начали работу. Лебедева попросила создавать сайт на бэке в `PromoCode.Update` для новой записи (раздел «Новое на 27.10»). Риск с затиранием `ViewDetails` брендбуком проверен - его нет. Перед ТР заданы вопросы Тимошенко: шаблон сайта, `SiteId` в чтении через СДК, поведение при ошибке копирования, блоки.
+27.10 (позже): ТР согласовано, код и тесты готовы в обеих ветках, не закоммичены. Дальше: коммит по одобрению, MR в price-formation и discount-cards (одна веха 26.6100), сообщить Лебедевой поля `DesignData.SiteId` и что сайт создаёт бэк; проверить `Frames.Copy` на стенде.
