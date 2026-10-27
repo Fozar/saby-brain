@@ -4,27 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "4a916d84ab852e51",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
-            }
-          }
-        ]
-      },
-      {
-        "id": "2f35d9a34b9b3854",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0d0353ddbdfef1cf",
+            "id": "56ef2ba2b3d74ea5",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -211,9 +195,10 @@
       "new-3d-graph:Open 3d graph": false
     }
   },
-  "active": "0d0353ddbdfef1cf",
+  "active": "56ef2ba2b3d74ea5",
   "lastOpenFiles": [
     "wiki/hot.md",
+    "wiki/concepts/Bonus-GetSaleList-Duplicate-W-Records-Iterative-Block-Bug.md",
     "wiki/concepts/DiscountCard-Client-Delete-Event-Handlers.md",
     "wiki/concepts/ReferralProgram-MasterFilter-Reward-Status-10269696.md",
     "wiki/seduvvCJg",
@@ -248,7 +233,6 @@
     "wiki/questions/DiscountCardType-Create-Design-Constructor.md",
     "wiki/questions/ReferralProgram-History-Migration-Feasibility.md",
     "wiki/sources/graphviz-bl-dependency-viz-2026-08-10.md",
-    "wiki/concepts/BL-Module-Dependency-Graphviz.md",
     "3942627570b6c8f00d7062a9222a9f86_MD5.svg",
     "7b44fe25e8aaa9acd92d5eea06749d3d_MD5.svg",
     "b574f7eb0125c1b0124a6fc9ae01137f_MD5.avif",
