@@ -546,3 +546,4 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[welcome]] — getting started visual guide
 - [[youtube-explainer]] — visual explainer for presentations
 - [[claude-obsidian-presentation]] — presentation canvas (standalone)
+- [[Bonus-Clients-Stale-Balance-10283259]] — №10283259: реестр Бонусы — Клиенты возвращает 1020 после сгорания, карточка показывает 0; SQL читает кэш без проверки актуальности, причина его необновления уточняется (status: developing)
