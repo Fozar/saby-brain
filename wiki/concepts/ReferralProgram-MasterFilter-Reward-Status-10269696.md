@@ -88,4 +88,5 @@ related:
 
 - Диалог с Земцовой: https://dev.saby.ru/page/dialog/cbb6bad8-dd9b-4264-a9da-3cac965ffa03
 - Диалог с Мусохрановым (27.10): https://dev.saby.ru/page/dialog/01a17bcb-a5b5-730f-8b93-fe1179c118df
+- Ветка `26.5134/bugfix/aatimoshenko/10269696`, worktree `D:/dev/wt10269696` (от `rc-26.5134`), MR пока нет
 - Тред решения (28.10, Свешников, Мусохранов): в переписке задачи, thread `9771138c-c65d-4624-97c7-729338acbead`
