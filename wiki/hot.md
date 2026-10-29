@@ -60,6 +60,8 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 ## Active Threads
 
+- [[SiteSave-WidgetStore-TypePage-Missing-1029981]] — №1029981, 26.5120: `Site.Save` в магазине виджетов РС, нет `Type_page.Get/3` в metadata-repository; в price-formation нет, передать владельцу конструктора сайтов.
+
 - [[ReferralStub-Status-Description-Outcome-10284280]] — №10284280, 26.5120: название выбранного итога из регламента; правка без коммита, 41 тест OK; проверка на fix после выката.
 
 - [[Bonus-Clients-Stale-Balance-10283259]] — №10283259: реестр 1020, карточка 0 после сгорания; чтение 5366 выполнено в другом аккаунте и гипотезу не проверяет. Доступа к боевой базе и аккаунту нет; дальше воспроизведение на тестовом стенде, при необходимости чтение через вторую линию (status: developing)
