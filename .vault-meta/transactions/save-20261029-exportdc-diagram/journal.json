@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/DiscountCard-ImportExport-TD-Revision-5.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "d2ccdbbfb73646d083f4c7e8c1b975edfc75b2c1a4df575717b53fcb3fc901d9",
+  "completed_epoch": 1793270809.0990176,
+  "created_epoch": 1793270808.8595614,
+  "expanded_bundle_sha256": "d0cedca1d9a87dd0a2a0f12bc53899f6c530acb87ada6b1e7edca70cb5ffcbfd",
+  "input_bundle_sha256": "d0cedca1d9a87dd0a2a0f12bc53899f6c530acb87ada6b1e7edca70cb5ffcbfd",
+  "operation_id": "save-20261029-exportdc-diagram",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "435a7cb603dd7324d3de5c14a0c3efb272a95ec221152569ad65b02601f3e0d6",
+      "original_mode": 384,
+      "original_sha256": "071856caffcebf9316a17297348e7b132dfa2f83011c0baa83b27beae3d78b51",
+      "path": "wiki/concepts/DiscountCard-ImportExport-TD-Revision-5.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "f0923015f9de52a004aff439da95427afa38a53fcec3eedbe8a8b4185a263c27",
+      "original_mode": 511,
+      "original_sha256": "380f89beeab37fb9a916d1abe4a95bfb11d93e80d92d6356ef0d979971823e54",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "003842347b0145ebdc60f15db8d8a6263d28e4793c9409fa23bd685638983165",
+      "original_mode": 511,
+      "original_sha256": "108af9520480d5cf8ba7c2b92fb10794a21867ddf3d9f0ab09fc11145abf34dd",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "bd315a92a26b3c26b3568ec31a0e1fbf055711dd3f9d87dc7d78f554259f6e8a",
+      "original_mode": 511,
+      "original_sha256": "66fdb55165d15b62cb61b9aee7e490e5b20db5c764dbc6e0e03533e51c367319",
+      "path": "wiki/log.md"
+    }
+  ]
+}
