@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "2b13013fdce4b2d3cf229ffedc2bf9d9dff1110c06b7283ebf6f857549b6ba8f",
+  "bundle_sha256": "095938ed12340283bb0659ae2e4c97c726ca02f95626a779f1ce5d0e8c15947e",
+  "changed_paths": [
+    "wiki/concepts/DiscountCard-ImportExport-TD-Revision-5.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "095938ed12340283bb0659ae2e4c97c726ca02f95626a779f1ce5d0e8c15947e",
+  "hashes": {
+    "wiki/concepts/DiscountCard-ImportExport-TD-Revision-5.md": "071856caffcebf9316a17297348e7b132dfa2f83011c0baa83b27beae3d78b51",
+    "wiki/hot.md": "108af9520480d5cf8ba7c2b92fb10794a21867ddf3d9f0ab09fc11145abf34dd",
+    "wiki/index.md": "380f89beeab37fb9a916d1abe4a95bfb11d93e80d92d6356ef0d979971823e54",
+    "wiki/log.md": "66fdb55165d15b62cb61b9aee7e490e5b20db5c764dbc6e0e03533e51c367319"
+  },
+  "modes": {
+    "wiki/concepts/DiscountCard-ImportExport-TD-Revision-5.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20261029-exportdc-status-note",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}
