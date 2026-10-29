@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-10-26
+updated: 2026-10-29
 tags:
   - meta
   - log
@@ -9,6 +9,12 @@ status: evergreen
 related:
   - "[[index]]"
 ---
+
+## [2026-10-29] save | Экспорт ДК: семь точных замен по жёлтым пометкам
+
+- Pages updated: [[DiscountCard-ImportExport-TD-Revision-5]], [[index]], [[hot]]
+- Источники: текущая статья БЗ от 29.10 и [[sovechanie-fedko-omelyanenko-timoshenko-exportdc-doc-2026-10-22]].
+- Результат: docs/БЗ-вставки/09-экспорт-ДК-правки-22-10.md — конкретные места и готовые замены. БЗ не редактировалась; баланс ждёт Омельяненко.
 
 ## [2026-10-26] ingest | Совещание 22.10 с Федько: экспорт ДК, удаление типа карты, синхронизация
 
