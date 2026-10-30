@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-10-29
+updated: 2026-10-30
 tags:
   - meta
   - log
@@ -9,6 +9,13 @@ status: evergreen
 related:
   - "[[index]]"
 ---
+
+## [2026-10-30] save | LoyaltyReferral: идеи рефакторинга
+
+- Pages created: [[LoyaltyReferral-Refactoring-Ideas]]
+- Pages updated: [[index]], [[hot]]
+- Source: обсуждение с пользователем и статический разбор price-formation; предложения, не согласованный план.
+- Результат: пять степеней вмешательства с акцентом на бизнес-границы; сначала очистка API и общие правила, затем заявка. История оффера остаётся отдельно от истории заявки.
 
 ## [2026-10-29] save | Экспорт ДК: восемь правок текста и схемы
 

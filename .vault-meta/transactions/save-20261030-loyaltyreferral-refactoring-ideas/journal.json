@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/LoyaltyReferral-Refactoring-Ideas.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "e22f5e3cb39449e36172ab3d1aa4a8614389974dd12ddae2639909b9dff6b607",
+  "completed_epoch": 1793358217.9634511,
+  "created_epoch": 1793358217.690375,
+  "expanded_bundle_sha256": "727558762b28baf954cbfa73513db6f29ccba25b6d3d557c7888738d5d5c137e",
+  "input_bundle_sha256": "727558762b28baf954cbfa73513db6f29ccba25b6d3d557c7888738d5d5c137e",
+  "operation_id": "save-20261030-loyaltyreferral-refactoring-ideas",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "451392f6f9db69ad7254ff8a55c2f5eef8e29531e64cdce26324150a281041b4",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/LoyaltyReferral-Refactoring-Ideas.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "fb660a645ca2f15c932ed235b56d989c17c0021823bf9e63386b79a8c2cb0b43",
+      "original_mode": 511,
+      "original_sha256": "ddce3f9aea545de4a05dd440fd76d0005344028956a143f0f38de5312f57c50e",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "f661c6ffffcd45f5ddc5a4eeeddb34ac70fb22445f8c5723d40abf1923d604c5",
+      "original_mode": 511,
+      "original_sha256": "8a794e54779329db7bfcdb9b3dbe197db5950a3ac2a294943abb14a7c4100c90",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "984b6a8c508fbe8517e3d456c61062a9b5d83185f9ea1c1e7c8f8ef4ebc44529",
+      "original_mode": 511,
+      "original_sha256": "bd315a92a26b3c26b3568ec31a0e1fbf055711dd3f9d87dc7d78f554259f6e8a",
+      "path": "wiki/log.md"
+    }
+  ]
+}

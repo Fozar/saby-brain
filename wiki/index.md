@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-10-21
+updated: 2026-10-30
 tags:
   - meta
   - index
@@ -87,6 +87,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[ReferralProgram-SabyNet-Offer-Contract]] (c-000268) — спринт №4: новый тип договора «Оферта SabyNet» вместо агентского при приглашении партнёра (без вознаграждения и срока), выбор аккаунта при выборе юрлица (status: developing)
 - [[LoyaltyReferral-Module-Extraction]] — выделение рефералки в отдельный СБИС-модуль LoyaltyReferral: план Андрея (4 этапа), зависимости (mirror KZ, rightcheck→Rights-Py, user_service_cloud→UserServiceCloud-Py), регистрация в online32.s3srv:454, симлинки tests_new→tests, echo-метод, грабли test_manager (задача 05256826) (status: developing)
 - [[LoyaltyReferral-RefProgram-FO-TZ-Alignment]] — №09152329, срок 31.10: 29.10 повторная сверка с вложенным ТЗ; структура core/helpers соответствует, MR завершён и код на стенде, подзадача №10231432 на проверке у Дюдневой и Тимошенко. Полное соответствие требует отдельного переименования, развязки зависимостей и определения API; подготовлен, но не отправлен запрос Мусохранову о границах и остатке предметного кода в PriceFormation.Online (status: developing)
+- [[LoyaltyReferral-Refactoring-Ideas]] — идеи рефакторинга по бизнес-границам: пять уровней от очистки API до единой заявки и расчётов; приоритет — общие правила и заявка, предложения не согласованы (status: draft)
 - [[ReferralProgram-SetPrice-Record-Return]] — SetStubPrice/SetLeadPrice возвращают Record(AccruedCount, NotAccruedCount) вместо int; «скольким начислено / нет» как в DiscountCard.BatchDeleteOrLock (задача 04307161, saby bank) (status: developing)
 - [[ReferralProgram-Data-Model]] — модель данных реф. программ: ВидЦены→Раздел→БизнесГруппа, AdObject-источники, access_data_guid, utm_rfcid, миграция между Реф. Сетями (задача 06096778) (status: developing)
 - [[ReferralProgram-History-UI-Design]] (c-000229) — UI истории изменений по офферам/лидам/корешкам: раздельные кнопки истории для оффера и для корешка, объединение в одну историю явно отвергнуто; разбор реализации 07-29 — Лебедева кнопка корешка, Тимошенко клик-колбэк + фильтрация GetHistoryList (status: developing)

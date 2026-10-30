@@ -60,6 +60,8 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 ## Active Threads
 
+- **Рефакторинг LoyaltyReferral**: [[LoyaltyReferral-Refactoring-Ideas]] — 30.10: сохранены идеи по пяти степеням вмешательства; оффер, участие партнёра, заявка, вознаграждение. Приоритет: служебный API → общие правила → отдельная заявка. Это предложения, реализация не начата.
+
 - [[DiscountCard-TemplateCount-List-Mismatch-101911769]] — №101911769, 26.6100: ромашка в дизайне типа 6328 на fix; счётчик СДК учитывает шаблоны, исключённые списком (черновик/нет оформления); предзагрузка подтверждает ThemeData без ThemeScreen; передать владельцу СДК (status: developing)
 
 - [[SiteSave-WidgetStore-TypePage-Missing-1029981]] — №1029981, 26.5120: `Site.Save` в магазине виджетов РС, нет `Type_page.Get/3` в metadata-repository; в price-formation нет, передать владельцу конструктора сайтов.
