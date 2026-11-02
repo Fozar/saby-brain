@@ -202,6 +202,7 @@
   },
   "active": "56ef2ba2b3d74ea5",
   "lastOpenFiles": [
+    "fix_wiki.py",
     "wiki/sources/zvonok-musohranov-omelyanenko-timoshenko-2026-10-29.md",
     "wiki/concepts/ReferralLead-Create-Stub-False-Duplicate-10305722.md",
     "wiki/concepts/LoyaltyReferral-Refactoring-Ideas.md",
@@ -228,7 +229,6 @@
     "wiki/concepts/PromoCode-Registry-Search-By-Code.md",
     "wiki/concepts/PartnerPromoCode-SaleNode-HasMore-Iterative-Bug.md",
     "wiki/concepts/Fedko-Documentation-Philosophy.md",
-    "wiki/concepts/DiscountCard-GetListWithStats-SDK-Call-Loop.md",
     "wiki/hot.md.tmp.42872.b5cb67280267",
     "wiki/hot.md.tmp.42872.1cb7e28fa689",
     "wiki/log.md.tmp.42872.a3097426f3e2",
