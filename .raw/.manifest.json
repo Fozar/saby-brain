@@ -2051,5 +2051,21 @@
       ]
     }
   },
-  "version": 1
+  "version": 1,
+  "files": {
+    "raw/Совещания/Звонок 2026-10-29 1430. Мусохранов Андрей, Омельяненко Егор, Тимошенко Александр.md": {
+      "hash": "49f67bc80b38e11977f07314632517b5ed7161eaac30064f065ade80f1de1e21",
+      "ingested_at": "2026-11-02",
+      "pages_created": [
+        "wiki/sources/zvonok-musohranov-omelyanenko-timoshenko-2026-10-29.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/DiscountCard-ImportExport-TD-Revision-5.md",
+        "wiki/concepts/ReferralStub-Status-Description-Outcome-10284280.md",
+        "wiki/hot.md",
+        "wiki/index.md",
+        "wiki/log.md"
+      ]
+    }
+  }
 }

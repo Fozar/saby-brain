@@ -485,6 +485,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[kb-oformlenie-dokumentacii-2026-10-01]] — 2026-10-01 | БЗ «Оформление документации»: регламент проверки ТД, шаблон «Алгоритмы и процессы», Best Practice
 - [[sovechanie-fedko-omelyanenko-timoshenko-importdc-doc-2026-10-01]] — 2026-10-01 | вторая сдача ТД импорта и экспорта ДК Федько: схема без UML, таблица полей, вопросы о второй карте и ограничениях
 - [[sovechanie-fedko-omelyanenko-timoshenko-exportdc-doc-2026-10-22]] — 2026-10-22 | третья сдача Федько: экспорт ДК принят, кроме баланса бонусов; ключ лимита без аккаунта признан ошибкой; удаление типа карты и синхронизация в офлайн (Омельяненко)
+- [[zvonok-musohranov-omelyanenko-timoshenko-2026-10-29]] — 2026-10-29 | Мусохранов (сомнения о чтении лида через маркетинг) и Омельяненко (10 замечаний к ТД экспорта ДК перед сдачей)
 - [[wasaby-infra-2026-04-12]] — 2026-04-12 | Wasaby infrastructure docs
 - [[tests-new-readme-2026-04-11]] — 2026-04-11 | test framework README
 - [[zvonok-offer-bug-zlateks-2026-04-13]] — 2026-04-13 | Zlateks offer bug investigation

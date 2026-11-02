@@ -7,6 +7,7 @@ status: developing
 tags: [price-formation, referral, test-stand, bugfix]
 related:
   - "[[ReferralProgram-RefDealsConvert-Feature]]"
+  - "[[zvonok-musohranov-omelyanenko-timoshenko-2026-10-29]]"
   - "[[ReferralProgram-Stub-Implementation]]"
 ---
 
@@ -28,6 +29,8 @@ https://dev.saby.ru/opendoc.html?guid=01a18178-5be7-731b-897d-c1a79269a005&clien
 29.10 правку (писал Codex) перепроверили отдельно: 41 тест снова OK, логика сверена с CRM. Найден риск: сбой `regls` блокировал обновление корешка. Доработано там же, без коммита: получение названия в своём `try/except` с откатом на типовую подпись; тест на сбой `GetManager`/`GetLite`/`PassName` (без `try/except` падает, с ним проходит), устаревший дубль-тест заменён им. 41 тест OK.
 
 ## Что выяснено по коду
+- 29.10 звонок с Мусохрановым ([[zvonok-musohranov-omelyanenko-timoshenko-2026-10-29]]): Мусохранов усомнился в необходимости дергать маркетинг (`SourcesSales`) при обработке лида, назвал это «костылём» и сомневается в подходе. Вопрос оставлен открытым.
+
 - Обработчик HandleLeadStateChanged читал вычисляемое поле Лид.Фаза.Название, которого нет в обычном CRUD Лид.Прочитать, поэтому выбирал типовой текст.
 - Даже название фазы не заменяет пользовательский итог завершённой сделки: это отдельный переход.
 - В CRM rc-26.5120 (crm_sales_workflow/deal/basic/extension_list/_helpers.py) итог разрешается сервисом регламентов по Лид.Регламент и Лид.Переход через GetLite / PassName(0, transition_id). Название этапа разрешается через PhaseName.
