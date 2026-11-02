@@ -8,7 +8,7 @@ tags:
   - referral
   - test-stand
   - bugfix
-status: developing
+status: testing
 related:
   - "[[ReferralProgram-RefDealsConvert-Feature]]"
   - "[[ReferralStub-LeadSum-Implementation]]"
@@ -22,8 +22,7 @@ https://online.sbis.ru/opendoc.html?guid=01a18c0b-e76b-721f-b3f9-af46ed860b78&cl
 Партнёр отправляет любую заявку (pre, РС Лидар, оффер «Новый 30.10») и получает «У этого клиента уже есть созданная заявка…», метод `ReferralProgram.CreateLeadByPartner/3` падает. Ожидание: ошибка только при открытой заявке по тому же клиенту и теме с настройкой «Открытых сделок по клиенту = Одна».
 
 ## Где остановились
-Выбран и реализован Вариант 4: убрана эвристика `or (lead_uuid and is_stub_exists(lead_uuid))`, опираемся строго на контракт CRM `result.Get('ИдентификаторСобытия')`.
-Юнит-тесты обновлены и успешно пройдены (12/12 в тестовом окружении 26.61). Ждём подтверждения пользователя на коммит.
+Оформлен Merge Request (документ СБИС [01a19b74-0a9e-728b-b01e-ea2fe9e94049](https://online.sbis.ru/opendoc.html?guid=01a19b74-0a9e-728b-b01e-ea2fe9e94049&client=3), коммит `80c794c33d`). Ожидает прохождения автотестов и проверки тестировщиком (Земцова А.В.).
 
 ## Что выяснено по коду и логам
 - Лог pre-test-online (uuid запроса `d3264d34-fba0-662b-344e-6b24168de5e7`): сделка 9373141 создана заново (INSERT, событие «Начало»), существующую CRM не возвращала.
@@ -46,4 +45,11 @@ https://online.sbis.ru/opendoc.html?guid=01a18c0b-e76b-721f-b3f9-af46ed860b78&cl
 - Почему раньше работало: проверить, менялась ли в CRM установка источника (синхронно / асинхронно).
 
 ## Ссылки
-Лог: `pre-test-partners-30-10-2026_14-02-25-793.sbislogz`. Версия стенда online_26.6100 сборка 799.
+- Ветка: `26.6100/bugfix/aatimoshenko/10305722`
+- Коммит: `80c794c33d`
+- Документ MR в СБИС: https://online.sbis.ru/opendoc.html?guid=01a19b74-0a9e-728b-b01e-ea2fe9e94049&client=3
+- GitLab MRs:
+  - https://git.sbis.ru/warehouse/price-formation/-/merge_requests/153439
+  - https://git.sbis.ru/warehouse/price-formation/-/merge_requests/153440
+  - https://git.sbis.ru/warehouse/price-formation/-/merge_requests/153441
+- Лог: `pre-test-partners-30-10-2026_14-02-25-793.sbislogz`. Версия стенда online_26.6100 сборка 799.

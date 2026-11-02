@@ -60,7 +60,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 ## Active Threads
 
-- [[ReferralLead-Create-Stub-False-Duplicate-10305722]] — №10305722, 26.6100: реализован Вариант 4 (убрана проверка корешка, опираемся на ИдентификаторСобытия от CRM). Тесты пройдены (12/12). Ждёт подтверждения на коммит (status: developing)
+- [[ReferralLead-Create-Stub-False-Duplicate-10305722]] — №10305722, 26.6100: оформлен MR (документ [01a19b74](https://online.sbis.ru/opendoc.html?guid=01a19b74-0a9e-728b-b01e-ea2fe9e94049&client=3), коммит 80c794c33d). Ждёт проверки тестировщиком (status: testing)
 
 - **Рефакторинг LoyaltyReferral**: [[LoyaltyReferral-Refactoring-Ideas]] — 30.10: сохранены идеи по пяти степеням вмешательства; оффер, участие партнёра, заявка, вознаграждение. Приоритет: служебный API → общие правила → отдельная заявка. Это предложения, реализация не начата.
 
