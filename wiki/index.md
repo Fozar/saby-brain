@@ -173,6 +173,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Concepts
 
+- [[PromoCode-Generation-Timeout-20000-10304201]] — №10304201: таймаут генерации 20 000 кодов, оптимизация проверки БД и таймера
 - [[LLM Wiki Pattern]] — the pattern for building persistent, compounding knowledge bases using LLMs (status: mature)
 - [[Hot Cache]] — ~500-word session context file, updated after every ingest and session (status: mature)
 - [[Compounding Knowledge]] — why wiki knowledge grows more valuable over time, unlike RAG (status: mature)
@@ -398,6 +399,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Concepts
 
+- [[PromoCode-Generation-Timeout-20000-10304201]] — №10304201: таймаут генерации 20 000 кодов, оптимизация проверки БД и таймера
 - [[Tensor-Culture]] — 8 принципов + правила поведения компании Тензор; культура вокруг человека, простоты, действия (status: current)
 - [[Tensor-Glossary]] — корпоративный словарь: 12 ключевых терминов Tензор/Saby (status: current)
 - [[Saby-Product-Lineup]] — полный каталог продуктов Saby по вертикалям с ответственными лицами (status: current)
