@@ -22,10 +22,10 @@ https://online.sbis.ru/opendoc.html?guid=01a18bd7-655d-7e4a-ad25-6c5df56017cb&cl
 Реализован фикс в `individual_promo_code_emission/generate.py`:
 1. `PromoCodesGenerator`: таймаут `_MAX_GENERATION_TIME_FOR_CHUNK` (3 сек) теперь учитывает только чистое процессорное время генерации кандидатов в Python (`generation_time`), исключая ожидание SQL-запроса `_filter_taken`. Убрана ложная проверка таймаута после сбора кодов при `len(generated_numbers) >= amount`.
 2. `sql_filter_existing_numbers`: добавлено условие `"Номер" IS NOT NULL` для попадания в частичный индекс `CaseInsensitiveUniqueNumber`.
-3. По замечанию ревью-бота учтена защита от зацикливания при исчерпании кодов в БД: добавлены `_MAX_FILTER_ATTEMPTS = 10` и общий таймаут на чанк `_MAX_TOTAL_TIME_FOR_CHUNK = 15.0` сек.
+3. По замечаниям ревью-бота учтена защита от зацикливания при исчерпании кодов в БД: добавлен общий таймаут на чанк `_MAX_TOTAL_TIME_FOR_CHUNK = 15.0` сек (без жесткого лимита на число попыток, чтобы не обрывать генерацию при высокой плотности занятости кодов).
 Юнит-тесты в `tests/.../individual_promo_code_emission/generate.py`:
 - `test_filter_taken_slow_does_not_timeout_when_gathered` (красный до фикса, зеленый после)
-- `test_generation_timeout_on_exhausted_combinations` (остановка по 10 попыткам фильтрации при исчерпании комбинаций)
+- `test_generation_timeout_on_exhausted_combinations` (остановка по общему таймауту при исчерпании комбинаций)
 - `test_generation_total_wall_clock_timeout` (остановка по общему таймауту 15 сек при медленных запросах)
 
 ## Что выяснено по коду
@@ -45,7 +45,7 @@ https://online.sbis.ru/opendoc.html?guid=01a18bd7-655d-7e4a-ad25-6c5df56017cb&cl
 - [ ] Проверка на стенде
 
 ## Ссылки
-- Коммит: `9cb2937269`
+- Коммит: `9aa8bfcc66`
 - Ветка: `26.6100/bugfix/aatimoshenko/10304201`
 - Документ MR: [01a19baf](https://online.sbis.ru/opendoc.html?guid=01a19baf-9b16-7c62-a0c5-bba669eaf61d&client=3) (#634567950)
 - GitLab MRs: !153448, !153449, !153450
