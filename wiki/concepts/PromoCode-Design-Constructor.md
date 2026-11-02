@@ -2,7 +2,7 @@
 type: concept
 title: "Карточка промокода, вкладка Дизайн: конструктор Дизайна ДК вместо брендбука"
 created: 2026-10-07
-updated: 2026-10-28
+updated: 2026-11-02
 status: developing
 tags:
   - promocode
@@ -172,6 +172,14 @@ related:
 - По просьбе Тимошенко убраны комментарии про брендбук и штрихкод по умолчанию.
 - Тест падения `test-passupdater` (`'-1 401 Unauthorized'`) в MR СДК к задаче не относится: облако passupdater без DCService/DCCore, приставку `-1` даёт платформа в `GenericHttpWarning`.
 
+## Доработка: обновление ID шаблона сайта дизайна (02.11)
+
+- **Лебедева, 02.11 11:07:** «Замени пожалуйста ид шаблона на 8f7fd80-ca26-4e9e-b384-5b14ddb6e3f9, и закроем задачу».
+- В core.py константа PROMOCODE_SITE_TEMPLATE_ID заменена с 94345145-2493-428e-bf2b-dee75f09e962 на 8f7fd80-ca26-4e9e-b384-5b14ddb6e3f9.
+- Тесты 	ests_priceformationonline.loyaltyprograms.promocode.design_site.CreateDesignSite (6 тестов) и тесты создания/чтения/обновления промокодов (10 тестов) прошли успешно.
+- Ветка 26.6100/feature/aatimoshenko/09234630_site_template, коммит e5d709dc8.
+- Оформлен регламентный Merge Request в СБИС: https://online.sbis.ru/opendoc.html?guid=01a19b65-1912-77c5-a4c8-258d432d5647&client=3, GitLab MR !153436, !153437, !153438 (приложение online).
+
 ## Состояние
 
 07.10: собран контекст, ТР выше. Заготовку кода не делал: постановка БЛ "не окончательная" (Ютман 05.10).
@@ -185,3 +193,4 @@ related:
 28.10 (позже): замечания ревьюбота по !153119 исправлены локально в `D:/dev/pf-26.61`, тесты 47 + регрессия OK, pylint 10/10. Запушено amend `220dd52096` (force-with-lease). Ответы в тредах бота не отправлены; дальше ревью.
 28.10: rebase на свежую `rc-26.6100` (конфликт в `helpers.py`), второе замечание бота учтено, запушен `981d62cfd8`. Тесты 48 + регрессия OK, pylint 10/10.
 28.10: в MR СДК заскипан `test-passupdater` `wallet/get.py: Get.test_expired` (`@skip` со ссылкой на ошибку https://dev.saby.ru/opendoc.html?guid=01a180b7-18ec-7cda-9542-a741185f073c&client=3), amend в коммит СДК `f43091feb`, запушено.
+188. 02.11: Лебедева попросила обновить ID шаблона сайта на 8f7fd80-ca26-4e9e-b384-5b14ddb6e3f9. Константа PROMOCODE_SITE_TEMPLATE_ID обновлена, тесты OK, коммит be5d709dc8 в ветке 26.6100/feature/aatimoshenko/09234630_site_template, создан MR (документ 01a19b65-1912-77c5-a4c8-258d432d5647, GitLab !153436-!153438). Ждёт ревью и закрытия задачи.
