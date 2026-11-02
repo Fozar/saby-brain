@@ -198,7 +198,8 @@
     "wiki/sources/zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29.md": "c-000222",
     "wiki/sources/zvonok-tim-sveshnikov-mihel-referral-history-ui-2026-07-29.md": "c-000228",
     "wiki/sources/zvonok-tim-sveshnikov-referral-history-buttons-2026-07-29.md": "c-000227",
-    "wiki/sources/zvonok-zemtsova-timoshenko-2026-10-21.md": "c-000281"
+    "wiki/sources/zvonok-zemtsova-timoshenko-2026-10-21.md": "c-000281",
+    "wiki/sources/zvonok-musohranov-omelyanenko-timoshenko-2026-10-29.md": "c-000282"
   },
   "created": "2026-04-23",
   "description": "Ingest delta tracker and address map for the claude-obsidian vault. Do not hand-edit; wiki-ingest maintains this.",
@@ -2049,11 +2050,8 @@
         "wiki/hot.md",
         "wiki/log.md"
       ]
-    }
-  },
-  "version": 1,
-  "files": {
-    "raw/Совещания/Звонок 2026-10-29 1430. Мусохранов Андрей, Омельяненко Егор, Тимошенко Александр.md": {
+    },
+    ".raw/Совещания/Звонок 2026-10-29 1430. Мусохранов Андрей, Омельяненко Егор, Тимошенко Александр.md": {
       "hash": "49f67bc80b38e11977f07314632517b5ed7161eaac30064f065ade80f1de1e21",
       "ingested_at": "2026-11-02",
       "pages_created": [
@@ -2067,5 +2065,6 @@
         "wiki/log.md"
       ]
     }
-  }
+  },
+  "version": 1
 }
