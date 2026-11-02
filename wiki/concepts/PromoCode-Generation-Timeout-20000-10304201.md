@@ -3,7 +3,7 @@ type: concept
 title: "Таймаут генерации 20 000 промокодов (№10304201)"
 created: 2026-11-02
 updated: 2026-11-02
-status: developing
+status: testing
 tags: [price-formation, promocode, test-stand, bugfix]
 related:
   - "[[PromoCode-Generation-Memory-Optimization]]"
@@ -36,7 +36,14 @@ https://online.sbis.ru/opendoc.html?guid=01a18bd7-655d-7e4a-ad25-6c5df56017cb&cl
 - Добавление `"Номер" IS NOT NULL` в WHERE обеспечивает использование индекса `CaseInsensitiveUniqueNumber`.
 
 ## Roadmap
-- Согласовать коммит с пользователем
-- Закоммитить и запушить ветку
-- Создать MR в rc-26.6100
-- Передать задачу на проверку
+- [x] Согласовать коммит с пользователем
+- [x] Закоммитить и запушить ветку
+- [x] Создать MR в rc-26.6100
+- [ ] Проверка ревью и автотестов
+- [ ] Проверка на стенде
+
+## Ссылки
+- Коммит: `a2151c2dd7`
+- Ветка: `26.6100/bugfix/aatimoshenko/10304201`
+- Документ MR: [01a19baf](https://online.sbis.ru/opendoc.html?guid=01a19baf-9b16-7c62-a0c5-bba669eaf61d&client=3) (#634567950)
+- GitLab MRs: !153448, !153449, !153450
