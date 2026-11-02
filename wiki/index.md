@@ -386,6 +386,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[Binary-Storage-Options]] — Выбор хранилища: SabyDisk vs FileStorage vs file-transfer — сравнительная таблица (status: current)
 - [[AVIF-to-PNG-Windows-Conversion]] — конвертация AVIF→PNG на Windows: `py` + Pillow; почему WIC и `python3` не работают (status: current)
 - [[Claude-Code-VseGPT-Provider]] — переключение Claude Code на VseGPT как альтернативный API-провайдер: ANTHROPIC_BASE_URL, токен, маппинг моделей (status: current)
+- [[Antigravity-Auto-Approve-Hub]] — локальный pre-tool hook для agy: 4 уровня (allow/deny/force_ask/ask), Workspace Trust, Ollama (Qwen 3B) и Gemini Flash Lite (status: current)
 - [[SabyGet-Product-Overview]] — Saby Get агрегатор заведений: функции, аудитория, платформы, разделы сайта по ролям (status: current)
 - [[SabyGet-Landing-Page]] — разводящая страница: flow региона, алгоритм весов каруселей, data architecture Карты/Бонусы/Промокоды (status: current)
 - [[SabyGet-Loyalty-Subsystems]] — Карты / Бонусы / Промокоды на SabyGet: BL-методы, UI, реферальная программа (status: current)
