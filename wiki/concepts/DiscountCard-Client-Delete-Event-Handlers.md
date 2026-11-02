@@ -2,8 +2,8 @@
 type: concept
 title: "Удаление и скрытие клиента: свои обработчики событий для дисконтных карт"
 created: 2026-10-07
-updated: 2026-10-27
-status: developing
+updated: 2026-11-02
+status: testing
 tags:
   - discountcard
   - crm
@@ -144,3 +144,13 @@ related:
 - Заготовка: `D:/dev/wt03179884`. Контрагенты: клон `D:/dev/contragents-online-26.6100`, ветка `rc-26.6100`.
 - CRM читать без рабочей ветки (она старая): `git -C C:/Users/aa.timoshenko/PycharmProjects/crm-core show origin/rc-26.6100:<путь>`.
 - Файлы: контрагенты `bl-modules/ContractorOnline/contractor/crud/control/delete/` (`delete.py`, `permissibility.py`), `set_display.py`; CRM `activesales/crmclients/` (`helpers.py`, `templates.py`, `editor.py`, `handlers.py`, `on_event.py`); наши `on_destroy_client.py`, `discountcard/update.py`, `servicediscountcard/notify_changed.py`.
+
+## 02.11: Влито в 26.6100, на тестировании
+
+- 29.10 MR !153231-!153233 (коммит f8c1c1e79a, 12 тестов OK) влит в 
+c-26.6100, 
+c-26.6200, 
+c-27.1100.
+- Ответ Никите Лукьянову отправлен в тред задачи (CRM может готовить свою доброску по удалению дублирующей логики).
+- 02.11 09:45 задача переведена на этап «Проверка (тестирование)» (Дюднева Светлана).
+- Сформированы итоги по пункту плана октября (Федько Ю.В.).
