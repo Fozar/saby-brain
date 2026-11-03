@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-- [[PromoCode-Gift-Choice-Description-10127356]] — №10127356, 26.6100: оформлен MR (документ [01a19ffa](https://online.sbis.ru/opendoc.html?guid=01a19ffa-bc84-70ef-a76e-f96c038c9d70&client=3), коммит 5afbfecb83, !153497-!153499) (status: testing)
+- [[PromoCode-Gift-Choice-Description-10127356]] — №10127356, 26.6100: оформлен MR (документ [01a19ffa](https://online.sbis.ru/opendoc.html?guid=01a19ffa-bc84-70ef-a76e-f96c038c9d70&client=3), коммит b057825256, !153497-!153499; замечание reviewbot закрыто) (status: testing)
 
 Last updated: 2026-08-25 | Total pages: 456 | Sources ingested: 233
 
