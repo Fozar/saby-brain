@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-11-02
+updated: 2026-11-03
 tags:
   - meta
   - hot-cache
@@ -14,6 +14,10 @@ related:
 ---
 
 # Recent Context
+
+## 2026-11-03 — №11033463: Bonus.ReadSettings недоступен для СДК, приветственные бонусы во франшизе
+
+**[[SabyGet-Franchisee-Join-Greeting-Bonus]]**: на pre-test при демонстрации приветственные бонусы партнёру не приходили («вы получите» без суммы). В логах вызов СДК `LoyaltyProgram.GetDescriptionBySalePoint` падал на межсервисном вызове `Bonus.ReadSettings` владельца (Internal, нет `module_api_part="1"` в `LoyaltyPrograms.orx`). Ошибка глушилась `@Try`, 0 кэшировался в `showcase-service` на 4 мин. Заведена ошибка №11033463, добавлен `module_api_part="1"`, ветка `26.6100/bugfix/aatimoshenko/11033463`, коммит `d91d12affd`, MR !153509-!153511.
 
 ## 2026-11-02 — Antigravity Auto-Approve Hub: 4 уровня, Ollama и Gemini Flash Lite
 
@@ -63,6 +67,8 @@ related:
 SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s3cld/s3srv/s3mod), JSON-RPC. DB: `ВидЦеныДокумент` (события лояльности), `Карта` (ДК/промокод). DWC: `workflow2`.
 
 ## Active Threads
+
+- [[SabyGet-Franchisee-Join-Greeting-Bonus]] — №11033463, 26.6100: открыт `module_api_part="1"` для `Bonus.ReadSettings`, чтобы СДК мог читать приветственные бонусы владельца франшизы; коммит d91d12affd, MR !153509-!153511 (status: testing)
 
 - [[PromoCode-Gift-Choice-Description-10127356]] — №10127356, 26.6100: оформлен MR (документ [01a19ffa](https://online.sbis.ru/opendoc.html?guid=01a19ffa-bc84-70ef-a76e-f96c038c9d70&client=3), коммит b057825256, !153497-!153499; замечание reviewbot закрыто) (status: testing)
 

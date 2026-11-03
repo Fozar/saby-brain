@@ -2,7 +2,7 @@
 type: concept
 title: "SabyGet: при присоединении к партнёру франшизы не видно приветственных бонусов"
 created: 2026-10-05
-updated: 2026-11-02
+updated: 2026-11-03
 status: testing
 tags:
   - franchise
@@ -59,3 +59,12 @@ c-27.1100 (discount-cards, коммит 3a7c86311, MR !28004).
 - Подзадача SabyGet №10092662 (Бритнев): MR !13816 (26.6100) и !13817 (27.1100) смержен (документ 632609253).
 - 02.11 09:47 Тимошенко перевёл задачу №02185039 на этап «Проверка (тестирование)» (Дюднева Светлана).
 - Сформированы итоги по пункту плана октября (Федько Ю.В.).
+
+## 03.11: Демонстрация, подошибка №11033463 — Bonus.ReadSettings недоступен для СДК
+
+- При записи демонстрации на pre-test обнаружено, что приветственные бонусы партнёру не приходят (отображается «вы получите» без суммы). В логах вызов СДК `LoyaltyProgram.GetDescriptionBySalePoint` падал при обращении к `Bonus.ReadSettings` владельца франшизы:
+  `[ERROR] Bonus.ReadSettings: Вызов метода, не являющегося частью публичного API сервиса. Модули: "PriceFormation.Online", доступность: "Internal"`.
+- Причина: в `price-formation` у `Bonus.ReadSettings` в `LoyaltyPrograms.orx` не было `module_api_part="1"`. Ошибка глушилась декоратором `@Try` в СДК, метод возвращал 0, и этот 0 кэшировался в SabyGet `BonusCard.CardInfoByEstParams` на 4 мин.
+- Заведена ошибка на стенде №11033463 ([ссылка](https://online.sbis.ru/opendoc.html?guid=01a1a050-1567-73b0-8d47-a4b7408fc6d8&client=3)).
+- В `PriceFormation.Online` (`LoyaltyPrograms.orx`) добавлен атрибут `module_api_part="1"` для метода `Bonus.ReadSettings`.
+- Ветка `26.6100/bugfix/aatimoshenko/11033463`, коммит `d91d12affd`, оформлен MR (документ [01a1a057](https://online.sbis.ru/opendoc.html?guid=01a1a057-0faa-7c57-89b2-9c38c5c7af8d&client=3), MR !153509-!153511).
