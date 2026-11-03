@@ -15,6 +15,10 @@ related:
 
 # Recent Context
 
+## 2026-11-03 - №100213225: при изменении срока выпуска промокода сворачиваются остальные
+
+**[[IndividualPromoCodeEmission-Collapse-On-Update-100213225]]**: ошибка на стенде pre-test-online, веха 26.6100. По логам после `IndividualPromoCodeEmission.Update` клиент запрашивает `GetList` с навигацией только по отредактированному выпуску — остальные раскрытые выпуски теряются, а шеврон показывает не то состояние. Причина во фронте: `reloadItem(key, { hierarchyReload: true })` в `client/LoyaltyOnline/PromoCode/Form/_individualIssue/Registry.tsx` (автор av.markov). Бэкенд корректен; задачу перевести на фронтенд.
+
 ## 2026-11-03 — №11033463: Bonus.ReadSettings недоступен для СДК, приветственные бонусы во франшизе
 
 **[[SabyGet-Franchisee-Join-Greeting-Bonus]]**: на pre-test при демонстрации приветственные бонусы партнёру не приходили («вы получите» без суммы). В логах вызов СДК `LoyaltyProgram.GetDescriptionBySalePoint` падал на межсервисном вызове `Bonus.ReadSettings` владельца (Internal, нет `module_api_part="1"` в `LoyaltyPrograms.orx`). Ошибка глушилась `@Try`, 0 кэшировался в `showcase-service` на 4 мин. Заведена ошибка №11033463, добавлен `module_api_part="1"`, ветка `26.6100/bugfix/aatimoshenko/11033463`, коммит `d91d12affd`, MR !153509-!153511.
