@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-- [[PromoCode-Gift-Choice-Description-10127356]] — №10127356, 26.6100: описание подарка не учитывает «любой»; предложено «Подарок на выбор», ждёт одобрения, код не меняли (status: developing)
+- [[PromoCode-Gift-Choice-Description-10127356]] — №10127356, 26.6100: описание подарка на выбор исправлено («Подарок на выбор: ...»), словарь en.json дополнен, тесты OK (status: developing)
 
 Last updated: 2026-08-25 | Total pages: 456 | Sources ingested: 233
 
