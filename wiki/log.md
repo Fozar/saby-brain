@@ -1460,3 +1460,8 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 ## 2026-11-09 — №07285685
 
 - [[LoyaltyClients-Export-Masked-Card-07285685]] — №07285685, 26.6100: на fix-online подтвержден скрытый номер в XLSX; полный номер есть в ответе бэкенда. Причина в printforms/templateeditor-data, ReportNewClientsMapping.map:33; передать печатным формам (status: developing)
+
+
+## 2026-11-09 — Перепроверка №10284280
+
+[[ReferralStub-Status-Description-Outcome-10284280]]: №10284280, веха 26.5134: 09.11 перепроверены задача, лента и обсуждение Потёмкина; предложено одно чтение с Лид.TinyWoContacts, итог из Лид.Переход.Название; на origin/rc-26.5134 прежнего фикса нет. Решение ждёт одобрения, новая ветка 26.5134/bugfix/aatimoshenko/10284280_1 ещё не создана (status: developing).
