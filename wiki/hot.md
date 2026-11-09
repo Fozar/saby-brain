@@ -63,7 +63,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 - [[SiteSave-WidgetStore-TypePage-Missing-1029981]] — №1029981, 26.5120: `Site.Save` в магазине виджетов РС, нет `Type_page.Get/3` в metadata-repository; в price-formation нет, передать владельцу конструктора сайтов.
 
-- [[ReferralStub-Status-Description-Outcome-10284280]] — №10284280, веха 26.5134: чтение обработчика переведено на Лид.TinyWoContacts; завершённой сделке — выбранный итог, в работе — фаза, без названия — типовая подпись. Ветка 26.5134/bugfix/aatimoshenko/10284280_1, без коммита; 456 тестов реферальной программы OK; online 4797, 1 прежняя ошибка RefreshLicense (подтверждена без фикса), 107 skipped; проверка на fix ещё нужна (status: developing)
+- [[ReferralStub-Status-Description-Outcome-10284280]] — №10284280, веха 26.5134: чтение обработчика переведено на Лид.TinyWoContacts; приоритет: название перехода -> название фазы -> типовая подпись. Ветка 26.5134/bugfix/aatimoshenko/10284280_1, коммит d151435f3c, MR [01a1bf78] (!153799-!153807), 456 тестов OK (status: testing)
 
 - [[Bonus-Clients-Stale-Balance-10283259]] — №10283259: реестр 1020, карточка 0 после сгорания; чтение 5366 выполнено в другом аккаунте и гипотезу не проверяет. Доступа к боевой базе и аккаунту нет; дальше воспроизведение на тестовом стенде, при необходимости чтение через вторую линию (status: developing)
 

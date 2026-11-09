@@ -3,7 +3,7 @@ type: concept
 title: "Комментарий статуса корешка: выбранный итог сделки (№10284280)"
 created: 2026-10-29
 updated: 2026-11-09
-status: developing
+status: testing
 tags: [price-formation, referral, test-stand, bugfix]
 related:
   - "[[ReferralProgram-RefDealsConvert-Feature]]"
@@ -18,6 +18,13 @@ related:
 https://dev.saby.ru/opendoc.html?guid=01a18178-5be7-731b-897d-c1a79269a005&client=3
 На fix у корешка вместо выбранного итога сделки показана типовая подпись статуса.
 Свешников 28.10 в 12:58 подтвердил: нужен выбранный итог темы отношений («Нет-нет-нет»), не текст менеджера.
+
+## Оформление MR 09.11.2026
+
+- Логика подписи статуса: `status_name = lead_info.Get('Лид.Переход.Название') or lead_info.Get('Лид.Фаза.Название')`, при отсутствии — типовой текст статуса. Чтение: `sbis.Лид.Прочитать(document_id, 'Лид.TinyWoContacts')`.
+- Тесты: 43 теста обработчика и 456 тестов пакета `referralprogram` OK.
+- Коммит `d151435f3c`, ветка `26.5134/bugfix/aatimoshenko/10284280_1` запушена в `origin`.
+- Оформлен документ MR: [01a1bf78](https://online.sbis.ru/opendoc.html?guid=01a1bf78-8464-7bf4-9d28-f63ec87662b4&client=3), GitLab !153799–!153807 (online).
 
 ## Завершение проверок 09.11.2026
 
