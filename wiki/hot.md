@@ -44,7 +44,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 - [[ReferralStub-ClientAccountId-INN-KPP-11095710]] — №11095710, веха 26.5134: поле ClientAccountId в CreateStub и ReadStub, обновлён .orx; коммит 55c4cd9e31, MR [01a1bfa7] (!153816–!153824), 44 теста CreateStub/ReadStub OK, 452 теста referralprogram OK (status: testing)
 
-- [[Bonus-SaleTotals-Zero-Price-Return-11054160]] — №11054160, 26.6100: возврат нулевого чека считается покупкой из-за проверки знака суммы; фикс готов для просмотра в ветке 26.6100/bugfix/aatimoshenko/11054160, коррекция вынесена в отдельную функцию, 18 тестов OK, без коммита; общий online еще выполняется (status: developing)
+- [[Bonus-SaleTotals-Zero-Price-Return-11054160]] — №11054160, 26.6100: возврат нулевого чека считается покупкой из-за проверки знака суммы; фикс готов для просмотра в ветке 26.6100/bugfix/aatimoshenko/11054160, коррекция вынесена в отдельную функцию, 18 тестов OK, без коммита; общий online: 5048 тестов, одна ERROR RefreshLicense (SQL без алиаса) (status: developing)
 
 - [[Loyalty-November-2026-WorkPlan]] — ноябрь 2026: 12 страниц задач, лицензирование промокодов и внешних систем, документация, виджеты, СТАН, пороговые акции и события посетителя сайта; договорённости 09.11 (status: developing)
 
