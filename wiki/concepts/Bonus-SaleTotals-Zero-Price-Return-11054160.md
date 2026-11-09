@@ -61,3 +61,7 @@ https://dev.saby.ru/opendoc.html?guid=01a1aa95-296e-7e60-bbbd-29025ce701d8&clien
 - Временные материалы: Windows Temp/opencode/11054160.png, 11054160.sbislogz, 11054160.json, 11054160.sbisconsole. Пароли в вики не сохранялись.
 
 - Общий online-прогон: Windows Temp/opencode/11054160-online-suite.log.
+
+## Правка по просмотру решения
+
+Пользователь попросил вынести новую логику в отдельную функцию. Коррекция нулевых возвратов и финальный модуль списаний перенесены в _correct_zero_price_returns; получение SQL-итогов осталось в _get_totals_for_period. Поведение не менялось: повторно 18/18 тестов OK, pylint реализации 10/10, git diff --check без замечаний. Коммита нет.

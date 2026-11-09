@@ -584,4 +584,4 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 - [[ReferralStub-Status-Comment-History-10283786]] — №10283786, 26.5134: история комментария исправлена, 48 тестов OK; коммит a66b0bf650, MR !153758–!153765, документ 01a1be9b; полный online прерван кодировкой, ERROR RefreshLicense не разобран (status: testing)
 
-- [[Bonus-SaleTotals-Zero-Price-Return-11054160]] — №11054160, 26.6100: возврат нулевого чека считается покупкой из-за проверки знака суммы; фикс готов для просмотра в ветке 26.6100/bugfix/aatimoshenko/11054160, 18 тестов OK, без коммита; общий online еще выполняется (status: developing)
+- [[Bonus-SaleTotals-Zero-Price-Return-11054160]] — №11054160, 26.6100: возврат нулевого чека считается покупкой из-за проверки знака суммы; фикс готов для просмотра в ветке 26.6100/bugfix/aatimoshenko/11054160, коррекция вынесена в отдельную функцию, 18 тестов OK, без коммита; общий online еще выполняется (status: developing)
