@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Sources Index"
-updated: 2026-07-29
+updated: 2026-11-09
 tags:
   - meta
   - index
@@ -23,6 +23,8 @@ All source pages — summaries of ingested documents, transcripts, articles, and
 ---
 
 ## Transcripts
+
+- [[zvonok-matyushev-timoshenko-plan-2026-11-09]] — 09.11.2026 | Ноябрьский план: промокоды, виджеты, внешние лицензии; связан с 12 страницами задач.
 
 - [[zvonok-offer-bug-zlateks-2026-04-13]] — 2026-04-13 | Звонок: баг оффера у партнёра Златекс. client_id mismatch (77 vs 78), критический, дедлайн 2026-04-15
 

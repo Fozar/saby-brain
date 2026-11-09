@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/LoyaltyClients-Export-Masked-Card-07285685.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "4a6055682f35c5b259f31facd013469bc2779a8274f9c24bdc0baae92df35a17",
+  "completed_epoch": 1794203024.5974746,
+  "created_epoch": 1794203024.3913093,
+  "expanded_bundle_sha256": "e8d4fa92f74580d8e645e9259593c0059b615e73a01f1834d6cdea8420762371",
+  "input_bundle_sha256": "e8d4fa92f74580d8e645e9259593c0059b615e73a01f1834d6cdea8420762371",
+  "operation_id": "bug-07285685-print-mapping-20261109",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "5b14e83ce966feed0d717ed7fcc68ca6dea1fe4671cd4832257288acdd7b524c",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/LoyaltyClients-Export-Masked-Card-07285685.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "cfe472329278628c08997e31dbccf0a9930fddd4824f77eeef62e112721a2e2e",
+      "original_mode": 511,
+      "original_sha256": "f08b379e37780b633d7963bc1961ea4b581445a8bd1d6af70870ad869f10fcfd",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "698c6cf9af3f65f195bcaacd2cfddfb19ff3e5a5dc1e2c2bab7fffe45ad731a3",
+      "original_mode": 511,
+      "original_sha256": "d77987d13e4a5c978d138b9a03db01bd43fb3313c9a53e3432812e458f133a5c",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "21a804188bbb17f8be6fde724b5932d7ef32c24701d60602de4bcb7a469fada0",
+      "original_mode": 511,
+      "original_sha256": "d4c45cf53c264fb5bdc27633e0163d446c168415e35f1bb475fb36d01f5cb684",
+      "path": "wiki/log.md"
+    }
+  ]
+}

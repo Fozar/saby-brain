@@ -4,6 +4,7 @@
     "wiki/concepts/AbandonedCart-Loyalty-Scenario.md": "c-000149",
     "wiki/concepts/BL-Module-Dependency-Graphviz.md": "c-000276",
     "wiki/concepts/BonusOperationAdm-GetList-Chunk-Limit-Increase.md": "c-000224",
+    "wiki/concepts/BonusProgram-Profit-Type-Change-Block-10306450.md": "c-000288",
     "wiki/concepts/CustomerJourney-Events-Actions-Catalog.md": "c-000150",
     "wiki/concepts/CustomerJourney-Installation-Chains.md": "c-000151",
     "wiki/concepts/CustomerJourney-Route-Service-API.md": "c-000152",
@@ -19,12 +20,21 @@
     "wiki/concepts/DiscountCard-Design-Constructor-Project.md": "c-000193",
     "wiki/concepts/DiscountCard-Design-Constructor-WorkPlan.md": "c-000195",
     "wiki/concepts/DragonScale Memory.md": "c-000001",
+    "wiki/concepts/Franchise-Threshold-Promotions-Sync-102912590.md": "c-000289",
     "wiki/concepts/FranchiseCard-Import-POS-SaleValidation-Bug.md": "c-000005",
     "wiki/concepts/ImportDiscountCard-Franchise-Client-Import.md": "c-000006",
+    "wiki/concepts/Loyalty-External-License-Customer-Selection-07282646.md": "c-000293",
+    "wiki/concepts/Loyalty-External-License-PremiumBonus-Registration-07282658.md": "c-000290",
+    "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md": "c-000292",
+    "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md": "c-000285",
+    "wiki/concepts/Loyalty-Marketing-Website-Visitor-Events-10141413.md": "c-000291",
+    "wiki/concepts/Loyalty-November-2026-WorkPlan.md": "c-000294",
     "wiki/concepts/Loyalty-System-Teams.md": "c-000043",
     "wiki/concepts/LoyaltyScenario-ReactivationInactiveClients.md": "c-000164",
+    "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md": "c-000287",
     "wiki/concepts/Migration-Console-First-Testing-Pattern.md": "c-000204",
     "wiki/concepts/Persistent Wiki Artifact.md": "c-000007",
+    "wiki/concepts/PromoCode-Algorithms-Processes-Documentation-11028176.md": "c-000286",
     "wiki/concepts/Query-Time Retrieval.md": "c-000008",
     "wiki/concepts/RecruitmentReferral-Project.md": "c-000197",
     "wiki/concepts/RecruitmentReferral-TZ.md": "c-000198",
@@ -32,7 +42,9 @@
     "wiki/concepts/ReferralProgram-GetLeadPeriodList-LeadCount-Source.md": "c-000145",
     "wiki/concepts/ReferralProgram-GetStubList-Bug-Partner-No-Records.md": "c-000250",
     "wiki/concepts/ReferralProgram-History-UI-Design.md": "c-000229",
+    "wiki/concepts/ReferralProgram-Offer-Details-BL-Calls-10224706.md": "c-000284",
     "wiki/concepts/ReferralProgram-RefDealsConvert-Feature.md": "c-000251",
+    "wiki/concepts/ReferralProgram-STAN-Stubs-Format-09173580.md": "c-000283",
     "wiki/concepts/ReferralProgram-Stub-Implementation.md": "c-000013",
     "wiki/concepts/ReferralStub-DealSum-Field.md": "c-000208",
     "wiki/concepts/ReferralStub-Reward-Writing-Gap-2026-10.md": "c-000279",
@@ -190,6 +202,8 @@
     "wiki/sources/wasaby-sharedfuture-2026-05-22.md": "c-000034",
     "wiki/sources/zvonok-history-button-placement-2026-07-30.md": "c-000247",
     "wiki/sources/zvonok-lebedeva-timoshenko-2026-10-21.md": "c-000280",
+    "wiki/sources/zvonok-matyushev-timoshenko-plan-2026-11-09.md": "c-000295",
+    "wiki/sources/zvonok-musohranov-omelyanenko-timoshenko-2026-10-29.md": "c-000282",
     "wiki/sources/zvonok-musohranov-sveshnikov-timoshenko-2026-10-14.md": "c-000278",
     "wiki/sources/zvonok-musohranov-timoshenko-2026-06-24.md": "c-000144",
     "wiki/sources/zvonok-musohranov-timoshenko-2026-06-30.md": "c-000148",
@@ -198,8 +212,7 @@
     "wiki/sources/zvonok-sveshnikov-timoshenko-stage-tracking-2026-07-29.md": "c-000222",
     "wiki/sources/zvonok-tim-sveshnikov-mihel-referral-history-ui-2026-07-29.md": "c-000228",
     "wiki/sources/zvonok-tim-sveshnikov-referral-history-buttons-2026-07-29.md": "c-000227",
-    "wiki/sources/zvonok-zemtsova-timoshenko-2026-10-21.md": "c-000281",
-    "wiki/sources/zvonok-musohranov-omelyanenko-timoshenko-2026-10-29.md": "c-000282"
+    "wiki/sources/zvonok-zemtsova-timoshenko-2026-10-21.md": "c-000281"
   },
   "created": "2026-04-23",
   "description": "Ingest delta tracker and address map for the claude-obsidian vault. Do not hand-edit; wiki-ingest maintains this.",
@@ -245,6 +258,54 @@
         "wiki/hot.md",
         "wiki/log.md"
       ]
+    },
+    ".raw/captured/43c3d57b849b25fc6817cee4a9c6c362f214f3786b97e4c5d9f734553aba7f23.md": {
+      "hash": "43c3d57b849b25fc6817cee4a9c6c362f214f3786b97e4c5d9f734553aba7f23",
+      "hash_algorithm": "sha256",
+      "last_ingested": "2026-11-09",
+      "operation_id": "ingest-20261109-meeting-november-plan",
+      "pages": [
+        "wiki/concepts/ReferralProgram-STAN-Stubs-Format-09173580.md",
+        "wiki/concepts/ReferralProgram-Offer-Details-BL-Calls-10224706.md",
+        "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md",
+        "wiki/concepts/PromoCode-Algorithms-Processes-Documentation-11028176.md",
+        "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md",
+        "wiki/concepts/BonusProgram-Profit-Type-Change-Block-10306450.md",
+        "wiki/concepts/Franchise-Threshold-Promotions-Sync-102912590.md",
+        "wiki/concepts/Loyalty-External-License-PremiumBonus-Registration-07282658.md",
+        "wiki/concepts/Loyalty-Marketing-Website-Visitor-Events-10141413.md",
+        "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md",
+        "wiki/concepts/Loyalty-External-License-Customer-Selection-07282646.md",
+        "wiki/concepts/PromoCode-Gift-Choice-Description-10127356.md",
+        "wiki/concepts/Loyalty-November-2026-WorkPlan.md",
+        "wiki/sources/zvonok-matyushev-timoshenko-plan-2026-11-09.md"
+      ],
+      "sha256": "43c3d57b849b25fc6817cee4a9c6c362f214f3786b97e4c5d9f734553aba7f23",
+      "status": "ingested"
+    },
+    ".raw/captured/4ea60b369322e83b8ab05e1f92cfaae2c15c0ac12653c5d7382b81b69e465b7b.json": {
+      "hash": "4ea60b369322e83b8ab05e1f92cfaae2c15c0ac12653c5d7382b81b69e465b7b",
+      "hash_algorithm": "sha256",
+      "last_ingested": "2026-11-09",
+      "operation_id": "ingest-20261109-meeting-november-plan",
+      "pages": [
+        "wiki/concepts/ReferralProgram-STAN-Stubs-Format-09173580.md",
+        "wiki/concepts/ReferralProgram-Offer-Details-BL-Calls-10224706.md",
+        "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md",
+        "wiki/concepts/PromoCode-Algorithms-Processes-Documentation-11028176.md",
+        "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md",
+        "wiki/concepts/BonusProgram-Profit-Type-Change-Block-10306450.md",
+        "wiki/concepts/Franchise-Threshold-Promotions-Sync-102912590.md",
+        "wiki/concepts/Loyalty-External-License-PremiumBonus-Registration-07282658.md",
+        "wiki/concepts/Loyalty-Marketing-Website-Visitor-Events-10141413.md",
+        "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md",
+        "wiki/concepts/Loyalty-External-License-Customer-Selection-07282646.md",
+        "wiki/concepts/PromoCode-Gift-Choice-Description-10127356.md",
+        "wiki/concepts/Loyalty-November-2026-WorkPlan.md",
+        "wiki/sources/zvonok-matyushev-timoshenko-plan-2026-11-09.md"
+      ],
+      "sha256": "4ea60b369322e83b8ab05e1f92cfaae2c15c0ac12653c5d7382b81b69e465b7b",
+      "status": "ingested"
     },
     ".raw/wasaby.Backend/Middleware/Cервис массовых рассылок.sabydoc": {
       "hash": "3e2a00b2d2d70f8eaf28d41008134e30",
@@ -1436,6 +1497,20 @@
         "wiki/log.md"
       ]
     },
+    ".raw/Совещания/Звонок 2026-10-29 1430. Мусохранов Андрей, Омельяненко Егор, Тимошенко Александр.md": {
+      "hash": "49f67bc80b38e11977f07314632517b5ed7161eaac30064f065ade80f1de1e21",
+      "ingested_at": "2026-11-02",
+      "pages_created": [
+        "wiki/sources/zvonok-musohranov-omelyanenko-timoshenko-2026-10-29.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/DiscountCard-ImportExport-TD-Revision-5.md",
+        "wiki/concepts/ReferralStub-Status-Description-Outcome-10284280.md",
+        "wiki/hot.md",
+        "wiki/index.md",
+        "wiki/log.md"
+      ]
+    },
     ".raw/Совещания/Совещание 23.06.26 Сдача ТД.md": {
       "hash": "054211f968ab9a1871830052a19994a6",
       "ingested_at": "2026-06-25",
@@ -2048,20 +2123,6 @@
       "pages_updated": [
         "wiki/index.md",
         "wiki/hot.md",
-        "wiki/log.md"
-      ]
-    },
-    ".raw/Совещания/Звонок 2026-10-29 1430. Мусохранов Андрей, Омельяненко Егор, Тимошенко Александр.md": {
-      "hash": "49f67bc80b38e11977f07314632517b5ed7161eaac30064f065ade80f1de1e21",
-      "ingested_at": "2026-11-02",
-      "pages_created": [
-        "wiki/sources/zvonok-musohranov-omelyanenko-timoshenko-2026-10-29.md"
-      ],
-      "pages_updated": [
-        "wiki/concepts/DiscountCard-ImportExport-TD-Revision-5.md",
-        "wiki/concepts/ReferralStub-Status-Description-Outcome-10284280.md",
-        "wiki/hot.md",
-        "wiki/index.md",
         "wiki/log.md"
       ]
     }

@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/SabyGet-Franchisee-Join-Greeting-Bonus.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "bd76953d2ec962d7746f63c7de7c0e2afa10cc9d82fb164e1a95ef4ddc280432",
+  "completed_epoch": 1793860274.7857482,
+  "created_epoch": 1793860274.555925,
+  "expanded_bundle_sha256": "0ae04dca64bbcaece25ff3a6cecb58c099b210cd3e7efdf0546b06778b4098c9",
+  "input_bundle_sha256": "0ae04dca64bbcaece25ff3a6cecb58c099b210cd3e7efdf0546b06778b4098c9",
+  "operation_id": "review-20261105-franchise-greeting",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "840b89fad8c387fc2a102f4c6ecebf481fc7ab5954f9b2733b6b9772a3257cb5",
+      "original_mode": 384,
+      "original_sha256": "8af6b780d304930235efe79ca97264a862f3e28d5519f26a604c82f5553e9d99",
+      "path": "wiki/concepts/SabyGet-Franchisee-Join-Greeting-Bonus.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "2060939d0cea29efd66871f97f3cc2eece32006c16165478a15819d94ea5adde",
+      "original_mode": 511,
+      "original_sha256": "adfa8c4e98febc6c37ccd5c66afb3de38576dda4b246c691d6214f7d7e159823",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "5318571203e7e03ccfbc11afed3e0c03e52e6d6a8cbc2414c10aec8d37e5cd92",
+      "original_mode": 511,
+      "original_sha256": "5b41c9a0d351bc6a4ab46cc3cec1672416de65a1f715cfd91ced61fbba3c510a",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "e8d7cd5b7f1a1e24da541c3639cf22ed75b039bcdac441a3f769de5d3d42b197",
+      "original_mode": 511,
+      "original_sha256": "757944428634650a2ad2e121454aabd0dd1c02d13017a53f1be3a42039762043",
+      "path": "wiki/log.md"
+    }
+  ]
+}

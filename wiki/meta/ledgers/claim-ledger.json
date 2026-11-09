@@ -1,0 +1,298 @@
+{
+  "schema": "claude-obsidian.claim-ledger.v1",
+  "claims": {
+    "clm-plan-202611-09173580": {
+      "text": "В ноябрьском плане 606980697 задача №09173580 имеет срок пункта 2026-11-30; карточка при чтении 09.11.2026 имеет срок 2026-12-16.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/ReferralProgram-STAN-Stubs-Format-09173580.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-plan-202611-10224706": {
+      "text": "В ноябрьском плане 606980697 задача №10224706 имеет срок пункта 2026-11-28; карточка при чтении 09.11.2026 имеет срок 2026-11-28.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/ReferralProgram-Offer-Details-BL-Calls-10224706.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-plan-202611-09281060": {
+      "text": "В ноябрьском плане 606980697 задача №09281060 имеет срок пункта 2026-11-28; карточка при чтении 09.11.2026 имеет срок 2026-11-28.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-plan-202611-11028176": {
+      "text": "В ноябрьском плане 606980697 задача №11028176 имеет срок пункта 2026-11-30; карточка при чтении 09.11.2026 имеет срок 2026-12-12.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/PromoCode-Algorithms-Processes-Documentation-11028176.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-plan-202611-11011809": {
+      "text": "В ноябрьском плане 606980697 задача №11011809 имеет срок пункта 2026-11-28; карточка при чтении 09.11.2026 имеет срок 2026-11-28.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-plan-202611-10127356": {
+      "text": "В ноябрьском плане 606980697 задача №10127356 имеет срок пункта 2026-11-30; карточка при чтении 09.11.2026 имеет срок 2026-11-28.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/PromoCode-Gift-Choice-Description-10127356.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-plan-202611-10306450": {
+      "text": "В ноябрьском плане 606980697 задача №10306450 имеет срок пункта 2026-11-30; карточка при чтении 09.11.2026 имеет срок 2027-04-28.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/BonusProgram-Profit-Type-Change-Block-10306450.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-plan-202611-102912590": {
+      "text": "В ноябрьском плане 606980697 задача №102912590 имеет срок пункта 2026-11-30; карточка при чтении 09.11.2026 имеет срок 2027-04-27.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/Franchise-Threshold-Promotions-Sync-102912590.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-plan-202611-07282658": {
+      "text": "В ноябрьском плане 606980697 задача №07282658 имеет срок пункта 2026-11-29; карточка при чтении 09.11.2026 имеет срок 2026-11-29.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/Loyalty-External-License-PremiumBonus-Registration-07282658.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-plan-202611-10141413": {
+      "text": "В ноябрьском плане 606980697 задача №10141413 имеет срок пункта 2026-11-28; карточка при чтении 09.11.2026 имеет срок 2026-11-28.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/Loyalty-Marketing-Website-Visitor-Events-10141413.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-plan-202611-07282570": {
+      "text": "В ноябрьском плане 606980697 задача №07282570 имеет срок пункта 2026-11-29; карточка при чтении 09.11.2026 имеет срок 2026-11-29.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-plan-202611-07282646": {
+      "text": "В ноябрьском плане 606980697 задача №07282646 имеет срок пункта 2026-11-30; карточка при чтении 09.11.2026 имеет срок 2027-01-24.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/Loyalty-External-License-Customer-Selection-07282646.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Два разных вида срока, не вывод о переносе. Карточки и план прочитаны через СБИС.",
+      "evidence": [
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-meeting-20261109-billing": {
+      "text": "На встрече 09.11 Матюшев предложил логировать и подавлять ошибку связи с биллингом в общем хелпере, чтобы разрешить сохранение промокода.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Утверждение о договорённости разговора, не о фактическом состоянии кода.",
+      "evidence": [
+        {
+          "source_id": "src-daebd63e45185e75c442",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-meeting-20261109-external-priority": {
+      "text": "На встрече 09.11 Матюшев назвал три сценария внешних лицензий нужными, но допустил риск их переноса как менее критичных для проекта.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Утверждение о договорённости разговора, не о фактическом состоянии кода.",
+      "evidence": [
+        {
+          "source_id": "src-daebd63e45185e75c442",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-meeting-20261109-widgets": {
+      "text": "На встрече 09.11 согласовано получать ID точек продаж через API НК и не поддерживать собственную выборку из таблиц НК в виджетах.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Утверждение о договорённости разговора, не о фактическом состоянии кода.",
+      "evidence": [
+        {
+          "source_id": "src-daebd63e45185e75c442",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-meeting-20261109-rebase-mapping": {
+      "text": "Реплика 08:20 о rebase и повторном ревью вероятно относится к №10127356.",
+      "risk": "normal",
+      "assessment": "provisional",
+      "confidence": "medium",
+      "location": {
+        "path": "wiki/concepts/PromoCode-Gift-Choice-Description-10127356.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-09",
+      "notes": "Номер не назван; только соответствие по порядку плана.",
+      "evidence": [
+        {
+          "source_id": "src-daebd63e45185e75c442",
+          "relation": "context"
+        },
+        {
+          "source_id": "src-97ad17eb5f3de08fd50d",
+          "relation": "context"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-11-09T09:00:00Z"
+}

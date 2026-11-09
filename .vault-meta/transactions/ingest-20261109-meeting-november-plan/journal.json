@@ -1,0 +1,265 @@
+{
+  "applied": [
+    ".raw/captured/43c3d57b849b25fc6817cee4a9c6c362f214f3786b97e4c5d9f734553aba7f23.md",
+    ".raw/captured/4ea60b369322e83b8ab05e1f92cfaae2c15c0ac12653c5d7382b81b69e465b7b.json",
+    "wiki/concepts/ReferralProgram-STAN-Stubs-Format-09173580.md",
+    "wiki/concepts/ReferralProgram-Offer-Details-BL-Calls-10224706.md",
+    "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md",
+    "wiki/concepts/PromoCode-Algorithms-Processes-Documentation-11028176.md",
+    "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md",
+    "wiki/concepts/BonusProgram-Profit-Type-Change-Block-10306450.md",
+    "wiki/concepts/Franchise-Threshold-Promotions-Sync-102912590.md",
+    "wiki/concepts/Loyalty-External-License-PremiumBonus-Registration-07282658.md",
+    "wiki/concepts/Loyalty-Marketing-Website-Visitor-Events-10141413.md",
+    "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md",
+    "wiki/concepts/Loyalty-External-License-Customer-Selection-07282646.md",
+    "wiki/concepts/PromoCode-Gift-Choice-Description-10127356.md",
+    "wiki/concepts/Loyalty-November-2026-WorkPlan.md",
+    "wiki/sources/zvonok-matyushev-timoshenko-plan-2026-11-09.md",
+    "wiki/index.md",
+    "wiki/sources/_index.md",
+    "wiki/log.md",
+    "wiki/hot-archive.md",
+    "wiki/hot.md",
+    "wiki/meta/ledgers/source-ledger.json",
+    "wiki/meta/ledgers/claim-ledger.json",
+    ".vault-meta/address-counter.txt",
+    ".raw/.manifest.json"
+  ],
+  "approval_sha256": "23bda60eabb5d2fe46b4f3c035b12e51873f347e5b26482b50d38a9474570602",
+  "completed_epoch": 1794204204.7510362,
+  "created_epoch": 1794204203.850743,
+  "expanded_bundle_sha256": "8ec9683ed998761709d65014541a2a3451822b9ae5c388d63164df78727619d4",
+  "input_bundle_sha256": "f48419d6f35be4e1e3bfd0dd93e71693a574c70345421b8830443af1ec1b335a",
+  "operation_id": "ingest-20261109-meeting-november-plan",
+  "operation_type": "ingest",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "43c3d57b849b25fc6817cee4a9c6c362f214f3786b97e4c5d9f734553aba7f23",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": ".raw/captured/43c3d57b849b25fc6817cee4a9c6c362f214f3786b97e4c5d9f734553aba7f23.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "4ea60b369322e83b8ab05e1f92cfaae2c15c0ac12653c5d7382b81b69e465b7b",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": ".raw/captured/4ea60b369322e83b8ab05e1f92cfaae2c15c0ac12653c5d7382b81b69e465b7b.json"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "00389232bf15c4ba58cb252415f3dd2876c6423173e5d0bb4c4374f2d5e8d1ac",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/ReferralProgram-STAN-Stubs-Format-09173580.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "af3ebbdb22450d2627086e76b05a9bc241516a047dca31c8196ac22e546eb8b0",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/ReferralProgram-Offer-Details-BL-Calls-10224706.md"
+    },
+    {
+      "backup": "0004.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "d22717c3eca03b5629239db20dab7522cafab84bced402075db1be7a0ef66baa",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md"
+    },
+    {
+      "backup": "0005.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "72bb9f9eb2f646f715967e3f1609ce6112339bd16c51bf0ca7aff591bce33cd8",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/PromoCode-Algorithms-Processes-Documentation-11028176.md"
+    },
+    {
+      "backup": "0006.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "0375f9c6a505f56105402d37f90a6c76c84228be421d73fd02d40e740255f424",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md"
+    },
+    {
+      "backup": "0007.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "3aeb317560228584a5bcb6e71e93aed15fc25278d45cc79b8b510e467ad4f5fe",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/BonusProgram-Profit-Type-Change-Block-10306450.md"
+    },
+    {
+      "backup": "0008.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "9e40eb588fbd5c8fb63b3b9301363537ffa56808fb0da47be42c8deddd22fd84",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/Franchise-Threshold-Promotions-Sync-102912590.md"
+    },
+    {
+      "backup": "0009.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "cc88d46b57c4f35b0cdd48f436e0a0a9a7ea4fad05f85381f12478997715ae8d",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/Loyalty-External-License-PremiumBonus-Registration-07282658.md"
+    },
+    {
+      "backup": "0010.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "832b487ff3535de0e66b5c79538703ab9cd88c386d65bee5ef68632359e723f9",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/Loyalty-Marketing-Website-Visitor-Events-10141413.md"
+    },
+    {
+      "backup": "0011.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "bccece08f6879f458fb33707274db235b7e130540bdfe1a3e9e23e7d841044d8",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md"
+    },
+    {
+      "backup": "0012.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "cb2df7dc0e53f2cd39d69d0a97ebae1714b9af696125c3b10d1422c0e0e41e3b",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/Loyalty-External-License-Customer-Selection-07282646.md"
+    },
+    {
+      "backup": "0013.original",
+      "mode": "replace",
+      "new_mode": 420,
+      "new_sha256": "14f905a904092294497c9b8e6b804c1639c97a85ab111f29ca8d7b91f2208895",
+      "original_mode": 420,
+      "original_sha256": "1fb8f4f467faefaa34bc078edab0e6240be18fd0348654afc5dac785178eef2f",
+      "path": "wiki/concepts/PromoCode-Gift-Choice-Description-10127356.md"
+    },
+    {
+      "backup": "0014.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "27847e41fe39205bd72332c3e2a311ee721e1c96362c854453de1dbf06007530",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/Loyalty-November-2026-WorkPlan.md"
+    },
+    {
+      "backup": "0015.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "8e36c9484522e039b59ab2187b51cbba80c87e0aa7a325c66ec2f1ac3c4dfe66",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/sources/zvonok-matyushev-timoshenko-plan-2026-11-09.md"
+    },
+    {
+      "backup": "0016.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "8e1072f40f37c9d01b3a7569c66396e82bf24aebeaf3d5bab48fd47cadfff822",
+      "original_mode": 511,
+      "original_sha256": "cfe472329278628c08997e31dbccf0a9930fddd4824f77eeef62e112721a2e2e",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0017.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "c420efec5afb94549994da7a81320cd800e6d0598ae31023f3a8389365de7974",
+      "original_mode": 511,
+      "original_sha256": "f0fc118b4cc3da849f465e51f7eaed0a062f1d6df0735f5e1cd872cf840d0e8b",
+      "path": "wiki/sources/_index.md"
+    },
+    {
+      "backup": "0018.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "bf41bb880fa633268915769da349401dc570e27884c829d4fb3610b3bca19929",
+      "original_mode": 511,
+      "original_sha256": "21a804188bbb17f8be6fde724b5932d7ef32c24701d60602de4bcb7a469fada0",
+      "path": "wiki/log.md"
+    },
+    {
+      "backup": "0019.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "70a3c6f2dd6afeb9d5f4ce491ef21050c6e3afcaa813e870d78140f4408a00f9",
+      "original_mode": 511,
+      "original_sha256": "724e262be85c683c529db9bba15b04c59b81b65f6df38762201d5ebb64efc6f8",
+      "path": "wiki/hot-archive.md"
+    },
+    {
+      "backup": "0020.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "45a3e36d91e52416c5156545edd16a9441baecd5d54ccede934a191f95698c6a",
+      "original_mode": 511,
+      "original_sha256": "698c6cf9af3f65f195bcaacd2cfddfb19ff3e5a5dc1e2c2bab7fffe45ad731a3",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0021.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "f687bdc05ae413b5d507e57f329c54ca1ec1011446e25e6311464bbafcd90bdd",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/meta/ledgers/source-ledger.json"
+    },
+    {
+      "backup": "0022.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "0b75034907a126a95ce9472b99fd1bcad0b4c4012921800b343a8f756efcc717",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/meta/ledgers/claim-ledger.json"
+    },
+    {
+      "backup": "0023.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "ae52ed8efc8f80657f8cc7af72c6d75336bdf7654a65585d4569739e1d2caec3",
+      "original_mode": 511,
+      "original_sha256": "e0850a775c17a87060c0cf6efad1020e0cbef5a44ba942bef6add5776598de53",
+      "path": ".vault-meta/address-counter.txt"
+    },
+    {
+      "backup": "0024.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "18467253b29e5b3e42cded78fc84ffb5d6ff886a8c982c43afc6978884904580",
+      "original_mode": 511,
+      "original_sha256": "354f72c0ced0dfcef147a33c8730b39c2adfe9a2b095ebd9f1bf4e7dbbe294f9",
+      "path": ".raw/.manifest.json"
+    }
+  ]
+}

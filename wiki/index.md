@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-10-30
+updated: 2026-11-09
 tags:
   - meta
   - index
@@ -21,6 +21,24 @@ related:
 ---
 
 # Wiki Index
+
+- [[Loyalty-November-2026-WorkPlan]] — ноябрь 2026: 12 задач Тимошенко, сроки плана и карточек, договорённости с Матюшевым (status: developing)
+- [[zvonok-matyushev-timoshenko-plan-2026-11-09]] — 09.11: разбор ноябрьского плана и лицензирования внешних систем.
+- [[ReferralProgram-STAN-Stubs-Format-09173580]] — №09173580, СТАН: формат Stubs в методах создания корешков.
+- [[ReferralProgram-Offer-Details-BL-Calls-10224706]] — №10224706, Оптимизация вызовов БЛ в детализации офферов.
+- [[Loyalty-License-Dispatcher-PromoCode-Migration-09281060]] — №09281060, Промокоды: переход на новый механизм проверки лицензий.
+- [[PromoCode-Algorithms-Processes-Documentation-11028176]] — №11028176, Промокоды: документация «Алгоритмы и процессы».
+- [[LoyaltyWidgets-OurCompanies-API-11011809]] — №11011809, Виджеты лояльности: фильтрация точек продаж через API НК.
+- [[BonusProgram-Profit-Type-Change-Block-10306450]] — №10306450, Запрет смены типа выгоды после бонусных операций.
+- [[Franchise-Threshold-Promotions-Sync-102912590]] — №102912590, Синхронизация франшизы для пороговых акций.
+- [[Loyalty-External-License-PremiumBonus-Registration-07282658]] — №07282658, Проверка лицензии при регистрации в PremiumBonus.
+- [[Loyalty-Marketing-Website-Visitor-Events-10141413]] — №10141413, События «Посетитель сайта» в действиях лояльности.
+- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, Лицензия внешних систем при открытии смены.
+- [[Loyalty-External-License-Customer-Selection-07282646]] — №07282646, Лицензия внешних интеграций при выборе клиента.
+
+- [[LoyaltyClients-Export-Masked-Card-07285685]] — №07285685, 26.6100: на fix-online подтвержден скрытый номер в XLSX; полный номер есть в ответе бэкенда. Причина в printforms/templateeditor-data, ReportNewClientsMapping.map:33; передать печатным формам (status: developing)
+
+- [[Promotion-CreateCardType-ShowStamps-100118485]] — №100118485, 26.6100: при создании типа карт из карточки акции не включался показ штампиков; `init_design_stamps` теперь ставит `ShowStamps=true` в ПО ДизайнКарты; фронт Лебедевой влит (MR !153523–!153526) (status: testing)
 
 - [[IndividualPromoCodeEmission-Collapse-On-Update-100213225]] — №100213225, 26.6100: при изменении срока одного выпуска промокода сворачиваются остальные развернутые выпуски; причина во фронте (`reloadItem` с `hierarchyReload` в `_individualIssue/Registry.tsx`), задачу перевести на фронтенд (status: developing)
 
@@ -140,7 +158,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Price Formation — Analysis
 
-- [[SabyGet-Franchisee-Join-Greeting-Bonus]] — задача №02185039: на странице присоединения SabyGet к партнёру франшизы выводятся приветственные бонусы владельца; метод СДК и доработка SabyGet влиты в rc-26.6100; 02.11 на тестировании (status: testing)
+- [[SabyGet-Franchisee-Join-Greeting-Bonus]] — задача №02185039: на странице присоединения SabyGet к партнёру франшизы выводятся приветственные бонусы владельца; метод СДК и доработка SabyGet влиты в rc-26.6100; 02.11 на тестировании (status: testing) 05.11: замечание Алябушева — ненулевая сумма участника может расходиться с начислением владельца; приоритет с проектированием явно не согласован в найденной переписке, требуется уточнение.
 - [[PartnerPromoCode-SaleNode-HasMore-Iterative-Bug]] — ошибка на стенде №07248704: под единственной продажей партнёрского промокода в карточке клиента висела «Ещё...». Два прошлых круга чинили дубль после нажатия, а причина — `PromoCode.GetSaleList` в порционном режиме отдавал hasMore, пока блок не пустой. Фикс в `PromoCodeSaleListIterative`: неполный блок (`ScannedCount < block`) и неполная страница = конец. Правило общее для 5 порционных реестров, перенос в базу отложен; версия 26.6100 (status: developing)
 - [[DiscountCard-GetListWithStats-SDK-Call-Loop]] — ошибка на стенде №090810941: список карт типа в админке ДК (inside СДК) -> online `DiscountCard.GetListWithStats` -> обратно в СДК за франшизным балансом, платформа ловила петлю. Фильтр `SkipFranchiseBalance`: online отмечает франшизные карты `IsFranchise` / отдаёт `CardUUIDList`, СДК досчитывает баланс сам; попутно online перестал затирать баланс нефраншизных карт на франшизном аккаунте. Ревью: Sonar D (21) -> C (14), поля в returns orx сознательно не объявлены, описание метода не знает вызывающего (status: developing)
 - [[LoyaltyWidgets-Counter-Period-Arg-Localization]] — ошибка на стенде №88221034354131: в настройках виджета «Счётчик» аргумент «Период» методов «Применение карт» / «Количество новых клиентов» русский на английской локали. Два круга правок aorx (`6bf0e1e151`: `name="Period"`, `local_name="Период"`; `6949a0929d`: `title="Период"`) на стенде, оба вернули «повторяется». **Не наш баг**: `DataContext.Find` отдаёт параметр как есть, `title` в Genie один, окно настроек (Буранов, «Система типов») рисует `title` без учёта языка; перевод `"Период": "Period"` в `PriceFormation.Online/lang/en.json` есть. Рекомендовано переназначить Буранову, схему для других локалей — с Агафонцевым (status: developing)
@@ -177,6 +195,8 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 
 ## Concepts
 
+
+- [[ReferralStub-ContactName-Assignee-CRMPreload-11026436]] — №11026436: ФИО контактного лица не попадало в корешок из ЛК партнёра (ContactType=assignee без FullName), фикс написан
 - [[PromoCode-Generation-Timeout-20000-10304201]] — №10304201: таймаут генерации 20 000 кодов, оптимизация проверки БД и таймера
 - [[LLM Wiki Pattern]] — the pattern for building persistent, compounding knowledge bases using LLMs (status: mature)
 - [[Hot Cache]] — ~500-word session context file, updated after every ingest and session (status: mature)
@@ -560,3 +580,5 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[youtube-explainer]] — visual explainer for presentations
 - [[claude-obsidian-presentation]] — presentation canvas (standalone)
 - [[Bonus-Clients-Stale-Balance-10283259]] — №10283259: реестр 1020, карточка 0 после сгорания; чтение 5366 выполнено в другом аккаунте и гипотезу не проверяет. Доступа к боевой базе и аккаунту нет; дальше воспроизведение на тестовом стенде, при необходимости чтение через вторую линию (status: developing)
+
+- [[ReferralStub-Status-Comment-History-10283786]] — №10283786, 26.5134: история комментария исправлена, 48 тестов OK; коммит a66b0bf650, MR !153758–!153765, документ 01a1be9b; полный online прерван кодировкой, ERROR RefreshLicense не разобран (status: testing)

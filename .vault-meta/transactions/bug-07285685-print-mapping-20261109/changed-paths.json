@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "4a6055682f35c5b259f31facd013469bc2779a8274f9c24bdc0baae92df35a17",
+  "bundle_sha256": "e8d4fa92f74580d8e645e9259593c0059b615e73a01f1834d6cdea8420762371",
+  "changed_paths": [
+    "wiki/concepts/LoyaltyClients-Export-Masked-Card-07285685.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "e8d4fa92f74580d8e645e9259593c0059b615e73a01f1834d6cdea8420762371",
+  "hashes": {
+    "wiki/concepts/LoyaltyClients-Export-Masked-Card-07285685.md": "5b14e83ce966feed0d717ed7fcc68ca6dea1fe4671cd4832257288acdd7b524c",
+    "wiki/hot.md": "698c6cf9af3f65f195bcaacd2cfddfb19ff3e5a5dc1e2c2bab7fffe45ad731a3",
+    "wiki/index.md": "cfe472329278628c08997e31dbccf0a9930fddd4824f77eeef62e112721a2e2e",
+    "wiki/log.md": "21a804188bbb17f8be6fde724b5932d7ef32c24701d60602de4bcb7a469fada0"
+  },
+  "modes": {
+    "wiki/concepts/LoyaltyClients-Export-Masked-Card-07285685.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "bug-07285685-print-mapping-20261109",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

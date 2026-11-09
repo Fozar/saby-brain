@@ -1,0 +1,171 @@
+{
+  "extraction_kind": "Selected fields and faithful requirement extracts from SBIS MCP, not full responses",
+  "retrieved_at": "2026-11-09",
+  "plan_doc_id": 606980697,
+  "period": "ноябрь 2026",
+  "tools": [
+    "sbis_list_plans",
+    "sbis_list_plan_items",
+    "sbis_read_plan_item",
+    "sbis_task_context (card only)"
+  ],
+  "scope": "14 plan items read; 12 included; 12 task cards read; discussions, attachments and linked URLs not fetched",
+  "excluded": [
+    {
+      "number": "11028854",
+      "title": "Выпуск версии, исправление и анализ ошибок",
+      "plan_item_id": 634588444
+    },
+    {
+      "number": "11029109",
+      "title": "Орг вопросы, непредвиденные задачи, планирование след. месяца",
+      "plan_item_id": 634608103
+    }
+  ],
+  "tasks": [
+    {
+      "number": "09173580",
+      "guid": "01a0ae3c-beb6-765f-817d-3903cf67b4b3",
+      "task_doc_id": 623350660,
+      "plan_item_id": 633630714,
+      "plan_deadline": "2026-11-30",
+      "card_deadline": "2026-12-16",
+      "planned_hours": 0.2,
+      "slug": "ReferralProgram-STAN-Stubs-Format-09173580",
+      "title": "СТАН: формат Stubs в методах создания корешков",
+      "requirements": "В ReferralProgram.orx у ReferralProgram.CreateStubsForExistingLeads(2) и CreateStubsForExistingRequests(3) возвращаемое поле Stubs имеет тип «выборка» без формата вложенной записи. Правило СТАН: record-without-format. Критерий плана: ошибка закрыта."
+    },
+    {
+      "number": "10224706",
+      "guid": "01a16285-8faa-74b3-ac75-65cf88cd21c3",
+      "task_doc_id": 631990389,
+      "plan_item_id": 634624790,
+      "plan_deadline": "2026-11-28",
+      "card_deadline": "2026-11-28",
+      "planned_hours": 1.5,
+      "slug": "ReferralProgram-Offer-Details-BL-Calls-10224706",
+      "title": "Оптимизация вызовов БЛ в детализации офферов",
+      "requirements": "По анализу в карточке: убрать лишний ReferralProgram.GetPartnerList из фильтра партнёров на странице «Лиды»; перенести получение роли PriceFormation.GetPersonBGRoleInAgents внутрь ReferralProgram.Read; вызывать GetLeadPeriodList параллельно с Read, беря ID из URL. На странице «Партнёры» также убрать зависимость GetLeadPeriodList от Read. SiteNavigation.ListNew нужен; зависимости списков от периода и роли сохраняются."
+    },
+    {
+      "number": "09281060",
+      "guid": "01a0e65c-1a97-7df0-b3f2-0881c3beaeaf",
+      "task_doc_id": 624624777,
+      "plan_item_id": 631595311,
+      "plan_deadline": "2026-11-28",
+      "card_deadline": "2026-11-28",
+      "planned_hours": 1,
+      "slug": "Loyalty-License-Dispatcher-PromoCode-Migration-09281060",
+      "title": "Промокоды: переход на новый механизм проверки лицензий",
+      "requirements": "В карточке отмечено: настройка и выдача карт переведены, кроме DiscountCardType.CheckLicense; остаются сценарии промокодов. Новый хелпер LicenseDispatcher получает LicenseParameter; для ДК/промокодов используется BasicLicense с LicenseReason. Без причины разрешена только проверка. Сохранить подтверждения через force/approve_on_credit/approve_use_for_all_sp. Когда останется только DiscountCardType.CheckLicense, вернуть задачу Михайленко Е.А."
+    },
+    {
+      "number": "11028176",
+      "guid": "01a19bd8-0a87-7253-9ea5-9b60e63e8bf6",
+      "task_doc_id": 634581430,
+      "plan_item_id": 634584776,
+      "plan_deadline": "2026-11-30",
+      "card_deadline": "2026-12-12",
+      "planned_hours": 2.5,
+      "slug": "PromoCode-Algorithms-Processes-Documentation-11028176",
+      "title": "Промокоды: документация «Алгоритмы и процессы»",
+      "requirements": "Подготовить раздел «Алгоритмы и процессы» подсистемы «Промокоды» по документу БЗ baf3fcba-59e3-40a2-9b70-9758f15e0df1. Критерий: сведения внесены в БЗ и согласованы с заказчиком; при необходимости поставлены дальнейшие задачи. Сам документ БЗ в этом ingest не открывался."
+    },
+    {
+      "number": "11011809",
+      "guid": "01a198a4-bace-7b4d-9b0d-eaafbf17a911",
+      "task_doc_id": 634197615,
+      "plan_item_id": 634305998,
+      "plan_deadline": "2026-11-28",
+      "card_deadline": "2026-11-28",
+      "planned_hours": 1.8,
+      "slug": "LoyaltyWidgets-OurCompanies-API-11011809",
+      "title": "Виджеты лояльности: фильтрация точек продаж через API НК",
+      "requirements": "В loyalty_widgets_tools._get_available_companies_only заменить прямые обращения к таблицам Контрагент и НашаОрганизация на НашаОрганизация.MassiveBranchsList/2."
+    },
+    {
+      "number": "10127356",
+      "guid": "01a12fc9-b6b3-7932-b8ac-227c889d5b02",
+      "task_doc_id": 629577600,
+      "plan_item_id": 631644112,
+      "plan_deadline": "2026-11-30",
+      "card_deadline": "2026-11-28",
+      "planned_hours": 0.5,
+      "slug": "PromoCode-Gift-Choice-Description-10127356",
+      "title": "Подарок на выбор в описании промокода",
+      "requirements": "В автогенерируемом тексте указать подарок на выбор, а не обещать все подарки из списка."
+    },
+    {
+      "number": "10306450",
+      "guid": "01a18c33-04f8-7b62-8b85-137eda712c62",
+      "task_doc_id": 633893988,
+      "plan_item_id": 634582942,
+      "plan_deadline": "2026-11-30",
+      "card_deadline": "2027-04-28",
+      "planned_hours": 0.5,
+      "slug": "BonusProgram-Profit-Type-Change-Block-10306450",
+      "title": "Запрет смены типа выгоды после бонусных операций",
+      "requirements": "Под фичами lty_all_bp_balance/lty_all_bp_balance_d запретить менять тип выгоды бонусной программы, если по ней уже были бонусные операции. Сейчас предупреждение позволяет подтвердить и продолжить; нужно предупреждение без возможности сохранить изменение."
+    },
+    {
+      "number": "102912590",
+      "guid": "01a1884b-8fce-7966-9af3-270e140d9f4e",
+      "task_doc_id": 633757534,
+      "plan_item_id": 633757555,
+      "plan_deadline": "2026-11-30",
+      "card_deadline": "2027-04-27",
+      "planned_hours": 1.2,
+      "slug": "Franchise-Threshold-Promotions-Sync-102912590",
+      "title": "Синхронизация франшизы для пороговых акций",
+      "requirements": "Карточка содержит только заголовок «Доработка синхронизации франшизы для пороговых акций». В итогах пункта плана: «ПС: Поддержка, консультации». Соисполнитель в плане — Постнов Святослав."
+    },
+    {
+      "number": "07282658",
+      "guid": "019fa785-c8b4-7fd8-88d4-862695a468c9",
+      "task_doc_id": 610144695,
+      "plan_item_id": 635459302,
+      "plan_deadline": "2026-11-29",
+      "card_deadline": "2026-11-29",
+      "planned_hours": 1.5,
+      "slug": "Loyalty-External-License-PremiumBonus-Registration-07282658",
+      "title": "Проверка лицензии при регистрации в PremiumBonus",
+      "requirements": "Внедрить проверку лицензии в компонент регистрации в PremiumBonus. Критерий пункта плана сформулирован шире: «Сдан сценарий отображения ограничения лицензии на продаже во фронт офисе»; согласовать соответствие критерия объёму задачи. Соисполнитель — Лебедева Наталья."
+    },
+    {
+      "number": "10141413",
+      "guid": "01a138df-dfbf-7555-bad7-bcb5ae93f1b2",
+      "task_doc_id": 629959107,
+      "plan_item_id": 629961806,
+      "plan_deadline": "2026-11-28",
+      "card_deadline": "2026-11-28",
+      "planned_hours": 0.5,
+      "slug": "Loyalty-Marketing-Website-Visitor-Events-10141413",
+      "title": "События «Посетитель сайта» в действиях лояльности",
+      "requirements": "До выполнения уточнить у Гайдабура Олега готовность новых событий Маркетинга. У посетителя сайта может не быть @Лицо на online; трекинг передаёт UUID персоны в Payload.PersonId. Перед действием вызвать CRMClients.ImportCustomer; он создаст локального клиента или вернёт существующее @Лицо. Дальше использовать его как обычный CustomerId."
+    },
+    {
+      "number": "07282570",
+      "guid": "019fa782-257b-7bb1-82fa-f9d935fbd046",
+      "task_doc_id": 610144109,
+      "plan_item_id": 635460072,
+      "plan_deadline": "2026-11-29",
+      "card_deadline": "2026-11-29",
+      "planned_hours": 1.7,
+      "slug": "Loyalty-External-License-Shift-Open-07282570",
+      "title": "Лицензия внешних систем при открытии смены",
+      "requirements": "Внедрить проверку лицензии внешних систем при открытии смены. Доработать RefreshLicense и LicenseDispatcher для небалансного параметра внешних систем. В карточке отдельно написано: «Со стороны кеша и проверок уже поддержано». Критерий плана: в 27.1100 согласно требованиям."
+    },
+    {
+      "number": "07282646",
+      "guid": "019fa785-2267-71fd-b26e-b615fb8b4304",
+      "task_doc_id": 610144590,
+      "plan_item_id": 635459819,
+      "plan_deadline": "2026-11-30",
+      "card_deadline": "2027-01-24",
+      "planned_hours": 2.7,
+      "slug": "Loyalty-External-License-Customer-Selection-07282646",
+      "title": "Лицензия внешних интеграций при выборе клиента",
+      "requirements": "Внедрить проверку лицензии внешних интеграций в сценарий выбора клиента. Критерий плана: в 27.1100 согласно требованиям. Соисполнители — Матюшев Данила и Лебедева Наталья."
+    }
+  ]
+}
