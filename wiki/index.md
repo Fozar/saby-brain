@@ -196,6 +196,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 ## Concepts
 
 
+- [[ReferralStub-ClientAccountId-INN-KPP-11095710]] — идентификатор аккаунта клиента и реквизиты в корешке заявки (№11095710, веха 26.5134, status: testing)
 - [[ReferralStub-ContactName-Assignee-CRMPreload-11026436]] — №11026436: ФИО контактного лица не попадало в корешок из ЛК партнёра (ContactType=assignee без FullName), фикс написан
 - [[PromoCode-Generation-Timeout-20000-10304201]] — №10304201: таймаут генерации 20 000 кодов, оптимизация проверки БД и таймера
 - [[LLM Wiki Pattern]] — the pattern for building persistent, compounding knowledge bases using LLMs (status: mature)
