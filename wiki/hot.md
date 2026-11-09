@@ -42,6 +42,8 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 ## Active Threads
 
+- [[Bonus-SaleTotals-Zero-Price-Return-11054160]] — №11054160, 26.6100: возврат нулевого чека считается покупкой из-за проверки знака суммы; причина подтверждена данными лога, фикс по типу операции ожидает согласования (status: developing)
+
 - [[Loyalty-November-2026-WorkPlan]] — ноябрь 2026: 12 страниц задач, лицензирование промокодов и внешних систем, документация, виджеты, СТАН, пороговые акции и события посетителя сайта; договорённости 09.11 (status: developing)
 
 - [[LoyaltyClients-Export-Masked-Card-07285685]] — №07285685, 26.6100: на fix-online подтвержден скрытый номер в XLSX; полный номер есть в ответе бэкенда. Причина в printforms/templateeditor-data, ReportNewClientsMapping.map:33; передать печатным формам (status: developing)
