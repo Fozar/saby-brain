@@ -1501,3 +1501,8 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 ## 2026-11-10 — API НК в виджетах
 
 [[LoyaltyWidgets-OurCompanies-API-11011809]]: прочитаны карточка, переписка и исходник MassiveBranches.branches. Переход требуется под фичей 94256; её имя неизвестно. Найден риск пустого отбора в encode_params. Код не менялся; решение не согласовано.
+
+
+## 2026-11-10 — Фича API НК
+
+[[LoyaltyWidgets-OurCompanies-API-11011809]]: пользователь сообщил имя фичи 94256 — our-org-all-product. Код не менялся; глубина обхода иерархии требует согласования.

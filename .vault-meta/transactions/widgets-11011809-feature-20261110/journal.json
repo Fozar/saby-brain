@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "c441d1e16161ac6b423f0f1c16ee773d62a120352337558d203046b64f98ffeb",
+  "completed_epoch": 1794306851.391479,
+  "created_epoch": 1794306851.167513,
+  "expanded_bundle_sha256": "a648c0fa369258c24f6d8eadf6a3c4cb7ec48ebcf8b14b2e2bf7fc56fc1c3e1a",
+  "input_bundle_sha256": "a648c0fa369258c24f6d8eadf6a3c4cb7ec48ebcf8b14b2e2bf7fc56fc1c3e1a",
+  "operation_id": "widgets-11011809-feature-20261110",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "6c69545443e90d9b63196e153d50eaa648a6625eae9e43e92844b6d38e0bd4d9",
+      "original_mode": 384,
+      "original_sha256": "b954e73862f491ea7fe1b1a621a89be783827bd9fd659f311d8b5c0cb3b31a69",
+      "path": "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "dd5bc4ae200bfb204b39c29dc9c49e1ca9d7e56562761a807041ef6b77389644",
+      "original_mode": 511,
+      "original_sha256": "1a996c4943697e14cd87befe185500ebd795371d9636ea36f72da54c19b33d2c",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "ed47ea61009f4604f26f8847b1aab4c46cd458d187d18f6664babe98987d9ec4",
+      "original_mode": 511,
+      "original_sha256": "ffdcf629fce9cfd53351f5eab6dd4faabe126ec46cbd1fdc9389d63b8e3e523b",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "fbaf0f856a6dd821717b6ef1693e349ee5d12f30167b28786df4852845299abc",
+      "original_mode": 511,
+      "original_sha256": "7c169a6e18f5d43106e03c2a2325d5f6cbeae69fac3c04ac440349eb880f9214",
+      "path": "wiki/log.md"
+    }
+  ]
+}
