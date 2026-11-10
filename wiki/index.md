@@ -298,7 +298,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[ReferralProgram-DetachPartner-Implementation]] — `ReferralProgram.DetachPartner` для AT: удаление реферального кода партнёра (Карта+CRM+ВидЦеныДокумент), защита от боя, OWNER_MODERATOR (status: active)
 - [[DiscountCard-TemplateCount-List-Mismatch-101911769]] — №101911769, 26.6100: ромашка в дизайне типа 6328 на fix; счётчик СДК учитывает шаблоны, исключённые списком (черновик/нет оформления); предзагрузка подтверждает ThemeData без ThemeScreen; передать владельцу СДК (status: developing)
 - [[SiteSave-WidgetStore-TypePage-Missing-1029981]] — №1029981, веха 26.5120: `Site.Save` в магазине виджетов РС падает (нет `Type_page.Get/3` в metadata-repository), не наша зона (status: developing)
-- [[ReferralStub-Status-Description-Outcome-10284280]] — №10284280, веха 26.5134: чтение обработчика переведено на Лид.TinyWoContacts; приоритет: название перехода -> название фазы -> типовая подпись. Ветка 26.5134/bugfix/aatimoshenko/10284280_1, коммит d151435f3c, MR [01a1bf78] (!153799-!153807), 456 тестов OK (status: testing)
+- [[ReferralStub-Status-Description-Outcome-10284280]] — №10284280, веха 26.5134: чтение обработчика переведено на Лид.TinyWoContacts; приоритет: название перехода -> название фазы -> типовая подпись. Ветка 26.5134/bugfix/aatimoshenko/10284280_1, коммит d151435f3c, MR [01a1bf78] (!153799-!153807), 456 тестов OK (status: testing) 10.11: в базе №287 сохранено «В работе», дата этапа сделки новее корешка; ReadStub/фронт текст не подменяют, причина пропуска обновления ещё не установлена.
 - [[ReferralProgram-Stub-Implementation]] — `ReferralProgram.CreateStub` + `UpdateStub`: 2 метода, 4 бизнес-сценария, StatusDate/EffectiveDate правило, LinkType константы, SQL+тесты; ревью Мусохранова 2026-06-24 (status: active)
 - [[ReferralProgram-GetLeadPeriodList-LeadCount-Source]] (c-000145) — решение: LeadCount/RewardSum из одного запроса к ВидЦеныДокумент, без цикла по источникам через marketing-API (status: active)
 - [[ReferralStub-TargetAction-Pattern]] — паттерн целевого действия корешков: TargetAction, StatusDate, FilterByStatus (status: current)
@@ -580,7 +580,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[welcome]] — getting started visual guide
 - [[youtube-explainer]] — visual explainer for presentations
 - [[claude-obsidian-presentation]] — presentation canvas (standalone)
-- [[Bonus-Clients-Stale-Balance-10283259]] — №10283259: база _011d50c3 прочитана через PyCharm; у клиента 11613 номерная карта 5365 и персональный счёт 5366. На 5366 сохранены 1020 с NextChangeDatetime 19.10, движения +2000/-980 подтверждены; реестр не проверяет срок кэша; ежедневный триггер отвечает за уведомления, внешний получатель NextChangeDatetime ещё не проверен (status: developing)
+- [[Bonus-Clients-Stale-Balance-10283259]] — №10283259: база _011d50c3 прочитана через PyCharm; у клиента 11613 номерная карта 5365 и персональный счёт 5366. На 5366 сохранены 1020 с NextChangeDatetime 19.10, движения +2000/-980 подтверждены; реестр не проверяет срок кэша; ежедневный триггер отвечает за уведомления, найден обратный RequestNotification с обновлением кэша; нужна проверка фактического выполнения на СДК, боевого подключения нет (status: developing)
 
 - [[ReferralStub-Status-Comment-History-10283786]] — №10283786, 26.5134: история комментария исправлена, 48 тестов OK; коммит a66b0bf650, MR !153758–!153765, документ 01a1be9b; полный online прерван кодировкой, ERROR RefreshLicense не разобран (status: testing)
 
