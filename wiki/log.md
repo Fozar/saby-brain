@@ -1521,3 +1521,8 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 ## 2026-11-10 — Полный прогон №11011809
 
 [[LoyaltyWidgets-OurCompanies-API-11011809]]: online 6581 тест, 786 failures, 370 errors, 99 skipped. Ошибок виджетов нет, повторный отдельный прогон 81/81 OK. Причины массовых падений не установлены; изолированный get_condition_from_promotion.py упёрся в отсутствующий cloud_statistics. Полный лог сохранён в Temp/opencode/widgets-11011809-online.log. Без коммита.
+
+
+## 2026-11-10 — Правки ревью №11011809
+
+[[LoyaltyWidgets-OurCompanies-API-11011809]]: check_feature + Feature.OUR_ORG_ALL_PRODUCT, извлечение @Лицо через ToList в обоих SQL-запросах, тесты переименованы в loyalty_widgets_tools.py. Свежий прогон виджетов 81/81 OK, pylint 10/10, diff --check чистый. Полный online повторно не запускался; без коммита.
