@@ -1516,3 +1516,8 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 ## 2026-11-10 — Реализация API НК в виджетах
 
 [[LoyaltyWidgets-OurCompanies-API-11011809]]: техрешение согласовано, ветка 26.6100/feature/aatimoshenko/11011809. Depth=1 подтверждён по SQL API. 23 новых проверки, весь набор виджетов 81 OK, pylint 10/10, ревью без замечаний. Полный online ещё выполняется, замечены падения AddPromoCodeTestOnline. Без коммита и MR.
+
+
+## 2026-11-10 — Полный прогон №11011809
+
+[[LoyaltyWidgets-OurCompanies-API-11011809]]: online 6581 тест, 786 failures, 370 errors, 99 skipped. Ошибок виджетов нет, повторный отдельный прогон 81/81 OK. Причины массовых падений не установлены; изолированный get_condition_from_promotion.py упёрся в отсутствующий cloud_statistics. Полный лог сохранён в Temp/opencode/widgets-11011809-online.log. Без коммита.
