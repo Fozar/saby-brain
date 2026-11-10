@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/Bonus-Clients-Stale-Balance-10283259.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "e5b5f3f242d907dc745a0ba5eb37572e07b1463cc30e3b89e23267543758e4fe",
+  "completed_epoch": 1794296995.0135283,
+  "created_epoch": 1794296994.7443297,
+  "expanded_bundle_sha256": "960227398c284ead7bb526ddee5d1455773b4bf4974311ebe2622df5a98ecb39",
+  "input_bundle_sha256": "960227398c284ead7bb526ddee5d1455773b4bf4974311ebe2622df5a98ecb39",
+  "operation_id": "save-20261110-10283259-db-evidence",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 420,
+      "new_sha256": "e6b11a35f6df6bae42259aee7e649edc114b7355da5dda7a1e9a190043f05ddf",
+      "original_mode": 420,
+      "original_sha256": "602b9d3d0a5762654c8408e60e54e9fd720ec919c54074bea868438f9dfa3891",
+      "path": "wiki/concepts/Bonus-Clients-Stale-Balance-10283259.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "47cc93234d1d1e2da7f71286b07a393023f312e03228d814ced59de99545de41",
+      "original_mode": 511,
+      "original_sha256": "e2ad883788b91b4e3ce18f4147c39373748a56c92807145ddb1ba27c9eb241bb",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "56c52f2cb59da6a894c123db32d7fb4be6f89c73d51200f1bb4a7d5c429344ba",
+      "original_mode": 511,
+      "original_sha256": "258df72a0722d1f2d992eb6eef6e09daa56bb2ba4df947d4b9d501b3a2e7f770",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "a91273946512e0e59357e705ef1f53c206866b3e4cb260d8e1e3ba99073aa287",
+      "original_mode": 511,
+      "original_sha256": "17667fbe8cebf3b4b333c2b6c3c2ba21a8d9caf233fd5de70753c3eca56ee573",
+      "path": "wiki/log.md"
+    }
+  ]
+}
