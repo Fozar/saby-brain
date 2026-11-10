@@ -28,7 +28,7 @@ related:
 - [[ReferralProgram-Offer-Details-BL-Calls-10224706]] — №10224706, Оптимизация вызовов БЛ в детализации офферов.
 - [[Loyalty-License-Dispatcher-PromoCode-Migration-09281060]] — №09281060, Промокоды: переход на новый механизм проверки лицензий.
 - [[PromoCode-Algorithms-Processes-Documentation-11028176]] — №11028176, Промокоды: документация «Алгоритмы и процессы».
-- [[LoyaltyWidgets-OurCompanies-API-11011809]] — №11011809, Виджеты лояльности: фильтрация точек продаж через API НК.
+- [[LoyaltyWidgets-OurCompanies-API-11011809]] — №11011809, 26.6100: API изучен; переход под фичей 94256, требуется её техническое имя; код не менялся.
 - [[BonusProgram-Profit-Type-Change-Block-10306450]] — №10306450, Запрет смены типа выгоды после бонусных операций.
 - [[Franchise-Threshold-Promotions-Sync-102912590]] — №102912590, Синхронизация франшизы для пороговых акций.
 - [[Loyalty-External-License-PremiumBonus-Registration-07282658]] — №07282658, Проверка лицензии при регистрации в PremiumBonus.
