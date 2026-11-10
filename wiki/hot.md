@@ -42,7 +42,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 ## Active Threads
 
-- [[LoyaltyWidgets-OurCompanies-API-11011809]] — №11011809, 26.6100: разобраны текущая выборка и API НК; фича our-org-all-product, сохранение иерархии согласовано, решение на согласовании; реализация не начата (status: developing)
+- [[LoyaltyWidgets-OurCompanies-API-11011809]] — №11011809, 26.6100: разобраны текущая выборка и API НК; фича our-org-all-product, реализован переход, 81 тест виджетов OK, pylint 10/10; полный online проверяется, без коммита (status: developing)
 
 - [[ReferralStub-ClientAccountId-INN-KPP-11095710]] — №11095710, веха 26.5134: поле ClientAccountId в CreateStub и ReadStub, обновлён .orx; коммит 55c4cd9e31, MR [01a1bfa7] (!153816–!153824), 44 теста CreateStub/ReadStub OK, 452 теста referralprogram OK (status: testing)
 
