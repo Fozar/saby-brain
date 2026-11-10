@@ -1526,3 +1526,10 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 ## 2026-11-10 — Правки ревью №11011809
 
 [[LoyaltyWidgets-OurCompanies-API-11011809]]: check_feature + Feature.OUR_ORG_ALL_PRODUCT, извлечение @Лицо через ToList в обоих SQL-запросах, тесты переименованы в loyalty_widgets_tools.py. Свежий прогон виджетов 81/81 OK, pylint 10/10, diff --check чистый. Полный online повторно не запускался; без коммита.
+
+
+[[LoyaltyWidgets-OurCompanies-API-11011809]]
+
+## 2026-11-10 — RecordSet в тестах
+
+По просьбе пользователя в loyalty_widgets_tools.py все тестовые наборы (ответы API и SQL, в том числе пустые) создаются через create_record_set. Свежий прогон виджетов: 81/81 OK. Pylint: одно C0115 — отсутствует docstring TestLoyaltyWidgetsTools; параллельные пользовательские правки описаний не откатывались. Основной код не менялся, коммита нет.
