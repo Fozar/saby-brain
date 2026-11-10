@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "ed0000f916f844c64f38484ec05866fbab24da525aacaf5d9c8e42eb3ee90d6a",
+  "bundle_sha256": "c34179186b8e39c88d0e5fff46cdba689730d9ddb708fa8053b5aaf5b4fc4a7d",
+  "changed_paths": [
+    "wiki/concepts/Bonus-Clients-Stale-Balance-10283259.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "c34179186b8e39c88d0e5fff46cdba689730d9ddb708fa8053b5aaf5b4fc4a7d",
+  "hashes": {
+    "wiki/concepts/Bonus-Clients-Stale-Balance-10283259.md": "602b9d3d0a5762654c8408e60e54e9fd720ec919c54074bea868438f9dfa3891",
+    "wiki/hot.md": "258df72a0722d1f2d992eb6eef6e09daa56bb2ba4df947d4b9d501b3a2e7f770",
+    "wiki/index.md": "e2ad883788b91b4e3ce18f4147c39373748a56c92807145ddb1ba27c9eb241bb",
+    "wiki/log.md": "17667fbe8cebf3b4b333c2b6c3c2ba21a8d9caf233fd5de70753c3eca56ee573"
+  },
+  "modes": {
+    "wiki/concepts/Bonus-Clients-Stale-Balance-10283259.md": 420,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20261110-10283259-db-wait",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

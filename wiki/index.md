@@ -580,7 +580,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[welcome]] — getting started visual guide
 - [[youtube-explainer]] — visual explainer for presentations
 - [[claude-obsidian-presentation]] — presentation canvas (standalone)
-- [[Bonus-Clients-Stale-Balance-10283259]] — №10283259: реестр 1020, карточка 0 после сгорания; чтение 5366 выполнено в другом аккаунте и гипотезу не проверяет. Доступа к боевой базе и аккаунту нет; дальше воспроизведение на тестовом стенде, при необходимости чтение через вторую линию (status: developing)
+- [[Bonus-Clients-Stale-Balance-10283259]] — №10283259: пользователь запросил доступ к базе клиента, ждём. Подготовлены SELECT по Карта, ВидЦеныДокумент и Sale; сначала подтвердить аккаунт/карту и сохранить кэш без пересчёта. Запросы не выполнялись, причина не установлена (status: developing)
 
 - [[ReferralStub-Status-Comment-History-10283786]] — №10283786, 26.5134: история комментария исправлена, 48 тестов OK; коммит a66b0bf650, MR !153758–!153765, документ 01a1be9b; полный online прерван кодировкой, ERROR RefreshLicense не разобран (status: testing)
 
