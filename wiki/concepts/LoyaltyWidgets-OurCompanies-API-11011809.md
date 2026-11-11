@@ -122,3 +122,16 @@ GitLab:
 - https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154169
 - https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154170
 - https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154171
+
+
+## 11.11.2026 — Проверены три замечания reviewbot к !154166
+
+Замечания fc102318b1ac75f767760c55e5f84bbf781b961a (тип продукта), f42669d1e3944512eafa08b4b8cab963195be5a2 (отрицательные ID) и 9522f75699e71615d75ef87c27a2ef21bc1bcb59 (OnlySalesPoint/OnlyActual) не подтвердились. Повторно получены исходники contragents/online, rc-26.6100, read-only через git archive по SSH.
+
+MassiveBranches.branches, massive_branches_list.py:62–80: распознаёт OrgId.ALL_PRODUCT_ORGS, извлекает ProductType, сбрасывает ids в None и сам ставит OnlySalesPoint=True. OrgId:33–38,91–103 подтверждает -10/-11/-12/-13/-15 и вычисление типа продукта. massive_branchs.sql:86–92 применяет SalesPoint и SPType. Таким образом, синтетический ID передаётся по назначению, тип продукта не потерян.
+
+Требование OnlyActual не следует из прежнего SQL: отключённые организации он не исключал. Реализация API читает OnlyActive (по умолчанию False), а не OnlyActual. Добавлять активность нельзя без изменения согласованного поведения. Для обычной компании OnlySalesPoint также не нужен — старый запрос выбирал всех непосредственных детей.
+
+Маркер [org] при пустой продуктовой выборке оставлен сознательно: encode_params игнорирует пустой список и иначе снимет ограничение. Код не менялся. В GitLab ответы не публиковались, три треда пока не закрыты.
+
+Источник: https://git.sbis.ru/contragents/online/-/blob/rc-26.6100/bl-modules/OurCompanyBase/ourorg_base/branches/massive_branches_list.py#L62
