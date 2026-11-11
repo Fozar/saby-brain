@@ -26,7 +26,7 @@ related:
 - [[zvonok-matyushev-timoshenko-plan-2026-11-09]] — 09.11: разбор ноябрьского плана и лицензирования внешних систем.
 - [[ReferralProgram-STAN-Stubs-Format-09173580]] — №09173580, СТАН: формат Stubs в методах создания корешков.
 - [[ReferralProgram-Offer-Details-BL-Calls-10224706]] — №10224706, Оптимизация вызовов БЛ в детализации офферов.
-- [[Loyalty-License-Dispatcher-PromoCode-Migration-09281060]] — №09281060, Промокоды: переход на новый механизм проверки лицензий.
+- [[Loyalty-License-Dispatcher-PromoCode-Migration-09281060]] — №09281060, 26.6100, срок 28.11: найдены 4 старых вызова промокодов; обработка недоступности биллинга и техрешение на согласовании.
 - [[PromoCode-Algorithms-Processes-Documentation-11028176]] — №11028176, Промокоды: документация «Алгоритмы и процессы».
 - [[LoyaltyWidgets-OurCompanies-API-11011809]] — №11011809, 26.6100: коммит b24e93985b, MR [01a1c8d9] (!154166–!154171); 81 тест виджетов OK, общий online красный; 3 замечания бота проверены по API и не подтвердились; MR открыт (status: developing)
 - [[BonusProgram-Profit-Type-Change-Block-10306450]] — №10306450, Запрет смены типа выгоды после бонусных операций.
