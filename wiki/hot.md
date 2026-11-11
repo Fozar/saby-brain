@@ -42,7 +42,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 ## Active Threads
 
-- [[Loyalty-License-Dispatcher-PromoCode-Migration-09281060]] — №09281060, 26.6100, срок 28.11: найдены 4 старых вызова промокодов; обработка недоступности биллинга и техрешение на согласовании.
+- [[Loyalty-License-Dispatcher-PromoCode-Migration-09281060]] — №09281060, 26.6100: 4 вызова промокодов переведены, сетевые сбои биллинга обработаны; 16 новых + 54 регрессионных теста OK; общий online 6600: 1 failure/1 error; без коммита (status: developing)
 
 - [[LoyaltyWidgets-OurCompanies-API-11011809]] — №11011809, 26.6100: коммит b24e93985b, MR [01a1c8d9] (!154166–!154171); 81 тест виджетов OK, общий online красный; 3 замечания бота проверены по API и не подтвердились; MR открыт (status: developing)
 
