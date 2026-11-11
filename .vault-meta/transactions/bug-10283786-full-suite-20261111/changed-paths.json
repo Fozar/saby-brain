@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "2abc4974a9535657e6501df513f9a74f184fb6cb9727ab4b3507fbad1340a702",
+  "bundle_sha256": "0dc54bc4f8cb8bd7e5a63dceb9e0695f99d8fbb0cefcbe85271c1bd07908a954",
+  "changed_paths": [
+    "wiki/concepts/ReferralStub-Status-Comment-History-10283786.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "0dc54bc4f8cb8bd7e5a63dceb9e0695f99d8fbb0cefcbe85271c1bd07908a954",
+  "hashes": {
+    "wiki/concepts/ReferralStub-Status-Comment-History-10283786.md": "402e747988761b08993ff2e25a996306447311ff267ec0444b0a707ab34664e4",
+    "wiki/hot.md": "61165a3e11555a970ec7fe2fc92b23a1a73ac4c2a195e2aed0884777e9dbedfd",
+    "wiki/index.md": "677ee3ae82adda2ba5dfc89df5ca0cb021432e79008982cdd3b9b3082a4e4866",
+    "wiki/log.md": "891ad514a85d193f5d74a3a8cca75f59a253884bd1e07fe3b15457b51b563549"
+  },
+  "modes": {
+    "wiki/concepts/ReferralStub-Status-Comment-History-10283786.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "bug-10283786-full-suite-20261111",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}
