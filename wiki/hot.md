@@ -52,7 +52,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 - [[LoyaltyClients-Export-Masked-Card-07285685]] — №07285685, 26.6100: на fix-online подтвержден скрытый номер в XLSX; полный номер есть в ответе бэкенда. Причина в printforms/templateeditor-data, ReportNewClientsMapping.map:33; передать печатным формам (status: developing)
 
-- [[ReferralStub-Status-Comment-History-10283786]] — №10283786, 26.5134: история комментария исправлена, 48 тестов OK; коммит a66b0bf650, MR !153758–!153765, документ 01a1be9b; полный online прерван кодировкой, ERROR RefreshLicense не разобран (status: testing)
+- [[ReferralStub-Status-Comment-History-10283786]] — №10283786, 26.5134: устранено повторение названия статуса в истории; коммит e9e23c1db0, новый MR https://online.sbis.ru/opendoc.html?guid=01a1c9a7-57e1-70c3-9c23-39aeb04eea66&client=3; 51 тест OK; прогон запущен, результат пока не получен (status: testing)
 
 - [[Promotion-CreateCardType-ShowStamps-100118485]] — №100118485, 26.6100: `init_design_stamps` включает `ShowStamps`; MR !153523–!153526 создан, ждёт ревью (status: testing)
 

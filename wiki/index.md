@@ -582,6 +582,6 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[getting-started
 - [[claude-obsidian-presentation]] — presentation canvas (standalone)
 - [[Bonus-Clients-Stale-Balance-10283259]] — №10283259: база _011d50c3 прочитана через PyCharm; у клиента 11613 номерная карта 5365 и персональный счёт 5366. На 5366 сохранены 1020 с NextChangeDatetime 19.10, движения +2000/-980 подтверждены; реестр не проверяет срок кэша; ежедневный триггер отвечает за уведомления, найден обратный RequestNotification с обновлением кэша; нужна проверка фактического выполнения на СДК, боевого подключения нет (status: developing)
 
-- [[ReferralStub-Status-Comment-History-10283786]] — №10283786, 26.5134: история комментария исправлена, 48 тестов OK; коммит a66b0bf650, MR !153758–!153765, документ 01a1be9b; полный online прерван кодировкой, ERROR RefreshLicense не разобран (status: testing)
+- [[ReferralStub-Status-Comment-History-10283786]] — №10283786, 26.5134: устранено повторение названия статуса в истории; коммит e9e23c1db0, новый MR https://online.sbis.ru/opendoc.html?guid=01a1c9a7-57e1-70c3-9c23-39aeb04eea66&client=3; 51 тест OK; прогон запущен, результат пока не получен (status: testing)
 
 - [[Bonus-SaleTotals-Zero-Price-Return-11054160]] — №11054160, 26.6100: исправлен учет нулевых возвратов; коммит 1af366607d, MR !153831–!153836, документ 01a1bfc5; 18 тестов OK, общий online с одной ERROR RefreshLicense (status: testing)
