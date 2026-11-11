@@ -1551,3 +1551,7 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 ## 2026-11-11 — №10283786: возврат по истории статуса
 
 [[ReferralStub-Status-Comment-History-10283786]] — №10283786, 26.5134: устранено повторение названия статуса в истории; коммит e9e23c1db0, новый MR https://online.sbis.ru/opendoc.html?guid=01a1c9a7-57e1-70c3-9c23-39aeb04eea66&client=3; 51 тест OK; 4804 теста, errors=1, skipped=107; TestRefreshLicense.test_1 падает с bseSYNTAX_ERROR: подзапрос во FROM должен иметь псевдоним; связь с правкой не проверена, baseline без фикса не запускался (status: testing)
+
+## 2026-11-11 — Проверка замечания MR !154227
+
+[[ReferralStub-Status-Comment-History-10283786]]: 11.11: замечание reviewbot о разных языках проверено. В указанном пути fallback из _STATE_TO_STUB локализуется до UpdateStub, прежнее описание не используется для новой записи. Достижимый путь из замечания не подтверждён. В MR !154227 опубликован ответ в треде 1f0a7e21a0e4d9364939e706f1f60b142583ee8a (note 44150042); код не менялся, тред оставлен открытым для уточнения.
