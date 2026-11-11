@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "d1938bd5e37ff8d9bf4190622c7d977bbfe9aa7995dbb8c14da755dc95112bbb",
+  "bundle_sha256": "fb6ea311aaea94ba4762753d0177e8d81116dd6c478be1a301b9ecee358b6fc2",
+  "changed_paths": [
+    "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "fb6ea311aaea94ba4762753d0177e8d81116dd6c478be1a301b9ecee358b6fc2",
+  "hashes": {
+    "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md": "c1668cdb4dc3cbd4659fcc55db337217756ea0d2a45c2d477e9f322d86d28d4c",
+    "wiki/hot.md": "185c86169daf09fb6ae39cdf2ed2cd5adc2889a4339066d3d4bb7b1e7ea3135a",
+    "wiki/index.md": "6c3185045699d4fda48dc91f7ca7b48541cd66765855d888b683c68ed07f9b58",
+    "wiki/log.md": "5da77db5c9b173b9d611cdb5e0c2dffcc79645cc4a4b70288f273fe014f71ac7"
+  },
+  "modes": {
+    "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "widgets-11011809-mr-20261111",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

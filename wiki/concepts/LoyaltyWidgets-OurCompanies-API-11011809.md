@@ -3,7 +3,7 @@ address: c-000287
 type: concept
 title: "Виджеты лояльности: фильтрация точек продаж через API НК — №11011809"
 created: 2026-11-09
-updated: 2026-11-10
+updated: 2026-11-11
 status: developing
 related:
   - "[[Loyalty-November-2026-WorkPlan]]"
@@ -22,9 +22,9 @@ related:
 
 ## Где остановились
 
-Техрешение согласовано пользователем, разрешено создать новую ветку в текущей папке. Реализован переход под `our-org-all-product`, без изменения общих отборов, H/SH и пересечений с правами. Ветка: `26.6100/feature/aatimoshenko/11011809`, от свежего origin/rc-26.6100. Изменения не закоммичены и не запушены, MR нет.
+11.11.2026: по разрешению пользователя оформлен MR. Коммит `b24e93985b` запушен в `26.6100/feature/aatimoshenko/11011809`, рабочая папка чистая. Документ MR: https://online.sbis.ru/opendoc.html?guid=01a1c8d9-305c-799d-be0c-8192527cd8f2&client=3 (doc_id 636327851); шесть GitLab MR !154166–!154171, приложение online. Ждёт ревью и проверки на стенде.
 
-Локальный прогон виджетов: 81 тест OK, из них 23 новых. До реализации 8 новых проверок падали по ожидаемой причине (API не вызывался). Pylint обоих Python-файлов 10/10. Независимое ревью не нашло замечаний. Полный online завершён: 6581 тест, 786 failures, 370 errors, 99 skipped, 549.154 с. Ошибок виджетов в нём нет. Повторный отдельный прогон виджетов после полного: 81/81 OK. Общий online красный; причины массовых падений не установлены.
+Перед коммитом повторно проверены 81 тест виджетов — OK. Pylint трёх файлов: одно C0115, нет docstring тестового класса. В «Что тестировать» включены сценарии UI и ограничения проверок: предыдущий полный online 6581 тест, 786 failures, 370 errors, 99 skipped; причины не установлены, полный набор после правок не повторялся. Живой API на стенде не проверен.
 
 ## Постановка и критерий
 
@@ -110,3 +110,15 @@ Depth=1 подтверждён исходником contragents/online, rc-26.61
 ## 2026-11-10 — RecordSet в тестах
 
 По просьбе пользователя в loyalty_widgets_tools.py все тестовые наборы (ответы API и SQL, в том числе пустые) создаются через create_record_set. Свежий прогон виджетов: 81/81 OK. Pylint: одно C0115 — отсутствует docstring TestLoyaltyWidgetsTools; параллельные пользовательские правки описаний не откатывались. Основной код не менялся, коммита нет.
+
+## MR от 11.11.2026
+
+Коммит: b24e93985b. Ветка: 26.6100/feature/aatimoshenko/11011809.
+Документ: https://online.sbis.ru/opendoc.html?guid=01a1c8d9-305c-799d-be0c-8192527cd8f2&client=3
+GitLab:
+- https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154166
+- https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154167
+- https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154168
+- https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154169
+- https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154170
+- https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154171
