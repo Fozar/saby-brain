@@ -36,7 +36,7 @@ related:
 - [[Franchise-Threshold-Promotions-Sync-102912590]] — №102912590, Синхронизация франшизы для пороговых акций.
 - [[Loyalty-External-License-PremiumBonus-Registration-07282658]] — №07282658: проверка аккаунта без ТП в интерфейсе и в PBCustomer.Register.
 - [[Loyalty-Marketing-Website-Visitor-Events-10141413]] — №10141413, События «Посетитель сайта» в действиях лояльности.
-- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: ветка перебазирована, запушены `f02bcec58c` и `3423267fa6`; !154956 без конфликтов, код не изменился после 72 целевых тестов на SDK 271000.
+- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: запушены `f02bcec58c` и `3423267fa6`, !154956 без конфликтов; 72 целевых теста OK, полный online на SDK 271000 прерван по таймауту без итога.
 - [[Loyalty-External-License-Customer-Selection-07282646]] — №07282646: флаг отказа после выбора; проверку аккаунта планируем переиспользовать.
 
 - [[LoyaltyClients-Export-Masked-Card-07285685]] — №07285685, 26.6100: на fix-online подтвержден скрытый номер в XLSX; полный номер есть в ответе бэкенда. Причина в printforms/templateeditor-data, ReportNewClientsMapping.map:33; передать печатным формам (status: developing)
