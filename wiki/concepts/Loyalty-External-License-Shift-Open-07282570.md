@@ -26,7 +26,9 @@ related:
 
 ## Где остановились
 
-**MR первой итерации на ревью.** Коммит `bfc192b062` запушен в `27.1100/feature/aatimoshenko/07282570`. [MR в СБИС](https://online.sbis.ru/opendoc.html?guid=01a1f847-9497-7a0a-952e-ccf331e0fa5a&client=3), [GitLab !154956](https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154956), [!154957](https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154957). В MR только параметр и подбор ТП; пересчёт лицензии не подключён.
+**Второй этап в локальном коммите `71256af87e`, поверх `bfc192b062`.** По предложению Матюшева от 20.11 балансная проверка и разбиение точек вынесены в `BillingHelper`; диспетчер выбирает небалансную проверку по базовому классу параметра. Из стэша взяты контракт `License.Require` и обработка сбоя при пересчёте; сам стэш сохранён. Под `ext_loyalty_license` один запрос проверяет лицензию аккаунта без списания, результат записывается для подключённых точек. Нет точек — старые записи удаляются. При сбое сервиса интеграций или неизвестном ответе биллинга прежние записи сохраняются, балансные обновляются. `GetTypesBySalePoint` и `CheckLicense` не менялись. 10 изолированных тестов прошли, pylint рабочего кода 10/10. Штатный прогон не выполнен: сборка SDK 266100, нужен SDK 271000. Коммит не запушен.
+
+**MR первой итерации на доработке.** Коммит `bfc192b062` запушен в `27.1100/feature/aatimoshenko/07282570`. [MR в СБИС](https://online.sbis.ru/opendoc.html?guid=01a1f847-9497-7a0a-952e-ccf331e0fa5a&client=3), [GitLab !154956](https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154956), [!154957](https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154957). В MR только параметр и подбор ТП; пересчёт лицензии не подключён.
 
 **Согласован первый шаг итеративно.** Матюшев попросил сначала декларацию `IntegrationLicense` и подбор ТП в `LicenseConsumersGetter`, без внедрения в `RefreshLicense`. Все его замечания к этому MR учтены: использованы `UDSSettings`/`PremiumBonusSettings`/`IikoCardSettings` из `integration_handler.py` вместо прямого ветвления, таймаут поднят до 5000 мс, добавлен `@logging`, метод нестатический, заданы `MAIN_LICENSE_ID = SALE_POINT_LICENSE_ID = SALE_POINT_LICENSE_BALANCE_ID = 'LOYALTY_INTEGRATION'`. Проверка `if not account` удалена по просьбе пользователя. Ключ типа интеграции — `connection.Get('name')`. 5/5 изолированных тестов со стабами платформы, pylint рабочего кода 10/10. Сборка стенда 266100, ветке нужен SDK 271000.
 
@@ -74,7 +76,7 @@ related:
 
 ## Открытые вопросы
 
-1. Следующая итерация: подключить `IntegrationLicense` в общий цикл `RefreshLicense` с сохранением прежних записей при сбое подбора ТП или биллинга.
+1. Прогнать пересчёт `IntegrationLicense` на стенде с SDK 271000.
 2. Расширить `CheckLicense` для `LOYALTY_INTEGRATION` без ТП (Online, через диспетчер/BillingHelper) для задач №07282646 и №07282658.
 3. Поведение `GetTypesBySalePoint` при пустом/просроченном кеше: Матюшев считает вызов `RefreshLicense` вспомогательным и не хочет ориентироваться на его результат.
 4. Штатный прогон и ручная проверка Online/Desktop на SDK 271000.
@@ -83,7 +85,7 @@ related:
 
 - [x] Декларация `IntegrationLicense` и подбор ТП в `LicenseConsumersGetter`.
 - [x] MR первой итерации оформлен и запушен.
-- [ ] Подключить параметр в `RefreshLicense` и `LicenseDispatcher` (вторая итерация).
+- [x] Подключить параметр в `RefreshLicense` и `LicenseDispatcher` (вторая итерация).
 - [ ] Проверить открытие смены на нескольких ТП одного аккаунта с лицензией и без.
 - [ ] Передать общий механизм в задачи регистрации (№07282658) и выбора клиента (№07282646).
 
