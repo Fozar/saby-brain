@@ -33,10 +33,10 @@ related:
 - [[LoyaltyWidgets-OurCompanies-API-11011809]] — №11011809, 26.6100: коммит b24e93985b, MR [01a1c8d9] (!154166–!154171); 81 тест виджетов OK, общий online красный; 3 замечания бота проверены по API и не подтвердились; MR открыт (status: developing)
 - [[BonusProgram-Profit-Type-Change-Block-10306450]] - №10306450, 26.6200 без фичи: запрет смены типа выгоды после бонусных операций; коммит 37773bac89, MR создан [01a1ed4c] (!154697-!154701), focused 3/3 OK, pylint 10/10 (status: testing) Sonar !154697: 70 предупреждений по 35 неизменённым строкам en.json; публикация отчёта получила HTTP 414, Jenkins UNSTABLE. Изменения en.json сняты, коммит a5afa94f4b запушен; повторный Sonar не проверен.
 - [[Franchise-Threshold-Promotions-Sync-102912590]] — №102912590, Синхронизация франшизы для пороговых акций.
-- [[Loyalty-External-License-PremiumBonus-Registration-07282658]] — №07282658, Проверка лицензии при регистрации в PremiumBonus.
+- [[Loyalty-External-License-PremiumBonus-Registration-07282658]] — №07282658: проверка аккаунта без ТП в интерфейсе и в PBCustomer.Register.
 - [[Loyalty-Marketing-Website-Visitor-Events-10141413]] — №10141413, События «Посетитель сайта» в действиях лояльности.
-- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: общий путь RefreshLicense через параметр и диспетчер реализован в основной папке. Ревью читаемости учтено; маршрут и время ответа отдельного RPC ещё проверить на SDK 271000. [[zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19|Звонок 19.11]].
-- [[Loyalty-External-License-Customer-Selection-07282646]] — №07282646, Лицензия внешних интеграций при выборе клиента.
+- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: общий путь RefreshLicense через параметр и диспетчер реализован в основной папке. Ревью читаемости учтено; маршрут и время ответа отдельного RPC ещё проверить на SDK 271000. Обсуждаем общий CheckLicense без ТП для [[Loyalty-External-License-Customer-Selection-07282646|выбора]] и [[Loyalty-External-License-PremiumBonus-Registration-07282658|регистрации]]. [[zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19|Звонок 19.11]].
+- [[Loyalty-External-License-Customer-Selection-07282646]] — №07282646: флаг отказа после выбора; проверку аккаунта планируем переиспользовать.
 
 - [[LoyaltyClients-Export-Masked-Card-07285685]] — №07285685, 26.6100: на fix-online подтвержден скрытый номер в XLSX; полный номер есть в ответе бэкенда. Причина в printforms/templateeditor-data, ReportNewClientsMapping.map:33; передать печатным формам (status: developing)
 
