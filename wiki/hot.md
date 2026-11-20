@@ -17,7 +17,7 @@ related:
 
 ## 2026-11-20 — №11192441: CreateLeadByPartner медленный, в логах устаревший CRMEvent
 
-**[[ReferralLead-CreateLeadByPartner-Deprecated-CRMEvent-11192441]]**: ошибка на стенде, веха 26.6100. `ReferralProgram.CreateLeadByPartner/3` отработал 2.74 с и трижды дёрнул `SourcesSales.GetLeadInfoV2`: advert-service из него зовёт deprecated `CRMEvent.listWithDocumentsEDO` обратно в online — в логах ERROR «Вызов устаревшего метода» и `[call loop]`. Два вызова из наших избыточны (берут только номер/дату сделки), третий нужен ради контактов (`CRMPreload`). Разбор по логам pre-test-online готов, правки не начануты.
+**[[ReferralLead-CreateLeadByPartner-Deprecated-CRMEvent-11192441]]**: ошибка на стенде, веха 26.6100. `ReferralProgram.CreateLeadByPartner/3` отработал 2.74 с и трижды дёрнул `SourcesSales.GetLeadInfoV2`: advert-service из него зовёт deprecated `CRMEvent.listWithDocumentsEDO` обратно в online — в логах ERROR «Вызов устаревшего метода» и `[call loop]`. Два вызова из наших избыточны (берут только номер/дату сделки), третий нужен ради контактов (`CRMPreload`). Разбор по логам pre-test-online готов. Решение: устаревший метод зовёт advert-service, не мы — задача передаётся Сокову М.А. (advert-service); свои 2 избыточных вызова отложены.
 
 ## 2026-11-20 — Диагностика: периодически пропадает внешний интернет
 
@@ -58,7 +58,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 ## Active Threads
 
-- [[ReferralLead-CreateLeadByPartner-Deprecated-CRMEvent-11192441]] — №11192441, 26.6100: CreateLeadByPartner 2.74 с и 3x SourcesSales.GetLeadInfoV2 → deprecated CRMEvent.listWithDocumentsEDO (ERROR + [call loop]); 2 вызова избыточны, объём фикса не согласован (status: analyzing)
+- [[ReferralLead-CreateLeadByPartner-Deprecated-CRMEvent-11192441]] — №11192441, 26.6100: CreateLeadByPartner 2.74 с и 3x SourcesSales.GetLeadInfoV2 → deprecated CRMEvent.listWithDocumentsEDO (ERROR + [call loop]); зовёт advert-service, передаём Сокову М.А.; свои 2 избыточных вызова отложены (status: analyzing)
 - [[ReferralProgram-ReadLeadSource-11179625]] — №11179625, 26.6100: ревью MR !154716 (источник сделки через crm-service вместо hstore); замечания: тихая потеря обработки при сбое RPC, нет проверки None, порядок выкатки advert-service → price-formation, поведение при смене источника на нереферальный (status: analyzing)
 
 - [[Workstation-Network-Outage-Diagnostic]] — диагностика сети рабочего ПК: локализация около `10.76.140.150`, первопричина не установлена; ждёт запроса логов сетевым администраторам (status: analyzing)

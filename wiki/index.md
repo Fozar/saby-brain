@@ -22,7 +22,7 @@ related:
 
 # Wiki Index
 
-- [[ReferralLead-CreateLeadByPartner-Deprecated-CRMEvent-11192441]] - №11192441, 26.6100: CreateLeadByPartner тянет SourcesSales.GetLeadInfoV2 трижды, каждый вызов уходит в deprecated CRMEvent.listWithDocumentsEDO → ERROR + [call loop], 2.74 с; 2 вызова избыточны (status: analyzing)
+- [[ReferralLead-CreateLeadByPartner-Deprecated-CRMEvent-11192441]] - №11192441, 26.6100: устаревший CRMEvent.listWithDocumentsEDO зовёт advert-service (SourcesSales.GetLeadInfoV2), не мы; передаём Сокову М.А., свои 2 избыточных вызова отложены (status: analyzing)
 - [[Workstation-Network-Outage-Diagnostic]] — 20.11.2026: диагностика периодической недоступности внешнего интернета на рабочем ПК `R54-TIMOSHENKO`; DNS и шлюз работают, `10.76.140.150` отдаёт Network Unreachable; после перезагрузки с теми же IP/шлюзом/DNS TCP к внешним адресам работает; первопричина не установлена (status: analyzing)
 - [[Loyalty-November-2026-WorkPlan]] — ноябрь 2026: 12 задач Тимошенко, сроки плана и карточек, договорённости с Матюшевым (status: developing)
 - [[zvonok-matyushev-timoshenko-plan-2026-11-09]] — 09.11: разбор ноябрьского плана и лицензирования внешних систем.
