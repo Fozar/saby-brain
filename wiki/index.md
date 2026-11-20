@@ -36,7 +36,7 @@ related:
 - [[Franchise-Threshold-Promotions-Sync-102912590]] — №102912590, Синхронизация франшизы для пороговых акций.
 - [[Loyalty-External-License-PremiumBonus-Registration-07282658]] — №07282658: проверка аккаунта без ТП в интерфейсе и в PBCustomer.Register.
 - [[Loyalty-Marketing-Website-Visitor-Events-10141413]] — №10141413, События «Посетитель сайта» в действиях лояльности.
-- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: коммит 57f03deb4a запушен, MR СБИС 01a1f847 (GitLab !154956, !154957): параметр и подбор ТП. Остальное в stash f302e4affe; GetTypesBySalePoint и CheckLicense не менялись. [[zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19|Звонок 19.11]].
+- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: коммит bfc192b062, MR СБИС 01a1f847 (!154956, !154957) на ревью: параметр и подбор ТП по GetSalePoints, таймаут 5 с, без RefreshLicense. [[zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19|Звонок 19.11]].
 - [[Loyalty-External-License-Customer-Selection-07282646]] — №07282646: флаг отказа после выбора; проверку аккаунта планируем переиспользовать.
 
 - [[LoyaltyClients-Export-Masked-Card-07285685]] — №07285685, 26.6100: на fix-online подтвержден скрытый номер в XLSX; полный номер есть в ответе бэкенда. Причина в printforms/templateeditor-data, ReportNewClientsMapping.map:33; передать печатным формам (status: developing)

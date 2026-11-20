@@ -63,7 +63,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 - [[Workstation-Network-Outage-Diagnostic]] — диагностика сети рабочего ПК: локализация около `10.76.140.150`, первопричина не установлена; ждёт запроса логов сетевым администраторам (status: analyzing)
 - [[Saby-Dialog-Wiki-Ingest-Button]] — кнопка ингеста диалога SBIS в вики через opencode serve; установлен userscript, первый прогон на звонке с Матюшевым 19.11.
-- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: коммит 57f03deb4a запушен, MR СБИС 01a1f847 (GitLab !154956, !154957): параметр и подбор ТП. Остальное в stash f302e4affe; GetTypesBySalePoint и CheckLicense не менялись. [[zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19|Звонок 19.11]]. (status: developing)
+- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: коммит bfc192b062, MR СБИС 01a1f847 (!154956, !154957) на ревью: параметр и подбор ТП по GetSalePoints, таймаут 5 с, без RefreshLicense. (status: developing) [[zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19|Звонок 19.11]]. (status: developing)
 
 - [[PromoCode-Design-Title-Logo-Missing-11122177]] — №11122177, 26.6100: у ТП 285 в источнике нет логотипа (FsLogo пуст, Landing содержит баннер); заголовок — отдельный дефект Name вместо Title (status: developing)
 
