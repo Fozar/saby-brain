@@ -54,6 +54,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 ## Active Threads
 
+- [[ReferralLead-CreateLeadByPartner-Deprecated-CRMEvent-11192441]] — №11192441, 26.6100: CreateLeadByPartner 2.74 с и 3x SourcesSales.GetLeadInfoV2 → deprecated CRMEvent.listWithDocumentsEDO (ERROR + [call loop]); 2 вызова избыточны, объём фикса не согласован (status: analyzing)
 - [[ReferralProgram-ReadLeadSource-11179625]] — №11179625, 26.6100: ревью MR !154716 (источник сделки через crm-service вместо hstore); замечания: тихая потеря обработки при сбое RPC, нет проверки None, порядок выкатки advert-service → price-formation, поведение при смене источника на нереферальный (status: analyzing)
 
 - [[Workstation-Network-Outage-Diagnostic]] — диагностика сети рабочего ПК: локализация около `10.76.140.150`, первопричина не установлена; ждёт запроса логов сетевым администраторам (status: analyzing)
