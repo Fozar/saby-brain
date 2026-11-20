@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Concepts Index"
-updated: 2026-04-07
+updated: 2026-11-20
 tags:
   - meta
   - index
@@ -106,5 +106,9 @@ All concept pages — ideas, patterns, and frameworks extracted from sources.
 - [[Wasaby-Local-Stand-Setup]] — Локальные стенды: файловая структура, тестовые домены, Genie, дистрибутив, SDK совместимость (status: current)
 
 ---
+
+## Рабочее окружение и сеть
+
+- [[Workstation-Network-Outage-Diagnostic]] — 20.11.2026: периодическая недоступность внешнего интернета на рабочем ПК `R54-TIMOSHENKO`; DNS и шлюз работают, `10.76.140.150` отдаёт Network Unreachable; после перезагрузки с теми же IP/шлюзом/DNS связь появляется; первопричина не установлена (status: analyzing)
 
 ## Add new concepts here as they are extracted from sources.

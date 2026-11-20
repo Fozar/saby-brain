@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "76244ac01315f7a604687f2f147c36f726dce83a8afad2fda4f63136982aac32",
+  "bundle_sha256": "c484f3a4d5597a7a3a48d9aded4ff17dff7636d68a56434c7e194b28c2fd8ccf",
+  "changed_paths": [
+    "wiki/concepts/LoyaltyWidgets-Missing-Period-11164628.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "c484f3a4d5597a7a3a48d9aded4ff17dff7636d68a56434c7e194b28c2fd8ccf",
+  "hashes": {
+    "wiki/concepts/LoyaltyWidgets-Missing-Period-11164628.md": "ec5f4b0ea51a08233e80df861e948d6979fd30d028b7897e6a7d6703f4763aa0",
+    "wiki/hot.md": "5c9d1d5d7e4155bb8445c92c6729446f20658a17528cf84262b16051f9928a6d",
+    "wiki/index.md": "2c495a5d841fd523dfeb30daa77e196f497b80ea640f72b7627a3b78622d5e70",
+    "wiki/log.md": "97c080bd53e914301f40c3276de262b25fbfbce24f4abf02879af689419ae0ed"
+  },
+  "modes": {
+    "wiki/concepts/LoyaltyWidgets-Missing-Period-11164628.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "bug-11164628-mr-20261118",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

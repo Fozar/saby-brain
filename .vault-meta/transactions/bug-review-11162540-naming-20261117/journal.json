@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/ReferralPartner-SameName-INN-KPP-11162540.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "aab4aa4e08ca33d95c3863daa6242b06f3d71571fc0540506bbb1db6cf34ad81",
+  "completed_epoch": 1794913885.1391482,
+  "created_epoch": 1794913884.9285626,
+  "expanded_bundle_sha256": "e808af053adfd4380e7da0f0835d4dca23895a9b761e8ca3aa369a1acacc999a",
+  "input_bundle_sha256": "e808af053adfd4380e7da0f0835d4dca23895a9b761e8ca3aa369a1acacc999a",
+  "operation_id": "bug-review-11162540-naming-20261117",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "eb717a44730c61111bf9cb367b16b2d48212c383b3d46283ad82d931a7123afc",
+      "original_mode": 384,
+      "original_sha256": "59c480b4f9b924ec261f211e3f33826a2c1ba5f8c08ea0fabed3bc9547205ccb",
+      "path": "wiki/concepts/ReferralPartner-SameName-INN-KPP-11162540.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "8bd088482714537f39308f43c226b485d729c761023cd4c4ab45a3d141d77cc7",
+      "original_mode": 511,
+      "original_sha256": "02a04b3e5887f58e1697ad818a2caf58d37a30002c791f8ba7cb871490510baf",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "a51a838b871b06e0b48df83648eccebdd94a90b4f9854fb4dee401e361c2719b",
+      "original_mode": 511,
+      "original_sha256": "8b79063de9091ee1ea011ec05aa39740482f6ef1f99d71c260325c39629fb368",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "43b553ff863dd7e4a4d1ca6fce5977968769b151e9bcf2dc297a96d674bb9e2c",
+      "original_mode": 511,
+      "original_sha256": "606a4deda323dafdfda871f0c2dc07b85ecceb61af725620c952b9fb802f67c3",
+      "path": "wiki/log.md"
+    }
+  ]
+}

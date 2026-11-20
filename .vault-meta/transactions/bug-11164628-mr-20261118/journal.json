@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/LoyaltyWidgets-Missing-Period-11164628.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "76244ac01315f7a604687f2f147c36f726dce83a8afad2fda4f63136982aac32",
+  "completed_epoch": 1794943756.8054342,
+  "created_epoch": 1794943756.6121416,
+  "expanded_bundle_sha256": "c484f3a4d5597a7a3a48d9aded4ff17dff7636d68a56434c7e194b28c2fd8ccf",
+  "input_bundle_sha256": "c484f3a4d5597a7a3a48d9aded4ff17dff7636d68a56434c7e194b28c2fd8ccf",
+  "operation_id": "bug-11164628-mr-20261118",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "ec5f4b0ea51a08233e80df861e948d6979fd30d028b7897e6a7d6703f4763aa0",
+      "original_mode": 384,
+      "original_sha256": "35cc9611fa1bc8749138c21c058e81f6e753aece04549e895cdc502eeedc0422",
+      "path": "wiki/concepts/LoyaltyWidgets-Missing-Period-11164628.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "2c495a5d841fd523dfeb30daa77e196f497b80ea640f72b7627a3b78622d5e70",
+      "original_mode": 511,
+      "original_sha256": "47d541ed10c4bf1fb55264791e4c3b3266495f0944cd452de2e7ac6505540210",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "5c9d1d5d7e4155bb8445c92c6729446f20658a17528cf84262b16051f9928a6d",
+      "original_mode": 511,
+      "original_sha256": "32e76f47d8b400ab4e9c4b7b10457e3782d95f8bd3fb81ab3378e16cbc849169",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "97c080bd53e914301f40c3276de262b25fbfbce24f4abf02879af689419ae0ed",
+      "original_mode": 511,
+      "original_sha256": "bd48fb01889e3be639620cf18479bef1b64119674f4d1a9d4a4e16549cc29028",
+      "path": "wiki/log.md"
+    }
+  ]
+}

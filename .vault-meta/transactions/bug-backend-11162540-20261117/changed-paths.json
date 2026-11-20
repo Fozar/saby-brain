@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "6ec1861877d7b3dc0970c6c1285d3361c7a1df2af73813df58e79b0186f71734",
+  "bundle_sha256": "970908b6e1ec354a50cb7200d96a034809eba6b2a66aab9115428e9c0a63fddb",
+  "changed_paths": [
+    "wiki/concepts/ReferralPartner-SameName-INN-KPP-11162540.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "970908b6e1ec354a50cb7200d96a034809eba6b2a66aab9115428e9c0a63fddb",
+  "hashes": {
+    "wiki/concepts/ReferralPartner-SameName-INN-KPP-11162540.md": "35cea603259f4d190f67a9ca1f63bb192a4fbb13fb28da6df17071ded9e820a2",
+    "wiki/hot.md": "5b913b9132b3723a17303ada93a820c7bd7e08710f4ef138a500ac535d21d05f",
+    "wiki/index.md": "a7f2e62de673549bc6dd732707c682c8f2fa8e9a831de4ebe2cd197883ac252e",
+    "wiki/log.md": "8b8021509a41e71fa77b1c067d7875c39b794f98357fbb5fcad41fac120fac21"
+  },
+  "modes": {
+    "wiki/concepts/ReferralPartner-SameName-INN-KPP-11162540.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "bug-backend-11162540-20261117",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

@@ -1,0 +1,45 @@
+{
+  "applied": [
+    "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md",
+    "wiki/index.md",
+    "wiki/hot.md"
+  ],
+  "approval_sha256": "5d625cb6ceb10f773c8d5f2dca2d108959a62204a72fff9f9de05cafee37fd54",
+  "completed_epoch": 1794482426.2319474,
+  "created_epoch": 1794482426.0943077,
+  "expanded_bundle_sha256": "c821c39eded4bad7f35171e6f1a4c505f2bc4e0b4b2635d8e47ef57de99dd01f",
+  "input_bundle_sha256": "c821c39eded4bad7f35171e6f1a4c505f2bc4e0b4b2635d8e47ef57de99dd01f",
+  "operation_id": "task-09281060-review-20261112",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "d6356bef9fabff9329f4c210d75bc1c49a900f6d729e74dd532bbfbe1584163b",
+      "original_mode": 384,
+      "original_sha256": "c3b7f7e266524d4f7e86967d441e197cadcb46801cdd8b12d2fff8d5f126cd04",
+      "path": "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "28945bd5d8575c15bd256a6de938e725363bc95848d812949891bc40cf0fcc95",
+      "original_mode": 511,
+      "original_sha256": "a11629b435706c1156466f9d4054254b210144a7af29c80e39e1d4310a3e96d8",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "45fcde1935e1395823bea00a9d81256fdd163e4c3ef4a6b16ecaa89bb6a97de7",
+      "original_mode": 511,
+      "original_sha256": "51cd26165a62a49cbdf468a7a7969e8f6c70829ab3f9956f2260b986d98e8ecc",
+      "path": "wiki/hot.md"
+    }
+  ]
+}

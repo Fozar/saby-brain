@@ -64,6 +64,25 @@
         "wiki/sources/zvonok-matyushev-timoshenko-plan-2026-11-09.md"
       ],
       "notes": "Selected fields and faithful extracts of tool results, not a verbatim full API response; scope is recorded in payload."
+    },
+    "src-9f874b4b02e2f7d47390": {
+      "title": "Матюшев — Тимошенко: диспетчер лицензий, 19.11.2026",
+      "origin": {
+        "kind": "file",
+        "locator": ".raw/captured/3e63323f2ed5fa5bb1d8a2b7220544ce7bb93fc7072896b53bd23c0be6a19fc2.md"
+      },
+      "content_kind": "conversation",
+      "authority": "primary",
+      "review_status": "active",
+      "content_sha256": "3e63323f2ed5fa5bb1d8a2b7220544ce7bb93fc7072896b53bd23c0be6a19fc2",
+      "ingested_at": "2026-11-19",
+      "retrieved_at": "2026-11-19",
+      "refresh_due": "2026-12-01",
+      "independence_key": "meeting-20261119-132210-matyushev-timoshenko",
+      "pages": [
+        "wiki/sources/zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19.md",
+        "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md"
+      ]
     }
   },
   "generated_at": "2026-11-09T09:00:00Z"

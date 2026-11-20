@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "4fe4634f75e873fedd20ebd24fc038025872325ce14df95a5cb32b2f4d5840a2",
+  "bundle_sha256": "a34a053f32a38aced090f924901b4873eb6ce1e2b8482e884331715cc9119027",
+  "changed_paths": [
+    "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "a34a053f32a38aced090f924901b4873eb6ce1e2b8482e884331715cc9119027",
+  "hashes": {
+    "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md": "2b9d4b0eb18683d478566d77e2968ad568e6ea21ed958e536dc53eb9264845c4",
+    "wiki/hot.md": "031eb96daad3b5662a64764ffd20ff4d243c8d2f4f2e978d16c8a733fd38b50e",
+    "wiki/index.md": "04887dd848c28df8cbae2716b88ea4b3d2ce2ce31a86da04e2ff8bf20722cd57",
+    "wiki/log.md": "a43857dbcd6cb93416d6c8b2ac257b0a6eacfaadc1123e7d8c0bf44626ecfc57"
+  },
+  "modes": {
+    "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "review-09281060-mr154382-20261113",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

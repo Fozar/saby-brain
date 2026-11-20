@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/ReferralPartner-SameName-INN-KPP-11162540.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "6edebd268264ee6b0c210a0868e443d8e013c12416c04a2a27d269e35f897240",
+  "completed_epoch": 1794914067.8598213,
+  "created_epoch": 1794914067.6537817,
+  "expanded_bundle_sha256": "2185c48d5f106a6788e61b8fc056224a83c16cf0f0046ba35c9c7e1625838635",
+  "input_bundle_sha256": "2185c48d5f106a6788e61b8fc056224a83c16cf0f0046ba35c9c7e1625838635",
+  "operation_id": "bug-mr-11162540-20261117",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "3c9fec892a2083e6505135553f95173b463a8ed220951ff5fe1ab16e2a0f1d0e",
+      "original_mode": 384,
+      "original_sha256": "eb717a44730c61111bf9cb367b16b2d48212c383b3d46283ad82d931a7123afc",
+      "path": "wiki/concepts/ReferralPartner-SameName-INN-KPP-11162540.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "e939a24498b916c2e510efd8a63b654c3b24f9e379fb2f21f5a595f787816458",
+      "original_mode": 511,
+      "original_sha256": "8bd088482714537f39308f43c226b485d729c761023cd4c4ab45a3d141d77cc7",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "b136992b7acb3a9939fdde1756a6c9c98551b117b1ded517bc12c8dfce78719a",
+      "original_mode": 511,
+      "original_sha256": "a51a838b871b06e0b48df83648eccebdd94a90b4f9854fb4dee401e361c2719b",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "73cdad2079771af4f42828360109a1386e690ec3d78c2a9df48e860b5a107356",
+      "original_mode": 511,
+      "original_sha256": "43b553ff863dd7e4a4d1ca6fce5977968769b151e9bcf2dc297a96d674bb9e2c",
+      "path": "wiki/log.md"
+    }
+  ]
+}

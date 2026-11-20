@@ -292,6 +292,60 @@
           "relation": "context"
         }
       ]
+    },
+    "clm-20261119-license-dispatcher-account": {
+      "text": "На звонке Матюшев описал лицензию внешних систем как небалансную лицензию на аккаунт без списания на ТП.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/sources/zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-19",
+      "notes": "Сообщения 23–33 и 67–70. Это описание на звонке, не самостоятельная проверка API.",
+      "evidence": [
+        {
+          "source_id": "src-9f874b4b02e2f7d47390",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-20261119-license-dispatcher-visitor": {
+      "text": "Для внешних лицензий предложено выбирать действие полиморфным вызовом параметра с участием LicenseDispatcher.",
+      "risk": "normal",
+      "assessment": "provisional",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/sources/zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-19",
+      "notes": "Сообщения 35–65. Предложение, не окончательно утверждённая реализация.",
+      "evidence": [
+        {
+          "source_id": "src-9f874b4b02e2f7d47390",
+          "relation": "supports"
+        }
+      ]
+    },
+    "clm-20261119-license-dispatcher-three-scenarios": {
+      "text": "На звонке Матюшев предложил рассматривать три сценария лицензирования как общий объём работ на 27.1100.",
+      "risk": "normal",
+      "assessment": "accepted",
+      "confidence": "high",
+      "location": {
+        "path": "wiki/sources/zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19.md",
+        "anchor": null
+      },
+      "reviewed_at": "2026-11-19",
+      "notes": "Сообщения 77–88. Без решения об объединении задач или переносе сроков.",
+      "evidence": [
+        {
+          "source_id": "src-9f874b4b02e2f7d47390",
+          "relation": "supports"
+        }
+      ]
     }
   },
   "generated_at": "2026-11-09T09:00:00Z"

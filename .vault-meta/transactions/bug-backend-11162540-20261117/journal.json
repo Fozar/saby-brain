@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/ReferralPartner-SameName-INN-KPP-11162540.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "6ec1861877d7b3dc0970c6c1285d3361c7a1df2af73813df58e79b0186f71734",
+  "completed_epoch": 1794904652.7132661,
+  "created_epoch": 1794904652.5040922,
+  "expanded_bundle_sha256": "970908b6e1ec354a50cb7200d96a034809eba6b2a66aab9115428e9c0a63fddb",
+  "input_bundle_sha256": "970908b6e1ec354a50cb7200d96a034809eba6b2a66aab9115428e9c0a63fddb",
+  "operation_id": "bug-backend-11162540-20261117",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "35cea603259f4d190f67a9ca1f63bb192a4fbb13fb28da6df17071ded9e820a2",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/ReferralPartner-SameName-INN-KPP-11162540.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "a7f2e62de673549bc6dd732707c682c8f2fa8e9a831de4ebe2cd197883ac252e",
+      "original_mode": 511,
+      "original_sha256": "41b9bd27e3867467fc6328bdf0e78ded2daced2688a0691215d019d9dbeaeb6e",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "5b913b9132b3723a17303ada93a820c7bd7e08710f4ef138a500ac535d21d05f",
+      "original_mode": 511,
+      "original_sha256": "d66f2ddf039941ab947d2e2ff82a5f7e0c0b6a32c383a1ce8baeaf2b5b3c857d",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "8b8021509a41e71fa77b1c067d7875c39b794f98357fbb5fcad41fac120fac21",
+      "original_mode": 511,
+      "original_sha256": "e3a46061b2f50addf2e6ac56e1e27d88737b033f2d041b0d9f2dec8cbed1b0e6",
+      "path": "wiki/log.md"
+    }
+  ]
+}

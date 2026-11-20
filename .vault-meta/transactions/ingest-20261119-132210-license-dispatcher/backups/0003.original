@@ -1,0 +1,70 @@
+{
+  "schema": "claude-obsidian.source-ledger.v1",
+  "sources": {
+    "src-daebd63e45185e75c442": {
+      "title": "Встреча Матюшев — Тимошенко, 09.11.2026",
+      "origin": {
+        "kind": "file",
+        "locator": ".raw/captured/43c3d57b849b25fc6817cee4a9c6c362f214f3786b97e4c5d9f734553aba7f23.md"
+      },
+      "content_kind": "conversation",
+      "authority": "primary",
+      "review_status": "active",
+      "content_sha256": "43c3d57b849b25fc6817cee4a9c6c362f214f3786b97e4c5d9f734553aba7f23",
+      "ingested_at": "2026-11-09",
+      "retrieved_at": "2026-11-09",
+      "refresh_due": "2026-12-01",
+      "independence_key": "meeting-20261109-matyushev",
+      "pages": [
+        "wiki/concepts/ReferralProgram-STAN-Stubs-Format-09173580.md",
+        "wiki/concepts/ReferralProgram-Offer-Details-BL-Calls-10224706.md",
+        "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md",
+        "wiki/concepts/PromoCode-Algorithms-Processes-Documentation-11028176.md",
+        "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md",
+        "wiki/concepts/BonusProgram-Profit-Type-Change-Block-10306450.md",
+        "wiki/concepts/Franchise-Threshold-Promotions-Sync-102912590.md",
+        "wiki/concepts/Loyalty-External-License-PremiumBonus-Registration-07282658.md",
+        "wiki/concepts/Loyalty-Marketing-Website-Visitor-Events-10141413.md",
+        "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md",
+        "wiki/concepts/Loyalty-External-License-Customer-Selection-07282646.md",
+        "wiki/concepts/PromoCode-Gift-Choice-Description-10127356.md",
+        "wiki/concepts/Loyalty-November-2026-WorkPlan.md",
+        "wiki/sources/zvonok-matyushev-timoshenko-plan-2026-11-09.md"
+      ],
+      "notes": "Full supplied transcript"
+    },
+    "src-97ad17eb5f3de08fd50d": {
+      "title": "Ноябрьский план 606980697 и карточки: извлечённые поля СБИС",
+      "origin": {
+        "kind": "file",
+        "locator": ".raw/captured/4ea60b369322e83b8ab05e1f92cfaae2c15c0ac12653c5d7382b81b69e465b7b.json"
+      },
+      "content_kind": "dataset",
+      "authority": "primary",
+      "review_status": "active",
+      "content_sha256": "4ea60b369322e83b8ab05e1f92cfaae2c15c0ac12653c5d7382b81b69e465b7b",
+      "ingested_at": "2026-11-09",
+      "retrieved_at": "2026-11-09",
+      "refresh_due": "2026-12-01",
+      "independence_key": "sbis-plan-606980697",
+      "pages": [
+        "wiki/concepts/ReferralProgram-STAN-Stubs-Format-09173580.md",
+        "wiki/concepts/ReferralProgram-Offer-Details-BL-Calls-10224706.md",
+        "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md",
+        "wiki/concepts/PromoCode-Algorithms-Processes-Documentation-11028176.md",
+        "wiki/concepts/LoyaltyWidgets-OurCompanies-API-11011809.md",
+        "wiki/concepts/BonusProgram-Profit-Type-Change-Block-10306450.md",
+        "wiki/concepts/Franchise-Threshold-Promotions-Sync-102912590.md",
+        "wiki/concepts/Loyalty-External-License-PremiumBonus-Registration-07282658.md",
+        "wiki/concepts/Loyalty-Marketing-Website-Visitor-Events-10141413.md",
+        "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md",
+        "wiki/concepts/Loyalty-External-License-Customer-Selection-07282646.md",
+        "wiki/concepts/PromoCode-Gift-Choice-Description-10127356.md",
+        "wiki/concepts/Loyalty-November-2026-WorkPlan.md",
+        "wiki/sources/zvonok-matyushev-timoshenko-plan-2026-11-09.md"
+      ],
+      "notes": "Selected fields and faithful extracts of tool results, not a verbatim full API response; scope is recorded in payload."
+    }
+  },
+  "generated_at": "2026-11-09T09:00:00Z"
+}

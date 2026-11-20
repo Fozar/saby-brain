@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/PromoCode-License-Purchase-Count-111712254.md",
+    "wiki/hot.md",
+    "wiki/index.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "e767cd3bb8284c3f89e7a0437038bae8aa4983a20895ef0dc0cefb19b56ea1bb",
+  "completed_epoch": 1794941753.2614558,
+  "created_epoch": 1794941753.0315073,
+  "expanded_bundle_sha256": "204258b3ae419772fc9cd86db1e496cdaf3ecf860e4f090379d05faeede21fe4",
+  "input_bundle_sha256": "204258b3ae419772fc9cd86db1e496cdaf3ecf860e4f090379d05faeede21fe4",
+  "operation_id": "bug-111712254-analysis-20261118",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "afbc6d427a23b88676727c2297d0c7a26170fba0ff2b632487f85a5a43268ea2",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/PromoCode-License-Purchase-Count-111712254.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "33f5da8edb13b1376305cebd7fdd307c5ffae13251e8defe36fa82318ef50ac7",
+      "original_mode": 511,
+      "original_sha256": "4bc3f1d309886e2596ca24c9ca5511eb6c11afcbdb14e585f34b2b4bb78783fe",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "172fca5689e8808b912b061c58f1f9078c99d093b1cc48c39882a8916328c1b4",
+      "original_mode": 511,
+      "original_sha256": "1efc6db0dd41bbec66a1d4eb07098bc5a5ce988c97d7aabfe228b49126ecd620",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "8a01fb7f0445e8cd73e0171c22d71dd622c5f6f7d552e1d8aedccfad3b651a21",
+      "original_mode": 511,
+      "original_sha256": "f240ffcfd5825c95b8e7520c97d9184d102bba252cb1681a114f69824788ab7d",
+      "path": "wiki/log.md"
+    }
+  ]
+}

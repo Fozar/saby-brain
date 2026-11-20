@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/PromoCode-Design-Title-Logo-Missing-11122177.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "d7d1e71332bea41109e6ec8e2f40439aa887c75c6ec3c19093793e2f70115572",
+  "completed_epoch": 1794995626.687652,
+  "created_epoch": 1794995626.4750698,
+  "expanded_bundle_sha256": "41cb7d3b68d0b0ec00d4d4130a5abaa3f110cd6eff4daa50a0a9f00ba12f409b",
+  "input_bundle_sha256": "41cb7d3b68d0b0ec00d4d4130a5abaa3f110cd6eff4daa50a0a9f00ba12f409b",
+  "operation_id": "bug-11122177-sdk-evidence-20261118",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "1408d9b7e3f9183edd274ebb7f8816129d77650e17d64cb60d9cb1b212e9a668",
+      "original_mode": 384,
+      "original_sha256": "780f5e387657ac4f8700cc05ffd7332beb23ec5919ea40f71832ce7390ec33a0",
+      "path": "wiki/concepts/PromoCode-Design-Title-Logo-Missing-11122177.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "a72a7b640ffc72e49834719a556311db6989ff40aea3d04bb31d1c91b301a90d",
+      "original_mode": 511,
+      "original_sha256": "67e3b32dcd2047e70c9ecf0a05bdb6fd23ef1e63814f86e28edee13425f0b41c",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "3cc6b4cfcd7f07caafd50c8d425c75a0b4b1e230fc9d4c0af5d5db743b3e636e",
+      "original_mode": 511,
+      "original_sha256": "c6fd124248ba47c9b6166feebe4c98ed6d360ea2eb4c8ad9e40470d677f5715d",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "4e88d40351a24c2260f91e754dad4d1d44d883260dabfd2fbfbcc0932bccccc8",
+      "original_mode": 511,
+      "original_sha256": "f84647cda4a2c14853296973f44aafdf89671e1e7817963e5e60425b544c7d31",
+      "path": "wiki/log.md"
+    }
+  ]
+}

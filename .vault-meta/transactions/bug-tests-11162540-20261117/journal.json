@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/ReferralPartner-SameName-INN-KPP-11162540.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "e3ca37dd10f04e7a8d2724f7535bb839e9eb4267e017a1bceeb8f7c391db3081",
+  "completed_epoch": 1794905065.8627439,
+  "created_epoch": 1794905065.6380436,
+  "expanded_bundle_sha256": "5faed566d09f6d397568049d395e2e4803b410b103f8aafe1d64b683ba32df2c",
+  "input_bundle_sha256": "5faed566d09f6d397568049d395e2e4803b410b103f8aafe1d64b683ba32df2c",
+  "operation_id": "bug-tests-11162540-20261117",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "a0790fba0f595a973df3357755321eb1fee4cb6601c82e9f766aa35c318a04d3",
+      "original_mode": 384,
+      "original_sha256": "35cea603259f4d190f67a9ca1f63bb192a4fbb13fb28da6df17071ded9e820a2",
+      "path": "wiki/concepts/ReferralPartner-SameName-INN-KPP-11162540.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "56976e90f17323fe56dbe1a009531b639f90f44a0c6e32ec1c18232ac3bede50",
+      "original_mode": 511,
+      "original_sha256": "a7f2e62de673549bc6dd732707c682c8f2fa8e9a831de4ebe2cd197883ac252e",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "b4785566c947c5c5c3d29dec8e74edbfe2cb60570b4f006ab1b38cdcf8e91651",
+      "original_mode": 511,
+      "original_sha256": "5b913b9132b3723a17303ada93a820c7bd7e08710f4ef138a500ac535d21d05f",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "bff5d924cb0ee9a2d3ff0c5b178300789f36fe1ddbb9ad4cd15f8682811eda0f",
+      "original_mode": 511,
+      "original_sha256": "8b8021509a41e71fa77b1c067d7875c39b794f98357fbb5fcad41fac120fac21",
+      "path": "wiki/log.md"
+    }
+  ]
+}

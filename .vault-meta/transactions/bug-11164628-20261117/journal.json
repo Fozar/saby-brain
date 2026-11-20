@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/LoyaltyWidgets-Missing-Period-11164628.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "2e503ca1de9f57d99d29ae546b197212e6f366ba427b8c91942c2d786e902c36",
+  "completed_epoch": 1794917092.8790948,
+  "created_epoch": 1794917092.6835794,
+  "expanded_bundle_sha256": "0e2e97ebf6cddb6ed2cf66694fc7ea0cf197c0adc24c76dc3232c37241942c68",
+  "input_bundle_sha256": "0e2e97ebf6cddb6ed2cf66694fc7ea0cf197c0adc24c76dc3232c37241942c68",
+  "operation_id": "bug-11164628-20261117",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "35cc9611fa1bc8749138c21c058e81f6e753aece04549e895cdc502eeedc0422",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/LoyaltyWidgets-Missing-Period-11164628.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "1efc6db0dd41bbec66a1d4eb07098bc5a5ce988c97d7aabfe228b49126ecd620",
+      "original_mode": 511,
+      "original_sha256": "dea9494930a464846df4cd5b531fcbf5820ccff67287c8dcb7bc6e3601511e55",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "4bc3f1d309886e2596ca24c9ca5511eb6c11afcbdb14e585f34b2b4bb78783fe",
+      "original_mode": 511,
+      "original_sha256": "ea3d27df87040602461ab87c679a892155ce4383c50e41d5137a44e9cc47ff1f",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "f240ffcfd5825c95b8e7520c97d9184d102bba252cb1681a114f69824788ab7d",
+      "original_mode": 511,
+      "original_sha256": "aeba00e8ee9c1c40843a9ce763a2ed2f9630c4db338c43f35da4b3ff15c0acb4",
+      "path": "wiki/log.md"
+    }
+  ]
+}

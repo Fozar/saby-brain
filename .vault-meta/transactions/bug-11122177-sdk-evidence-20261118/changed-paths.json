@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "d7d1e71332bea41109e6ec8e2f40439aa887c75c6ec3c19093793e2f70115572",
+  "bundle_sha256": "41cb7d3b68d0b0ec00d4d4130a5abaa3f110cd6eff4daa50a0a9f00ba12f409b",
+  "changed_paths": [
+    "wiki/concepts/PromoCode-Design-Title-Logo-Missing-11122177.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "41cb7d3b68d0b0ec00d4d4130a5abaa3f110cd6eff4daa50a0a9f00ba12f409b",
+  "hashes": {
+    "wiki/concepts/PromoCode-Design-Title-Logo-Missing-11122177.md": "1408d9b7e3f9183edd274ebb7f8816129d77650e17d64cb60d9cb1b212e9a668",
+    "wiki/hot.md": "3cc6b4cfcd7f07caafd50c8d425c75a0b4b1e230fc9d4c0af5d5db743b3e636e",
+    "wiki/index.md": "a72a7b640ffc72e49834719a556311db6989ff40aea3d04bb31d1c91b301a90d",
+    "wiki/log.md": "4e88d40351a24c2260f91e754dad4d1d44d883260dabfd2fbfbcc0932bccccc8"
+  },
+  "modes": {
+    "wiki/concepts/PromoCode-Design-Title-Logo-Missing-11122177.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "bug-11122177-sdk-evidence-20261118",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

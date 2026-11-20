@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "833c32a9470e1e008480d3487d678489e9c86dcdad96a38800a47bc25eddf8de",
+  "bundle_sha256": "ba066c05f9c5036bcf20329fcb1e4643a7634fefad3fd05bc1b5e67db370a40f",
+  "changed_paths": [
+    "wiki/concepts/BonusProgram-Profit-Type-Change-Block-10306450.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "ba066c05f9c5036bcf20329fcb1e4643a7634fefad3fd05bc1b5e67db370a40f",
+  "hashes": {
+    "wiki/concepts/BonusProgram-Profit-Type-Change-Block-10306450.md": "2e44bff85abfe10fe9da32628a2344fae5e9d86004acf3c4e1ed0797608e69bc",
+    "wiki/hot.md": "1aa422d2b75a9f08881ac2e950ad8fbb0e6c5bc18c37e7c2d8d46be538d6f018",
+    "wiki/index.md": "0d9181ccc734ef88e977fe9a330797b34d9b9e862ddb46f33ffa6094f711d5eb",
+    "wiki/log.md": "33e546e31bb781f349488e1f10121c8f90c602e849df67abc0ccad8f7561e724"
+  },
+  "modes": {
+    "wiki/concepts/BonusProgram-Profit-Type-Change-Block-10306450.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "task-10306450-remove-en-json",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

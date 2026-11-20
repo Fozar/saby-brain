@@ -1,0 +1,45 @@
+{
+  "applied": [
+    "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md",
+    "wiki/index.md",
+    "wiki/hot.md"
+  ],
+  "approval_sha256": "481571f3132e646c94100309c44b3f8c609c8820235dfc2dbe26e47964d10b6a",
+  "completed_epoch": 1794483674.2605164,
+  "created_epoch": 1794483674.0823014,
+  "expanded_bundle_sha256": "5776ef600fc8847462f85f0123d4a7723a0f37960315dc868bb6a96feeed2e88",
+  "input_bundle_sha256": "5776ef600fc8847462f85f0123d4a7723a0f37960315dc868bb6a96feeed2e88",
+  "operation_id": "task-09281060-verification-20261112",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "f056b8050194e5f87c51604bae8070ceac520d07e76c3fbf9e4678a5fff0f112",
+      "original_mode": 384,
+      "original_sha256": "d6356bef9fabff9329f4c210d75bc1c49a900f6d729e74dd532bbfbe1584163b",
+      "path": "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "42acf90e917e6f34ca95653d5eec947bb6322fb1d33dd54d674b9de3de881339",
+      "original_mode": 511,
+      "original_sha256": "28945bd5d8575c15bd256a6de938e725363bc95848d812949891bc40cf0fcc95",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "45bd397050c6b1abd7e37e21902358efed6d0ef622b0c1d33c2ae6285d290ca5",
+      "original_mode": 511,
+      "original_sha256": "45fcde1935e1395823bea00a9d81256fdd163e4c3ef4a6b16ecaa89bb6a97de7",
+      "path": "wiki/hot.md"
+    }
+  ]
+}

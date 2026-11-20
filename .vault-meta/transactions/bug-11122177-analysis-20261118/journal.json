@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/PromoCode-Design-Title-Logo-Missing-11122177.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "b22855da67dcf36455007a70cb42c370e4a2b2bed9a7ab84fd788877101532e4",
+  "completed_epoch": 1794992817.9016669,
+  "created_epoch": 1794992817.7008157,
+  "expanded_bundle_sha256": "89855c2f08f422322c353a8625a7a851d12c848fb1d5285ccd1eaf896e8d8970",
+  "input_bundle_sha256": "89855c2f08f422322c353a8625a7a851d12c848fb1d5285ccd1eaf896e8d8970",
+  "operation_id": "bug-11122177-analysis-20261118",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "create",
+      "new_mode": 384,
+      "new_sha256": "08ce198924d43d47f04fae9e04f07c5a45e51b154655c7f6e9c431be05fd71da",
+      "original_mode": null,
+      "original_sha256": null,
+      "path": "wiki/concepts/PromoCode-Design-Title-Logo-Missing-11122177.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "e31f7b545a6dbdc2e94e2446def223e31952a027d5d5a58a567cc3ff06a73ac7",
+      "original_mode": 511,
+      "original_sha256": "08a3ea6768b3ce4458e563e228d21ab8db52dc0433f3fffed8982deee1e09f29",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "bc7b897b7be94dfa5e0cf73c875943a6fa09060895a865abc1d8c47e5476deda",
+      "original_mode": 511,
+      "original_sha256": "d9de68f2cf0267ce6cf3b33f1f3fd22a8c86913dbbb346a899cb4c2d78d665a3",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "a193bf0fa6df93e0f4ea6dd7075958f0b39c272a4dd7d4e1a7af8fe727a4499a",
+      "original_mode": 511,
+      "original_sha256": "9095414513f50793f13b36ebb9274912ea50842a6b6a02c8fecbfa91d3573039",
+      "path": "wiki/log.md"
+    }
+  ]
+}

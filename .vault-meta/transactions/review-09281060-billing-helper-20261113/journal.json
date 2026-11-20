@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "a2bfc9ba614b4a661ea2a511fb23f903ac2e65206eccbdbad43c073c7d19949f",
+  "completed_epoch": 1794571405.7960708,
+  "created_epoch": 1794571405.5368001,
+  "expanded_bundle_sha256": "183a33b9656c840d3bf7a94b6be3b0b6137adf144222ae6b0623c24ef62a4ba5",
+  "input_bundle_sha256": "183a33b9656c840d3bf7a94b6be3b0b6137adf144222ae6b0623c24ef62a4ba5",
+  "operation_id": "review-09281060-billing-helper-20261113",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "42ff8194c1b035bf4b1c2099fae740f86c5b9a218b95ad4471d020b247771d2f",
+      "original_mode": 384,
+      "original_sha256": "f632d378b6483b59ece08605b5396a040c88dcbb4da8f98a7a6d9e5673ab3ee7",
+      "path": "wiki/concepts/Loyalty-License-Dispatcher-PromoCode-Migration-09281060.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "e0e25280fddab62b42e60dbf50207b64ddb26eb12d95ffe9c9c8a7fdf86fc7c5",
+      "original_mode": 511,
+      "original_sha256": "99eff72a217c7275fd00d729c7544bb12a5b1f396c64e4df4b3c0acb0c6af944",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "e48328f19af5e38a457fa89a88d8886fc2af884683d80444749d9ef3c34ee5db",
+      "original_mode": 511,
+      "original_sha256": "5208fcfb3ab90c2131a0cb5c7c956418470966be62ea2b8667705b506b544f0e",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "9f0285c9043fea70227cfe298c204882bdeab66159765dc07ef5dac249f42eee",
+      "original_mode": 511,
+      "original_sha256": "a43857dbcd6cb93416d6c8b2ac257b0a6eacfaadc1123e7d8c0bf44626ecfc57",
+      "path": "wiki/log.md"
+    }
+  ]
+}

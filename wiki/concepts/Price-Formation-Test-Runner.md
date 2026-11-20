@@ -3,7 +3,7 @@ type: concept
 address: c-000055
 title: "Price-Formation Test Runner"
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-11-20
 tags:
   - price-formation
   - testing
@@ -61,6 +61,13 @@ cd "<run_dir>"
 ```
 
 `py_tests_runner.py` лежит в `run/`, внутри делает `unittest.TestLoader().discover(src, pattern)`.
+
+Ограничение (проверено 20.11.2026 на Python 3.11.6): `discover` сопоставляет шаблон только с именем файла (`fnmatch` по basename). Шаблон с `/` не находит ничего — раннер молча печатает `Ran 0 tests ... OK`. Поэтому:
+
+- файл — только по имени (`save.py`), и имя должно быть уникальным в дереве (в price-formation `save.py` встречается много раз, такой запуск соберёт чужие тесты);
+- если имя не уникально или нужен гарантированный точный состав — запуск по классу: `python -m unittest tests.<пакет>.<модуль>.<Класс>` с `PYTHONPATH=<project root>` из `run/`.
+
+Отчёт `Ran 0 tests` с `OK` — это не успех, а пустой прогон.
 
 ## Запуск по директории (модулю)
 

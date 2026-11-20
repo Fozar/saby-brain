@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "86271b1d4cc0a457ce6bf3534f2c9d661cd82997f0f655317dd1850ed56c6861",
+  "bundle_sha256": "c2d73df6ef1ce2beb1457edd286aaa3031c9c0fd6bcc17a32a01fdd8fb1bb8d6",
+  "changed_paths": [
+    "wiki/concepts/SabyGet-Franchisee-Bonus-Widget-Description-110512550.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "c2d73df6ef1ce2beb1457edd286aaa3031c9c0fd6bcc17a32a01fdd8fb1bb8d6",
+  "hashes": {
+    "wiki/concepts/SabyGet-Franchisee-Bonus-Widget-Description-110512550.md": "f3b4c939bdc6ec727cd95f35bb011b6a4e1977ddf21a83c23037b0d8bf556281",
+    "wiki/hot.md": "32e76f47d8b400ab4e9c4b7b10457e3782d95f8bd3fb81ab3378e16cbc849169",
+    "wiki/index.md": "47d541ed10c4bf1fb55264791e4c3b3266495f0944cd452de2e7ac6505540210",
+    "wiki/log.md": "bd48fb01889e3be639620cf18479bef1b64119674f4d1a9d4a4e16549cc29028"
+  },
+  "modes": {
+    "wiki/concepts/SabyGet-Franchisee-Bonus-Widget-Description-110512550.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "bug-110512550-analysis-20261118",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

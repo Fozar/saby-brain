@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "e767cd3bb8284c3f89e7a0437038bae8aa4983a20895ef0dc0cefb19b56ea1bb",
+  "bundle_sha256": "204258b3ae419772fc9cd86db1e496cdaf3ecf860e4f090379d05faeede21fe4",
+  "changed_paths": [
+    "wiki/concepts/PromoCode-License-Purchase-Count-111712254.md",
+    "wiki/hot.md",
+    "wiki/index.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "204258b3ae419772fc9cd86db1e496cdaf3ecf860e4f090379d05faeede21fe4",
+  "hashes": {
+    "wiki/concepts/PromoCode-License-Purchase-Count-111712254.md": "afbc6d427a23b88676727c2297d0c7a26170fba0ff2b632487f85a5a43268ea2",
+    "wiki/hot.md": "33f5da8edb13b1376305cebd7fdd307c5ffae13251e8defe36fa82318ef50ac7",
+    "wiki/index.md": "172fca5689e8808b912b061c58f1f9078c99d093b1cc48c39882a8916328c1b4",
+    "wiki/log.md": "8a01fb7f0445e8cd73e0171c22d71dd622c5f6f7d552e1d8aedccfad3b651a21"
+  },
+  "modes": {
+    "wiki/concepts/PromoCode-License-Purchase-Count-111712254.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "bug-111712254-analysis-20261118",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

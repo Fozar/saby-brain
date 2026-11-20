@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-11-09
+updated: 2026-11-20
 tags:
   - meta
   - hot-cache
@@ -14,6 +14,18 @@ related:
 ---
 
 # Recent Context
+
+## 2026-11-20 — Диагностика: периодически пропадает внешний интернет
+
+**[[Workstation-Network-Outage-Diagnostic]]**: на ПК `R54-TIMOSHENKO` (`10.54.14.212`) внешние TCP/443 недоступны, корпоративный `sbis.ru` работает. DNS и шлюз `10.54.14.1` исправны; для внешних адресов узел `10.76.140.150` отдаёт ICMP Network Unreachable. После перезагрузки с теми же IP/шлюзом/DNS связь есть, трассировка проходит за `10.76.140.150`. Первопричина не установлена; виноваты `10.76.140.150`, Kaspersky и OpenVPN не доказаны. Отдельно — ошибка Schannel `CRYPT_E_NO_REVOCATION_CHECK` после восстановления TCP.
+
+## 2026-11-19 — Кнопка «⤓ вики» на диалоге SBIS
+
+**[[Saby-Dialog-Wiki-Ingest-Button]]**: userscript (Tampermonkey) на dev.saby.ru. Хук ловит theme_id из Message.List, `Сообщение.GetMarkdownText` выдаёт markdown диалога, сессия создаётся через API opencode serve (порт 28894, agent `build`, GPT Terra Medium, каталог вики) и сама делает wiki-ingest; открывается вкладка веб-UI. Скрипт: `tools/saby-dialog-ingest.user.js`. Первый прогон: звонок с Матюшевым 13:22, сессия `ses_e0c7a8c33ffeWucijiNCOQfnwI`.
+
+## 2026-11-18 — №10224706: роль бизнес-группы переезжает в ReferralProgram.Read
+
+**[[ReferralProgram-Offer-Details-BL-Calls-10224706]]**: веха 27.1100. Договорённость с Михелем 18.11: Read неблокирующе вызывает GetPersonBGRoleInAgents, результат отдаёт в отдельном поле, остальные данные возвращаются всегда. От нас — только бэкенд-часть (read.py), фронт у Михеля. Контекст собран, код и 3 теста добавлены; прогон ждёт сборку SDK 271000, без коммита.
 
 ## 2026-11-09 — Ноябрьский план, разговор с Матюшевым
 
@@ -42,7 +54,34 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 ## Active Threads
 
-- [[Loyalty-License-Dispatcher-PromoCode-Migration-09281060]] — №09281060, 26.6100: 4 вызова промокодов переведены, сетевые сбои биллинга обработаны; 16 новых + 54 регрессионных теста OK; общий online 6600: 1 failure/1 error; без коммита (status: developing)
+- [[ReferralProgram-ReadLeadSource-11179625]] — №11179625, 26.6100: ревью MR !154716 (источник сделки через crm-service вместо hstore); замечания: тихая потеря обработки при сбое RPC, нет проверки None, порядок выкатки advert-service → price-formation, поведение при смене источника на нереферальный (status: analyzing)
+
+- [[Workstation-Network-Outage-Diagnostic]] — диагностика сети рабочего ПК: локализация около `10.76.140.150`, первопричина не установлена; ждёт запроса логов сетевым администраторам (status: analyzing)
+- [[Saby-Dialog-Wiki-Ingest-Button]] — кнопка ингеста диалога SBIS в вики через opencode serve; установлен userscript, первый прогон на звонке с Матюшевым 19.11.
+- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: новое ТР: параметр выбирает проверку полиморфно, диспетчер выполняет; ждёт согласования, код не менялся. Подробности: [[zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19]].
+
+- [[PromoCode-Design-Title-Logo-Missing-11122177]] — №11122177, 26.6100: у ТП 285 в источнике нет логотипа (FsLogo пуст, Landing содержит баннер); заголовок — отдельный дефект Name вместо Title (status: developing)
+
+- [[ReferralProgram-Offer-Details-BL-Calls-10224706]] — №10224706, 27.1100: FutureInvoke в начале Read, get в конце, без helper-функций; коммит 0602ef4b68, MR СБИС [01a1ed89], GitLab !154708–!154709; 11/387 тестов OK, pylint R0915 56/50 (status: developing)
+
+- [[Bonus-Revenue-Widget-Registry-Mismatch-09291283]] — №09291283, 26.6100: разная сумма выручки в виджете «Доля выручки» и реестре Бонусы/Клиенты (Лотус/ПандаОптика); проверка на дубль по вопросу Матушева: дубля нет, цифры считаются из разных источников; ждёт разбора (status: analyzing)
+
+
+- [[SabyGet-Franchisee-Bonus-Widget-Description-110512550]] — №110512550, 26.6100: техрешение — передать сумму владельца из СДК в новую перегрузку online до формирования текста; правки отложены в stash обоих репозиториев, без коммитов/MR (status: developing)
+
+- [[PromoCode-License-Purchase-Count-111712254]] — №111712254, 26.6100: количество новых лицензий при долге исправлено; коммит 0799b99099 запушен, MR СБИС [01a1eae7], GitLab !154670–!154675; локальные тесты пропущены по решению пользователя, внешний CI pending (status: testing)
+
+- [[LoyaltyWidgets-Missing-Period-11164628]] — №11164628, 26.6100: коммит 22934c3d9a запушен, MR СБИС [01a1eafa] (!154676–!154681); 59 тестов виджетов OK после досборки, полный online в фоне (status: testing)
+
+- [[ReferralPartner-SameName-INN-KPP-11162540]] — №11162540, 26.6100: 18.11 по ревью SQL поиска удалён, реквизиты из member_list; amend e1c625590c запушен в прежний MR; 77 тестов OK, общий online — таймаут 600 с без итогов (status: developing)
+
+- [[LoyaltyLicense-CheckForSalePointList-Options-08189837]] — №08189837, 26.6100: Options.LicenseType и LicenseDispatcher; коммит 8f5add1c85, MR СБИС [01a1e8a1], GitLab !154601–!154606; 21 целевой тест OK, полный online красный, нужна пересборка и синхронная поставка фронта (status: developing)
+
+- [[BonusProgram-Profit-Type-Change-Block-10306450]] - №10306450, 26.6200 без фичи: проверка теперь бросает обычный sbis.Warning вместо подтверждаемого; стенд SDK 266200 собран, тесты 3/3 + общий прогон (ошибки только инфраструктурные); коммит 1841af344a, MR [01a1ed4c] (!154697-!154701) (status: testing) Sonar !154697: 70 предупреждений по 35 неизменённым строкам en.json; публикация отчёта получила HTTP 414, Jenkins UNSTABLE. Изменения en.json сняты, коммит a5afa94f4b запушен; повторный Sonar не проверен.
+
+- [[PromoCode-Algorithms-Processes-Documentation-11028176]] — №11028176: 12.11 локальный черновик «Карточка промокода» в docs/promocodes; повторы заменены ссылками, правило внесено в saby-loyalty-docs. Смена активности запрещена после появления экземпляров, а не выбора условия; требуется согласование. В БЗ не опубликован (status: developing)
+
+- [[Loyalty-License-Dispatcher-PromoCode-Migration-09281060]] — №09281060: запушен 44c1a46bdc, 3-й коммит убран; Даня сообщил «Двинул»; QA видит баннер оплаты/долга, дефект этим не подтверждён. Нужно уточнить достижимость пограничного остатка лицензий; ошибку пока не заводить; ответы только черновиками (status: developing)
 
 - [[LoyaltyWidgets-OurCompanies-API-11011809]] — №11011809, 26.6100: коммит b24e93985b, MR [01a1c8d9] (!154166–!154171); 81 тест виджетов OK, общий online красный; 3 замечания бота проверены по API и не подтвердились; MR открыт (status: developing)
 
@@ -54,11 +93,11 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 - [[LoyaltyClients-Export-Masked-Card-07285685]] — №07285685, 26.6100: на fix-online подтвержден скрытый номер в XLSX; полный номер есть в ответе бэкенда. Причина в printforms/templateeditor-data, ReportNewClientsMapping.map:33; передать печатным формам (status: developing)
 
-- [[ReferralStub-Status-Comment-History-10283786]] — №10283786, 26.5134: устранено повторение названия статуса в истории; коммит e9e23c1db0, новый MR https://online.sbis.ru/opendoc.html?guid=01a1c9a7-57e1-70c3-9c23-39aeb04eea66&client=3; 51 тест OK; 4804 теста, errors=1, skipped=107; TestRefreshLicense.test_1 падает с bseSYNTAX_ERROR: подзапрос во FROM должен иметь псевдоним; связь с правкой не проверена, baseline без фикса не запускался (status: testing) 11.11: замечание бота о локали не подтверждено, ответ в MR; код без изменений.
+- [[ReferralStub-Status-Comment-History-10283786]] — №10283786, веха 26.5134: устранено повторение названия статуса в истории; коммит e9e23c1db0, новый MR https://online.sbis.ru/opendoc.html?guid=01a1c9a7-57e1-70c3-9c23-39aeb04eea66&client=3; 51 тест OK; 4804 теста, errors=1, skipped=107; TestRefreshLicense.test_1 падает с bseSYNTAX_ERROR: подзапрос во FROM должен иметь псевдоним; связь с правкой не проверена, baseline без фикса не запускался (status: testing) 11.11: замечание бота о локали не подтверждено, ответ в MR; код без изменений.
 
 - [[Promotion-CreateCardType-ShowStamps-100118485]] — №100118485, 26.6100: `init_design_stamps` включает `ShowStamps`; MR !153523–!153526 создан, ждёт ревью (status: testing)
 
-- [[SabyGet-Franchisee-Join-Greeting-Bonus]] — №11033463, 26.6100: открыт `module_api_part="1"` для `Bonus.ReadSettings`, чтобы СДК мог читать приветственные бонусы владельца франшизы; коммит d91d12affd, MR !153509-!153511 (status: testing) 05.11: замечание Алябушева — ненулевая сумма участника может расходиться с начислением владельца; приоритет с проектированием явно не согласован в найденной переписке, требуется уточнение.
+- [[SabyGet-Franchisee-Join-Greeting-Bonus]] — №11033463 + №11058821, 26.6100: при присоединении к франшизе в SabyGet показываются приветственные бонусы владельца, а не участника; коммит 97c269b9d (discount-cards), MR [01a1d411] (!28220-!28222), 10/10 тестов OK, ждёт ревью (status: testing)
 
 - [[PromoCode-Gift-Choice-Description-10127356]] — №10127356, 26.6100: оформлен MR (документ [01a19ffa](https://online.sbis.ru/opendoc.html?guid=01a19ffa-bc84-70ef-a76e-f96c038c9d70&client=3), коммит b057825256, !153497-!153499; замечание reviewbot закрыто) (status: testing)
 
@@ -73,9 +112,9 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 - [[ReferralStub-Status-Description-Outcome-10284280]] — №10284280, веха 26.5134: чтение обработчика переведено на Лид.TinyWoContacts; приоритет: название перехода -> название фазы -> типовая подпись. Ветка 26.5134/bugfix/aatimoshenko/10284280_1, коммит d151435f3c, MR [01a1bf78] (!153799-!153807), 456 тестов OK (status: testing) 10.11: смена этапа внутри «В работе» не публикует StateChanged (10 → 10); первичное событие создания и порядок установки источника ещё проверяются, прежний вывод о двух причинах не доказан.
 
-- [[Bonus-Clients-Stale-Balance-10283259]] — №10283259: база _011d50c3 прочитана через PyCharm; у клиента 11613 номерная карта 5365 и персональный счёт 5366. На 5366 сохранены 1020 с NextChangeDatetime 19.10, движения +2000/-980 подтверждены; реестр не проверяет срок кэша; ежедневный триггер отвечает за уведомления, найден обратный RequestNotification с обновлением кэша; нужна проверка фактического выполнения на СДК, боевого подключения нет (status: developing)
+- [[Bonus-Clients-Stale-Balance-10283259]] — №10283259, 26.6100: сбой подтверждён и на бою логами 17.11: из 3480 аккаунтов создано 205 задач, затем пропуск 13201221 и завершение всего запуска с 200 OK; UUID 01a1e696-c17b-7525-87d7-da122ccaf0e0. Передать факты владельцу СДК; связь с 5366 ещё не доказана, клиентская БД сейчас недоступна (status: developing)
 
-- **Удаление клиента и ДК**: [[DiscountCard-Client-Delete-Event-Handlers]] — №03179884, веха 26.6100 (срок 28.11); реализован BeforeBatchDelete на ЧастноеЛицо.Удалить и подписки на события; MR влит в rc-26.6100 (f8c1c1e79a, 12 тестов OK); 29.10 Лукьянов оповещен для доброски CRM; 02.11 переведена на тестирование (Дюднева); итоги пункта плана сформированы (status: testing)
+- **Удаление клиента и ДК**: [[DiscountCard-Client-Delete-Event-Handlers]] — №03179884, веха 26.6100 (срок 28.11); реализован BeforeBatchDelete на ЧастноеЛицо.Удалить и подписки на события; MR влит в rc-26.6100 (f8c1c1e79a, 12 тестов OK); 29.10 Лукьянов оповещен для доброски CRM; 02.11 переведена на тестирование (Дюднева); итоги пункта плана сформированы; 19.11: п. 2 MR про ИП взяли из разбора общего обработчика, а не из постановки; штатная выдача ИП не подтверждена, рекомендовано исключить пункт из ручной приёмки. (status: testing)
 - **Путь клиента / Маршруты**: [[CustomerJourney-Scenarios-Project]] — новый движок сценариев лояльности, релиз 01.12.2026
 - **Дизайн ДК на конструкторе**: [[DiscountCard-Design-Constructor-Project]] — перевод дизайна дисконтных карт с Брендбука на конструктор сайтов, срок 20.02.2027. Промокод (№09234630, [[PromoCode-Design-Constructor]]): 26.10 постановка обновлена после совещания, по заметкам совещания `SiteId` в `DesignData`, брендбук остаётся и под фичей; 27.10 начали работу: сайт создаёт бэк в `PromoCode.Update` для новой записи (`Frames.Copy` шаблона), 28.10 MR созданы: price-formation !153119-!153121, discount-cards !28144-!28145; замечания бота учтены, rebase + замечания бота, запушен `981d62cfd8`, ждёт ревью; 27.10 новое пожелание: выбор QR/штрихкод на дизайне (Code128, откат на QR при кириллице, по умолчанию штрихкод); показ у покупателя - задача Кузакова или оценка; 02.11 по просьбе Лебедевой обновлён ID шаблона сайта на b8f7fd80-ca26-4e9e-b384-5b14ddb6e3f9 (ветка 26.6100/feature/aatimoshenko/09234630_site_template, коммит be5d709dc8, MR !153436-!153438).
 - **Loyalty Desktop Broker Migration**: [[Loyalty-Desktop-Broker-Migration]] — feature flag `lty_broker_card_type`, ~60д

@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/hot.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "hot"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -96,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/hot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,11 +197,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "wiki/hot.md",
     "wiki/concepts/ReferralProgram-STAN-Stubs-Format-09173580.md",
     "wiki/concepts/ReferralStub-ClientAccountId-INN-KPP-11095710.md",
     "wiki/concepts/Bonus-SaleTotals-Zero-Price-Return-11054160.md",
     "wiki/concepts/Loyalty-November-2026-WorkPlan.md",
-    "wiki/hot.md",
     "wiki/concepts/ReferralProgram-MasterFilter-Reward-Status-10269696.md",
     "wiki/concepts/IndividualPromoCodeEmission-Collapse-On-Update-100213225.md",
     "wiki/concepts/PromoCode-Gift-Choice-Description-10127356.md",
