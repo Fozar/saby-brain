@@ -36,7 +36,7 @@ related:
 - [[Franchise-Threshold-Promotions-Sync-102912590]] — №102912590, Синхронизация франшизы для пороговых акций.
 - [[Loyalty-External-License-PremiumBonus-Registration-07282658]] — №07282658: проверка аккаунта без ТП в интерфейсе и в PBCustomer.Register.
 - [[Loyalty-Marketing-Website-Visitor-Events-10141413]] — №10141413, События «Посетитель сайта» в действиях лояльности.
-- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: общий путь RefreshLicense через параметр и диспетчер реализован в основной папке. Ревью читаемости учтено; маршрут и время ответа отдельного RPC ещё проверить на SDK 271000. В ТР на согласование предложена общая проверка аккаунта через CheckLicense без ТП для [[Loyalty-External-License-Customer-Selection-07282646|выбора]] и [[Loyalty-External-License-PremiumBonus-Registration-07282658|регистрации]]. [[zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19|Звонок 19.11]].
+- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: первый локальный коммит b04f597592: параметр и подбор ТП, без RefreshLicense. Остальное в stash f302e4affe; GetTypesBySalePoint и CheckLicense не менялись. [[zvonok-matyushev-timoshenko-license-dispatcher-2026-11-19|Звонок 19.11]].
 - [[Loyalty-External-License-Customer-Selection-07282646]] — №07282646: флаг отказа после выбора; проверку аккаунта планируем переиспользовать.
 
 - [[LoyaltyClients-Export-Masked-Card-07285685]] — №07285685, 26.6100: на fix-online подтвержден скрытый номер в XLSX; полный номер есть в ответе бэкенда. Причина в printforms/templateeditor-data, ReportNewClientsMapping.map:33; передать печатным формам (status: developing)
