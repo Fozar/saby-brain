@@ -25,6 +25,8 @@ related:
 
 ## Где остановились
 
+**MR первой итерации оформлен.** Коммит `57f03deb4a` запушен в `27.1100/feature/aatimoshenko/07282570`. Веха 27.1100 online/inside. [MR в СБИС](https://online.sbis.ru/opendoc.html?guid=01a1f847-9497-7a0a-952e-ccf331e0fa5a&client=3), [GitLab !154956](https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154956), [!154957](https://git.sbis.ru/warehouse/price-formation/-/merge_requests/154957). В MR только параметр и подбор ТП; пересчёт лицензии не подключён. Тесты перешли на `TransactionTestCase` с `super().setUp()`; 5/5 с заглушками.
+
 **Согласован первый шаг, не весь прежний черновик ТР.** Матюшев предложил сначала показать декларацию `IntegrationLicense` и подбор точек в `LicenseConsumersGetter`, без внедрения в `RefreshLicense`. `GetTypesBySalePoint` не должен использовать результат вспомогательного вызова `RefreshLicense`. Расширение `CheckLicense` и прикладные сценарии остаются в отдельных задачах.
 
 В основной папке создан локальный коммит `b04f597592` на ветке `27.1100/feature/aatimoshenko/07282570`. Только параметр, подбор точек и тесты. 5/5 изолированных тестов; сборка стенда 266100, ветке нужен SDK 271000. Остальные правки сохранены в stash `f302e4affe8fbe544368a479ed4e9f46cc6cd114` как старый вариант, его нельзя применять целиком без учёта замечаний. Без push.
