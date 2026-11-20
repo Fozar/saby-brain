@@ -15,6 +15,10 @@ related:
 
 # Recent Context
 
+## 2026-11-20 — №11192441: CreateLeadByPartner медленный, в логах устаревший CRMEvent
+
+**[[ReferralLead-CreateLeadByPartner-Deprecated-CRMEvent-11192441]]**: ошибка на стенде, веха 26.6100. `ReferralProgram.CreateLeadByPartner/3` отработал 2.74 с и трижды дёрнул `SourcesSales.GetLeadInfoV2`: advert-service из него зовёт deprecated `CRMEvent.listWithDocumentsEDO` обратно в online — в логах ERROR «Вызов устаревшего метода» и `[call loop]`. Два вызова из наших избыточны (берут только номер/дату сделки), третий нужен ради контактов (`CRMPreload`). Разбор по логам pre-test-online готов, правки не начануты.
+
 ## 2026-11-20 — Диагностика: периодически пропадает внешний интернет
 
 **[[Workstation-Network-Outage-Diagnostic]]**: на ПК `R54-TIMOSHENKO` (`10.54.14.212`) внешние TCP/443 недоступны, корпоративный `sbis.ru` работает. DNS и шлюз `10.54.14.1` исправны; для внешних адресов узел `10.76.140.150` отдаёт ICMP Network Unreachable. После перезагрузки с теми же IP/шлюзом/DNS связь есть, трассировка проходит за `10.76.140.150`. Первопричина не установлена; виноваты `10.76.140.150`, Kaspersky и OpenVPN не доказаны. Отдельно — ошибка Schannel `CRYPT_E_NO_REVOCATION_CHECK` после восстановления TCP.
