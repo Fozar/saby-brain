@@ -1,0 +1,27 @@
+{
+  "approval_sha256": "9d0d555182cdbef51337be704803bf9a5c30c6fc12945c1af471f1fdc6437b13",
+  "bundle_sha256": "bce59163a11238d901aeb587897bffdf236b443513de226a56047901d96062f6",
+  "changed_paths": [
+    "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "expanded_bundle_sha256": "bce59163a11238d901aeb587897bffdf236b443513de226a56047901d96062f6",
+  "hashes": {
+    "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md": "684d476a144b8280f046104afa1d93931ed1a7d5b6c7521931216d70442ba393",
+    "wiki/hot.md": "366761f6cd3cbdc657bcb5f88190d05a34375234c72dffa02c6af53b21602096",
+    "wiki/index.md": "89d1a1c03b76163bb926cb32fd91f0eb83039c5ba58fe6f98e46a39da6820a0e",
+    "wiki/log.md": "fd9846effbbf8ae896778a7f901937e6d71cc18be095fc208b41d65fdd1cd1f3"
+  },
+  "modes": {
+    "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md": 384,
+    "wiki/hot.md": 511,
+    "wiki/index.md": 511,
+    "wiki/log.md": 511
+  },
+  "operation_id": "save-20261120-07282570-fd141f9139",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-result.v1",
+  "status": "complete"
+}

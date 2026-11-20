@@ -63,7 +63,7 @@ SBIS/Saby loyalty + price formation, ветка `rc-26.3211`. Wasaby: 3-level (s
 
 - [[Workstation-Network-Outage-Diagnostic]] — диагностика сети рабочего ПК: локализация около `10.76.140.150`, первопричина не установлена; ждёт запроса логов сетевым администраторам (status: analyzing)
 - [[Saby-Dialog-Wiki-Ingest-Button]] — кнопка ингеста диалога SBIS в вики через opencode serve; установлен userscript, первый прогон на звонке с Матюшевым 19.11.
-- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: `dac643a180` запушен; конфликт !154956 локально разрешён, слияние не закоммичено. До слияния: 45 тестов на SDK 271000 после устранения цикла импорта. (status: developing)
+- [[Loyalty-External-License-Shift-Open-07282570]] — №07282570, 27.1100: запушен `fd141f9139`, конфликт !154956 снят; Critical/Medium исправлены, 72 целевых теста на SDK 271000 прошли. (status: developing)
 
 - [[PromoCode-Design-Title-Logo-Missing-11122177]] — №11122177, 26.6100: у ТП 285 в источнике нет логотипа (FsLogo пуст, Landing содержит баннер); заголовок — отдельный дефект Name вместо Title (status: developing)
 

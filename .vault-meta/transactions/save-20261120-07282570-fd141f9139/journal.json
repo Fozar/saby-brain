@@ -1,0 +1,55 @@
+{
+  "applied": [
+    "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "wiki/log.md"
+  ],
+  "approval_sha256": "9d0d555182cdbef51337be704803bf9a5c30c6fc12945c1af471f1fdc6437b13",
+  "completed_epoch": 1795182072.2841055,
+  "created_epoch": 1795182071.9993348,
+  "expanded_bundle_sha256": "bce59163a11238d901aeb587897bffdf236b443513de226a56047901d96062f6",
+  "input_bundle_sha256": "bce59163a11238d901aeb587897bffdf236b443513de226a56047901d96062f6",
+  "operation_id": "save-20261120-07282570-fd141f9139",
+  "operation_type": "save",
+  "schema": "claude-obsidian.transaction-journal.v1",
+  "state": "complete",
+  "writes": [
+    {
+      "backup": "0000.original",
+      "mode": "replace",
+      "new_mode": 384,
+      "new_sha256": "684d476a144b8280f046104afa1d93931ed1a7d5b6c7521931216d70442ba393",
+      "original_mode": 384,
+      "original_sha256": "e0099e6af428bdd0436578e0b15edf9c87d002c2eb7365b6cfd297741f41b2f7",
+      "path": "wiki/concepts/Loyalty-External-License-Shift-Open-07282570.md"
+    },
+    {
+      "backup": "0001.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "89d1a1c03b76163bb926cb32fd91f0eb83039c5ba58fe6f98e46a39da6820a0e",
+      "original_mode": 511,
+      "original_sha256": "8a734085e93e6b0ef890874af8347516283ed6f580e59a344eea4961db83ace9",
+      "path": "wiki/index.md"
+    },
+    {
+      "backup": "0002.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "366761f6cd3cbdc657bcb5f88190d05a34375234c72dffa02c6af53b21602096",
+      "original_mode": 511,
+      "original_sha256": "4a6555c44ec71a6063e8082e0f0f5aa66bbe811c9d86ebcf21c7ccf312916734",
+      "path": "wiki/hot.md"
+    },
+    {
+      "backup": "0003.original",
+      "mode": "replace",
+      "new_mode": 511,
+      "new_sha256": "fd9846effbbf8ae896778a7f901937e6d71cc18be095fc208b41d65fdd1cd1f3",
+      "original_mode": 511,
+      "original_sha256": "fafbc5dc8971b015807da08c2810e0a2421f55473218adc37b92187ac27d8574",
+      "path": "wiki/log.md"
+    }
+  ]
+}
